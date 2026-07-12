@@ -1,0 +1,443 @@
+{
+  "edition": {
+    "number": 2,
+    "date": "2026-07-12",
+    "slot": "update-16",
+    "dataAsOf": "Kurse: US-Handelsschluss Freitag, 10. Juli 2026; US-Börsen am Wochenende geschlossen. Nachrichten bis Redaktionsschluss Sonntag, 12. Juli, ca. 16:00 MESZ. Intraday-Update ohne neues Alpha-Vantage-Kursdatenbudget; Markt-Kacheln übernehmen den Freitag-Schluss oder sind als ca.-Angabe aus Tier-1/2-Quellen gekennzeichnet.",
+    "generatedAt": "2026-07-12T14:15:00Z",
+    "isExample": false
+  },
+  "market": {
+    "tiles": [
+      { "label": "S&P 500", "value": "7.575,39", "delta": "+0,42 %", "direction": "up", "approx": false, "note": "Schluss Freitag 10.7.; Wochenende ohne Handel" },
+      { "label": "Nasdaq Composite", "value": "26.281,61", "delta": "+0,29 %", "direction": "up", "approx": false, "note": "Schluss Freitag 10.7." },
+      { "label": "Dow Jones", "value": "52.637,01", "delta": "+0,29 %", "direction": "up", "approx": false, "note": "Schluss Freitag 10.7." },
+      { "label": "Russell 2000", "value": "2.977,81", "delta": "-0,49 %", "direction": "down", "approx": false, "note": "Schluss Freitag 10.7." },
+      { "label": "DAX", "value": "25.067,09", "delta": "-0,20 %", "direction": "down", "approx": false, "note": "Schluss Freitag 10.7." },
+      { "label": "VIX (Volatilitätsindex, das Angstbarometer der Wall Street)", "value": "15,03", "delta": "-5,11 %", "direction": "down", "approx": false, "note": "Schluss Freitag 10.7.; das Hormus-Risiko vom Wochenende ist hierin noch nicht enthalten" },
+      { "label": "US-Rendite 10 Jahre", "value": "4,56 %", "direction": "flat", "approx": false, "note": "Schluss Freitag 10.7. (Advisor Perspectives/Fed H.15)" },
+      { "label": "Öl (WTI)", "value": "71,40 USD", "delta": "+4 % (Woche)", "direction": "up", "approx": true, "note": "ca., August-Frontmonat, 10.7. nach Hormus-Eskalation; Brent ~76 USD, Wochenplus ~5 % (Barchart, Vantage/CNBC)" },
+      { "label": "Gold", "value": "4.135 USD", "delta": "+1,2 %", "direction": "up", "approx": true, "note": "ca., August-Future, Handelsstart Freitag 10.7. (CNBC); nahe Rekord" },
+      { "label": "US-Leitzins (Fed)", "value": "3,50-3,75 %", "direction": "flat", "approx": false, "note": "seit Juni-Sitzung; nächste Entscheidung 28./29.7." },
+      { "label": "Bitcoin", "value": "64.300 USD", "delta": "+3 % (Woche)", "direction": "up", "approx": true, "note": "ca., Stand Freitag 10.7. (Fortune); rund 49 % unter dem Allzeithoch von 126.198 USD (Okt. 2025)" },
+      { "label": "EZB-Einlagenzins", "value": "2,25 %", "direction": "flat", "approx": false, "note": "seit 17.6.2026; Hauptrefinanzierungssatz 2,40 %" }
+    ]
+  },
+  "articles": [
+    {
+      "id": "hormus-oel-sperrung",
+      "ressort": "titelseite",
+      "kicker": "Geopolitik · Energie",
+      "headline": "Iran erklärt die Straße von Hormus für gesperrt, und der Ölpreis bleibt erstaunlich ruhig",
+      "subject": "Straße von Hormus",
+      "dek": "Nach dem Angriff auf einen Frachter und einer dritten US-Angriffswelle setzt Teheran das Nadelöhr der Weltwirtschaft mit Gewalt unter Druck. Dass Brent trotzdem nur rund fünf Prozent zulegt, verrät mehr über den Markt als die Schlagzeile.",
+      "image": {
+        "file": "hormus-strait.svg",
+        "alt": "Gestochene Illustration eines Öltankers in der schmalen Straße von Hormus zwischen zwei Landmassen, quer davor eine symbolische Sperrkette",
+        "caption": "Ein Fünftel des seetransportierten Öls passiert diese Meerenge. Wird sie zum Nadelöhr, entscheidet die Erwartung über den Preis.",
+        "credit": "Illustration: The Capital Compass"
+      },
+      "body": [
+        "Am Wochenende hat sich der Konflikt um die Straße von Hormus zugespitzt, die schmale Meerenge zwischen Iran und der Arabischen Halbinsel. Am Samstag, 11. Juli, beschoss die iranische Revolutionsgarde den zypriotisch geflaggten Frachter GFS Galaxy wegen einer angeblich nicht genehmigten Route. Das Schiff erlitt schwere Schäden am Maschinenraum, ein Besatzungsmitglied gilt als vermisst, die Mannschaft ging in die Rettungsboote. Noch in der Nacht erklärte die Marine der Revolutionsgarde die Straße bis auf Weiteres für gesperrt. Am Sonntag flogen die USA eine dritte Angriffswelle gegen iranische Militäranlagen nahe der Meerenge. Diese zweite Eskalationswelle folgt auf eine erste rund um den 7. und 8. Juli, als Iran zwei Tanker beschoss und die USA mit Schlägen antworteten.",
+        "Wichtig zur Einordnung des Wortes Sperrung: Es handelt sich um eine iranische Erklärung, die mit Gewalt durchgesetzt wird, nicht um eine bestätigte vollständige physische Blockade. Der Schiffsverkehr über die international koordinierte Route ist weitgehend zum Erliegen gekommen. Durch die Straße von Hormus läuft rund ein Fünftel des weltweit per Schiff transportierten Öls, weshalb jede glaubwürdige Sperr-Drohung sofort auf den Preis wirkt.",
+        "Und doch fällt die Preisreaktion verhalten aus. Die Nordseesorte Brent schloss am Freitag bei rund 76 US-Dollar, ein Wochenplus von etwa fünf Prozent; die US-Sorte WTI lag im August-Kontrakt bei rund 71,40 Dollar, gut vier Prozent höher als eine Woche zuvor. Für ein Nadelöhr, das gerade für gesperrt erklärt wurde, ist das eine kleine Bewegung.",
+        "Interpretation: Ein Ölpreis ist immer auch ein Erwartungspreis. Er misst nicht nur, wie viel Öl heute tatsächlich fehlt, sondern wie wahrscheinlich der Markt eine künftige Lieferunterbrechung hält. Käufer zahlen einen Aufschlag als Versicherung gegen das Risiko von morgen, das ist die sogenannte Risikoprämie. Steigt die Angst, steigt die Prämie, lange bevor ein einziger Tanker wirklich ausfällt.",
+        "Restrisiko und Gegenargument: Die Deutung als reine Risikoprämie greift zu kurz. Die Straße gilt laut Berichten schon seit dem Frühjahr als belastet, ein Teil der Störung ist also real und nicht bloß erwartet. Vor allem aber deutet die gedämpfte Reaktion von rund 76 Dollar darauf hin, dass der Markt bereits gegenrechnet: freie Förderreserven der OPEC, die Erwartung, dass die US-Angriffe die Straße rasch wieder öffnen, und funktionierende Umleitungen über Pipelines. Die Prämie kann so schnell verfallen, wie sie entstanden ist. Kippt die Lage dagegen in einen mehrtägigen physischen Vollausfall, wäre die heutige Ruhe im Preis schlagartig vorbei."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Ölpreis reagiert nicht erst, wenn Öl tatsächlich fehlt, sondern schon auf die Gefahr, dass es fehlen könnte. Diese eingepreiste Gefahr heißt Risikoprämie. Ein Nadelöhr wie die Straße von Hormus, durch das ein Fünftel des seetransportierten Öls läuft, macht diese Prämie besonders hebelstark. Fällt die Angst, verschwindet der Aufschlag oft ebenso rasch.",
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "direkt", "richtung": "positiv", "mechanismus": "Die Sperrung verknappt das Angebot, weil rund ein Fünftel des per Schiff transportierten Öls die Meerenge passiert. Ein höherer Ölpreis hebt unmittelbar die Verkaufserlöse von Förderfirmen und die Frachtraten der Tankerreedereien.", "teilbranchen": "Gewinner: Öl- und Gasförderer, Tankerreeder. Gemischt: Raffinerien, wenn teures Rohöl die Marge drückt." },
+        { "sektor": "Grundstoffe", "betroffenheit": "direkt", "richtung": "negativ", "mechanismus": "Chemie und Kunststoffe nutzen Öl und Gas als Rohstoff und Energie. Steigt der Ölpreis, verteuern sich Vorprodukte und Produktionskosten, das drückt auf die Marge.", "teilbranchen": "Verlierer: energieintensive Chemie (BASF, Covestro, Dow). Gemischt: Titel, die Preissteigerungen weitergeben können." },
+        { "sektor": "Industrie", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Höhere Energie- und Transportkosten belasten Fertigung und Logistik, während Rüstungs- und Sicherheitstechnik von der militärischen Eskalation profitiert.", "teilbranchen": "Verlierer: Luftfahrt und Speditionen über teuren Treibstoff. Gewinner: Rüstung durch erwartete Mehrausgaben." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "indirekt", "richtung": "negativ", "mechanismus": "Steigende Spritpreise wirken wie eine Steuer auf den Haushalt und lassen weniger Geld für Autos, Reisen und Restaurants.", "teilbranchen": "Verlierer: Autobauer, Reise- und Freizeitwerte durch schwächere Kauflust." },
+        { "sektor": "Basiskonsum", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Alltagsgüter werden weiter gekauft, doch höhere Energie- und Frachtkosten verteuern Herstellung und Transport. Marken mit Preissetzungsmacht geben das weiter, schwächere nicht.", "teilbranchen": "Relativ gefragt: defensive Marken als sicherer Hafen. Verlierer: Hersteller mit hohem Energieanteil." },
+        { "sektor": "Gesundheit", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen hängt kaum am Ölpreis, weil sie nicht aufschiebbar ist. In Risikophasen gilt der Sektor als Zufluchtsort.", "teilbranchen": "Leicht positiv als defensiver Wert: Pharma. Geringer Kosteneffekt bei Kühlkette." },
+        { "sektor": "Finanzen", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Der Ölschock hebt die Inflationserwartung und damit die Unsicherheit über den Zinspfad. Versicherer tragen zudem höhere Schäden aus Kriegs- und Seetransportrisiken.", "teilbranchen": "Gewinner: Rohstoffhandel, Investmentbanken durch Handelsvolumen. Verlierer: See- und Kriegsversicherer durch Schadenlast." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "kaum", "richtung": "negativ", "mechanismus": "Chips und Software brauchen wenig Öl, doch als Wachstumssektor leidet Tech unter höherer Risikoscheu und steigenden Zinserwartungen, weil künftige Gewinne dann stärker abgezinst werden.", "teilbranchen": "Leicht negativ: Halbleiter und Software über die allgemeine Risk-off-Stimmung." },
+        { "sektor": "Kommunikation", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Telekom und Medien sind vom Ölpreis fast unabhängig, weil ihre Netze kaum Treibstoff benötigen. Wachstumslastige Plattformen spüren nur die allgemeine Risikostimmung.", "teilbranchen": "Defensiv stabil: Telekom. Leicht negativ: werbeabhängige Plattformen bei Risk-off." },
+        { "sektor": "Versorger", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Gas- und ölbasierte Kraftwerke haben höhere Brennstoffkosten, sofern Tarife nicht mitziehen. Betreiber mit viel Wind, Sonne und Kernkraft profitieren relativ.", "teilbranchen": "Relativ Gewinner: erneuerbaren- und kernkraftlastige Versorger. Verlierer: gasabhängige Erzeuger." },
+        { "sektor": "Immobilien", "betroffenheit": "indirekt", "richtung": "negativ", "mechanismus": "Ein ölgetriebener Inflationsschub kann die Zinserwartungen anheben, und höhere Zinsen verteuern die Finanzierung von Immobilien und drücken deren Bewertung.", "teilbranchen": "Verlierer: zinssensible Immobilien-Aktiengesellschaften. Puffer: inflationsindexierte Mietverträge." }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Rohöl: Wochenveränderung nach der Hormus-Eskalation",
+          "subtitle": "Freitag 10.7. gegen Vorwoche, gerundet",
+          "unit": " %",
+          "source": "Barchart (WTI-Frontmonat CLQ26), Vantage/CNBC (10.7.2026)",
+          "allPositive": true,
+          "data": [
+            ["Brent", 5.0],
+            ["WTI", 4.0]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Iran erklärte die Straße von Hormus am 11./12. Juli für gesperrt (Angriff auf GFS Galaxy 11.7., dritte US-Angriffswelle 12.7.); Brent rund 76 USD, Wochenplus rund 5 %.",
+        "verdict": "bestätigt",
+        "evidence": "Chronologie mehrfach belegt (Washington Post, The Hill, Al Jazeera, 10.-11.7.). Es sind zwei getrennte Eskalationswellen (7./8.7. und 11./12.7.); die zweite fällt in den Berichtszeitraum. Die Sperrung ist eine gewaltsam durchgesetzte Erklärung, keine bestätigte physische Vollblockade. Brent-Schluss und Wochenplus über Barchart und Vantage/CNBC gegengeprüft."
+      },
+      "lehre": "Die Lehre: Ein Ölpreis ist ein Erwartungspreis. Reagiert er auf eine Sperr-Erklärung nur verhalten, heißt das nicht, dass nichts geschieht, sondern dass der Markt Reservekapazität und eine rasche Wiederöffnung schon gegenrechnet.",
+      "sources": [
+        { "title": "Washington Post: US strikes Iran as it declares Strait of Hormuz closed", "url": "https://www.washingtonpost.com/world/2026/07/11/us-strikes-iran-it-declares-strait-hormuz-closed-fires-ship/", "tier": 2 },
+        { "title": "The Hill: Iran closes Strait of Hormuz, US launches third round of strikes", "url": "https://thehill.com/policy/defense/5964263-iran-closes-strait-hormuz/", "tier": 2 },
+        { "title": "Al Jazeera: Strait of Hormuz shipping grinds to halt as US, Iran resume fighting", "url": "https://www.aljazeera.com/economy/2026/7/10/strait-of-hormuz-shipping-grinds-to-halt-as-us-iran-resume-fighting", "tier": 2 },
+        { "title": "Barchart: WTI Crude Oil Aug 2026 (CLQ26)", "url": "https://www.barchart.com/futures/quotes/CLQ26", "tier": 2 }
+      ]
+    },
+    {
+      "id": "nvidia-neubewertung",
+      "ressort": "unternehmen",
+      "kicker": "Halbleiter · Bewertung",
+      "headline": "Nvidia bleibt zurück, während die Chipbranche läuft, und das ist ein Lehrstück über Bewertung",
+      "subject": "Nvidia",
+      "dek": "Bis Anfang Juli legte Nvidia 2026 nur rund fünf Prozent zu, der Halbleiterindex dagegen kräftig. Der Markt zahlt für dieselben Gewinne weniger. Ob das eine Verschnaufpause oder eine Neubewertung ist, lässt sich noch nicht entscheiden.",
+      "image": {
+        "file": "ki-chip-neubewertung.svg",
+        "alt": "Gestochene Illustration eines Prozessorchips neben einer Kurve, die ihren Hochpunkt überschritten hat und abflacht",
+        "caption": "Der Gewinn wächst, der Kurs folgt nicht mehr im gleichen Tempo. Die Bewertung ist der eigentliche Vorgang.",
+        "credit": "Illustration: The Capital Compass"
+      },
+      "body": [
+        "Nvidia ist nach Börsenwert das teuerste Unternehmen der Welt, und ausgerechnet diese Aktie bleibt 2026 hinter der eigenen Branche zurück. Bis Anfang Juli stand ein Plus von nur rund fünf Prozent seit Jahresbeginn, während der breite Halbleiterindex im selben Zeitraum kräftig zulegte. Am Freitag, 10. Juli, schloss die Aktie bei 210,96 Dollar, ein Tagesplus von rund vier Prozent, der Börsenwert lag bei rund 5,11 Billionen Dollar.",
+        "Der eigentliche Vorgang ist keine neue Meldung, sondern eine gesunkene Bewertung. Der Markt zahlte für Nvidia lange ein Vielfaches des erwarteten Jahresgewinns; das erwartete Kurs-Gewinn-Verhältnis (Kurs geteilt durch den für die nächsten zwölf Monate erwarteten Gewinn je Aktie) liegt inzwischen bei rund 21. Fachleute nennen das Multiple-Kompression: Der Gewinn wächst weiter, aber der Markt bezahlt jeden künftigen Dollar niedriger, weil er das Wachstum langsamer und unsicherer ansetzt. Zwei Gründe stehen im Raum. Erstens fällt das China-Geschäft weg: Der Rechenzentrumsumsatz mit den dafür bestimmten H20-Chips ist von rund 4,6 Milliarden Dollar je Quartal wegen der US-Exportauflagen auf faktisch null gesunken. Zweitens sorgt der chinesische Herausforderer DeepSeek für die Frage, ob günstigere Chips oder effizientere Modelle die Preissetzungsmacht angreifen.",
+        "Gegenargument und alternative Erklärung, wie sie unser Skeptiker verlangt: Dieselbe gesunkene Bewertung lässt sich in beide Richtungen lesen. Bei einem erwarteten Kurs-Gewinn-Verhältnis um 21 gegenüber einem Fünfjahresschnitt von grob 70 sehen Optimisten wie Goldman Sachs eher einen Einstieg als ein Warnsignal. Und ein Teil der Schwäche dürfte schlicht Umschichtung sein: Kapital floss aus dem teuren, meistgehaltenen Marktführer in günstigere Sektorwerte wie AMD und Micron. Dass die Branche insgesamt stieg, während Nvidia zurückblieb, passt gut zu dieser Rotationserklärung.",
+        "Die ehrliche Antwort: Aus den öffentlichen Zahlen allein lässt sich nicht entscheiden, welche Lesart überwiegt. Gesunde Konsolidierung nach einer Verdreifachung und strukturelle Neubewertung durch China-Verlust und Wettbewerb sind beide mit einem Plus von fünf Prozent und einem Multiple um 21 vereinbar. Die Prüfsteine sind die nächsten Quartalszahlen und konkrete Belege, wie stark DeepSeek den Markt wirklich verändert."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Wert einer Aktie steckt in den erwarteten künftigen Gewinnen. Das Kurs-Gewinn-Verhältnis sagt, wie viele Jahresgewinne der Markt dafür bezahlt. Sinkt dieses Vielfache, obwohl der Gewinn wächst, dann ist nicht die Firma schwächer geworden, sondern die Erwartung an ihr künftiges Wachstum. Genau das ist bei Nvidia geschehen.",
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Rechenzentren für künstliche Intelligenz treiben den Stromverbrauch und die Nachfrage nach Erdgas als Kraftwerksbrennstoff. Eine Abkühlung des KI-Booms würde diese Zusatznachfrage bremsen.", "teilbranchen": "Gewinner bei KI-Stromhunger: Erdgasförderer. Verlierer bei Abkühlung: Zulieferer für Rechenzentrums-Energie." },
+        { "sektor": "Grundstoffe", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Chipfertigung und Rechenzentren brauchen Spezialchemie, Kupfer und Seltene Erden. Weniger KI-Investitionen dämpfen die Nachfrage nach diesen Vorprodukten.", "teilbranchen": "Verlierer bei Abkühlung: Kupfer- und Spezialchemie-Zulieferer der Halbleiterbranche." },
+        { "sektor": "Industrie", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Anlagenbauer und Elektroausrüster liefern Kühlung, Netztechnik und Maschinen für Chipwerke und Rechenzentren. Eine Neubewertung des KI-Zyklus verschiebt deren Auftragsbücher.", "teilbranchen": "Verlierer bei KI-Zweifeln: Rechenzentrums-Ausrüster und Chipmaschinenbauer." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Der Konsum von Autos und Reisen hängt an Einkommen und Zinsen, nicht am Chipzyklus. Ein Kanal bleibt nur die allgemeine Börsenstimmung.", "teilbranchen": "Leicht negativ: KI-nahe Konsumelektronik bei Tech-Schwäche. Sonst entkoppelt." },
+        { "sektor": "Basiskonsum", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Lebensmittel und Drogerieartikel sind vom Chipthema unabhängig, weil ihre Nachfrage stabil bleibt. In einer Tech-Korrektur wirken sie als defensiver Ausgleich.", "teilbranchen": "Leicht positiv als sicherer Hafen: defensive Marken." },
+        { "sektor": "Gesundheit", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Medizinnachfrage folgt Demografie und Krankheitslast, nicht dem KI-Handel. Rotieren Anleger aus teuren Tech-Werten, kann defensives Gesundheitskapital zufließen.", "teilbranchen": "Leicht positiv bei Sektorrotation: Pharma und Medizintechnik." },
+        { "sektor": "Finanzen", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Am 14.7. öffnen die US-Großbanken ihre Bücher und der US-Verbraucherpreisindex erscheint; beides steuert die Zinserwartung und damit die Zinsmarge der Banken.", "teilbranchen": "Gewinner bei starken Zahlen: Investmentbanken mit Handelsgewinn. Verlierer bei Zinsschock: Häuser mit hohen Anleihebeständen." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "direkt", "richtung": "negativ", "mechanismus": "Neue Billig-Chips aus China und der auf nahe null gefallene China-Umsatz von Nvidia treffen Umsatz und Preismacht direkt. Sinkende Erwartungen an den KI-Boom drücken die hoch bewerteten Chip- und Software-Kurse.", "teilbranchen": "Verlierer: KI-Chip-Riesen, Chipmaschinen (ASML, Bericht 15.7.), Auftragsfertiger (TSMC, 16.7.). Gewinner: günstige Herausforderer." },
+        { "sektor": "Kommunikation", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Die großen Plattformen sind zugleich die größten KI-Investoren, einige berichten in dieser Woche (Netflix 16.7.). Zweifel am KI-Ertrag belasten die Bewertung, solide Nutzerzahlen stützen.", "teilbranchen": "Verlierer bei KI-Skepsis: KI-schwere Plattformen. Stabil: klassische Telekom." },
+        { "sektor": "Versorger", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Rechenzentren sind zu großen Stromabnehmern geworden, weshalb Versorger vom KI-Ausbau profitieren. Eine Abkühlung würde einen Teil dieser erwarteten Nachfrage infrage stellen.", "teilbranchen": "Gewinner bei KI-Wachstum: Versorger mit Rechenzentrums-Verträgen. Verlierer bei Abkühlung: dieselben Titel." },
+        { "sektor": "Immobilien", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Rechenzentren sind eine eigene Immobilienklasse, deren Vermietung am KI-Ausbau hängt. Zugleich entscheidet der Preisindex am 14.7. über die Zinserwartung, die alle Immobilienfinanzierungen verteuert oder verbilligt.", "teilbranchen": "Gewinner bei KI-Wachstum: Rechenzentrums-Immobilien. Verlierer bei Zinsschock: zinssensible Wohnimmobilien." }
+      ],
+      "company": {
+        "name": "Nvidia",
+        "ticker": "NVDA",
+        "exchange": "NASDAQ",
+        "logoKey": "nvidia",
+        "whatTheyDo": "Nvidia entwirft die Spezialchips, die das Rechnen für künstliche Intelligenz antreiben. Diese Prozessoren stehen in den Rechenzentren von Firmen wie Microsoft, Google und Amazon und erledigen das Training und den Betrieb großer KI-Modelle. Nvidia baut die Chips nicht selbst, sondern lässt sie fertigen und verkauft dazu die passende Software.",
+        "whyItMatters": "Als teuerstes Unternehmen der Welt prägt Nvidia die Stimmung für den gesamten Technologiesektor. Dass die Aktie 2026 hinter dem Halbleiterindex zurückbleibt, wirft die Frage auf, ob der KI-Boom sich abkühlt oder nur eine Verschnaufpause einlegt.",
+        "keyMetrics": [
+          ["Kurs (10.7.)", "210,96 USD (+4,0 %)"],
+          ["Börsenwert (10.7.)", "rund 5,11 Bio. USD"],
+          ["Wertentwicklung seit Jahresbeginn", "rund +5 % (bis Anfang Juli), hinter dem Halbleiterindex"],
+          ["KGV (Kurs-Gewinn-Verhältnis), erwartet", "rund 21"],
+          ["Umsatz Geschäftsjahr 2026", "215,9 Mrd. USD (+65 %)"],
+          ["China-Rechenzentrumsumsatz (Guidance)", "faktisch 0 (zuvor 4,6 Mrd. USD/Quartal)"],
+          ["Durchschnittliches Analysten-Kursziel", "rund 301 USD"]
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Nvidia: erwartetes Kurs-Gewinn-Verhältnis",
+          "subtitle": "heute gegen Fünfjahresschnitt, gerundet",
+          "unit": "",
+          "source": "stockanalysis.com (Forward-KGV); Goldman Sachs (Fünfjahresschnitt), Anfang Juli 2026",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["heute (erwartet)", 21.0],
+            ["5-Jahres-Schnitt", 70.0]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Nvidia schloss am 10.7. bei 210,96 USD (Börsenwert 5,11 Bio.), erwartetes KGV rund 21, Umsatz Geschäftsjahr 2026 215,9 Mrd. USD (+65 %), China-H20-Umsatz von 4,6 Mrd. je Quartal auf null.",
+        "verdict": "bestätigt",
+        "evidence": "Kurs und Börsenwert auf denselben Stichtag (10.7.) gebracht und konsistent (210,96 USD x 24,2 Mrd. Aktien = 5,11 Bio.), Quelle stockanalysis.com. Umsatz und H20-Wegfall über NVIDIA-8-K (Primärquelle). Der frühere Kursanhaltspunkt 196 USD war veraltet und wurde korrigiert. Die exakte Prozentzahl der Branchenindex-Rendite ist zwischen Quellen uneinheitlich, deshalb im Text nur qualitativ."
+      },
+      "lehre": "Die Lehre: Eine fallende Bewertung ist doppeldeutig. Sie kann ein Warnsignal sein oder eine Einstiegschance. Welche der beiden, verrät erst die Zukunft, nämlich ob das Gewinnwachstum hält.",
+      "sources": [
+        { "title": "NVIDIA: Q4 and Fiscal 2026 Financial Results (SEC 8-K)", "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm", "tier": 1 },
+        { "title": "stockanalysis.com: NVDA Übersicht und Bewertung", "url": "https://stockanalysis.com/stocks/nvda/", "tier": 2 },
+        { "title": "Motley Fool: Nvidia stock has only gained 5% so far in 2026", "url": "https://www.fool.com/investing/2026/07/09/nvidia-stock-has-only-gained-5-so-far-in-2026-hist/", "tier": 2 }
+      ]
+    },
+    {
+      "id": "woche-der-wahrheit-banken-cpi",
+      "ressort": "unternehmen",
+      "kicker": "Banken · Makro-Ausblick",
+      "headline": "Die Woche der Wahrheit: JPMorgan eröffnet die Bankensaison, der Preisindex kommt am selben Tag",
+      "subject": "JPMorgan Chase",
+      "dek": "Am Dienstag treffen zwei Kurstreiber aufeinander: die Bilanzen der US-Großbanken und die US-Inflation für Juni. Bei Banken zählt der Zinsüberschuss mehr als der Gewinn je Aktie, und ein einzelner Preiswert kann die nächste Zinsentscheidung drehen.",
+      "image": {
+        "file": "bank-earnings-woche.svg",
+        "alt": "Gestochene Illustration einer Bankfassade mit Säulen neben einem Kalenderblatt, das den Dienstag, 14. Juli zeigt",
+        "caption": "Zwei Termine, ein Tag: JPMorgans Bilanz und der Juni-Preisindex fallen auf den 14. Juli.",
+        "credit": "Illustration: The Capital Compass"
+      },
+      "body": [
+        "Die kommende Handelswoche bündelt zwei Kurstreiber auf einen Tag. Am Dienstag, 14. Juli, berichtet vor Börsenstart JPMorgan Chase, gefolgt von Goldman Sachs, Bank of America, Wells Fargo und Citigroup; um 14:30 Uhr deutscher Zeit erscheint der US-Verbraucherpreisindex für Juni. Danach folgen ASML am 15. Juli sowie TSMC und Netflix am 16. Juli.",
+        "Bei einer Bank liest man die Zahlen anders als bei einer Fabrik. Der wichtigste Ertragsposten ist der Nettozinsertrag, also die Differenz zwischen den Zinsen, die die Bank für Kredite kassiert, und den Zinsen, die sie ihren Sparern zahlt. Für JPMorgan erwartet der Markt hier rund 25,6 Milliarden Dollar und einen Gewinn je Aktie von 5,61 Dollar nach 4,96 Dollar im Vorjahr. Die Aktie notiert nahe ihrem Allzeithoch von 339,22 Dollar mit einem Kurs-Gewinn-Verhältnis um 16, deutlich über dem eigenen Zehnjahresschnitt. Bei so hoher Bewertung genügt ein bloßer Treffer der Erwartungen oft nicht; der Markt achtet auf den Ausblick zum Zinsertrag und auf die Kreditrückstellungen, also das Geld, das die Bank vorsorglich für künftige Ausfälle zurücklegt.",
+        "Gegenargument, wie es unser Skeptiker verlangt: Als Faustregel ist das robust, als Richtungswette nicht. Banken nahe Allzeithoch sind nach soliden Zahlen historisch ebenso oft weitergestiegen, wie sie enttäuscht haben. Ob ein Erwartungstreffer diesmal zu wenig ist, entscheidet vor allem der Ausblick, nicht die Höhe des Kurses.",
+        "Der zweite Termin wirkt über die Zinsen. Der letzte bekannte Preiswert lag im Mai bei einer Gesamtrate von 4,2 Prozent im Jahresvergleich und einer Kernrate von 2,9 Prozent, mehr als das Doppelte des Fed-Ziels von zwei Prozent. Kommt der Juni-Wert über dem Konsens herein, verschieben Anleger ihre Wette Richtung Zinserhöhung auf der Fed-Sitzung am 28. und 29. Juli. Der Leitzins steht bei 3,50 bis 3,75 Prozent, die eigene Projektion der Notenbank für das Jahresende ist zuletzt auf 3,8 Prozent gestiegen, und neun von achtzehn Mitgliedern sehen mindestens eine Erhöhung. Der Ölschub aus der Straße von Hormus erhöht das Risiko, dass die Teuerung hartnäckig über vier Prozent bleibt."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine Bank verdient vor allem an der Zinsdifferenz zwischen Krediten und Einlagen, dem Nettozinsertrag. Deshalb bewegt bei Bankaktien der Ausblick auf diese Marge den Kurs oft stärker als der gemeldete Gewinn. Am selben Tag entscheidet der Preisindex, wie der Markt die nächste Zinsentscheidung einpreist, und Zinsen sind für Banken die wichtigste Stellschraube.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Wie ein einziger Inflationswert eine ganze Notenbank-Sitzung dreht",
+        "absaetze": [
+          "Am 14. Juli erscheint eine einzige Zahl, die US-Verbraucherpreise für Juni. Warum kann ein einzelner Datenpunkt die Erwartung an eine Zinsentscheidung zwei Wochen später kippen? Weil die Notenbank ihren Leitzins an der Inflation ausrichtet. Eine grobe Faustformel dafür ist die Taylor-Regel: Liegt die Inflation über dem Ziel von zwei Prozent, gehört der Zins höher; kühlt sie ab, darf er sinken. Kommt der Juni-Wert höher herein als der Konsens, also der Durchschnitt der Analystenschätzungen, verschieben Anleger sofort ihre Wette darauf, dass die Fed am 28. und 29. Juli erhöht. Es ist die Erwartung, die sich ändert, nicht schon der Zins selbst.",
+          "Die Zinserwartung wirkt über zwei Hebel auf Kurse. Erstens der Realzins, der Preis dafür, Geld heute statt später zu halten. Zweitens der Barwert künftiger Gewinne: Eine Aktie ist wert, was ihre kommenden Gewinne heute wert sind. Je höher der Zins, mit dem man diese Zukunft auf heute zurückrechnet, desto weniger ist ein Gewinn in fünf oder zehn Jahren heute wert. Deshalb treffen steigende Zinserwartungen Wachstumsunternehmen härter, deren Gewinne weit in der Zukunft liegen, als Firmen mit stabilen Gewinnen heute. So kann ein einziger Preiswert über den Abzinsungssatz Milliarden an Börsenwert bewegen, ohne dass ein Unternehmen selbst etwas gemeldet hat.",
+          "Neu ist die Rolle der Kommunikation. Fed-Chef Kevin Warsh hat die Forward Guidance abgeschafft, also den früher üblichen Ausblick auf den wahrscheinlichen Zinspfad. Diese Vorab-Ankerung nahm den Daten einen Teil ihrer Sprengkraft, weil der Markt den Kurs schon kannte. Dass ihr Wegfall die Ausschläge vergrößert, ist allerdings eine Interpretation, keine gemessene Größe: Einen Preiswert bewegt die Zinserwartung vor allem dann stark, wenn er deutlich vom Konsens abweicht, und das gälte auch mit Guidance. Sicher ist dagegen das Grundprinzip: Eine Notenbank kann einen Angebotsschock wie teureres Öl aus der Straße von Hormus nicht direkt beheben. Sie kann nur verhindern, dass aus einem einmaligen Preissprung dauerhafte Inflation wird, indem sie die Zweitrundeneffekte bremst, also die Weitergabe höherer Energiekosten in Löhne und andere Preise. Der Preis dafür ist eine gedämpfte Konjunktur."
+        ]
+      },
+      "company": {
+        "name": "JPMorgan Chase",
+        "ticker": "JPM",
+        "exchange": "NYSE",
+        "logoKey": "jpmorgan",
+        "whatTheyDo": "JPMorgan ist die größte Bank der USA. Sie verdient auf drei Wegen: an der Zinsdifferenz zwischen Einlagen und Krediten, an Gebühren für die Beratung bei Firmenübernahmen und Börsengängen, und am Wertpapierhandel für Kunden. Wenn JPMorgan berichtet, gilt das als Gradmesser für die gesamte US-Wirtschaft.",
+        "whyItMatters": "JPMorgan macht am 14. Juli den Auftakt der US-Bankensaison und setzt den Ton für Goldman Sachs, Bank of America, Wells Fargo und Citigroup. Aus seinen Zahlen liest der Markt ab, wie gesund Kreditnehmer, Firmenkunden und Kapitalmärkte gerade sind.",
+        "keyMetrics": [
+          ["Konsens-Gewinn je Aktie Q2 2026", "5,61 USD (Vorjahr 4,96)"],
+          ["Konsens-Erlöse Q2 2026", "rund 49,56 Mrd. USD"],
+          ["Konsens-Nettozinsertrag Q2 2026", "rund 25,61 Mrd. USD"],
+          ["Kurs (Allzeithoch-Schluss 7.7.)", "339,22 USD"],
+          ["KGV (Kurs-Gewinn-Verhältnis)", "rund 16"],
+          ["Ziel Eigenkapitalrendite (RoTCE)", "rund 17 %"],
+          ["Termin Quartalszahlen", "14. Juli 2026, vor Börsenstart"]
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Inflation im Mai, weit über dem Ziel",
+          "subtitle": "Jahresrate in Prozent, letzter bekannter Wert vor dem Juni-Bericht",
+          "unit": " %",
+          "source": "BLS, CNBC (Mai 2026, veröffentlicht 10.6.2026)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["Gesamtrate", 4.2],
+            ["Kernrate", 2.9],
+            ["Fed-Ziel", 2.0]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "JPMorgan-Konsens Q2: 5,61 USD je Aktie, Erlöse 49,56 Mrd., Nettozinsertrag 25,61 Mrd.; Termin 14.7. vorbörslich; CPI Mai 4,2 % / Kern 2,9 %; Fed-Leitzins 3,50-3,75 %, Sitzung 28./29.7.",
+        "verdict": "bestätigt",
+        "evidence": "Bank-Konsens über Barchart, ATH-Schluss 339,22 USD über Macrotrends. CPI Mai 4,2 / 2,9 über BLS (Primärquelle) und CNBC gegengeprüft; die zuvor kursierenden 4,17 / 2,82 waren falsch. Fed-Dot-Median 3,8 % und Sitzungstermin über CNBC belegt."
+      },
+      "lehre": "Die Lehre: Bei einer Bank ist der Zinsüberschuss die eigentliche Nachricht, nicht der Gewinn je Aktie. Und ein einzelner Inflationswert bewegt die Zinserwartung vor allem dann, wenn er vom Konsens abweicht.",
+      "sources": [
+        { "title": "Barchart: JPMorgan Chase Q2 2026 Earnings, What to Expect", "url": "https://www.barchart.com/story/news/2644246/jpmorgan-chases-q2-2026-earnings-what-to-expect", "tier": 2 },
+        { "title": "BLS: Consumer Price Index, May 2026", "url": "https://www.bls.gov/news.release/archives/cpi_06102026.htm", "tier": 1 },
+        { "title": "CNBC: Fed interest rate decision, June 2026", "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html", "tier": 2 }
+      ]
+    },
+    {
+      "id": "industriestrompreis-einordnung",
+      "ressort": "politik",
+      "kicker": "Berlin · Energie",
+      "headline": "Warum der Industriestrompreis die Börse für energieintensive Werte bewegt",
+      "subject": "Industriestrompreis",
+      "dek": "Deutschland deckelt den Strompreis für die Industrie, nicht für Verbraucher. Für Chemie, Stahl und Glas ist das ein direkter Kostenhebel, und der Hintergrund, vor dem eine tief gefallene Stahlaktie diese Woche neu bewertet wurde.",
+      "image": {
+        "file": "stromsteuer-strommast.svg",
+        "alt": "Gestochene Illustration eines Hochspannungsmasts mit Leitungen zu einer Fabrik am Horizont, davor ein Preisschild mit fünf Cent",
+        "caption": "Fünf Cent je Kilowattstunde als Ziel: Die Entlastung gilt der Industrie, nicht den Haushalten.",
+        "credit": "Illustration: The Capital Compass"
+      },
+      "body": [
+        "Einordnung statt Eilmeldung: Der deutsche Industriestrompreis ist kein frisches Wochenendereignis, sondern ein Regelwerk, das die EU-Kommission bereits am 16. April 2026 genehmigt hat. Es ist an diesem Wochenende relevant, weil die energieintensive Industrie im Fokus steht, allen voran der Stahlkonzern Salzgitter, dessen Aktie am Freitag nach einer Analysten-Hochstufung und einer Übernahme deutlich anzog.",
+        "Die Eckpunkte: Energieintensive Betriebe sollen ab dem Förderjahr 2026 Strom zu einem Zielpreis von rund fünf Cent je Kilowattstunde erhalten, befristet bis 2028 und begrenzt auf rund 91 Wirtschaftszweige wie Chemie, Stahl, Glas und Halbleiter. Bezuschusst wird höchstens die Hälfte des Jahresverbrauchs, das Budget liegt bei 3,8 Milliarden Euro. Zusätzlich sinkt die Stromsteuer für das produzierende Gewerbe dauerhaft auf das europäische Mindestmaß. Private Haushalte und der Handel gehen bei dieser Entlastung leer aus, was der eigentliche politische Streitpunkt ist.",
+        "Für den Kapitalmarkt wirken drei Kanäle. Erstens der Kostenkanal: Ein niedrigerer Strompreis senkt einen Hauptkostenblock energieintensiver Produktion und stützt die Margen von Chemie-, Stahl- und Glaswerten mit deutschem Schwerpunkt. Zweitens der Verteilungskanal: Weil Haushalte und viele Dienstleister weiter den vollen Preis zahlen, entsteht kein breiter Kaufkraftimpuls für den Konsum. Drittens der Fiskalkanal: Die Subvention belastet den Bundeshaushalt und steht damit gegen andere Ausgaben.",
+        "Restrisiko: Ob der Zielpreis von fünf Cent tatsächlich erreicht wird, hängt vom Börsenstrompreis und von der Höhe des Zuschusses ab und ist nicht garantiert. Und die Befristung bis 2028 lässt offen, wie es danach weitergeht. Eine gezielte Subvention verschiebt Wettbewerbsvorteile, sie schafft sie nicht dauerhaft."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine Subvention senkt den Preis künstlich unter das Marktniveau. Deckelt der Staat den Strompreis für die Industrie, sinkt dort ein großer Kostenblock, und die Gewinne der begünstigten Branchen steigen tendenziell. Wer nicht auf der Liste steht, zahlt weiter voll. Die Differenz trägt der Staatshaushalt, und genau dort entsteht der politische Zielkonflikt.",
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Der gedeckelte Industriestrompreis senkt den Preis für Großverbraucher künstlich und stützt den Stromabsatz an die Industrie. Für Öl und Gas als Brennstoff ändert sich wenig, weil die Subvention den Preis, nicht die Menge betrifft.", "teilbranchen": "Leicht positiv: Stromhändler und Erzeuger mit hohem Industriekundenanteil." },
+        { "sektor": "Grundstoffe", "betroffenheit": "direkt", "richtung": "positiv", "mechanismus": "Chemie, Metalle und Baustoffe zählen zu den energieintensivsten Branchen. Ein gedeckelter Strompreis senkt ihre Stromrechnung direkt und verbessert die Wettbewerbsfähigkeit gegenüber dem Ausland.", "teilbranchen": "Gewinner: energieintensive Chemie (BASF, Covestro, Wacker Chemie), Stahl (Salzgitter), Aluminium, Zement." },
+        { "sektor": "Industrie", "betroffenheit": "direkt", "richtung": "positiv", "mechanismus": "Produzierendes Gewerbe mit hohem Stromeinsatz profitiert unmittelbar von der dauerhaften Senkung der Stromsteuer auf das EU-Minimum. Niedrigere Fixkosten stützen Marge und Standortentscheidungen.", "teilbranchen": "Gewinner: Maschinenbau und Grundstoffindustrie; auch Land- und Forstwirtschaft einbezogen." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "kaum", "richtung": "negativ", "mechanismus": "Private Verbraucher gehen bei der Entlastung leer aus, ihre Stromrechnung bleibt hoch. Das lässt real etwas weniger Geld für Anschaffungen.", "teilbranchen": "Leicht negativ: konsumnahe Händler und Autobauer über die Kaufkraft der Haushalte." },
+        { "sektor": "Basiskonsum", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Energieintensive Lebensmittelhersteller können profitieren, sofern sie als Großverbraucher gelten. Als Verbraucher zahlen Haushalte weiter den vollen Strompreis.", "teilbranchen": "Gewinner: energieintensive Nahrungsmittelverarbeiter. Verlierer: Handel mit schwächerer Kaufkraft." },
+        { "sektor": "Gesundheit", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Kliniken und Pharmawerke verbrauchen Strom, doch die Nachfrage nach Gesundheitsleistungen ändert sich durch den Strompreis nicht. Ein kleiner Kostenvorteil ist möglich, falls Werke als Großverbraucher qualifizieren.", "teilbranchen": "Geringer Kostenvorteil möglich: energieintensive Pharmaproduktion." },
+        { "sektor": "Finanzen", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Banken und Versicherer sind kaum stromintensiv. Indirekt kann eine wettbewerbsfähigere Industrie die Kreditqualität ihrer Firmenkunden verbessern.", "teilbranchen": "Leicht positiv über bessere Bonität von Industriekunden." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Software und Hardware sind selten stromintensiv genug, um im Fokus zu stehen. Betreiber großer Rechenzentren könnten je nach Einstufung profitieren.", "teilbranchen": "Möglicher Vorteil: stromintensive Rechenzentren, falls anspruchsberechtigt." },
+        { "sektor": "Kommunikation", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Telekomnetze verbrauchen Strom, doch die Entlastung zielt auf produzierendes Gewerbe. Ein spürbarer Effekt auf Medien und Plattformen ist nicht zu erwarten.", "teilbranchen": "Geringer Effekt bei stromintensivem Netzbetrieb möglich." },
+        { "sektor": "Versorger", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Versorger setzen die Tarife um und profitieren von stabiler Industrienachfrage, doch die Subvention läuft über den Staat, nicht über höhere Margen. Die Ausgestaltung entscheidet, wer die Differenz trägt.", "teilbranchen": "Gewinner: Versorger mit hohem Industrieabsatz durch planbarere Nachfrage." },
+        { "sektor": "Immobilien", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Gewerbe- und Wohnimmobilien profitieren nicht direkt, weil private Nebenkosten unverändert bleiben. Industrieimmobilien könnten durch einen gestärkten Standort etwas gefragter sein.", "teilbranchen": "Leicht positiv: Industrie- und Logistikimmobilien. Wohnimmobilien neutral." }
+      ],
+      "factcheck": {
+        "claim": "Industriestrompreis: Zielpreis rund 5 ct/kWh, befristet 2026-2028, rund 91 Branchen, maximal halber Jahresverbrauch, Budget 3,8 Mrd. Euro, EU-Genehmigung 16.4.2026; Stromsteuer für produzierendes Gewerbe dauerhaft auf EU-Minimum.",
+        "verdict": "bestätigt",
+        "evidence": "Eckpunkte über das Bundeswirtschaftsministerium (Primärquelle) und produktion.de belegt. Ausdrücklicher Hinweis: Die EU-Genehmigung datiert auf den 16.4.2026, das Regelwerk fällt also nicht in den Berichtszeitraum 11./12.7.; es wird hier als Hintergrund geführt, nicht als aktuelles Ereignis der Ausgabe."
+      },
+      "lehre": "Die Lehre: Eine gezielte Subvention verschiebt Wettbewerbsvorteile und schafft zugleich einen Gegenposten im Staatshaushalt. Wer profitiert, hängt davon ab, wer als Großverbraucher gilt.",
+      "sources": [
+        { "title": "Bundeswirtschaftsministerium: Industriestrompreis wird eingeführt", "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/04/20260416-industriestrompreis-wird-eingefuehrt.html", "tier": 1 },
+        { "title": "produktion.de: Industriestrompreis kommt, Entlastung geplant", "url": "https://www.produktion.de/wirtschaft/industriestrompreis-kommt-entlastung-geplant/2128114", "tier": 2 }
+      ]
+    },
+    {
+      "id": "gold-bitcoin-nervositaet",
+      "ressort": "makro",
+      "kicker": "Rohstoffe · Krypto",
+      "headline": "Gold nahe Rekord, Bitcoin im Bärenmarkt, zwei Seiten derselben Nervosität",
+      "subject": "Gold und Bitcoin",
+      "dek": "Das eine Fluchtgeld steigt, das andere fällt. Gold notiert nahe seinem Höchststand, Bitcoin rund die Hälfte unter seinem Hoch. Beides erzählt von einem Markt, der Risiko meidet, aber auf verschiedene Weise.",
+      "body": [
+        "Am Rohstoffmarkt spiegelt sich die Unsicherheit des Wochenendes in zwei gegenläufigen Bewegungen. Gold eröffnete am Freitag im August-Future bei rund 4.135 Dollar je Feinunze und notiert damit nahe seinem Rekord, gut ein Viertel über dem Niveau von Anfang 2025. Bitcoin dagegen pendelt um 64.300 Dollar und liegt damit rund 49 Prozent unter seinem Allzeithoch von 126.198 Dollar aus dem Oktober 2025. Die börsengehandelten US-Bitcoin-Fonds verzeichneten im Juni Rekord-Nettoabflüsse von gut vier Milliarden Dollar, dem höchsten Monatswert seit ihrer Einführung.",
+        "Interpretation: Beide Anlagen gelten als Fluchtgeld, doch sie reagieren auf verschiedene Ängste. Gold ist der klassische Krisenschutz und profitiert von Geopolitik wie der Hormus-Eskalation und von der Sorge, dass die Inflation hartnäckig bleibt. Bitcoin verhält sich in dieser Phase eher wie eine riskante Wachstumsanlage: Steigt die Risikoscheu, ziehen Anleger Geld ab, und die Fondsabflüsse verstärken den Rückgang zusätzlich.",
+        "Einordnung und Unsicherheit: Gold ist kein reiner Angstmesser. Es reagiert auch auf den Realzins, also den Zins nach Abzug der Inflation. Steigen die Realzinsen, weil die Notenbank hart bleibt, wird zinsloses Gold relativ unattraktiver, was den Preis bremsen kann. Deshalb ist die aktuelle Nähe zum Rekord kein Selbstläufer. Kursziele einzelner Häuser für den Goldpreis lassen wir bewusst weg, weil sich die Prognosen widersprechen."
+      ],
+      "mechanik": "Mechanik einfach erklärt: In nervösen Phasen suchen Anleger einen sicheren Hafen. Gold gilt seit jeher als solcher und steigt, wenn die Angst wächst. Bitcoin dagegen wird derzeit wie eine riskante Wachstumsanlage gehandelt und fällt, wenn Anleger Risiko abbauen. Dass beide am selben Wochenende gegenläufig laufen, zeigt, dass sicherer Hafen keine feste Eigenschaft ist, sondern eine Rolle, die der Markt zuweist.",
+      "factcheck": {
+        "claim": "Gold rund 4.135 USD (August-Future, 10.7.); Bitcoin rund 64.300 USD, etwa 49 % unter dem Allzeithoch von 126.198 USD; US-Bitcoin-ETFs mit Rekord-Nettoabfluss von gut 4 Mrd. USD im Juni.",
+        "verdict": "bestätigt",
+        "evidence": "Goldpreis über CNBC, Bitcoin-Kurs und Allzeithoch über Fortune, der ETF-Rekordabfluss über Bloomberg. Eine scheingenaue Abflusszahl (4,06 bzw. 4,5 Mrd.) wurde bewusst vermieden, weil die Datentracker sich widersprechen; Bloomberg spricht von rund vier Milliarden."
+      },
+      "lehre": "Die Lehre: Sicherer Hafen ist keine feste Eigenschaft. Gold und Bitcoin galten beide als Krisenschutz, doch in derselben Woche bewegen sie sich gegenläufig.",
+      "sources": [
+        { "title": "CNBC: The price of gold today, July 10, 2026", "url": "https://www.cnbc.com/select/the-price-of-gold-today-july-10-2026/", "tier": 2 },
+        { "title": "Fortune: Price of Bitcoin, July 10, 2026", "url": "https://fortune.com/article/price-of-bitcoin-07-10-2026/", "tier": 2 },
+        { "title": "Bloomberg: Bitcoin ETFs face record 4 billion in June outflows", "url": "https://www.bloomberg.com/news/articles/2026-06-29/bitcoin-btc-etfs-face-record-4-billion-in-june-outflows-worst-since-launch", "tier": 2 }
+      ]
+    }
+  ],
+  "branchenMonitor": [
+    { "sektor": "Energie", "wasIstDas": "Firmen, die Öl und Gas fördern, transportieren und verarbeiten.", "lage": "Klarer Profiteur der Woche: Die Sperr-Erklärung für die Straße von Hormus verknappt das Angebot und treibt den Ölpreis, was Förderer und Tankerreeder begünstigt.", "richtung": "up", "tagesWert": "Brent ~76 USD, WTI ~71,40 USD, Wochenplus ~5 % bzw. ~4 % (10.7., Barchart/Vantage/CNBC)" },
+    { "sektor": "Grundstoffe", "wasIstDas": "Hersteller von Rohstoffen wie Chemie, Metallen und Baustoffen.", "lage": "Zwei gegenläufige Kräfte: höhere Ölkosten belasten die Chemie, der Industriestrompreis wirkt dagegen kostensenkend für Titel wie BASF und Salzgitter.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Industrie", "wasIstDas": "Maschinenbau, Fahrzeugbau, Luftfahrt, Logistik und Rüstung.", "lage": "Gemischt: teures Kerosin und teure Fracht belasten Luftfahrt und Logistik, während Rüstung von der Eskalation und die stromintensive Fertigung von der Entlastung profitieren.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Zyklischer Konsum", "wasIstDas": "Anbieter entbehrlicher Güter wie Autos, Reisen und Restaurants.", "lage": "Unter Druck: höhere Spritpreise mindern die Kaufkraft, und private Haushalte gehen bei der Strom-Entlastung leer aus.", "richtung": "down", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Basiskonsum", "wasIstDas": "Anbieter von Alltagsgütern wie Lebensmitteln und Drogerieartikeln.", "lage": "Defensiv gefragt: In der geopolitischen Unsicherheit gelten stabile Marken als sicherer Hafen, höhere Energiekosten dämpfen den Vorteil aber leicht.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Gesundheit", "wasIstDas": "Pharma, Medizintechnik und Gesundheitsdienstleister.", "lage": "Ruhiger Zufluchtsort: kaum vom Ölpreis oder Chipzyklus berührt, könnte aber Kapital aus teuren Tech-Werten anziehen.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Finanzen", "wasIstDas": "Banken, Versicherer und Vermögensverwalter.", "lage": "Vor der Woche der Wahrheit: US-Großbank-Zahlen und der Juni-Preisindex am 14.7. bestimmen die Richtung; See- und Kriegsversicherer tragen zugleich höhere Schäden aus Hormus.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Informationstechnologie", "wasIstDas": "Hersteller von Chips, Hardware und Software.", "lage": "Unter Druck: Chinas Billig-Chips und der auf nahe null gefallene China-Umsatz von Nvidia nähren Zweifel am KI-Boom vor den Berichten von ASML (15.7.) und TSMC (16.7.).", "richtung": "down", "tagesWert": "Nvidia 210,96 USD (10.7.), rund +5 % seit Jahresbeginn bis Anfang Juli; keine belegten Sektorindexdaten" },
+    { "sektor": "Kommunikation", "wasIstDas": "Telekomanbieter, Medien und Internetplattformen.", "lage": "Zweigeteilt: KI-schwere Plattformen leiden unter der KI-Skepsis, klassische Telekom bleibt stabil; Netflix berichtet am 16.7.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Versorger", "wasIstDas": "Betreiber von Strom-, Gas- und Wassernetzen sowie Kraftwerken.", "lage": "Gegenläufig: Gaskraftwerke spüren höhere Brennstoffkosten, während KI-Rechenzentren als neue Großabnehmer und die Industriestrom-Regel die Nachfrage stützen.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" },
+    { "sektor": "Immobilien", "wasIstDas": "Eigentümer und Verwalter von Wohn-, Gewerbe- und Spezialimmobilien.", "lage": "Zinsabhängig und abwartend: Ein ölgetriebener Inflationsschub und der Preisindex am 14.7. könnten die Finanzierungskosten anheben; Rechenzentrums-Immobilien hängen am KI-Ausbau.", "richtung": "neutral", "tagesWert": "keine Sektordaten belegt" }
+  ],
+  "stockPicks": [
+    {
+      "name": "Hafnia Limited",
+      "ticker": "HAFN (Oslo/NYSE)",
+      "logoKey": "hafnia",
+      "marketCapEUR": "ca. 3,1 Mrd. €",
+      "capSource": "498,57 Mio. Aktien (stockanalysis.com) x 7,14 USD Schlusskurs 10.7.2026 = 3,56 Mrd. USD; umgerechnet mit EUR/USD 1,141 (10.7., valutafx) rund 3,12 Mrd. €.",
+      "whatTheyDo": "Hafnia besitzt und betreibt rund 200 Tanker, die vor allem Ölprodukte wie Benzin, Diesel und Kerosin über die Meere transportieren. Die Firma sitzt auf Bermuda und ist in Oslo und New York gelistet. Sie verdient an den Tagesmieten, die Kunden für die Nutzung der Schiffe zahlen.",
+      "thesis": "Hafnia zeigt beispielhaft, wie ein geopolitisches Nadelöhr auf einen zyklischen Geschäftsgewinn hebelt. Reeder verdienen an Spot-Raten, also kurzfristigen Tagesmieten: Wird eine Meerenge zum Nadelöhr, werden freie Schiffe knapp und die Miete schießt hoch, weil Öl trotzdem transportiert werden muss. Fakt und zugleich Warnung: Die zuletzt genannten Golf-Tankerraten von rund 190.500 Dollar pro Tag stammen aus einer Phase der Teilöffnung, nicht aus der Wiedersperrung vom 12. Juli; sie sind eine Momentaufnahme des Ratenniveaus in der Krise, kein direkter Beleg für den behaupteten Zusammenhang.",
+      "counterarguments": [
+        "Zweischneidige Geopolitik: Eine Wiederöffnung der Straße ist für Produktentanker das eigentliche Risiko. Laut Berichten warten über 800 Schiffe auf die Durchfahrt; kommt diese aufgestaute Tonnage auf einen Schlag in den Markt, drücken die Spot-Raten, statt zu steigen.",
+        "Hafnia meidet den Golf: Das Unternehmen hat erklärt, vorerst nicht in die Straße zurückzukehren, was den unmittelbaren Ratenhebel für genau diese Reederei relativiert.",
+        "Extreme Volatilität und schwankende Dividende: Spot-Raten drehen schnell, und die Ausschüttungspolitik von 80 Prozent des Quartalsgewinns bedeutet, dass die Dividende in schwachen Quartalen einbricht. Genannte Renditen sind Momentaufnahmen, keine planbaren Zahlungen."
+      ],
+      "catalysts": [
+        "Q2-Zahlen mit Dividendenankündigung, voraussichtlich im August 2026",
+        "CEO-Wechsel zum 1. September 2026 (Gründer Mikael Skov übergibt intern)",
+        "Fortgang der möglichen Konsolidierung mit TORM (Hafnia hält rund 14 Prozent)",
+        "weitere Eskalation oder Deeskalation an der Straße von Hormus als direkter Ratentreiber"
+      ],
+      "confidence": "mittel"
+    },
+    {
+      "name": "Salzgitter AG",
+      "ticker": "SZG (Xetra)",
+      "logoKey": "salzgitter",
+      "marketCapEUR": "ca. 3,2 Mrd. €",
+      "capSource": "60.097.000 Aktien (Salzgitter Investor Relations, Aktienprofil) x rund 53 € Xetra-Kurs am 10.7.2026 (finanzen.ch) = rund 3,19 Mrd. €.",
+      "whatTheyDo": "Salzgitter ist einer der großen deutschen Stahlhersteller mit Sitz in Niedersachsen. Der Konzern produziert Flachstahl und Rohre und hält zudem eine große Beteiligung am Kupferkonzern Aurubis. Stahl ist ein stark schwankendes, energieintensives Geschäft.",
+      "thesis": "Salzgitter ist ein Lehrstück, wie eine einzelne Analysten-Neubewertung plus ein Strukturumbau eine tief gefallene Zyklikeraktie neu bepreisen. JPMorgan stufte die Aktie von Underweight auf Overweight hoch und verdoppelte das Kursziel von 31,40 auf 65 Euro; die Aktie sprang am 10. Juli rund zehn Prozent. Dazu kommt die Vollübernahme der Hüttenwerke Krupp Mannesmann (Verträge 8. Juli, Übertragung 9. Juli) mit geplantem Elektrolichtbogenofen. Wichtig zur Ehrlichkeit: Der Aurubis-Anteil von 29,99 Prozent ist öffentlich bekannt und daher kein verstecktes Extra, sondern dürfte längst im Kurs stecken.",
+      "counterarguments": [
+        "Ein einzelnes Kursziel von 65 Euro ist ein Ausreißer, kein Marktkonsens. Eine verdoppelte Zielmarke einer Bank ist eine Meinung, keine bereits eingetretene Verbesserung der Fundamentaldaten.",
+        "Turnarounds bei Stahlzyklikern scheitern historisch oft, weil der Gewinn am Stahlpreis und an Chinas Überproduktion hängt, die das Unternehmen nicht steuert. Europas Stahlnachfrage ist strukturell schwach.",
+        "Umbaurisiko: Die HKM-Vollübernahme bringt eine kapitalintensive Anlage samt Personalabbau von rund 3.000 auf etwa 1.000 Beschäftigte ins Haus; der Umstieg auf den Elektroofen erfordert hohe Investitionen mit Finanzierungs- und Ausführungsrisiko.",
+        "Der Aurubis-Anteil lässt sich nicht ohne Weiteres zu Geld machen und schwankt mit dem Kupfermarkt; als bloßer Buchwert taugt er nicht als Extra-Argument."
+      ],
+      "catalysts": [
+        "erste Integrationsschritte der HKM-Übernahme und Details zum E-Ofen-Investitionsplan",
+        "Halbjahreszahlen 2026, voraussichtlich im August",
+        "politische Entscheidungen zum Industriestrompreis und zu EU-Schutzmaßnahmen für Stahl",
+        "weitere Analystenreaktionen nach der JPMorgan-Hochstufung"
+      ],
+      "confidence": "mittel"
+    },
+    {
+      "name": "SUSS MicroTec SE",
+      "ticker": "SMHN (Xetra)",
+      "logoKey": "suss-microtec",
+      "marketCapEUR": "ca. 1,5 Mrd. €",
+      "capSource": "19,12 Mio. Aktien (finanzen.net, 3.7.2026) x rund 79,55 € Schlusskurs nach dem Ausverkauf (finanztrends.de, 10.7.2026) = rund 1,52 Mrd. €.",
+      "whatTheyDo": "SUSS MicroTec baut Spezialmaschinen, mit denen Chiphersteller ihre Halbleiter fertigen und zusammensetzen. Die Anlagen werden unter anderem für Hochleistungsspeicher (HBM) und modernes Chip-Packaging gebraucht. Zu den Kunden zählen TSMC, Samsung, Micron und SK Hynix.",
+      "thesis": "SUSS MicroTec illustriert das Konzentrationsrisiko eines Ausrüsters, der an den Investitionsentscheidungen weniger Großkunden hängt. In der Woche vom 8. Juli traf ein scharfer Ausverkauf bei KI-Chipwerten, ausgelöst unter anderem von Berichten, dass SK Hynix seinen HBM-Ausbau verlangsamt. Die SUSS-Aktie fiel an einem Tag rund acht Prozent auf etwa 79,55 Euro und liegt damit rund ein Drittel unter ihrem Juni-Hoch. Drosselt ein einziger Kunde seine Investitionen, trifft das den Zulieferer oft härter als den Chiphersteller selbst, weil dessen Umsatz direkt am Auftragseingang für neue Maschinen hängt.",
+      "counterarguments": [
+        "Der Rücksetzer relativiert wenig: Trotz minus einem Drittel vom Hoch steht die Aktie seit Jahresbeginn immer noch rund 95 Prozent im Plus und preist damit weiter hohe Erwartungen ein. Das Abwärtsrisiko ist erst teilweise abgebaut.",
+        "Dass ein Ausrüster stärker schwankt als sein Kunde, ist die Regel, nicht die Ausnahme; die kräftige Bewegung ist teils eine Frage von operativem Hebel und dünnem Handel, nicht nur der Fundamentaldaten.",
+        "Kundenkonzentration: Wenige große HBM- und Packaging-Kunden bestimmen den Auftragseingang; eine Investitionsbremse bei SK Hynix schlägt direkt durch."
+      ],
+      "catalysts": [
+        "Halbjahres- bzw. Q2-Zahlen mit Auftragseingang, voraussichtlich Ende Juli oder Anfang August 2026",
+        "weitere Investitionssignale der HBM-Kunden SK Hynix, Micron und Samsung",
+        "Branchenausblick: SEMI erwartet 2026 über 50 Mrd. USD für 300-mm-Speicher-Equipment (plus 29 Prozent)"
+      ],
+      "confidence": "mittel"
+    }
+  ],
+  "watchlist": [
+    { "what": "Straße von Hormus, Tankerverkehr und Brent-Preis", "when": "laufend; Handelsstart Montag 13.7.", "bullishIf": "Deeskalation oder bestätigte Wiederöffnung; die Risikoprämie fällt, Brent zurück Richtung 70 USD, entlastet Kosten und Inflation", "bearishIf": "physische Blockade oder weitere Angriffe; Brent über 85 USD, breiter Margendruck bei Fluglinien und Chemie plus neuer Inflationsschub" },
+    { "what": "US-Verbraucherpreise (CPI) für Juni", "when": "Dienstag 14.7., 14:30 MESZ", "bullishIf": "Gesamt- und Kernrate unter Konsens; die Zinserhöhungswette für 28./29.7. sinkt, Bewertungen vor allem im Tech entlastet", "bearishIf": "Gesamtrate klar über 4,2 % oder Kernrate über 2,9 %; der Markt preist eine Fed-Erhöhung ein, Renditen und Abzinsungssatz steigen" },
+    { "what": "US-Bankbilanzen zum Quartalsstart (JPMorgan u. a.)", "when": "ab Dienstag 14.7.", "bullishIf": "solide Zinsüberschüsse, niedrige Kreditrückstellungen und ein besserer Ausblick stützen den Finanzsektor", "bearishIf": "steigende Risikovorsorge oder schwaches Investmentbanking als Signal für eine Konjunkturabkühlung" },
+    { "what": "Fed-Sitzung unter Warsh ohne Forward Guidance", "when": "28./29.7.2026", "bullishIf": "Leitzins bei 3,50-3,75 % bestätigt und Ton weniger restriktiv; die Erwartungen beruhigen den Anleihemarkt", "bearishIf": "Zinserhöhung oder deutlich restriktive Sprache; ohne Guidance drohen stärkere Kursausschläge" },
+    { "what": "Gold- und Bitcoin-Kapitalströme", "when": "laufend; entscheidend rund um CPI 14.7. und Fed 28./29.7.", "bullishIf": "anhaltende Notenbank-Nachfrage stützt Gold; eine Rückkehr von ETF-Zuflüssen dreht das Bitcoin-Momentum", "bearishIf": "steigende Realzinsen belasten Gold; fortgesetzte ETF-Abflüsse drücken Bitcoin unter das Junitief" }
+  ],
+  "learningNotes": [
+    "Ein Ölpreis ist ein Erwartungspreis. Er reagiert auf die eingepreiste Gefahr einer künftigen Lieferunterbrechung, nicht erst auf tatsächliche Ausfälle; eine verhaltene Reaktion zeigt, dass der Markt Reservekapazität und Wiederöffnung schon gegenrechnet.",
+    "Eine fallende Bewertung ist doppeldeutig. Nvidias gesunkenes Kurs-Gewinn-Verhältnis kann Warnsignal oder Einstiegschance sein; welche der beiden, entscheidet allein, ob das Wachstum hält.",
+    "Bei einer Bank ist der Nettozinsertrag die eigentliche Nachricht, nicht der Gewinn je Aktie. Nahe Allzeithoch reicht ein bloßer Erwartungstreffer oft nicht, es zählt der Ausblick.",
+    "Ein einzelner Datenpunkt bewegt Märkte vor allem durch die Abweichung vom Konsens. Der Juni-Preisindex dreht die Zinserwartung für die Fed dann am stärksten, wenn er überrascht.",
+    "Ein Zulieferer schwankt stärker als sein Kunde. Weil SUSS MicroTecs Umsatz am Auftragseingang weniger Großkunden hängt, trifft ihn eine Investitionsbremse härter als den Chiphersteller selbst."
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Warum man eine Bank anders liest als eine Fabrik",
+    "absaetze": [
+      "Am 14. Juli legt JPMorgan Zahlen vor. Bei einem normalen Unternehmen fragt man zuerst nach Umsatz und Marge. Bei einer Bank ist der wichtigste Ertragsposten der Nettozinsertrag: die Differenz zwischen den Zinsen, die die Bank für Kredite kassiert, und den Zinsen, die sie ihren Sparern zahlt. Der Konsens erwartet hier rund 25,6 Milliarden Dollar für das Quartal. Dazu kommen Gebühren aus dem Investmentbanking, also Beratung bei Übernahmen und Börsengängen, sowie Erlöse aus dem Wertpapierhandel.",
+      "Die Bilanz ist bei einer Bank das eigentliche Geschäft, nicht nur Beiwerk. Kredite sind ihr größter Vermögenswert, Kundeneinlagen ihre größte Schuld. Weil eine Bank auf jeden Euro Eigenkapital ein Vielfaches an Krediten vergibt, entscheidet ein kleiner Prozentsatz an Ausfällen über sehr viel Gewinn. Deshalb schaut der Markt auf die Kreditrückstellungen, also Geld, das die Bank vorsorglich für künftige Ausfälle zurücklegt. Steigen diese stark, signalisiert die Bank eine schwächer eingeschätzte Wirtschaft, selbst wenn der aktuelle Gewinn gut aussieht.",
+      "Der Cashflow einer Bank ist schwerer zu deuten als bei einer Fabrik, weil das Ein- und Ausströmen von Geld ihr eigentliches Produkt ist. Aussagekräftiger ist die Eigenkapitalrendite, im Fachjargon Return on Tangible Common Equity: Sie misst, wie viel Gewinn die Bank aus dem eigenen Kapital der Aktionäre herausholt. JPMorgan nennt als Ziel rund 17 Prozent. Diese Kennzahl verrät, ob eine Bank ihr Kapital wirklich produktiv einsetzt oder nur groß, aber wenig rentabel ist.",
+      "Bei der Bewertung nutzt man für Banken oft das Verhältnis von Kurs zu Buchwert, also zum bilanziellen Eigenkapital, statt nur das Kurs-Gewinn-Verhältnis. JPMorgan notiert mit einem KGV um 16 nahe seinem Allzeithoch und über dem eigenen Zehnjahresschnitt. Der Kurs preist also schon eine sehr gut verdienende Bank ein. Damit die Aktie nach den Zahlen steigt, reicht ein bloßer Treffer oft nicht; der Markt will einen besseren Ausblick zum Zinsertrag oder niedrigere Rückstellungen sehen."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler: nur auf den Gewinn je Aktie zu schauen und einen Schlag über der Erwartung als gutes Zeichen zu werten. Bei Banken kann ein Gewinnsprung entstehen, weil die Bank Kreditrückstellungen auflöst, also vorsorglich zurückgelegtes Geld zurückholt. Das hebt den Gewinn heute, kann aber bedeuten, dass zu wenig Vorsorge für morgen bleibt. Wer Rückstellungen und Eigenkapitalrendite ignoriert, verwechselt einen buchhalterischen Effekt mit echter Ertragskraft."
+  },
+  "glossar": [
+    { "begriff": "Risikoprämie", "erklaerung": "Der Aufschlag, den Käufer heute für ein Gut zahlen, um sich gegen ein künftiges Risiko abzusichern. Beim Öl steigt sie mit der Angst vor einer Lieferunterbrechung, oft lange bevor tatsächlich Öl fehlt." },
+    { "begriff": "Straße von Hormus", "erklaerung": "Die schmale Meerenge zwischen Iran und der Arabischen Halbinsel. Durch sie läuft rund ein Fünftel des weltweit per Schiff transportierten Öls, weshalb sie als Nadelöhr der Weltwirtschaft gilt." },
+    { "begriff": "Spot-Rate (Tanker)", "erklaerung": "Die kurzfristige Tagesmiete für ein Schiff. Sie schwankt stark: Werden freie Tanker knapp, etwa an einem Nadelöhr, schießt die Rate hoch und dreht ebenso schnell wieder nach unten." },
+    { "begriff": "Nettozinsertrag", "erklaerung": "Bei einer Bank die Differenz zwischen den Zinsen, die sie für Kredite einnimmt, und den Zinsen, die sie für Einlagen zahlt. Der wichtigste Ertragsposten und oft kursrelevanter als der Gewinn je Aktie." },
+    { "begriff": "Verbraucherpreisindex (CPI)", "erklaerung": "Ein Maß für die Inflation, das die Preisentwicklung eines typischen Warenkorbs erfasst. Weicht er vom Konsens ab, verschiebt er die Erwartung an die nächste Zinsentscheidung." },
+    { "begriff": "Multiple-Kompression", "erklaerung": "Wenn der Markt für denselben erwarteten Gewinn ein niedrigeres Vielfaches zahlt, das Kurs-Gewinn-Verhältnis also sinkt, obwohl der Gewinn wächst. Grund ist eine niedrigere oder unsicherere Wachstumserwartung." },
+    { "begriff": "Forward Guidance", "erklaerung": "Der Ausblick einer Notenbank auf ihren wahrscheinlichen Zinspfad. Fed-Chef Warsh hat sie abgeschafft; ohne diese Vorab-Ankerung reagieren Märkte tendenziell stärker auf einzelne Datenpunkte." },
+    { "begriff": "Dot-Plot", "erklaerung": "Eine Grafik, in der jedes stimmberechtigte Fed-Mitglied anonym seine Zinserwartung als Punkt einträgt. Der Median gibt einen Hinweis auf den erwarteten Zinspfad, ist aber Projektion, keine Zusage." },
+    { "begriff": "Realzins", "erklaerung": "Der Zins nach Abzug der Inflation. Er ist entscheidend für zinslose Anlagen wie Gold: Steigt der Realzins, wird Gold relativ unattraktiver." },
+    { "begriff": "Bärenmarkt", "erklaerung": "Ein anhaltender Kursrückgang, meist als Minus von 20 Prozent oder mehr gegenüber dem letzten Hoch definiert. Bitcoin liegt rund 49 Prozent unter seinem Allzeithoch." }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "Hormus-Eskalation im Berichtszeitraum: Angriff auf den Frachter GFS Galaxy am 11.7., iranische Sperr-Erklärung 11./12.7., dritte US-Angriffswelle am 12.7.; zwei getrennte Wellen (7./8.7. und 11./12.7.), die zweite fällt in den Berichtszeitraum (Washington Post, The Hill, Al Jazeera).",
+      "Sperrung ist eine gewaltsam durchgesetzte iranische Erklärung, keine bestätigte physische Vollblockade; der koordinierte Schiffsverkehr kam weitgehend zum Erliegen (Al Jazeera, The Hill).",
+      "Brent ~76 USD, Wochenplus ~5 %; WTI-Frontmonat (August) ~71,40 USD, Wochenplus ~4 % (Barchart CLQ26, Vantage/CNBC, 10.7.).",
+      "Markt-Kacheln 10.7.: S&P 500 7.575,39 (+0,42 %), Dow 52.637 (+0,29 %), übrige Indexwerte aus der belegten Vorausgabe übernommen (dds.finance, Trading Economics).",
+      "Gold ~4.135 USD (August-Future) am 10.7. (CNBC, Trading Economics); Bitcoin ~64.300 USD, rund 49 % unter dem Allzeithoch 126.198 USD vom 6.10.2025 (Fortune).",
+      "US-Bitcoin-ETFs mit Rekord-Nettoabfluss von gut 4 Mrd. USD im Juni (Bloomberg); scheingenaue Einzelzahl bewusst vermieden.",
+      "CPI Mai: Gesamtrate 4,2 %, Kernrate 2,9 % (BLS, CNBC); frühere Werte 4,17/2,82 waren falsch. Juni-CPI erscheint am 14.7.",
+      "Fed: Leitzins 3,50-3,75 %, Dot-Median Jahresende 2026 = 3,8 %, 9 von 18 sehen mindestens eine Erhöhung, Warsh ohne Forward Guidance; nächste Sitzung 28./29.7. (CNBC).",
+      "Nvidia 10.7.: Kurs 210,96 USD (+4,0 %), Börsenwert 5,11 Bio. USD (konsistent bei 24,2 Mrd. Aktien); erwartetes KGV ~21; Umsatz Geschäftsjahr 2026 215,9 Mrd. USD (+65 %); China-H20-Umsatz von 4,6 Mrd./Quartal auf 0; Ø-Kursziel ~301 (NVIDIA 8-K, stockanalysis.com).",
+      "JPMorgan-Konsens Q2: EPS 5,61 (Vorjahr 4,96), Erlöse ~49,56 Mrd., Nettozinsertrag ~25,61 Mrd.; ATH-Schluss 339,22 USD (7.7.); RoTCE-Ziel ~17 %; Termin 14.7. vorbörslich (Barchart, Macrotrends).",
+      "Industriestrompreis: Zielpreis ~5 ct/kWh, 2026-2028, ~91 Branchen, max. halber Jahresverbrauch, Budget 3,8 Mrd. Euro, EU-Genehmigung 16.4.2026 (BMWE, produktion.de); als Hintergrund geführt, nicht als Ereignis des Berichtszeitraums.",
+      "Stock-Picks Börsenwert je unter 10 Mrd. €: Hafnia ~3,12 Mrd. € (7,14 USD, 10.7.), Salzgitter ~3,19 Mrd. €, SUSS MicroTec ~1,52 Mrd. € (stockanalysis.com, Salzgitter IR, finanzen.net/finanztrends.de).",
+      "Salzgitter: JPMorgan Underweight->Overweight, Kursziel 31,40->65 €, +10 % am 10.7.; HKM-Vollübernahme (Verträge 8.7., Übertragung 9.7.); Aurubis-Anteil 29,99 %; HKM-Beschäftigte von ~3.000 auf ~1.000 (dpa-AFX/onvista, Aurubis IR, goldesel.de).",
+      "Hafnia: Kurs ~7,14 USD (10.7.), TORM-Anteil 13,97 %, Golf-Tankerraten ~190.500 USD/Tag als Momentaufnahme aus der Teilöffnungsphase (Seatrade Maritime, Nasdaq/Robinhood).",
+      "SUSS MicroTec: 79,55 € (-8 %) am 10.7., rund -33 % vom Juni-Hoch 118,40 €, seit Jahresbeginn ~+95 %; SEMI-Ausblick 300-mm-Speicher-Equipment 52 Mrd. USD (+29 %) für 2026 (finanztrends.de, SEMI)."
+    ],
+    "uncertain": [],
+    "gaps": []
+  }
+}

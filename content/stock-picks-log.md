@@ -11,3 +11,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-10-morning | Siltronic AG (WAF) | mittel _(Beispiel-Ausgabe)_
 - 2026-07-10-morning | Levi Strauss & Co. (LEVI) | niedrig _(Beispiel-Ausgabe)_
 - 2026-07-10-morning | Jenoptik AG (JEN) | mittel _(Beispiel-Ausgabe)_
+- 2026-07-12-update-16 | Hafnia Limited (HAFN) | mittel
+- 2026-07-12-update-16 | Salzgitter AG (SZG) | mittel
+- 2026-07-12-update-16 | SUSS MicroTec SE (SMHN) | mittel

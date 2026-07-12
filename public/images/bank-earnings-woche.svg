@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Gestochene Illustration: Bankgebäude mit Säulen neben einem aufgeschlagenen Kalenderblatt">
+  <defs>
+    <pattern id="be-hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#111111" stroke-width="0.9" opacity="0.22"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="560" fill="#f4efe6"/>
+  <rect x="14" y="14" width="1172" height="532" fill="none" stroke="#111111" stroke-width="2.5"/>
+  <rect x="22" y="22" width="1156" height="516" fill="none" stroke="#111111" stroke-width="0.8"/>
+
+  <!-- Bankfassade links -->
+  <g stroke="#111111" fill="#f4efe6">
+    <!-- Giebel -->
+    <path d="M150 176 L370 96 L590 176 Z" stroke-width="2.4"/>
+    <path d="M170 176 L370 104 L570 176" stroke-width="0.9" opacity="0.6"/>
+    <!-- Architrav -->
+    <rect x="150" y="176" width="440" height="20" stroke-width="2"/>
+    <!-- Säulen -->
+    <g stroke-width="1.8">
+      <rect x="178" y="196" width="30" height="184"/>
+      <rect x="256" y="196" width="30" height="184"/>
+      <rect x="334" y="196" width="30" height="184"/>
+      <rect x="412" y="196" width="30" height="184"/>
+      <rect x="490" y="196" width="30" height="184"/>
+    </g>
+    <g stroke-width="0.7" opacity="0.55">
+      <line x1="187" y1="200" x2="187" y2="376"/><line x1="199" y1="200" x2="199" y2="376"/>
+      <line x1="265" y1="200" x2="265" y2="376"/><line x1="277" y1="200" x2="277" y2="376"/>
+      <line x1="343" y1="200" x2="343" y2="376"/><line x1="355" y1="200" x2="355" y2="376"/>
+      <line x1="421" y1="200" x2="421" y2="376"/><line x1="433" y1="200" x2="433" y2="376"/>
+      <line x1="499" y1="200" x2="499" y2="376"/><line x1="511" y1="200" x2="511" y2="376"/>
+    </g>
+    <!-- Sockel/Stufen -->
+    <rect x="138" y="380" width="464" height="12" stroke-width="1.8"/>
+    <rect x="122" y="392" width="496" height="12" stroke-width="1.4"/>
+  </g>
+  <text x="370" y="152" font-family="Georgia, serif" font-size="17" letter-spacing="4" text-anchor="middle" fill="#111111">BANQUE</text>
+
+  <!-- Kalenderblatt rechts: der 14. Juli als Termin -->
+  <g stroke="#111111" fill="#f4efe6">
+    <rect x="720" y="150" width="360" height="248" rx="8" stroke-width="2.4"/>
+    <rect x="720" y="150" width="360" height="52" rx="8" fill="url(#be-hatch)" stroke-width="2.4"/>
+    <line x1="720" y1="202" x2="1080" y2="202" stroke-width="1.6"/>
+    <!-- Ringbindung -->
+    <line x1="780" y1="138" x2="780" y2="168" stroke-width="2.4"/>
+    <line x1="900" y1="138" x2="900" y2="168" stroke-width="2.4"/>
+    <line x1="1020" y1="138" x2="1020" y2="168" stroke-width="2.4"/>
+  </g>
+  <g font-family="Georgia, serif" fill="#111111" text-anchor="middle">
+    <text x="900" y="188" font-size="17" letter-spacing="3">DIENSTAG · JULI</text>
+    <text x="900" y="320" font-size="104" letter-spacing="2">14</text>
+    <text x="900" y="372" font-size="15" font-style="italic" opacity="0.72">Bilanzen und Teuerung</text>
+  </g>
+
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#111111" text-anchor="middle">
+    <text x="600" y="474" font-size="25" letter-spacing="5">DIE WOCHE DER WAHRHEIT</text>
+    <text x="600" y="500" font-size="15" font-style="italic" opacity="0.7">Bankbilanzen und Inflation, Tafel III · The Capital Compass</text>
+  </g>
+  <line x1="440" y1="448" x2="760" y2="448" stroke="#111111" stroke-width="1"/>
+  <line x1="490" y1="452" x2="710" y2="452" stroke="#111111" stroke-width="0.6"/>
+</svg>

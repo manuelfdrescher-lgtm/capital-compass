@@ -307,10 +307,31 @@
   },
   "fresenius": {
     "file": "fresenius.svg",
-    "name": "Fresenius",
+    "name": "Fresenius SE",
     "source": "https://commons.wikimedia.org/wiki/File:Fresenius_Logo.svg",
     "license": "Public domain",
     "artist": "Fresenius SE &amp; Co. KGaA",
     "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "hafnia": {
+    "file": null,
+    "name": "Hafnia Limited",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "salzgitter": {
+    "file": "salzgitter.svg",
+    "name": "Salzgitter AG",
+    "source": "https://commons.wikimedia.org/wiki/File:SZAG_Wortbildmarke_de_links_rgb_4477.svg",
+    "license": "CC BY-SA 4.0",
+    "artist": "SalzgitterAG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "suss-microtec": {
+    "file": "suss-microtec.svg",
+    "name": "SUSS MicroTec SE",
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCss_Microtec_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
   }
 }
