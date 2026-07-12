@@ -80,25 +80,32 @@ npm run ingest pfad/zur/ausgabe.json -- --commit  # zusätzlich committen
 git push                                          # veröffentlichen
 ```
 
-## Automatischer Betrieb (GitHub Actions)
+## Automatischer Betrieb: bewusst session-basiert, nicht GitHub Actions
 
-| Workflow | Auslöser | Zweck |
-|---|---|---|
-| `.github/workflows/deploy.yml` | jeder Push auf `main`, manuell | Validieren, bauen, auf GitHub Pages veröffentlichen |
-| `.github/workflows/edition.yml` | Cron `0 5 * * *` und `30 20 * * *` (UTC), manuell mit Slot-Auswahl | Komplette Ausgabe erzeugen, committen, deployen |
+Eine vollautomatische Cloud-Pipeline über GitHub Actions würde einen bezahlten `ANTHROPIC_API_KEY` benötigen (separates Abrechnungskonto, keine Nutzung des normalen Claude-Abos). Realistische Kosten bei 2 Ausgaben täglich mit gründlicher Websuche: grob **200–330 €/Monat**. Bewusste Entscheidung: **kein bezahlter API-Zugang**, daher kein `.github/workflows/`-Automatismus.
 
-Die Cron-Zeiten entsprechen **07:00 und 22:30 Uhr Europe/Berlin bei Sommerzeit**. GitHub-Cron kennt keine Zeitzonen; im Winter (MEZ) laufen die Jobs um 06:00/21:30 Uhr deutscher Zeit. Wer exakt bleiben will, stellt die Crons im Winter auf `0 6 * * *` und `30 21 * * *` um (Kommentar dazu steht im Workflow).
+Stattdessen läuft die Redaktion **innerhalb einer Claude-Code-Sitzung** (das bestehende Abo deckt das ab, keine Zusatzkosten), ausgelöst durch einen wiederkehrenden Weckruf. Ein einziger Aufruf erledigt alles bis zur fertigen, live verifizierten und per Mail verschickten Ausgabe:
 
-### Benötigte Secrets
+```bash
+node scripts/edition.mjs --slot morning     # oder evening, update-10/13/16/19
+```
 
-Repository → Settings → Secrets and variables → Actions → New repository secret:
+Das Skript erzeugt die Ausgabe, validiert, baut, deployt automatisch auf GitHub Pages, **prüft selbst per HTTP-Abruf, dass die Seite wirklich live ist**, und verschickt danach die E-Mail (siehe unten). Kein manuelles Copy-Paste von Deploy-Befehlen mehr nötig.
 
-| Secret | Wozu |
-|---|---|
-| `ALPHAVANTAGE_API_KEY` | Kursdaten (Free Tier: 25 Abrufe/Tag) |
-| `ANTHROPIC_API_KEY` | Agenten-Redaktion (Claude) in GitHub Actions |
+**Einschränkung:** Der Weckruf-Mechanismus ist an eine offene Claude-Code-Sitzung gebunden und verfällt nach etwa 7 Tagen bzw. Sitzungsende — kein echter Autopilot, der auch bei geschlossenem Laptop läuft. Neu scharfschalten: Claude im Projektordner öffnen und sagen „richte den Update-Zeitplan wieder ein".
 
-GitHub Pages einmalig aktivieren: Settings → Pages → Source: **GitHub Actions**.
+### Automatischer Mailversand (kostenlos über Gmail)
+
+Jede fertige Ausgabe wird automatisch per Mail an `manuel.f.drescher@gmail.com` verschickt (Titelseiten-Teaser, Markt-Kacheln, Link zur Live-Ausgabe). Läuft über Gmail-SMTP mit einem App-Passwort, keine Kosten, kein Drittanbieter. Einmalig einzurichten:
+
+1. Auf [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) ein App-Passwort für „Mail" erzeugen (2-Faktor-Anmeldung muss aktiv sein).
+2. Im Projektordner eine Datei `.env` anlegen (wird nie committet, steht in `.gitignore`) mit zwei Zeilen:
+   ```
+   GMAIL_USER=deine-adresse@gmail.com
+   GMAIL_APP_PASSWORD=das-16-stellige-app-passwort
+   ```
+
+Ohne `.env` wird der Mailversand automatisch übersprungen, der Rest der Pipeline läuft trotzdem normal durch.
 
 ## Datenquellen und Verifikationsregeln
 
