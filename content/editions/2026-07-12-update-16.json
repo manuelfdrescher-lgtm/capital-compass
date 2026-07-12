@@ -246,7 +246,13 @@
           "url": "https://www.barchart.com/futures/quotes/CLQ26",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Die Straße von Hormus: ein schmales Nadelöhr, durch das ein Fünftel des Welthandels mit Öl fließt.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "nvidia-neubewertung",
@@ -422,7 +428,13 @@
           "url": "https://www.fool.com/investing/2026/07/09/nvidia-stock-has-only-gained-5-so-far-in-2026-hist/",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "nvidia-neubewertung.jpg",
+        "alt": "Makroaufnahme eines Hochleistungs-Chips auf einer Platine in einem Rechenzentrum mit blauem und grünem Licht",
+        "caption": "Der Chip, um den sich die Bewertungsfrage dreht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "woche-der-wahrheit-banken-cpi",
@@ -531,7 +543,13 @@
           "url": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "bank-cpi-woche.jpg",
+        "alt": "Glasfassade eines Bank-Hochhauses im Finanzviertel bei Sonnenaufgang, Passanten auf der Straße",
+        "caption": "Bankensaison und Inflationsdaten treffen in derselben Woche aufeinander.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "industriestrompreis-einordnung",
@@ -643,7 +661,13 @@
           "url": "https://www.produktion.de/wirtschaft/industriestrompreis-kommt-entlastung-geplant/2128114",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "industriestrompreis.jpg",
+        "alt": "Hochspannungsmasten vor einer Industrieanlage mit Schornsteinen bei Dämmerung",
+        "caption": "Strompreise für die Industrie: eine unsichtbare, aber entscheidende Kostenzeile.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "gold-bitcoin-nervositaet",
@@ -680,7 +704,13 @@
           "url": "https://www.bloomberg.com/news/articles/2026-06-29/bitcoin-btc-etfs-face-record-4-billion-in-june-outflows-worst-since-launch",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "gold-bitcoin.jpg",
+        "alt": "Gestapelte Goldbarren mit warmem, dramatischem Streiflicht auf dunklem Untergrund",
+        "caption": "Gold nahe Rekordniveau: das klassische Signal für Nervosität an den Märkten.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     }
   ],
   "branchenMonitor": [
