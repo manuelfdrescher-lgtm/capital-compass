@@ -107,6 +107,26 @@ try {
         await page.evaluate(() => document.querySelectorAll("details").forEach((d) => (d.open = true)));
         await page.waitForTimeout(150);
 
+        // Lazy geladene Bilder (loading="lazy", z. B. Logo-Chips tief auf der
+        // Seite) erzwingen: durchscrollen und auf vollständiges Laden warten,
+        // damit Full-Page-Screenshots keine leeren Chips zeigen.
+        await page.evaluate(async () => {
+          const step = window.innerHeight;
+          for (let y = 0; y < document.body.scrollHeight; y += step) {
+            window.scrollTo(0, y);
+            await new Promise((r) => setTimeout(r, 30));
+          }
+          window.scrollTo(0, 0);
+        });
+        await page.evaluate(() =>
+          Promise.all(
+            Array.from(document.images)
+              .filter((img) => !img.complete)
+              .map((img) => new Promise((r) => { img.onload = img.onerror = r; }))
+          )
+        );
+        await page.waitForTimeout(200);
+
         // Horizontales Überlaufen (Seite darf nie seitlich scrollen)
         const overflow = await page.evaluate(() => {
           const doc = document.documentElement;

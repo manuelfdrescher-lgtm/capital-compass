@@ -46,7 +46,8 @@ function bar(v) {
       const y = padTop + i * rowH;
       const { x, len } = bar(v);
       const positive = v >= 0;
-      const valueLabel = `${v > 0 ? "+" : ""}${formatNumberDE(v)}${chart.unit ?? ""}`;
+      const sign = !chart.absolute && v > 0 ? "+" : "";
+      const valueLabel = `${sign}${formatNumberDE(v)}${chart.unit ?? ""}`;
       const labelX = positive ? x + len + 6 : x - 6;
       return (
         <g>

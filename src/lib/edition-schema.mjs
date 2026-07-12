@@ -57,6 +57,9 @@ export const ChartSchema = z.object({
   unit: z.string().default(""),
   source: nonEmpty,
   allPositive: z.boolean().default(false),
+  // Werte sind absolute Niveaus (z. B. KGV, Inflationsrate), keine
+  // Veränderungen: dann kein "+"-Vorzeichen an die Wertelabels setzen.
+  absolute: z.boolean().default(false),
   // Balken-Chart: [["Label", 2.8], ...]
   data: z.array(z.tuple([z.string(), z.number()])).optional(),
   // Linien-Chart: [{t, v}, ...]
