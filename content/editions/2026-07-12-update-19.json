@@ -1,0 +1,747 @@
+{
+  "edition": {
+    "number": 3,
+    "date": "2026-07-12",
+    "slot": "update-19",
+    "dataAsOf": "Kurse: US-Handelsschluss Freitag, 10. Juli 2026; Börsen am Wochenende geschlossen. Öl- und Gold-Werte als ca.-Angaben aus Tier-1/2-Quellen (Gold-Spot 12.7.). Nachrichten bis Redaktionsschluss Sonntag, 12. Juli, ca. 19:00 MESZ. Intraday-Update ohne neues Alpha-Vantage-Kursdatenbudget; Markt-Kacheln übernehmen den Freitag-Schluss oder sind mit approx:true gekennzeichnet.",
+    "generatedAt": "2026-07-12T17:05:00Z",
+    "isExample": false
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.575,39",
+        "delta": "+0,42 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss Freitag 10.7.; Wochenende ohne Handel"
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "26.281,61",
+        "delta": "+0,29 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss Freitag 10.7."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "52.637,01",
+        "delta": "+0,29 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss Freitag 10.7."
+      },
+      {
+        "label": "Russell 2000",
+        "value": "2.977,81",
+        "delta": "-0,49 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Freitag 10.7."
+      },
+      {
+        "label": "DAX",
+        "value": "25.067,09",
+        "delta": "-0,20 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Freitag 10.7."
+      },
+      {
+        "label": "VIX (Volatilitätsindex, das Angstbarometer der Wall Street)",
+        "value": "15,03",
+        "delta": "-5,11 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Freitag 10.7.; die Wochenend-Eskalation am Golf ist hierin noch nicht enthalten"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,56 %",
+        "direction": "flat",
+        "approx": false,
+        "note": "Schluss Freitag 10.7. (Advisor Perspectives/Fed H.15)"
+      },
+      {
+        "label": "Öl (WTI)",
+        "value": "71,40 USD",
+        "delta": "+4 % (Woche)",
+        "direction": "up",
+        "approx": true,
+        "note": "ca., August-Frontmonat, Schluss Freitag 10.7.; Öl-Futures am Wochenende geschlossen, kein Sonntagabend-Kurs. Brent ~76 USD, Wochenplus ~5 % (Barchart, Forbes/Trading Economics)"
+      },
+      {
+        "label": "Gold",
+        "value": "4.122 USD",
+        "delta": "-1,5 % (Woche)",
+        "direction": "down",
+        "approx": true,
+        "note": "ca., Spot 12.7. (Forbes Advisor, Trading Economics); rund ein Viertel unter dem Januar-Hoch von ~5.602 USD, also NICHT nahe Rekord"
+      },
+      {
+        "label": "US-Leitzins (Fed)",
+        "value": "3,50-3,75 %",
+        "direction": "flat",
+        "approx": false,
+        "note": "seit Juni-Sitzung; nächste Entscheidung 28./29.7."
+      },
+      {
+        "label": "Bitcoin",
+        "value": "64.300 USD",
+        "delta": "+3 % (Woche)",
+        "direction": "up",
+        "approx": true,
+        "note": "ca., Stand Freitag 10.7. (Fortune); rund 49 % unter dem Allzeithoch von 126.198 USD (Okt. 2025)"
+      },
+      {
+        "label": "EZB-Einlagenzins",
+        "value": "2,25 %",
+        "direction": "flat",
+        "approx": false,
+        "note": "seit 17.6.2026; Hauptrefinanzierungssatz 2,40 %"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "golf-eskalation-woche-der-wahrheit",
+      "ressort": "titelseite",
+      "kicker": "Geopolitik · Makro",
+      "headline": "Am Golf verhärten sich die Fronten, und an der Wall Street beginnt die Stunde der Wahrheit",
+      "subject": "Straße von Hormus",
+      "dek": "Die Hormus-Gespräche in Muscat scheitern ohne Ergebnis, Iran greift Katar, die Emirate, Bahrain und Kuwait an. Pünktlich zum Wochenstart treffen Inflationsdaten, Bankbilanzen und ein auf Zinserhöhung gepolter Notenbankchef aufeinander. Ob daraus ein echter Schock wird, hängt am Ölpreis.",
+      "body": [
+        "Der Sonntag hat die Lage am Golf verschärft, statt sie zu entspannen. In Muscat, der Hauptstadt Omans, endeten am 12. Juli die Verhandlungen über die Sicherheit der Schifffahrt durch die Straße von Hormus ohne Durchbruch. Auf iranischer Seite verhandelte Außenminister Abbas Araghtschi, auf omanischer Außenminister Badr al-Busaidi, Katar vermittelte parallel Richtung Washington. Beide Seiten vereinbarten lediglich, die Gespräche auf politischer und technischer Ebene fortzusetzen, also kein Ergebnis. Schon am Morgen hatte Iran Raketen und Drohnen auf mehrere Golfstaaten abgefeuert, bestätigt sind Ziele in Katar, den Vereinigten Arabischen Emiraten, Bahrain und Kuwait; in Katar wurden nach Angaben des Innenministeriums drei Menschen durch herabfallende Trümmer verletzt, darunter ein Kind. Die USA meldeten eine dritte Angriffswelle, nach CENTCOM-Angaben rund 140 Ziele und über 300 in der Woche, eine Zahl aus offizieller Selbstauskunft, nicht unabhängig überprüft.",
+        "Das Neue an dieser Eskalationsstufe ist die Richtung der Gewalt. In der Vorwoche ging es vor allem um den Transportweg, also um Tanker und die Meerenge selbst. Jetzt werden die Förderländer direkt beschossen. Das hebt die Lage von einem bloßen Risikoaufschlag hin zu der Frage, ob echtes Angebot ausfällt. Durch die Straße von Hormus läuft rund ein Fünftel des weltweit per Schiff transportierten Öls, in absoluten Zahlen grob 20 Millionen Fass am Tag. Die Prämien für Fahrten durch die Meerenge sind laut Fachdiensten stark gestiegen, der Branchendienst Lloyd's List berichtet von zweistelligen Millionenbeträgen je Fahrt.",
+        "Und doch ist Vorsicht geboten, wie es unser Skeptiker verlangt. Der Ölmarkt behandelt die Sperre bislang als teilweise umgehbar und zeitlich begrenzt. Brent, die Nordseesorte, schloss am Freitag bei rund 76 US-Dollar, ein Wochenplus von etwa fünf Prozent. Für ein Nadelöhr, durch das ein Fünftel des seetransportierten Öls läuft und das seit Wochen wiederholt für gesperrt erklärt wird, ist das eine erstaunlich kleine Bewegung. Ein Preis um 76 Dollar ist mit einer dauerhaften Vollblockade nicht vereinbar. Er sagt: Der Markt rechnet mit Ausnahmen, Umgehungen und einer begrenzten Dauer. Wichtig auch: Die Öl-Futures waren am Redaktionsschluss am Sonntagabend geschlossen, wie die Wochenend-Eskalation eingepreist wird, ist noch nicht messbar.",
+        "In genau diese Gemengelage fällt die wichtigste Datenwoche des Sommers. Am Dienstag, 14. Juli, erscheinen die US-Verbraucherpreise für Juni; der Konsens erwartet eine Gesamtrate von rund 3,9 Prozent nach 4,2 Prozent im Mai, die Kernrate lag im Mai bei 2,9 Prozent. Am selben Tag eröffnen JPMorgan, Citigroup und Wells Fargo die US-Bankensaison, Goldman Sachs und Bank of America folgen am Mittwoch. Und der neue Notenbankchef Kevin Warsh tritt erstmals vor den Kongress, am Dienstag vor das Repräsentantenhaus, am Mittwoch vor den Senat. Warsh gilt als hawkish, also als eher auf harte Inflationsbekämpfung bedacht, und hat die Forward Guidance abgeschafft, den früher üblichen Ausblick auf den Zinspfad.",
+        "Interpretation, klar als solche gekennzeichnet: Aus der Verkettung entsteht eine Zwickmühle. Ein ölgetriebener Angebotsschock hebt die Inflation und bremst zugleich die Konjunktur. Ein normaler Nachfrageeinbruch würde die Notenbank zu Zinssenkungen einladen, ein Angebotsschock verlangt das Gegenteil. Bekämpft die Fed die Teuerung mit höheren Zinsen, verschärft sie die Konjunkturbremse; stützt sie die Wirtschaft, riskiert sie, dass sich hohe Inflation in den Erwartungen festsetzt. Steigende Zinserwartungen wirken über den Abzinsungssatz: Weil eine Aktie den heutigen Wert künftiger Gewinne verkörpert, drückt ein höherer Zins vor allem die Bewertung von Wachstumsfirmen, deren Gewinne weit in der Zukunft liegen.",
+        "Einschränkung und Gegenargument: Der Juni-Preisindex misst einen Monat, der weitgehend vor der jüngsten Öl-Spitze lag, er ist ein Rückspiegel und für die aktuelle Golf-Lage nur begrenzt aussagekräftig. Und Notenbanken schauen historisch durch reine Angebotsschocks hindurch, solange die langfristigen Inflationserwartungen verankert bleiben. Die Zwickmühle wird erst dann real, wenn diese Erwartungen sich lösen. Genau deshalb ist die kommende Woche kein Selbstläufer in die eine oder andere Richtung, sondern eine Belastungsprobe mit offenem Ausgang. Die Bankbilanzen liefern dazu den ersten harten Datenpunkt, der Ölpreis am Montag den ersten Stimmungstest."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Ölpreis reagiert nicht erst, wenn Öl fehlt, sondern schon auf die Gefahr, dass es fehlen könnte, das ist die Risikoprämie. Steigt diese Prämie, verteuert sich Energie, und die erwartete Inflation steigt. Eine Notenbank, die Inflation bekämpft, denkt dann eher an höhere Zinsen. Höhere Zinsen wiederum drücken Aktienkurse, weil künftige Gewinne stärker abgezinst, also kleingerechnet werden. So verbindet ein Konflikt am Golf über mehrere Stationen den Tanker mit dem Depot.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Diesmal werden nicht nur der Transportweg, sondern die Golf-Förderländer selbst beschossen. Das hebt die Lage von einem bloßen Risikoaufschlag hin zu einem drohenden echten Angebotsausfall, denn durch die Straße von Hormus läuft rund ein Fünftel des per Schiff transportierten Öls. Ein höherer Ölpreis hebt unmittelbar die Verkaufserlöse der Förderfirmen.",
+          "teilbranchen": "Gewinner: Öl- und Gasförderer außerhalb der Golfregion (ConocoPhillips, ExxonMobil), Tankerreeder über steigende Frachtraten. Verlierer: Förderer mit Anlagen in Reichweite der Angriffe (Saudi Aramco, ADNOC). Gemischt: Raffinerien, wenn teures Rohöl die Marge drückt."
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Chemie und Kunststoff nutzen Öl und Gas zugleich als Rohstoff und als Energie. Springt der Ölpreis wegen des drohenden Golf-Ausfalls, verteuern sich Vorprodukte und Produktionskosten sofort, das drückt die Marge.",
+          "teilbranchen": "Verlierer: energieintensive Chemie (BASF, Covestro, Dow). Gemischt: Hersteller, die höhere Kosten über die Preise weitergeben können."
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Energie- und Treibstoffkosten belasten Fertigung, Luftfahrt und Logistik, während die direkte militärische Eskalation am Golf die erwarteten Rüstungs- und Sicherheitsausgaben erhöht. Zusätzlich stauen sich Lieferketten, wenn Reedereien die Meerenge meiden.",
+          "teilbranchen": "Verlierer: Fluggesellschaften und Speditionen über teuren Kerosin- und Dieselpreis, Umwege verlängern Transportzeiten. Gewinner: Rüstungskonzerne (RTX, Lockheed Martin) durch erwartete Mehrausgaben."
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Steigende Spritpreise wirken wie eine zusätzliche Steuer auf den Haushalt und lassen weniger Geld für Autos, Reisen und Restaurants. Verschärft der Ölschub die für Dienstag erwartete Inflation, drohen zudem höhere Zinsen und teurere Ratenkredite.",
+          "teilbranchen": "Verlierer: Autobauer, Reise- und Freizeitwerte durch schwächere Kauflust und höhere Finanzierungskosten."
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Lebensmittel und Drogerieartikel werden weiter gekauft, weil ihre Nachfrage kaum am Ölpreis hängt, das macht den Sektor in Krisenphasen zum Zufluchtsort. Zugleich verteuern höhere Energie- und Frachtkosten die Herstellung; Marken mit Preissetzungsmacht geben das weiter, schwächere nicht.",
+          "teilbranchen": "Relativ gefragt: defensive Großmarken (Procter & Gamble, Nestlé) als sicherer Hafen. Verlierer: Hersteller mit hohem Energie- und Transportanteil."
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen hängt kaum am Ölpreis, weil sie nicht aufschiebbar ist. In einer Risikophase kann defensives Kapital in den Sektor fließen, ein kleiner Kostenkanal bleibt über Energie und die Kühlkette.",
+          "teilbranchen": "Leicht positiv als defensiver Wert: Pharma (Johnson & Johnson, Roche). Geringer Kosteneffekt bei energieintensiver Kühllogistik."
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Die direkten Angriffe treffen die See- und Kriegsversicherer über höhere Schadenlast und Prämien, die laut Fachdiensten stark gestiegen sind. Für Banken fällt der Ölschock mit dem Start der Bilanzsaison und dem Preisindex am Dienstag zusammen, beide steuern die Zinserwartung und damit die Zinsmarge.",
+          "teilbranchen": "Verlierer: See- und Kriegsversicherer über die Schadenlast. Gewinner: Rohstoffhandel und Investmentbanken über hohes Handelsvolumen. Gemischt: Großbanken (JPMorgan, Citi) je nach Zinsausblick nach dem Bericht am 14.7."
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "kaum",
+          "richtung": "negativ",
+          "mechanismus": "Chips und Software brauchen wenig Öl, doch als Wachstumssektor leidet Technologie unter der gestiegenen Risikoscheu und höheren Zinserwartungen. Steigen die Zinsen, werden künftige Gewinne stärker abgezinst und heute weniger wert, was hoch bewertete Titel besonders trifft.",
+          "teilbranchen": "Leicht negativ: Halbleiter und Software über die allgemeine Risk-off-Stimmung und die Zinserwartung vor dem Preisindex."
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Telekom und Medien sind vom Ölpreis fast unabhängig, weil ihre Netze kaum Treibstoff benötigen und ihre Erlöse aus Abonnements und Werbung stammen. Wachstumslastige Plattformen spüren nur die allgemeine Risikostimmung.",
+          "teilbranchen": "Defensiv stabil: klassische Telekom (Deutsche Telekom, Verizon). Leicht negativ: werbeabhängige Plattformen bei Risk-off."
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Gas- und ölbefeuerte Kraftwerke haben höhere Brennstoffkosten, solange die regulierten Tarife nicht mitziehen. Betreiber mit viel Wind, Sonne und Kernkraft profitieren relativ, weil ihr Brennstoff preisstabil ist; als defensive Dividendenwerte ziehen Versorger zudem Zuflucht suchendes Kapital an.",
+          "teilbranchen": "Relativ Gewinner: erneuerbaren- und kernkraftlastige Versorger (NextEra Energy). Verlierer: gasabhängige Erzeuger mit hohem Brennstoffanteil."
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Ein ölgetriebener Inflationsschub kann die Zinserwartung anheben, verschärft durch den Preisindex und den hawkishen Fed-Chef in dieser Woche. Höhere Zinsen verteuern die Finanzierung von Immobilien und drücken deren Bewertung.",
+          "teilbranchen": "Verlierer: zinssensible Immobilien-Aktiengesellschaften (REITs). Puffer: inflationsindexierte Mietverträge, die steigende Preise teilweise weitergeben."
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Rohöl: Wochenveränderung nach der Golf-Eskalation",
+          "subtitle": "Freitag 10.7. gegen Vorwoche, gerundet",
+          "unit": " %",
+          "source": "Barchart (WTI-Frontmonat CLQ26), Forbes/Trading Economics (10.7.2026)",
+          "allPositive": true,
+          "data": [
+            ["Brent", 5],
+            ["WTI", 4]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Muscat-Gespräche am 12.7. ohne Durchbruch; iranische Angriffe auf Katar, VAE, Bahrain, Kuwait mit drei Verletzten in Katar; CENTCOM-Angabe dritte Welle ~140 Ziele; CPI-Juni-Konsens ~3,9 % (Mai 4,2 %); Bankensaison-Start 14.7.; Warsh vor dem Kongress 14./15.7.; Brent ~76 USD, Wochenplus ~5 %.",
+        "verdict": "bestätigt",
+        "evidence": "Muscat-Ergebnis über das omanische Außenministerium (Tier 1) und Al Jazeera (Tier 2); Angriffe und Verletztenzahl über Al Jazeera und Euronews (Tier 2), Jordanien nur als iranischer Anspruch, bewusst nicht geführt. CENTCOM-Zahl als offizielle Selbstauskunft gekennzeichnet. CPI-Konsens über Kiplinger (Tier 2) und Cleveland-Fed-Nowcast (Tier 1). Warsh-Termine über Senate Banking Committee (Tier 1) und Bloomberg (Tier 2); Bankenauftakt 14.7. JPMorgan/Citigroup/Wells Fargo, 15.7. Goldman Sachs/Bank of America. Brent-Schluss und Wochenplus über Forbes/Trading Economics. Öl-Futures am Wochenende geschlossen, keine Sonntagabend-Kurse behauptet."
+      },
+      "lehre": "Die Lehre: Ein Ölpreis ist ein Erwartungspreis. Bleibt Brent trotz Angriffen auf die Förderländer bei rund 76 Dollar, heißt das nicht, dass nichts geschieht, sondern dass der Markt Umgehung und eine begrenzte Dauer schon gegenrechnet. Ein echter Schock würde erst sichtbar, wenn diese Annahme kippt.",
+      "sources": [
+        {
+          "title": "Omanisches Außenministerium: Hormuz safe passage talks",
+          "url": "https://www.fm.gov.om/en/50684/",
+          "tier": 1
+        },
+        {
+          "title": "Al Jazeera: Missiles and drones fired at Gulf states after US strikes on Iran",
+          "url": "https://www.aljazeera.com/news/2026/7/12/missiles-and-drones-fired-at-gulf-states-after-night-of-us-strikes-on-iran",
+          "tier": 2
+        },
+        {
+          "title": "Euronews: Iran launches attacks on Qatar, UAE, Bahrain, Kuwait",
+          "url": "https://www.euronews.com/2026/07/12/iran-launches-attacks-on-qatar-uae-bahrain-kuwait-following-us-strikes",
+          "tier": 2
+        },
+        {
+          "title": "Bloomberg: Warsh and US inflation will set tone for July Fed decision",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-11/warsh-and-us-inflation-will-set-tone-for-july-fed-decision",
+          "tier": 2
+        },
+        {
+          "title": "Kiplinger: June CPI Preview",
+          "url": "https://www.kiplinger.com/investing/economy/june-cpi-preview-dont-let-a-negative-headline-fool-you",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Die Straße von Hormus: ein schmales Nadelöhr, durch das ein Fünftel des Welthandels mit Öl fließt.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "opec-reserven-hinter-dem-nadeloehr",
+      "ressort": "makro",
+      "kicker": "Energie · Angebot",
+      "headline": "Volle Tanks, versperrter Ausgang: Warum die OPEC-Reserven die Sperre nicht ausgleichen",
+      "subject": "OPEC+",
+      "dek": "Saudi-Arabien und die Emirate halten fast die gesamte freie Förderreserve der Welt. Das Problem: Sie liegt hinter demselben Nadelöhr, das gerade gesperrt ist. Ein Lehrstück darüber, dass Kapazität ohne Transportweg wenig wert ist, aber nicht wertlos.",
+      "body": [
+        "Es ist die beruhigende Erzählung an jedem Ölmarkt: Wenn der Preis steigt, öffnet die OPEC den Hahn. Die freie Förderreserve, im Fachjargon Reservekapazität, ist das Öl, das die großen Produzenten kurzfristig zusätzlich fördern könnten. Sie liegt fast vollständig bei Saudi-Arabien und den Vereinigten Arabischen Emiraten. In der aktuellen Lage aber hat diese Reserve einen Haken, der sie stark entwertet: Sie liegt geografisch hinter der Straße von Hormus, also hinter genau dem Nadelöhr, das Iran für gesperrt erklärt hat.",
+        "Man kann sich das wie einen vollen Wassertank auf dem Dachboden vorstellen. Solange die Leitung nach unten offen ist, lässt sich der Druck jederzeit erhöhen. Ist die Leitung verstopft, nützt der vollste Tank nichts. Genau das passiert an Hormus. Saudi-Arabien und die Emirate könnten mehr fördern, aber der übliche Weg für dieses zusätzliche Öl führt per Tanker durch dieselbe gesperrte Meerenge. Deshalb verpufft selbst die jüngste, vierte monatliche Fördererhöhung von OPEC+ um 188.000 Fass pro Tag, getragen von sieben Mitgliedern, solange das Tor geschlossen bleibt.",
+        "Es gibt Umgehungen, und hier ist Ehrlichkeit wichtig, wie sie unser Skeptiker einfordert: Die These, die Reserve sei bei einer Sperre schlicht wertlos, ist zu absolut. Saudi-Arabien betreibt die Ost-West-Pipeline mit einer Normalkapazität von rund fünf Millionen Fass pro Tag zum Roten Meer, die Emirate eine Leitung zum Hafen Fudschaira mit rund 1,5 Millionen Fass pro Tag, beide führen am Golf vorbei. Zusammen sind das grob 6,5 Millionen Fass am Tag Ausweichkapazität. Dazu können strategische Reserven großer Verbraucherländer kurzfristig Öl in den Markt geben. Das dämpft den Ausfall erheblich, ersetzt aber die rund 20 Millionen Fass pro Tag durch Hormus bei weitem nicht.",
+        "Für die Bewertung an den Kapitalmärkten zählt vor allem eines: Weil der Puffer nur teilweise ankommt, bleibt der Angebotsschock im Ölpreis stecken. Das hält die Inflationserwartung oben und damit den Druck auf die Zinserwartung. Der Markt kann sich in dieser Lage nicht darauf verlassen, dass die OPEC den Preis schnell deckelt. Das erklärt, warum ein Brent-Preis von rund 76 Dollar zugleich verhalten wirkt und doch fragil ist: Er unterstellt, dass die Umgehungen greifen und die Sperre nicht lange hält. Beides ist eine Wette, keine Gewissheit.",
+        "Restrisiko und Unsicherheit: Die Beruhigung durch Pipelines gilt nur, solange diese selbst unversehrt bleiben. Werden auch die Ausweichhäfen zum Ziel, kippt die Rechnung. Und historisch wurde eine Hormus-Sperre nie vollständig und nie lange durchgehalten. Der wichtigste unbekannte Hebel ist deshalb nicht die Fördermenge, sondern die Dauer der Sperre."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Reservekapazität ist Öl, das kurzfristig zusätzlich gefördert werden könnte. Sie wirkt wie ein Preisdeckel, weil der Markt weiß, dass bei zu hohen Preisen mehr Öl kommt. Dieser Deckel funktioniert aber nur, wenn das Öl den Käufer erreicht. Liegt die Reserve hinter einer gesperrten Meerenge, erreicht die Zusatzförderung den Weltmarkt nicht, und der Preisdeckel greift kaum. Umgehungspipelines mildern das, ersetzen den Seeweg aber nicht.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Was durch Hormus läuft, und was daran vorbei kann",
+          "subtitle": "Kapazität in Millionen Fass pro Tag, gerundet",
+          "unit": " Mio. bpd",
+          "source": "CNBC (Ost-West-Pipeline, ADCOP), EIA-Größenordnung für den Hormus-Durchsatz (2026)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["Straße von Hormus", 20],
+            ["Ost-West-Pipeline", 5],
+            ["Abu-Dhabi-Leitung", 1.5]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "OPEC+ vierte Fördererhöhung +188.000 Fass/Tag (sieben Mitglieder); Umgehung über Ost-West-Pipeline ~5 Mio. Fass/Tag und Abu-Dhabi-Leitung ~1,5 Mio. Fass/Tag; Hormus-Durchsatz grob 20 Mio. Fass/Tag.",
+        "verdict": "bestätigt",
+        "evidence": "Fördererhöhung und Pipeline-Kapazitäten über CNBC und The National (Tier 2) gegengeprüft; die sieben Mitglieder sind Saudi-Arabien, Russland, Irak, Kuwait, Kasachstan, Algerien und Oman. Der Hormus-Durchsatz von rund einem Fünftel des seetransportierten Öls entspricht der gängigen EIA-Größenordnung. Die Formulierung wurde von 'wertlos' auf 'stark entwertet' abgeschwächt, weil Pipelines und strategische Reserven den Ausfall teilweise abfedern."
+      },
+      "lehre": "Die Lehre: Eine Reserve ist nur so viel wert wie der Weg, auf dem sie den Markt erreicht. Volle Tanks hinter einem verschlossenen Tor beruhigen den Preis nicht.",
+      "sources": [
+        {
+          "title": "CNBC: OPEC+ set for fourth oil quota hike since Strait of Hormuz closure",
+          "url": "https://www.cnbc.com/2026/06/07/opec-set-for-fourth-oil-quota-hike-since-strait-of-hormuz-closure.html",
+          "tier": 2
+        },
+        {
+          "title": "CNBC: The two pipelines that can bypass the Strait of Hormuz",
+          "url": "https://www.cnbc.com/2026/03/12/strait-of-hormuz-oil-pipelines-iran-war-saudi-arabia-uae.html",
+          "tier": 2
+        },
+        {
+          "title": "The National: OPEC agrees fourth monthly output rise despite Hormuz closure",
+          "url": "https://www.thenationalnews.com/business/energy/2026/06/07/opec-agrees-fourth-monthly-output-rise-despite-hormuz-closure-and-price-swings/",
+          "tier": 2
+        }
+      ]
+    },
+    {
+      "id": "dienstag-entscheidet-cpi-banken-warsh",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · Ausblick",
+      "headline": "Dienstag entscheidet: Ein Inflationswert, die erste Bankbilanz und ein neuer Notenbankchef",
+      "subject": "US-Notenbank Fed",
+      "dek": "Am 14. Juli treffen der US-Preisindex, der Start der Bankensaison und der erste Kongressauftritt von Fed-Chef Warsh aufeinander. Warum ein einzelner Datenpunkt eine Notenbank-Sitzung zwei Wochen später drehen kann, und wo die Grenzen dieser Macht liegen.",
+      "body": [
+        "Selten bündelt ein einziger Handelstag so viele Kurstreiber wie der kommende Dienstag. Um 14:30 Uhr deutscher Zeit erscheint der US-Verbraucherpreisindex für Juni. Der Konsens, also der Durchschnitt der Analystenschätzungen, erwartet eine Gesamtrate von rund 3,9 Prozent nach 4,2 Prozent im Mai und damit eine leichte Abkühlung; die Kernrate ohne Energie und Lebensmittel lag im Mai bei 2,9 Prozent. Am selben Morgen öffnen JPMorgan, Citigroup und Wells Fargo ihre Bücher, Goldman Sachs und Bank of America folgen am Mittwoch. Und der neue Fed-Vorsitzende Kevin Warsh tritt erstmals vor den Kongress, am Dienstag vor das Repräsentantenhaus, am Mittwoch vor den Bankenausschuss des Senats.",
+        "Die Besonderheit liegt in der Gegenrichtung der Kräfte. Der Konsens beschreibt eine sinkende Inflation, die Golf-Eskalation zieht über den Ölpreis in die andere Richtung. Der Juni-Wert bildet die jüngste Öl-Spitze noch gar nicht ab, er ist ein Rückspiegel. Das ist zugleich seine größte Schwäche: Er sagt viel über den vergangenen Monat und wenig über die aktuelle Lage. Trotzdem kann er die Erwartung an die Fed-Sitzung am 28. und 29. Juli sofort verschieben, denn Märkte handeln Erwartungen, nicht die Vergangenheit.",
+        "Für die Banken gilt eine eigene Logik. Höhere Zinsen zur Inflationsbekämpfung verbreitern tendenziell die Zinsmarge und stützen den Zinsüberschuss. Zugleich kann teures Öl die Konjunktur abkühlen, was die Vorsorge für faule Kredite nach oben treibt. Welche der beiden Kräfte eine Bank in ihrem Ausblick betont, verrät mehr über die erwartete Wirtschaftslage als der nackte Quartalsgewinn. Deshalb ist der Bankauftakt der erste harte Realitätstest der Woche.",
+        "Gegenargument und Grenze, wie sie unser Skeptiker verlangt: Eine Notenbank kann einen Angebotsschock wie teureres Öl nicht direkt beheben. Sie fördert kein Öl und öffnet keine Meerenge. Was sie bekämpfen kann, sind die Zweitrundeneffekte, also der Moment, in dem aus einem einmaligen Preissprung eine breite Lohn-Preis-Spirale wird. Solange die langfristigen Inflationserwartungen verankert bleiben, kann die Fed einen Ölschock als vorübergehend einstufen und stillhalten. Die vielbeschworene Zwickmühle ist damit real, aber kein Automatismus."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Inflationswert bewegt die Börse nicht durch seine Höhe an sich, sondern durch die Abweichung vom Konsens. Kommt er höher herein als erwartet, steigt die eingepreiste Wahrscheinlichkeit einer Zinserhöhung, und zwar sofort, lange bevor die Notenbank tagt. Höhere erwartete Zinsen drücken über den Abzinsungssatz vor allem Wachstumsaktien, deren Gewinne weit in der Zukunft liegen.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Wie ein einziger Inflationswert eine Notenbank drehen kann",
+        "absaetze": [
+          "Am Dienstag kommt der US-Verbraucherpreisindex für Juni, am Ende des Monats tagt die US-Notenbank Fed. Wie kann ein einzelner Datenpunkt eine Sitzung zwei Wochen später bewegen? Der Weg führt nicht direkt über die Zahl, sondern über die Erwartung. Anleger, Banken und die Notenbank selbst haben eine Vorstellung davon, wie hoch die Inflation ausfallen wird, den Konsens. Weicht der Ist-Wert davon ab, verschiebt sich diese Erwartung. Und die erwartete Inflation bestimmt, welchen Leitzins der Markt für die nächste Sitzung für richtig hält.",
+          "Ein Beispiel für die Mechanik, nicht als Prognose: Fällt der Preisindex höher aus als der Konsens, lesen viele das als Zeichen, dass die Inflation hartnäckiger ist. Sofort steigt die erwartete Wahrscheinlichkeit einer Zinserhöhung, bevor die Fed überhaupt getagt hat. Fällt der Wert niedriger aus, passiert das Gegenteil. So kann ein Zehntelprozentpunkt Überraschung die Zinserwartung für eine Sitzung kippen, die noch gar nicht stattgefunden hat.",
+          "Wichtig ist die Rolle des Angebotsschocks. Der aktuelle Preisdruck kommt zu großen Teilen vom Öl, also von der Angebotsseite. Eine Notenbank kann mit ihrem Leitzins die Nachfrage steuern, aber kein Öl fördern und keine Meerenge öffnen. Sie kann den Angebotsschock also nicht direkt beheben. Was sie bekämpfen kann, sind die Zweitrundeneffekte: der Moment, in dem aus dem einmaligen Ölpreissprung eine breite Lohn-Preis-Spirale wird, weil Beschäftigte höhere Löhne fordern und Firmen die Kosten weiterreichen.",
+          "Damit hängt die Erwartungsankerung zusammen. Solange alle darauf vertrauen, dass die Notenbank die Inflation mittelfristig wieder auf ihr Ziel von zwei Prozent bringt, bleiben die langfristigen Inflationserwartungen ruhig, also verankert. Löst sich dieser Anker, verlangen Anleger höhere Zinsen für lange Laufzeiten und Beschäftigte höhere Löhne. Das Ankern der Erwartungen ist deshalb das eigentliche Kapital jeder Notenbank.",
+          "Eine grobe Faustformel dafür, welcher Leitzins gerade passt, ist die Taylor-Regel, benannt nach dem Ökonomen John Taylor. Vereinfacht sagt sie: Der Zins sollte umso höher sein, je weiter die Inflation über ihrem Ziel liegt und je stärker die Wirtschaft überausgelastet ist. Sie ist keine mechanische Vorschrift, sondern ein Orientierungsrahmen. Sie erklärt aber, warum ein hoher Inflationswert fast automatisch den Ruf nach höheren Zinsen lauter macht.",
+          "Warum Zinsen die Aktienkurse bewegen, zeigt der Abzinsungssatz. Der Wert einer Aktie ist der heutige Gegenwert aller künftigen Gewinne. Weil Geld in der Zukunft weniger wert ist als heute, rechnet man künftige Gewinne mit einem Zins auf die Gegenwart herunter; dieser heutige Wert heißt Barwert. Steigt der Zins, schrumpft der Barwert, und die faire Bewertung sinkt. Am stärksten trifft das Firmen, deren Gewinne weit in der Zukunft liegen, etwa junge Wachstumsunternehmen. Deshalb reagieren gerade Technologiewerte empfindlich auf Zinserwartungen.",
+          "Ein letzter Punkt zur neuen Fed-Führung, ausdrücklich als Interpretation und nicht als gemessene Größe: Der neue Vorsitzende Kevin Warsh gilt als hawkish, also als eher auf harte Inflationsbekämpfung bedacht, und er hat die Forward Guidance abgeschafft. Forward Guidance ist das Versprechen der Notenbank, wohin die Zinsen voraussichtlich laufen. Solche Vorab-Hinweise beruhigen die Märkte, weil sie Überraschungen kleiner machen. Fällt diese Leitplanke weg, müssen Anleger stärker aus jedem einzelnen Datenpunkt schließen. Das dürfte die Ausschläge rund um Termine wie den Preisindex vergrößern, belegen lässt sich das aber erst im Rückblick anhand der tatsächlichen Kursbewegungen."
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Inflation: Konsens für Juni gegen Mai und Fed-Ziel",
+          "subtitle": "Jahresrate in Prozent, Juni ist eine Konsensschätzung",
+          "unit": " %",
+          "source": "BLS (Mai), Kiplinger/Cleveland-Fed-Nowcast (Juni-Konsens), Fed-Ziel (2026)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["Mai (Ist)", 4.2],
+            ["Juni (Konsens)", 3.9],
+            ["Fed-Ziel", 2]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "CPI Juni Konsens ~3,9 % (Mai 4,2 %, Kern 2,9 %); Warsh vor dem Repräsentantenhaus am 14.7. und dem Senat am 15.7.; Bankensaison-Start 14.7. (JPMorgan/Citigroup/Wells Fargo), 15.7. (Goldman Sachs/Bank of America); FactSet erwartet für den S&P 500 rund 23,3 % Gewinnwachstum im zweiten Quartal.",
+        "verdict": "bestätigt",
+        "evidence": "CPI-Konsens über Kiplinger (Tier 2) und Cleveland-Fed-Nowcast (Tier 1); Mai-Werte über BLS (Tier 1). Warsh-Termine über Senate Banking Committee (Tier 1) und Bloomberg (Tier 2). Bankenauftakt über StocksAnalyzer und Intellectia (Tier 2), Korrektur gegenüber ersten Vorschauen: Goldman Sachs und Bank of America berichten erst am 15.7. FactSet-Gewinnwachstum 23,3 % über FactSet Earnings Insight (Tier 1)."
+      },
+      "lehre": "Die Lehre: Ein einzelner Datenpunkt bewegt Märkte über die Abweichung vom Konsens. Doch ein Rückspiegel-Wert wie der Juni-Preisindex, der vor der Öl-Spitze liegt, sagt wenig über die Lage von heute, und eine Notenbank kann einen Angebotsschock nur indirekt bekämpfen.",
+      "sources": [
+        {
+          "title": "Cleveland Fed: Inflation Nowcasting",
+          "url": "https://www.clevelandfed.org/indicators-and-data/inflation-nowcasting",
+          "tier": 1
+        },
+        {
+          "title": "Senate Banking Committee: Semiannual Monetary Policy Report to Congress",
+          "url": "https://www.banking.senate.gov/hearings/07/08/2026/the-semiannual-monetary-policy-report-to-the-congress",
+          "tier": 1
+        },
+        {
+          "title": "FactSet: S&P 500 Earnings Season Preview Q2 2026",
+          "url": "https://insight.factset.com/sp-500-earnings-season-preview-q2-2026",
+          "tier": 1
+        },
+        {
+          "title": "Kiplinger: June CPI Preview",
+          "url": "https://www.kiplinger.com/investing/economy/june-cpi-preview-dont-let-a-negative-headline-fool-you",
+          "tier": 2
+        }
+      ]
+    },
+    {
+      "id": "jpmorgan-eroeffnet-die-bilanzsaison",
+      "ressort": "unternehmen",
+      "kicker": "Banken · Earnings",
+      "headline": "JPMorgan eröffnet die Bilanzsaison und wird zum Frühwarnsystem für die Konjunktur",
+      "subject": "JPMorgan Chase",
+      "dek": "Am Dienstag legt die größte US-Bank ihre Zahlen vor, als erster harter Datenpunkt in der Ölschock-Woche. Der Markt liest weniger den Gewinn je Aktie als den Zinsüberschuss und die Kreditrückstellungen. Ein Lehrstück, warum man eine Bank anders liest als eine Fabrik.",
+      "body": [
+        "Am Dienstag vor Handelsbeginn eröffnet JPMorgan Chase die US-Bilanzsaison und damit eine Woche, die zugleich von einem Ölpreisschock aus der Golf-Region und den US-Verbraucherpreisen geprägt ist. Der Markt erwartet für das zweite Quartal einen Gewinn je Aktie von rund 5,52 US-Dollar, die Schätzungen der Häuser reichen von 5,44 bis 5,61 Dollar. Die Konzernerlöse werden je nach Berechnungsbasis zwischen rund 48,7 und 50,4 Milliarden Dollar gesehen, der Nettozinsertrag bei rund 25,7 Milliarden Dollar. Die Aktie schloss am 7. Juli mit 339,22 Dollar auf einem Allzeithoch und notiert mit einem Kurs-Gewinn-Verhältnis von rund 16, am oberen Rand der eigenen Historie; der Börsenwert lag zuletzt bei rund 902 Milliarden Dollar.",
+        "Bei einer Bank zählen für den Kurs oft zwei Zeilen mehr als der Gewinn je Aktie selbst. Die erste ist der Nettozinsertrag, die Differenz zwischen den Zinsen, die die Bank für Kredite kassiert, und den Zinsen, die sie ihren Sparern zahlt. Die zweite ist die Risikovorsorge, das Geld, das die Bank beiseitelegt, weil sie erwartet, dass ein Teil ihrer Kredite nicht zurückgezahlt wird. Legt JPMorgan mehr zurück als gedacht, signalisiert das Vorsicht gegenüber der eigenen Kundschaft, also gegenüber der US-Wirtschaft. Weil die Bank Kredite an nahezu jeden Teil der Wirtschaft vergibt, lesen Investoren die Kommentare von Vorstandschef Jamie Dimon zu Konsum, Kreditqualität und Ölpreis wie einen frühen Konjunkturbericht.",
+        "Der Ölschock wirkt dabei in zwei Richtungen, die sich am Berichtstag überlagern. Höhere Ölpreise treiben tendenziell die Inflation, und höhere Zinsen zur Inflationsbekämpfung verbreitern die Zinsmarge, stützen also den Nettozinsertrag. Gleichzeitig kann teures Öl die Konjunktur abkühlen und Firmen wie Haushalte in Zahlungsschwierigkeiten bringen, was die Risikovorsorge nach oben treibt. Für den Kurs ist entscheidend, welche der beiden Kräfte die Bank in ihrem Ausblick betont.",
+        "Gegenargument und Grenze, wie sie unser Skeptiker verlangt: Die Hürde liegt hoch. Im ersten Quartal übertraf JPMorgan den Konsens deutlich, mit 5,94 gegenüber erwarteten 5,47 Dollar je Aktie. Nach dem Allzeithoch ist eine positive Überraschung teils schon eingepreist, ein bloßer Treffer könnte für Gewinnmitnahmen genügen. Vor allem aber ist die Zurechnung heikel: Am selben Dienstag erscheinen die Verbraucherpreise, und der Ölschock bewegt den Gesamtmarkt. Fällt die Aktie, kann das ebenso an der Inflationszahl, an Sektorrotation aus Finanzwerten oder an der hohen Bewertung liegen wie an der Bilanz selbst. Und Kreditrückstellungen bilden das vergangene Quartal ab und unterliegen dem Ermessen des Managements; als Echtzeit-Thermometer der Konjunktur sind sie träge."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine Bank verdient vor allem an der Zinsdifferenz. Sie zahlt Sparern wenig, verlangt von Kreditnehmern mehr, und die Lücke ist der Nettozinsertrag. Gleichzeitig legt sie Geld für Kredite zurück, die womöglich platzen, die Risikovorsorge. Steigt diese Vorsorge stark, sagt die Bank damit indirekt: Wir rechnen mit einer schwächeren Wirtschaft. Deshalb lesen Anleger den Bankbericht als Frühwarnsystem, nicht nur als Gewinnmeldung.",
+      "company": {
+        "name": "JPMorgan Chase & Co.",
+        "ticker": "JPM",
+        "exchange": "NYSE",
+        "logoKey": "jpmorgan",
+        "whatTheyDo": "JPMorgan Chase ist die größte Bank der USA. Sie vergibt Kredite an Privatkunden und Firmen, wickelt Zahlungen ab, verwaltet Vermögen und handelt an den Finanzmärkten. Ihr Geld verdient sie vor allem an der Differenz zwischen den Zinsen, die sie für Kredite einnimmt, und den Zinsen, die sie Sparern zahlt, sowie an Gebühren.",
+        "whyItMatters": "JPMorgan eröffnet am Dienstag die US-Bilanzsaison und ist damit der erste harte Datenpunkt in einer Woche, die von einem Ölpreisschock aus der Golf-Region und den US-Verbraucherpreisen geprägt ist. Weil die Bank Kredite an fast jeden Teil der Wirtschaft vergibt, gilt ihr Bericht als früher Gesundheitscheck für den US-Konsum und die Kreditqualität.",
+        "keyMetrics": [
+          ["Allzeithoch-Schluss (7.7.2026)", "339,22 USD"],
+          ["Börsenwert", "rund 902 Mrd. USD"],
+          ["KGV (Kurs-Gewinn-Verhältnis)", "rund 16"],
+          ["Konsens-Gewinn je Aktie Q2 2026", "rund 5,52 USD (Spanne 5,44-5,61)"],
+          ["Konsens-Erlöse Q2 2026", "rund 48,7-50,4 Mrd. USD"],
+          ["Konsens-Nettozinsertrag Q2 2026", "rund 25,7 Mrd. USD"],
+          ["Beat im 1. Quartal 2026", "5,94 USD gegen Konsens 5,47"],
+          ["Ziel-Eigenkapitalrendite (RoTCE, Eigenziel)", "rund 17 %"],
+          ["Termin Quartalszahlen", "14. Juli 2026, vor Börsenstart"]
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "JPMorgan: die Latte liegt hoch",
+          "subtitle": "Gewinn je Aktie im 1. Quartal 2026, Konsens gegen Ist",
+          "unit": " USD",
+          "source": "JPMorgan 1Q26-Pressemitteilung (SEC), Yahoo/Zacks-Konsens (2026)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["Konsens Q1", 5.47],
+            ["Ist Q1", 5.94]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "JPMorgan-Konsens Q2 2026: EPS ~5,52 USD (Spanne 5,44-5,61), Erlöse ~48,7-50,4 Mrd., Nettozinsertrag ~25,7 Mrd.; ATH-Schluss 339,22 USD (7.7.), Börsenwert ~902 Mrd., KGV ~16; Q1-Beat 5,94 gegen 5,47; Termin 14.7. vorbörslich.",
+        "verdict": "bestätigt",
+        "evidence": "Konsens-Spannen über Yahoo/Zacks und TradingView (Tier 2); die zuvor kursierenden Fixwerte 5,61 und 49,56 Mrd. wurden als Spanne korrigiert. ATH-Schluss über Macrotrends, Börsenwert 901,58 Mrd. und KGV 16,1 über stockanalysis.com (Tier 2). Q1-Beat 5,94 gegen 5,47 über die JPMorgan-1Q26-Pressemitteilung (Tier 1). Der Nettozinsertrag-Vorjahresvergleich wurde weggelassen, weil nicht sauber gegengeprüft; RoTCE 17 % ist ein selbst gestecktes Ziel."
+      },
+      "lehre": "Die Lehre: Bei einer Bank ist der Zinsüberschuss die eigentliche Nachricht, nicht der Gewinn je Aktie, und die Risikovorsorge verrät, wie die Bank die Konjunktur einschätzt. Nahe Allzeithoch reicht ein bloßer Erwartungstreffer oft nicht.",
+      "sources": [
+        {
+          "title": "Yahoo Finance/Zacks: Unveiling JPMorgan Chase Q2 Outlook",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/unveiling-jpmorgan-chase-co-jpm-131502438.html",
+          "tier": 2
+        },
+        {
+          "title": "Macrotrends: JPMorgan Chase Stock Price History",
+          "url": "https://www.macrotrends.net/stocks/charts/JPM/jpmorgan-chase/stock-price-history",
+          "tier": 2
+        },
+        {
+          "title": "stockanalysis.com: JPMorgan Chase Übersicht und Bewertung",
+          "url": "https://stockanalysis.com/stocks/jpm/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "bank-cpi-woche.jpg",
+        "alt": "Glasfassade eines Bank-Hochhauses im Finanzviertel bei Sonnenaufgang, Passanten auf der Straße",
+        "caption": "Bankensaison und Inflationsdaten treffen in derselben Woche aufeinander.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "berlin-oelreserve-als-puffer",
+      "ressort": "politik",
+      "kicker": "Berlin · Versorgungssicherheit",
+      "headline": "Berlins Ölreserve als Puffer: Warum die deutsche Versorgungslage jetzt zur Standortfrage wird",
+      "subject": "Bundesregierung",
+      "dek": "Die Bundesregierung hält die Versorgung mit Kraftstoffen für gesichert und hat einen kleinen Teil der strategischen Ölreserve freigegeben. Vor dem Hintergrund der Golf-Eskalation entscheidet die Energiekostenfrage über die Wettbewerbsfähigkeit der Industrie.",
+      "body": [
+        "Einordnung statt Eilmeldung: Am Wochenende ist aus Berlin kein neues, spezifisches Statement zur Golf-Krise gefallen; die deutsche Position ist eine fortlaufende Linie, die vor dem Hintergrund der Eskalation neu an Gewicht gewinnt. Die Bundesregierung sieht die Versorgung mit Rohöl, Mineralölprodukten und Flüssigerdgas derzeit als gesichert an. Kanzler Friedrich Merz betont, zentrale Produkte wie Diesel, Benzin und Kerosin müssten verfügbar bleiben. Nach Regierungsangaben wurde bereits ein kleiner Teil der strategischen Ölreserve freigegeben, und man sei für den Fall vorbereitet, dass sich die Lage verschärft.",
+        "Der Mechanismus dahinter ist eine strategische Reserve, ein staatlich vorgehaltener Vorrat an Öl und Kraftstoffen. Deutschland hält über den Erdölbevorratungsverband Vorräte, die im Krisenfall auf den Markt gegeben werden können, um Angebotslücken zu überbrücken und Preisspitzen zu dämpfen. Diese Reserve ist ein Puffer auf Zeit, kein dauerhafter Ersatz für Importe: Sie verschafft der Politik Wochen, keine Jahre. Für die deutsche Wirtschaft ist entscheidend, dass eine anhaltende Hormus-Sperre über den Weltmarktpreis auf die Kraftstoff- und Energiekosten durchschlägt, unabhängig davon, dass Deutschland kaum Öl direkt durch die Meerenge bezieht.",
+        "Für den Kapitalmarkt wirken zwei Kanäle. Erstens der Kostenkanal: Steigende Energiepreise treffen die energieintensive deutsche Industrie, von der Chemie über Stahl bis zur Logistik, und drücken deren Margen. Zweitens der Standortkanal: Bleiben die Energiekosten dauerhaft hoch, verschieben sich Investitionsentscheidungen, was die relative Attraktivität des Standorts berührt. Die Freigabe von Reserven ist dabei ein Preisdämpfer, der die Spitze abschneidet, aber die Richtung nicht dreht.",
+        "Restrisiko und Unsicherheit: Wie wirksam die Reserve ist, hängt von der Dauer der Krise ab. Ein kurzer Schock lässt sich überbrücken, eine mehrwöchige Verknappung nicht. Und die eigentliche Preisbildung findet am Weltmarkt statt, nicht in Berlin. Die nationale Reserve ist deshalb ein Instrument gegen Panik und kurzfristige Engpässe, kein Hebel gegen einen anhaltend hohen Ölpreis."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine strategische Ölreserve ist ein staatlicher Notvorrat. Wird Öl knapp oder der Preis springt, kann der Staat einen Teil davon verkaufen und so das Angebot kurzfristig erhöhen. Das dämpft die Preisspitze, wirkt aber nur auf Zeit. Weil der Ölpreis am Weltmarkt gebildet wird, kann ein einzelnes Land den Preis so nicht dauerhaft senken, sondern nur die schlimmste Spitze abfedern.",
+      "factcheck": {
+        "claim": "Die Bundesregierung sieht die Versorgung mit Öl, Mineralölprodukten und LNG als gesichert und hat einen kleinen Teil der strategischen Ölreserve freigegeben; Kanzler Merz betont die Verfügbarkeit von Diesel, Benzin und Kerosin.",
+        "verdict": "bestätigt",
+        "evidence": "Regierungsposition über die Bundesregierung (Tier 1) und die Verkehrsrundschau (Tier 2). Ausdrücklich als fortlaufende Linie und Einordnung geführt, nicht als neues Wochenend-Ereignis des Berichtszeitraums, weil kein spezifisches neues Statement vom 12.7. vorliegt."
+      },
+      "lehre": "Die Lehre: Eine strategische Reserve kauft Zeit, keinen dauerhaft niedrigeren Preis. Sie ist ein Instrument gegen Panik und kurzfristige Engpässe, nicht gegen einen anhaltend hohen Weltmarktpreis.",
+      "sources": [
+        {
+          "title": "Bundesregierung: Fragen und Antworten zur Energieversorgung",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/fragen-antworten-energie-2425230",
+          "tier": 1
+        },
+        {
+          "title": "Verkehrsrundschau: Bundesregierung sieht Treibstoffversorgung gesichert",
+          "url": "https://www.verkehrsrundschau.de/nachrichten/transport-logistik/bundesregierung-sieht-treibstoffversorgung-gesichert-3793449",
+          "tier": 2
+        }
+      ]
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Firmen, die Öl und Gas fördern, transportieren und zu Kraftstoff verarbeiten.",
+      "lage": "Klar im Fokus: Die Angriffe auf Golf-Produzenten und die faktisch gesperrte Straße von Hormus heben das Risiko eines echten Angebotsausfalls, die OPEC-Reserven von Saudi-Arabien und den VAE liegen ungünstig hinter dem Nadelöhr.",
+      "richtung": "up",
+      "tagesWert": "Brent ~76 USD, WTI ~71,40 USD (Schluss Fr 10.7.), Wochenplus ~5 %"
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Rohstoffen wie Chemie, Metallen und Baustoffen.",
+      "lage": "Belastet, weil der drohende Ölpreisanstieg Öl und Gas als Rohstoff und Energie für die energieintensive Chemie verteuert und die Margen drückt.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbau, Rüstung, Luftfahrt und Logistik, das produzierende Rückgrat der Wirtschaft.",
+      "lage": "Gespalten: Teurer Treibstoff und gestörte Lieferketten belasten Luftfahrt und Speditionen, während die militärische Eskalation die Aussicht auf höhere Rüstungsausgaben stützt.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter von Dingen, die man kauft, wenn Geld übrig ist, etwa Autos, Reisen und Restaurants.",
+      "lage": "Unter Druck, weil höhere Spritpreise die Kaufkraft mindern und der für Dienstag erwartete Inflationswert höhere Zinsen und teurere Kredite bedeuten könnte.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Anbieter von Alltagsgütern wie Lebensmitteln und Drogerieartikeln, die man immer braucht.",
+      "lage": "Relativ stabil als möglicher Zufluchtsort in der Risikophase, zugleich verteuern höhere Energie- und Frachtkosten die Herstellung.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharmafirmen, Medizintechnik und Krankenversicherer.",
+      "lage": "Weitgehend abgekoppelt von der Öl-Eskalation, weil die Nachfrage nach Behandlung nicht aufschiebbar ist; defensives Kapital könnte leicht zufließen.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer und Vermögensverwalter, die Geld verleihen, anlegen und Risiken absichern.",
+      "lage": "Doppelt betroffen: See- und Kriegsversicherer tragen sprunghaft gestiegene Prämien und Schäden, und für die Banken fällt der Ölschock mit dem Start der Bilanzsaison und dem Preisindex am Dienstag zusammen.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Hersteller von Chips, Software und IT-Ausrüstung.",
+      "lage": "Leicht belastet, weil die Risikoscheu und die vor dem Preisindex gestiegene Zinserwartung hoch bewertete Wachstumstitel treffen, deren Gewinne weit in der Zukunft liegen.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Telefon- und Internetanbieter sowie Medien- und Plattformkonzerne.",
+      "lage": "Kaum vom Ölpreis berührt; klassische Telekom wirkt defensiv, werbeabhängige Plattformen spüren nur die allgemeine Risikostimmung.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Betreiber von Strom-, Gas- und Wassernetzen, die die Grundversorgung sichern.",
+      "lage": "Gemischt: Gas- und ölbefeuerte Kraftwerke haben höhere Brennstoffkosten, während erneuerbaren- und kernkraftlastige Versorger als stabile Dividendenwerte relativ gefragt sind.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Firmen, die Gebäude besitzen, vermieten und verwalten, oft als börsennotierte Immobiliengesellschaften.",
+      "lage": "Belastet, weil ein ölgetriebener Inflationsschub und der hawkishe Fed-Chef die Zinserwartung anheben und höhere Zinsen die Finanzierung verteuern.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt"
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "International Seaways, Inc.",
+      "ticker": "INSW (NYSE)",
+      "logoKey": "international-seaways",
+      "marketCapEUR": "ca. 3,84 Mrd. €",
+      "capSource": "49,50 Mio. Aktien x 88,48 USD Schlusskurs 10.7.2026 = 4,38 Mrd. USD (stockanalysis.com); umgerechnet mit EUR/USD 1,1411 (ECB/Trading Economics, 10.7.) rund 3,84 Mrd. €.",
+      "whatTheyDo": "International Seaways ist eine Reederei, die große Rohöl- und Produktentanker betreibt. Sie verdient Geld damit, Öl über die Weltmeere zu transportieren. Der Preis dafür, die Frachtrate, schwankt stark je nach Angebot und Nachfrage nach Schiffen.",
+      "thesis": "Lehrstück für einen sehr direkten Geopolitik-Hebel: Ist ein Nadelöhr wie die Straße von Hormus gestört, müssen Tanker Umwege fahren, es sind mehr Schiffstage nötig, und die Frachtraten schnellen hoch. Weil International Seaways rund 80 Prozent seiner Flotte im kurzfristigen Spotmarkt fährt, schlägt jede Ratenspitze fast sofort auf den Gewinn durch: Für das erste Quartal 2026 meldete die Reederei einen Rekordgewinn von 286,1 Millionen Dollar gegenüber rund 50 Millionen im Vorjahr. Die Fallstudie zeigt, wie stark ein Geschäftsmodell mit hoher Spotmarkt-Bindung auf Nachrichten reagiert.",
+      "counterarguments": [
+        "Doppelklemme, wie sie unser Skeptiker aufzeigt: Sowohl eine Deeskalation (die Raten kollabieren) als auch eine echte Vollsperre der Meerenge (Golf-Ladungen fallen weg, es gibt nichts mehr zu transportieren) können der These schaden. International Seaways ist damit eine Wette auf eine anhaltende Störung bei weiter fließendem Öl, ein schmaler Grat.",
+        "Mean Reversion und Zyklus-Spitze: Spot-Raten sind extrem volatil und momentumgetrieben; die jüngste Ratenspitze auf der Route Nahost-China war ein Vielfaches des normalen Niveaus und fiel danach zurück. Spitzenraten sind nie das nachhaltige Niveau, und nach dem Q1-Rekord ist viel gute Nachricht eingepreist.",
+        "Die rund 80 Prozent Spotmarkt-Bindung wirken in beide Richtungen: Was den Gewinn im Aufschwung nach oben reißt, lässt ihn bei normalisierten Raten ebenso schnell einbrechen. Die Dividende ist variabel und folgt dem Gewinn."
+      ],
+      "catalysts": [
+        "Q2-Zahlen voraussichtlich Anfang August 2026 (Zeitpunkt nach üblichem Rhythmus): zeigen, ob die Ratenspitze im zweiten Quartal durchschlug.",
+        "Status der Straße von Hormus und Ausgang der Vermittlungsgespräche als direkter Ratentreiber (laufendes Ereignisrisiko).",
+        "Nächste große VLCC-Fixierungen als Frühindikator für das Ratenniveau."
+      ],
+      "confidence": "mittel"
+    },
+    {
+      "name": "THEON International Plc",
+      "ticker": "THEON (Euronext Amsterdam)",
+      "logoKey": "theon-international",
+      "marketCapEUR": "ca. 2,47 Mrd. €",
+      "capSource": "77,62 Mio. Aktien x 31,80 € Schlusskurs 10.7.2026 = rund 2,47 Mrd. € (stockanalysis.com). Bereits in Euro notiert, keine Umrechnung nötig.",
+      "whatTheyDo": "THEON stellt Nachtsichtgeräte, Wärmebild- und Beobachtungstechnik für Streitkräfte und Sicherheitskräfte her. Soldaten nutzen die Geräte, um bei Dunkelheit zu sehen. Kunden sind vor allem Staaten und große Rüstungskonzerne.",
+      "thesis": "Lehrstück für die Kennzahl Auftragsbestand: Anhaltende geopolitische Spannungen treiben Verteidigungsbudgets, und THEON füllt sein Auftragsbuch. Der Auftragseingang beschleunigte sich in Q2 2026 auf rund 153 Millionen Euro plus 27 Millionen Euro Optionen; im Juni kam ein Auftrag über rund 70 Millionen Euro hinzu, teils über Rheinmetall für das Bundeswehr-Programm Infanterist der Zukunft. Die Fallstudie zeigt, wie ein Auftragsbestand künftige Umsätze sichtbarer macht als bei rein zyklischen Firmen, und warum Anleger dennoch genau hinschauen müssen, aus was dieser Bestand besteht.",
+      "counterarguments": [
+        "Qualität des Auftragsbestands, wie sie unser Skeptiker betont: Ein großer Teil des Polsters ist ein sogenannter Soft-Backlog von rund 1,4 Milliarden Euro plus Optionen, also nicht fest kontrahiert. Optionen können verfallen, weiche Aufträge sich verschieben. Zudem läuft ein Teil des Geschäfts über ein Gemeinschaftsunternehmen mit Hensoldt, die Backlog-Zahlen sind also nicht deckungsgleich mit dem, was allein bei THEON umsatz- und margenwirksam wird.",
+        "Hohe Bewertung und Momentum: Das Kurs-Gewinn-Verhältnis liegt bei rund 19,5, und die Aktie ist ein beliebter Defense-Momentum-Titel. Enttäuscht ein Quartal beim Auftragseingang oder kommt es zu einer Deeskalation, ist Rückschlagpotenzial vorhanden.",
+        "Klumpenrisiko: Die Aufträge hängen an wenigen großen Regierungsprogrammen; Programm-Zeitpläne und Budgets können sich verschieben."
+      ],
+      "catalysts": [
+        "Halbjahreszahlen 2026 (Zeitpunkt nach üblichem Rhythmus, meist September) mit Umsatz-, Margen- und Backlog-Update, insbesondere zum Verhältnis fester zu weicher Aufträge.",
+        "Weitere Auftragsmeldungen aus europäischen Verteidigungsprogrammen.",
+        "Umwandlungsquote von weichen in feste Aufträge über mehrere Quartale als Qualitätsbeleg."
+      ],
+      "confidence": "mittel"
+    },
+    {
+      "name": "Lancashire Holdings Limited",
+      "ticker": "LRE (London Stock Exchange)",
+      "logoKey": "lancashire-holdings",
+      "marketCapEUR": "ca. 1,9 Mrd. €",
+      "capSource": "Börsenwert rund 1,6 Mrd. £ (Investing.com/LSE, Stand 3.7.2026; rund 244 Mio. Aktien); umgerechnet mit GBP/EUR 1,174 (ECB, 10.7.) rund 1,9 Mrd. €.",
+      "whatTheyDo": "Lancashire ist ein Spezialversicherer und Rückversicherer. Er versichert seltene, aber teure Risiken, darunter Schäden an Schiffen durch Krieg, Piraterie oder Terror sowie an Energieanlagen. Kunden zahlen Prämien, Lancashire trägt im Schadensfall.",
+      "thesis": "Lehrstück gegen den Reflex, eine Krise mache Versicherer automatisch zu Gewinnern. Auf den ersten Blick müssten steigende Kriegs- und Marinerisiken die Prämien anheizen. Fakt ist aber: Lancashire selbst erklärte, seine Belastung durch die Nahost-Ereignisse sei begrenzt und gut innerhalb des Risikoappetits, und meldete für das erste Quartal 2026 ein weicheres Preisumfeld bei einem Erneuerungs-Preisindex von 93 Prozent, also fallenden Sätzen. Die Fallstudie zeigt, dass Prämienzyklus und Zeichnungsdisziplin oft stärker wirken als die Schlagzeile.",
+      "counterarguments": [
+        "Die direkte Golf-Profiteur-These ist durch die eigene Aussage von Lancashire (begrenzte Nahost-Belastung) gedämpft; wer allein auf die Geopolitik-Schlagzeile setzt, überschätzt den Effekt.",
+        "Weicheres Preisumfeld: Der Erneuerungs-Preisindex von 93 Prozent bedeutet fallende Prämiensätze; sinkende Preise können ein Mengenwachstum wieder auffressen. Zur Fairness gehört das Gegen-Gegenargument des Managements: Vorstandschef Maloney sieht die Ratenadäquanz nach sieben Jahren Anstieg noch als gesund an, der Markt kippe nicht in sechs Monaten.",
+        "Großschaden-Risiko in beide Richtungen: Am 7. Juli wurden zwei Tanker in der Straße von Hormus getroffen, und die atlantische Hurrikansaison beginnt. Ein einzelner großer Marine- oder Naturkatastrophenschaden kann ein Quartal deutlich belasten."
+      ],
+      "catalysts": [
+        "Halbjahreszahlen 2026 (Zeitpunkt nach üblichem Rhythmus, meist Ende Juli/Anfang August): zeigen Prämienwachstum, Schadenquote und den Effekt der Nahost-Ereignisse.",
+        "Juli-Erneuerungsrunde und Preisentwicklung in Marine und Energie.",
+        "Beginn der atlantischen Hurrikansaison als klassisches Katastrophenrisiko für Spezialversicherer."
+      ],
+      "confidence": "mittel"
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "US-Verbraucherpreise (CPI) für Juni; Konsens Gesamtrate ~3,9 % nach 4,2 % im Mai, Kernrate ~2,9 % (Ist offen)",
+      "when": "Dienstag 14.7., 14:30 MESZ",
+      "bullishIf": "Gesamt- und Kernrate treffen den Konsens oder liegen darunter; das entlastet die Zinserwartung und stützt über einen niedrigeren Abzinsungssatz die Bewertungen, besonders bei Wachstumswerten.",
+      "bearishIf": "Deutliche Überraschung nach oben, vor allem bei der Kernrate; das befeuert die Zinserhöhungswette für 28./29.7. und drückt zinssensible Aktien."
+    },
+    {
+      "what": "Fed-Chef Kevin Warsh erstmals vor dem Kongress; ohne Forward Guidance zählt jedes Wort zur Zinsausrichtung",
+      "when": "Repräsentantenhaus 14.7., Senat 15.7.",
+      "bullishIf": "Warsh signalisiert Geduld und wertet den Ölpreis als vorübergehenden Angebotsschock; das dämpft Zinserhöhungsängste.",
+      "bearishIf": "Warsh betont die Gefahr von Zweitrundeneffekten und Handlungsbereitschaft nach oben; das hebt die erwarteten Zinsen und die Risikoprämie."
+    },
+    {
+      "what": "Straße von Hormus, Tankerverkehr und Ölpreis (Brent, letzter belegter Stand Freitag ~76 USD)",
+      "when": "Handelsstart Montag 13.7. und laufend",
+      "bullishIf": "Zeichen für Deeskalation oder Wiederöffnung der Passage; die Ölprämie fällt zurück, das entlastet Kosten, Inflation und Nachfrage zugleich.",
+      "bearishIf": "Verlängerte oder verschärfte Sperre, Angriffe auch auf Ausweichhäfen; anhaltend hoher Ölpreis hält Inflationserwartung und Zinsdruck oben."
+    },
+    {
+      "what": "US-Bankbilanzen zum Quartalsstart (JPMorgan, Citigroup, Wells Fargo; Goldman Sachs und Bank of America am 15.7.)",
+      "when": "ab Dienstag 14.7.",
+      "bullishIf": "solide Zinsüberschüsse, niedrige Kreditrückstellungen und ein zuversichtlicher Ausblick stützen den Finanzsektor.",
+      "bearishIf": "steigende Risikovorsorge oder ein vorsichtiger Ton zur Kreditqualität als Signal für eine Konjunkturabkühlung."
+    },
+    {
+      "what": "Gold und andere sichere Häfen; Spot ~4.122 USD, rund ein Viertel unter dem Januar-Hoch",
+      "when": "laufend; entscheidend rund um CPI 14.7. und Fed 28./29.7.",
+      "bullishIf": "anhaltende Notenbank-Nachfrage und Geopolitik-Angst stützen Gold trotz hoher Realzinsen.",
+      "bearishIf": "steigende Realzinsen, weil die Fed hart bleibt, machen zinsloses Gold relativ unattraktiver und drücken den Preis."
+    }
+  ],
+  "learningNotes": [
+    "Ein Ölpreis ist ein Erwartungspreis. Bleibt Brent trotz Angriffen auf die Förderländer bei rund 76 Dollar, rechnet der Markt Umgehung und eine begrenzte Dauer schon gegen; ein echter Schock würde erst sichtbar, wenn diese Annahme kippt.",
+    "Reservekapazität ist nur so viel wert wie der Transportweg. Liegt die freie Förderreserve hinter einer gesperrten Meerenge, erreicht die Zusatzförderung den Weltmarkt kaum, und der Preisdeckel greift nur teilweise.",
+    "Ein einzelner Datenpunkt bewegt Märkte über die Abweichung vom Konsens. Doch ein Rückspiegel-Wert wie der Juni-Preisindex, der vor der Öl-Spitze liegt, sagt wenig über die aktuelle Lage.",
+    "Bei einer Bank sind Nettozinsertrag und Risikovorsorge die eigentliche Nachricht, nicht der Gewinn je Aktie. Nahe Allzeithoch reicht ein bloßer Erwartungstreffer oft nicht.",
+    "Krise heißt nicht automatisch Gewinn für Versicherer. Prämienzyklus und Zeichnungsdisziplin wirken oft stärker als die Schlagzeile, wie das weiche Preisumfeld bei Lancashire zeigt."
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Warum man eine Bank anders liest als eine Fabrik",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Bei einem normalen Unternehmen steht oben der Umsatz aus verkauften Produkten. Bei einer Bank ist die wichtigste Zeile der Nettozinsertrag, also die Zinsdifferenz zwischen Krediten und Einlagen, plus Gebühren aus Handel und Vermögensverwaltung. Der zweite Schlüssel ist die Risikovorsorge: erwartete Kreditausfälle, die den Gewinn direkt mindern.",
+      "Bilanz: Für eine Fabrik sind Kredite eine Belastung. Für eine Bank sind vergebene Kredite das Kerngeschäft und stehen als Vermögenswert in der Bilanz, während Kundeneinlagen Schulden der Bank sind. Deshalb ist eine Bankbilanz um ein Vielfaches größer als ihr Umsatz, und Eigenkapitalquote und Kernkapital sagen mehr über die Stabilität aus als bei jeder anderen Branche.",
+      "Cashflow: Die klassische Cashflow-Rechnung ist bei Banken wenig aussagekräftig, weil Geld ihr Rohstoff ist und ständig durch die Bilanz fließt. Statt des freien Cashflows schaut man auf die Eigenkapitalrendite auf das materielle Kernkapital, im Fachjargon RoTCE, bei JPMorgan mit einem Ziel von rund 17 Prozent.",
+      "Bewertung: Eine Bank wird oft am Kurs-Buchwert-Verhältnis gemessen, also am Verhältnis von Börsenwert zum bilanziellen Eigenkapital, ergänzt um das Kurs-Gewinn-Verhältnis. Ein KGV von rund 16 ist für JPMorgan historisch hoch, weil der Markt der Bank eine überdurchschnittliche Rendite zutraut. Genau deshalb reicht nach den Zahlen ein bloßer Treffer oft nicht."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler: nur auf den Gewinn je Aktie zu schauen und die Risikovorsorge zu übersehen. Eine Bank kann den Gewinn kurzfristig hübsch aussehen lassen, indem sie wenig für faule Kredite zurücklegt. Ob das gesund ist, verrät erst die Risikovorsorge im Verhältnis zur Konjunkturlage."
+  },
+  "glossar": [
+    {
+      "begriff": "Risikoprämie",
+      "erklaerung": "Der Aufschlag, den Käufer heute zahlen, um sich gegen ein künftiges Risiko abzusichern. Beim Öl steigt sie mit der Angst vor einer Lieferunterbrechung, oft lange bevor tatsächlich Öl fehlt."
+    },
+    {
+      "begriff": "Straße von Hormus",
+      "erklaerung": "Die schmale Meerenge zwischen Iran und der Arabischen Halbinsel. Durch sie läuft rund ein Fünftel des weltweit per Schiff transportierten Öls, grob 20 Millionen Fass am Tag, weshalb sie als Nadelöhr der Weltwirtschaft gilt."
+    },
+    {
+      "begriff": "Reservekapazität",
+      "erklaerung": "Öl, das große Produzenten kurzfristig zusätzlich fördern könnten. Sie wirkt wie ein Preisdeckel, funktioniert aber nur, wenn das Öl den Käufer erreicht. Liegt sie hinter einer gesperrten Meerenge, greift der Deckel kaum."
+    },
+    {
+      "begriff": "Angebotsschock",
+      "erklaerung": "Eine plötzliche Verknappung des Angebots, etwa durch eine gesperrte Ölroute. Er hebt die Preise und bremst zugleich die Konjunktur, was eine Notenbank in einen Zielkonflikt bringt."
+    },
+    {
+      "begriff": "Zweitrundeneffekte",
+      "erklaerung": "Der Moment, in dem aus einem einmaligen Preissprung, etwa beim Öl, eine breite Lohn-Preis-Spirale wird, weil Beschäftigte höhere Löhne fordern und Firmen die Kosten weiterreichen. Genau das versucht eine Notenbank zu verhindern."
+    },
+    {
+      "begriff": "Nettozinsertrag",
+      "erklaerung": "Bei einer Bank die Differenz zwischen den Zinsen, die sie für Kredite einnimmt, und den Zinsen, die sie für Einlagen zahlt. Der wichtigste Ertragsposten und oft kursrelevanter als der Gewinn je Aktie."
+    },
+    {
+      "begriff": "Risikovorsorge",
+      "erklaerung": "Geld, das eine Bank vorsorglich für Kredite zurücklegt, die womöglich nicht zurückgezahlt werden. Steigt sie stark, signalisiert die Bank eine schwächer eingeschätzte Wirtschaft."
+    },
+    {
+      "begriff": "Verbraucherpreisindex (CPI)",
+      "erklaerung": "Ein Maß für die Inflation, das die Preisentwicklung eines typischen Warenkorbs erfasst. Weicht er vom Konsens ab, verschiebt er die Erwartung an die nächste Zinsentscheidung."
+    },
+    {
+      "begriff": "Forward Guidance",
+      "erklaerung": "Der Ausblick einer Notenbank auf ihren wahrscheinlichen Zinspfad. Fed-Chef Warsh hat sie abgeschafft; ohne diese Vorab-Ankerung reagieren Märkte tendenziell stärker auf einzelne Datenpunkte."
+    },
+    {
+      "begriff": "Auftragsbestand (Backlog)",
+      "erklaerung": "Die Summe bereits erhaltener, aber noch nicht abgearbeiteter Aufträge. Man unterscheidet feste Aufträge, weiche Aufträge und Optionen; nur feste sind sicher umsatzwirksam, Optionen können verfallen."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "Muscat-Gespräche (Araghtschi/al-Busaidi) endeten am 12.7. ohne Durchbruch, Fortsetzung auf politischer und technischer Ebene vereinbart, Vermittlung Katar/Oman (Omanisches Außenministerium Tier 1, Al Jazeera Tier 2).",
+      "Iranische Angriffe auf Katar, VAE, Bahrain, Kuwait am 12.7.; drei Verletzte inklusive eines Kindes in Katar durch herabfallende Trümmer (Al Jazeera, Euronews Tier 2). Jordanien nur als iranischer Anspruch, bewusst nicht als bestätigtes Ziel geführt.",
+      "CENTCOM-Angabe dritte Angriffswelle rund 140 Ziele, Woche über 300, als offizielle Selbstauskunft gekennzeichnet (Gulf News, Al Jazeera Tier 2).",
+      "Kriegsrisikoprämien für Fahrten durch die Meerenge stark gestiegen, laut Lloyd's List zweistellige Millionenbeträge je Fahrt; die zuvor genannte Prozentangabe wurde gestrichen (Lloyd's List, The National Tier 2).",
+      "CPI Juni Konsens Gesamtrate rund 3,9 % nach 4,2 % im Mai, Kernrate Mai 2,9 %, Termin 14.7. (Kiplinger Tier 2, Cleveland-Fed-Nowcast/BLS Tier 1).",
+      "Warsh vor dem Repräsentantenhaus am 14.7., vor dem Bankenausschuss des Senats am 15.7. (Senate Banking Committee Tier 1, Bloomberg Tier 2).",
+      "US-Bankensaison-Start 14.7. mit JPMorgan, Citigroup, Wells Fargo; Goldman Sachs und Bank of America am 15.7.; die Nennung von Goldman/BofA für Dienstag wurde korrigiert (StocksAnalyzer, Intellectia Tier 2).",
+      "FactSet erwartet für den S&P 500 rund 23,3 % Gewinnwachstum im zweiten Quartal (FactSet Earnings Insight Tier 1).",
+      "OPEC+ vierte Fördererhöhung +188.000 Fass/Tag (sieben Mitglieder); Ost-West-Pipeline rund 5 Mio. Fass/Tag, Abu-Dhabi-Leitung rund 1,5 Mio. Fass/Tag; Hormus-Durchsatz grob 20 Mio. Fass/Tag (CNBC, The National Tier 2, EIA-Größenordnung).",
+      "Gold-Spot rund 4.122 USD am 12.7., kein Rekord (Januar-Hoch rund 5.602 USD), Woche rund -1,5 %; Brent Freitagsschluss rund 76 USD, WTI rund 71,4-71,8 USD, Wochenplus rund 5 %; Öl-Futures am Wochenende geschlossen (Forbes Advisor, Trading Economics Tier 2).",
+      "JPMorgan: ATH-Schluss 339,22 USD (7.7.), Börsenwert rund 902 Mrd. USD, KGV rund 16,1; Konsens Q2 EPS rund 5,52 (Spanne 5,44-5,61), Erlöse rund 48,7-50,4 Mrd., Nettozinsertrag rund 25,7 Mrd.; Q1-Beat 5,94 gegen 5,47; die fixen Werte 5,61 und 49,56 Mrd. wurden zu Spannen korrigiert (JPMorgan 1Q26-Release Tier 1, Macrotrends, stockanalysis.com, Yahoo/Zacks Tier 2).",
+      "International Seaways: Börsenwert rund 3,84 Mrd. € (49,50 Mio. Aktien x 88,48 USD, EUR/USD 1,1411), Q1-Gewinn 286,1 Mio. USD gegenüber rund 50 Mio. im Vorjahr, Spotmarkt-Anteil rund 80 % (von 82 % korrigiert), zwei Tanker am 7.7. getroffen (INSW 8-K Tier 1, stockanalysis.com, UKMTO Tier 2).",
+      "THEON International: Börsenwert rund 2,47 Mrd. € (77,62 Mio. Aktien x 31,80 €), Soft-Backlog rund 1,4 Mrd. € (von 2,4 Mrd. korrigiert), Q2-Auftragseingang rund 153 Mio. € plus 27 Mio. Optionen, Juni-Auftrag rund 70 Mio. € mit Rheinmetall-Anteil, KGV rund 19,5 (von 27 korrigiert); die Angabe zum USMC-Rahmen wurde mangels Beleg gestrichen (THEON/GlobeNewswire Tier 1, stockanalysis.com Tier 2).",
+      "Lancashire Holdings: Börsenwert rund 1,9 Mrd. € (rund 1,6 Mrd. £, 244 Mio. Aktien, GBP/EUR 1,174), Q1-2026-GPW 668,4 Mio. USD, Zitate begrenzte Nahost-Belastung und weicheres Preisumfeld (Erneuerungs-Preisindex 93 %) (Trading Statement Tier 1, Reuters/Reinsurance News Tier 2)."
+    ],
+    "uncertain": [],
+    "gaps": []
+  }
+}

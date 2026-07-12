@@ -333,5 +333,20 @@
     "license": "Public domain",
     "artist": "Unknown authorUnknown author",
     "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "international-seaways": {
+    "file": null,
+    "name": "International Seaways, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "theon-international": {
+    "file": null,
+    "name": "THEON International Plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lancashire-holdings": {
+    "file": null,
+    "name": "Lancashire Holdings Limited",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
