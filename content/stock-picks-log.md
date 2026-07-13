@@ -17,3 +17,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-12-update-19 | International Seaways, Inc. (INSW) | mittel
 - 2026-07-12-update-19 | THEON International Plc (THEON) | mittel
 - 2026-07-12-update-19 | Lancashire Holdings Limited (LRE) | mittel
+- 2026-07-13-evening | Camtek Ltd. (CAMT) | mittel
+- 2026-07-13-evening | Frontline plc (FRO) | mittel
+- 2026-07-13-evening | Wizz Air Holdings plc (WIZZ) | mittel

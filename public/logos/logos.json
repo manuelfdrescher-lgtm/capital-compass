@@ -348,5 +348,47 @@
     "file": null,
     "name": "Lancashire Holdings Limited",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "exxonmobil": {
+    "file": "exxonmobil.svg",
+    "name": "Exxon Mobil",
+    "source": "https://commons.wikimedia.org/wiki/File:Exxon_Mobil_Logo.svg",
+    "license": "Public domain",
+    "artist": "The original uploader was KUsam at English Wikipedia.",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "biogen": {
+    "file": null,
+    "name": "Biogen",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "skhynix": {
+    "file": "skhynix.svg",
+    "name": "SK Hynix",
+    "source": "https://commons.wikimedia.org/wiki/File:SK_Hynix.svg",
+    "license": "Public domain",
+    "artist": "SK Hynix Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "camtek": {
+    "file": null,
+    "name": "Camtek Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "frontline": {
+    "file": "frontline.svg",
+    "name": "Frontline plc",
+    "source": "https://commons.wikimedia.org/wiki/File:Frontline_Logo.svg",
+    "license": "Public domain",
+    "artist": "Frontline",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "wizz-air": {
+    "file": "wizz-air.svg",
+    "name": "Wizz Air Holdings plc",
+    "source": "https://commons.wikimedia.org/wiki/File:Wizz_Air_logo_2015.svg",
+    "license": "Public domain",
+    "artist": "Wizz Air",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
   }
 }

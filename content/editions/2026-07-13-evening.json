@@ -1,0 +1,794 @@
+{
+  "edition": {
+    "number": 4,
+    "date": "2026-07-13",
+    "slot": "evening",
+    "dataAsOf": "Kurse: US-Handelsschluss Montag, 13. Juli 2026; DAX als Xetra-Schluss 13.7. Kein Alpha-Vantage-Kursdatenbudget für diese Ausgabe (kein API-Zugang, MCP-Server ohne Freigabe); die Markt-Kacheln stammen aus Tier-1/2-Quellen, mehrere sind mit approx gekennzeichnet und im Kachel-Hinweis belegt. Echte Kursreihen (priceSeries) und GICS-Sektor-Tageswerte waren strukturell nicht beschaffbar und werden ehrlich ausgewiesen. Nachrichten bis Redaktionsschluss Montag, 13. Juli, ca. 21:00 MESZ.",
+    "generatedAt": "2026-07-13T19:25:00Z",
+    "isExample": false
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.515,34",
+        "delta": "-0,79 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Montag 13.7. (Yahoo Finance, AP)"
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "25.873,18",
+        "delta": "-1,55 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Montag 13.7.; Chip- und Tech-Werte belasteten"
+      },
+      {
+        "label": "Dow Jones",
+        "value": "52.498,64",
+        "delta": "-0,26 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Montag 13.7.; Energiewerte stützten den Index"
+      },
+      {
+        "label": "Russell 2000",
+        "value": "ca. 2.953",
+        "delta": "-0,83 %",
+        "direction": "down",
+        "approx": true,
+        "note": "ca., Montag 13.7.; Tagesverlust doppelt belegt (IBTimes, TheStreet), Niveau aus Freitagsschluss 2.977,81 abgeleitet"
+      },
+      {
+        "label": "DAX",
+        "value": "ca. 25.100",
+        "delta": "+0,1 %",
+        "direction": "flat",
+        "approx": true,
+        "note": "ca., Xetra-Schluss Montag 13.7. (Spanne 25.087-25.114); Europa hielt sich robust gegen den Chip-Schock"
+      },
+      {
+        "label": "VIX (Volatilitätsindex, das Angstbarometer der Wall Street)",
+        "value": "17,16",
+        "delta": "+14,17 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss Montag 13.7.; Vortag 15,03, die Nervosität sprang deutlich"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,61 %",
+        "delta": "+4 Basispunkte",
+        "direction": "up",
+        "approx": false,
+        "note": "Montag 13.7. (CNBC); Rendite stieg, weil die Waffenruhe unter Druck geriet, ersetzt den Freitagswert 4,56 %"
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "ca. 78,85 USD",
+        "delta": "+3,74 %",
+        "direction": "up",
+        "approx": true,
+        "note": "ca., Montag 13.7. (TradingEconomics); WTI ca. 74,5 USD (+4 %). Kursierende +8/+9 %-Werte stammten aus einem älteren Bericht vom 8.7. und wurden verworfen"
+      },
+      {
+        "label": "US-Leitzins (Fed)",
+        "value": "3,50-3,75 %",
+        "direction": "flat",
+        "approx": false,
+        "note": "unverändert; nächste Entscheidung 28./29.7., erste Warsh-Anhörung 14./15.7."
+      },
+      {
+        "label": "Bitcoin",
+        "value": "ca. 63.000 USD",
+        "delta": "-2 %",
+        "direction": "down",
+        "approx": true,
+        "note": "ca., Montag 13.7. (Spanne 62,6-63,8k); fiel als Risiko-Asset mit den Aktien, rund 50 % unter dem Allzeithoch von 126.198 USD (Okt. 2025)"
+      },
+      {
+        "label": "EZB-Einlagenzins",
+        "value": "2,25 %",
+        "direction": "flat",
+        "approx": false,
+        "note": "seit 17.6.2026; Hauptrefinanzierungssatz 2,40 %"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "erster-handelstag-nach-golf-eskalation",
+      "ressort": "titelseite",
+      "kicker": "Geopolitik · Märkte",
+      "headline": "Öl springt, Chips stürzen, Gold fällt: ein Schock, vier Kanäle",
+      "subject": "Wall Street am 13. Juli",
+      "dek": "Der erste Handelstag nach der Golf-Eskalation zeigt, dass ein geopolitischer Schock nicht mechanisch in alle sicheren Häfen fließt, sondern über getrennte Wirkketten läuft. Wer nur die Schlagzeile las, hätte Gold als Gewinner erwartet.",
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Die Straße von Hormus steht im Zentrum des Schocks, doch an der Wall Street verteilte er sich höchst unterschiedlich.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      },
+      "body": [
+        "Am Montag reagierten die Märkte auf den Wochenend-Schlagabtausch zwischen den USA und Iran gespalten. Der Ölpreis sprang, US-Technologie- und vor allem Halbleiterwerte fielen deutlich, der breite S&P 500 gab 0,79 Prozent nach, der technologielastige Nasdaq 1,55 Prozent. Das Angstbarometer VIX stieg um gut 14 Prozent auf 17,16. Auffällig war, dass ausgerechnet Gold, der klassische sichere Hafen, um rund 2 Prozent auf etwa 4.020 Dollar nachgab, und dass auch Bitcoin fiel.",
+        "Der Laien-Reflex lautet: Krieg heißt Angst, Angst heißt Flucht in Gold, Anleihen und Dollar, während alles Riskante fällt. Am Montag stimmte davon nur ein Teil. Der Grund ist, dass ein Ölschock mehrere Wirkketten gleichzeitig öffnet, die sich überlagern. Vier Kanäle erklären das Bild.",
+        "Erstens verteuert höheres Öl Benzin, Transport und Vorprodukte, das hebt die erwartete Inflation. Eine höhere Inflationserwartung treibt die Renditen von Anleihen nach oben, also deren jährliche Verzinsung. Genau das war messbar: Die zehnjährige US-Rendite stieg um gut vier Basispunkte auf 4,61 Prozent. Eine höhere Rendite lässt künftige Unternehmensgewinne stärker abzinsen, sie also auf heute heruntergerechnet schrumpfen. Wachstumsaktien wie Chip- und KI-Werte erwarten ihre Gewinne weit in der Zukunft und verlieren dabei am meisten. Der energielastige Dow gab nur 0,26 Prozent nach, weil Ölförderer wie Exxon dort gegensteuerten.",
+        "Zweitens belasten steigende Renditen und ein festerer Dollar das zinslose Gold. Diese Kraft wirkte am Montag gegen die geopolitische Angst und überwog. Drittens fiel Bitcoin mit den Aktien und verhielt sich wie ein Risiko-Asset, obwohl laut CoinDesk weiter Geld in Bitcoin-Fonds floss. Der vierte Kanal ist der direkteste: Der Schiffsverkehr durch die Straße von Hormus, über die normalerweise rund ein Fünftel der globalen Öl- und Gasversorgung läuft, ist auf wenige Schiffe pro Tag eingebrochen. Das trifft Fluglinien über den Treibstoff, die Chemie über Vorprodukte und Verbraucher über die Zapfsäule.",
+        "So weit die Kausalkette, die diese Redaktion für die tragfähigste hält. Zur Fairness gehört das Gegenargument unseres Skeptikers: Der Renditeanstieg ist belegt, die exakte Dollarstärke des Tages weniger scharf, und ein Teil der Bewegungen lässt sich ebenso als Positionierung deuten. Gold kann auch schlicht wegen Gewinnmitnahmen nach einer Rally über 4.000 Dollar gefallen sein, Bitcoin wegen erzwungener Verkäufe gehebelter Positionen, und der Chipsturz kam ohnehin aus Korea. Mehrere teils unabhängige Bewegungen fielen auf denselben Tag. Beide Lesarten schließen sich nicht aus, aber die schlichtere mahnt zur Vorsicht bei zu glatten Erzählungen.",
+        "Die Lehre des Tages bleibt: Geopolitik wirkt über Kanäle, nicht über Stimmung. Wer nur auf die Schlagzeile schaut, hätte Gold als Gewinner erwartet. Wer die Kanäle verfolgt, sieht, dass an diesem Montag Renditen und Risikoscheu stärker zogen als die reine Kriegsangst. Der eigentliche Test kommt am Dienstag, wenn die US-Inflationszahl, der Start der Bankensaison und die erste Kongress-Anhörung von Fed-Chef Kevin Warsh aufeinandertreffen."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Teures Öl hebt die erwartete Inflation. Das treibt die Anleiherenditen. Höhere Renditen zinsen künftige Gewinne stärker ab, deshalb fallen Wachstumsaktien am stärksten. Dieselben höheren Renditen und der feste Dollar machen zinsloses Gold unattraktiver, deshalb gab es trotz Kriegsangst nach. Bitcoin fiel als Risiko-Asset mit. Ein Schock, aber getrennte Wirkketten.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Die Straße von Hormus wickelt normal rund ein Fünftel der Öl- und Flüssiggas-Versorgung der Welt ab. Die Blockade-Drohung und der eingebrochene Schiffsverkehr treiben den Ölpreis, und höhere Verkaufspreise heben unmittelbar die Gewinne der Ölförderer.",
+          "teilbranchen": "Gewinner: Ölproduzenten Exxon Mobil und Chevron, die den Dow stützten; Tankerreedereien über höhere Frachtraten. Gemischt: Raffinerien, wenn teurer Rohöl-Einkauf nicht sofort weitergegeben werden kann."
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Chemie- und Stahlkonzerne brauchen viel Energie und Öl-Rohstoffe. Ein Ölsprung erhöht ihre Produktionskosten und drückt die Margen; ein festerer Dollar verteuert zugleich Rohstoffe für Käufer außerhalb des Dollarraums.",
+          "teilbranchen": "Verlierer: energieintensive Chemie wie BASF (Öl und Gas als Vorprodukt). Gemischt: Bergbau- und Metallwerte, die von genereller Rohstoff-Inflation profitieren, aber unter dem festeren Dollar leiden."
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Treibstoff- und Energiekosten belasten Fluglinien, Logistiker und energieintensive Fertigung direkt über die Kostenseite. Gegenläufig stützt die militärische Eskalation Rüstungswerte, weil höhere Verteidigungsausgaben erwartet werden.",
+          "teilbranchen": "Verlierer: Airlines (Treibstoff ist ihr größter variabler Kostenblock), Speditionen. Gewinner: Rüstungskonzerne wie Lockheed Martin und RTX; in Europa stützten Rüstungswerte den robusten DAX."
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Steigende Benzinpreise nehmen Haushalten Kaufkraft für Autos, Reisen und andere freiwillige Ausgaben. Höhere Anleiherenditen verteuern zusätzlich Auto- und Konsumkredite und dämpfen die Nachfrage nach teuren Anschaffungen.",
+          "teilbranchen": "Verlierer: Autobauer, Reise- und Freizeitanbieter, hoch bewertete Onlinehändler. Relativ robust: Discount-Händler, zu denen Verbraucher bei knappem Budget wechseln."
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Lebensmittel, Getränke und Hygieneartikel werden auch in Krisen gekauft, deshalb gilt der Sektor als defensiv und zieht bei Nervosität Zuflüsse an. Gegenläufig steigen über den Ölpreis die Transport- und Verpackungskosten, was auf die Margen drückt.",
+          "teilbranchen": "Relativ gestützt: defensive Standardwerte wie Procter & Gamble, Coca-Cola und Nestlé als Zufluchtsorte. Belastet auf der Kostenseite: Hersteller mit langen Lieferketten und viel Öl-basierter Verpackung."
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "positiv",
+          "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen hängt kaum am Ölpreis oder an Geopolitik, deshalb gilt der Sektor als defensiver Hafen. An einem Risk-off-Tag fließt Kapital bevorzugt in solche stabilen Geschäftsmodelle.",
+          "teilbranchen": "Gewinner: Biogen war mit plus 4,96 Prozent Tagesgewinner (firmenspezifischer Treiber, nicht allein Sektor-Effekt); Pharma-Standardwerte wie Johnson & Johnson als defensive Ankerwerte."
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Steigende Anleiherenditen können die Zinsspanne der Banken (Differenz zwischen Kredit- und Einlagenzins) verbessern. Gegenläufig erhöhen der Geopolitik-Schock und die höhere Nervosität die Risikoprämien und die Sorge vor Kreditausfällen.",
+          "teilbranchen": "Gemischt vor der Bankensaison: JPMorgan, Goldman Sachs und Bank of America berichten Dienstag; Großbanken profitieren tendenziell von höheren Zinsen, Versicherer von höheren Anlagerenditen. Belastet: Handelshäuser bei anhaltend hoher Volatilität."
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Technologiewerte sind Wachstumsaktien, deren Wert stark von künftigen Gewinnen abhängt. Steigende Anleiherenditen machen diese fernen Gewinne heute weniger wert (Abzinsung), und der Chip-Schock aus Korea verstärkte den Verkaufsdruck. Der Nasdaq fiel 1,55 Prozent.",
+          "teilbranchen": "Verlierer: Halbleiter breit (Nvidia, Broadcom, Micron als Peers von SK Hynix und Samsung). Relativ stabil: Apple hielt sich mit plus 0,74 Prozent, weil weniger von der KI-Investitionswelle abhängig."
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Große Internet- und Plattformwerte in diesem Sektor sind ebenfalls zinssensitive Wachstumsaktien und leiden unter steigenden Renditen. Klassische Telekom-Anbieter dagegen liefern stabile Gebühreneinnahmen und wirken defensiv.",
+          "teilbranchen": "Belastet: werbe- und wachstumsgetriebene Plattformen wie Alphabet und Meta über den Zins- und KI-Bewertungskanal. Relativ robust: Telekom-Anbieter wie Verizon und AT&T mit planbaren Umsätzen."
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Versorger gelten als defensiv und zahlen stabile Dividenden, was bei Nervosität Käufer anzieht. Gegenläufig sind sie hoch verschuldet und stark zinssensitiv, deshalb belasten steigende Anleiherenditen die Kurse, weil deren feste Dividende gegenüber Anleihen an Reiz verliert.",
+          "teilbranchen": "Gemischt: Stromversorger wie NextEra Energy und Duke Energy; Gasversorger können leichte Rückenwinde aus höheren Energiepreisen sehen, während der Zinsanstieg die typische Defensiv-Rally dämpft."
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Immobiliengesellschaften (REITs) arbeiten mit viel Fremdkapital. Steigende Anleiherenditen verteuern ihre Finanzierung und machen zugleich sichere Anleihen attraktiver als Immobilien-Dividenden, was auf die Bewertungen drückt.",
+          "teilbranchen": "Verlierer: fremdfinanzierungsintensive Büro- und Einzelhandels-REITs. Etwas robuster: REITs mit inflationsgekoppelten Mietverträgen, die höhere Preise teilweise weitergeben können."
+        }
+      ],
+      "gewinnerVerlierer": [
+        { "firma": "Exxon Mobil", "logoKey": "exxonmobil", "bewegung": "+2,8 %", "warum": "Ölsprung hebt die Fördererlöse, Energie stützte den Dow" },
+        { "firma": "Biogen", "logoKey": "biogen", "bewegung": "+4,96 %", "warum": "defensiver Tagesgewinner aus firmenspezifischem Grund" },
+        { "firma": "SK Hynix", "logoKey": "skhynix", "bewegung": "-15,37 %", "warum": "Rekordsturz im koreanischen Chip-Beben, Bewertung statt Gewinn" },
+        { "firma": "Samsung Electronics", "logoKey": "samsung", "bewegung": "-10,7 %", "warum": "Chip-Ausverkauf zog den Kospi in den siebten Circuit Breaker des Jahres" }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Ein Schock, gespaltene Reaktion am 13.7.",
+          "subtitle": "Tagesveränderung ausgewählter Märkte in Prozent",
+          "unit": " %",
+          "source": "Yahoo Finance/AP, TradingEconomics, CoinDesk (13.7.2026)",
+          "allPositive": false,
+          "data": [
+            ["Nasdaq Comp.", -1.55],
+            ["S&P 500", -0.79],
+            ["Dow Jones", -0.26],
+            ["Gold", -2.0],
+            ["Bitcoin", -2.0],
+            ["Brent (Öl)", 3.74]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Am 13.7. fielen S&P 500 (-0,79 %), Nasdaq (-1,55 %) und Gold (~-2 %), während Öl (Brent +3,74 %) und die 10-jährige US-Rendite (auf 4,61 %) stiegen und der VIX um 14,17 % zulegte.",
+        "verdict": "bestätigt",
+        "evidence": "Index- und VIX-Schlusswerte über Yahoo Finance Live und AP/Detroit News (Tier 2) doppelt belegt. Brent +3,74 % über TradingEconomics und US-Marktberichte; die kursierenden +8/+9 %-Werte stammten aus einem älteren Bericht vom 8.7. und wurden verworfen. Gold ~-2 % über Yahoo und finanzen.ch; der Morgenwert -1,4 % wurde verworfen. 10-Jahres-Rendite 4,61 % über CNBC. Die Zuordnung der Bewegungen zu den vier Kanälen ist als Interpretation gekennzeichnet."
+      },
+      "lehre": "Die Lehre: Geopolitik wirkt über Kanäle, nicht über Stimmung. Bleibt Gold in einer Kriegswoche schwach, heißt das nicht, dass keine Angst da ist, sondern dass Renditen und Dollar an diesem Tag stärker zogen. Ein zu glattes Narrativ über einen einzigen Handelstag ist mit Vorsicht zu lesen.",
+      "sources": [
+        { "title": "Yahoo Finance Live, Stock market today, 13.7.2026", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-july-13-dow-sp-nasdaq-113249278.html", "tier": 2 },
+        { "title": "Detroit News/AP, S&P 500, Nasdaq decline as Iran tensions jolt sentiment, 13.7.2026", "url": "https://www.detroitnews.com/story/business/2026/07/13/sp-500-nasdaq-decline-as-iran-tensions-jolt-sentiment/90900659007/", "tier": 2 },
+        { "title": "CoinDesk, US-Iran hostilities send bitcoin lower, 13.7.2026", "url": "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand", "tier": 2 },
+        { "title": "CNBC, Treasury yields rise as US-Iran ceasefire falters, 13.7.2026", "url": "https://www.cnbc.com/2026/07/13/treasury-yields-faltering-us-iran-ceasefire-bond-markets.html", "tier": 2 }
+      ]
+    },
+    {
+      "id": "trump-hormus-blockade-zwanzig-prozent-gebuehr",
+      "ressort": "news",
+      "kicker": "Geopolitik · Schifffahrt",
+      "headline": "Trump setzt die Hormus-Blockade wieder in Kraft und verlangt eine Gebühr auf jede Fracht",
+      "subject": "Straße von Hormus",
+      "dek": "Nach dem Angriff auf einen Frachter kündigt Washington eine Blockade der iranischen Schifffahrt und eine Abgabe von 20 Prozent auf Ladung durch die Meerenge an. Die internationale Seeschifffahrts-Organisation widerspricht der Rechtsgrundlage.",
+      "body": [
+        "Am Wochenende und Montag hat sich die Lage in der Straße von Hormus verschärft. Auslöser war nach Angaben von Al Jazeera ein Angriff auf den zyprisch geflaggten Frachter MV GFS Galaxy. Das US-Zentralkommando flog daraufhin Schläge gegen iranische Ziele, um deren Fähigkeit zu Angriffen auf Schiffe zu schwächen. Iran feuerte Raketen und Drohnen auf mehrere Verbündete der USA; bestätigt sind Treffer in Kuwait, Katar und Jordanien.",
+        "Der für die Kapitalmärkte entscheidende Schritt kam von US-Präsident Donald Trump. Er kündigte an, eine Blockade der iranischen Schifffahrt durch die Meerenge wieder in Kraft zu setzen, beginnend am Dienstag um 16:00 Uhr. Zusätzlich soll eine Gebühr von 20 Prozent auf jede Fracht erhoben werden, die durch die Wasserstraße läuft. Die Internationale Seeschifffahrts-Organisation IMO widersprach der Rechtsgrundlage einer solchen Abgabe.",
+        "Die Bedeutung ergibt sich aus der Geografie. Durch die Straße von Hormus läuft normalerweise rund ein Fünftel der weltweiten Öl- und Flüssiggasversorgung. Der Schiffsverkehr ist nach Angaben von Al Jazeera bereits auf wenige Schiffe pro Tag eingebrochen, gegenüber rund 130 vor dem Konflikt. Eine Blockade plus Gebühr wirkt wie eine zusätzliche Verknappung und ein Preisaufschlag zugleich, beides treibt die Kosten für Öl und dessen Transport.",
+        "Für die Börse ist das der direkte Auslöser des Ölsprungs am Montag und der Risikoscheu, die Tech-Werte belastete. Ein anhaltend hoher Ölpreis hebt die erwartete Inflation, treibt die Anleiherenditen und verschärft die Zwickmühle der US-Notenbank, die am selben Tag mit der Inflationszahl und der Anhörung ihres neuen Chefs in den Blick rückt.",
+        "Zur Einordnung gehört die Unsicherheit über die Umsetzung. Eine angekündigte Blockade ist noch keine vollzogene, und historisch wurde eine Hormus-Sperre nie vollständig und nie lange durchgehalten. Der Ölmarkt behandelt die Lage bislang als teilweise umgehbar; ein Brent-Preis um 79 Dollar ist mit einer dauerhaften Vollblockade nicht vereinbar. Der wichtigste unbekannte Hebel ist nicht die Ankündigung, sondern die Dauer."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine Meerenge wie Hormus ist ein Nadelöhr. Läuft ein Fünftel des Welt-Öls hindurch und droht eine Blockade oder eine Gebühr, rechnet der Markt sofort mit knapperem Angebot und höheren Transportkosten. Der Ölpreis reagiert nicht erst, wenn Öl tatsächlich fehlt, sondern schon auf die Gefahr, dass es fehlen könnte. Eine Gebühr von 20 Prozent wirkt dabei wie ein Aufschlag, den am Ende die Käufer über den Preis tragen.",
+      "factcheck": {
+        "claim": "Trump kündigte am 13.7. eine Wiedereinsetzung der Hormus-Blockade (ab Dienstag 16:00 Uhr) und eine 20-Prozent-Gebühr auf Fracht durch die Meerenge an; die IMO widerspricht. Iran traf Kuwait, Katar und Jordanien; Anlass war der Frachter MV GFS Galaxy.",
+        "verdict": "bestätigt",
+        "evidence": "Blockade und 20-Prozent-Gebühr über CNBC, Bloomberg und Euronews (alle Tier 2) unabhängig belegt, inklusive IMO-Widerspruch. Getroffene Staaten (Kuwait, Katar, Jordanien) über AP/Yahoo (Tier 2); Oman, Bahrain und VAE waren nicht zweitbelegt und werden bewusst nicht namentlich als Ziel geführt. Anlass MV GFS Galaxy über Al Jazeera und CP24/AP (Tier 2)."
+      },
+      "sources": [
+        { "title": "CNBC, Trump proposes 20% toll on cargo through Strait of Hormuz, 13.7.2026", "url": "https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html", "tier": 2 },
+        { "title": "Bloomberg, Trump says US will be reimbursed 20% rate for Hormuz traffic, 13.7.2026", "url": "https://www.bloomberg.com/news/articles/2026-07-13/trump-says-us-will-be-reimbursed-20-rate-for-hormuz-traffic", "tier": 2 },
+        { "title": "Al Jazeera, Oil prices jump as US and Iran trade attacks over Strait of Hormuz, 13.7.2026", "url": "https://www.aljazeera.com/economy/2026/7/13/oil-prices-jump-as-us-and-iran-trade-attacks-over-strait-of-hormuz", "tier": 2 }
+      ]
+    },
+    {
+      "id": "warsh-cpi-oelschock-zwickmuehle",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · Ausblick",
+      "headline": "Dienstag der Fed: Warum der Markt bei Warsh die erste Zinserhöhung fürchtet",
+      "subject": "US-Notenbank Fed",
+      "dek": "Inflationszahl, Bankbilanzen und die erste Kongress-Anhörung von Fed-Chef Kevin Warsh fallen auf einen Tag. Der Ölschock macht die Notenbank-Frage brisant, doch eine niedrige Juni-Zahl könnte täuschen.",
+      "image": {
+        "file": "bank-cpi-woche.jpg",
+        "alt": "Glasfassade eines Bank-Hochhauses im Finanzviertel bei Sonnenaufgang, Passanten auf der Straße",
+        "caption": "Inflationszahl, Bankensaison und die erste Warsh-Anhörung treffen am Dienstag zusammen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      },
+      "body": [
+        "Der Dienstag bündelt drei kursbewegende Ereignisse. Um 8:30 Uhr New Yorker Zeit erscheint die US-Inflationszahl für Juni. Vor Handelsstart öffnen die großen US-Banken ihre Bücher. Und rund 90 Minuten nach der Inflationszahl tritt Fed-Chef Kevin Warsh erstmals zur halbjährlichen Anhörung vor den Kongress, am Dienstag vor das Repräsentantenhaus, am Mittwoch vor den Bankenausschuss des Senats.",
+        "Der Konsens erwartet, dass die Jahresrate der Inflation von 4,2 Prozent im Mai auf rund 3,9 Prozent fällt, vor allem wegen etwa 10 Prozent niedrigerer Benzinpreise im Juni. Die Kernrate, also die Teuerung ohne die schwankungsanfälligen Posten Energie und Lebensmittel, bleibt aber zäh bei rund 2,9 Prozent und ist zuletzt gestiegen, von 2,6 Prozent im März über 2,8 im April auf 2,9 im Mai. Sie liegt damit klar über dem Ziel der Fed von 2 Prozent.",
+        "Neu und für viele überraschend ist die Richtung, in die der Markt bei Warsh horcht. Es geht nicht mehr um die Frage, wann die Fed senkt. Beim Juni-Treffen sahen 9 von 18 Mitgliedern mindestens eine Zinserhöhung bis Jahresende, und der mittlere Zinspunkt im sogenannten Dot Plot für Ende 2026 stieg auf 3,80 Prozent, von 3,40 Prozent im März. Der Leitzins liegt heute bei 3,50 bis 3,75 Prozent. Eine erste Erhöhung nach langer Pause wiegt schwerer als eine weitere Senkung, weil sie die Erwartung umdreht, wohin der Zins läuft.",
+        "Der Ölsprung dieser Woche verschärft die Lage. Teures Öl hebt die Preise und bremst zugleich das Wachstum. Fachleute nennen das einen Angebotsschock. Er stellt die Fed vor eine Zwickmühle, weil ihre beiden gesetzlichen Aufträge, stabile Preise und hohe Beschäftigung, in entgegengesetzte Richtungen ziehen. Höhere Zinsen gegen die Inflation verstärken die Wachstumsbremse, tiefere Zinsen für das Wachstum riskieren, dass sich der Preisschub festsetzt.",
+        "Zur Fairness gehört das Gegenargument unseres Skeptikers, und es ist stark: Notenbanken schauen historisch durch einmalige Ölschocks hindurch, solange die Inflationserwartungen verankert bleiben. Genau diese Grundregel zieht gegen die Dramatik der These. Hinzu kommt ein feiner Widerspruch im Timing. Die Juni-Zahl enthält den Ölsprung noch gar nicht, sie profitiert im Gegenteil von den gefallenen Benzinpreisen. Eine niedrige Schlagzeile am Dienstag könnte die Zinserhöhungs-Wette also eher dämpfen als befeuern. Der neue Ölpreis wirkt erst in der Juli-Zahl, die im August erscheint.",
+        "Für die Banken gilt eine eigene Logik. Höhere Zinsen verbreitern tendenziell die Zinsspanne und stützen den Zinsüberschuss, während teures Öl die Konjunktur abkühlen und die Vorsorge für faule Kredite anheben kann. Der Optionsmarkt preist für die Berichtstage Bewegungen von rund 4 bis 6 Prozent bei JPMorgan, Goldman Sachs und den übrigen Häusern ein. Welche der beiden Kräfte eine Bank in ihrem Ausblick betont, verrät mehr über die erwartete Wirtschaftslage als der nackte Quartalsgewinn."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Die Fed steuert die Nachfrage über den Zins. Gegen einen Ölschock, der von der Angebotsseite kommt, hat sie kein direktes Werkzeug. Sie kann nur die Erwartungen ankern. Deutet sie Erhöhungen an, steigt der Satz, mit dem Aktien abgezinst werden, das drückt vor allem Wachstumswerte. Ein Inflationswert bewegt die Börse dabei nicht durch seine Höhe an sich, sondern durch die Abweichung vom Konsens.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum der Markt bei Warsh die Zinserhöhung fürchtet",
+        "absaetze": [
+          "Die US-Notenbank Fed hat zwei gesetzliche Aufträge: stabile Preise, definiert als rund zwei Prozent Inflation pro Jahr, und hohe Beschäftigung. Monatelang drehte sich die Debatte um die Frage, wann die Fed die Zinsen senkt. Neu ist, dass die Fed selbst die andere Richtung andeutet. Beim Juni-Treffen sahen 9 von 18 Mitgliedern mindestens eine Zinserhöhung bis Jahresende, und der mittlere Zinspunkt für Ende 2026 stieg auf 3,80 Prozent, von 3,40 Prozent im März. Der Leitzins liegt heute bei 3,50 bis 3,75 Prozent.",
+          "Eine erste Erhöhung nach langer Pause wiegt schwerer als eine weitere Senkung. Sie dreht die Erwartung um, wohin der Zins läuft. Märkte preisen nicht den heutigen Zins ein, sondern den erwarteten Pfad. Schon die Andeutung einer Kehrtwende hebt den Satz, mit dem künftige Gewinne abgezinst, also auf heute heruntergerechnet werden. Das trifft Wachstums- und Technologiewerte am stärksten, weil deren Gewinne weit in der Zukunft liegen.",
+          "Der Ölsprung stellt die Fed vor eine Zwickmühle. Teures Öl hebt die Preise und bremst zugleich das Wachstum, ein Angebotsschock. Beide Ziele der Fed ziehen dann gegeneinander. Die Faustformel für den passenden Zins, die Taylor-Regel, verknüpft den Leitzins mit der Abweichung der Inflation vom Ziel und der Auslastung der Wirtschaft. Bei einem Angebotsschock schlagen beide Teile gegensätzlich aus, deshalb liefert sie kein klares Ergebnis.",
+          "Entscheidend ist, was eine Notenbank kann und was nicht. Sie kann über den Zins die Nachfrage steuern und über klare Worte die Inflationserwartung verankern, also den Glauben stützen, dass die Teuerung zu zwei Prozent zurückkehrt. Lockert sich dieser Glaube, drohen Zweitrundeneffekte: Ein einmaliger Preisschub sickert über Löhne und Preise dauerhaft ein. Ein Barrel Öl kann die Fed nicht fördern. Gegen den Angebotsschock ist sie machtlos, sie kann nur den Anker verteidigen.",
+          "Ein Timing-Hinweis zum Schluss: Die Juni-Inflationszahl vom Dienstag enthält den Ölsprung dieser Woche noch nicht. Sie profitiert im Gegenteil von rund zehn Prozent niedrigeren Benzinpreisen im Juni. Eine niedrige Schlagzeile ist deshalb keine Entwarnung, sie kann aber kurzfristig den Handlungsdruck senken. Der neue Ölpreis wirkt erst in der Juli-Zahl, die im August erscheint. Genau diese Verzögerung macht die Lage so schwer lesbar."
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Inflation: Schlagzeile fällt, Kern klebt",
+          "subtitle": "US-Verbraucherpreise, Jahresrate in Prozent",
+          "unit": " %",
+          "source": "BLS (Mai-Ist), IG/Konsens (Juni-Erwartung), Fed-Ziel (2026)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["Headline Mai (Ist)", 4.2],
+            ["Headline Juni (Konsens)", 3.9],
+            ["Kern Juni (Konsens)", 2.9],
+            ["Fed-Ziel", 2.0]
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Die Fed dreht die Richtung",
+          "subtitle": "Mittlerer FOMC-Zinsprojektionspunkt für Ende 2026, in Prozent",
+          "unit": " %",
+          "source": "FOMC-Projektionen März vs. Juni 2026 (via investingLive, Bloomberg, CNBC)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            ["März-Median", 3.4],
+            ["Juni-Median", 3.8],
+            ["Leitzins heute (Bandmitte)", 3.625]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "US-CPI-Juni-Konsens Headline rund 3,9 Prozent (von 4,2 im Mai), Kern rund 2,9 Prozent; FOMC-Dot-Median 2026 auf 3,80 Prozent (von 3,40 im März), 9 von 18 sehen mindestens eine Erhöhung; Leitzins 3,50 bis 3,75 Prozent; Warsh vor dem Repräsentantenhaus am 14.7., dem Senat am 15.7.",
+        "verdict": "bestätigt",
+        "evidence": "CPI-Konsens über IG, Kiplinger, MUFG (Tier 2); Mai-Werte über BLS (Tier 1). Dot-Median 3,80 gegen 3,40 und die Verteilung 9 über / 8 auf / 1 unter dem Mittelpunkt über investingLive, StockTitan, Bloomberg und CNBC (Tier 2). Das kursierende Detail 6 von 9 Mitgliedern mit zwei Schritten war in keiner Quelle belegt und wurde gestrichen. Warsh-Termine über Yahoo/Congress-Vorschau (Tier 2)."
+      },
+      "lehre": "Die Lehre: Ein einzelner Datenpunkt bewegt Märkte über die Abweichung vom Konsens. Doch ein Rückspiegel-Wert wie der Juni-Preisindex, der vor der Öl-Spitze liegt, sagt wenig über die Lage von heute. Und eine Notenbank kann einen Angebotsschock nur indirekt bekämpfen, indem sie die Erwartungen verteidigt.",
+      "sources": [
+        { "title": "investingLive, FOMC June 2026 dot plot sees end-of-year target at 3.8% vs 3.4% in March", "url": "https://investinglive.com/centralbank/fomc-june-2026-dot-plot-sees-end-of-year-target-at-38-vs-34-in-march-2026-20260617/", "tier": 2 },
+        { "title": "IG, US CPI June 2026 Preview, 13.7.2026", "url": "https://www.ig.com/uk/trading-strategies/us-cpi-june-2026-preview-what-to-expect-tomorrow-260713", "tier": 2 },
+        { "title": "Yahoo Finance, What to watch: Warsh testifies, bank earnings", "url": "https://finance.yahoo.com/economy/policy/articles/watch-week-warsh-testifies-bank-025805904.html", "tier": 2 },
+        { "title": "CNBC, Fed leaves rates unchanged but signals higher rates ahead, 17.6.2026", "url": "https://www.cnn.com/2026/06/17/business/live-news/federal-reserve-interest-rate-kevin-warsh", "tier": 2 }
+      ]
+    },
+    {
+      "id": "sk-hynix-rekordsturz-ki-beben",
+      "ressort": "unternehmen",
+      "kicker": "Halbleiter · Bewertung",
+      "headline": "Rekordsturz bei SK Hynix: Warum der KI-Liebling an einem Tag 15 Prozent verliert",
+      "subject": "SK Hynix",
+      "dek": "An den Zahlen des Speicherchip-Konzerns hat sich nichts geändert. Geändert hat sich der Preis, den der Markt für dieselben erwarteten Gewinne zahlen will. Ein Lehrstück über Zyklik, Bewertung und Klumpenrisiko.",
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Schriftzug und Logo von SK Hynix an einer modernen Firmenfassade",
+        "caption": "SK Hynix verlor an einem einzigen Handelstag den größten Anteil seiner Firmengeschichte.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      },
+      "body": [
+        "Die Aktie des südkoreanischen Speicherchip-Herstellers SK Hynix ist am Montag um 15,37 Prozent auf 1.845.000 Won gefallen. Laut Bloomberg und weiteren Diensten war es der größte Tagesverlust der Firmengeschichte, größer noch als der Einbruch von 14,93 Prozent während der Finanzkrise 2008. Der Börsenwert schloss bei rund 875 Milliarden US-Dollar, weniger als zwei Monate nachdem die Firma erstmals die Marke von einer Billion Dollar überschritten hatte. Der koreanische Leitindex Kospi verlor 8,95 Prozent und wurde durch einen automatischen Notstopp, einen Circuit Breaker, für 20 Minuten ausgesetzt, zum siebten Mal in diesem Jahr. Samsung fiel rund 10,7 Prozent.",
+        "Bemerkenswert ist, was nicht passiert ist. Es gab keine Gewinnwarnung. Erst im Januar hatte SK Hynix Rekordzahlen für 2025 vorgelegt: 97,1 Billionen Won Umsatz, ein Plus von 47 Prozent, und eine operative Marge von 49 Prozent. Getrieben wird das vom Geschäft mit HBM-Speicher für KI-Rechenzentren, wo SK Hynix rund 62 Prozent Weltmarktanteil hält und Hauptlieferant von Nvidia ist.",
+        "Der Sturz lief fast vollständig über die Bewertung, nicht über den Gewinn. Speicherchips sind ein zyklisches Rohstoffgeschäft. In guten Jahren sind die Margen sagenhaft, doch jeder weiß, dass sie nicht ewig halten. Sobald der Markt zweifelt, ob der Zyklus seinen Gipfel erreicht hat, schrumpft der Preis, den Anleger für heutige Rekordgewinne zu zahlen bereit sind, sehr schnell. Genau das ist am Montag geschehen.",
+        "Dazu kommt die Hebelwirkung bei teuer bewerteten KI-Gewinnern. Ein großer Teil des Kurses besteht aus Gewinnen, die erst in vielen Jahren anfallen sollen. Steigen die Zinsen und wächst die Skepsis an der Nachhaltigkeit der KI-Ausgaben, verlieren diese fernen Gewinne in der Rechnung von heute stark an Wert. Solche Aktien fallen dann überproportional. Das Konzentrationsrisiko verschärft alles: Zwei Werte stellen über 60 Prozent des Kospi, und fast der gesamte HBM-Umsatz von SK Hynix hängt an einem einzigen Kunden.",
+        "Der Schock strahlte auf die US-Halbleiterwerte aus. Der Nasdaq schloss 1,55 Prozent tiefer, während Energiewerte den Dow stützten. Der Wirkkanal für Peers wie Micron, Nvidia und Broadcom ist derselbe Bewertungsmechanismus: Wird der KI-Handel weltweit skeptischer gesehen, trifft die Neubewertung alle hoch bewerteten Profiteure zugleich, unabhängig von deren eigenen Zahlen. Der nächste Realitätstest folgt am Donnerstag, wenn der Auftragsfertiger TSMC seine Quartalszahlen vorlegt.",
+        "Zur Ehrlichkeit gehört die Unsicherheit, auf die unser Skeptiker zu Recht pocht. Ein Kospi-Tag von minus 8,95 Prozent mit Circuit Breaker spricht auch für einen breiten Zwangsverkaufsschock, bei dem Anleger auf Kredit ihre Positionen glattstellen müssen und die Index-Mechanik den Fall verstärkt. Wie viel des Sturzes auf Geopolitik, wie viel auf Gewinnmitnahmen nach dem Nasdaq-Debüt der Vorwoche und wie viel auf die reine Neubewertung des KI-Handels entfällt, lässt sich an einem einzigen Tag nicht sauber trennen. Dass Hongkong leicht im Plus schloss und der DAX robust blieb, spricht gegen einen rein geopolitischen Auslöser."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Kurs einer Aktie ist der Gegenwartswert aller künftig erwarteten Gewinne. Bei einem zyklischen Geschäft wie Speicherchips sind die heutigen Gewinne hoch, aber unsicher haltbar. Zwei Schrauben drehen den Preis: die erwartete Höhe künftiger Gewinne und der Zinssatz, mit dem ferne Gewinne abgezinst werden. Am Montag drehten sich beide gleichzeitig in die falsche Richtung. Das erklärt, warum ein Wert ohne neue schlechte Firmenzahl an einem Tag 15 Prozent verlieren kann.",
+      "company": {
+        "name": "SK Hynix",
+        "ticker": "000660 (KRX) / SKHY (Nasdaq-ADR)",
+        "exchange": "Korea Exchange / Nasdaq",
+        "logoKey": "skhynix",
+        "whatTheyDo": "SK Hynix ist ein südkoreanischer Hersteller von Speicherchips. Diese Chips merken sich Daten in Computern, Smartphones und vor allem in den großen Rechenzentren, die künstliche Intelligenz betreiben. Die Firma ist Weltmarktführer bei einer besonders schnellen Speicherart namens HBM, die für KI-Anwendungen gebraucht wird.",
+        "whyItMatters": "SK Hynix ist der wichtigste Speicher-Zulieferer von Nvidia und damit ein Schlüsselstück der weltweiten KI-Lieferkette. Zusammen mit Samsung macht die Firma über 60 Prozent des koreanischen Leitindex aus, weshalb ihr Kurs den ganzen Markt bewegt.",
+        "keyMetrics": [
+          ["Kurs (Schluss Mo 13.7.)", "1.845.000 Won (-15,37 %)"],
+          ["Einordnung Tagesverlust", "größter Tagesverlust der Firmengeschichte, größer als -14,93 % in der Finanzkrise 2008 (Bloomberg-Syndication, Coingape)"],
+          ["Börsenwert (Schluss Mo)", "ca. 875 Mrd. USD"],
+          ["Umsatz 2025", "97,1 Bio. Won (+47 % j/j), operative Marge 49 %"],
+          ["KGV (Kurs-Gewinn-Verhältnis)", "grob ca. 28 bis 30 auf Basis Börsenwert/Nettogewinn 2025 (grobe Näherung, kein Providerwert)"],
+          ["Geschäftsmodell-Kennzahl", "ca. 62 % HBM-Weltmarktanteil; ca. 90 % der HBM-Lieferungen an Nvidia"],
+          ["Marktumfeld am Berichtstag", "Kospi -8,95 % (siebter Circuit Breaker 2026), Samsung ca. -10,7 %"]
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Koreas Black Monday zieht die Chips mit",
+          "subtitle": "Tagesveränderung am 13.7.2026 in Prozent",
+          "unit": " %",
+          "source": "Korea JoongAng Daily, Bloomingbit, Coingape, Yahoo Finance (13.7.2026)",
+          "allPositive": false,
+          "data": [
+            ["SK Hynix", -15.37],
+            ["Samsung", -10.7],
+            ["Kospi", -8.95],
+            ["Nasdaq Comp.", -1.55]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "SK Hynix fiel am 13.7. um 15,37 Prozent auf 1.845.000 Won, der größte Tagesverlust der Firmengeschichte; der Kospi verlor 8,95 Prozent mit dem siebten Circuit Breaker des Jahres, Samsung rund 10,7 Prozent.",
+        "verdict": "bestätigt",
+        "evidence": "Tagesverlust und Firmenrekord über Bloomingbit und Coingape (Tier 2), inklusive Vergleich mit -14,93 % in 2008. Kospi 6.806,93 (-8,95 %) und siebter Circuit Breaker über Korea JoongAng Daily und Seoul Economic Daily (Tier 2). Samsung rund -10,7 % über Korea JoongAng Daily und TradingKey. FY25-Kennzahlen über die SK-Hynix-Mitteilung (Tier 1) und CNBC. Das KGV ist als eigene Näherung gekennzeichnet, kein Providerwert."
+      },
+      "lehre": "Die Lehre: Bei einem zyklischen Wachstumswert ist die Bewertung selbst das Risiko. Steckt ein großer Teil des Kurses in fernen Gewinnen, genügt ein Zweifel an der Wachstumsgeschichte für einen zweistelligen Kursverlust, ganz ohne neue schlechte Firmenzahl. An einem Circuit-Breaker-Tag mischen sich zudem erzwungene Verkäufe in die Bewegung, die sich nicht sauber herausrechnen lassen.",
+      "sources": [
+        { "title": "SK Hynix, FY25 Financial Results, 28.1.2026", "url": "https://news.skhynix.com/sk-hynix-announces-fy25-financial-results/", "tier": 1 },
+        { "title": "Coingape, SK Hynix crashes 15.4% in record drop, Kospi hits circuit breaker, 13.7.2026", "url": "https://coingape.com/news/stocks/sk-hynix-crashes-15-4-in-record-drop-kospi-hits-circuit-breaker-on-us-iran-tensions/", "tier": 2 },
+        { "title": "Korea JoongAng Daily, Black Monday: Kospi plunges 8.95%, closes below 7000, 13.7.2026", "url": "https://www.koreajoongangdaily.com/business/black-monday-kospi-plunges-895-closes-below-7000/12771040", "tier": 2 },
+        { "title": "Bloomingbit, Kospi slumps 8.95% as SK Hynix posts record 15.37% drop, 13.7.2026", "url": "https://en.bloomingbit.io/feed/news/116128", "tier": 2 }
+      ]
+    },
+    {
+      "id": "exxon-oelsprung-energie-gewinner",
+      "ressort": "unternehmen",
+      "kicker": "Energie · Earnings",
+      "headline": "Öl springt, Exxon steigt: der Weg vom Hormus-Schock in die Gewinn- und Verlustrechnung",
+      "subject": "Exxon Mobil",
+      "dek": "Während Chipwerte am Montag fielen, stützten Energiewerte den Dow. Der Ölkonzern hatte den Gewinnschub selbst beziffert. Warum der Effekt real, aber kleiner ist, als der Ölpreis vermuten lässt.",
+      "body": [
+        "Am ersten Handelstag nach der US-Iran-Eskalation sprang der Ölpreis, und die Aktie von Exxon Mobil stieg rund 2,8 Prozent auf etwa 138,70 US-Dollar. Der Dow Jones hielt sich mit einem Minus von 0,26 Prozent deutlich besser als der technologielastige Nasdaq mit minus 1,55 Prozent, weil Energiewerte den Index stützten. Brent-Rohöl legte um rund 3,7 Prozent auf etwa 79 Dollar zu.",
+        "Exxon hatte den Grund für den Optimismus bereits am 7. Juli selbst geliefert. In einer Aktualisierung seiner Erwägungen zum zweiten Quartal teilte der Konzern mit, dass höhere Rohölpreise den Gewinn der Fördersparte, Upstream genannt, gegenüber dem Vorquartal um rund 3,5 bis 3,9 Milliarden Dollar heben dürften. Die Basis im ersten Quartal lag bei 5,7 Milliarden Dollar. Den absoluten Endwert nannte der Konzern nicht; Analysten wie UBS modellieren für das zweite Quartal einen Upstream-Gewinn in der Größenordnung von 8,6 Milliarden Dollar.",
+        "Der Wirkmechanismus ist einer der klarsten des ganzen Handelstages. Für einen Ölproduzenten sind die Kosten je gefördertem Fass kurzfristig fast fix. Steigt der Verkaufspreis, also der Ölpreis, landet fast jeder zusätzliche Dollar direkt im Gewinn. Deshalb wirkt ein Ölpreisplus von wenigen Prozent auf den Fördergewinn wie ein Hebel und kann ihn zweistellig heben. Exxon hat diesen Hebel mit seiner eigenen Zahl greifbar gemacht.",
+        "Für die Aktie zählt neben dem laufenden Gewinn die Kapitalrückgabe. Exxon hat die Dividende 43 Jahre in Folge erhöht und kauft in großem Umfang eigene Aktien zurück. Ein Ölpreisschub verbessert den freien Mittelzufluss, aus dem beides bezahlt wird. Das macht Energiewerte in einem Umfeld steigender Ölpreise und steigender Anleiherenditen relativ attraktiv, während zinssensible Wachstumswerte leiden.",
+        "Der Schub ist real, aber kleiner, als der Ölpreis suggeriert. Exxon ist ein integrierter Konzern und verdient auch an Raffinerien und Chemie. Für diese Sparten ist Rohöl ein Einkaufspreis; teures Öl drückt dort die Marge. Ein Teil des Fördervorteils wird im nachgelagerten Geschäft wieder aufgezehrt. Das erklärt, warum die Aktie rund 2,8 Prozent zulegte und nicht im Gleichschritt mit dem Ölpreis.",
+        "Zur Fairness gehört der Einwand unseres Skeptikers. An einem Tag, an dem der ganze Energiesektor aus demselben Ölgrund stieg, lässt sich das Plus von 2,8 Prozent kaum allein der Exxon-eigenen Mitteilung zuschreiben. Ein Teil der relativen Stärke stammt aus sektorweiter Umschichtung an einem nervösen Tag. Und der Ölpreis ist ein Erwartungspreis. Beruhigt sich Hormus, kann er ebenso schnell fallen, wie er gestiegen ist, und der Kurseffekt dreht."
+      ],
+      "mechanik": "Mechanik einfach erklärt: In der Gewinn- und Verlustrechnung stehen auf der einen Seite die Verkaufserlöse, die mit dem Ölpreis steigen, und auf der anderen die Förderkosten, die kurzfristig fast fix sind. Die Differenz ist der Gewinn der Fördersparte, und sie wächst überproportional, wenn der Preis steigt. Doch derselbe Konzern kauft in seinen Raffinerien Rohöl ein. Dort ist der hohe Ölpreis ein Kostenfaktor. Der Nettoeffekt ist positiv, aber gedämpft. Deshalb bewegt sich die Aktie eines integrierten Konzerns weniger stark als der Ölpreis selbst.",
+      "company": {
+        "name": "Exxon Mobil",
+        "ticker": "XOM",
+        "exchange": "NYSE",
+        "logoKey": "exxonmobil",
+        "whatTheyDo": "Exxon Mobil ist einer der größten Ölkonzerne der Welt. Die Firma fördert Öl und Erdgas, verarbeitet beides in eigenen Raffinerien zu Benzin, Diesel und Chemieprodukten und verkauft diese weltweit. Man nennt so ein Unternehmen integriert, weil es die gesamte Kette von der Bohrung bis zur Tankstelle abdeckt.",
+        "whyItMatters": "Weil Exxon sowohl fördert als auch verarbeitet, zeigt die Aktie besonders anschaulich, wie ein Ölpreissprung durch die Bücher eines Konzerns läuft. Als Schwergewicht im Dow Jones stützte sie am Montag den Index, während Technologiewerte fielen.",
+        "keyMetrics": [
+          ["Kurs (Mo 13.7.)", "ca. 138,70 USD (+2,8 %); eine Quelle +3,1 %"],
+          ["Börsenwert", "ca. 575 Mrd. USD"],
+          ["KGV (Kurs-Gewinn-Verhältnis)", "ca. 23 (companiesmarketcap 23,12, MacroTrends 22,09)"],
+          ["Dividende", "Rendite ca. 2,9 %; 43 Jahre in Folge erhöht"],
+          ["Q2-2026-Ansage vom 7.7.", "Upstream-Gewinn ca. +3,5 bis 3,9 Mrd. USD gegenüber Q1 (Basis 5,7 Mrd.); UBS modelliert rund 8,6 Mrd. USD"]
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Ein Handelstag, zwei Welten",
+          "subtitle": "Tagesveränderung am 13.7.2026 in Prozent",
+          "unit": " %",
+          "source": "StocksToTrade, Yahoo Finance/AP (13.7.2026)",
+          "allPositive": false,
+          "data": [
+            ["Exxon Mobil", 2.8],
+            ["Dow Jones", -0.26],
+            ["S&P 500", -0.79],
+            ["Nasdaq Comp.", -1.55]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Exxon Mobil stieg am 13.7. rund 2,8 Prozent auf ca. 138,70 USD (Börsenwert ca. 575 Mrd., KGV ca. 23), gestützt vom Ölsprung und einer eigenen Q2-Ansage vom 7.7. über 3,5 bis 3,9 Mrd. USD Upstream-Mehrgewinn gegenüber Q1.",
+        "verdict": "bestätigt",
+        "evidence": "Kurs und Bewegung über StocksToTrade (+2,84 %) und TradingKey (+3,1 %) (Tier 2). Börsenwert und KGV über companiesmarketcap (573 Mrd., KGV 23,12) und MacroTrends (KGV 22,09) doppelt belegt. Q2-Upstream-Ansage +3,5 bis 3,9 Mrd. USD über das SEC-8-K (Tier 1) und US News/Proactive (Tier 2), Datum 7.7. Der zuvor kursierende absolute Wert ~9,6 Mrd. USD und die Bezeichnung höchster seit 2022 wurden gestrichen, weil nicht belegt; UBS modelliert rund 8,6 Mrd."
+      },
+      "lehre": "Die Lehre: Ein Ölproduzent profitiert überproportional von einem höheren Ölpreis, weil seine Förderkosten kurzfristig fix sind. Bei einem integrierten Konzern dämpft aber das Raffinerie- und Chemiegeschäft den Effekt, weil dort teures Rohöl ein Kostenfaktor ist. Und an einem Sektor-Tag trägt die Umschichtung den Kurs mit, nicht nur die eigene Meldung.",
+      "sources": [
+        { "title": "US News/Reuters, Exxon Mobil signals higher second-quarter earnings, 7.7.2026", "url": "https://money.usnews.com/investing/news/articles/2026-07-07/exxon-mobil-signals-higher-second-quarter-earnings", "tier": 2 },
+        { "title": "StocksToTrade, XOM stock climbs as oil windfall lifts Q2 earnings outlook, 13.7.2026", "url": "https://stockstotrade.com/news/exxonmobil-holdings-corporation-xom-news-2026_07_13/", "tier": 2 },
+        { "title": "companiesmarketcap, Exxon Mobil P/E ratio", "url": "https://companiesmarketcap.com/exxon-mobil/pe-ratio/", "tier": 2 }
+      ]
+    },
+    {
+      "id": "gold-fiel-trotz-krise-sicherer-hafen",
+      "ressort": "lernecke",
+      "kicker": "Lernecke · Sichere Häfen",
+      "headline": "Warum Gold in der Kriegswoche fiel: ein sicherer Hafen ist kein Automatismus",
+      "subject": "Gold",
+      "dek": "Ein geopolitischer Schock, und Gold gibt trotzdem nach. Das wirkt widersprüchlich, folgt aber einer klaren Logik aus Realzins, Dollar und Positionierung.",
+      "image": {
+        "file": "gold-bitcoin.jpg",
+        "alt": "Goldbarren und eine physische Bitcoin-Münze auf dunklem Hintergrund",
+        "caption": "Gold und Bitcoin gelten als sichere Häfen, verhielten sich am Montag aber gegenteilig zur Erwartung.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      },
+      "body": [
+        "Der Reflex ist verständlich: Krieg heißt Angst, Angst heißt Gold. Am Montag fiel Gold trotzdem um rund 2 Prozent auf etwa 4.020 Dollar, und auch Bitcoin gab nach. Das ist kein Widerspruch zur Rolle als sicherer Hafen, sondern ein Lehrstück darüber, dass diese Rolle keine Konstante ist, sondern von zwei Gegenkräften abhängt.",
+        "Die erste Gegenkraft ist der Realzins, also der Zins nach Abzug der Inflation. Gold zahlt keine Zinsen. Sein Nachteil gegenüber einer sicheren Anleihe wächst, wenn die Renditen steigen. Genau das geschah: Die zehnjährige US-Rendite kletterte auf 4,61 Prozent. Die zweite Gegenkraft ist der Dollar. Gold wird in Dollar gehandelt, ein festerer Dollar verteuert es für Käufer außerhalb des Dollarraums und dämpft die Nachfrage.",
+        "Am Montag standen also zwei Kräfte gegeneinander: die geopolitische Angst, die Gold normalerweise stützt, und der Anstieg von Renditen und Dollar, der Gold belastet. Die zweite Gruppe überwog. Hinzu kommt wahrscheinlich schlichte Gewinnmitnahme nach einer Rally über 4.000 Dollar. Wer weit im Plus sitzt, verkauft in der Panik oft zuerst das, was Gewinn zeigt, um Verluste anderswo zu decken. Das ist eine Deutung, kein belegter Fakt.",
+        "Bitcoin folgte einem verwandten Muster. Die These vom digitalen Gold bestätigte sich erneut nicht. In Stressphasen verhält sich Bitcoin wie ein spekulatives Wachstums-Asset und reagiert auf dieselben Treiber wie Technologiewerte, nämlich höhere Renditen und Dollarstärke. Verstärkt wird der Fall durch erzwungene Verkäufe: Wer auf Kredit auf steigende Kurse gewettet hat, muss bei fallenden Kursen zwangsweise verkaufen.",
+        "Die übertragbare Lektion: Ob ein Vermögenswert in der Krise steigt, hängt nicht von seinem Ruf ab, sondern davon, welche Kräfte an diesem Tag gerade dominieren. Ein sicherer Hafen ist eine Rolle, die ein Wert je nach Zins- und Währungsumfeld spielen kann oder eben nicht. Wer Gold blind als Krisenversicherung kauft, verwechselt einen langfristigen Ruf mit einer Garantie für jeden einzelnen Tag."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Gold wirft keine Zinsen ab. Steigen die Anleiherenditen, wird eine sichere, verzinste Anleihe im Vergleich attraktiver, und Gold verliert relativ an Reiz. Ein festerer Dollar verteuert Gold zusätzlich für Käufer außerhalb des Dollarraums. Beide Effekte können die reine Krisenangst überlagern. Deshalb kann Gold ausgerechnet in einer Kriegswoche fallen.",
+      "factcheck": {
+        "claim": "Gold fiel am 13.7. um rund 2 Prozent auf etwa 4.020 USD, obwohl ein geopolitischer Schock klassisch als goldpositiv gilt; parallel stiegen die 10-jährige US-Rendite (4,61 %) und der Dollar, und Bitcoin gab nach.",
+        "verdict": "bestätigt",
+        "evidence": "Gold-Rückgang über Yahoo Finance (fiel mehr als 2 % auf ~4.020) und finanzen.ch (-2,19 %) doppelt belegt; der Morgenwert -1,4 % wurde verworfen. 10-Jahres-Rendite 4,61 % über CNBC. Bitcoin-Rückgang über Investing.com, Bloomingbit und CoinDesk. Die Ursachenzuschreibung auf Realzins, Dollar und Gewinnmitnahme ist als Interpretation gekennzeichnet."
+      },
+      "lehre": "Die Lehre: Ein sicherer Hafen ist eine Rolle, kein Naturgesetz. Ob Gold in der Krise steigt, entscheidet das Zins- und Währungsumfeld. An Tagen, an denen Renditen und Dollar steigen, kann selbst ein klassischer Krisenwert verlieren.",
+      "sources": [
+        { "title": "Yahoo Finance, Gold prices today, Monday July 13, 2026, 13.7.2026", "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-monday-july-13-2026-prices-move-lower-following-weekend-airstrikes-123120098.html", "tier": 2 },
+        { "title": "CNBC, Treasury yields rise as US-Iran ceasefire falters, 13.7.2026", "url": "https://www.cnbc.com/2026/07/13/treasury-yields-faltering-us-iran-ceasefire-bond-markets.html", "tier": 2 },
+        { "title": "CoinDesk, US-Iran hostilities send bitcoin lower, 13.7.2026", "url": "https://www.coindesk.com/daybook-us/2026/07/13/resurgent-u-s-iran-hostilities-send-bitcoin-lower-even-as-etf-flows-show-demand", "tier": 2 }
+      ]
+    },
+    {
+      "id": "oelschock-trifft-industriestandort-berlin",
+      "ressort": "politik",
+      "kicker": "Berlin · Standort",
+      "headline": "Ölschock trifft den Industriestandort: Warum die Energiekostenfrage nach Berlin zurückkehrt",
+      "subject": "Bundesregierung",
+      "dek": "Einordnung statt Eilmeldung: Der Ölsprung rückt die Wettbewerbsfähigkeit der energieintensiven deutschen Industrie erneut in den Vordergrund. Der EU-US-Zollrahmen nimmt zugleich eine andere Unsicherheit von den Exportwerten.",
+      "image": {
+        "file": "industriestrompreis.jpg",
+        "alt": "Industrieanlage mit Rohrleitungen und Schornsteinen in der Abenddämmerung",
+        "caption": "Ein anhaltend hoher Ölpreis verteuert Energie und stellt erneut die Standortfrage.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      },
+      "body": [
+        "Am Wochenende ist aus Berlin kein neues, spezifisches Statement zur Golf-Krise gefallen. Die deutsche Wirtschaftspolitik ist eine fortlaufende Linie, die vor dem Hintergrund des Ölsprungs neu an Gewicht gewinnt. Deshalb führen wir diesen Beitrag ausdrücklich als Einordnung, nicht als tagesaktuelle Nachricht.",
+        "Der Kern ist der Kostenkanal. Ein anhaltend hoher Ölpreis, ausgelöst durch die Hormus-Eskalation, schlägt über den Weltmarktpreis auf Kraftstoff- und Energiekosten durch, unabhängig davon, dass Deutschland kaum Öl direkt durch die Meerenge bezieht. Betroffen ist vor allem die energieintensive Industrie, von der Chemie über Stahl bis zur Logistik. Steigende Energiepreise drücken deren Margen und, wenn sie dauerhaft hoch bleiben, die relative Attraktivität des Standorts. Die Regierungslinie setzt hier auf Entlastung über Energiekosten, bessere Abschreibungen und Bürokratieabbau.",
+        "Eine zweite Entwicklung wirkt in die Gegenrichtung. Der EU-US-Zollrahmen mit einer Kappung von 15 Prozent auf die meisten EU-Exporte, darunter Autos, Halbleiter und Pharma, ist seit Anfang Juli in Kraft. Für Export- und Autowerte nimmt das eine große Unsicherheit aus dem Markt, weil die Bandbreite möglicher Zollsätze nun begrenzt ist. Planungssicherheit ist für zyklische Exporteure oft mehr wert als ein einzelner Prozentpunkt.",
+        "Für den Kapitalmarkt stehen damit zwei Kräfte nebeneinander. Der Ölschock belastet die Kostenseite der Industrie, der Zollrahmen entlastet die Unsicherheitsseite der Exporteure. Welche Kraft überwiegt, hängt von der Dauer der Golf-Krise ab. Ein kurzer Ölschub lässt sich verkraften, eine mehrwöchige Verteuerung nicht. Die eigentliche Preisbildung findet zudem am Weltmarkt statt, nicht in Berlin. Nationale Politik kann die Spitze abfedern, aber die Richtung des Ölpreises nicht drehen."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Ölpreis wird am Weltmarkt gebildet. Steigt er, verteuert sich Energie überall, auch in Deutschland, egal woher das Öl konkret stammt. Das trifft Branchen, die viel Energie brauchen, direkt bei den Kosten. Ein einzelnes Land kann diesen Preis nicht dauerhaft senken, sondern über Entlastungen nur die Wirkung auf die eigene Industrie dämpfen.",
+      "factcheck": {
+        "claim": "Der EU-US-Zollrahmen mit 15 Prozent Kappung auf die meisten EU-Exporte ist seit Anfang Juli 2026 in Kraft; die Bundesregierung setzt auf Entlastung der Industrie über Energiekosten, Abschreibungen und Bürokratieabbau.",
+        "verdict": "bestätigt",
+        "evidence": "Zollrahmen und 15-Prozent-Kappung über die Bundesregierung (Tier 1); die energiekostenpolitische Linie über die Regierungserklärung von Kanzler Merz (Tier 1). Ausdrücklich als fortlaufende Linie und Einordnung geführt, weil kein spezifisches neues Statement vom 12./13.7. mit direktem Golf-Bezug vorliegt."
+      },
+      "lehre": "Die Lehre: Ein Ölschock ist auch eine Standortfrage. Für die energieintensive Industrie zählt der Weltmarktpreis, den nationale Politik nur dämpfen, nicht setzen kann. Planungssicherheit bei Zöllen kann für Exporteure zugleich mehr wert sein als der genaue Satz.",
+      "sources": [
+        { "title": "Bundesregierung, FAQ zur EU-US-Zolleinigung", "url": "https://www.bundesregierung.de/breg-de/aktuelles/faq-eu-us-zolleinigung-2340924", "tier": 1 },
+        { "title": "Bundesregierung, Regierungserklärung von Kanzler Merz, Juli 2026", "url": "https://www.bundesregierung.de/breg-de/aktuelles/regierungserklaerung-merz-juli-26-2446298", "tier": 1 }
+      ]
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Firmen, die Öl und Gas fördern, verarbeiten und verkaufen.",
+      "lage": "Klarer relativer Gewinner des Tages: Der Ölsprung nach der Hormus-Blockade-Drohung stützte die Ölwerte und damit den Dow, der nur 0,26 Prozent verlor. Der Wert bezieht sich auf den Ölpreis, nicht auf einen belegten Energie-Sektorindex.",
+      "richtung": "up",
+      "tagesWert": "Brent ca. 78,85 USD (+3,74 %), WTI ca. 74,5 USD; belegter Ölpreis, kein Sektorindex"
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Chemie, Baustoffen, Metallen und anderen Grundmaterialien.",
+      "lage": "Gemischt und ohne eigenen Impuls: Der Ölsprung erhöht die Energiekosten der Chemie (BASF), während ein festerer Dollar Rohstoffe für Nicht-Dollar-Käufer verteuert. Kein belegter Sektor-Tageswert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbauer, Fluglinien, Logistiker, Bau- und Rüstungskonzerne.",
+      "lage": "Zweigeteilt: Höhere Treibstoffkosten belasten Airlines und Logistik, während Rüstungswerte von der Eskalation profitieren und in Europa den robusten DAX (ca. +0,1 %) mitstützten. Kein belegter US-Industrie-Sektorwert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter freiwilliger Ausgaben wie Autos, Reisen, Mode und Onlinehandel.",
+      "lage": "Unter Druck: Höhere Benzinpreise und steigende Anleiherenditen nehmen Verbrauchern Kaufkraft und verteuern Konsumkredite; hoch bewertete Onlinewerte leiden zusätzlich unter dem Zinsanstieg. Kein belegter Sektor-Tageswert.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Hersteller von Alltagsgütern wie Lebensmitteln, Getränken und Hygieneartikeln.",
+      "lage": "Relativ stabil als Defensiv-Hafen: An einem nervösen Tag (VIX +14,17 %) suchen Anleger planbare Geschäftsmodelle; gegenläufig drücken höhere Transportkosten die Margen. Kein belegter Sektor-Tageswert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharma, Biotech, Medizintechnik und Krankenversicherer.",
+      "lage": "Defensiv gefragt: Die Nachfrage ist konjunkturunabhängig, deshalb floss Kapital in den Sektor; Biogen war mit plus 4,96 Prozent Tagesgewinner, allerdings aus firmenspezifischem Grund und nicht als reiner Sektor-Effekt.",
+      "richtung": "up",
+      "tagesWert": "Biogen +4,96 % (Einzelwert, kein Sektorindex)"
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer und Vermögensverwalter.",
+      "lage": "Abwartend vor der Bankensaison: Steigende Renditen können die Zinsspanne verbessern, aber höhere Risikoprämien und die Nervosität bremsen. Der Optionsmarkt preist für Dienstag Bewegungen von rund 4 bis 6 Prozent bei JPMorgan, Goldman und den übrigen Häusern ein. Kein belegter Sektor-Tageswert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Chip-Hersteller, Software- und Hardwarefirmen.",
+      "lage": "Klarer Verlierer des Tages: Das Chip-Beben aus Korea (SK Hynix -15,37 %, Samsung -10,7 %, Kospi -8,95 %) plus KI-Bewertungszweifel und steigende Renditen zogen den Nasdaq um 1,55 Prozent nach unten. Der Wert bezieht sich auf den Nasdaq und Einzelwerte, nicht auf einen belegten IT-Sektorindex.",
+      "richtung": "down",
+      "tagesWert": "Nasdaq Composite -1,55 %; SK Hynix -15,37 %, Samsung -10,7 % (Einzelwerte, kein US-Sektorindex)"
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Telekom-Anbieter sowie Internet-, Medien- und Plattformkonzerne.",
+      "lage": "Zweigeteilt: Wachstumslastige Plattformwerte mit hohen KI-Ausgaben leiden unter Zins- und KI-Zweifeln, klassische Telekoms mit stabilen Gebühren wirken defensiv. Kein belegter Sektor-Tageswert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Betreiber von Strom-, Gas- und Wasserversorgung.",
+      "lage": "Gemischt: Als Defensivwert an einem Risk-off-Tag gesucht, zugleich durch steigende Anleiherenditen als hoch verschuldeter, zinssensitiver Sektor belastet. Kein belegter Sektor-Tageswert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt"
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Börsennotierte Immobiliengesellschaften und Immobilienfonds (REITs).",
+      "lage": "Belastet: Steigende Anleiherenditen verteuern die Finanzierung der stark fremdfinanzierten REITs und machen sichere Anleihen gegenüber Immobilien-Dividenden attraktiver. Kein belegter Sektor-Tageswert.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt"
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "Camtek Ltd.",
+      "ticker": "CAMT (Nasdaq / Tel Aviv Stock Exchange)",
+      "logoKey": "camtek",
+      "marketCapEUR": "ca. 5,5 Mrd. €",
+      "capSource": "Börsenwert ca. 6,1-6,3 Mrd. USD (rund 45,8 Mio. Aktien x ca. 133-137 USD, stockanalysis.com/GuruFocus, 13.7.2026). Umgerechnet mit EUR/USD 1,14 rund 5,4-5,5 Mrd. €.",
+      "whatTheyDo": "Camtek ist ein israelisches Unternehmen, das Prüf- und Messmaschinen für die Chipindustrie baut. Seine Anlagen fotografieren und vermessen Chips während der Fertigung und suchen kleinste Fehler. Ein Schwerpunkt ist die fortschrittliche Verpackung, zu der auch der KI-Speicher HBM gehört.",
+      "thesis": "Camtek ist eine Fallstudie dazu, wie eine hohe Bewertung selbst zum Risiko wird. Die Aktie handelt zu einem Kurs-Gewinn-Verhältnis in der Provider-Spanne von rund 140 bis 150. Ein so hohes KGV bedeutet: Der Kurs enthält bereits die Erwartung, dass der Gewinn noch viele Jahre kräftig steigt. Als in Korea SK Hynix und Samsung einbrachen und Zweifel an der Dauerhaftigkeit der KI-Investitionswelle aufkamen, fiel Camtek am Montag im Chip-Beben um rund 5 Prozent. Die lehrreiche Kennzahl ist das KGV: Steckt so viel Zukunft im Kurs, kann schon ein Zweifel an der Wachstumsgeschichte spürbaren Kursverlust auslösen, ohne dass die Firma heute schlechter arbeitet.",
+      "counterarguments": [
+        "Der milde Verlust von rund 5 Prozent stellt die These vom extremen Abwärtshebel selbst infrage: An einem Tag, an dem SK Hynix 15 Prozent verlor, hielt sich Camtek auffällig gut. Zudem kann ein KGV von 140 bis 150 bei einem zyklischen Ausrüster ein erst anlaufendes oder gedrücktes Gewinnniveau widerspiegeln und nicht nur reine Euphorie.",
+        "Kundenklumpen: Camtek hängt an wenigen großen Kunden aus der Speicher- und Verpackungsindustrie. Kürzt einer sein Investitionsbudget, trifft das direkt. Das ist eine Einordnung aus dem Geschäftsmodell, keine tagesaktuelle Zahl.",
+        "Konkurrenz und Standort: Größere Mess-Spezialisten wie KLA oder Onto Innovation drängen in dieselben Nischen; als israelisches Unternehmen bestehen zusätzliche geopolitische und Währungsrisiken."
+      ],
+      "catalysts": [
+        "TSMC legt am Donnerstag Quartalszahlen vor; sie gelten als Frühindikator für die Investitionslaune der gesamten Chip- und Verpackungsbranche.",
+        "Camteks eigener nächster Quartalsbericht und jede Meldung zum HBM-Ausbau der Speicherhersteller.",
+        "Weiterer Verlauf des KI-Bewertungsstreits nach dem koreanischen Black Monday."
+      ],
+      "confidence": "mittel"
+    },
+    {
+      "name": "Frontline plc",
+      "ticker": "FRO (New York Stock Exchange / Oslo Børs)",
+      "logoKey": "frontline",
+      "marketCapEUR": "ca. 7,4 Mrd. €",
+      "capSource": "222,62 Mio. Aktien x 38,13 USD Schlusskurs 10.7.2026 (Yahoo Finance/Motley Fool) = 8,49 Mrd. USD. Umgerechnet mit EUR/USD 1,14 rund 7,45 Mrd. €. Als Profiteur der Eskalation könnte der Wert am Montag höher liegen, bliebe aber auch dann unter 10 Mrd. €.",
+      "whatTheyDo": "Frontline besitzt und betreibt große Rohöltanker, vor allem Supertanker der Klasse VLCC. Die Firma verdient an den Frachtraten, also dem Preis, den Ölkonzerne fürs Verschiffen einer Ladung zahlen. Diese Raten schwanken stark mit Angebot und Nachfrage nach Schiffsraum.",
+      "thesis": "Frontline zeigt, wie eine geopolitische Störung über die Spotrate direkt in den Gewinn durchschlägt. Weil durch die Straße von Hormus zuletzt fast keine Schiffe mehr fuhren, müssen die verbliebenen Tanker Umwege fahren, und Ladung sucht knappen Schiffsraum. Die lehrreiche Kennzahl ist die Tagesrate: Ein Supertanker hat weitgehend feste Kosten, jeder Dollar zusätzliche Rate landet fast vollständig im Gewinn. Das ist ein extremer operativer Hebel, ein großer Gewinnsprung bei steigenden Raten und ein ebenso großer Einbruch bei fallenden.",
+      "counterarguments": [
+        "Stärkstes Gegenargument, Raten können binnen Tagen kollabieren: Die als Beleg genannte Höchstfixierung von fast 470.000 USD pro Tag stammt von Ende Juni und ist laut Lloyd's List eine einzelne, teils als imaginär bezeichnete Meldung an einer verwirrten Route, kein realisierter Flottendurchschnitt. Eine Waffenruhe könnte die Spotraten schlagartig einbrechen lassen, und mit ihnen Gewinn und Dividende.",
+        "Viel Gutes ist eingepreist: Frontline meldete bereits das stärkste Quartal seit zwei Jahrzehnten. Bei Tankeraktien ist ein niedriges KGV am Zyklushoch oft eine Falle, weil der Markt bereits mit fallenden künftigen Raten rechnet.",
+        "Hohe Zyklik und Ausschüttungshebel: Die Dividende hängt am Spotergebnis; dreht die Rate, sinken Ergebnis und Ausschüttung gemeinsam, zusätzlich belastet durch die Schiffsfinanzierung."
+      ],
+      "catalysts": [
+        "Weiterer Verlauf der Hormus-Krise: Trumps Blockade und die Fracht-Gebühr sowie jede Meldung über wiederaufgenommenen oder erneut gestoppten Schiffsverkehr.",
+        "Nächster Frontline-Quartalsbericht mit den tatsächlich realisierten Tagesraten.",
+        "Entwicklung von Ölpreis und Kriegsrisiko-Versicherungsprämien als Frühindikator für die Frachtraten."
+      ],
+      "confidence": "mittel"
+    },
+    {
+      "name": "Wizz Air Holdings plc",
+      "ticker": "WIZZ (London Stock Exchange)",
+      "logoKey": "wizz-air",
+      "marketCapEUR": "ca. 1,4 Mrd. €",
+      "capSource": "Börsenwert rund 1,2 Mrd. £ (Yahoo Finance/CNBC, 13.7.2026). Umgerechnet mit GBP/EUR 1,172 rund 1,41 Mrd. €.",
+      "whatTheyDo": "Wizz Air ist ein Billigflieger mit Schwerpunkt Mittel- und Osteuropa. Das Geschäftsmodell lebt von sehr niedrigen Ticketpreisen, hoher Sitzauslastung und schlanken Kosten. Der größte einzelne Kostenblock ist der Treibstoff, das Kerosin.",
+      "thesis": "Wizz Air zeigt lehrreich das Zusammenspiel von Treibstoffkosten, Absicherung und Verschuldung. Operativ läuft es rund: Im Juni 2026 stieg der Verkehr um 27,2 Prozent auf 7,48 Millionen Passagiere, bei einer Auslastung von 91,9 Prozent. Doch der Ölsprung vom Montag trifft genau den größten Kostenblock. Wizz hat rund 70 Prozent des Sommerbedarfs abgesichert. Die Lehre: Eine Absicherung verschiebt den Kostenschock nur, sie hebt ihn nicht auf. Der ungesicherte Rest und die kommenden Perioden bleiben verwundbar, und bei dünnen Billigflieger-Margen plus hoher Verschuldung wirkt jeder Cent Kerosin überproportional aufs Ergebnis.",
+      "counterarguments": [
+        "Stärkstes Gegenargument, hohe Verschuldung als Verstärker: Die Bilanz ist stark fremdfinanziert. Ein Treibstoffschock plus hohe Schulden und Leasingverpflichtungen vergrößern den Verlusthebel; Wizz musste seine Jahresprognose wegen des Iran-Konflikts bereits einmal kassieren.",
+        "Der Zusammenhang Ölsprung auf Kerosin auf Ergebnis ist der bekannteste Airline-Reflex überhaupt und dürfte im Kurs bereits weitgehend eingepreist sein; die Fallstudie erklärt eine Bewegung, die der Markt sofort verarbeitet.",
+        "Nachfrage könnte dem Wachstum hinterherhinken: Trotz plus 27,5 Prozent Kapazität sank die Auslastung leicht. Aggressives Wachstum in ein teureres Treibstoffumfeld kann die Ticketpreise unter Druck setzen."
+      ],
+      "catalysts": [
+        "Weiterer Verlauf des Ölpreises nach der Hormus-Eskalation; jede Ausweitung oder Entspannung wirkt direkt auf die Kerosinrechnung.",
+        "Nächste monatliche Verkehrsmeldung und der nächste Quartalsbericht mit Angaben zu Stückkosten und Absicherungsquote.",
+        "Mögliche erneute Anpassung der Jahresprognose, falls die Ölpreise oben bleiben."
+      ],
+      "confidence": "mittel"
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "US-Verbraucherpreise Juni (CPI); Headline-Konsens ca. 3,9 % nach 4,2 % im Mai, Kern zäh bei ca. 2,9 %",
+      "when": "Dienstag 14.7., 8:30 Uhr New Yorker Zeit (14:30 MESZ)",
+      "bullishIf": "Kernrate überrascht nach unten unter 2,9 Prozent und bestätigt, dass die Teuerung ohne Energie nachlässt; das entlastet die Zins- und Abzinsungssorge und stützt Wachstumsaktien.",
+      "bearishIf": "Kernrate steigt weiter über 2,9 Prozent oder die Monatsrate liegt über plus 0,2 Prozent; das verhärtet die Erhöhungsdebatte, hebt die Renditen und drückt Technologiewerte."
+    },
+    {
+      "what": "Erste Kongress-Anhörung von Fed-Chef Kevin Warsh; ohne Forward Guidance zählt jedes Wort zur Zinsrichtung",
+      "when": "Dienstag 14.7. (Repräsentantenhaus), Mittwoch 15.7. (Senat)",
+      "bullishIf": "Warsh betont Datenabhängigkeit und wertet den Ölpreis als vorübergehenden Angebotsschock; das nimmt Druck von den Renditen.",
+      "bearishIf": "Warsh klingt ausgesprochen hawkisch und deutet eine erste Zinserhöhung an; Renditen steigen, Wachstums- und Chipwerte fallen weiter. Gegen die Erhöhungswette spricht, dass Notenbanken Ölschocks historisch durchschauen."
+    },
+    {
+      "what": "Ölpreis und Schiffsverkehr durch Hormus nach Trumps angekündigter Blockade (ab Di 16:00 Uhr) und der 20-Prozent-Gebühr",
+      "when": "laufend, täglich",
+      "bullishIf": "Schiffszahlen erholen sich Richtung Normalniveau und Brent fällt zurück; der Inflations- und Kostenkanal entspannt sich, das entlastet Aktien breit.",
+      "bearishIf": "Die Blockade wird real und der Verkehr bleibt bei wenigen Schiffen pro Tag; Brent steigt weiter, die Angebotsschock-Zwickmühle der Fed verschärft sich."
+    },
+    {
+      "what": "Start der US-Bankensaison (JPMorgan, Goldman Sachs, Bank of America, Wells Fargo, Citigroup)",
+      "when": "Dienstag 14.7. vor US-Handelsstart",
+      "bullishIf": "Solide Zinsüberschüsse, niedrige Kreditrückstellungen und ein zuversichtlicher Ausblick stützen den Finanzsektor.",
+      "bearishIf": "Steigende Risikovorsorge oder ein vorsichtiger Ton zur Kreditqualität als Signal für eine Konjunkturabkühlung. Der Optionsmarkt preist Tagesbewegungen von rund 4 bis 6 Prozent ein."
+    },
+    {
+      "what": "Safe-Haven-Test bei Gold (ca. 4.020 USD) und Bitcoin; halten sie stand, wenn Renditen und Dollar steigen?",
+      "when": "laufend; entscheidend rund um CPI 14.7. und Fed-Sitzung 28./29.7.",
+      "bullishIf": "Gold stabilisiert sich und entkoppelt sich wieder von den Renditen; das zeigt, dass die Angstprämie zurückkehrt und der Zinsdruck nachlässt.",
+      "bearishIf": "Gold und Bitcoin fallen trotz anhaltender Geopolitik weiter; Bestätigung, dass Renditen und Dollar den sicheren Hafen aushebeln."
+    }
+  ],
+  "learningNotes": [
+    "Ein geopolitischer Schock wirkt über konkrete Kanäle, nicht über Stimmung. Am 13.7. fiel Gold trotz Krieg, weil steigende Renditen und ein fester Dollar die Angstprämie überlagerten.",
+    "Bei einem zyklischen Wachstumswert ist die Bewertung selbst das Risiko. SK Hynix verlor 15 Prozent ohne neue schlechte Zahl, weil der Markt den Preis für dieselben erwarteten Gewinne senkte.",
+    "Ein Inflationswert bewegt Märkte über die Abweichung vom Konsens. Ein Rückspiegel-Wert wie der Juni-Preisindex, der vor dem Ölsprung liegt, sagt wenig über die Lage von heute.",
+    "Gegen einen Angebotsschock wie teures Öl ist eine Notenbank strukturell machtlos. Sie kann kein Öl fördern, sondern nur die Inflationserwartungen verankern.",
+    "Der Ölpreis ist ein Erwartungspreis, und ein integrierter Ölkonzern bewegt sich weniger als er, weil das Raffineriegeschäft teures Rohöl als Kosten trägt."
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Warum ein Speicherchip-Hersteller zyklischer ist, als seine Rekordzahlen aussehen",
+    "absaetze": [
+      "Nehmen wir den Rekordsturz von SK Hynix und denken ihn durch die vier Linsen des Jahresabschlusses. An der Oberfläche wirkt die Firma unbesiegbar: 97,1 Billionen Won Umsatz 2025, 49 Prozent operative Marge, Nettogewinn 42,9 Billionen Won. Wie kann so ein Wert an einem Tag 15 Prozent verlieren?",
+      "In der Gewinn- und Verlustrechnung steckt das Problem in der Marge. Speicherchips sind ein Rohstoffgeschäft mit festem Angebot und schwankender Nachfrage. In der Hochphase explodieren die Verkaufspreise, und weil die Fabrikkosten weitgehend fix sind, springt die Marge auf fast 50 Prozent. Aber genau diese Marge ist das Zyklische: Sie ist ein Gipfelwert, kein Normalwert. Wer die heutigen Rekordgewinne einfach in die Zukunft verlängert, überschätzt die nachhaltige Ertragskraft.",
+      "Die Bilanz erklärt, warum der Zyklus so brutal ist. Chipfabriken kosten zweistellige Milliardenbeträge. Diese Anlagen stehen als Sachvermögen in der Bilanz und werden über Jahre abgeschrieben. Diese Abschreibungen sind Fixkosten, die auch dann anfallen, wenn die Preise fallen. Im Cashflow bedeutet das: In guten Jahren sprudelt der Mittelzufluss, doch ein großer Teil fließt sofort wieder in neue Fabriken. Dreht der Zyklus, bleiben die Abschreibungen, aber die Einnahmen brechen weg.",
+      "Deshalb bewertet der Markt zyklische Chipwerte anders, als das Kurs-Gewinn-Verhältnis zunächst nahelegt. Am Montag hat der Markt schlicht seine Annahme über die Dauer des KI-Zyklus gesenkt, und weil ein Großteil des Kurses in fernen, nun stärker abgezinsten Gewinnen steckt, fiel er überproportional. Kein neues Fundamentaldatum, nur eine neue Erwartung."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler: ein niedriges KGV auf Rekordgewinne für billig zu halten. Bei einem zyklischen Geschäft wie Speicherchips steht der Gewinn am Gipfel oft dort, wo die Aktie am teuersten ist, und ein hohes KGV auf gedrückte Gewinne markiert häufig den Boden. Zykliker liest man rückwärts."
+  },
+  "glossar": [
+    {
+      "begriff": "Abzinsung (Barwert)",
+      "erklaerung": "Der Wert einer Aktie ist der heutige Gegenwert aller künftigen Gewinne. Weil Geld in der Zukunft weniger wert ist, rechnet man künftige Gewinne mit einem Zins auf heute herunter. Steigt der Zins, schrumpft dieser Barwert, am stärksten bei Firmen, deren Gewinne weit in der Zukunft liegen."
+    },
+    {
+      "begriff": "Angebotsschock",
+      "erklaerung": "Eine plötzliche Verknappung des Angebots, etwa durch eine gesperrte Ölroute. Er hebt die Preise und bremst zugleich die Konjunktur, was eine Notenbank in einen Zielkonflikt bringt."
+    },
+    {
+      "begriff": "Realzins",
+      "erklaerung": "Der Zins nach Abzug der Inflation. Steigt er, wird eine verzinste Anleihe attraktiver, und zinsloses Gold verliert relativ an Reiz. Das erklärt, warum Gold in einer Kriegswoche fallen kann."
+    },
+    {
+      "begriff": "Circuit Breaker",
+      "erklaerung": "Ein automatischer Notstopp des Börsenhandels, der bei extremen Kursstürzen für einige Minuten auslöst. Er soll Panikverkäufe unterbrechen. Am 13.7. griff er zum siebten Mal in diesem Jahr am koreanischen Kospi."
+    },
+    {
+      "begriff": "HBM (High Bandwidth Memory)",
+      "erklaerung": "Eine besonders schnelle Art von Speicherchips, die in Rechenzentren für künstliche Intelligenz gebraucht wird. SK Hynix ist hier Weltmarktführer und liefert den Großteil an Nvidia."
+    },
+    {
+      "begriff": "Spotrate (Frachtrate)",
+      "erklaerung": "Der kurzfristige Tagespreis, den ein Ölkonzern für das Verschiffen einer Ladung zahlt. Weil die Kosten eines Tankers weitgehend fix sind, schlägt jede Ratenspitze fast vollständig auf den Gewinn durch, in beide Richtungen."
+    },
+    {
+      "begriff": "Dot Plot (Zinsprojektion)",
+      "erklaerung": "Eine anonyme Übersicht, in der jedes FOMC-Mitglied seine Zinserwartung als Punkt einträgt. Der mittlere Punkt (Median) für Ende 2026 stieg im Juni auf 3,80 Prozent, von 3,40 Prozent im März, ein Signal für eine mögliche Zinserhöhung."
+    },
+    {
+      "begriff": "Zweitrundeneffekte",
+      "erklaerung": "Der Moment, in dem aus einem einmaligen Preissprung, etwa beim Öl, eine breite Lohn-Preis-Spirale wird, weil Beschäftigte höhere Löhne fordern und Firmen die Kosten weiterreichen. Genau das versucht eine Notenbank zu verhindern."
+    },
+    {
+      "begriff": "Upstream und Downstream",
+      "erklaerung": "Bei einem integrierten Ölkonzern ist Upstream die Förderung, die von hohen Ölpreisen profitiert, und Downstream das Raffinerie- und Chemiegeschäft, für das teures Rohöl ein Kostenfaktor ist. Deshalb bewegt sich die Aktie weniger stark als der Ölpreis."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "S&P 500 Schluss 7.515,34 (-0,79 %), Nasdaq 25.873,18 (-1,55 %), Dow 52.498,64 (-0,26 %) am 13.7. — Yahoo Finance Live (T2), Detroit News/AP (T2), Motley Fool (T2).",
+      "VIX 17,16 (+14,17 %, Vortag 15,03) — Yahoo/CNBC-Datenreihe (T2).",
+      "Öl Brent ca. 78,85 USD (+3,74 %), WTI ca. 74,5 USD (+4 %) — TradingEconomics (T2), US-Marktberichte (T2), Al Jazeera (T2). Die +8/+9-%-Werte stammten aus einem stale Bericht vom 8.7. und wurden verworfen.",
+      "Gold ca. 4.020 USD (-2,0 %) — Yahoo (T2), finanzen.ch (-2,19 %, T2); kein Rekord. Der Morgenwert -1,4 % wurde verworfen.",
+      "Bitcoin ca. 63.000 USD (-2 %, Spanne 62,6-63,8k) — Investing.com/Bloomberg (T2), Bloomingbit (T2), CoinDesk (T2).",
+      "10-jährige US-Rendite 4,61 % (+ca. 4 Basispunkte, gestiegen) — CNBC (T2); ersetzt den Freitagswert 4,56 %.",
+      "Russell 2000 Montag -0,83 % (Niveau ca. 2.953, abgeleitet aus Freitagsschluss 2.977,81) — IBTimes (T2), TheStreet (T2).",
+      "DAX (Xetra) ca. 25.100 (+0,1 %) am 13.7. — it-boltwise (T2), finanzen.net/wallstreet-online (T2). Der Wert 24.897/-2,2 % gehörte zum 8.7. und wurde verworfen.",
+      "US-Leitzins 3,50-3,75 % unverändert; EZB-Einlagenzins 2,25 % — Fed/EZB (T1).",
+      "SK Hynix -15,37 % auf 1.845.000 Won, größter Tagesverlust der Firmengeschichte (größer als -14,93 % 2008); Börsenwert ca. 875 Mrd. USD — Bloomingbit (T2), Coingape (T2).",
+      "Kospi 6.806,93 (-8,95 %), siebter Circuit Breaker 2026, 20-Minuten-Handelsstopp; Samsung ca. -10,7 % — Korea JoongAng Daily (T2), Seoul Economic Daily (T2), TradingKey (T2).",
+      "SK Hynix FY25: Umsatz 97,1 Bio. Won (+47 %), operative Marge 49 %, HBM ca. 62 %, ca. 90 % HBM an Nvidia — SK-Hynix-FY25-Mitteilung (T1), CNBC (T2). KGV ca. 28-30 als eigene Näherung gekennzeichnet.",
+      "Exxon ca. +2,8 % (eine Quelle +3,1 %); Börsenwert ca. 575 Mrd. USD; KGV ca. 23 — StocksToTrade/TradingKey, companiesmarketcap (23,12), MacroTrends (22,09) (T2).",
+      "Exxon Q2-Upstream-Ansage +3,5 bis 3,9 Mrd. USD gegenüber Q1 (Basis 5,7 Mrd.), gemeldet am 7.7.2026; UBS modelliert rund 8,6 Mrd. USD. Der absolute Wert ~9,6 Mrd. und höchster seit 2022 wurden gestrichen — SEC-8-K (T1), US News/Proactive (T2).",
+      "US-CPI-Juni-Konsens: Headline ca. 3,9 % (von 4,2 % Mai), Kern ca. 2,9 %, Headline m/m ca. -0,1 %; Termin 14.7. — IG, Kiplinger, MUFG (T2), BLS (T1).",
+      "FOMC Juni: Dot-Median 2026 3,80 % (von 3,40 % März); 9 von 18 über dem Mittelpunkt, 8 auf 3,625 %, 1 darunter; Warsh ohne eigenen Dot. Das Detail 6 von 9 mit zwei Schritten war nicht belegt und wurde gestrichen — investingLive, StockTitan, Bloomberg, CNBC (T2).",
+      "Bankensaison-Start Di 14.7. (JPMorgan, Goldman Sachs, Bank of America, Wells Fargo, Citigroup); optionsimplizierte Tagesbewegungen rund 4-6 %; Warsh vor Repräsentantenhaus 14.7., Senat 15.7. — Yahoo, StocksAnalyzer (T2).",
+      "Trump kündigt Wiedereinsetzung der Hormus-Blockade an (ab Di 16:00 Uhr) plus 20-%-Gebühr auf Fracht; IMO widerspricht der Rechtsgrundlage — CNBC (T2), Bloomberg (T2), Euronews (T2).",
+      "Hormus wickelt ca. 20 % der weltweiten Öl-/Gasversorgung ab; Verkehr auf 6-9 statt ca. 130 Schiffe/Tag eingebrochen; Anlass MV GFS Galaxy; Iran traf Kuwait, Katar, Jordanien — Al Jazeera (T2), AP/Yahoo (T2).",
+      "TSMC legt Q2-Zahlen am Do 16.7. vor (nicht 13.7.); am 13.7. nur Juni-Umsatz +67,9 % j/j — TSMC-IR (T1), TipRanks (T2).",
+      "Camtek Börsenwert ca. 5,5 Mrd. € (ca. 6,1-6,3 Mrd. USD), KGV Provider-Spanne ca. 140-150, fiel am 13.7. im Chip-Beben rund 5 % — stockanalysis.com/GuruFocus/Yahoo (T2).",
+      "Frontline Börsenwert ca. 7,4 Mrd. €; VLCC-Höchstfixierung fast 470.000 USD/Tag als Einzelmeldung Ende Juni (kein realisierter Durchschnitt) — OilPrice, Lloyd's List, Seatrade Maritime (T2).",
+      "Wizz Air Juni-Verkehr +27,2 % (7,48 Mio. Passagiere), Kapazität +27,5 %, Auslastung 91,9 %; Börsenwert ca. 1,4 Mrd. €; ca. 70 % Sommerbedarf abgesichert. Die konkreten Hedging-Preise 700/1.500 USD/t wurden mangels belastbarer Quelle gestrichen — rttnews, Investing.com, TipRanks (T2).",
+      "Wechselkurse EUR/USD 1,14; GBP/EUR 1,172 (13.7.2026) — TradingEconomics/EZB-Referenz, exchangerates.org.uk (T2)."
+    ],
+    "uncertain": [],
+    "gaps": [
+      "GICS-Sektor-Tageswerte: Für diese Ausgabe existieren keine belegten Sektorindex-Tageswerte. Der Branchen-Monitor weist deshalb nur belegte Einzel-, Index- und Rohstoffwerte aus und führt sonst wörtlich \"keine Sektordaten belegt\". Strukturelle Datenlücke, kein offener Prüfpunkt.",
+      "Echte Kursreihen (priceSeries): Alpha Vantage stand ohne API-Zugang und ohne MCP-Freigabe nicht zur Verfügung. Company-Blöcke und Stock Picks stützen sich auf belegte Einzelkennzahlen, priceSeries wurde weggelassen. Keine erfundenen Kurse."
+    ]
+  }
+}
