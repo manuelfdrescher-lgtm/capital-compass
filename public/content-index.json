@@ -1,0 +1,33 @@
+{
+  "editions": [
+    {
+      "number": 1,
+      "date": "2026-07-10",
+      "slot": "evening",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-10-evening/",
+      "headline": "SK Hynix sammelt 26,5 Milliarden Dollar ein und krönt den Speicher-Boom"
+    },
+    {
+      "number": 2,
+      "date": "2026-07-12",
+      "slot": "update-16",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-12-update-16/",
+      "headline": "Iran erklärt die Straße von Hormus für gesperrt, und der Ölpreis bleibt erstaunlich ruhig"
+    },
+    {
+      "number": 3,
+      "date": "2026-07-12",
+      "slot": "update-19",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-12-update-19/",
+      "headline": "Am Golf verhärten sich die Fronten, und an der Wall Street beginnt die Stunde der Wahrheit"
+    },
+    {
+      "number": 4,
+      "date": "2026-07-13",
+      "slot": "evening",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-13-evening/",
+      "headline": "Öl springt, Chips stürzen, Gold fällt: ein Schock, vier Kanäle"
+    }
+  ],
+  "lastUpdated": "2026-07-13T23:44:39.377Z"
+}

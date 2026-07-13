@@ -6,3 +6,4 @@ qa/screenshots/
 .DS_Store
 .env
 .env.*
+incoming/*.json

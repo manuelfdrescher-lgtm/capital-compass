@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run validate && astro build && npm run search-index",
+    "build": "npm run validate && node scripts/build-content-index.mjs && astro build && npm run search-index",
     "search-index": "pagefind --site dist",
     "preview": "astro preview",
     "validate": "node scripts/validate.mjs",
     "edition": "node scripts/edition.mjs",
     "ingest": "node scripts/ingest.mjs",
+    "content-index": "node scripts/build-content-index.mjs",
     "logos": "node scripts/fetch-logos.mjs",
     "design-qa": "node scripts/design-qa.mjs"
   },
