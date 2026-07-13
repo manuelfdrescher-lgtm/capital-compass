@@ -6,7 +6,7 @@
 //
 //   node scripts/build-content-index.mjs
 //   Wird von npm run build automatisch mit ausgeführt.
-import { readdirSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -49,3 +49,8 @@ const out = { editions, recentStockPicks, lastUpdated: new Date().toISOString() 
 mkdirSync(join(root, "public"), { recursive: true });
 writeFileSync(join(root, "public", "content-index.json"), JSON.stringify(out, null, 2) + "\n");
 console.log(`✅ public/content-index.json geschrieben (${editions.length} Ausgabe(n), höchste Nr. ${editions.at(-1)?.number ?? 0}, ${recentStockPicks.length} Stock-Pick(s)).`);
+
+// content/SCHEMA.md war bisher nur im Repo, nicht öffentlich erreichbar
+// (Cowork bekam beim Abruf einen 404). Als statische Kopie mitpublizieren.
+copyFileSync(join(root, "content", "SCHEMA.md"), join(root, "public", "SCHEMA.md"));
+console.log("✅ public/SCHEMA.md veröffentlicht (Kopie von content/SCHEMA.md).");
