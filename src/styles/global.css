@@ -292,7 +292,7 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 
 .marktkacheln {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1px;
   background: var(--haarlinie);
 }
