@@ -31,7 +31,21 @@ for (const f of files) {
 }
 editions.sort((a, b) => a.number - b.number);
 
-const out = { editions, lastUpdated: new Date().toISOString() };
+// Stock-Picks-Log mitliefern: verhindert, dass externe Redaktionsprozesse
+// (ohne Zugriff auf content/stock-picks-log.md) dieselbe Aktie innerhalb
+// der 30-Tage-Sperrfrist ein zweites Mal auswählen.
+const pickLine = /^-\s*(\d{4}-\d{2}-\d{2}-[\w-]+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*$/;
+const picksLogPath = join(root, "content", "stock-picks-log.md");
+let recentStockPicks = [];
+try {
+  recentStockPicks = readFileSync(picksLogPath, "utf8")
+    .split("\n")
+    .map((l) => l.match(pickLine))
+    .filter(Boolean)
+    .map((m) => ({ slug: m[1], name: m[2].replace(/_\(.*\)_$/, "").trim(), confidence: m[3].replace(/_\(.*\)_$/, "").trim() }));
+} catch { /* Log fehlt (noch) nicht kritisch */ }
+
+const out = { editions, recentStockPicks, lastUpdated: new Date().toISOString() };
 mkdirSync(join(root, "public"), { recursive: true });
 writeFileSync(join(root, "public", "content-index.json"), JSON.stringify(out, null, 2) + "\n");
-console.log(`✅ public/content-index.json geschrieben (${editions.length} Ausgabe(n), höchste Nr. ${editions.at(-1)?.number ?? 0}).`);
+console.log(`✅ public/content-index.json geschrieben (${editions.length} Ausgabe(n), höchste Nr. ${editions.at(-1)?.number ?? 0}, ${recentStockPicks.length} Stock-Pick(s)).`);

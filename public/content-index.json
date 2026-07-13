@@ -29,5 +29,67 @@
       "headline": "Öl springt, Chips stürzen, Gold fällt: ein Schock, vier Kanäle"
     }
   ],
-  "lastUpdated": "2026-07-13T23:44:39.377Z"
+  "recentStockPicks": [
+    {
+      "slug": "2026-07-10-morning",
+      "name": "Siltronic AG (WAF)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-10-morning",
+      "name": "Levi Strauss & Co. (LEVI)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-10-morning",
+      "name": "Jenoptik AG (JEN)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-16",
+      "name": "Hafnia Limited (HAFN)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-16",
+      "name": "Salzgitter AG (SZG)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-16",
+      "name": "SUSS MicroTec SE (SMHN)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-19",
+      "name": "International Seaways, Inc. (INSW)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-19",
+      "name": "THEON International Plc (THEON)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-19",
+      "name": "Lancashire Holdings Limited (LRE)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-evening",
+      "name": "Camtek Ltd. (CAMT)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-evening",
+      "name": "Frontline plc (FRO)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-evening",
+      "name": "Wizz Air Holdings plc (WIZZ)",
+      "confidence": "mittel"
+    }
+  ],
+  "lastUpdated": "2026-07-13T23:48:15.252Z"
 }
