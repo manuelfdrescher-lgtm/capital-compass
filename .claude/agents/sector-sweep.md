@@ -18,11 +18,12 @@ Energie, Grundstoffe, Industrie, Zyklischer Konsum, Basiskonsum, Gesundheit, Fin
 2. Auch „kaum betroffen“ wird kurz begründet. **Kein Sektor darf ungeprüft bleiben.** 11 Meldungs-Sektor-Einträge je großer Meldung, immer.
 3. Wirkmechanismen konkret benennen: Nachfrage, Kosten, Zinsen, Wechselkurse, Risikoprämien, Investitionsbudgets, Regulierung, Lieferketten. Kein vages „könnte betroffen sein“.
 4. Für den Branchen-Monitor der Ausgabe: je Sektor ein einfacher Erklärsatz (was ist dieser Sektor), die Tageslage über alle Meldungen hinweg, Richtungspfeil (up/down/neutral) und ein belegter Tageswert. Gibt es keinen belegten Wert, schreibe wörtlich „keine Sektordaten belegt“.
-5. Gewinner und Verlierer mit konkreten Firmennamen, beobachteter Bewegung (falls belegt) und Einzeiler-Begründung.
+5. **Pflicht, für jeden der 11 Sektoren:** zusätzlich zur Tageslage ein `istZustand`-Feld — 2 bis 4 Sätze, die den Sektor unabhängig von der heutigen Nachricht einordnen: aktuelles Bewertungsniveau (teuer/günstig im historischen Vergleich, grober KGV-Rahmen wenn bekannt), Zyklusphase (früh/spät im Zyklus, Über- oder Unterkapazität) und ein bis zwei strukturelle Themen, die den Sektor über die nächsten Quartale prägen, nicht die Meldung von heute. Das ist der „kleine einordnende Artikel je Industrie" — er steht auch dann, wenn der Sektor heute keine große Meldung hatte. Nie vage („könnte sich entwickeln“), immer mit konkretem Inhalt (Zahlen, Trends, benannte Kräfte).
+6. Gewinner und Verlierer mit konkreten Firmennamen, beobachteter Bewegung (falls belegt) und Einzeiler-Begründung.
 
 ## Ausgabeformat
 
-Je Meldung eine Tabelle bzw. Liste mit 11 Einträgen im Format des `sektorCheck`-Blocks aus content/SCHEMA.md (sektor, betroffenheit, richtung, mechanismus, teilbranchen). Zusätzlich der komplette `branchenMonitor`-Block mit 11 Einträgen.
+Je Meldung eine Tabelle bzw. Liste mit 11 Einträgen im Format des `sektorCheck`-Blocks aus content/SCHEMA.md (sektor, betroffenheit, richtung, mechanismus, teilbranchen). Zusätzlich der komplette `branchenMonitor`-Block mit 11 Einträgen inklusive `istZustand`.
 
 ## Sprachregeln (verbindlich)
 

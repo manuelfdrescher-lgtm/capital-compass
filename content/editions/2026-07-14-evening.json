@@ -1,0 +1,632 @@
+{
+  "edition": {
+    "number": 7,
+    "date": "2026-07-14",
+    "slot": "evening",
+    "dataAsOf": "Kurse: US-Schluss Di 14.7.; News bis Handelsschluss; keine Alpha-Vantage-Kursdaten diese Ausgabe",
+    "generatedAt": "2026-07-14T21:30:00Z",
+    "isExample": false
+  },
+
+  "market": {
+    "tiles": [
+      { "label": "S&P 500", "value": "7.543,59", "delta": "+0,38 %", "direction": "up", "approx": true, "note": "Schluss 14.7." },
+      { "label": "Nasdaq Composite", "value": "26.107,01", "delta": "+0,9 %", "direction": "up", "approx": true, "note": "Schluss 14.7., Chips führen" },
+      { "label": "Dow Jones", "value": "52.508,27", "delta": "+0,02 %", "direction": "flat", "approx": true, "note": "Schluss 14.7., quasi unverändert" },
+      { "label": "Russell 2000", "value": "2.964,76", "delta": "+0,39 %", "direction": "up", "approx": true, "note": "Schluss 14.7." },
+      { "label": "DAX", "value": "25.147", "delta": "+0,1 %", "direction": "up", "approx": true, "note": "Xetra-Schluss 14.7." },
+      { "label": "VIX (Angstbarometer Wall Street)", "value": "16,50", "delta": "−3,7 %", "direction": "down", "approx": false, "note": "Cboe, Schluss 14.7." },
+      { "label": "10-jährige US-Rendite", "value": "4,58 %", "delta": "nach CPI gefallen", "direction": "down", "approx": false, "note": "Schluss 14.7., von Intraday-Hoch vor Warsh zurück" },
+      { "label": "US-Hypothekenzins (30 J.)", "value": "6,49 %", "delta": "Vorwoche 6,43 %", "direction": "up", "approx": false, "note": "Freddie Mac PMMS, Woche 9.7.2026; 10-J.-Festhypothek am US-Markt unüblich, daher 30-J.-Wert" },
+      { "label": "Öl (WTI / Brent)", "value": "WTI 79,34 $ / Brent 84,73 $", "delta": "+1,5 / +1,7 %", "direction": "up", "approx": true, "note": "Settlement 14.7., Brent intraday bis 87 $" },
+      { "label": "Leitzins (Fed Funds)", "value": "3,50–3,75 %", "delta": "seit 17.6.2026 gehalten", "direction": "flat", "approx": false, "note": "Fed, 4. Beibehaltung, erste unter Warsh" },
+      { "label": "Bitcoin", "value": "64.800 $", "delta": "+3,7 %", "direction": "up", "approx": true, "note": "Nachmittagsstand 14.7. (ET); Krypto handelt rund um die Uhr" },
+      { "label": "EZB-Einlagenzins", "value": "2,25 %", "delta": "seit 17.6.2026", "direction": "flat", "approx": false, "note": "EZB, Einlagefazilität" }
+    ]
+  },
+
+  "articles": [
+    {
+      "id": "cpi-warsh-der-widerspruch",
+      "ressort": "titelseite",
+      "kicker": "Geldpolitik · Inflation",
+      "headline": "Kühlster Inflationsmonat seit Jahren trifft auf einen Notenbankchef, der von Härte spricht",
+      "dek": "Die US-Verbraucherpreise fielen im Juni um 0,4 Prozent zum Vormonat. Fed-Chef Kevin Warsh nennt das \"nur einen Monat\". Am Markt geht es weiter um eine mögliche Zinserhöhung, nicht um eine Senkung.",
+      "image": {
+        "file": "bank-cpi-woche.jpg",
+        "alt": "Gedämpfte Aufnahme einer US-Notenbank-Fassade an einem grauen Tag",
+        "caption": "Zwei gegenläufige Signale an einem Tag: ein kühler Inflationswert und ein Fed-Chef, der Härte betont.",
+        "credit": "Foto: The Capital Compass"
+      },
+      "body": [
+        "Fakt: Die US-Verbraucherpreise fielen im Juni um 0,4 Prozent gegenüber dem Vormonat, den größten Rückgang seit April 2020. Erwartet hatte der Konsens nur minus 0,2 Prozent. Die Jahresrate sank von 4,2 auf 3,5 Prozent. Auch die Kernrate ohne Energie und Nahrung kam mit 0,0 Prozent zum Vormonat und 2,6 Prozent im Jahr kühler als erwartet. Getrieben wurde der Rückgang vom Energieindex, der um 5,7 Prozent einbrach.",
+        "Am selben Tag saß Kevin Warsh zum ersten Mal seit seinem Amtsantritt vor dem Finanzausschuss des Repräsentantenhauses. Seine Botschaft: Die Notenbank habe \"keine Toleranz\" für dauerhaft erhöhte Inflation und werde sie zu einer Sache der Vergangenheit machen. Zum kühlen Datenpunkt sagte er nur, das sei \"nur ein Monat\", die Inflation sei nicht besiegt. Eine Festlegung, wohin die Zinsen gehen, verweigerte er bewusst.",
+        "Interpretation: Der Markt bekam zwei gegenläufige Signale. Die Wahrscheinlichkeit einer Zinserhöhung im September fiel nach dem CPI von über 75 auf rund 63 Prozent, doch sie fiel nur, sie verschwand nicht. Das ist der Kern des Regimes 2026: Die offene Frage lautet nicht, wann die erste Zinssenkung kommt, sondern ob der nächste Schritt eine Anhebung ist. Der kühle Monat kaufte keine Lockerung, nur etwas weniger Anhebungsangst.",
+        "Restrisiko und Gegenlesart: Diese Rahmung ist nicht sicher. Die harten Zahlen des Tages zeigten geschlossen taubenhaft. Die zehnjährige US-Rendite fiel auf 4,58 Prozent, die Aktien stiegen, das Angstbarometer VIX gab um 3,7 Prozent nach, und die Anhebungswette schrumpfte. Man kann Warshs Auftritt auch als erwartbare Pflicht-Falkenrhetorik lesen, die seit seinem Amtsantritt bekannt und eingepreist ist. In dieser Lesart gewichtete der Markt die Daten höher als die Worte. Welche Deutung trägt, entscheidet sich erst am nächsten Inflationswert und an der FOMC-Sitzung am 28. und 29. Juli.",
+        "Einordnung zur Morgenausgabe: Wir hatten den Tag morgens als \"Test der Zinssenkungshoffnung\" gerahmt. Das war für die Abendperspektive irreführend. In diesem Zyklus gibt es keine ernsthafte Senkungshoffnung, die eingefangen werden müsste. Sauberer ist: ein kühler Datenpunkt gegen einen falkenhaften Notenbankchef, mit offenem Ausgang."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Die Gesamtrate der Inflation enthält Benzin und Lebensmittel, deren Preise stark schwanken und die eine Notenbank mit ihrem Leitzins kaum steuern kann. Die Kernrate klammert genau diese beiden Posten aus und zeigt den zähen Trend der übrigen Preise wie Mieten und Dienstleistungen. Fällt die Gesamtrate, weil Benzin billiger wurde, die Kernrate bleibt aber bei 2,6 Prozent, dann ist die hausgemachte Inflation unverändert. Deshalb liest die Fed einen fast nur energiegetriebenen Rückgang vorsichtig.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum ein guter Inflationswert die Zinsen nicht senkt",
+        "absaetze": [
+          "Das Mandat und was eine Notenbank kann. Die Fed hat einen gesetzlichen Doppelauftrag: stabile Preise (Ziel rund zwei Prozent Inflation) und möglichst hohe Beschäftigung. Ihr einziges scharfes Werkzeug ist der Leitzins, aktuell die Spanne 3,50 bis 3,75 Prozent, der Preis, zu dem sich Banken über Nacht Geld leihen. Über ihn steuert sie die Nachfrage der ganzen Wirtschaft: Höhere Zinsen verteuern Kredite, bremsen Konsum und Investitionen und drücken so die Inflation. Was eine Notenbank nicht kann, ist einzelne Preise wie Benzin senken. Steigt Öl wegen eines Konflikts an der Straße von Hormus, ist das ein Angebotsschock, gegen den der Leitzins machtlos ist. Sie kann nur verhindern, dass sich ein solcher Einzelschock in Löhne und alle anderen Preise fortpflanzt.",
+          "Das Zeitproblem. Eine Zinsentscheidung wirkt erst mit vielen Monaten Verzögerung auf die Inflation, oft ein Jahr oder mehr. Die Notenbank reagiert also nicht auf die Inflation von heute, sondern schätzt die von übermorgen. Deshalb ist der einzelne Juni-Wert für sie fast wertlos, er beschreibt eine bereits vergangene Ölwelt. Genau das meint Warsh mit \"nur ein Monat\". Für die Politik zählt der Trend der Kernrate, und der liegt mit 2,6 Prozent weiter über dem Ziel.",
+          "Forward Guidance und warum ihr Verzicht die Schwankungen erhöht. Forward Guidance heißt, die Notenbank sagt dem Markt im Voraus, wohin die Zinsen tendenziell gehen. Das beruhigt, weil Anleger sich darauf einstellen können. Warsh bricht bewusst mit dieser Praxis und sagt nur, er folge \"dem Gesetz und den Daten\". Das macht jeden einzelnen Datenpunkt zum möglichen Auslöser großer Kursbewegungen, weil der Markt keinen Kompass mehr hat und jede Zahl neu deuten muss. Die Folge ist strukturell höhere Volatilität rund um jede Veröffentlichung.",
+          "Erwartungsankerung und Zweitrundeneffekte. Das größte Kapital einer Notenbank ist der Glaube der Menschen, dass die Inflation wirklich zum Ziel zurückkehrt. Solange dieser Anker hält, verlangen Arbeitnehmer keine kräftigen Lohnaufschläge und Unternehmen setzen keine dauerhaft höheren Preise durch. Bei 2,6 Prozent Kernrate plus einem frischen Ölschock ist der Anker angespannt. Die Gefahr sind Zweitrundeneffekte: Der Ölpreis treibt zuerst nur Benzin, dann Transport, dann Lohnforderungen, und am Ende ist aus einem Einzelschock breite Inflation geworden. Um das zu verhindern, signalisiert ein Falke wie Warsh lieber zu lange Härte als zu früh Entspannung. Keine Anlageempfehlung."
+        ]
+      },
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Fallende Energiepreise waren der Haupttreiber des CPI-Rückgangs und drücken auf die Ertragsfantasie des Sektors. Gegenläufig zog Öl am selben Tag wegen Hormus wieder an, sodass die Juni-Zahl für den Sektor bereits Vergangenheit ist.", "teilbranchen": "Ölförderer verlieren über den Preisindex, gewinnen über den aktuellen Ölanstieg; Raffineriemargen gemischt." },
+        { "sektor": "Grundstoffe", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Niedrigere Realzinsen und ein tendenziell schwächerer Dollar stützen Rohstoffpreise, Gold und Metalle, weil Rohstoffe in Dollar gehandelt werden und keine Zinsen zahlen.", "teilbranchen": "Bergbau und Goldminen tendenziell gestützt; Chemie separat durch Ölkosten belastet." },
+        { "sektor": "Industrie", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Geringere Anhebungsgefahr verbilligt die Finanzierung von Maschinen, Anlagen und Bauprojekten und stützt die Investitionsbudgets der Kunden. Warshs Falkenton begrenzt den Effekt.", "teilbranchen": "Maschinenbau, Bau und Elektrotechnik profitieren; Airlines separat durch teures Kerosin belastet." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Niedrigere Kreditzinsen entlasten Auto- und Wohnungsfinanzierung und das frei verfügbare Einkommen. Zugleich klebt die Kernrate bei 2,6 Prozent und das wieder teurere Benzin frisst die Entlastung an der Zapfsäule auf.", "teilbranchen": "Autofinanzierer und Möbelketten profitieren vom Zinskanal; Reise und Tanken belastet." },
+        { "sektor": "Basiskonsum", "betroffenheit": "indirekt", "richtung": "negativ", "mechanismus": "In einer Risk-on-Bewegung nach gutem CPI fließt Geld relativ aus defensiven Titeln in zyklische. Zusätzlich erschwert eine sinkende Inflation weitere Preiserhöhungen der Markenhersteller.", "teilbranchen": "Markenhersteller und Supermärkte verlieren relativ an Attraktivität, keine akute Belastung des Geschäftsmodells." },
+        { "sektor": "Gesundheit", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Junge Biotechfirmen ohne Gewinne sind reine Zinswerte und profitieren von fallenden Renditen, weil ihre Erträge weit in der Zukunft liegen. Große Pharmawerte sind vom Zinssignal weitgehend entkoppelt.", "teilbranchen": "Zinssensible Biotechs tendenziell gestützt; Pharma und Medizintechnik neutral." },
+        { "sektor": "Finanzen", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Fallende Renditen dämpfen die Fantasie für den Zinsüberschuss der Banken, weil die Kreditzinsen sinken. Gegenläufig senkt geringere Rezessionssorge die erwarteten Kreditausfälle und stützt Versicherer und Vermögensverwalter über steigende Kurswerte.", "teilbranchen": "Reine Zinsmargen-Banken gedämpft; Vermögensverwalter und Versicherer über den Aktienmarkt gestützt." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Tech-Gewinne liegen oft Jahre in der Zukunft, niedrigere Renditen erhöhen ihren heutigen Barwert am stärksten. Chips führten die Nasdaq mit plus 0,9 Prozent an. Risiko: Warsh kann die Bewegung mit einer Anhebung wieder einkassieren.", "teilbranchen": "Software, Halbleiter und hoch bewertete Wachstumswerte profitieren am meisten." },
+        { "sektor": "Kommunikation", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Internet-Plattformen reagieren wie Tech positiv auf den Zinskanal. Stark verschuldete Telekomkonzerne profitieren zusätzlich von der billigeren Refinanzierung ihrer Netzschulden.", "teilbranchen": "Plattformen und Telekom mit hoher Verschuldung gestützt; werbeabhängige Medien am Konsum hängend." },
+        { "sektor": "Versorger", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Versorger gelten als Anleihe-Ersatz und tragen hohe Schulden für ihre Netze. Fallende Renditen machen ihre stabilen Dividenden relativ attraktiver und verbilligen die Refinanzierung.", "teilbranchen": "Netzbetreiber und Stromversorger mit hoher Schuldenlast profitieren." },
+        { "sektor": "Immobilien", "betroffenheit": "direkt", "richtung": "positiv", "mechanismus": "Immobilien sind der reinste Zinswert im Index. Börsennotierte Vermieter (REITs) leben von geliehenem Geld, fallende Renditen verbilligen die Refinanzierung und stützen die Objektwerte.", "teilbranchen": "Wohn-, Logistik- und Rechenzentrums-REITs profitieren; Warsh-Falkenton begrenzt die Fantasie." }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Inflation Juni: Ist gegen Konsens und Ziel",
+          "subtitle": "Jahresraten in Prozent, Kernrate ohne Energie und Nahrung",
+          "unit": " %",
+          "source": "BLS CPI Summary 2026 M06 (Tier 1); Konsens Dow Jones",
+          "allPositive": true,
+          "absolute": true,
+          "data": [["Konsens Jahresrate", 3.8], ["Ist Jahresrate", 3.5], ["Ist Kernrate", 2.6], ["Fed-Ziel", 2.0]]
+        }
+      ],
+      "factcheck": {
+        "claim": "US-Verbraucherpreise Juni: minus 0,4 Prozent zum Vormonat, Jahresrate 3,5 Prozent, Kernrate 2,6 Prozent, Energieindex minus 5,7 Prozent.",
+        "verdict": "bestätigt",
+        "evidence": "Primärquelle BLS CPI Summary 2026 M06 (Tier 1); unabhängig bestätigt durch CNBC und Fox Business (Tier 2). Größter Monatsrückgang seit April 2020."
+      },
+      "lehre": "Die Lehre: Ein Inflationsrückgang, der fast nur aus billigerem Benzin kommt, ist für eine Notenbank kein Beweis für sinkende Inflation. Sie schaut auf die Kernrate, den zähen Teil ohne Energie und Nahrung, und der lag mit 2,6 Prozent weiter über dem Ziel.",
+      "sources": [
+        { "title": "BLS, Consumer Price Index Summary 2026 M06", "url": "https://www.bls.gov/news.release/cpi.nr0.htm", "tier": 1 },
+        { "title": "Federal Reserve, FOMC-Statement 17.6.2026", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm", "tier": 1 },
+        { "title": "Bloomberg, Warsh \"No Tolerance\" for Elevated Inflation, 14.7.2026", "url": "https://www.bloomberg.com/news/articles/2026-07-14/warsh-says-fed-has-no-tolerance-for-elevated-inflation", "tier": 2 },
+        { "title": "CNBC, CPI June 2026 / FedWatch 63 %", "url": "https://www.cnbc.com/2026/07/14/consumer-price-index-inflation-report-june-2026.html", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "us-grossbanken-rekordquartal",
+      "ressort": "unternehmen",
+      "kicker": "Quartalszahlen · Banken",
+      "headline": "US-Großbanken melden Rekordquartal, doch die Kurse laufen weit auseinander",
+      "dek": "Goldman Sachs springt fast acht Prozent, Citigroup fällt trotz Zehnjahreshoch beim Umsatz. Bei allen fünf Häusern trieben Rekord-Handelserträge das Ergebnis.",
+      "image": {
+        "file": "commerzbank-visa.jpg",
+        "alt": "Gedämpfte Nahaufnahme einer Kredit- und Bezahlkarte auf dunklem Untergrund",
+        "caption": "Bei JPMorgan blähte ein Buchgewinn aus dem Tausch von Visa-Aktien den ausgewiesenen Gewinn auf.",
+        "credit": "Foto: The Capital Compass"
+      },
+      "body": [
+        "Fakt: Die fünf größten US-Banken meldeten für das zweite Quartal Rekorde. Goldman Sachs verdiente 20,98 Dollar je Aktie, rund 46 Prozent über dem Konsens von etwa 14,40 Dollar; die Nettoerträge stiegen um 39 Prozent auf 20,34 Milliarden Dollar, die Dividende um 11 Prozent auf 5,00 Dollar. Die Aktie legte rund 7,7 Prozent zu. Bei JPMorgan sprang der ausgewiesene Gewinn je Aktie um 47 Prozent auf 7,70 Dollar, doch darin steckt ein Einmalgewinn von 4,6 Milliarden Dollar aus dem Tausch von Visa-Aktien. Bereinigt lag der Gewinn bei 6,14 Dollar über dem Konsens, die Aktie stieg rund 2,4 Prozent auf ein 52-Wochenhoch.",
+        "Bank of America übertraf mit 1,21 Dollar je Aktie ebenfalls, der Umsatz stieg um 15 Prozent auf 31,6 Milliarden Dollar, die Aktie gewann rund 1,9 Prozent. Gegenpol waren Citigroup mit minus 5,3 Prozent und Wells Fargo mit minus 2,89 Prozent, beide trotz starker Zahlen.",
+        "Interpretation: Gemeinsamer Treiber aller fünf Häuser war der Aktienhandel, der bei mehreren Banken Rekorderträge lieferte. Handelsabteilungen verdienen an Umsatz und Schwankung, nicht an der Richtung. Rekord-Handelserträge sind damit vor allem ein Messwert für hohe Marktvolatilität im zweiten Quartal, angetrieben von Iran-Krise und einem offenen Emissionsfenster, das Goldman etwa Gebühren aus dem SpaceX-Börsengang brachte.",
+        "Restrisiko und Differenzierung: Handelserträge sind der wechselhafteste Teil einer Bankbilanz und schwer wiederholbar. Das erklärt, warum der Markt Goldmans reinen Handelsrekord nur zum Teil bezahlte. Nicht alles ist zyklisch: JPMorgan hob den Ausblick für den Zinsüberschuss 2026 auf rund 105,5 Milliarden Dollar an, und die Beratungsgebühren von Wells Fargo stiegen um 35 Prozent. Diese planbare Ertragsseite normalisiert sich langsamer als der Handel."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Wenn die Handelsabteilungen einer Bank in einem Quartal Rekorderträge liefern, war der Markt in diesem Quartal stark in Bewegung. Denn eine Handelsabteilung verdient daran, dass viel gehandelt wird und die Preise schwanken, nicht daran, ob es rauf oder runter geht. Deshalb liest man Rekord-Handelserträge zuerst als Volatilitätssignal und fragt dann, wie viel davon im nächsten, ruhigeren Quartal wiederkehrt.",
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Bankergebnisse berühren die Öl- und Gasnachfrage nicht direkt. Nur über die allgemeine Konjunktureinschätzung der Bankchefs besteht ein schwacher Bezug.", "teilbranchen": "Kein spezifischer Kanal; Energiefinanzierer leicht gestützt." },
+        { "sektor": "Grundstoffe", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Chemie, Stahl und Bergbau hängen an Rohstoffpreisen und Industrienachfrage, nicht an Bankquartalen. Der Bezug bleibt allgemein konjunkturell.", "teilbranchen": "Kein spezifischer Kanal." },
+        { "sektor": "Industrie", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Rege Fusions- und Übernahmeberatung sowie ein offener Emissionsmarkt deuten auf Investitionsbereitschaft der Firmenkunden. Das ist ein leicht positives Konjunktursignal für Investitionsgüter.", "teilbranchen": "Kapitalgüterhersteller profitieren indirekt von reger Deal-Aktivität." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Die Banken meldeten keine sprunghaft steigenden Kreditrückstellungen, JPMorgan-Chef Dimon betonte einen starken Arbeitsmarkt. Das ist ein Entwarnungssignal für die Kaufkraft der US-Konsumenten.", "teilbranchen": "Kreditkartenabhängige Händler und Autofinanzierung tendenziell gestützt durch stabile Ausfallquoten." },
+        { "sektor": "Basiskonsum", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Defensive Verbrauchsgüter sind von der Ertragslage der Banken weitgehend entkoppelt. In einer Risk-on-Reaktion verlieren sie eher relativ.", "teilbranchen": "Kein spezifischer Kanal." },
+        { "sektor": "Gesundheit", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Pharma und Medizintechnik haben keinen direkten Draht zu Handelserträgen der Banken.", "teilbranchen": "Kein spezifischer Kanal." },
+        { "sektor": "Finanzen", "betroffenheit": "direkt", "richtung": "gemischt", "mechanismus": "Handel und Investmentbanking lieferten Rekorde, doch die Kursreaktion hing am Ausblick. Goldman gewann klar, Citi und Wells fielen trotz starker Zahlen.", "teilbranchen": "Gewinner: Goldman (Handel, IPO-Gebühren), JPMorgan (angehobener Zinsüberschuss-Ausblick), BofA. Verlierer im Kurs: Citigroup, Wells Fargo." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Starke Investmentbanking-Erträge und der genannte SpaceX-Börsengang zeigen ein offenes Emissionsfenster. Das erleichtert Tech-Börsengänge und stützt die Bewertung von Fintech- und Zahlungsdienstleistern.", "teilbranchen": "Zahlungsabwickler und Fintech (Visa-Umtausch bei JPMorgan als Ertragsquelle) tendenziell gestützt." },
+        { "sektor": "Kommunikation", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Ein aufnahmefähiger Kapitalmarkt hilft kapitalintensiven Plattform- und Medienkonzernen bei der Finanzierung. Der genannte SpaceX-Börsengang signalisiert Appetit auf große Emissionen.", "teilbranchen": "Große Plattformen und Emissionskandidaten profitieren vom offenen Fenster." },
+        { "sektor": "Versorger", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Regulierte Versorger sind von Bankquartalen unabhängig, ihr gemeinsamer Nenner ist allein das allgemeine Zinsniveau.", "teilbranchen": "Kein spezifischer Kanal." },
+        { "sektor": "Immobilien", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Die Höhe der Rückstellungen für Gewerbeimmobilienkredite ist das Frühwarnsystem für Bürovermieter. Kein Alarm in den Zahlen wirkt beruhigend, das Risiko bleibt aber im Blick.", "teilbranchen": "Büro-REITs abhängig von der Kreditqualität der Banken; Wohnen kaum berührt." }
+      ],
+      "gewinnerVerlierer": [
+        { "firma": "Goldman Sachs", "logoKey": "goldman", "bewegung": "+7,7 %", "warum": "46-Prozent-Gewinnbeat und Dividende plus 11 Prozent als Signal höherer, tragfähiger Ertragskraft" },
+        { "firma": "JPMorgan", "logoKey": "jpmorgan", "bewegung": "+2,4 %", "warum": "bereinigter Beat plus angehobener Zinsüberschuss-Ausblick; der GAAP-Sprung ist zu einem Drittel Visa-Buchgewinn" },
+        { "firma": "Bank of America", "bewegung": "+1,9 %", "warum": "Gewinn über Konsens, Umsatz plus 15 Prozent auf 31,6 Milliarden Dollar" },
+        { "firma": "Citigroup", "logoKey": "citigroup", "bewegung": "−5,3 %", "warum": "Renditeziel deutet trotz Rekordumsatz eine schwächere zweite Jahreshälfte an" },
+        { "firma": "Wells Fargo", "logoKey": "wellsfargo", "bewegung": "−2,89 %", "warum": "vorsichtiger Kapital-Ton von CEO Scharf belastete trotz solider Zahlen" }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Banken Q2 2026: Gewinn je Aktie über Konsens",
+          "subtitle": "Beat in Prozent; JPMorgan auf bereinigter Basis",
+          "unit": " %",
+          "source": "Unternehmens-Releases (Tier 1); Konsens News-Curator (Tier 2)",
+          "allPositive": true,
+          "data": [["Goldman Sachs", 46], ["Citigroup", 15], ["JPMorgan (bereinigt)", 7]]
+        }
+      ],
+      "company": {
+        "name": "Goldman Sachs",
+        "ticker": "GS",
+        "exchange": "NYSE",
+        "logoKey": "goldman",
+        "whatTheyDo": "Goldman Sachs ist eine der größten Investmentbanken der Welt. Sie berät Konzerne bei Fusionen und Börsengängen, handelt an den Finanzmärkten für Kunden und auf eigene Rechnung und verwaltet Vermögen. Ihr Ergebnis hängt stark davon ab, wie viel an den Märkten los ist.",
+        "whyItMatters": "Goldman ist das Musterhaus für handelsgetriebene Banken. Ihr Quartal zeigt, wie stark Marktschwankungen und Deal-Aktivität im zweiten Quartal die Erträge trieben.",
+        "keyMetrics": [
+          ["Kurs", "≈ 1.126,86 $ (+7,7 %)"],
+          ["Börsenwert", "≈ 305 Mrd. $"],
+          ["Gewinn je Aktie Q2", "20,98 $ (Konsens ≈ 14,40 $)"],
+          ["Nettoerträge Q2", "20,34 Mrd. $ (+39 %)"],
+          ["Kurs-Buchwert (KBV)", "≈ 2,30x"]
+        ]
+      },
+      "factcheck": {
+        "claim": "Goldman Sachs Q2: Gewinn je Aktie 20,98 Dollar (Konsens rund 14,40), Nettoerträge 20,34 Milliarden Dollar (plus 39 Prozent), Aktie rund plus 7,7 Prozent.",
+        "verdict": "bestätigt",
+        "evidence": "Goldman 8-K via StockTitan (Tier 1); Kursreaktion durch TradingKey (+7,70 Prozent) und MarketBeat (+7,5 Prozent) belegt (Tier 2). Der GuruFocus-Wert +9,0 Prozent ist ein Intraday-Artefakt und wird nicht verwendet."
+      },
+      "sources": [
+        { "title": "Goldman Sachs 8-K, Q2-2026-Ergebnisrelease (StockTitan)", "url": "https://www.stocktitan.net/sec-filings/GS/8-k-goldman-sachs-group-inc-reports-material-event-c147ebd3092e.html", "tier": 1 },
+        { "title": "Wells Fargo 8-K, Q2 2026", "url": "https://www.sec.gov/Archives/edgar/data/0000072971/000007297126000288/wfc2qer07-14x26ex991xrelea.htm", "tier": 1 },
+        { "title": "Quartz, Citigroup Q2 2026 profit beat", "url": "https://qz.com/citigroup-q2-2026-earnings-profit-beat-analyst-estimates-071426", "tier": 2 },
+        { "title": "MarketBeat, JPMorgan +2,5 % nach Zahlen", "url": "https://www.marketbeat.com/instant-alerts/jpmorgan-chase-co-nysejpm-trading-25-higher-following-earnings-beat-2026-07-14/", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "citigroup-renditeausblick-belastet",
+      "ressort": "unternehmen",
+      "kicker": "Quartalszahlen · Banken",
+      "headline": "Citigroup fällt nach dem stärksten Quartal seit zehn Jahren, der Renditeausblick belastet",
+      "dek": "Der Gewinn je Aktie schlägt alle Schätzungen, der Umsatz erreicht ein Zehnjahreshoch. Trotzdem verliert die Aktie 5,3 Prozent, weil das eigene Renditeziel eine schwächere zweite Jahreshälfte andeutet.",
+      "body": [
+        "Fakt: Citigroup verdiente im zweiten Quartal 3,15 Dollar je Aktie und lag damit über allen 20 Analystenschätzungen (Durchschnitt 2,74 Dollar). Der Umsatz stieg um 14 Prozent auf 24,8 Milliarden Dollar, den höchsten Wert seit zehn Jahren, getragen von einem Rekord im Aktienhandel. Die Bank kündigte einen Aktienrückkauf über 30 Milliarden Dollar und eine um 12 Prozent höhere Dividende an. Der Kurs fiel dennoch um rund 5,3 Prozent auf 133,27 Dollar (Vortagesschluss 140,71 Dollar); die Quellen streuen zwischen minus 4,4 und minus 5,7 Prozent.",
+        "Interpretation, fundamental: Der zentrale Auslöser ist der Ausblick, nicht Nervosität. Citi bestätigte für das Gesamtjahr ein Ziel für die Rendite auf das materielle Eigenkapital (RoTCE) von 10 bis 11 Prozent. Im ersten Halbjahr lag sie aber schon bei 13,1 Prozent. Wer das starke erste Halbjahr abzieht, landet für die zweite Jahreshälfte rechnerisch bei nur rund 7 bis 9 Prozent. Der eigene Ausblick signalisiert also eine deutlich schwächere zweite Jahreshälfte. Ein Aktienkurs bezahlt die künftige Rendite auf das Eigenkapital, nicht das gerade gemeldete Rekordquartal.",
+        "Verstärkend kam ein Kostensignal: Die Aufwand-Ertrags-Relation lag mit 57,4 Prozent besser als die Jahresvorgabe von rund 60 Prozent, was bedeutet, dass Citi im Rest des Jahres mehr ausgeben will. CEO Jane Fraser nannte das gute Umfeld \"eine Gelegenheit, die wir nutzen werden\", was der Markt als steigende Kosten las. Wells Fargo passt mit minus 2,89 Prozent ins selbe Muster: solide Zahlen, aber ein vorsichtiger Kapital-Ton.",
+        "Restrisiko: Ein Teil des Minus ist schlichtes Glattstellen nach einem Vorlauf, die Aktie drehte aus einem frühen Tageshoch bei erhöhtem Volumen nach unten. Fundamentaler Renditeausblick und Gewinnmitnahmen lassen sich am Kurstag nicht sauber trennen, beide zeigen in dieselbe Richtung. Der belegbare Anker bleibt der RoTCE-Ausblick."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Kurs einer Bank preist nicht das gerade gemeldete Quartal, sondern die erwartete Rendite auf das Eigenkapital in der Zukunft. Sinkt diese erwartete Rendite, sinkt das Vielfache, das Anleger auf den Buchwert zu zahlen bereit sind, und die Aktie fällt, selbst wenn die gemeldete Zahl ein Rekord war. Genau das passierte bei Citigroup: ein bestätigtes, im Vergleich zum starken Halbjahr niedriges Renditeziel ist eine versteckte Warnung.",
+      "company": {
+        "name": "Citigroup",
+        "ticker": "C",
+        "exchange": "NYSE",
+        "logoKey": "citigroup",
+        "whatTheyDo": "Citigroup ist eine der vier großen US-Universalbanken. Sie wickelt den Zahlungsverkehr für Konzerne rund um den Globus ab, vergibt Kredite, handelt an den Märkten und betreibt ein Privatkundengeschäft. Seit Jahren baut die Bank unter CEO Jane Fraser um, um profitabler zu werden.",
+        "whyItMatters": "Citi ist das Lehrstück, dass eine Rekord-Aktie fallen kann. Den Kurs bewegt der Ausblick auf die künftige Rendite, nicht die gemeldete Zahl.",
+        "keyMetrics": [
+          ["Kurs", "≈ 133,27 $ (−5,3 %)"],
+          ["Börsenwert", "≈ 239 Mrd. $"],
+          ["Gewinn je Aktie Q2", "3,15 $ (Konsens 2,74 $)"],
+          ["Umsatz Q2", "24,8 Mrd. $ (+14 %, Zehnjahreshoch)"],
+          ["Rendite auf materielles Eigenkapital (RoTCE)", "Q2 13,0 %, Jahresziel nur 10–11 %"]
+        ]
+      },
+      "factcheck": {
+        "claim": "Citigroup-Aktie fiel um 5,3 Prozent (Schluss 133,27 Dollar gegen Vortag 140,71 Dollar) trotz Gewinn je Aktie von 3,15 Dollar über allen Schätzungen und Zehnjahreshoch beim Umsatz.",
+        "verdict": "bestätigt",
+        "evidence": "Fundamentaldaten durch Citigroup 8-K (Tier 1) und Quartz/Bloomberg (Tier 2) belegt. Kursreaktion durch GuruFocus (minus 5,3 Prozent) und die Kursdaten Schluss/Vortag bestätigt; frühere Angabe minus 4,7 Prozent war inkonsistent."
+      },
+      "sources": [
+        { "title": "Citigroup 8-K / Earnings-Präsentation Q2 2026", "url": "https://www.citigroup.com/rcs/citigpa/storage/public/Earnings/Q22026/2026presoqtr2rslt.pdf", "tier": 1 },
+        { "title": "GuruFocus, Citigroup shares fall 5,3 %", "url": "https://www.gurufocus.com/news/8958499/citigroup-c-shares-fall-53-amid-investment-strategy-discussion", "tier": 2 },
+        { "title": "Bloomberg, Citi shares drop as CEO warns of higher cost", "url": "https://www.bloomberg.com/news/articles/2026-07-14/citi-shares-drop-as-ceo-warns-of-higher-cost-from-investments", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "oel-hormus-gebuehr-kassiert",
+      "ressort": "news",
+      "kicker": "Geopolitik · Energie",
+      "headline": "Trump zieht Hormus-Gebühr zurück, doch der Ölpreis bleibt nahe dem Monatshoch",
+      "dek": "Die geforderten 20 Prozent Durchfahrtsgebühr galten als rechtswidrig. Weil kaum noch Tanker durch die Meerenge fahren, hält der Angebotsengpass Brent bei knapp 85 Dollar.",
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Öltanker in einer engen Meerenge unter dunstigem Himmel",
+        "caption": "Nur 57 Transits an einem Wochenende: Der Engpass an der Straße von Hormus hält den Preis oben.",
+        "credit": "Foto: The Capital Compass"
+      },
+      "body": [
+        "Fakt: US-Streitkräfte griffen die dritte Nacht in Folge Ziele an Irans Küste an. Von Freitag bis Sonntag passierten nur 57 Schiffe die Straße von Hormus, über 50 Prozent weniger als in der Vorwoche. Präsident Trump ließ zugleich seine Forderung fallen, dass Schiffe unter US-Schutz eine Gebühr von 20 Prozent auf die Ladung für die Durchfahrt zahlen. Die Internationale Seeschifffahrts-Organisation (IMO) der Vereinten Nationen hatte Zwangsgebühren in der Meerenge für rechtswidrig erklärt, und die Schifffahrtsbranche leistete breiten Widerstand.",
+        "Trotz der zurückgenommenen Eskalationsstufe blieb Öl nahe dem Monatshoch. Das WTI-Settlement stieg um 1,5 Prozent auf 79,34 Dollar, Brent um 1,72 Prozent auf 84,73 Dollar, intraday bis 87 Dollar, erstmals seit Juni.",
+        "Interpretation: Der Markt preist nicht die Gebühr, sondern den physischen Angebotsengpass. Weniger Transits durch die wichtigste Öl-Meerenge der Welt bedeuten knapperes Angebot, das den Preis oben hält, unabhängig von der Nachfrage. Höheres Öl verteuert Treibstoff, Transport und petrochemische Vorprodukte und speist damit genau die Inflationssorge, die der kühle Juni-CPI vorgaukelt. Das ist die Brücke zurück zu Warshs Vorsicht.",
+        "Restrisiko: Der genaue Brent-Settlement variiert je Quelle geringfügig (84,73 bis 84,85 Dollar). Ob sich die Transitzahlen normalisieren oder der Konflikt weiter eskaliert, ist offen und bleibt der Haupttreiber des Preises."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Ölpreis kann aus zwei Gründen steigen: mehr Nachfrage oder weniger Angebot. Hier ist es das Angebot. Wenn nur noch halb so viele Tanker durch das Nadelöhr Hormus fahren, kommt physisch weniger Öl auf den Weltmarkt. Dieser Angebotsschock hält den Preis oben, auch wenn eine politische Drohung wie die Durchfahrtsgebühr wieder vom Tisch ist. Über die Kostenrechnung von Chemie, Transport und Airlines wirkt der teurere Rohstoff dann in die ganze Wirtschaft.",
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "direkt", "richtung": "positiv", "mechanismus": "Ein höherer Ölpreis erhöht unmittelbar die Verkaufserlöse der Förderer. Anbieter außerhalb der Krisenregion verdienen mehr, ohne höhere Förderkosten zu tragen.", "teilbranchen": "Ölförderer und Ölservice gewinnen; Raffineriemargen gemischt je nach Produktpreisen." },
+        { "sektor": "Grundstoffe", "betroffenheit": "direkt", "richtung": "negativ", "mechanismus": "Öl und Gas sind zentrale Einsatzstoffe der Chemie. Steigt der Rohölpreis, steigen die Materialkosten und die Margen der energieintensiven Grundstoffbranche geraten unter Druck.", "teilbranchen": "Chemie (BASF) verliert über Einsatzkosten; Stahl energieintensiv, Salzgitter heute aber plus 7 Prozent wegen des Stahlschutz-Themas." },
+        { "sektor": "Industrie", "betroffenheit": "direkt", "richtung": "negativ", "mechanismus": "Teurer Treibstoff trifft Airlines und Logistiker unmittelbar über die Kerosin- und Dieselrechnung. Reeder profitieren dagegen von höheren Frachtraten bei gestörten Routen.", "teilbranchen": "Verlierer: Airlines, Speditionen. Gewinner: Reeder (Hapag-Lloyd genannt); Rüstung geopolitisch gestützt." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "indirekt", "richtung": "negativ", "mechanismus": "Höhere Benzinpreise wirken wie eine Steuer auf das frei verfügbare Einkommen und drücken die Ausgaben für Reisen, Autos und Handel.", "teilbranchen": "Reiseanbieter, Autohandel und Non-Food-Handel belastet." },
+        { "sektor": "Basiskonsum", "betroffenheit": "indirekt", "richtung": "negativ", "mechanismus": "Höhere Öl- und Transportkosten verteuern Herstellung und Auslieferung von Lebensmitteln und Haushaltswaren und drücken die Margen.", "teilbranchen": "Verpackungsintensive Hersteller und Handel mit langen Lieferwegen belastet." },
+        { "sektor": "Gesundheit", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen ist unabhängig vom Ölpreis.", "teilbranchen": "Kein direkter Kanal." },
+        { "sektor": "Finanzen", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Banken sind nur mittelbar betroffen, etwa über Kredite an energieintensive Kunden oder eine höhere Inflationssorge, die die Zinserwartung stützt.", "teilbranchen": "Kein direkter Kanal; Energiefinanzierer leicht gestützt." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Chips und Software sind im Vertrieb wenig energiepreissensibel. Nur der Betrieb von Rechenzentren spürt höhere Strompreise mittelbar.", "teilbranchen": "Kein direkter Kanal." },
+        { "sektor": "Kommunikation", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Plattformen und Telekom haben eine geringe direkte Energiekostenquote.", "teilbranchen": "Kein direkter Kanal." },
+        { "sektor": "Versorger", "betroffenheit": "indirekt", "richtung": "gemischt", "mechanismus": "Höhere Gaspreise im Gefolge des Ölschocks verteuern die Brennstoffkosten von Gaskraftwerken. Regulierte Netzbetreiber können Kosten oft weiterreichen und sind weniger betroffen.", "teilbranchen": "Gasverstromer belastet; regulierte Netze robust; Anbieter mit Katar-Flüssiggasbezug im Fokus." },
+        { "sektor": "Immobilien", "betroffenheit": "kaum", "richtung": "negativ", "mechanismus": "Höhere Energiekosten belasten die Nebenkosten von Bestandshaltern leicht, der Effekt ist aber klein und meist umlagefähig.", "teilbranchen": "Energieintensive Bestände marginal betroffen." }
+      ],
+      "gewinnerVerlierer": [
+        { "firma": "Ölförderer", "bewegung": "gestützt", "warum": "höhere Verkaufserlöse bei knapperem Angebot, ohne höhere Förderkosten außerhalb der Krisenregion" },
+        { "firma": "Chemie (BASF)", "bewegung": "belastet", "warum": "Öl und Gas sind zentrale Einsatzstoffe, höhere Materialkosten drücken die Marge" },
+        { "firma": "Airlines", "bewegung": "belastet", "warum": "teures Kerosin trifft die Kostenrechnung unmittelbar" }
+      ],
+      "sources": [
+        { "title": "CNBC, Öl / Hormus / Trump-Gebühr 14.7.2026", "url": "https://www.cnbc.com/2026/07/14/oil-prices-today-brent-wti-hormuz-trump-toll-iran.html", "tier": 2 },
+        { "title": "Washington Post, Trump zieht Hormus-Gebühr zurück", "url": "https://www.washingtonpost.com/world/2026/07/14/oil-prices-jump-after-trumps-threats-strait-hormuz/", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "asien-deep-v-chip-erholung",
+      "ressort": "news",
+      "kicker": "Märkte · Halbleiter",
+      "headline": "Asiens Chipwerte drehen nach dem Absturz ins Plus, doch der Rebound bleibt dünn",
+      "dek": "Kospi und Nikkei schließen je gut ein halbes Prozent höher, Samsung und SK Hynix legen rund drei Prozent zu. Nach einem Minus von neun Prozent am Vortag ist das ein technischer Rückkauf, keine Entwarnung.",
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Gedämpfte Aufnahme eines Halbleiter-Wafers mit Speicherchips",
+        "caption": "Samsung und SK Hynix erholten sich, doch die Debatte um die Marge bei Hochleistungsspeicher bleibt offen.",
+        "credit": "Foto: The Capital Compass"
+      },
+      "body": [
+        "Fakt: Nach dem \"Schwarzen Montag\" der asiatischen Chipwerte, an dem der Kospi rund 9 Prozent verlor, drehten die Halbleiter ins Plus. Der Kospi schloss 0,73 Prozent höher bei 6.856,83 Punkten, der japanische Nikkei 225 gewann 0,74 Prozent. Samsung Electronics stieg um 3,34 Prozent, SK Hynix um 3,69 Prozent. Getragen wurde die Erholung von Schnäppchenkäufen nach überverkauftem Niveau.",
+        "Wichtig für die Einordnung: Der Tag verlief keineswegs ruhig. Der Kospi fiel im Handelsverlauf zeitweise erneut um über 5 Prozent auf ein Tagestief von 6.448,86 Punkten, bevor er drehte. Ein Plus von unter einem Prozent nach einem Minus von neun Prozent ist ein schwacher, technischer Rückkauf, keine Stabilisierung. Selbst der beteiligte Analysedienst nannte es ausdrücklich nicht das Ende der Korrektur.",
+        "Interpretation: Ein Crash zieht am Folgetag oft Schnäppchenkäufer an, das klassische Deep-V-Muster. Die Erholung strahlt über die globale Chip-Lieferkette bis auf den Nasdaq aus, der 0,9 Prozent zulegte und von Halbleitern angeführt wurde. Die These, gedeckelte Lieferverträge für Hochleistungsspeicher (HBM, High Bandwidth Memory) begrenzten die Gewinnfantasie von SK Hynix, bleibt unbestätigt und wird durch die Erholung weder belegt noch widerlegt.",
+        "Restrisiko: Der echte Test steht erst bevor. ASML berichtet am Mittwoch, TSMC am Donnerstag. Erst ihre Auftrags- und Investitionssignale zeigen, ob der KI-Investitionszyklus trägt oder ob die Korrektur weitergeht."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Wenn ein Markt an einem Tag um neun Prozent einbricht, sind viele Kurse rechnerisch überverkauft, also stärker gefallen, als es die Nachrichtenlage rechtfertigt. Am Folgetag greifen dann Schnäppchenjäger zu und heben die Kurse kurz an. Diese Gegenbewegung sieht aus wie ein V und heißt darum Deep-V. Sie sagt aber nichts darüber, ob das Grundproblem, hier die Frage nach der Gewinnmarge bei Hochleistungsspeicher, gelöst ist. Das entscheidet erst die nächste harte Zahl.",
+      "sektorCheck": [
+        { "sektor": "Energie", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Öl und Gas reagieren auf Geopolitik und OPEC, nicht auf Speicherpreise.", "teilbranchen": "Kein direkter Kanal." },
+        { "sektor": "Grundstoffe", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Chipfabriken brauchen Spezialchemie, Industriegase und Wafer. Eine stabilere Ausbauplanung stützt die Nachfrage dieser Zulieferer.", "teilbranchen": "Elektronikchemie und Industriegase leicht gestützt." },
+        { "sektor": "Industrie", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Zulieferer für Rechenzentren (Stromtechnik, Kühlung, Reinraum, Automatisierung) hängen am KI-Investitionszyklus. Weniger Zweifel an der Chip-These stützt ihre Auftragsfantasie.", "teilbranchen": "Elektrotechnik, Kühltechnik, Rechenzentrumsbau und Robotik gestützt." },
+        { "sektor": "Zyklischer Konsum", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Hochleistungsspeicher betrifft Rechenzentren, keine Endkundenprodukte. Koreanische Autobauer bewegen sich mit dem Gesamtmarkt, ohne direkten Chip-Bezug.", "teilbranchen": "Kein direkter Kanal; Hyundai und Kia marktgetrieben." },
+        { "sektor": "Basiskonsum", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Defensive Verbrauchsgüter sind vom Chipzyklus entkoppelt und verlieren in Risk-on eher relativ.", "teilbranchen": "Kein direkter Kanal." },
+        { "sektor": "Gesundheit", "betroffenheit": "kaum", "richtung": "neutral", "mechanismus": "Kein Bezug zu Halbleiterpreisen, defensiver Ausweichort.", "teilbranchen": "Kein direkter Kanal." },
+        { "sektor": "Finanzen", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Die breite Risk-on-Bewegung nach der Chip-Erholung und dem CPI hebt die Depotwerte von Vermögensverwaltern und Brokern. Koreanische Broker atmen nach dem Crash auf.", "teilbranchen": "Korea-Broker und Vermögensverwalter über steigende Kurswerte gestützt." },
+        { "sektor": "Informationstechnologie", "betroffenheit": "direkt", "richtung": "positiv", "mechanismus": "Die Stabilisierung der Speicherwerte nimmt Druck von den Gewinnschätzungen der gesamten Chipbranche. Chips führten die Erholung an. Der offene Punkt bleibt die HBM-Vertragsmarge.", "teilbranchen": "Gewinner: Samsung (+3,34 Prozent), SK Hynix (+3,69 Prozent), Ausrüster, Foundries; Realitätstest folgt mit ASML und TSMC." },
+        { "sektor": "Kommunikation", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Internet-Plattformen kaufen KI-Rechenleistung. Eine ruhigere Chipdebatte stützt die Fantasie ihrer KI-Investitionen; stabile Speicherpreise wären zugleich eine Kostenentlastung.", "teilbranchen": "Cloud- und Plattformkonzerne mit KI-Roadmap gestützt." },
+        { "sektor": "Versorger", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Rechenzentren sind große Stromabnehmer. Bestätigt sich der KI-Ausbau, stützt das die Erzeuger mit Rechenzentrumsverträgen.", "teilbranchen": "Unregulierte Erzeuger mit Datacenter-Verträgen gestützt." },
+        { "sektor": "Immobilien", "betroffenheit": "indirekt", "richtung": "positiv", "mechanismus": "Rechenzentrums-REITs hängen an der Cloud- und KI-Nachfrage. Eine ruhigere Chipdebatte stützt ihre Auslastungsfantasie.", "teilbranchen": "Rechenzentrums-REITs gestützt; Wohnen und Büro unberührt." }
+      ],
+      "gewinnerVerlierer": [
+        { "firma": "Samsung Electronics", "logoKey": "samsung", "bewegung": "+3,34 %", "warum": "Erholung nach dem überverkauften Niveau des Vortags" },
+        { "firma": "SK Hynix", "logoKey": "sk-hynix", "bewegung": "+3,69 %", "warum": "Schnäppchenkäufe nach dem Absturz; die HBM-Margen-Frage bleibt offen" }
+      ],
+      "sources": [
+        { "title": "Korea Times, Kospi closes higher at 6.856,83 after wild swing", "url": "https://www.koreatimes.co.kr/economy/20260714/kospi-closes-higher-at-685683-after-wild-swing-kosdaq-hits-year-low", "tier": 2 },
+        { "title": "TradingKey, Deep-V Asien / ADR-Prämie 14.7.2026", "url": "https://www.tradingkey.com/analysis/stocks/more/262028383-kospi-nekki-kioxia-samsung-skhynix-ai-softbank-adr-skhy-cpi-warsh-asml-tradingkey", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "dax-gewinnwarnungen-tag",
+      "ressort": "news",
+      "kicker": "Aktien · Deutschland",
+      "headline": "DAX hält die Marke von 25.000, Evotec stürzt nach Gewinnwarnung um ein Viertel",
+      "dek": "Der Leitindex schließt 0,1 Prozent höher, obwohl steigende Ölpreise bremsen. Evotec verliert im Xetra-Schluss rund 24 Prozent, Salzgitter springt nach einer Hochstufung.",
+      "body": [
+        "Fakt: Der DAX schloss 0,1 Prozent höher bei 25.147 Punkten und hielt damit die Marke von 25.000, obwohl steigende Ölpreise den Index intraday zeitweise um 0,75 Prozent auf 24.905 Punkte drückten. Getragen wurde die Stabilität von ruhigen US-Vorgaben.",
+        "Härtester Einzelfall war Evotec. Der Hamburger Auftragsforscher für die Pharmaindustrie senkte seine Prognose drastisch: Das bereinigte operative Ergebnis (EBITDA) soll 2026 nun bei minus 70 bis minus 105 Millionen Euro liegen, zuvor waren 0 bis plus 40 Millionen erwartet worden. Der Umsatz soll auf 570 bis 610 Millionen Euro sinken (vorher 700 bis 780). Die Aktie fiel im Xetra-Schluss um rund 24 Prozent auf etwa 3,75 Euro, im Tagestief sogar um 36 Prozent auf 3,18 Euro, den tiefsten Stand seit 2016.",
+        "Gegenpol war Salzgitter. Der Stahlkonzern legte um bis zu 7 Prozent zu, nachdem Jefferies das Kursziel von 55 auf 66 Euro angehoben und die Aktie mit Verweis auf Schutzmaßnahmen für die europäische Stahlindustrie auf \"Buy\" hochgestuft hatte (Studie datiert auf den 13.7., Kursreaktion am 14.7.). Auch Vossloh belastete mit einer gesenkten Prognose und verlor rund 9 Prozent.",
+        "Restrisiko bei Evotec: Ob der Absturz übertrieben ist, hängt daran, ob die fehlenden Erlöse nur ins Jahr 2027 rutschen oder ob die Pharmakunden dauerhaft weniger Forschung auslagern. Die vollständigen Zahlen kommen am 13. August."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Teil von Evotecs Erlösen sind Erfolgsprämien aus Pharma-Partnerschaften, sogenannte Meilensteinzahlungen. Diese sind fast reine Marge, weil ihnen kaum zusätzliche Kosten gegenüberstehen. Fällt eine solche Zahlung weg oder rutscht ins nächste Jahr, trifft das den operativen Gewinn nahezu eins zu eins. Deshalb kippt ein moderater Umsatzrückgang das Ergebnis überproportional ins tiefe Minus. Bei einem so kleinen Wert verstärken dünne Handelsliquidität und automatische Verkaufsaufträge den Kurssturz zusätzlich.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Evotec dreht die Prognose ins Minus",
+          "subtitle": "Bereinigtes EBITDA 2026, alte und neue Guidance, in Millionen Euro",
+          "unit": " Mio. €",
+          "source": "onvista/dpa-AFX, Evotec-Gewinnwarnung 14.7.2026",
+          "allPositive": false,
+          "absolute": true,
+          "data": [["alt Oberkante", 40], ["neu Oberkante", -70], ["neu Unterkante", -105]]
+        }
+      ],
+      "gewinnerVerlierer": [
+        { "firma": "Evotec", "logoKey": "evotec", "bewegung": "−24 %", "warum": "Gewinnwarnung, operatives Ergebnis kippt von leicht positiv auf bis minus 105 Millionen Euro" },
+        { "firma": "Vossloh", "logoKey": "vossloh", "bewegung": "rund −9 %", "warum": "gesenkte Prognose, das EBIT-Ziel fällt trotz Rekord-Auftragsbestand" },
+        { "firma": "Salzgitter", "logoKey": "salzgitter", "bewegung": "+7 %", "warum": "Jefferies hebt Kursziel auf 66 Euro und stuft auf Buy hoch, Argument EU-Stahlschutz" }
+      ],
+      "sources": [
+        { "title": "onvista/dpa-AFX, DAX 14.7., Evotec-Gewinnwarnung", "url": "https://www.onvista.de/news/2026/07-14-oelpreise-belasten-dax-kursdesaster-bei-evotec-41121301-19-26531886", "tier": 2 },
+        { "title": "MarketScreener, Jefferies hebt Salzgitter auf Buy, Ziel 66 Euro", "url": "https://de.marketscreener.com/boerse-nachrichten/jefferies-hebt-salzgitter-auf-buy-ziel-hoch-auf-66-euro-ce7f5edcdc8cf324", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "industriestrompreis-energieentlastung",
+      "ressort": "politik",
+      "kicker": "Politik · Standort Deutschland",
+      "headline": "Berlin plant Industriestrompreis und Energie-Entlastung gegen die Kostenwelle",
+      "dek": "Das Wirtschaftsministerium meldet eine schwächere Konjunktur im zweiten Quartal. Rund 10 Milliarden Euro sollen die Energiekosten senken, ein Industriestrompreis soll rund 9.500 Unternehmen stützen.",
+      "image": {
+        "file": "industriestrompreis.jpg",
+        "alt": "Gedämpfte Aufnahme einer energieintensiven Industrieanlage bei Dämmerung",
+        "caption": "Der geplante Industriestrompreis zielt auf energieintensive Branchen wie Chemie, Stahl und Aluminium.",
+        "credit": "Foto: The Capital Compass"
+      },
+      "body": [
+        "Fakt: Das Bundesministerium für Wirtschaft und Energie (BMWE) veröffentlichte am 14.7. seinen Monatsbericht zur wirtschaftlichen Lage. Danach schwächte sich die Konjunktur im zweiten Quartal ab, vor dem Hintergrund des anhaltenden Nahost-Konflikts und deutlich gestiegener Energiepreise; die energieintensive Industrie steht unter Druck.",
+        "Als Gegenmaßnahmen nennt der Haushalt 2026 rund 10 Milliarden Euro zur Entlastung bei den Energiekosten, unter anderem durch niedrigere Netzentgelte, die Abschaffung der Gasspeicherumlage und eine geringere Stromsteuer für das produzierende Gewerbe. Zentrales Instrument ist ein Industriestrompreis, ausgestaltet als Kompensationszahlung für die Jahre 2026 bis 2028, der rund 9.500 Unternehmen adressiert. Zusätzlich sind über 128 Milliarden Euro staatliche Investitionen für 2026 vorgesehen, unter anderem in Mikroelektronik und KI-Rechenkapazität.",
+        "Interpretation: Der Industriestrompreis ist ein gezielter Kostenzuschuss für energieintensive Branchen wie Chemie, Stahl und Aluminium. Er wirkt damit genau gegen die Öl- und Gaspreisbelastung aus dem Hormus-Schock und stützt die Margen betroffener DAX- und MDax-Werte. Das passt zur Salzgitter-Meldung des Tages, deren Hochstufung ebenfalls auf politischem Schutz für die Stahlindustrie beruht.",
+        "Restrisiko: Der Industriestrompreis ist ein geplantes und ausgestaltetes Instrument, kein am 14.7. final beschlossenes Gesetz. Kompensationsmodelle sind beihilferechtlich heikel und zeitlich bis 2028 befristet. Das schafft Planungsunsicherheit über 2028 hinaus."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Energieintensive Branchen wie Chemie und Stahl konkurrieren weltweit und können hohe deutsche Strompreise nicht einfach an ihre Kunden weitergeben. Steigt der Strompreis, sinkt ihre Marge, und Investitionen wandern ins Ausland ab. Ein Industriestrompreis ist ein staatlicher Zuschuss, der einen Teil dieser Kosten übernimmt. Er verbilligt also nicht den Strom selbst, sondern erstattet den Unternehmen die Differenz und stützt so ihre Wettbewerbsfähigkeit und ihre Gewinnmarge.",
+      "factcheck": {
+        "claim": "BMWE plant rund 10 Milliarden Euro Energie-Entlastung und einen Industriestrompreis für rund 9.500 Unternehmen; über 128 Milliarden Euro staatliche Investitionen 2026.",
+        "verdict": "bestätigt",
+        "evidence": "BMWE Monatsbericht \"Wirtschaftliche Lage Juli 2026\" und Haushalt 2026 (Primärquellen, Tier 1); Einordnung durch Science Media Center (Tier 2). Struktureller Politik-Kontext, keine tagesaktuelle Einzelentscheidung."
+      },
+      "sources": [
+        { "title": "BMWE, Wirtschaftliche Lage in Deutschland Juli 2026", "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/Wirtschaftliche-Lage/2026/20260714-wirt-lage-deutschland-juli-2026.html", "tier": 1 },
+        { "title": "Science Media Center, Was ist vom geplanten Industriestrompreis zu erwarten", "url": "https://www.sciencemediacenter.de/angebote/was-ist-vom-geplanten-industriestrompreis-zu-erwarten-25211", "tier": 2 }
+      ]
+    },
+
+    {
+      "id": "chipwoche-netflix-vorschau",
+      "ressort": "news",
+      "kicker": "Vorschau · Quartalssaison",
+      "headline": "ASML, TSMC und Netflix liefern in dieser Woche den Realitätstest für die KI-These",
+      "dek": "Nach dem Chip-Beben stehen drei Zahlenwerke an: ASML am Mittwoch, TSMC und Netflix am Donnerstag. Ihre Aufträge und Investitionsbudgets zeigen, ob der KI-Boom trägt.",
+      "body": [
+        "Fakt: Am Mittwoch, dem 15.7., legt ASML seine Quartalszahlen vor. Der Konsens erwartet rund 7,94 Dollar Gewinn je Aktie auf etwa 10,27 Milliarden Dollar Umsatz. Die entscheidende Größe sind die Bestellungen für EUV-Lithografie, die Maschinen zur Belichtung modernster Chips. Diese Aufträge gelten als Frühindikator für die Chipproduktion 12 bis 18 Monate im Voraus. Der Markt preist rund 8 Prozent Kursschwankung ein.",
+        "Am Donnerstag, dem 16.7., folgt der Auftragsfertiger TSMC. Erwartet wird ein um rund 57 Prozent höherer Nettogewinn, im Blick steht der Investitionsrahmen 2026 von 52 bis 56 Milliarden Dollar. Eine Anhebung wäre ein starkes Signal für die Nachfrage aus Rechenzentren. Ebenfalls am Donnerstag berichtet Netflix nach US-Schluss: erwartet werden rund 0,79 Dollar Gewinn je Aktie und ein Umsatz um 12,57 Milliarden Dollar (plus 13,5 Prozent). Im Fokus stehen die Werbeerlöse in Richtung einer Jahresrate von 3 Milliarden Dollar und die Mitgliederzahl über 325 Millionen.",
+        "Interpretation: ASML und TSMC sind das Nadelöhr der gesamten KI-Lieferkette. Ihre Auftrags- und Investitionssignale bewegen den globalen Halbleitersektor und damit Nasdaq und Kospi. Nach dem \"Schwarzen Montag\" der Chipwerte sind diese Zahlen der Realitätstest für die KI-These.",
+        "Restrisiko: Die Erwartungen sind hoch, entsprechend groß ist das Enttäuschungspotenzial. Ein vorsichtiger Ausblick bei den Aufträgen oder eine nur bestätigte statt angehobene Investitionsplanung könnte den ganzen Sektor erneut belasten."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Wer wissen will, ob der KI-Boom echt ist, schaut nicht auf die Chip-Verkäufe von heute, sondern auf die Bestellungen bei den Zulieferern. Eine EUV-Maschine von ASML wird ein bis anderthalb Jahre vor der eigentlichen Chipproduktion bestellt. Steigen diese Aufträge, plant die Branche mehr Kapazität und rechnet mit anhaltender Nachfrage. Genauso ist das Investitionsbudget von TSMC ein Vorbote: Hebt der größte Auftragsfertiger seine Ausgaben an, erwartet er mehr Aufträge aus den Rechenzentren.",
+      "sources": [
+        { "title": "TechTimes, ASML earnings Wednesday, EUV bookings", "url": "https://www.techtimes.com/articles/320137/20260710/asml-earnings-wednesday-euv-bookings-will-show-whether-ai-chip-boom-sustainable.htm", "tier": 2 },
+        { "title": "Barchart, Netflix stock July 16", "url": "https://www.barchart.com/story/news/3132762/dear-netflix-stock-fans-mark-your-calendars-for-july-16", "tier": 2 },
+        { "title": "StockTitan, Netflix Q2 2026 earnings date", "url": "https://www.stocktitan.net/news/NFLX/netflix-to-announce-second-quarter-2026-financial-x553fsh638xh.html", "tier": 1 }
+      ]
+    }
+  ],
+
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Ölförderer, Gasproduzenten, Raffinerien und Öl-Dienstleister.",
+      "lage": "Zwiespältiger Tag. Der Hormus-Angebotsengpass hält Brent nahe dem Monatshoch (Settlement rund 84,8 Dollar, WTI 79,34 Dollar) und stützt die Förderer. Gleichzeitig war der Absturz der Energiepreise im Juni der Haupttreiber des kühlen CPI, die Juni-Zahl ist für den Sektor aber schon überholt.",
+      "richtung": "up",
+      "tagesWert": "WTI 79,34 $ / Brent 84,73 $",
+      "istZustand": "Der Sektor ist im historischen Vergleich günstig bewertet (grober Kurs-Gewinn-Rahmen in der niedrigen zweistelligen Spanne) und diszipliniert bei Investitionen, weil Anleger seit dem Ölpreisverfall der Vorjahre eher Ausschüttungen als Mengenwachstum verlangen. Zyklisch hält ein knappes Angebot die Preise oben, gestützt durch Förderdisziplin der OPEC und Geopolitik am Golf. Strukturell drückt langfristig die Energiewende auf die Nachfrageerwartung, kurzfristig dominiert aber die geopolitische Angebotsknappheit."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Chemie, Metalle, Bergbau, Baustoffe und Verpackung.",
+      "lage": "Gespaltenes Bild. Teures Öl verteuert die Chemie-Einsatzstoffe und belastet die Margen, während Stahl von Handelspolitik profitiert. Salzgitter sprang bis zu 7 Prozent, nachdem Jefferies mit Verweis auf Schutzmaßnahmen für die Stahlindustrie das Kursziel anhob und auf \"Buy\" hochstufte.",
+      "richtung": "neutral",
+      "tagesWert": "Salzgitter +7 %",
+      "istZustand": "Die Bewertungen sind gemischt, europäische Chemie handelt zyklisch bedingt eher am unteren Rand ihrer historischen Spanne. Der Sektor steckt in einer späten, schwachen Zyklusphase mit Überkapazitäten in Teilen der Chemie und der Stahlindustrie, verschärft durch hohe europäische Energiekosten. Strukturell wirken Handelsschutz (Stahlzölle) und der geplante deutsche Industriestrompreis als politische Stützen, während die Dekarbonisierung hohe Investitionen verlangt."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbau, Rüstung, Bau, Airlines und Logistik.",
+      "lage": "Gegenläufige Kräfte. Der Zinskanal aus dem CPI verbilligt die Finanzierung, die Chip-Erholung stützt Rechenzentrums-Zulieferer und Automatisierung. Dagegen belastet teures Kerosin die Airlines und der schwelende VW-Umbau droht dem Maschinenbau Volumen zu nehmen.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist nach der Rally der Vorjahre eher ambitioniert bewertet (grober Kurs-Gewinn-Rahmen oberhalb des Gesamtmarkts bei Qualitätswerten). Zyklisch ist das Bild geteilt: klassische Kurzzykliker wie Autozulieferung und Anlagenbau sind schwach ausgelastet, während Rüstung, Elektrifizierung und Rechenzentrumsbau volle Auftragsbücher haben. Strukturelle Treiber der nächsten Quartale sind steigende Verteidigungsbudgets, die Automatisierung gegen Arbeitskräftemangel und der KI-getriebene Infrastrukturausbau."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Auto, Mode, Luxus, Reisen und Online-Handel.",
+      "lage": "Der Zinskanal aus dem CPI entlastet Auto- und Wohnungsfinanzierung, und die Banken meldeten keine sprunghaft steigenden Kreditrückstellungen. Dagegen frisst das wieder teurere Benzin die Entlastung an der Zapfsäule auf, und die Kernrate von 2,6 Prozent bleibt hoch.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Die Bewertung ist gespreizt, teure Online- und Luxusnamen stehen neben günstigen Autoherstellern mit teils einstelligem Kurs-Gewinn-Verhältnis. Zyklisch ist der Sektor spät im Zyklus, die überschüssigen Ersparnisse aus der Pandemie sind aufgebraucht und der Konsum stützt sich stärker auf Kredit. Strukturelle Themen sind der Preiskampf bei Elektroautos, die anhaltende China-Schwäche im Luxussegment und der Umbau der europäischen Autoindustrie (VW-Kostenstreit)."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Lebensmittel, Getränke, Haushaltswaren und Supermärkte.",
+      "lage": "Defensiver Verlierer des Tages im relativen Sinn. In der Risk-on-Bewegung nach dem kühlen CPI floss Geld eher in zyklische Titel. Zusätzlich erschwert eine fallende Inflation weitere Preiserhöhungen der Markenhersteller, während teures Öl die Transportkosten hebt.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist nach Jahren als sicherer Hafen nicht mehr billig und handelt nahe seinem historischen Bewertungsschnitt (grober Kurs-Gewinn-Rahmen im mittleren bis oberen Zehnerbereich). Zyklisch ist er defensiv und wenig konjunkturabhängig, steht aber unter Margendruck, weil viele Verbraucher nach der Inflationswelle zu günstigeren Handelsmarken wechseln. Strukturelle Treiber sind der Abwehrkampf der Marken gegen Handelsmarken und der Nachfragedämpfer durch Abnehmspritzen (GLP-1) bei Snacks und Süßwaren."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharma, Biotechnologie, Medizintechnik und Krankenversicherer.",
+      "lage": "Vom Zins- und Ölgeschehen weitgehend entkoppelt, dient als defensiver Ausweichort. Der Tag wurde aber vom Einzelfall Evotec geprägt: Der Wirkstoffforscher brach nach einer Gewinnwarnung um rund 24 Prozent ein (bereinigtes EBITDA jetzt minus 70 bis minus 105 Millionen Euro erwartet).",
+      "richtung": "down",
+      "tagesWert": "Evotec −24 %",
+      "istZustand": "Große Pharmawerte sind moderat bewertet (grober Kurs-Gewinn-Rahmen im mittleren Zehnerbereich), unprofitables Biotech ist nach dem Zinsanstieg der Vorjahre stark abgestraft. Zyklisch ist der Sektor defensiv, kämpft aber mit auslaufenden Patenten großer Umsatzträger in den nächsten Jahren. Strukturelle Treiber sind der Boom der Abnehm- und Diabetesmittel (GLP-1), politischer Preisdruck auf Medikamente in den USA und die Notwendigkeit teurer Zukäufe, um Patentlücken zu schließen."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer, Vermögensverwalter und Börsen.",
+      "lage": "Sektor des Tages. Fünf US-Großbanken meldeten Rekorde, getrieben von Handelserträgen, doch die Kurse liefen auseinander. Goldman sprang plus 7,7 Prozent, während Citi (minus 5,3 Prozent) und Wells (minus 2,89 Prozent) trotz starker Zahlen fielen. Der fallende Zins aus dem CPI dämpft zugleich die Zinsüberschuss-Fantasie.",
+      "richtung": "neutral",
+      "tagesWert": "Goldman +7,7 % / Citi −5,3 %",
+      "istZustand": "Banken sind weiter günstig bewertet, viele US-Großbanken handeln nahe oder wenig über Buchwert (grober Kurs-Gewinn-Rahmen im niedrigen Zehnerbereich). Zyklisch profitieren sie aktuell von hohen Zinsen und starker Kapitalmarktaktivität, das Risiko sind steigende Kreditausfälle bei einer Konjunkturabkühlung. Strukturelle Treiber sind die hohen Handels- und Investmentbanking-Erträge im volatilen Zinsregime, mögliche Deregulierung und Aktienrückkäufe (Citi kündigte 30 Milliarden Dollar an)."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Software, Hardware und Halbleiter.",
+      "lage": "Starker Tag. Der fallende Zins aus dem CPI hebt den Barwert künftiger Gewinne, und die Halbleiter erholten sich nach dem Schwarzen Montag kräftig. Chips führten die Nasdaq (plus 0,9 Prozent) an, Samsung und SK Hynix legten je rund 3 Prozent zu. Warshs Falkenton bleibt das Gegenrisiko.",
+      "richtung": "up",
+      "tagesWert": "Nasdaq +0,9 % / SK Hynix +3,69 %",
+      "istZustand": "Der Sektor ist im historischen Vergleich teuer, die großen US-Techwerte handeln zu deutlich überdurchschnittlichen Vielfachen (grober Kurs-Gewinn-Rahmen im hohen Zwanziger- bis Dreißigerbereich). Zyklisch steckt die Halbleiterbranche mitten im KI-Investitionsboom mit knappen Kapazitäten bei Rechenzentrumschips, während der Speichermarkt (HBM) über Vertragspreise diskutiert wird. Strukturelle Treiber der nächsten Quartale sind die KI-Investitionsbudgets der Hyperscaler, die EUV-Bestellungen (ASML) als Frühindikator und die Capex-Pläne von TSMC."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Telekom, Internet-Plattformen, Medien und Unterhaltung.",
+      "lage": "Freundlicher Tag über zwei Kanäle. Plattformen reagieren wie Tech positiv auf den fallenden Zins, und die Chip-Erholung stützt ihre KI-Fantasie. Verschuldete Telekomkonzerne profitieren zusätzlich von der billigeren Refinanzierung. Am Donnerstag berichtet Netflix.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Die Bewertung ist zweigeteilt: teure Wachstumsplattformen stehen neben billigen, hoch verschuldeten Telekomkonzernen (grober Kurs-Gewinn-Rahmen der Telekoms im niedrigen Zehnerbereich). Zyklisch hängen die werbefinanzierten Plattformen an der Konsumlaune, während Abo-Modelle wie Streaming stabiler laufen. Strukturelle Treiber sind das anziehende Werbegeschäft der Streaminganbieter, der Preiswettbewerb im Mobilfunk und der Einsatz von KI in Such- und Empfehlungssystemen."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Strom-, Gas- und Wassernetze sowie Stromerzeuger.",
+      "lage": "Doppelt gestützt. Der fallende Zins aus dem CPI macht die stabilen Dividenden als Anleihe-Ersatz attraktiver und verbilligt die Refinanzierung der hohen Netzschulden. Zusätzlich stützt die Chip-Erholung die Rechenzentrums-Stromfantasie. Risiko über höhere Gaspreise im Hormus-Umfeld.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Versorger sind moderat bewertet (grober Kurs-Gewinn-Rahmen im mittleren Zehnerbereich) und stark zinsabhängig, weil ihre Geschäftsmodelle auf viel Fremdkapital beruhen. Zyklisch sind sie defensiv, stehen aber vor einer historischen Investitionswelle in Netze und Erzeugung. Der zentrale strukturelle Treiber ist der sprunghaft steigende Strombedarf durch Rechenzentren und Elektrifizierung, der aus dem trägen Sektor überraschend eine Wachstumsstory macht."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Börsennotierte Vermieter (REITs) und Projektentwickler.",
+      "lage": "Der reinste Zinswert des Index profitierte am klarsten vom kühlen CPI: Fallende Renditen verbilligen die Refinanzierung und stützen die Objektwerte. Gegenkräfte sind Warshs Falkenton und die Frage nach den Gewerbeimmobilien-Rückstellungen der heute berichtenden Banken.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Nach dem Zinsschock der Vorjahre sind viele REITs mit Abschlag zum Substanzwert (unter dem Nettoinventarwert) günstig bewertet. Zyklisch drückt weiter der hohe Refinanzierungsbedarf zu höheren Zinsen, besonders bei Büroimmobilien mit strukturell schwacher Nachfrage durch Homeoffice. Strukturelle Treiber der nächsten Quartale sind die Refinanzierungswelle auslaufender Kredite, die anhaltende Büroschwäche und der Nachfrageboom bei Logistik- und Rechenzentrums-Immobilien."
+    }
+  ],
+
+  "stockPicks": [
+    {
+      "name": "Evotec",
+      "ticker": "EVT",
+      "logoKey": "evotec",
+      "marketCapEUR": "rund 0,67 Mrd. €",
+      "capSource": "Näherung: 177,9 Mio. Aktien × Xetra-Schluss ~3,75 € (Evotec IR/marketscreener; boerse.de, 14.7.2026)",
+      "thesis": "Evotec ist ein Lehrstück, wie eine Gewinnwarnung bei einem kleinen Wert die ganze Turnaround-These zerstört. Der Auftragsforscher senkte das operative Ergebnis von \"leicht positiv bis plus 40\" auf bis minus 105 Millionen Euro, weil margenstarke Erfolgsprämien aus Pharma-Partnerschaften wegbrechen. Der Kurs fiel dadurch nicht um ein Quartal, sondern um die gesamte Fantasie einer Rückkehr zur Profitabilität.",
+      "counterarguments": [
+        "Struktur statt Timing: Der eigene Ursachen-Split deutet auf ein Nachfrageproblem, nicht auf einen einmaligen Zeitverschub. Nur rund 40 Prozent der Lücke stammen aus verschobenen Meilensteinen bestehender Partnerschaften, rund 45 Prozent aus Verzögerungen bei neu verhandelten Kooperationen und rund 15 Prozent aus geringerer Umsatzrealisierung. Rund zwei Drittel deuten also auf dauerhaft schwächere Nachfrage nach Auftragsforschung, was die Bewertungsbasis dauerhaft senkt.",
+        "Die Liquidität von rund 465,6 Millionen Euro Ende Juni begrenzt zwar das akute Pleiterisiko, ändert aber nichts an der zerstörten Ertragsfantasie. Ein strukturell niedrigeres Umsatzniveau bleibt auch dann das neue Normal, wenn das Unternehmen nicht in Not gerät.",
+        "Small-Cap-Technik verstärkte den Absturz: Bei dünner Handelsliquidität schlagen Stop-Loss-Verkäufe brutaler durch. Ein Teil des Minus ist Markttechnik, was eine saubere fundamentale Bewertung erschwert, bis die Vollzahlen vorliegen."
+      ],
+      "catalysts": [
+        "Vollständige Halbjahreszahlen am 13. August 2026 (Klarheit über den Ursachen-Split)",
+        "Frage, ob verschobene Meilensteine 2027 zurückkehren oder dauerhaft entfallen",
+        "Umsetzung und Kostenwirkung des Restrukturierungsprogramms \"Horizon\""
+      ],
+      "confidence": "hoch",
+      "whatTheyDo": "Evotec aus Hamburg sucht und entwickelt im Auftrag großer Arzneihersteller neue Wirkstoffe und stellt biologische Medikamente her. Es verdient an Forschungsgebühren sowie an Erfolgsprämien und Lizenzgebühren, wenn ein gemeinsames Projekt Fortschritte macht."
+    },
+    {
+      "name": "Vossloh",
+      "ticker": "VOS",
+      "logoKey": "vossloh",
+      "marketCapEUR": "rund 1,0 Mrd. €",
+      "capSource": "Näherung: ~17,77 Mio. Aktien × Kurs ~55,9 € (stockanalysis.com; Eulerpool, 14.7.2026)",
+      "thesis": "Vossloh liefert Schienen, Weichen und Befestigungssysteme für die Bahninfrastruktur. Das Unternehmen senkte die Prognose, doch der Auftragsbestand im Kerngeschäft Bahninfrastruktur kletterte auf einen Rekord von 1.140,7 Millionen Euro (zuvor 865,8 Millionen). Die volle Auftragslage spricht dafür, dass das Umsatzproblem eher Timing als Nachfrageeinbruch ist.",
+      "counterarguments": [
+        "Marge statt Menge: Das eigentliche Warnsignal ist die Profitabilität. Vossloh senkte das EBIT-Ziel von 118,5 bis 131 auf 100 bis 110 Millionen Euro, obwohl der Auftragsbestand steigt. Das Unternehmen wächst also zu schlechteren Margen. Volle Bücher schützen den Umsatz, nicht die Profitabilität.",
+        "Der Kurssturz von rund 9 Prozent an einem Tag zeigt, wie empfindlich der Markt auf jede Enttäuschung reagiert. Die Erholung hängt daran, dass die gedrückte Marge nur temporär ist, was bis zu den nächsten Zahlen unbewiesen bleibt.",
+        "Ein Rekord-Auftragsbestand bindet Kapital und Vorleistungen; sinkende Margen bei steigendem Volumen können den Mittelabfluss erhöhen, bevor die Erlöse einlaufen."
+      ],
+      "catalysts": [
+        "Halbjahreszahlen mit Details zur Margenentwicklung",
+        "Abarbeitung des Rekord-Auftragsbestands von 1.140,7 Millionen Euro",
+        "Investitionsprogramme für die Bahninfrastruktur in Deutschland und Europa"
+      ],
+      "confidence": "mittel",
+      "whatTheyDo": "Vossloh aus Werdohl ist ein Spezialist für Bahninfrastruktur. Das Unternehmen produziert Schienenbefestigungen, Weichen und komplette Gleissysteme und wartet Schienennetze. Seine Kunden sind vor allem staatliche und private Bahnbetreiber weltweit."
+    },
+    {
+      "name": "CleanSpark",
+      "ticker": "CLSK",
+      "logoKey": "cleanspark",
+      "marketCapEUR": "rund 2,8 Mrd. €",
+      "capSource": "companiesmarketcap/capital.com: ~3,2 Mrd. $ geteilt durch EUR/USD ~1,14 (14.7.2026)",
+      "thesis": "CleanSpark ist ein US-Bitcoin-Miner, der in die Vermietung von Rechenzentren einsteigt. Das Unternehmen meldete einen 20-jährigen Triple-Net-Mietvertrag für einen Campus in Sandersville (Georgia) mit vertraglich zugesicherten Erlösen von rund 6,6 Milliarden Dollar (bis 11,6 Milliarden mit zwei Verlängerungen), 175 Megawatt Leistung ab Ende 2027. Die Aktie sprang zweistellig.",
+      "counterarguments": [
+        "Bewertungsartefakt: Die 6,6 Milliarden Dollar sind undiskontierte Bruttoerlöse über 20 Jahre und nicht mit dem heutigen Eigenkapitalwert von rund 3,2 Milliarden Dollar vergleichbar. Nach Abzinsung, Baukosten (rund 10 bis 12 Millionen Dollar je Megawatt, bei 175 MW also rund 1,75 bis 2,1 Milliarden Dollar Vorfinanzierung) und Finanzierung bleibt nur ein Bruchteil als Barwert.",
+        "Der jährliche Nettobetriebsgewinn (NOI) von rund 330 Millionen Dollar ist eine Unternehmensangabe ohne Ergebnisnachweis. Der Mieter ist ungenannt, und die Erlöse fließen erst ab Ende 2027, das Ausführungs- und Finanzierungsrisiko liegt vollständig in der Zukunft.",
+        "Das Kerngeschäft bleibt das schwankungsanfällige Bitcoin-Mining, dessen Ertrag direkt vom Bitcoin-Kurs abhängt; die Rechenzentrumsstory ändert daran kurzfristig nichts."
+      ],
+      "catalysts": [
+        "Baustart und Finanzierung des Campus Sandersville",
+        "Nennung des Mieters (bislang nur \"high investment-grade global technology company\")",
+        "Bitcoin-Kursentwicklung als Treiber des Kerngeschäfts"
+      ],
+      "confidence": "niedrig",
+      "whatTheyDo": "CleanSpark aus den USA betreibt große Rechenzentren, die durch das Lösen kryptografischer Aufgaben neue Bitcoin schürfen. Der Ertrag hängt stark vom Bitcoin-Kurs und den Stromkosten ab. Neu ist der Einstieg in die langfristige Vermietung von Rechenzentrumsflächen an Technologiekonzerne."
+    }
+  ],
+
+  "watchlist": [
+    {
+      "what": "FOMC-Zinsentscheid unter Warsh",
+      "when": "28. bis 29. Juli 2026",
+      "bullishIf": "Beibehaltung der Spanne 3,50 bis 3,75 Prozent und ein Ton, der die \"keine Toleranz\"-Rhetorik nicht in eine konkrete Anhebungsansage verschärft.",
+      "bearishIf": "Anhebung um 25 Basispunkte (ein Basispunkt ist ein Hundertstel Prozentpunkt) oder eine klare Ankündigung einer September-Anhebung."
+    },
+    {
+      "what": "Nächster US-CPI (Juli-Daten), erster Wert nach dem Ölanstieg",
+      "when": "Mitte August 2026",
+      "bullishIf": "Kernrate fällt unter 2,6 Prozent trotz höherem Öl.",
+      "bearishIf": "Energie dreht ins Plus und zieht die Gesamtrate zurück über 3,5 Prozent, Kern verharrt oder steigt."
+    },
+    {
+      "what": "Ölpreis und Hormus-Transitzahlen",
+      "when": "laufend, täglich",
+      "bullishIf": "Transits normalisieren sich, Brent fällt nachhaltig unter 80 Dollar.",
+      "bearishIf": "Weitere Eskalation, Brent bricht über 90 Dollar und befeuert Zweitrundeneffekte und die Anhebungswette."
+    },
+    {
+      "what": "ASML Q2-Zahlen (EUV-Bestellungen als Frühindikator der Chipnachfrage)",
+      "when": "Mittwoch, 15. Juli 2026",
+      "bullishIf": "EUV-Bestellungen über Konsens, bestätigt den KI-Investitionszyklus.",
+      "bearishIf": "Auftragsschwäche oder vorsichtiger Ausblick, belastet den ganzen Chipsektor (Nasdaq und Kospi)."
+    },
+    {
+      "what": "TSMC Q2-Zahlen und Investitionsrahmen 2026 (52 bis 56 Milliarden Dollar)",
+      "when": "Donnerstag, 16. Juli 2026",
+      "bullishIf": "Anhebung des Investitionsbudgets als Signal für Rechenzentrumsnachfrage.",
+      "bearishIf": "Bestätigung oder Senkung des Budgets, dämpft die KI-These nach dem Schwarzen Montag der Chips."
+    }
+  ],
+
+  "learningNotes": [
+    "Gesamtrate gegen Kernrate: Fällt die Inflation nur, weil Benzin billiger wurde, während die Kernrate ohne Energie und Nahrung hoch bleibt, ist die hausgemachte Inflation unverändert. Notenbanken steuern über die Kernrate.",
+    "Ein kühler Inflationsmonat kauft in einem Anhebungsregime keine Zinssenkung. Er senkt nur die Wahrscheinlichkeit der nächsten Anhebung, hier von über 75 auf rund 63 Prozent.",
+    "Gute Zahlen und fallende Aktie sind kein Widerspruch: Der Kurs preist den Ausblick auf die künftige Rendite, nicht das gerade gemeldete Quartal. Ein niedriges Renditeziel trotz starkem Halbjahr ist eine versteckte Warnung.",
+    "Rekord-Handelserträge einer Bank sind vor allem ein Volatilitätssignal und schwer wiederholbar. Der Markt bezahlt nur den Teil, den er für wiederkehrend hält, deshalb der kleine Kurssprung trotz großem Gewinnbeat.",
+    "Ein Angebotsschock hält den Ölpreis oben, auch wenn eine politische Eskalationsstufe wieder zurückgenommen wird. Entscheidend ist die physische Menge, nicht die Drohung."
+  ],
+
+  "financeLink": {
+    "titel": "Finance Link: Warum eine Bank mit Rekordgewinn fallen kann",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Citigroup meldete den höchsten Umsatz seit zehn Jahren (24,8 Milliarden Dollar) und einen Gewinn je Aktie von 3,15 Dollar über allen Schätzungen. Doch die GuV zeigt nur die Vergangenheit. Ein großer Teil des Ertrags kam aus dem Aktienhandel, der von hoher Marktschwankung lebt und im nächsten ruhigen Quartal wieder schrumpfen kann. Der Markt fragt deshalb nicht, wie hoch der Gewinn war, sondern wie viel davon wiederkehrt.",
+      "Bilanz: Für eine Bank ist das Eigenkapital die zentrale Bilanzgröße. Citis materielles Eigenkapital je Aktie liegt bei rund 100,89 Dollar. Aus diesem Kapital erwirtschaftet die Bank ihre Rendite. Ihr Kapitalpolster (CET1) von 12,8 Prozent ist komfortabel; die Bank will es sogar bewusst etwas dünner steuern, um mehr Geld an Aktionäre zurückzugeben (30-Milliarden-Dollar-Rückkauf, Dividende plus 12 Prozent).",
+      "Cashflow und Kapitalrückgabe: Rückkäufe und Dividende sind echter Mittelabfluss an die Eigentümer. Ein Rückkauf über dem Buchwert (Citi notiert mit rund 1,3-fachem materiellem Buchwert) senkt aber den Buchwert je verbleibender Aktie leicht. Kapitalrückgabe ist also nur dann wertsteigernd, wenn die Bank ihre hohe Rendite hält.",
+      "Bewertung: Genau hier lag der Auslöser. Citi bestätigte für das Gesamtjahr ein Renditeziel (RoTCE) von 10 bis 11 Prozent, obwohl das erste Halbjahr schon 13,1 Prozent brachte. Das impliziert für die zweite Jahreshälfte rund 7 bis 9 Prozent, also einen deutlichen Rückgang. Der Aktienkurs bezahlt die künftige Rendite auf das Eigenkapital. Sinkt die erwartete Rendite, sinkt das gerechtfertigte Kurs-Buchwert-Verhältnis, und die Aktie fällt trotz Rekordquartal."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler: Auf die Schlagzeile \"Rekordumsatz, Gewinn über Erwartung\" schauen und einen steigenden Kurs erwarten. Der Kurs handelt aber den Ausblick auf die künftige Rendite, nicht das gerade gemeldete Quartal. Ein bestätigtes, im Vergleich zum starken Halbjahr niedriges Renditeziel ist eine versteckte Warnung vor einer schwächeren zweiten Jahreshälfte."
+  },
+
+  "glossar": [
+    { "begriff": "Kernrate (Kerninflation)", "erklaerung": "Die Inflationsrate ohne die stark schwankenden Posten Energie und Nahrung. Sie zeigt den zähen, hausgemachten Preistrend, den eine Notenbank mit dem Leitzins tatsächlich steuern kann. Im Juni lag sie bei 2,6 Prozent, klar über dem Ziel von 2 Prozent." },
+    { "begriff": "RoTCE (Rendite auf das materielle Eigenkapital)", "erklaerung": "Return on Tangible Common Equity. Misst, wie viel Gewinn eine Bank aus ihrem materiellen Eigenkapital erwirtschaftet. Für Banken die zentrale Bewertungsgröße: Ein sinkendes Renditeziel drückt das Vielfache, das Anleger auf den Buchwert zahlen." },
+    { "begriff": "Forward Guidance", "erklaerung": "Die Vorab-Kommunikation einer Notenbank, wohin die Zinsen tendenziell gehen. Sie beruhigt den Markt, weil Anleger sich darauf einstellen können. Fed-Chef Warsh verzichtet bewusst darauf, was die Kursausschläge rund um jeden Datenpunkt vergrößert." },
+    { "begriff": "\"Sell the News\" / Gewinnmitnahme", "erklaerung": "Ein Muster, bei dem eine Aktie trotz guter Nachricht fällt, weil der Kursanstieg in Erwartung der Nachricht bereits stattgefunden hat und Anleger nach der Bestätigung Gewinne glattstellen. Bei Citigroup war der Kursrückgang laut Analyse allerdings vor allem fundamental (Renditeausblick), nicht bloß Gewinnmitnahme." },
+    { "begriff": "Gewinnwarnung", "erklaerung": "Die vorzeitige Ankündigung eines Unternehmens, dass Umsatz oder Gewinn deutlich unter der bisherigen Prognose liegen werden. Bei kleinen Werten wie Evotec schlägt sie besonders hart durch, weil dünne Handelsliquidität und automatische Verkäufe den Kurssturz verstärken." },
+    { "begriff": "HBM (High Bandwidth Memory)", "erklaerung": "Gestapelter Hochleistungsspeicher, der neben KI-Chips sitzt und riesige Datenmengen sehr schnell bereitstellt. SK Hynix und Samsung sind führende Hersteller. Die Debatte dreht sich darum, ob feste Lieferverträge die Gewinnmarge dieser Chips deckeln." },
+    { "begriff": "EUV-Lithografie", "erklaerung": "Extrem-Ultraviolett-Lithografie, das Verfahren zur Belichtung der feinsten Strukturen moderner Chips. ASML ist der einzige Hersteller der dafür nötigen Maschinen. Die Zahl der EUV-Bestellungen gilt als Frühindikator für die Chipproduktion 12 bis 18 Monate im Voraus." },
+    { "begriff": "Leitzins-Spanne / Einlagefazilität", "erklaerung": "Die US-Notenbank steuert eine Zielspanne für den Tagesgeldzins (aktuell 3,50 bis 3,75 Prozent). Die EZB steuert unter anderem die Einlagefazilität (aktuell 2,25 Prozent), den Zins, zu dem Banken überschüssiges Geld über Nacht bei der Zentralbank parken." },
+    { "begriff": "GAAP gegen bereinigter Gewinn", "erklaerung": "Der GAAP-Gewinn ist die Zahl nach den offiziellen US-Bilanzregeln, der bereinigte Gewinn zieht Einmaleffekte ab. Bei JPMorgan blähte ein Buchgewinn von 4,6 Milliarden Dollar aus dem Visa-Aktientausch den ausgewiesenen Gewinn auf, ohne dass ein Dollar hereinkam." },
+    { "begriff": "Aktienrückkauf", "erklaerung": "Ein Unternehmen kauft eigene Aktien am Markt zurück und verringert so die Zahl der umlaufenden Anteile. Das hebt den Gewinn je verbleibender Aktie. Ein Rückkauf über dem Buchwert senkt allerdings den Buchwert je Aktie leicht und zahlt sich nur aus, wenn die Rendite hoch bleibt." }
+  ],
+
+  "verificationLog": {
+    "confirmed": [
+      "US-CPI Juni: minus 0,4 Prozent zum Vormonat, Jahresrate 3,5 Prozent, Kernrate 0,0 Prozent zum Vormonat / 2,6 Prozent im Jahr, Energieindex minus 5,7 Prozent (BLS, Tier 1; CNBC/Fox Business, Tier 2).",
+      "Warsh vor dem House Financial Services Committee: \"no tolerance\" für erhöhte Inflation, keine Forward Guidance; FedWatch September-Anhebung 63 Prozent von über 75 Prozent (Bloomberg; CNBC/HousingWire, Tier 2).",
+      "Goldman Sachs Q2: Gewinn je Aktie 20,98 Dollar (Konsens rund 14,40), Nettoerträge 20,34 Milliarden Dollar (+39 Prozent), Dividende +11 Prozent auf 5,00 Dollar, Aktie rund +7,7 Prozent (Goldman 8-K, Tier 1; TradingKey/MarketBeat, Tier 2).",
+      "JPMorgan Q2: GAAP-Gewinn je Aktie 7,70 Dollar, bereinigt 6,14 Dollar, Visa-Sondereffekt 4,6 Milliarden Dollar, Umsatz 58,02 Milliarden Dollar (+27 Prozent), Aktie +2,4 Prozent (nicht +1,94 Prozent), Schluss rund 341 Dollar (JPMorgan-Release, Tier 1; MarketBeat, Tier 2).",
+      "Citigroup Q2: Gewinn je Aktie 3,15 Dollar (Konsens 2,74) über allen Schätzungen, Umsatz 24,8 Milliarden Dollar (Zehnjahreshoch), 30-Milliarden-Rückkauf, Dividende +12 Prozent, RoTCE-Jahresziel 10 bis 11 Prozent bei H1 13,1 Prozent; Aktie minus 5,3 Prozent (Schluss 133,27 gegen Vortag 140,71 Dollar) (Citigroup 8-K, Tier 1; GuruFocus/Quartz, Tier 2).",
+      "Bank of America Q2: Gewinn je Aktie 1,21 Dollar (Konsens 1,13), Umsatz 31,6 Milliarden Dollar (+15 Prozent), Aktie +1,9 Prozent (Alphastreet/StockStory/MarketBeat, Tier 2).",
+      "Wells Fargo Q2: Gewinn je Aktie 2,00 Dollar, Investmentbanking-Gebühren +35 Prozent, Aktie minus 2,89 Prozent (Wells Fargo 8-K, Tier 1; CNBC, Tier 2).",
+      "US-Indexschlüsse 14.7.: S&P 500 7.543,59 (+0,38 Prozent), Nasdaq 26.107,01 (+0,9 Prozent), Dow 52.508,27 (+0,02 Prozent), Russell 2000 2.964,76 (+0,39 Prozent), VIX rund 16,5 (rund minus 3,7 Prozent) (TheStreet/24-7 Wall St./streetstats, Tier 2).",
+      "10-jährige US-Rendite Schluss 4,58 Prozent, nach dem CPI gefallen (CNBC/Investing.com, Tier 2).",
+      "Bitcoin 14.7. nachmittags rund 64.800 Dollar (+3,7 Prozent); der Fortune-Frühwert 62.549 Dollar war ein Vor-CPI-Morgenwert und ist überholt (Yahoo Finance/Benzinga, Tier 2).",
+      "WTI-Settlement 79,34 Dollar (+1,5 Prozent), Brent 84,73 Dollar (+1,72 Prozent); Trump zog die 20-Prozent-Hormus-Durchfahrtsgebühr zurück, die IMO (UN) erklärte Zwangsgebühren für rechtswidrig (CNBC/Washington Post, Tier 2).",
+      "DAX 25.147 (+0,1 Prozent); Evotec Xetra-Schluss rund minus 24 Prozent (~3,75 Euro), Tagestief 3,18 Euro (minus 36 Prozent), neue Prognose bereinigtes EBITDA minus 70 bis minus 105 Millionen Euro, Umsatz 570 bis 610 Millionen Euro; Salzgitter +7 Prozent nach Jefferies-Hochstufung (55 auf 66 Euro, Buy) (onvista/dpa-AFX/MarketScreener/boerse.de, Tier 2).",
+      "Vossloh: neue Ziele Umsatz 1,51 bis 1,61 Milliarden Euro, EBIT 100 bis 110 Millionen Euro, Aktie rund minus 9 Prozent, Rekord-Auftragsbestand Bahninfrastruktur 1.140,7 Millionen Euro (zuvor 865,8); Börsenwert rund 1,0 Milliarden Euro (onvista/dpa-AFX; stockanalysis.com/Eulerpool, Tier 2).",
+      "Asien 14.7.: Kospi 6.856,83 (+0,73 Prozent, Tagestief 6.448,86), Nikkei 225 +0,74 Prozent, Samsung +3,34 Prozent, SK Hynix +3,69 Prozent (Korea Times/TradingKey/MarketScreener, Tier 2).",
+      "CleanSpark: 20-jähriger Triple-Net-Mietvertrag Sandersville, rund 6,6 Milliarden Dollar zugesicherte Erlöse (bis 11,6 Milliarden), 175 Megawatt, Lieferbeginn Q4 2027, rund 330 Millionen Dollar durchschnittlicher jährlicher NOI; Börsenwert rund 3,2 Milliarden Dollar / rund 2,8 Milliarden Euro (CleanSpark 8-K, Tier 1; Bloomberg, Tier 2).",
+      "Fed Funds 3,50 bis 3,75 Prozent (seit 17.6.2026), EZB-Einlagenzins 2,25 Prozent, US-Hypothek 30 Jahre 6,49 Prozent (Fed/EZB/Freddie Mac, Tier 1).",
+      "BMWE-Monatsbericht 14.7.: Konjunkturabschwächung Q2; rund 10 Milliarden Euro Energie-Entlastung, Industriestrompreis für rund 9.500 Unternehmen (2026 bis 2028), über 128 Milliarden Euro staatliche Investitionen 2026 (BMWE, Tier 1; Science Media Center, Tier 2)."
+    ],
+    "uncertain": [],
+    "gaps": [
+      "Keine Alpha-Vantage-Kursserien (kein API-Budget). Company-Blöcke daher ohne priceSeries, Charts ausschließlich aus belegten Zahlen (CPI-Balken, Banken-EPS-Beat, Evotec-Prognose).",
+      "Kein sauberer EuroStoxx-50-Schluss für 14.7. belegt (nur früher Handel rund minus 0,5 Prozent). Wird nicht als Schlagzeilen- oder Kachelwert geführt, daher kein Veröffentlichungsrisiko."
+    ]
+  }
+}

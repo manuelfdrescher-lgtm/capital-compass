@@ -890,6 +890,68 @@ figcaption.chart__quelle {
   .monitor__lage { grid-column: 2 / -1; }
 }
 
+/* Vollständige Ansicht: eine Karte je Sektor mit Tageslage UND
+   struktureller Einordnung (istZustand) — der "kleine einordnende
+   Artikel je Industrie". */
+.monitor-karten {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin: 22px 0;
+}
+@media (min-width: 860px) {
+  .monitor-karten { grid-template-columns: repeat(2, 1fr); }
+}
+.monitor-karte { display: flex; flex-direction: column; gap: 4px; }
+.monitor-karte__kopf {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.monitor-karte__sektor {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 21px;
+  margin: 0;
+}
+.monitor-karte__pfeil { font-size: 17px; }
+.monitor-karte__pfeil--up { color: var(--positiv); }
+.monitor-karte__pfeil--down { color: var(--negativ); }
+.monitor-karte__pfeil--neutral { color: var(--neutral); }
+.monitor-karte__def {
+  font-size: 13.5px;
+  color: var(--tinte-60);
+  font-style: italic;
+  margin: 0 0 6px;
+}
+.monitor-karte__zeile { margin: 8px 0 0; }
+.monitor-karte__label {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 11.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--akzent-blau);
+  margin-bottom: 2px;
+}
+.monitor-karte__lage, .monitor-karte__istzustand { font-size: 15px; margin: 0; }
+.monitor-karte__istzustand { color: var(--tinte-60); }
+.monitor-karte__wert {
+  align-self: flex-end;
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  color: var(--tinte-60);
+  border-top: 1px solid var(--haarlinie);
+  padding-top: 8px;
+  width: 100%;
+  text-align: right;
+}
+
 /* ---------- Drei Aktien ---------- */
 
 .picks-grid { display: grid; gap: 22px; }

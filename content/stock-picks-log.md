@@ -26,3 +26,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-14-morning | Yaskawa Electric (6506) | mittel _(Cowork-Ausgabe, nachtr. eingespielt)_
 - 2026-07-14-morning | Fraport (FRA) | mittel _(Cowork-Ausgabe, nachtr. eingespielt)_
 - 2026-07-14-morning | flatexDEGIRO (FTK) | niedrig _(Cowork-Ausgabe, nachtr. eingespielt)_
+- 2026-07-14-evening | Evotec SE (EVT) | hoch
+- 2026-07-14-evening | Vossloh AG (VOS) | mittel
+- 2026-07-14-evening | CleanSpark, Inc. (CLSK) | niedrig

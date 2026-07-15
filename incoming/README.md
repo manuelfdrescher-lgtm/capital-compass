@@ -15,4 +15,4 @@ Ablauf:
 
 Vor jedem externen Lauf sollte `content-index.json` von der Live-Seite
 abgerufen werden, um die kanonische Ausgabennummer und den Archivstand zu
-übernehmen: https://manuelfdrescher-lgtm.github.io/capital-market-daily/content-index.json
+übernehmen: https://manuelfdrescher-lgtm.github.io/capital-compass/content-index.json

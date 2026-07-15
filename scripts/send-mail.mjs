@@ -37,7 +37,7 @@ if (!slug) {
 const GMAIL_USER = process.env.GMAIL_USER;
 const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
 const MAIL_TO = process.env.MAIL_TO || "manuel.f.drescher@gmail.com";
-const SITE_URL = process.env.SITE_URL || "https://manuelfdrescher-lgtm.github.io/capital-market-daily";
+const SITE_URL = process.env.SITE_URL || "https://manuelfdrescher-lgtm.github.io/capital-compass";
 
 if (!GMAIL_USER || !GMAIL_APP_PASSWORD) {
   console.warn("⚠️  GMAIL_USER/GMAIL_APP_PASSWORD nicht gesetzt (.env fehlt) — Mailversand übersprungen.");

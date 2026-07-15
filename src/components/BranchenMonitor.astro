@@ -1,20 +1,51 @@
 ---
+// Zwei Ansichten: kompakt (Titelseite, eine Zeile je Sektor) und
+// vollständig (Branchen-Monitor-Seite, eine Karte je Sektor mit
+// Tageslage UND der strukturellen Einordnung istZustand — dem
+// "kleinen einordnenden Artikel je Industrie").
 interface Props {
   monitor: any[];
+  compact?: boolean;
 }
-const { monitor } = Astro.props;
+const { monitor, compact = false } = Astro.props;
 const pfeil = { up: "▲", down: "▼", neutral: "◆" };
+const richtungLabel = { up: "aufwärts", down: "abwärts", neutral: "seitwärts" };
 ---
 
-<ul class="monitor">
-  {monitor.map((s) => (
-    <li class="monitor__zeile">
-      <span class={`monitor__pfeil monitor__pfeil--${s.richtung}`} aria-label={s.richtung === "up" ? "aufwärts" : s.richtung === "down" ? "abwärts" : "seitwärts"}>{pfeil[s.richtung]}</span>
-      <span class="monitor__sektor">{s.sektor}
-        <span class="monitor__def">{s.wasIstDas}</span>
-      </span>
-      <span class="monitor__lage">{s.lage}</span>
-      <span class="monitor__wert">{s.tagesWert}</span>
-    </li>
-  ))}
-</ul>
+{compact ? (
+  <ul class="monitor">
+    {monitor.map((s) => (
+      <li class="monitor__zeile">
+        <span class={`monitor__pfeil monitor__pfeil--${s.richtung}`} aria-label={richtungLabel[s.richtung]}>{pfeil[s.richtung]}</span>
+        <span class="monitor__sektor">{s.sektor}
+          <span class="monitor__def">{s.wasIstDas}</span>
+        </span>
+        <span class="monitor__lage">{s.lage}</span>
+        <span class="monitor__wert">{s.tagesWert}</span>
+      </li>
+    ))}
+  </ul>
+) : (
+  <div class="monitor-karten">
+    {monitor.map((s) => (
+      <article class="karte monitor-karte">
+        <div class="monitor-karte__kopf">
+          <h3 class="monitor-karte__sektor">{s.sektor}</h3>
+          <span class={`monitor-karte__pfeil monitor-karte__pfeil--${s.richtung}`} aria-label={richtungLabel[s.richtung]}>{pfeil[s.richtung]}</span>
+        </div>
+        <p class="monitor-karte__def">{s.wasIstDas}</p>
+        <div class="monitor-karte__zeile">
+          <span class="monitor-karte__label">Heute</span>
+          <p class="monitor-karte__lage">{s.lage}</p>
+        </div>
+        {s.istZustand && (
+          <div class="monitor-karte__zeile">
+            <span class="monitor-karte__label">Ist-Zustand</span>
+            <p class="monitor-karte__istzustand">{s.istZustand}</p>
+          </div>
+        )}
+        <span class="monitor-karte__wert">{s.tagesWert}</span>
+      </article>
+    ))}
+  </div>
+)}

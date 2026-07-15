@@ -128,6 +128,10 @@ export const BranchenMonitorEintragSchema = z.object({
   lage: nonEmpty,
   richtung: z.enum(["up", "down", "neutral"]),
   tagesWert: nonEmpty, // belegter Wert oder ausdrücklich "keine Sektordaten belegt"
+  // Strukturelle Einordnung unabhängig von der Tagesnachricht: Bewertungsniveau,
+  // Zyklusphase, strukturelle Treiber. Optional aus Kompatibilität mit älteren
+  // Ausgaben, aber ab sofort redaktionelle Pflicht (siehe .claude/agents/sector-sweep.md).
+  istZustand: z.string().optional(),
 });
 
 export const StockPickSchema = z.object({

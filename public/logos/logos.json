@@ -466,5 +466,26 @@
     "license": "Public domain",
     "artist": "Flatex GmbH",
     "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "citigroup": {
+    "file": "citigroup.svg",
+    "name": "Citigroup",
+    "source": "https://commons.wikimedia.org/wiki/File:Citi.svg",
+    "license": "Public domain",
+    "artist": "Citibank",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "evotec": {
+    "file": "evotec.svg",
+    "name": "Evotec",
+    "source": "https://commons.wikimedia.org/wiki/File:Evotec.svg",
+    "license": "Public domain",
+    "artist": "Evotec",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cleanspark": {
+    "file": null,
+    "name": "CleanSpark",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

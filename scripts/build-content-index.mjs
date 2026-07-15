@@ -12,7 +12,7 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const editionsDir = join(root, "content", "editions");
-const REPO = "manuelfdrescher-lgtm/capital-market-daily";
+const REPO = "manuelfdrescher-lgtm/capital-compass";
 
 const files = readdirSync(editionsDir).filter((f) => f.endsWith(".json"));
 const editions = [];

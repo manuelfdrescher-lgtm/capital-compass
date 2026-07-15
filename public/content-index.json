@@ -4,43 +4,50 @@
       "number": 1,
       "date": "2026-07-10",
       "slot": "evening",
-      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-10-evening/",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-10-evening/",
       "headline": "SK Hynix sammelt 26,5 Milliarden Dollar ein und krönt den Speicher-Boom"
     },
     {
       "number": 2,
       "date": "2026-07-12",
       "slot": "update-16",
-      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-12-update-16/",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-12-update-16/",
       "headline": "Iran erklärt die Straße von Hormus für gesperrt, und der Ölpreis bleibt erstaunlich ruhig"
     },
     {
       "number": 3,
       "date": "2026-07-12",
       "slot": "update-19",
-      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-12-update-19/",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-12-update-19/",
       "headline": "Am Golf verhärten sich die Fronten, und an der Wall Street beginnt die Stunde der Wahrheit"
     },
     {
       "number": 4,
       "date": "2026-07-13",
       "slot": "evening",
-      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-13-evening/",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-13-evening/",
       "headline": "Öl springt, Chips stürzen, Gold fällt: ein Schock, vier Kanäle"
     },
     {
       "number": 5,
       "date": "2026-07-13",
       "slot": "morning",
-      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-13-morning/",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-13-morning/",
       "headline": "Seoul im Ausverkauf: Kospi verliert über fünf Prozent, SK Hynix stürzt zwei Handelstage nach dem Rekord-Debüt zweistellig"
     },
     {
       "number": 6,
       "date": "2026-07-14",
       "slot": "morning",
-      "url": "https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/2026-07-14-morning/",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-14-morning/",
       "headline": "Der Vormittag der Wahrheit: Inflationszahlen und fünf Großbanken testen die Zinshoffnung gleichzeitig"
+    },
+    {
+      "number": 7,
+      "date": "2026-07-14",
+      "slot": "evening",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-14-evening/",
+      "headline": "Kühlster Inflationsmonat seit Jahren trifft auf einen Notenbankchef, der von Härte spricht"
     }
   ],
   "recentStockPicks": [
@@ -133,7 +140,22 @@
       "slug": "2026-07-14-morning",
       "name": "flatexDEGIRO (FTK)",
       "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-14-evening",
+      "name": "Evotec SE (EVT)",
+      "confidence": "hoch"
+    },
+    {
+      "slug": "2026-07-14-evening",
+      "name": "Vossloh AG (VOS)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-14-evening",
+      "name": "CleanSpark, Inc. (CLSK)",
+      "confidence": "niedrig"
     }
   ],
-  "lastUpdated": "2026-07-14T13:43:30.162Z"
+  "lastUpdated": "2026-07-15T02:25:32.247Z"
 }

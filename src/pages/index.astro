@@ -69,7 +69,7 @@ const kurzNotiert = weitere.slice(0, 5).map((a) => ({
   )}
 
   <RessortKopf titel="Branchen-Monitor" untertitel="Alle 11 GICS-Sektoren im Überblick." />
-  <BranchenMonitor monitor={data.branchenMonitor} />
+  <BranchenMonitor monitor={data.branchenMonitor} compact />
 
   <p style="text-align:center; margin-top:34px; font-family:var(--sans); font-size:15px; letter-spacing:0.04em">
     <a href={`${base}/ausgabe/${slug}/`}>Diese Ausgabe als eine Seite lesen</a> · <a href={`${base}/archiv/`}>Frühere Ausgaben im Archiv</a>

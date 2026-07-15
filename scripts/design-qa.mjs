@@ -26,12 +26,11 @@ const PORT = 4322;
 const repo = process.env.GITHUB_REPOSITORY;
 const base = repo ? `/${repo.split("/")[1]}` : "";
 
-// Neueste Ausgabe für die Detailseite ermitteln
-const editionSlugs = readdirSync(join(root, "content", "editions"))
-  .filter((f) => f.endsWith(".json"))
-  .map((f) => f.replace(/\.json$/, ""))
-  .sort()
-  .reverse();
+// Neueste Ausgabe für die Detailseite ermitteln – kanonische Reihenfolge
+// (nach Datum, innerhalb eines Tages nach Slot) statt naivem Dateinamen-Sort,
+// damit die QA immer die tatsächlich jüngste Ausgabe (z. B. Abend > Morgen) trifft.
+const { getAllEditions } = await import("../src/lib/editions.mjs");
+const editionSlugs = getAllEditions().map((e) => e.slug);
 
 const PAGES = [
   { path: "/", name: "titelseite" },

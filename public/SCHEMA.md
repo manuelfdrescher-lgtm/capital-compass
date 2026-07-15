@@ -22,6 +22,14 @@ Prüfen per `npm run validate` (alle Editionen) oder `npm run ingest <datei>` (e
   Industrie, Zyklischer Konsum, Basiskonsum, Gesundheit, Finanzen, Informationstechnologie,
   Kommunikation, Versorger, Immobilien). `branchenMonitor` immer genau diese 11.
 - `stockPicks` enthält genau 3 Titel, `learningNotes` 3 bis 5 Punkte.
+- Umfang und Tiefe (redaktionelle Pflicht, ab schemaVersion 2): eine Vollausgabe
+  (`morning`/`evening`) hat **mindestens 7 bis 9 Artikel**, nicht nur die großen
+  Top-Meldungen. Jeder Artikel ordnet ein (Mechanismus, Kontext, Restrisiko), keine
+  bloße Nachrichten-Wiedergabe. Jeder `branchenMonitor`-Eintrag bekommt zusätzlich zu
+  `lage` (Tagesnachricht) ein `istZustand`-Feld: 2 bis 4 Sätze strukturelle Einordnung
+  des Sektors unabhängig von der Tagesnachricht (Bewertungsniveau, Zyklusphase,
+  strukturelle Treiber). Das ist der „kleine einordnende Artikel je Industrie", den
+  Leser*innen unabhängig vom Tagesgeschehen verstehen können sollen.
 - News-Artikel (`ressort: "news"`) brauchen eine `mechanik`-Box,
   Unternehmens-Artikel (`ressort: "unternehmen"`) ein `company`-Objekt.
 - Jeder Artikel braucht mindestens eine Quelle mit Tier-Kennzeichnung
@@ -128,7 +136,8 @@ Prüfen per `npm run validate` (alle Editionen) oder `npm run ingest <datei>` (e
       "wasIstDas": "Ein einfacher Satz, was der Sektor ist.",
       "lage": "Wie es ihm durch die Ereignisse der Ausgabe geht.",
       "richtung": "up",                // up | down | neutral
-      "tagesWert": "Mi +2,8 %"         // belegt oder wörtlich "keine Sektordaten belegt"
+      "tagesWert": "Mi +2,8 %",        // belegt oder wörtlich "keine Sektordaten belegt"
+      "istZustand": "2 bis 4 Sätze strukturelle Einordnung UNABHÄNGIG von der Tagesnachricht: aktuelles Bewertungsniveau, Zyklusphase (früh/spät im Zyklus, Überkapazität/Knappheit), strukturelle Treiber der nächsten Quartale. Redaktionelle Pflicht ab sofort (schemaVersion 2), technisch optional für Altausgaben."
     }
   ],
 

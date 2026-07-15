@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 
 // GitHub Pages: Projekt-Site läuft unter https://<user>.github.io/<repo>/
 // Lokal (npm run dev / build ohne CI) bleibt base "/".
-const repo = process.env.GITHUB_REPOSITORY; // z. B. "manuel/capital-market-daily"
+const repo = process.env.GITHUB_REPOSITORY; // z. B. "manuelfdrescher-lgtm/capital-compass"
 const [owner, repoName] = repo ? repo.split("/") : [];
 
 export default defineConfig({

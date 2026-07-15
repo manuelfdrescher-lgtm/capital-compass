@@ -94,9 +94,9 @@ ${lastEditionInfo}
 ARBEITSAUFTRAG (Reihenfolge einhalten, Subagents über das Task-Tool aufrufen):
 1. Lies content/SCHEMA.md (Zielformat) und ${existsSync(marketDataPath) ? `.cache/market-data-${slug}.json (belegte Marktdaten samt Budget-Restinfo und Datenlücken)` : "beachte: es gibt KEINE Alpha-Vantage-Daten für diese Ausgabe; übernimm die Markt-Kacheln der letzten Vollausgabe mit ehrlichem Stand-Hinweis oder belege sie mit approx:true aus Tier-1/2-Quellen"}.
 2. BREITE Quellensichtung, nicht nur eine Zeitung: Handelsblatt, FAZ, Süddeutsche, WirtschaftsWoche, manager magazin, Börsen-Zeitung, Spiegel, Tagesschau, onvista sowie international Reuters, Bloomberg, FT, WSJ, CNBC, Nikkei, SCMP per Websuche durchgehen. Steht ein eingeloggter Chrome (claude-in-chrome) bereit, zusätzlich die Paywall-Häuser (WirtschaftsWoche, Handelsblatt, FAZ, FT, WSJ) direkt sichten; fällt der Browser aus, dieselben Häuser über die Websuche abdecken.
-3. Subagent news-curator: alle kapitalmarktrelevanten Meldungen seit der letzten Ausgabe sammeln und priorisieren (keine Obergrenze), inklusive deutscher Politik mit Marktbezug (Ressort politik); Fokus-Unternehmen vorschlagen.
+3. Subagent news-curator: alle kapitalmarktrelevanten Meldungen seit der letzten Ausgabe sammeln und priorisieren (keine Obergrenze, mindestens genug für 7 bis 9 Artikel in der finalen Ausgabe — bei dünnem Nachrichtenaufkommen auch kleinere echte Meldungen, Termine und Sekundärthemen aufnehmen statt die Ausgabe dünn zu lassen), inklusive deutscher Politik mit Marktbezug (Ressort politik); Fokus-Unternehmen vorschlagen.
 4. ${isUpdate ? "Intraday-Update: keine neuen Alpha-Vantage-Abrufe. Vorhandene .cache/company-*-Dateien des Tages wiederverwenden." : `Für 2 bis 3 Fokus-Unternehmen echte Kursdaten holen: node scripts/fetch-company-data.mjs --slug ${slug} --slot ${slot} --ticker SYMBOL (2 Abrufe je Unternehmen; Restbudget beachten, bei knappem Budget --series-only nutzen; US-Ticker funktionieren am zuverlässigsten, deutsche mit Suffix wie DEZ.DEX).`}
-5. Subagent sector-sweep: für jede große Meldung alle 11 GICS-Sektoren prüfen (sektorCheck-Blöcke) und den branchenMonitor mit 11 Sektoren bauen.
+5. Subagent sector-sweep: für jede große Meldung alle 11 GICS-Sektoren prüfen (sektorCheck-Blöcke) und den branchenMonitor mit 11 Sektoren bauen — jeder Eintrag zusätzlich mit istZustand (strukturelle Einordnung des Sektors unabhängig von der Tagesnachricht: Bewertungsniveau, Zyklusphase, strukturelle Treiber der nächsten Quartale).
 6. Subagent macro-analyst: Makro-/Geopolitik-/Politik-Einordnung über Transmissionskanäle, bei Geldpolitik die Tiefer-verstehen-Box, Watchlist-Vorschläge.
 7. Subagent equity-analyst: Unternehmens-Artikel-Zuarbeit, company-Blöcke aus den .cache/company-*-Dateien, Finance-Link-Vorschlag.
 8. Subagent stock-picker: Drei Aktien des Tages (unter 10 Mrd. Euro Börsenwert, belegt; content/stock-picks-log.md lesen und fortschreiben).
@@ -109,6 +109,7 @@ ARBEITSAUFTRAG (Reihenfolge einhalten, Subagents über das Task-Tool aufrufen):
 15. Subagent design-qa: node scripts/design-qa.mjs ausführen, Screenshots prüfen, Layout-Fehler beheben. Kein Release mit Layout-Fehlern.
 
 VERBINDLICHE REGELN:
+- Umfang: ${isUpdate ? "Intraday-Update, Umfang wie gehabt" : "mindestens 7 bis 9 Artikel in dieser Vollausgabe, nicht nur die großen Top-Meldungen"}. Jeder branchenMonitor-Eintrag hat ein istZustand-Feld (siehe Schritt 5).
 - Markt-Kacheln: nur belegte Werte aus dem Markt-Schnappschuss oder mit approx:true aus Tier-1/2-Quellen (Quelle in note). Pflicht-Kacheln (genau 12, für ein sauberes 6+6-Layout ohne Restfläche): S&P 500, Nasdaq, Dow, Russell, DAX, VIX (Volatilitätsindex, das Angstbarometer der Wall Street), 10-jährige US-Rendite, US-Hypothekenzins (10 Jahre; ist dieser Tageswert nicht beschaffbar, ehrlich mit Stand-Datum und ggf. Vergleichswert des 30-jährigen Hypothekenzinses ausweisen statt fehlender Angabe), Öl, Leitzins, Bitcoin, EZB-Einlagenzins.
 - Charts ausschließlich aus belegten Zahlen (Markt-Schnappschuss, company-Dateien oder verifizierte Zahlen aus Primärquellen). Nie Datenpunkte erfinden.
 - Logos ausschließlich lokal aus public/logos/ (Original-Logos über npm run logos); Bilder ausschließlich lokal aus public/images/.
@@ -139,7 +140,7 @@ run("node", ["scripts/validate.mjs"]);
 // ---------- Phase 4: Logos + Build (mit richtigem Pages-Basispfad) ----------
 run("node", ["scripts/fetch-logos.mjs"]);
 run("npm", ["run", "build"], {
-  env: { ...process.env, GITHUB_REPOSITORY: "manuelfdrescher-lgtm/capital-market-daily" },
+  env: { ...process.env, GITHUB_REPOSITORY: "manuelfdrescher-lgtm/capital-compass" },
 });
 
 // ---------- Phase 5: Quellcode committen + pushen (main, gesichert bei GitHub) ----------
@@ -164,11 +165,11 @@ run("git", ["config", "http.postBuffer", "524288000"], { cwd: tmp });
 run("git", ["config", "http.version", "HTTP/1.1"], { cwd: tmp });
 run("git", ["-c", "user.name=Capital Compass Redaktion", "-c", "user.email=actions@users.noreply.github.com", "add", "-A"], { cwd: tmp });
 run("git", ["-c", "user.name=Capital Compass Redaktion", "-c", "user.email=actions@users.noreply.github.com", "commit", "-q", "-m", `Deploy: ${slug}`], { cwd: tmp });
-run("git", ["remote", "add", "origin", "https://github.com/manuelfdrescher-lgtm/capital-market-daily.git"], { cwd: tmp });
+run("git", ["remote", "add", "origin", "https://github.com/manuelfdrescher-lgtm/capital-compass.git"], { cwd: tmp });
 run("git", ["push", "-f", "origin", "gh-pages"], { cwd: tmp });
 
 // ---------- Phase 7: live verifizieren (nie nur behaupten) ----------
-const editionUrl = `https://manuelfdrescher-lgtm.github.io/capital-market-daily/ausgabe/${slug}/`;
+const editionUrl = `https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/${slug}/`;
 console.log(`\n▶ Verifiziere live: ${editionUrl}`);
 let live = false;
 for (let i = 0; i < 8; i++) {
