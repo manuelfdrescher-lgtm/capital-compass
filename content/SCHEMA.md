@@ -51,6 +51,15 @@ gültig – die Alt-Editionen unter `content/editions/` müssen dafür nicht ang
   „Fed-Chef Jerome Powell", „EZB-Präsidentin Christine Lagarde", „IBM-CEO Arvind
   Krishna". Leser*innen dürfen nie raten müssen, wer gemeint ist oder warum die Person
   relevant ist.
+- Bilder (redaktionelle Pflicht, ab sofort für JEDEN Artikel, nicht mehr nur
+  Leitartikel/große Meldungen): `image` mit `file` (nur lokale `.jpg`/`.png` unter
+  `public/images/`, **niemals** `.svg`), `alt`, `caption`, `credit`. `public/images/`
+  ist eine wachsende **Bildbank** wiederverwendbarer, bewusst generischer Motive
+  (Zentralbank-Fassade, Chip-Reinraum, Containerhafen, Handelsraum, Rechenzentrum,
+  Devisenhandel, Ölmeerenge, Goldbarren, Bankfassade, Fabrikfließband u. a.) – bei
+  wiederkehrenden Themen zuerst ein Bestandsbild mit neuer, artikelspezifischer
+  Caption wiederverwenden, nur bei echtem Bedarf ein neues (generisches, breit
+  wiederverwendbares) Motiv erzeugen. Details und Ablauf: siehe `.claude/agents/editor.md`.
 
 ## Struktur (kommentiertes Beispiel)
 
@@ -86,11 +95,11 @@ gültig – die Alt-Editionen unter `content/editions/` müssen dafür nicht ang
       "kicker": "Geopolitik · Energie",
       "headline": "…",                 // berichtet die Nachricht selbst, keine Meta-Bezüge
       "dek": "…",                      // Unterzeile
-      "image": {                       // optional; Pflicht für Leitartikel und große Meldungen
-        "file": "hbm-speicher.svg",    // liegt unter public/images/, nur lokale Dateien
+      "image": {                       // Pflicht für JEDEN Artikel (nicht mehr nur Leitartikel/große Meldungen)
+        "file": "zentralbank-fassade.jpg", // liegt unter public/images/, nur lokale Dateien, NIE .svg (Bildbank-Strategie: Bestandsbilder bevorzugt wiederverwenden, siehe unten)
         "alt": "…",
         "caption": "…",                // optional
-        "credit": "Illustration: The Capital Compass"   // optional
+        "credit": "Bild: The Capital Compass / KI-generiert"   // optional, aber Standardwert für alle Bilder dieser Bank
       },
       "body": ["Absatz 1", "Absatz 2"],
       "mechanik": "Mechanik einfach erklärt: …",          // optional außer bei news

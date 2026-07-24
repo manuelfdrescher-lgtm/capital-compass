@@ -1,0 +1,1367 @@
+{
+  "edition": {
+    "number": 14,
+    "date": "2026-07-24",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "US-Schluss 23.7.2026, Asien und Europa 23.7., Tagesvorschau 24.7.; Kurse und Caps aus Alpha Vantage 23./24.7.",
+    "generatedAt": "2026-07-24T04:30:00Z"
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.408,30",
+        "delta": "-1,21 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss 23.7."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "25.137,69",
+        "delta": "-2,15 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss 23.7."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "51.711,65",
+        "delta": "-0,97 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss 23.7."
+      },
+      {
+        "label": "DAX",
+        "value": "24.763,12",
+        "delta": "-1,56 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Xetra-Schluss 23.7."
+      },
+      {
+        "label": "Kospi (Südkorea)",
+        "value": "7.097",
+        "delta": "+4,40 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss 23.7."
+      },
+      {
+        "label": "VIX",
+        "value": "19,21",
+        "delta": "+15,46 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Angstbarometer"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,67 %",
+        "delta": "+4 Bp.",
+        "direction": "up",
+        "approx": false,
+        "note": "18-Monats-Hoch"
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "97,62 USD",
+        "delta": "+3,77 %",
+        "direction": "up",
+        "approx": false,
+        "note": "23.7."
+      },
+      {
+        "label": "Gold",
+        "value": "4.083 USD",
+        "delta": "-1,9 %",
+        "direction": "down",
+        "approx": true,
+        "note": "je Feinunze"
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,1387",
+        "delta": "-0,35 %",
+        "direction": "down",
+        "approx": false,
+        "note": "24.7. früh"
+      },
+      {
+        "label": "USD/JPY",
+        "value": "162,40",
+        "delta": "Yen schwach",
+        "direction": "up",
+        "approx": false,
+        "note": "nahe 40-Jahres-Tief"
+      },
+      {
+        "label": "EZB-Einlagenzins",
+        "value": "2,25 %",
+        "delta": "gehalten",
+        "direction": "flat",
+        "approx": false,
+        "note": "Entscheid 23.7."
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "vier-schlaege-wall-street",
+      "ressort": "titelseite",
+      "kicker": "Tagesüberblick · Wall Street",
+      "headline": "Vier Schläge an einem Tag drücken die Wall Street",
+      "dek": "KI-Investitionsangst, ein schwacher Chip-Ausblick, ein Ölpreissprung und steigende Renditen trafen zusammen. Der Nasdaq verlor 2,2 Prozent, und selbst Gold gab nach.",
+      "body": [
+        "An den US-Börsen kamen am Donnerstag vier belastende Kräfte gleichzeitig zusammen. Der technologielastige Nasdaq Composite verlor 2,15 Prozent, der breite S&P 500 gab 1,21 Prozent nach, der Dow Jones schloss 0,97 Prozent tiefer. Das Angstbarometer VIX sprang um gut 15 Prozent auf 19,21. Ein solcher Tag ist lehrreich, weil sich mehrere Wirkungskanäle überlagern und die Bewegung dadurch größer wirkt, als jede einzelne Ursache es erklären würde.",
+        "Die erste Kraft war die Angst vor den KI-Investitionen der großen Technologiekonzerne. Tesla verlor rund 15 Prozent und Alphabet rund 7 Prozent, nachdem beide am Vorabend Quartalszahlen vorgelegt hatten. Beide schlugen beim Umsatz die Erwartungen. Der Markt strafte trotzdem ab, weil die Investitionsbudgets für Rechenzentren und KI stark steigen und die Aussicht auf freien Cashflow dadurch schrumpft. Alphabet hob die geplanten Investitionen für 2026 auf bis zu 205 Milliarden Dollar an.",
+        "Die zweite Kraft war ein schwacher Ausblick des europäischen Chipkonzerns STMicroelectronics, der einen Ausverkauf bei Halbleiterwerten auslöste. Die dritte Kraft war ein Ölpreissprung von fast vier Prozent auf 97,62 Dollar je Barrel Brent, nachdem Iran-nahe Huthi-Rebellen zwei saudische Tanker im Roten Meer angegriffen hatten. Die vierte Kraft waren steigende Anleiherenditen, die mit rund 4,67 Prozent bei zehnjährigen US-Papieren ein 18-Monats-Hoch erreichten und die Bewertung langlaufender Wachstumsaktien senkten.",
+        "Bemerkenswert ist die Reaktion des Goldpreises, der um rund 1,9 Prozent fiel. In einer geopolitischen Krise erwarten viele einen steigenden Goldpreis. Am Donnerstag dominierte der Zinskanal. Steigende Realrenditen verteuern das Halten von zinslosem Gold und zogen den Preis nach unten. Die Episode zeigt, dass der treibende Kanal einer Nachricht wichtiger ist als die Schlagzeile.",
+        "In dieses Umfeld hinein hielt die Europäische Zentralbank ihre Leitzinsen unverändert. Der Einlagenzins bleibt bei 2,25 Prozent. Die Notenbank wartet ab, wie stark der Energiepreisschock die Inflation über das Jahr hinweg treibt. Für die Märkte bedeutet das eine Fortsetzung des Leitmotivs höherer Zinsen für längere Zeit, das Wachstumsaktien belastet und Sachwerte stützt."
+      ],
+      "sources": [
+        {
+          "title": "Stock market today, July 23 (Motley Fool)",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/07/23/stock-market-today-july-23-tesla-drops-15-leading-tech-stock-slide/",
+          "tier": 2
+        },
+        {
+          "title": "Tesla, Alphabet stock today (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Vier schlechte Nachrichten an einem Tag drücken die Wall Street gleichzeitig nach unten.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "ki-capex-angst-tesla-alphabet",
+      "ressort": "news",
+      "kicker": "Aktienmarkt · Technologie",
+      "headline": "Der Markt bestraft die Rechnung für den KI-Ausbau",
+      "dek": "Tesla und Alphabet lieferten mehr Umsatz als erwartet und fielen dennoch deutlich. Die stark steigenden Investitionen drücken die Aussicht auf freien Cashflow.",
+      "body": [
+        "Alphabet und Tesla hatten am Mittwochabend nach US-Börsenschluss berichtet, die Kurse reagierten am Donnerstag im regulären Handel. Alphabet steigerte den Umsatz um 24 Prozent auf 119,8 Milliarden Dollar, das Cloud-Geschäft wuchs kräftig. Die Aktie verlor trotzdem rund 7 Prozent, weil der Konzern seine Investitionen für das laufende Jahr auf bis zu 205 Milliarden Dollar anhob und höhere Ausgaben für 2027 in Aussicht stellte. Tesla meldete einen Umsatzrekord von 28,2 Milliarden Dollar, verfehlte aber den erwarteten Gewinn je Aktie, halbierte die operative Marge auf 1,4 Prozent und wies einen negativen freien Cashflow von 1,09 Milliarden Dollar aus. Die Aktie fiel rund 15 Prozent.",
+        "Die Lehre des Tages liegt in der Asymmetrie der Wirkung. Dasselbe Signal, hohe KI-Investitionen, drückte die Konzerne, die das Geld ausgeben, und stützte gleichzeitig deren Zulieferer. Asiens Chipwerte legten zu, der südkoreanische Kospi gewann 4,4 Prozent. Wer in der Wertschöpfungskette die Rechnung schreibt, wird bestraft, wer die Ausrüstung liefert, wird belohnt.",
+        "Die Bewegung erklärt sich über die Erwartung. Der Markt hatte solide Zahlen bereits eingepreist. Neu war die Information, dass die Investitionen höher und länger ausfallen als gedacht. Höhere Investitionen mindern den freien Cashflow, der die Grundlage jeder Bewertung ist. Dazu kam der Renditeanstieg, der den Diskontsatz für weit entfernte Gewinne anhebt und Wachstumsaktien zusätzlich verbilligt."
+      ],
+      "mechanik": "Der Börsenwert eines Unternehmens ist der heutige Wert aller künftigen freien Cashflows. Steigen die Investitionen, sinkt der freie Cashflow der nächsten Jahre. Steigen zugleich die Zinsen, wird jeder künftige Euro heute weniger wert. Beide Effekte drücken die Bewertung, auch wenn Umsatz und Gewinn im Quartal stark aussehen.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: warum Investitionen den Kurs drücken können",
+        "absaetze": [
+          "Investitionen in Fabriken, Server und Rechenzentren heißen Capex, also Investitionsausgaben. In der Gewinnrechnung erscheinen sie nur langsam, verteilt über viele Jahre als Abschreibung. Im Cashflow verlassen sie das Unternehmen sofort und senken den freien Cashflow, der nach allen Investitionen übrig bleibt.",
+          "Für ein wachsendes Geschäft können hohe Investitionen sinnvoll sein, wenn sie später hohe Erträge bringen. Der Markt verlangt für diese Zukunftswette einen Nachweis der Rendite. Fehlt dieser Nachweis, bewertet er den Mittelabfluss zuerst als Belastung und wartet mit der Belohnung, bis die Erträge sichtbar werden."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der zeitgleich steigende Ölpreis hebt Umsatz und Marge der Förderer an. Als klassischer Sachwert-Bereich profitiert Energie zusätzlich von der Umschichtung weg aus teuren Wachstumsaktien.",
+          "teilbranchen": "Upstream-Förderer, integrierte Ölkonzerne, Ölfeld-Dienstleister"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Renditen und ein festerer Ölpreis verteuern Finanzierung und Energie der kapitalintensiven Produktion. Die Kupfernachfrage aus dem Ausbau von Stromnetzen und Rechenzentren stützt gegenläufig.",
+          "teilbranchen": "Kupfer und Industriemetalle gestützt, Chemie belastet"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Rechenzentrumsboom treibt Aufträge für Elektro-, Kühl- und Netztechnik. Höhere Kapitalkosten und die Sorge vor gekürzten Investitionsbudgets belasten zyklische Maschinenbauer und Transport.",
+          "teilbranchen": "Elektro- und Datacenter-Ausrüster positiv, Maschinenbau und Logistik belastet"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Tesla als Schwergewicht zieht den Sektor mit einem Kurssturz von rund 15 Prozent nach unten. Steigende Renditen verteuern Auto- und Konsumkredite und dämpfen die Nachfrage nach langlebigen Gütern.",
+          "teilbranchen": "Automobil (Tesla), Möbel und Bau, E-Commerce"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Als defensiver Bereich mit stabilen Cashflows zieht Basiskonsum in der Risk-off-Phase Kapital an. Die Rotation aus Wachstumsaktien in verlässliche Dividendenzahler stützt die Kurse.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Haushaltswaren"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der Sektor gilt als defensiver Ankerplatz mit stabiler Nachfrage. In der Umschichtung aus Tech fließt Geld in Pharma und Medizintechnik als sicherere Ertragsquelle.",
+          "teilbranchen": "Große Pharmakonzerne, Medizintechnik; unprofitable Biotechs bleiben zinssensibel"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Steigende Anleiherenditen weiten die Zinsmarge der Banken aus. Höhere Volatilität und eine mögliche Bewertungskorrektur belasten dagegen Vermögensverwalter und das Kapitalmarktgeschäft.",
+          "teilbranchen": "Banken positiv, Asset Manager und Börsen belastet"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Dies ist das Epizentrum des Ausverkaufs, weil hohe KI-Investitionen die Free-Cashflow-Perspektive belasten und steigende Renditen langlaufende Wachstumsgewinne abwerten. Eine mögliche Capex-Kürzung der Hyperscaler träfe direkt die Chip-Zulieferer.",
+          "teilbranchen": "Halbleiter und Chip-Ausrüster, hoch bewertete Software, Rechenzentrums-Hardware"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Alphabet als Schwergewicht drückt den Sektor mit rund 7 Prozent, ausgelöst durch die auf bis zu 205 Milliarden Dollar angehobene Capex-Prognose. Der Markt bestraft die schwächere Free-Cashflow-Aussicht der Plattformkonzerne.",
+          "teilbranchen": "Internet- und Plattformkonzerne; klassische Telekom bleibt defensiver"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Steigende Renditen belasten den hoch verschuldeten Sektor, weil stabile Dividenden gegen höher rentierende Anleihen an Reiz verlieren. Der Strombedarf der KI-Rechenzentren schafft gegenläufig strukturelles Nachfragewachstum.",
+          "teilbranchen": "Stromversorger mit Datacenter-Anbindung gestützt, verschuldete Netzbetreiber belastet"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Das 18-Monats-Hoch der zehnjährigen Rendite trifft den Sektor über die Kapitalkosten, weil höhere Finanzierungszinsen die Bewertung von Bestandsimmobilien senken. Rechenzentrums-REITs profitieren als Ausnahme vom KI-Ausbau.",
+          "teilbranchen": "Zinssensible Büro- und Wohn-REITs belastet, Datacenter-REITs gestützt"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Tesla",
+          "logoKey": "tesla",
+          "bewegung": "-15,0 %",
+          "warum": "Gewinn verfehlt, operative Marge auf 1,4 Prozent gefallen, freier Cashflow negativ"
+        },
+        {
+          "firma": "Alphabet",
+          "logoKey": "alphabet",
+          "bewegung": "-7,0 %",
+          "warum": "Investitionsplan auf bis zu 205 Milliarden Dollar angehoben"
+        },
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+5 % (Vortag)",
+          "warum": "KI-Investitionen der Hyperscaler stützen die Speicherzulieferer"
+        },
+        {
+          "firma": "Intel",
+          "logoKey": "intel",
+          "bewegung": "+12,4 % (nachbörsl.)",
+          "warum": "Starker Quartalsbeat mit angehobenem Ausblick"
+        }
+      ],
+      "lehre": "Die Lehre: Eine Aktie reagiert auf die Abweichung von der Erwartung. Gute absolute Zahlen schützen nicht vor Kursverlusten, wenn der Ausblick die Annahmen des Marktes verschlechtert.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Ein Tag, zwei Welten: die Bewegungen vom 23. Juli",
+          "subtitle": "Aktien- und Indexbewegungen in Prozent",
+          "unit": " %",
+          "source": "Motley Fool, CNBC, Benzinga, Trading Economics (23.7.2026); Intel und STMicro als Reaktion auf Quartalszahlen",
+          "allPositive": false,
+          "data": [
+            [
+              "Intel (nachbörsl.)",
+              12.4
+            ],
+            [
+              "Kospi",
+              4.4
+            ],
+            [
+              "Dow Jones",
+              -0.97
+            ],
+            [
+              "S&P 500",
+              -1.21
+            ],
+            [
+              "Nasdaq",
+              -2.15
+            ],
+            [
+              "Alphabet",
+              -7
+            ],
+            [
+              "Tesla",
+              -15
+            ],
+            [
+              "STMicro",
+              -15.9
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tesla drops 15%, leading tech slide (Motley Fool)",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/07/23/stock-market-today-july-23-tesla-drops-15-leading-tech-stock-slide/",
+          "tier": 2
+        },
+        {
+          "title": "Tesla, Alphabet market value loss (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Der Markt bestraft die Rechnung für den KI-Ausbau, kaum dass sie vorliegt.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "halbleiter-divergenz-stmicro-intel",
+      "ressort": "news",
+      "kicker": "Halbleiter · Quartalszahlen",
+      "headline": "Ein Ausblick trennt die Gewinner von den Verlierern der Chipbranche",
+      "dek": "STMicroelectronics übertraf im Quartal die Erwartungen und stürzte dennoch zweistellig. Intel schlug die Prognosen und sprang nachbörslich zweistellig.",
+      "body": [
+        "Der europäische Chipkonzern STMicroelectronics meldete für das zweite Quartal einen Umsatz von 3,49 Milliarden Dollar, ein Plus von 26 Prozent gegenüber dem Vorjahr und über der eigenen Prognose. Die Aktie fiel trotzdem um rund 14 bis 16 Prozent und zog den europäischen Halbleitersektor mit nach unten. Der Grund lag im Ausblick. Der Mittelpunkt der Umsatzprognose für das dritte Quartal von 3,70 Milliarden Dollar lag leicht unter der Markterwartung. Ein solider Ausblick, der die hohen Hoffnungen nicht übertrifft, reicht in einer teuren Bewertung für einen Kursrutsch.",
+        "Wenige Stunden später zeigte Intel das Gegenteil. Der US-Konzern meldete nach Börsenschluss einen Umsatz von 16,1 Milliarden Dollar, ein Plus von 25 Prozent und das stärkste Wachstum seit über 15 Jahren. Das Geschäft mit Rechenzentren und KI wuchs um 59 Prozent. Der bereinigte Gewinn je Aktie lag bei 0,42 Dollar und damit fast doppelt so hoch wie erwartet. Intel hob die Prognose für das laufende Quartal an. Die Aktie sprang nachbörslich um mehr als 12 Prozent.",
+        "Beide Meldungen zusammen zeigen, dass die Chipbranche kein einheitlicher Block ist. Analoge und industrielle Halbleiter, das Kerngeschäft von STMicro, hängen an Autos und Fabriken und spüren die schwächere Industriekonjunktur. Rechenzentrums- und KI-Chips, in denen Intel überraschte, laufen im Investitionsboom der Hyperscaler. Die Richtung des Ausblicks entschied über die Kursreaktion."
+      ],
+      "mechanik": "Bei teuer bewerteten Aktien ist der künftige Ausblick wichtiger als die vergangenen Zahlen, weil der hohe Kurs bereits viel Wachstum voraussetzt. Übertrifft der Ausblick diese Erwartung, steigt der Kurs. Bleibt er darunter, fällt er, selbst wenn die berichteten Zahlen stark sind.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Intel",
+          "logoKey": "intel",
+          "bewegung": "+12,4 % (nachbörsl.)",
+          "warum": "Umsatz plus 25 Prozent, Rechenzentrum plus 59 Prozent, Ausblick angehoben"
+        },
+        {
+          "firma": "STMicroelectronics",
+          "logoKey": "stmicro",
+          "bewegung": "-15,9 %",
+          "warum": "Umsatz-Beat im Quartal, aber Ausblick unter der Markterwartung"
+        },
+        {
+          "firma": "Nvidia",
+          "logoKey": "nvidia",
+          "bewegung": "schwächer",
+          "warum": "Vom breiten Halbleiter-Ausverkauf mitgezogen"
+        }
+      ],
+      "lehre": "Die Lehre: In einer Branche mit hoher Bewertung ist die Richtung des Ausblicks der Hebel für den Kurs. Zwei starke Quartale können zu entgegengesetzten Kursreaktionen führen.",
+      "sources": [
+        {
+          "title": "STMicroelectronics Reports Q2 2026 Results (GlobeNewswire)",
+          "url": "https://www.globenewswire.com/news-release/2026/07/23/3331866/0/en/STMicroelectronics-Reports-Q2-2026-Financial-Results.html",
+          "tier": 1
+        },
+        {
+          "title": "Intel Q2 2026 earnings (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Ein Ausblick trennt an einem Tag die Gewinner von den Verlierern der Chipbranche.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "oelpreis-rotes-meer",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Geopolitik",
+      "headline": "Angriffe im Roten Meer treiben den Ölpreis Richtung 100 Dollar",
+      "dek": "Brent stieg um fast vier Prozent, nachdem Huthi-Rebellen zwei saudische Tanker angriffen. Der Aufschlag ist eine Risikoprämie, kein bestätigter Angebotsausfall.",
+      "body": [
+        "Der Preis für die Nordseesorte Brent stieg am Donnerstag um 3,77 Prozent auf 97,62 Dollar je Barrel und näherte sich zeitweise der Marke von 100 Dollar. Die US-Sorte WTI legte um 2,88 Prozent auf 89,33 Dollar zu. Auslöser waren Angriffe der Iran-nahen Huthi-Rebellen auf zwei saudische Öltanker im Roten Meer nahe der Meerenge Bab-el-Mandeb, einem der wichtigsten Nadelöhre des Welthandels. Die Rebellen erklärten eine Blockade gegen saudische Schiffe. Mehrere Tanker änderten ihren Kurs.",
+        "Wichtig für die Einordnung ist die Natur des Preisanstiegs. Bislang liegt kein bestätigter physischer Ausfall von Öl vor. Der Aufschlag ist eine Risikoprämie, also ein Zuschlag für die Möglichkeit einer künftigen Störung. Solche Prämien können schnell zurücklaufen, wenn sich die Lage entspannt. US-Präsident Donald Trump drohte, bei iranischen Angriffen in der Straße von Hormus iranische Infrastruktur zu zerstören, was die Nervosität zusätzlich erhöhte.",
+        "Die Wirkung verteilt sich ungleich über die Branchen. Ölproduzenten und Tankreedereien profitieren von höheren Preisen und Frachtraten. TotalEnergies stieg um 2,7 Prozent und meldete einen um 67 Prozent höheren Quartalsgewinn. Fluggesellschaften leiden unter den Treibstoffkosten, American Airlines verlor 7,4 Prozent und senkte die Jahresprognose, weil die Treibstoffrechnung um 83 Prozent stieg."
+      ],
+      "mechanik": "Der Ölpreis wirkt über zwei Kanäle. Erstens verteuert er Treibstoff und Rohstoffe für Transport und Chemie und drückt dort die Margen. Zweitens hebt er die Inflationserwartung, was die Anleiherenditen steigen lässt und über den höheren Diskontsatz zinssensible Sektoren belastet.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: der Unterschied zwischen Risikoprämie und Angebotsausfall",
+        "absaetze": [
+          "Eine Risikoprämie ist ein Preisaufschlag für die Wahrscheinlichkeit einer künftigen Störung. Der Markt kauft sich gegen das Szenario ab, dass Öltanker eine Route meiden müssen oder eine Meerenge gesperrt wird. Fließt weiter genug Öl, bleibt die Prämie eine Wette, die bei Entspannung verfällt.",
+          "Ein physischer Angebotsausfall dagegen bedeutet, dass tatsächlich weniger Öl auf den Markt kommt, etwa durch eine gesperrte Meerenge oder eine zerstörte Förderanlage. Dieser Effekt ist hartnäckiger, weil die fehlende Menge real ersetzt werden muss. Für die Einordnung einer Meldung ist entscheidend, welcher der beiden Fälle vorliegt."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Höhere Öl- und Gaspreise heben Umsatz und Marge der Produzenten unmittelbar an, da die Förderkosten kurzfristig gleich bleiben. TotalEnergies mit plus 2,7 Prozent belegt den Effekt.",
+          "teilbranchen": "Integrierte Ölkonzerne, Exploration und Förderung, Tankschifffahrt mit steigenden Frachtraten"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Chemieunternehmen nutzen Öl und Gas als Rohstoff und verlieren bei höheren Preisen Marge. Goldförderer leiden unter dem gefallenen Goldpreis, während Rohstoffhändler von Volatilität profitieren können.",
+          "teilbranchen": "Basischemie und Petrochemie negativ, Goldminen negativ"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Transport- und Logistikunternehmen tragen die höheren Treibstoffkosten unmittelbar, sichtbar am Einbruch von American Airlines um 7,4 Prozent bei plus 83 Prozent Treibstoffkosten. Reedereien verteuern sich durch Umleitungen und Versicherungsprämien.",
+          "teilbranchen": "Airlines stark negativ, Speditionen, Containerschifffahrt; Verteidigung bei Eskalation relativ gestützt"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Spritpreise wirken wie eine Steuer auf das verfügbare Einkommen und senken die Kaufkraft für nicht lebensnotwendige Ausgaben. Konsumenten schränken diskretionäre Käufe zuerst ein.",
+          "teilbranchen": "Einzelhandel für Nicht-Grundbedarf, Reise und Tourismus, Kreuzfahrt"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Hersteller spüren höhere Energie-, Verpackungs- und Transportkosten auf der Marge. Als defensiver Bereich mit Preissetzungsmacht gilt Basiskonsum im Risiko-Umfeld gleichzeitig als relativer sicherer Hafen.",
+          "teilbranchen": "Verpackte Lebensmittel und Getränke unter Kostendruck, Lebensmitteleinzelhandel robust"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Medikamenten und Versorgung ist weitgehend ölunabhängig, der direkte Kosten- und Nachfrageeffekt bleibt gering. Als defensiver Bereich kann Gesundheit in der Risikophase sogar Zuflüsse anziehen.",
+          "teilbranchen": "Pharma und Biotech kaum betroffen, kleiner Kosteneffekt bei Logistik"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Realrenditen verbessern die Zinsmargen der Banken. Steigende Inflations- und Rezessionsrisiken erhöhen jedoch die Gefahr von Kreditausfällen. Fracht- und Schiffsversicherer sehen steigende Prämien.",
+          "teilbranchen": "Banken gemischt, Transportversicherer positiv, Asset Management schwächer"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Technologiewerte sind langlaufende Wachstumsaktien, deren Bewertung stark von den Zinsen abhängt. Der über den Ölschock ausgelöste Renditeanstieg erhöht den Diskontsatz und drückt die Barwerte künftiger Gewinne.",
+          "teilbranchen": "Hoch bewertete Software, Halbleiter mit energieintensiver Fertigung"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "gemischt",
+          "mechanismus": "Telekomanbieter haben stabile, ölunabhängige Umsätze und gelten als defensiv. Werbefinanzierte Plattformen sind über den Zins- und Bewertungskanal leicht belastet und reagieren auf schwächere Konsumstimmung.",
+          "teilbranchen": "Telekom defensiv, Internet- und Werbeplattformen leicht negativ"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der gestiegene europäische Gaspreis verteuert die Brennstoffkosten von Gaskraftwerken. Als hoch verschuldeter Dividendensektor leiden Versorger zusätzlich unter steigenden Renditen.",
+          "teilbranchen": "Gaskraftwerksbetreiber belastet, Erzeuger mit eigener Förderung gegenläufig"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien und REITs sind besonders zinssensitiv, weil höhere Finanzierungskosten die Refinanzierung verteuern und höhere Diskontsätze die Objektbewertungen senken. Der ölgetriebene Renditeanstieg wirkt hier belastend.",
+          "teilbranchen": "Fremdkapitalintensive REITs, Gewerbeimmobilien"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "TotalEnergies",
+          "logoKey": "totalenergies",
+          "bewegung": "+2,7 %",
+          "warum": "Quartalsgewinn plus 67 Prozent durch hohen Ölpreis"
+        },
+        {
+          "firma": "American Airlines",
+          "logoKey": "americanairlines",
+          "bewegung": "-7,4 %",
+          "warum": "Treibstoffkosten plus 83 Prozent, Jahresprognose gesenkt"
+        },
+        {
+          "firma": "Frontline",
+          "logoKey": "frontline",
+          "bewegung": "fester",
+          "warum": "Umleitung der Tanker hebt die Frachtraten"
+        }
+      ],
+      "lehre": "Die Lehre: Ein Ölpreisanstieg aus einer Risikoprämie wirkt anders als ein struktureller Angebotsausfall. Die erste Variante ist reversibel, die zweite hält länger an.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Sachwerte laufen auseinander",
+          "subtitle": "Rohstoffbewegungen am 23. Juli in Prozent",
+          "unit": " %",
+          "source": "OilPrice, Fortune, Trading Economics (23.7.2026); Kupfer Stand 22.7.",
+          "allPositive": false,
+          "data": [
+            [
+              "Brent-Öl",
+              3.77
+            ],
+            [
+              "WTI-Öl",
+              2.88
+            ],
+            [
+              "Kupfer",
+              -0.84
+            ],
+            [
+              "Silber",
+              -1.26
+            ],
+            [
+              "Gold",
+              -1.9
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Oil Prices Climb Toward 100 as Red Sea Risks Rise (OilPrice)",
+          "url": "https://oilprice.com/Energy/Oil-Prices/Oil-Prices-Climb-Toward-100-as-Red-Sea-Risks-Rise.html",
+          "tier": 2
+        },
+        {
+          "title": "Iran, US, Hormuz Strait, war (Washington Post)",
+          "url": "https://www.washingtonpost.com/business/2026/07/23/iran-us-hormuz-strait-war/be34abba-8664-11f1-9cec-0fb26676f07e_story.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Angriffe im Roten Meer treiben den Ölpreis in Richtung einer runden Hundertermarke.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "gold-faellt-trotz-krise",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Edelmetalle",
+      "headline": "Gold fällt am Krisentag, weil die Renditen steigen",
+      "dek": "Trotz Krieg im Nahen Osten verlor Gold rund zwei Prozent. Der Zinskanal überlagerte die Nachfrage nach einem sicheren Hafen.",
+      "body": [
+        "Am selben Tag, an dem der Ölpreis wegen der Angriffe im Roten Meer sprang, fiel der Goldpreis um rund 1,9 Prozent auf etwa 4.083 Dollar je Feinunze. Das überrascht auf den ersten Blick, weil Gold in Krisenzeiten oft als sicherer Hafen gilt und dann steigt. Am Donnerstag setzte sich ein anderer Kanal durch.",
+        "Gold zahlt keine Zinsen. Sein Reiz hängt daran, wie viel Ertrag Anleger auf sichere Alternativen verzichten, wenn sie Gold halten. Steigen die realen Anleiherenditen, also die Verzinsung nach Abzug der Inflation, wird dieser Verzicht teurer. Genau das geschah, weil der Ölschock die Inflationserwartung und die Anleiherenditen nach oben trieb und ein festerer Dollar hinzukam. Silber verlor 1,26 Prozent, Kupfer notierte schwächer.",
+        "Die Episode ist ein Musterbeispiel dafür, dass eine einzelne Nachricht mehrere gegenläufige Kräfte auslösen kann. Die Krise erhöhte die Nachfrage nach Sicherheit und hätte Gold stützen können. Der zugleich ausgelöste Renditeanstieg wirkte stärker und drückte den Preis. Wer nur die Schlagzeile Krise liest, erwartet die falsche Richtung."
+      ],
+      "mechanik": "Der Preis von Gold hängt stark an den realen Zinsen. Steigen die Realrenditen, erhöhen sich die Opportunitätskosten des zinslosen Goldes, und der Preis fällt. Dieser Zinskanal kann die Nachfrage nach einem sicheren Hafen überlagern.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Gold (Spot)",
+          "bewegung": "-1,9 %",
+          "warum": "Steigende Realrenditen erhöhen die Opportunitätskosten"
+        },
+        {
+          "firma": "Silber (Spot)",
+          "bewegung": "-1,26 %",
+          "warum": "Mitgezogen vom Edelmetall-Rückgang"
+        }
+      ],
+      "lehre": "Die Lehre: Bei Gold entscheiden oft die realen Zinsen über die Richtung. Eine geopolitische Krise stützt den Preis nur, wenn sie den Zinskanal nicht überlagert.",
+      "sources": [
+        {
+          "title": "Gold prices today, July 23 2026 (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-july-23-2026-gold-price-opens-below-4100-as-inflation-worries-clash-with-safe-haven-demand-153539220.html",
+          "tier": 2
+        },
+        {
+          "title": "Current price of silver 7-23-2026 (Fortune)",
+          "url": "https://fortune.com/article/current-price-of-silver-7-23-2026/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "gold-bitcoin.jpg",
+        "alt": "Goldbarren und eine physische Bitcoin-Münze nebeneinander auf dunklem Untergrund",
+        "caption": "Ausgerechnet am Krisentag fällt der Goldpreis, weil die Anleiherenditen stärker ziehen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "ezb-haelt-zinsen",
+      "ressort": "politik",
+      "kicker": "Geldpolitik · Europa",
+      "headline": "Die EZB hält die Zinsen und beobachtet den Energieschock",
+      "dek": "Der Einlagenzins bleibt bei 2,25 Prozent. EZB-Präsidentin Christine Lagarde legte sich nicht fest, Märkte lesen einen möglichen Schritt im September.",
+      "body": [
+        "Die Europäische Zentralbank ließ am Donnerstag alle Leitzinsen unverändert. Der Einlagenzins bleibt bei 2,25 Prozent, der Hauptrefinanzierungssatz bei 2,40 Prozent. Die Entscheidung war erwartet worden. Sie folgt auf eine Zinserhöhung um 25 Basispunkte im Juni. Die Notenbank befindet sich damit in einer abwartenden Haltung nach einer Straffung.",
+        "EZB-Präsidentin Christine Lagarde betonte, die Entscheidungen fielen von Sitzung zu Sitzung und ohne Vorfestlegung auf einen bestimmten Zinspfad. Die Inflation lag im Juni bei 2,8 Prozent nach 3,2 Prozent im Mai. Die Notenbank warnte, die Effekte des Energiepreisschocks dürften die Inflation bis in die erste Hälfte 2027 über dem Ziel von zwei Prozent halten. Finanzmedien lasen daraus eine Bereitschaft zu einem weiteren Schritt im September. Diese Erwartung ist eine Interpretation des Marktes, keine Zusage der EZB.",
+        "Für die Unternehmen zählt der Transmissionskanal. Höhere Zinsen für längere Zeit verteuern die Refinanzierung verschuldeter Sektoren wie Versorger und Immobilien und stützen die Zinsmargen der Banken. Für langlaufende Wachstumsaktien bedeutet das anhaltenden Bewertungsdruck über den Diskontsatz."
+      ],
+      "mechanik": "Die EZB steuert über den Leitzins die Refinanzierungskosten der Banken und damit indirekt Kredite, Sparzinsen und die Nachfrage. Ein Halten auf erhöhtem Niveau bremst die Wirtschaft weiter leicht ab und hält die Renditen hoch, was Sachwerte gegenüber Wachstumsaktien relativ stützt.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: warum ein Energieschock die Notenbank in ein Dilemma bringt",
+        "absaetze": [
+          "Ein Ölpreisanstieg wirkt wie ein Angebotsschock. Er treibt die Inflation über höhere Energiepreise und bremst gleichzeitig das Wachstum, weil Haushalte und Betriebe mehr für Energie zahlen und weniger für anderes übrig haben. Die Notenbank steht damit vor einem Zielkonflikt.",
+          "Hebt sie die Zinsen zur Inflationsbekämpfung, bremst sie das ohnehin geschwächte Wachstum zusätzlich. Senkt sie die Zinsen zur Stützung der Konjunktur, riskiert sie, dass sich die Inflation verfestigt. Die EZB wählt derzeit den Mittelweg des Abwartens, um zu sehen, ob der Energieschock in die allgemeine Preisdynamik durchsickert."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Ölpreisschock ist selbst Treiber der Inflation und stützt die Cashflows der Förderer. Höhere Zinsen belasten den Sektor kaum, weil seine Bewertung auf laufenden Cashflows statt auf fernen Wachstumsphantasien beruht.",
+          "teilbranchen": "Upstream profitiert vom Ölpreis, schwach kapitalisierte Förderer spüren Finanzierungskosten"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Zinsen dämpfen über teurere Kredite die Bau- und Industrienachfrage und drücken zyklische Rohstoffpreise. Ein festerer Dollar verteuert dollarnotierte Rohstoffe zusätzlich.",
+          "teilbranchen": "Chemie und Baustoffe, Industriemetalle, Gold als zinsloses Asset"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Finanzierungskosten verteuern langfristige Investitionsgüter und bremsen kapitalintensive Kunden. Der starke US-Arbeitsmarkt signalisiert gleichzeitig eine robuste Konjunktur und stützt die Nachfrage.",
+          "teilbranchen": "Maschinenbau und Bau zinssensibel, Luftfahrt und Verteidigung durch Auftragsbestände geschützt"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Zinsen verteuern Konsumkredite, Autofinanzierungen und Hypotheken und schwächen die Nachfrage nach teuren Gütern. Der Kaufkraftentzug durch hohe Energiepreise verstärkt den Effekt.",
+          "teilbranchen": "Automobil und Wohnungsbau über Kreditfinanzierung, Luxus und Reisen über Stimmung"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Nahrungsmitteln und Haushaltsgütern ist zinsunabhängig, weil sie den Grundbedarf deckt. Als defensiver Bereich dient er oft als Zufluchtsort, hohe Anleiherenditen mindern jedoch den Reiz dividendenstarker Titel etwas.",
+          "teilbranchen": "Nahrungsmittel stabil, hoch verschuldete Handelsketten spüren Refinanzierung"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Behandlungen ist konjunktur- und zinsunabhängig, was den Sektor defensiv macht. Forschungsintensive Biotechs ohne laufende Gewinne leiden dagegen unter dem höheren Diskontsatz.",
+          "teilbranchen": "Pharma und Medizintechnik robust, unprofitable Biotechs klar belastet"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Banken verdienen an der Differenz zwischen Kredit- und Einlagenzinsen, die bei höheren Leitzinsen tendenziell steigt und die Zinsmarge verbessert. Höhere Renditen steigern die Wiederanlage-Erträge der Versicherer.",
+          "teilbranchen": "Banken über Zinsmarge, Versicherer über Kapitalerträge, Immobilienfinanzierer mit Ausfallrisiko"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Technologiewerte gelten als Long-Duration-Aktien, deren Wert auf weit entfernten Gewinnen beruht. Ein höherer Diskontsatz senkt den Barwert dieser fernen Zahlungsströme überproportional und drückt die Bewertungsmultiplikatoren.",
+          "teilbranchen": "Unprofitable Wachstums-Software am stärksten, etablierte Konzerne widerstandsfähiger"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Wachstumsstarke Plattformwerte reagieren wie Long-Duration-Aktien negativ auf den höheren Diskontsatz. Klassische Telekomkonzerne sind hoch verschuldet, weshalb steigende Refinanzierungskosten ihre Zinslast belasten.",
+          "teilbranchen": "Internet- und Medienplattformen über Diskontierung, Telekom über Verschuldung"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger sind hoch verschuldet und finanzieren große Infrastrukturinvestitionen über Kredite, deren Kosten mit den Zinsen steigen. Als Bond-Proxies mit stabilen Dividenden verlieren sie an Reiz, wenn Anleihen höhere Renditen bieten.",
+          "teilbranchen": "Regulierte Strom- und Wassernetze mit hohem Fremdkapital"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Zinsen verteuern die Refinanzierung von Immobilienportfolios und drücken über höhere Diskontsätze die Objektbewertungen. Steigende Renditen machen die Ausschüttungen von REITs relativ unattraktiver.",
+          "teilbranchen": "Gewerbeimmobilien und fremdfinanzierte REITs, Wohnimmobilien über Hypothekenzinsen"
+        }
+      ],
+      "lehre": "Die Lehre: Ein Halten der Zinsen ist eine aktive Entscheidung. Die Botschaft für die Zukunft, die Forward Guidance, bewegt die Märkte oft stärker als der aktuelle Zinsschritt selbst.",
+      "sources": [
+        {
+          "title": "EZB Monetary Policy Decisions 23.07.2026 (EZB)",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html",
+          "tier": 1
+        },
+        {
+          "title": "ECB keeps rate steady to gauge Iran war impact (Bloomberg)",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-23/ecb-keeps-rate-steady-to-gauge-iran-war-s-impact-on-inflation",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Die EZB hält still und beobachtet, wie der Energieschock die Rechnung verändert.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "nahost-hormus-eskalation",
+      "ressort": "politik",
+      "kicker": "Geopolitik · Nahost",
+      "headline": "Trump droht dem Iran, die Huthis blockieren das Rote Meer",
+      "dek": "Nach dem Angriff auf zwei saudische Tanker verschärft sich die Lage am Golf. Die Straße von Hormus bleibt der entscheidende Engpass für den Ölmarkt.",
+      "body": [
+        "Die geopolitische Lage im Nahen Osten hat sich in den vergangenen Tagen zugespitzt. Iran-nahe Huthi-Rebellen griffen zwei saudische Öltanker im Roten Meer an und erklärten eine Blockade gegen saudische Schiffe. Nach Angaben saudischer Staatsmedien gab es keine Opfer. Die Angriffe treffen eine Route, über die ein bedeutender Teil des Welthandels läuft. Saudi-Arabien hatte zuletzt einen großen Teil seiner Exporte auf den Rotmeer-Hafen Yanbu umgeleitet, was das Rote Meer als Engpass zusätzlich aufwertet.",
+        "US-Präsident Donald Trump erklärte, die Vereinigten Staaten machten den Iran für die Angriffe verantwortlich. Bei iranischen Angriffen auf Schiffe in der Straße von Hormus werde man iranische Infrastruktur wie Brücken oder Kraftwerke zerstören. Die USA flogen laut Berichten seit rund zwei Wochen wiederholt Angriffe auf iranische Militärziele. Die genaue Zählung der Nächte ist zwischen den Quellen uneinheitlich.",
+        "Für die Kapitalmärkte ist die Straße von Hormus der wichtigere Engpass als das Rote Meer, weil durch sie ein erheblicher Teil des weltweiten Öltransports läuft. Solange sie offen bleibt, handelt der Markt eine Risikoprämie. Eine tatsächliche Störung dort würde den Ölpreis deutlich stärker bewegen und die Effekte auf Airlines, Chemie und Inflation verschärfen."
+      ],
+      "mechanik": "Geopolitische Konflikte wirken auf die Börse meist über konkrete Kanäle. Hier ist es der Ölpreis, der über Treibstoffkosten und Inflation auf Unternehmen und Zinsen durchschlägt. Ein Engpass wie eine Meerenge verstärkt den Effekt, weil er eine physische Störung glaubwürdig macht.",
+      "lehre": "Die Lehre: Der Markt bepreist die Wahrscheinlichkeit einer Störung, lange bevor sie eintritt. Der Ölpreis ist dabei der zentrale Übertragungsweg von Geopolitik in Unternehmensgewinne.",
+      "sources": [
+        {
+          "title": "Houthi tanker attack, US-Iran (Taipei Times)",
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/07/24/2003861312",
+          "tier": 2
+        },
+        {
+          "title": "Iran war, US, Trump, Houthis, Red Sea oil (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/23/iran-war-us-trump-houthis-red-sea-oil.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Neue Drohungen gegen den Iran, eine Blockade der Huthi: die Eskalation nimmt kein Ende.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "handelskrieg-kanada-eu",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · Zölle",
+      "headline": "Kanada-Zölle rücken näher, der EU-Rahmen steht",
+      "dek": "Ab dem 19. August greift ein US-Zoll von 50 Prozent auf viele kanadische Waren. Für die EU gilt der ausgehandelte Rahmen von 15 Prozent.",
+      "body": [
+        "Die US-Handelspolitik bleibt ein Belastungsfaktor für die Weltwirtschaft. Ein Zoll von 50 Prozent auf ein breites Spektrum kanadischer Waren tritt am 19. August 2026 in Kraft. Er stützt sich auf Abschnitt 338 des US-Handelsrechts. Ausgenommen sind Energie, Kali, kritische Mineralien und Fisch. Die betroffene Warenmenge wird auf rund 20 Milliarden Dollar geschätzt.",
+        "Für die Europäische Union gilt der im Turnberry-Rahmen ausgehandelte Basiszoll von 15 Prozent auf die meisten Waren. Das EU-Parlament billigte den Deal, die Umsetzung läuft. Ein Muster wird sichtbar. Einseitig verhängte Zölle wie gegen Kanada belasten stärker als ein verhandelter Rahmen wie mit der EU, weil den Unternehmen die Planbarkeit fehlt.",
+        "Für die Sektoren zählt die Betroffenheit der Lieferketten. Automobil, Maschinenbau und Konsumgüter mit hohem Nordamerika-Anteil tragen die höheren Kosten oder müssen Lieferketten umbauen. Rohstoffe mit Ausnahmen bleiben verschont. Die genaue Reichweite weiterer angekündigter Maßnahmen gegen einzelne Länder ist noch offen."
+      ],
+      "mechanik": "Ein Importzoll verteuert eingeführte Waren. Unternehmen können die Kosten an Kunden weitergeben, was die Inflation hebt, oder sie selbst tragen, was die Marge senkt. In beiden Fällen wirkt der Zoll wie eine Steuer, die den Handel bremst und Lieferketten verschiebt.",
+      "lehre": "Die Lehre: Für Aktien zählt weniger die Höhe eines Zolls als seine Planbarkeit. Ein verhandelter Rahmen erlaubt Anpassung, eine einseitige Maßnahme erzeugt Unsicherheit.",
+      "sources": [
+        {
+          "title": "Fact Sheet: Additional Tariffs on Canada (White House)",
+          "url": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/",
+          "tier": 1
+        },
+        {
+          "title": "Trump Tariff Tracker July 21 2026 (Baker Botts)",
+          "url": "https://ourtake.bakerbotts.com/post/102ndeb/trump-tariff-tracker-july-21-2026",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Kanada-Zölle rücken näher, während der EU-Rahmen zumindest auf dem Papier steht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "intel-quartal",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Halbleiter",
+      "headline": "Intel überrascht mit dem stärksten Wachstum seit über 15 Jahren",
+      "dek": "Der Umsatz stieg um 25 Prozent, das Geschäft mit Rechenzentren um 59 Prozent. Die Aktie sprang nachbörslich zweistellig.",
+      "body": [
+        "Der US-Chipkonzern Intel meldete nach Börsenschluss am Donnerstag ein Quartal, das die Erwartungen deutlich übertraf. Der Umsatz stieg um 25 Prozent auf 16,1 Milliarden Dollar, das stärkste Wachstum seit über 15 Jahren. Der bereinigte Gewinn je Aktie lag mit 0,42 Dollar fast doppelt so hoch wie erwartet. Das Geschäft mit Rechenzentren und KI wuchs um 59 Prozent, das Foundry-Geschäft, in dem Intel für andere fertigt, um 31 Prozent.",
+        "Für die Bewertung ist der Ausblick entscheidend. Intel stellte für das laufende Quartal einen Umsatz von rund 16,3 Milliarden Dollar in Aussicht und lag damit klar über der Markterwartung. Nach Jahren des Rückstands im Wettbewerb liefert der Konzern ein Signal, dass die Nachfrage nach Rechenzentrumschips und die eigene Fertigung anziehen. Die Aktie reagierte nachbörslich mit einem Sprung von mehr als 12 Prozent.",
+        "Einordnend bleibt Vorsicht geboten. Die Aktie war im laufenden Jahr bereits stark gestiegen, die Erwartungen waren hoch. Ein einzelnes starkes Quartal belegt noch keine dauerhafte Trendwende. Der Kontrast zu STMicroelectronics am selben Tag zeigt, wie unterschiedlich sich die Segmente der Chipbranche entwickeln."
+      ],
+      "lehre": "Die Lehre: Ein Ausblick über der Erwartung kann einen Kurs auch dann tragen, wenn eine Aktie zuvor bereits stark gelaufen ist. Die Nachhaltigkeit zeigt sich erst über mehrere Quartale.",
+      "company": {
+        "name": "Intel Corporation",
+        "ticker": "INTC",
+        "exchange": "Nasdaq",
+        "logoKey": "intel",
+        "whatTheyDo": "Intel entwickelt und fertigt Prozessoren für Rechenzentren und Computer. Über das Foundry-Geschäft stellt der Konzern zunehmend auch Chips für andere Unternehmen her.",
+        "whyItMatters": "Intel ist ein Gradmesser für die Nachfrage nach Rechenzentrumschips und für den Versuch, die US-Chipfertigung wieder wettbewerbsfähig zu machen.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2",
+            "16,1 Mrd. USD (+25 %)"
+          ],
+          [
+            "Bereinigter Gewinn je Aktie",
+            "0,42 USD"
+          ],
+          [
+            "Rechenzentrum & KI",
+            "+59 %"
+          ],
+          [
+            "Kursreaktion",
+            "+12,4 % nachbörslich"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Intel Q2 2026 earnings (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html",
+          "tier": 2
+        },
+        {
+          "title": "Intel earnings report Q2 2026 (TradingKey)",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262050823-intel-earnings-report-q2-2026-intc-ai-data-center-intel-foundry-tradingkey",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Das stärkste Wachstum seit über 15 Jahren überrascht selbst optimistische Beobachter.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "tesla-quartal",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Automobil",
+      "headline": "Tesla verkauft mehr und verdient weniger",
+      "dek": "Ein Umsatzrekord traf auf eine operative Marge von 1,4 Prozent und einen negativen freien Cashflow. Die Aktie verlor rund 15 Prozent.",
+      "body": [
+        "Tesla meldete für das zweite Quartal einen Umsatzrekord von 28,2 Milliarden Dollar, ein Plus von 26 Prozent. Unter der Oberfläche verschlechterte sich die Ertragslage. Die operative Marge fiel auf 1,4 Prozent nach 4,1 Prozent im Vorjahr. Der bereinigte Gewinn je Aktie verfehlte die Erwartung. Die Einnahmen aus dem Verkauf von Emissionsgutschriften, ein margenstarker Sonderposten, brachen um 67 Prozent ein.",
+        "Besonders beachtet wurde der Cashflow. Tesla verdoppelte die Investitionen auf 5,8 Milliarden Dollar, vor allem für Rechenzentren und das Robotaxi-Projekt. Der freie Cashflow drehte ins Negative auf minus 1,09 Milliarden Dollar. Ein Unternehmen mit negativem freiem Cashflow verbrennt in der Periode mehr Geld, als es aus dem laufenden Geschäft erwirtschaftet, und finanziert die Differenz aus Reserven.",
+        "Die Aktie verlor rund 15 Prozent. Der Markt las die Kombination aus schrumpfender Marge, wegfallenden Sondererträgen und stark steigenden Investitionen als Verschlechterung der Ertragsqualität. Der Umsatzrekord trat in den Hintergrund, weil er nicht in Gewinn und Cashflow durchschlug."
+      ],
+      "lehre": "Die Lehre: Ein Umsatzrekord sagt wenig über die Ertragsqualität. Marge, Sonderposten und freier Cashflow entscheiden, ob Wachstum wertvoll ist.",
+      "company": {
+        "name": "Tesla Inc.",
+        "ticker": "TSLA",
+        "exchange": "Nasdaq",
+        "logoKey": "tesla",
+        "whatTheyDo": "Tesla baut Elektroautos, betreibt ein Energie- und Speichergeschäft und investiert in Robotaxi-Technologie und Rechenzentren für künstliche Intelligenz.",
+        "whyItMatters": "Tesla ist ein Schwergewicht im zyklischen Konsum und ein Symbol für die Frage, ob hohe KI-Investitionen sich in Ertrag auszahlen.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2",
+            "28,2 Mrd. USD (+26 %)"
+          ],
+          [
+            "Operative Marge",
+            "1,4 % (Vj. 4,1 %)"
+          ],
+          [
+            "Freier Cashflow",
+            "-1,09 Mrd. USD"
+          ],
+          [
+            "Kursreaktion",
+            "rund -15 %"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Tesla, Alphabet stock today (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/23/tesla-tsla-alphabet-googl-stock-today.html",
+          "tier": 2
+        },
+        {
+          "title": "Tesla drops 15% (Motley Fool)",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/07/23/stock-market-today-july-23-tesla-drops-15-leading-tech-stock-slide/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "vw-fabrik.jpg",
+        "alt": "Roboterarme schweißen Karosserien am Fließband einer Autofabrik",
+        "caption": "Mehr verkaufte Autos, aber ein geschrumpfter Gewinn: die Marge bleibt die wunde Stelle.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "nestle-halbjahr",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Basiskonsum",
+      "headline": "Nestlé bricht ein, obwohl der Sektor als sicherer Hafen gilt",
+      "dek": "Der Reingewinn fiel deutlich, der Konzern verkauft Teile des Wassergeschäfts. Die Aktie verlor sieben bis acht Prozent, der stärkste Tagesverlust seit rund zwei Jahrzehnten.",
+      "body": [
+        "Der Schweizer Nahrungsmittelkonzern Nestlé meldete für das erste Halbjahr einen Umsatz von 43,1 Milliarden Franken und einen Reingewinn von 3,47 Milliarden Franken nach 5,07 Milliarden im Vorjahr. Sonderaufwände und Abschreibungen belasteten das Ergebnis. Der Konzern kündigte an, Teile seines Wasser- und Premiumgetränkegeschäfts für rund 3,4 Milliarden Dollar zu verkaufen. Die Aktie verlor sieben bis acht Prozent.",
+        "Der Fall ist lehrreich, weil Basiskonsum als defensiver Bereich gilt, in den Anleger in unsicheren Phasen flüchten. Ein einzelnes Unternehmen kann diesem Muster widersprechen, wenn es eigene Probleme hat. Der Gewinnrückgang und der als hart empfundene Verkauf des Wassergeschäfts überlagerten den defensiven Charakter des Sektors.",
+        "Der Schweizer Rivale Roche zeigte am selben Tag das Gegenbild und legte zu. Der Pharmakonzern steigerte den Halbjahresumsatz um sechs Prozent und bestätigte die Jahresprognose. Die beiden Meldungen zusammen erklären, warum der breite europäische Index STOXX 600 weniger verlor als die deutschen und französischen Leitindizes. Defensive Schwergewichte aus der Schweiz stützten den Gesamtmarkt teilweise."
+      ],
+      "lehre": "Die Lehre: Ein Sektor kann defensiv sein, ein einzelnes Unternehmen darin dennoch fallen. Unternehmensspezifische Nachrichten schlagen die Sektorregel.",
+      "company": {
+        "name": "Nestlé S.A.",
+        "ticker": "NESN",
+        "exchange": "SIX Swiss Exchange",
+        "logoKey": "nestle",
+        "whatTheyDo": "Nestlé ist der weltgrößte Nahrungsmittelkonzern mit Marken in Kaffee, Süßwaren, Tiernahrung, Wasser und Babynahrung.",
+        "whyItMatters": "Nestlé gilt als Inbegriff des defensiven Dividendenwerts. Ein starker Kursrückgang zeigt, dass auch sichere Häfen unternehmensspezifische Risiken tragen.",
+        "keyMetrics": [
+          [
+            "Umsatz H1",
+            "43,1 Mrd. CHF"
+          ],
+          [
+            "Reingewinn H1",
+            "3,47 Mrd. CHF (Vj. 5,07)"
+          ],
+          [
+            "Verkauf Wassergeschäft",
+            "rund 3,4 Mrd. USD"
+          ],
+          [
+            "Kursreaktion",
+            "-7 bis -8 %"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Nestlé slips while Roche lifts Swiss stocks (Finimize)",
+          "url": "https://finimize.com/content/nestl%C3%A9-slips-while-roche-lifts-swiss-stocks-earnings-day",
+          "tier": 2
+        },
+        {
+          "title": "European shares fall as STMicro results hit tech, Nestlé tumbles (Marketscreener)",
+          "url": "https://www.marketscreener.com/news/european-shares-fall-as-stmicro-results-hit-tech-nestle-tumbles-ce7f51dedb88fe24",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "xxxlutz-porta.jpg",
+        "alt": "Manager mit Klemmbrett prüft Bestand in einem großen Lager mit Regalen und einem Gabelstapler",
+        "caption": "Ein Lebensmittelkonzern bricht ein, obwohl der Sektor eigentlich als sicherer Hafen gilt.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "renditen-hoeher-fuer-laenger",
+      "ressort": "makro",
+      "kicker": "Makro · Zinsen",
+      "headline": "Die Anleiherenditen erreichen ein 18-Monats-Hoch",
+      "dek": "Die zehnjährige US-Rendite stieg auf rund 4,67 Prozent. Vor der Fed-Sitzung preist der Terminmarkt sogar eine Zinserhöhung mit ein.",
+      "body": [
+        "Die Rendite zehnjähriger US-Staatsanleihen stieg am Donnerstag auf rund 4,67 Prozent und erreichte damit den höchsten Stand seit etwa 18 Monaten. Treiber war der Ölpreissprung, der die Inflationserwartung anhob, verstärkt durch einen unerwartet starken Arbeitsmarkt. Höhere Renditen wirken wie ein höherer Diskontsatz auf alle künftigen Zahlungsströme und drücken besonders die Bewertung von Wachstumsaktien.",
+        "Die US-Notenbank Fed tagt am 28. und 29. Juli unter ihrem als hawkish geltenden Vorsitzenden Kevin Warsh. Der Terminmarkt preist eine Wahrscheinlichkeit von rund einem Drittel für eine Zinserhöhung ein, getrieben durch die Ölinflation. Der Leitzins liegt aktuell bei 3,50 bis 3,75 Prozent. Eine Zinserhöhung wäre ungewöhnlich, weil Notenbanken bei schwachem Wachstum meist eher senken. Der aktuelle Fall ist besonders, weil ein Angebotsschock die Inflation treibt.",
+        "Für die Sektoren bedeutet das Umfeld eine klare Ordnung. Banken profitieren über die Zinsmarge. Immobilien und Versorger leiden über höhere Finanzierungskosten. Langlaufende Technologiewerte verlieren über den Diskontsatz. Diese Logik erklärt einen Teil der Bewegung an diesem Handelstag."
+      ],
+      "mechanik": "Die Rendite langlaufender Anleihen ist der Maßstab für den Diskontsatz am Aktienmarkt. Steigt sie, sinkt der heutige Wert weit entfernter Gewinne, was Wachstumsaktien stärker trifft als Value-Aktien mit nahen Cashflows.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: die Reaktionsfunktion einer Notenbank",
+        "absaetze": [
+          "Eine Notenbank folgt einer Reaktionsfunktion, einer Regel, nach der sie auf Inflation und Wachstum reagiert. Vereinfacht hebt sie die Zinsen, wenn die Inflation über dem Ziel liegt, und senkt sie, wenn die Wirtschaft schwächelt. Ein Angebotsschock durch Öl bringt beide Signale gleichzeitig und zwingt die Notenbank zu einer Abwägung.",
+          "Entscheidend ist die Erwartungsankerung. Solange Haushalte und Unternehmen darauf vertrauen, dass die Inflation langfristig zum Ziel zurückkehrt, kann die Notenbank einen temporären Ölschock tolerieren. Verliert dieser Anker, drohen Zweitrundeneffekte über Löhne und Preise, und die Notenbank muss härter reagieren."
+        ]
+      },
+      "lehre": "Die Lehre: Sinkende Zinsen stützen Wachstumsaktien, steigende Zinsen belasten sie. Der Diskontsatz ist der wichtigste Übertragungsweg von der Geldpolitik in die Aktienbewertung.",
+      "sources": [
+        {
+          "title": "Markets see chance Fed hikes at July meeting (Forbes)",
+          "url": "https://www.forbes.com/sites/simonmoore/2026/07/23/markets-see-chance-fed-hikes-next-week-at-july-meeting/",
+          "tier": 2
+        },
+        {
+          "title": "Stock market today, July 23 (Motley Fool)",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/07/23/stock-market-today-july-23-tesla-drops-15-leading-tech-stock-slide/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Die Anleiherenditen erreichen ein 18-Monats-Hoch, und die Notenbanken beobachten genau.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "us-arbeitsmarkt-stagflation",
+      "ressort": "makro",
+      "kicker": "Makro · Arbeitsmarkt",
+      "headline": "Die Erstanträge fallen auf den tiefsten Stand seit 1969",
+      "dek": "Nur 187.000 neue Anträge auf Arbeitslosenhilfe zeigen einen robusten Arbeitsmarkt. Zusammen mit hoher Inflation entsteht ein Dilemma für die Fed.",
+      "body": [
+        "Die wöchentlichen Erstanträge auf Arbeitslosenhilfe in den USA fielen auf 187.000 und damit auf den tiefsten Stand seit 1969. Erwartet worden waren rund 212.000. Ein niedriger Wert signalisiert, dass Unternehmen kaum entlassen und der Arbeitsmarkt fest ist. Für sich genommen ist das eine gute Nachricht. Im aktuellen Umfeld verkompliziert es die Lage der Notenbank.",
+        "Die Inflation bleibt hartnäckig. Der Verbraucherpreisindex lag zuletzt bei 3,5 Prozent, das von der Fed stärker beachtete Maß der Kernrate der persönlichen Konsumausgaben bei 3,7 Prozent. Ein fester Arbeitsmarkt und hohe Inflation zusammen erlauben der Notenbank keine schnelle Zinssenkung, weil eine starke Wirtschaft die Preise weiter treiben kann. Genau das erklärt die harte Haltung des Fed-Vorsitzenden Kevin Warsh.",
+        "Der nächste wichtige Datenpunkt sind die Einkaufsmanagerindizes am Freitag, die einen frühen Hinweis auf das Wachstum geben. Ein Zielkonflikt zwischen schwächerem Wachstum und hoher Inflation trägt den Namen Stagflation. Er ist für Notenbanken besonders schwierig, weil jedes Instrument eines der beiden Probleme verschärft."
+      ],
+      "mechanik": "Der Arbeitsmarkt ist für die Fed ein zentraler Indikator. Ein fester Arbeitsmarkt stützt Konsum und Preise und verringert den Spielraum für Zinssenkungen. Anleger lesen starke Arbeitsmarktdaten in einem Inflationsumfeld deshalb oft als Belastung für Aktien, weil sie höhere Zinsen wahrscheinlicher machen.",
+      "lehre": "Die Lehre: Eine gute Konjunkturnachricht kann für Aktien schlecht sein, wenn sie die Wahrscheinlichkeit höherer Zinsen erhöht. Der Kontext entscheidet über die Marktreaktion.",
+      "sources": [
+        {
+          "title": "US initial jobless claims fall to lowest since 1969 (Bloomberg)",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-23/us-initial-jobless-claims-fall-to-lowest-level-since-1969",
+          "tier": 2
+        },
+        {
+          "title": "CPI Summary June 2026 (BLS)",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Erstanträge auf dem tiefsten Stand seit 1969 treffen auf hartnäckige Inflationssorgen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "cxmt-boersengang-dram",
+      "ressort": "makro",
+      "kicker": "Makro · Halbleiter",
+      "headline": "Chinas größter Speicher-Börsengang steht bevor",
+      "dek": "Der DRAM-Hersteller CXMT will am Montag in Shanghai rund 8,6 Milliarden Dollar aufnehmen. Der Andrang ist groß, das Signal für den Speichermarkt zweischneidig.",
+      "body": [
+        "Der chinesische Speicherchiphersteller CXMT plant für Montag den größten Börsengang eines Chipunternehmens in China. Das Volumen liegt bei rund 8,6 Milliarden Dollar, mit Mehrzuteilung bis knapp zehn Milliarden. Die Bewertung wird auf etwa 85 Milliarden Dollar geschätzt. CXMT ist der viertgrößte Hersteller von Arbeitsspeicher der Welt mit einem globalen Marktanteil von rund 7,7 Prozent hinter Samsung, SK Hynix und Micron.",
+        "Der Andrang ist groß, der institutionelle Teil war nach Berichten stark überzeichnet. Für den Speichermarkt ist das Signal zweischneidig. Kurzfristig bestätigt der Börsengang den laufenden Boom bei Speicherchips, die für KI-Rechenzentren gebraucht werden. Mittelfristig verschafft das frische Kapital CXMT Mittel für den Ausbau der Kapazität, was das Angebot erhöht und in einigen Jahren auf die Preise drücken kann.",
+        "Damit steht der Börsengang für ein wiederkehrendes Muster in zyklischen Industrien. In der Boomphase strömt Kapital in den Ausbau der Kapazität. Genau dieser Ausbau legt den Keim für das nächste Überangebot. Für Anleger in Speicherwerten ist die Frage entscheidend, wie lange die Knappheit anhält, bevor die neue Kapazität den Markt erreicht."
+      ],
+      "mechanik": "Ein Börsengang bringt einem Unternehmen frisches Eigenkapital für Investitionen. In einer zyklischen Branche wie Speicherchips finanziert dieses Kapital neue Fabriken. Steigt die Kapazität der gesamten Branche schneller als die Nachfrage, fallen die Preise, was die Margen aller Hersteller senkt.",
+      "lehre": "Die Lehre: In zyklischen Industrien ist der Kapitalzufluss der Boomphase oft der Auslöser des nächsten Abschwungs. Wer Speicherwerte beurteilt, beobachtet die geplante Kapazität ebenso wie die aktuelle Nachfrage.",
+      "sources": [
+        {
+          "title": "Institutional demand for CXMT 8.6 bn IPO (Yahoo Finance/Reuters)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/institutional-demand-cxmts-8-6-091050988.html",
+          "tier": 2
+        },
+        {
+          "title": "CXMT oversubscribed in mega Shanghai IPO (SCMP)",
+          "url": "https://www.scmp.com/tech/article/3360892/chinese-memory-giant-cxmt-oversubscribed-212-times-mega-shanghai-ipo",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Stapel von Hochleistungs-Speicherchips neben einem Silizium-Wafer vor Börsenmonitoren",
+        "caption": "Chinas größter Speicher-Börsengang steht bevor und könnte die Branche neu sortieren.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Unternehmen, die Öl, Gas und Energie fördern, verarbeiten und transportieren.",
+      "lage": "Der Ölpreissprung auf 97,62 Dollar hob Umsätze und Kurse der Förderer, TotalEnergies stieg 2,7 Prozent.",
+      "richtung": "up",
+      "tagesWert": "Brent +3,77 %, WTI +2,88 % (OilPrice 23.7.)",
+      "istZustand": "Der Sektor steht im Zeichen einer geopolitischen Risikoprämie, die den Ölpreis Richtung 100 Dollar getrieben hat. Die Bewertungen bleiben im historischen Vergleich moderat, weil der Markt den hohen Preis als temporär und nicht als strukturell einstuft. Die Förderer erwirtschaften bei diesen Preisen starke Cashflows und geben viel davon über Dividenden und Aktienrückkäufe zurück. Das zentrale strukturelle Thema der nächsten Quartale ist die Frage, ob sich der Nahostkonflikt entspannt und die Prämie zurückläuft, oder ob eine echte Angebotsstörung folgt. Nach der Kapitalzyklus-Logik hält die Investitionsdisziplin der Branche das Angebot knapp."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Produzenten von Rohstoffen wie Metallen, Chemie und Baustoffen.",
+      "lage": "Uneinheitlich, Kupfer schwächer, Goldminen litten unter dem gefallenen Goldpreis, Chemie unter höheren Energiekosten.",
+      "richtung": "down",
+      "tagesWert": "keine belegten Sektordaten (qualitativ)",
+      "istZustand": "Der Sektor ist tief zyklisch und hängt an der globalen Industrie- und Baukonjunktur. Kupfer bleibt strukturell gefragt, weil Elektrifizierung, Stromnetze und Rechenzentren große Mengen benötigen, doch die aktuelle Dollarstärke und die Sorge vor schwächerem Wachstum drücken den Preis kurzfristig. Chemieunternehmen leiden unter höheren Öl- und Gaskosten, die als Rohstoff und Energie in ihre Produkte eingehen. Goldminen folgen dem Goldpreis mit Hebel, weshalb der Rückgang von rund zwei Prozent sie überproportional trifft. Die Angebot-Nachfrage-Balance bei Kupfer gilt als strukturell knapp."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbau, Rüstung, Transport, Bau und Elektrotechnik.",
+      "lage": "Gemischt, Airlines litten stark unter Treibstoffkosten, Elektro- und Datacenter-Ausrüster bleiben gefragt.",
+      "richtung": "neutral",
+      "tagesWert": "American Airlines -7,4 % (Benzinga 23.7.)",
+      "istZustand": "Der Sektor ist breit gefächert und reagiert derzeit gespalten. Der Ausbau von Rechenzentren treibt die Nachfrage nach Elektrotechnik, Kühlung und Netzausrüstung und schafft einen mehrjährigen Investitionszyklus. Die klassische zyklische Industrie und der Transport spüren dagegen höhere Kapital- und Treibstoffkosten. Der starke US-Arbeitsmarkt signalisiert eine robuste Konjunktur, die die Auftragslage stützt. Die Bewertung liegt im Mittel, wobei die Elektro- und Infrastrukturzulieferer teils hohe Multiplikatoren tragen. Verteidigung profitiert strukturell von höheren staatlichen Budgets und einer angespannten geopolitischen Lage."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter von nicht lebensnotwendigen Gütern wie Autos, Mode und Reisen.",
+      "lage": "Schwach, Tesla als Schwergewicht zog den Sektor mit rund 15 Prozent Kursverlust nach unten.",
+      "richtung": "down",
+      "tagesWert": "Tesla -15 % (Motley Fool 23.7.)",
+      "istZustand": "Der Sektor ist doppelt unter Druck. Höhere Zinsen verteuern Auto- und Konsumkredite und dämpfen die Nachfrage nach teuren, kreditfinanzierten Gütern. Der Anstieg der Energiepreise entzieht den Haushalten Kaufkraft, die zuerst bei nicht zwingend nötigen Ausgaben fehlt. Die Bewertung ist gespreizt, weil einige Schwergewichte wie Tesla hohe Wachstumsphantasien tragen, während klassische Einzelhändler günstig gehandelt werden. Das strukturelle Thema der nächsten Quartale ist die Widerstandskraft des Konsumenten bei anhaltend hohen Zinsen und die Frage, wie stark der Arbeitsmarkt die Kaufkraft stützt."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Hersteller von Gütern des täglichen Bedarfs wie Lebensmitteln und Hygiene.",
+      "lage": "Als defensiver Bereich gefragt in der Rotation, Nestlé fiel jedoch unternehmensspezifisch stark.",
+      "richtung": "neutral",
+      "tagesWert": "Nestlé -7 bis -8 % (Finimize 23.7.)",
+      "istZustand": "Der Sektor gilt als defensiver Anker, weil die Nachfrage nach Lebensmitteln und Hygieneartikeln unabhängig vom Konjunkturzyklus ist. In der aktuellen Rotation aus teurer Technologie fließt Kapital in verlässliche Dividendenzahler. Höhere Anleiherenditen mindern jedoch den relativen Reiz der Dividenden. Die Bewertungen sind nach Jahren als sicherer Hafen eher hoch, was den Spielraum begrenzt. Der Fall von Nestlé zeigt, dass einzelne Konzerne mit hausgemachten Problemen wie schwacher Preissetzungsmacht oder teuren Portfolioumbauten dem defensiven Muster widersprechen können. Kostendruck aus Energie und Verpackung bleibt ein Thema."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharma, Biotech, Medizintechnik und Gesundheitsdienstleister.",
+      "lage": "Relativ stabil, Roche stützte mit einem Umsatzplus von sechs Prozent den Schweizer Markt.",
+      "richtung": "up",
+      "tagesWert": "Roche H1 +6 % Umsatz (Roche IR 23.7.)",
+      "istZustand": "Der Sektor ist defensiv, weil die Nachfrage nach Medikamenten und Behandlungen kaum vom Konjunkturzyklus abhängt. In der Rotation aus Wachstumsaktien zieht er Kapital an. Große, profitable Pharmakonzerne mit starken Cashflows erweisen sich als robust, wie Roche mit bestätigter Jahresprognose zeigt. Forschungsintensive Biotechs ohne laufende Gewinne leiden dagegen unter dem höheren Diskontsatz, weil ihr Wert weit in der Zukunft liegt. Ein strukturelles Thema bleibt die US-Handelspolitik, die mit Zöllen auf Pharmaprodukte droht, sowie der regulatorische Druck auf Arzneimittelpreise. Die Bewertungen sind moderat."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer, Vermögensverwalter und Börsen.",
+      "lage": "Gemischt, steigende Renditen stützen Zinsmargen, die Marktschwäche belastet das Kapitalmarktgeschäft.",
+      "richtung": "neutral",
+      "tagesWert": "BNP Paribas Q2 Gewinn +33 % (RTE 23.7.)",
+      "istZustand": "Der Sektor profitiert im Kern vom Umfeld höherer Zinsen, weil Banken an der Differenz zwischen Kredit- und Einlagenzinsen verdienen und Versicherer höhere Erträge aus der Wiederanlage erzielen. BNP Paribas belegte mit einem starken Handelsergebnis die gute Verfassung der europäischen Banken. Gegenläufig belasten die Marktschwäche und höhere Volatilität das Geschäft der Vermögensverwalter und Investmentbanken. Das zentrale Risiko der nächsten Quartale sind Kreditausfälle, falls höhere Zinsen und Energiepreise die Wirtschaft stärker bremsen. Die Bewertungen der Banken sind im historischen Vergleich niedrig, was den defensiven Charakter erhöht."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Halbleiter, Software, Hardware und IT-Dienstleister.",
+      "lage": "Epizentrum des Ausverkaufs, STMicro stürzte zweistellig, Intel überraschte erst nachbörslich positiv.",
+      "richtung": "down",
+      "tagesWert": "STMicro -15,9 %, Intel +12,4 % nachbörslich (23.7.)",
+      "istZustand": "Der Sektor ist der Motor und zugleich der Brennpunkt des Marktes. Der Investitionsboom für künstliche Intelligenz treibt die Nachfrage nach Rechenzentrumschips, Speicher und Ausrüstung auf hohe Niveaus. Gleichzeitig sind die Bewertungen anspruchsvoll, weshalb der Sektor besonders empfindlich auf steigende Zinsen reagiert, die den Diskontsatz für weit entfernte Gewinne anheben. Die Spreizung innerhalb der Branche ist groß, wie der Gegensatz zwischen dem schwachen Ausblick von STMicro und dem starken Quartal von Intel zeigt. Das strukturelle Thema bleibt die Frage, ob die hohen Investitionen der Hyperscaler die erhofften Renditen bringen."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Telekom, Medien und Internetplattformen.",
+      "lage": "Schwach, Alphabet drückte den Sektor mit rund sieben Prozent Kursverlust wegen hoher Investitionen.",
+      "richtung": "down",
+      "tagesWert": "Alphabet -7 % (CNBC 23.7.)",
+      "istZustand": "Der Sektor teilt sich in zwei Welten. Die großen Internet- und Plattformkonzerne wie Alphabet und Meta sind wachstumsstark, tragen aber hohe Bewertungen und stark steigende Investitionsbudgets für künstliche Intelligenz. Sie reagieren wie Long-Duration-Aktien empfindlich auf steigende Zinsen. Klassische Telekomkonzerne dagegen liefern stabile, kapitalintensive Geschäfte mit hohen Dividenden und gelten als defensiver, leiden jedoch unter ihrer Verschuldung, wenn die Refinanzierung teurer wird. Das strukturelle Thema der Plattformen ist der Nachweis, dass die KI-Investitionen die Werbeeinnahmen und Cloud-Umsätze nachhaltig stützen. Die Bewertungen der Plattformen bleiben hoch."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Strom-, Gas- und Wasserversorger.",
+      "lage": "Unter Druck durch steigende Renditen, gegenläufig gestützt vom Strombedarf der KI-Rechenzentren.",
+      "richtung": "down",
+      "tagesWert": "keine belegten Sektordaten (qualitativ)",
+      "istZustand": "Der Sektor steht in einem Spannungsfeld. Als hoch verschuldeter Bereich mit großen Infrastrukturinvestitionen leiden Versorger unter steigenden Zinsen, die ihre Refinanzierung verteuern und die stabilen Dividenden gegenüber Anleihen unattraktiver machen. Gegenläufig entsteht durch den enormen Strombedarf der KI-Rechenzentren ein strukturelles Nachfragewachstum, das seit Jahrzehnten stagnierende Stromabsätze wieder steigen lässt. Versorger mit direkter Anbindung an Rechenzentren und mit eigenen Erzeugungskapazitäten sind dadurch neu gefragt. Das zentrale Thema der nächsten Quartale ist, ob das Nachfragewachstum den Zinsgegenwind übertrifft. Die Bewertungen sind zweigeteilt."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Immobiliengesellschaften und börsennotierte Immobilienfonds.",
+      "lage": "Belastet durch das 18-Monats-Hoch der Renditen, das die Finanzierungskosten und Bewertungen trifft.",
+      "richtung": "down",
+      "tagesWert": "keine belegten Sektordaten (qualitativ)",
+      "istZustand": "Der Sektor ist der zinssensibelste im Markt, weil Immobilien stark fremdfinanziert sind und ihre Bewertung direkt am Diskontsatz hängt. Das 18-Monats-Hoch der Anleiherenditen verteuert die Refinanzierung auslaufender Kredite und senkt über höhere Diskontsätze die Objektbewertungen. Die Ausschüttungen der Immobilienfonds verlieren gegenüber höher rentierenden Anleihen an Reiz. Eine Ausnahme bilden Rechenzentrums-Immobilienfonds, die vom KI-Ausbau profitieren und strukturell wachsen. Das zentrale Thema der nächsten Quartale sind auslaufende Finanzierungen aus der Niedrigzinsphase, die zu deutlich höheren Zinsen erneuert werden müssen. Gewerbeimmobilien bleiben besonders anfällig."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "Matador Resources",
+      "ticker": "MTDR",
+      "logoKey": "matador",
+      "marketCapEUR": "6,00 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 23.7. (6,83 Mrd. USD), EUR/USD 1,1387 (AV 24.7.)",
+      "marktEinordnung": "Matador fördert Öl und Gas im Delaware-Becken, dem produktivsten Teil des Perm-Beckens in Texas und New Mexico. Dieses Becken ist die kostengünstigste große Ölregion der USA, weshalb Produzenten dort auch bei mittleren Ölpreisen profitabel bleiben. Matador ist ein disziplinierter Betreiber mittlerer Größe mit eigenem Pipelinegeschäft, das die Förderung ergänzt und die Abhängigkeit von Dritten senkt.",
+      "thesis": "Matador ist ein günstig bewerteter Ölproduzent mit Hebel auf den durch die Geopolitik gestützten Ölpreis. Das Forward-Kurs-Gewinn-Verhältnis liegt bei rund 8,4, der Unternehmenswert beträgt nur das etwa Fünffache des operativen Ergebnisses vor Abschreibungen. Von 19 Analysten raten 16 zum Kauf, das durchschnittliche Kursziel von 69 Dollar liegt rund 29 Prozent über dem aktuellen Niveau von etwa 52 Dollar. Bemerkenswert ist, dass die Aktie am 23. Juli trotz des Ölpreissprungs um knapp sechs Prozent fiel, mitgezogen vom breiten Ausverkauf. Genau diese Lücke zwischen steigendem Rohstoffpreis und fallendem Aktienkurs schafft den contrarianen Einstiegspunkt. Das Unternehmen zahlt eine Dividende von rund 2,5 Prozent und hält die Bilanz solide. Die Q2-Zahlen stehen in den kommenden Tagen an und sind der nächste Prüfstein.",
+      "counterarguments": [
+        "Der Ölpreis beruht derzeit auf einer geopolitischen Risikoprämie. Entspannt sich die Lage im Nahen Osten, kann Brent schnell zurücklaufen und die Gewinnbasis von Matador schwächen.",
+        "Als Ölproduzent ist Matador ein Preisnehmer ohne Kontrolle über seinen wichtigsten Umsatztreiber. Die Quartalsgewinne schwanken mit dem Ölpreis, und das Geschäft ist kapitalintensiv.",
+        "Der breite Markt zog die Aktie trotz steigendem Öl nach unten, was auf eine Sorge vor nachlassender Nachfrage bei hohen Zinsen hindeuten kann."
+      ],
+      "catalysts": [
+        "Anstehende Q2-Zahlen mit möglicher Bestätigung von Förderwachstum und Kapitaldisziplin.",
+        "Anhaltend hoher oder weiter steigender Ölpreis bei fortgesetzter Nahostkrise.",
+        "Schließen der Lücke zwischen dem Kursziel der Analysten von 69 Dollar und dem aktuellen Kurs."
+      ]
+    },
+    {
+      "name": "Comstock Resources",
+      "ticker": "CRK",
+      "logoKey": "comstock",
+      "marketCapEUR": "3,32 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 23.7. (3,79 Mrd. USD), EUR/USD 1,1387 (AV 24.7.)",
+      "marktEinordnung": "Comstock fördert Erdgas im Haynesville-Schiefer in Louisiana und Texas, einer Region, die geografisch nah an den Exportterminals für Flüssigerdgas am Golf von Mexiko und an den geplanten Rechenzentren des US-Südens liegt. Erdgas ist der bevorzugte Brennstoff, um den enormen Strombedarf von KI-Rechenzentren als planbare Grundlast zu decken. Comstock kontrolliert große Flächen in einer der wichtigsten Gasregionen und wird mehrheitlich vom Milliardär Jerry Jones gehalten.",
+      "thesis": "Comstock ist eine contrariane Wette auf steigende US-Gaspreise, getragen von zwei Nachfragequellen. Erstens der wachsende Export von Flüssigerdgas, der US-Gas an den Weltmarkt koppelt, dessen europäischer Preis wegen der Geopolitik zuletzt anzog. Zweitens der Strombedarf neuer Rechenzentren, die Erdgas als verlässliche Grundlast nachfragen. Die Aktie notiert bei rund 13,7 Dollar nahe ihrem Jahrestief, nach über 21 Dollar im März. Der Unternehmenswert beträgt nur das rund Vierfache des operativen Ergebnisses vor Abschreibungen. Die sehr hohe Insiderbeteiligung von über 70 Prozent bindet das Management eng an den Aktienkurs. Der niedrige Kurs preist bereits viel Pessimismus über schwache Gaspreise ein, was das Rückschlagpotenzial bei einer Gaspreiserholung begrenzt und den Hebel nach oben groß macht.",
+      "counterarguments": [
+        "Der Gaspreis in den USA ist zuletzt schwach geblieben, weil die heimische Produktion robust ist. Ohne anziehende Preise bleibt die Gewinnbasis dünn, das Forward-Kurs-Gewinn-Verhältnis ist mit über 40 hoch.",
+        "Die Analysten sind überwiegend zurückhaltend, neun raten zum Halten und drei zum Verkauf. Das Kursziel liegt nur knapp über dem aktuellen Kurs.",
+        "Als reiner Gasproduzent trägt Comstock ein hohes Rohstoffpreisrisiko und eine gewisse Verschuldung, die bei niedrigen Preisen belastet."
+      ],
+      "catalysts": [
+        "Anziehende US-Gaspreise durch steigende Exporte von Flüssigerdgas und den Strombedarf der Rechenzentren.",
+        "Konkrete Liefervereinbarungen mit Rechenzentrums- oder Kraftwerksbetreibern.",
+        "Ein kalter Winter oder eine anhaltende geopolitische Prämie auf europäisches Gas."
+      ]
+    },
+    {
+      "name": "Centrus Energy",
+      "ticker": "LEU",
+      "logoKey": "centrus",
+      "marketCapEUR": "3,01 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 23.7. (3,43 Mrd. USD), EUR/USD 1,1387 (AV 24.7.)",
+      "marktEinordnung": "Centrus reichert Uran für Kernbrennstoff an und ist der einzige US-Konzern mit einer Lizenz zur Produktion von hoch angereichertem Uran für die neue Generation kleiner Reaktoren. Der Markt für Urananreicherung war lange von russischen Anbietern dominiert. Nach dem Bruch mit Russland suchen die USA und Europa dringend eigene Kapazitäten, was Centrus in eine Schlüsselposition für die Energiesicherheit des Westens rückt. Der Strombedarf der KI-Rechenzentren belebt zudem den Bau neuer Kernkraftwerke.",
+      "thesis": "Centrus verbindet zwei starke strukturelle Themen, die Energiesicherheit des Westens und den Strombedarf der künstlichen Intelligenz. Als einziger westlicher Anbieter mit der Fähigkeit, den Spezialbrennstoff für fortschrittliche Reaktoren zu liefern, besitzt das Unternehmen einen tiefen Burggraben aus Lizenzen, Technik und staatlicher Förderung. Die Nachfrage nach Kernenergie steigt, weil Rechenzentren rund um die Uhr verlässlichen, kohlenstofffreien Strom brauchen. Die Aktie hat eine extreme Volatilität hinter sich, von einem Jahreshoch bei 464 Dollar auf zuletzt rund 171 Dollar. Elf von sechzehn Analysten raten zum Kauf, das Kursziel von 265 Dollar liegt deutlich über dem aktuellen Niveau. Der Rücksetzer schafft einen Einstieg in eine strukturelle Wachstumsstory, deren Auftragslage sich über staatliche Verträge und Nachfrageverträge der Kernkraftbetreiber verbessert.",
+      "counterarguments": [
+        "Die Aktie ist extrem volatil und fiel von 464 auf rund 171 Dollar. Solche Schwankungen können sich wiederholen und erfordern eine hohe Risikotoleranz.",
+        "Ein großer Teil der Wachstumsstory liegt weit in der Zukunft und hängt an politischen Entscheidungen, staatlicher Förderung und dem tatsächlichen Bau neuer Reaktoren. Verzögerungen sind wahrscheinlich.",
+        "Die Bewertung ist mit einem Kurs-Gewinn-Verhältnis von über 60 hoch, und der Quartalsgewinn ist zuletzt deutlich gefallen."
+      ],
+      "catalysts": [
+        "Neue staatliche Aufträge oder Förderzusagen zum Aufbau westlicher Anreicherungskapazität.",
+        "Fortschritte beim Bau kleiner modularer Reaktoren, die den Spezialbrennstoff nachfragen.",
+        "Konkrete Stromlieferverträge zwischen Kernkraftbetreibern und Rechenzentren."
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "Fed-Zinsentscheid am 28. und 29. Juli",
+      "when": "28./29.7.",
+      "bullishIf": "Halten mit vorsichtigem Ton",
+      "bearishIf": "Zinserhöhung oder klar hawkishe Signale"
+    },
+    {
+      "what": "S&P Global Flash-PMIs für Juli",
+      "when": "24.7.",
+      "bullishIf": "Werte über 50 zeigen Wachstum",
+      "bearishIf": "Einbruch unter 50 signalisiert Schwäche"
+    },
+    {
+      "what": "CXMT-Börsengang in Shanghai",
+      "when": "27.7.",
+      "bullishIf": "Starkes Debüt bestätigt Speicherboom",
+      "bearishIf": "Schwaches Debüt weckt Überangebotssorgen"
+    },
+    {
+      "what": "Ölpreis und Lage im Roten Meer",
+      "when": "laufend",
+      "bullishIf": "Deeskalation lässt die Risikoprämie zurücklaufen",
+      "bearishIf": "Brent über 100 Dollar oder Störung der Straße von Hormus"
+    },
+    {
+      "what": "US-Hyperscaler-Investitionen (Microsoft, Meta, Amazon)",
+      "when": "kommende Tage",
+      "bullishIf": "Hohe Investitionen mit klarer Renditeaussage",
+      "bearishIf": "Bewertungsdruck auf alle Hyperscaler"
+    },
+    {
+      "what": "Yen und BOJ-Sitzung",
+      "when": "30./31.7.",
+      "bullishIf": "Straffung stabilisiert den Yen",
+      "bearishIf": "USD/JPY über 163 verschärft das Carry-Trade-Risiko"
+    },
+    {
+      "what": "Q2-Zahlen der Aktien-Picks (Matador, Comstock, Centrus)",
+      "when": "kommende Tage",
+      "bullishIf": "Bestätigung von Wachstum und Disziplin",
+      "bearishIf": "Enttäuschende Mengen oder Margen"
+    }
+  ],
+  "learningNotes": [
+    "Eine Aktie reagiert auf die Abweichung von der Erwartung, nicht auf die absolute Höhe der Zahlen.",
+    "Steigende Realrenditen werten langlaufende Wachstumsaktien über den höheren Diskontsatz ab.",
+    "Hohe Investitionen können den Kurs belasten, wenn dadurch der freie Cashflow schrumpft.",
+    "Ein Ölpreisanstieg aus einer Risikoprämie ist reversibel und wirkt anders als ein echter Angebotsausfall.",
+    "Gold kann trotz Geopolitik fallen, wenn steigende Realrenditen den Zinsnachteil des Goldes verstärken."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "BWL",
+      "modell": "Barwert und Duration einer Aktie",
+      "erklaerung": "Der Wert einer Aktie ist die Summe aller künftigen Gewinne, die auf heute abgezinst werden. Diese Abzinsung berücksichtigt, dass ein Euro in zehn Jahren heute weniger wert ist als ein Euro heute. Der Abzinsungssatz, der Diskontsatz, hängt eng an den Anleiherenditen. Aktien, deren Gewinne überwiegend weit in der Zukunft liegen, heißen Long-Duration-Aktien. Ihr Wert reagiert besonders stark auf Änderungen des Diskontsatzes, weil ferne Zahlungen bei höherer Abzinsung überproportional an Wert verlieren.",
+      "anwendung": "Der Anstieg der zehnjährigen US-Rendite auf ein 18-Monats-Hoch von rund 4,67 Prozent erhöhte den Diskontsatz und traf Wachstumswerte wie Alphabet und Tesla härter als Value-Aktien, deren Gewinne näher in der Gegenwart liegen."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Freier Cashflow und Kapitalzyklus",
+      "erklaerung": "Der freie Cashflow ist das Geld, das nach allen Investitionen aus dem laufenden Geschäft übrig bleibt. Er ist die Grundlage jeder Bewertung, weil nur dieses Geld an Eigentümer ausgeschüttet oder zum Schuldenabbau genutzt werden kann. Steigen die Investitionen stark, sinkt der freie Cashflow zunächst, selbst wenn Umsatz und Buchgewinn wachsen. In zyklischen Industrien beschreibt die Kapitalzyklus-Theorie, wie hohe Investitionen in der Boomphase später zu Überkapazität und fallenden Preisen führen.",
+      "anwendung": "Tesla verdoppelte die Investitionen und rutschte in einen negativen freien Cashflow von 1,09 Milliarden Dollar, während Alphabet den Investitionsplan auf bis zu 205 Milliarden Dollar anhob. Beide Kurse fielen, weil die schrumpfende Cashflow-Perspektive den Umsatzrekord überlagerte."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Erwartungen und die Effizienzmarkthypothese",
+      "erklaerung": "Nach der Effizienzmarkthypothese verarbeitet der Markt verfügbare Informationen und preist Erwartungen in den Kurs ein. Eine Aktie reagiert deshalb auf die Abweichung von der Erwartung, die bereits im Kurs steckt. Die absolute Höhe einer Zahl allein bewegt den Kurs kaum, weil der Markt sie oft schon erwartet und eingepreist hat. Erst eine Überraschung gegenüber dieser Erwartung bewegt den Kurs spürbar. Bei hoch bewerteten Aktien ist die Erwartung besonders anspruchsvoll, weshalb selbst gute Zahlen zu Kursverlusten führen können.",
+      "anwendung": "STMicroelectronics übertraf im Quartal die Erwartungen und fiel dennoch um rund 15 Prozent, weil der Ausblick für das nächste Quartal knapp unter der Markterwartung lag. Intel dagegen stieg, weil sein Ausblick die Erwartung übertraf."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Angebotsschock und geldpolitisches Dilemma",
+      "erklaerung": "Ein Angebotsschock ist ein Ereignis, das die Produktionskosten einer ganzen Volkswirtschaft plötzlich erhöht, etwa ein Ölpreissprung. Er treibt die Inflation und bremst gleichzeitig das Wachstum, weil Haushalte und Betriebe mehr für Energie zahlen. Für eine Notenbank entsteht daraus ein Zielkonflikt. Erhöht sie die Zinsen gegen die Inflation, verschärft sie die Wachstumsschwäche. Senkt sie die Zinsen zur Stützung, riskiert sie, dass sich die Inflation verfestigt. Dieses Dilemma trägt den Namen Stagflation.",
+      "anwendung": "Die EZB hielt die Zinsen, um den Ölschock abzuwarten, während der US-Terminmarkt sogar eine Zinserhöhung der Fed einpreist. Der starke US-Arbeitsmarkt mit den tiefsten Erstanträgen seit 1969 verschärft den Zielkonflikt zwischen Inflationsbekämpfung und Wachstumsschutz."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Teslas Quartal durch die vier Rechenwerke gedacht",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Der Umsatz stieg auf einen Rekord von 28,2 Milliarden Dollar. Weiter unten schrumpfte die operative Marge auf 1,4 Prozent, weil Preisnachlässe und der Wegfall margenstarker Emissionsgutschriften den Gewinn drückten. Der Umsatz oben in der Rechnung sah stark aus, der Gewinn unten schwach.",
+      "Bilanz: Die stark gestiegenen Investitionen in Fabriken, Rechenzentren und das Robotaxi-Projekt erhöhen die Sachanlagen auf der Aktivseite. Solange die Investitionen aus Reserven bezahlt werden, sinkt gleichzeitig der Kassenbestand. Die Bilanz wächst, doch die liquiden Mittel nehmen ab.",
+      "Cashflow: Hier wird die Belastung sichtbar. Der operative Cashflow reichte nicht aus, um die verdoppelten Investitionen von 5,8 Milliarden Dollar zu decken. Der freie Cashflow drehte auf minus 1,09 Milliarden Dollar. Das Unternehmen gab in der Periode mehr Geld aus, als es einnahm.",
+      "Bewertung: Da der Börsenwert dem heutigen Wert aller künftigen freien Cashflows entspricht, drückt ein negativer freier Cashflow zusammen mit steigenden Zinsen die Bewertung. Der Markt verlangt einen Nachweis, dass die hohen Investitionen später hohe Erträge bringen, bevor er sie belohnt."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler ist, nur auf den Umsatz oben in der Gewinnrechnung zu schauen. Ein Umsatzrekord kann mit sinkender Marge und negativem freiem Cashflow einhergehen, und genau diese unteren Zeilen entscheiden über den Wert."
+  },
+  "glossar": [
+    {
+      "begriff": "Capex (Investitionsausgaben)",
+      "erklaerung": "Ausgaben für langfristige Anlagen wie Fabriken, Server und Rechenzentren. Sie verlassen das Unternehmen sofort als Geld und senken den freien Cashflow."
+    },
+    {
+      "begriff": "Freier Cashflow",
+      "erklaerung": "Das Geld, das nach allen Investitionen aus dem laufenden Geschäft übrig bleibt und an Eigentümer ausgeschüttet werden kann."
+    },
+    {
+      "begriff": "Diskontsatz",
+      "erklaerung": "Der Zinssatz, mit dem künftige Gewinne auf ihren heutigen Wert abgezinst werden. Er hängt eng an den Anleiherenditen."
+    },
+    {
+      "begriff": "Long-Duration-Aktie",
+      "erklaerung": "Eine Aktie, deren Gewinne überwiegend weit in der Zukunft liegen. Sie reagiert besonders stark auf Änderungen des Diskontsatzes."
+    },
+    {
+      "begriff": "Risikoprämie",
+      "erklaerung": "Ein Preisaufschlag für die Wahrscheinlichkeit einer künftigen Störung. Bei Öl kann sie schnell zurücklaufen, wenn sich die Lage entspannt."
+    },
+    {
+      "begriff": "VIX (Volatilitätsindex)",
+      "erklaerung": "Das Angstbarometer der Wall Street. Er misst die erwartete Schwankungsbreite des US-Aktienmarkts."
+    },
+    {
+      "begriff": "Forward-KGV",
+      "erklaerung": "Das Kurs-Gewinn-Verhältnis auf Basis der erwarteten Gewinne der nächsten zwölf Monate."
+    },
+    {
+      "begriff": "EV/EBITDA",
+      "erklaerung": "Der Unternehmenswert im Verhältnis zum operativen Ergebnis vor Zinsen, Steuern und Abschreibungen. Ein Maß für die Bewertung unabhängig von der Finanzierung."
+    },
+    {
+      "begriff": "Zinsmarge",
+      "erklaerung": "Die Differenz zwischen den Zinsen, die eine Bank für Kredite verlangt, und den Zinsen, die sie auf Einlagen zahlt."
+    },
+    {
+      "begriff": "Angebotsschock",
+      "erklaerung": "Ein Ereignis, das die Produktionskosten einer Volkswirtschaft plötzlich erhöht, etwa ein Ölpreissprung. Er treibt die Inflation und bremst das Wachstum."
+    },
+    {
+      "begriff": "HALEU (hoch angereichertes Uran)",
+      "erklaerung": "Ein spezieller Kernbrennstoff für die neue Generation kleiner modularer Reaktoren, den im Westen bislang nur wenige Anbieter herstellen können."
+    },
+    {
+      "begriff": "Chokepoint (Engpass)",
+      "erklaerung": "Eine geografische Enge im Welthandel wie eine Meerenge, deren Störung große Mengen an Waren oder Öl betrifft."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "US-Indexschlüsse 23.7. (Motley Fool, CNBC): S&P 500 7.408,30 (-1,21 %), Nasdaq 25.137,69 (-2,15 %), Dow 51.711,65 (-0,97 %).",
+      "Tesla rund -15 %, Alphabet rund -7 % am 23.7. (Motley Fool, CNBC).",
+      "STMicro Q2 Umsatz 3,49 Mrd. USD (+26 %), Q3-Ausblick 3,70 Mrd. USD, Aktie -14 bis -16 % (GlobeNewswire Tier 1, Marketscreener).",
+      "Intel Q2 Umsatz 16,1 Mrd. USD (+25 %), EPS 0,42 USD, +12,4 % nachbörslich (CNBC, TradingKey).",
+      "EZB hält Zinsen, Einlagenzins 2,25 %, MRO 2,40 % (EZB-Primärquelle Tier 1).",
+      "Brent 97,62 USD (+3,77 %), WTI 89,33 USD (+2,88 %) (OilPrice); Silber 58,67 (-1,26 %) (Fortune).",
+      "Jobless Claims 187k, tiefster Stand seit 1969 (Bloomberg, FXStreet); CPI 3,5 % (BLS Tier 1).",
+      "Kanada-Zoll 50 % wirksam 19.8. (White House Tier 1); EU-Rahmen 15 % (Baker Botts).",
+      "Market-Cap-Gate: MTDR 6,83 Mrd. USD = 6,00 Mrd. €, CRK 3,79 = 3,32 Mrd. €, LEU 3,43 = 3,01 Mrd. € (AV COMPANY_OVERVIEW 23.7., EUR/USD 1,1387).",
+      "Fed-Sitzung 28./29.7. gemäß FOMC-Kalender; Terminmarkt rund ein Drittel Hike-Wahrscheinlichkeit (Forbes)."
+    ],
+    "uncertain": [
+      "Goldpreis: Rückgang bestätigt, exakter Wert schwankt zwischen 4.049 und 4.090 USD je Quelle; hier ~4.083 USD (-1,9 %) als Bandbreite geführt.",
+      "STOXX Europe 600 Schluss 643,56 (-0,5 %) nur aus einer Quelle, weicht von DAX/CAC (-1,6 %) ab; als unsicher markiert.",
+      "USD/JPY 162,40 belegt (Trading Economics 17.7.), Marke 163 nicht unabhängig für 24.7. bestätigt.",
+      "Nestlé-Tagesverlust -7 bis -8 % und Bezeichnung als stärkster seit rund zwei Jahrzehnten aus Sekundärquellen.",
+      "Alphabet-Nettogewinn durch Buchgewinne verzerrt; hier bewusst nicht als operative Kennzahl verwendet."
+    ],
+    "gaps": [
+      "Asiatische Schlusskurse 24.7. (Nikkei, Hang Seng, Shanghai, TAIEX) zu Redaktionsschluss teils nur als Vortagesstand verfügbar.",
+      "Exakte Kursreaktionen von T-Mobile, Union Pacific, Dow Inc, ServiceNow nicht durchgängig beziffert.",
+      "Sektor-ETF-Tageswerte für den Branchen-Monitor teils nicht belegt, istZustand daher qualitativ.",
+      "2-Jahres-US-Rendite für exakt den 23.7. wegen Veröffentlichungslag der Fed H.15 nicht bestätigt (4,31 % Stand 22.7.)."
+    ]
+  }
+}

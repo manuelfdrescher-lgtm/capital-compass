@@ -734,5 +734,52 @@
     "file": null,
     "name": "Ero Copper Corp",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "intel": {
+    "file": "intel.svg",
+    "name": "Intel",
+    "source": "https://commons.wikimedia.org/wiki/File:Intel_logo_(1968-2006).svg",
+    "license": "Public domain",
+    "artist": "The original uploader was KUsam at English Wikipedia., 7 July 2006 (original upload date)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "stmicro": {
+    "file": "stmicro.png",
+    "name": "STMicroelectronics",
+    "source": "https://commons.wikimedia.org/wiki/File:STMicroelectronics.png",
+    "license": "CC0",
+    "artist": "ST",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "americanairlines": {
+    "file": "americanairlines.svg",
+    "name": "American Airlines",
+    "source": "https://commons.wikimedia.org/wiki/File:American_Airlines_wordmark_(2013).svg",
+    "license": "Public domain",
+    "artist": "American Airlines",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nestle": {
+    "file": "nestle.svg",
+    "name": "Nestlé S.A.",
+    "source": "https://commons.wikimedia.org/wiki/File:Nestl%C3%A9_textlogo.svg",
+    "license": "Public domain",
+    "artist": "Société des Produits Nestlé S.A.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "matador": {
+    "file": null,
+    "name": "Matador Resources",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "comstock": {
+    "file": null,
+    "name": "Comstock Resources",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "centrus": {
+    "file": null,
+    "name": "Centrus Energy",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
