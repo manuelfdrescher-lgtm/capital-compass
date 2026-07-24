@@ -62,6 +62,41 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-16-morning/",
       "headline": "Der Speicher bricht ein, während die KI-Rechenfabrik ihren Härtetest hat"
+    },
+    {
+      "number": 10,
+      "date": "2026-07-17",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-17-morning/",
+      "headline": "TSMC bricht jeden Rekord, und die Chip-Aktien fallen trotzdem"
+    },
+    {
+      "number": 11,
+      "date": "2026-07-21",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-21-morning/",
+      "headline": "Ein billiges KI-Modell aus China erschüttert die Chip-Börsen"
+    },
+    {
+      "number": 12,
+      "date": "2026-07-22",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-22-morning/",
+      "headline": "Die Chips drehen zurück, und die Börsen atmen auf"
+    },
+    {
+      "number": 13,
+      "date": "2026-07-23",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-23-morning/",
+      "headline": "Alphabet und Tesla fallen nach Rekordzahlen, waehrend Asiens Chipwerte steigen"
+    },
+    {
+      "number": 14,
+      "date": "2026-07-24",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-24-morning/",
+      "headline": "Vier Schläge an einem Tag drücken die Wall Street"
     }
   ],
   "recentStockPicks": [
@@ -199,7 +234,52 @@
       "slug": "2026-07-16-morning",
       "name": "SPX Technologies, Inc. (SPXC)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-07-17-morning",
+      "name": "SentinelOne, Inc. (S)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-17-morning",
+      "name": "TransMedics Group, Inc. (TMDX)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-17-morning",
+      "name": "Kinsale Capital Group, Inc. (KNSL)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-21-morning",
+      "name": "Establishment Labs Holdings Inc. (ESTA)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-21-morning",
+      "name": "Palomar Holdings, Inc. (PLMR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-21-morning",
+      "name": "Klaviyo, Inc. (KVYO)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-22-morning",
+      "name": "B2Gold Corp. (BTG)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-22-morning",
+      "name": "Ormat Technologies, Inc. (ORA)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-22-morning",
+      "name": "Merit Medical Systems, Inc. (MMSI)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-07-16T13:26:03.128Z"
+  "lastUpdated": "2026-07-24T23:08:01.918Z"
 }
