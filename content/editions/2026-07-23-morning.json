@@ -1,0 +1,1525 @@
+{
+  "edition": {
+    "number": 13,
+    "date": "2026-07-23",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "Redaktionsschluss Donnerstag, 23. Juli 2026, ca. 06:00 Uhr Berlin. US-Schluss 22.7. inkl. nachboerslicher Earnings von Alphabet und Tesla, Asien-Handel 23.7., Europa-Schluss 22.7., Tagesvorschau EZB und europaeische Earnings 23.7.",
+    "generatedAt": "2026-07-23T04:15:00Z"
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.498,96",
+        "delta": "+0,1 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss 22.7."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "25.690,90",
+        "delta": "-0,6 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss 22.7."
+      },
+      {
+        "label": "DAX",
+        "value": "25.155,41",
+        "delta": "+0,58 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Xetra-Schluss 22.7."
+      },
+      {
+        "label": "Kospi",
+        "value": "7.050,45",
+        "delta": "+3,72 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss 23.7."
+      },
+      {
+        "label": "Nikkei 225",
+        "value": "66.500",
+        "delta": "+0,5 %",
+        "direction": "up",
+        "approx": true,
+        "note": "23.7., Wert unsicher"
+      },
+      {
+        "label": "VIX",
+        "value": "17,1",
+        "delta": "seitwaerts",
+        "direction": "flat",
+        "approx": true,
+        "note": "Angstbarometer, 22.7. approx."
+      },
+      {
+        "label": "Oel (Brent)",
+        "value": "95,67 USD",
+        "delta": "+1,70 %",
+        "direction": "up",
+        "approx": false,
+        "note": "23.7."
+      },
+      {
+        "label": "Gold",
+        "value": "4.117 USD",
+        "delta": "+1,55 %",
+        "direction": "up",
+        "approx": false,
+        "note": "22.7., nahe Rekord"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,63 %",
+        "delta": "+3 Bp.",
+        "direction": "up",
+        "approx": false,
+        "note": "22.7."
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,1435",
+        "delta": "+0,2 %",
+        "direction": "flat",
+        "approx": false,
+        "note": "23.7."
+      },
+      {
+        "label": "USD/JPY",
+        "value": "163,24",
+        "delta": "+0,3 %",
+        "direction": "up",
+        "approx": false,
+        "note": "40-Jahres-Tief, 22.7."
+      },
+      {
+        "label": "EZB-Einlagenzins",
+        "value": "2,25 %",
+        "delta": "Entscheid heute 14:15",
+        "direction": "flat",
+        "approx": false,
+        "note": "seit 17.6.2026"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "ki-capex-test-alphabet-tesla",
+      "ressort": "titelseite",
+      "kicker": "Titelthema · Technologie & KI-Investitionen",
+      "headline": "Alphabet und Tesla fallen nach Rekordzahlen, waehrend Asiens Chipwerte steigen",
+      "dek": "Der lange erwartete Test der KI-Ausgaben ist da. Google hebt sein Investitionsbudget auf bis zu 205 Milliarden Dollar an. Die Aktie der Ausgeber faellt, die Zulieferer in Asien gewinnen.",
+      "subject": "Q2-Zahlen von Alphabet und Tesla, Reaktion der asiatischen Halbleiterwerte",
+      "body": [
+        "Am Mittwochabend nach Handelsschluss in den USA berichteten mit Alphabet und Tesla zwei der wichtigsten Technologiekonzerne ihre Zahlen fuer das zweite Quartal 2026. Beide uebertrafen beim Umsatz die Erwartungen. Beide Aktien fielen nachboerslich, Alphabet um rund viereinhalb bis fuenf Prozent, Tesla um etwa drei bis fuenf Prozent. Ausschlaggebend war eine andere Frage, naemlich was diese Konzerne fuer ihr Wachstum ausgeben muessen und was am Ende als freier Cashflow uebrig bleibt. Die Umsaetze allein trugen die Kurse an diesem Tag nicht.",
+        "Alphabet steigerte den Umsatz um 24 Prozent auf 119,8 Milliarden Dollar. Die Cloud-Sparte wuchs um 82 Prozent auf 24,8 Milliarden Dollar, ein starker Beleg fuer die KI-Nachfrage. Zugleich hob der Konzern sein geplantes Investitionsbudget fuer das Gesamtjahr erneut an, auf bis zu 205 Milliarden Dollar, und signalisierte fuer 2027 noch hoehere Ausgaben. Genau diese Zahl bewegte den Markt. Der Konzern gibt immer mehr aus, ohne eine konkrete Zeitachse zu nennen, ab wann sich diese Investitionen in Rendite uebersetzen.",
+        "Die eigentlich lehrreiche Bewegung fand am Donnerstag in Asien statt. Dort stiegen dieselben Nachrichten anders ins Gewicht. Der koreanische Kospi legte um 3,72 Prozent zu, SK Hynix gewann rund fuenf Prozent, Samsung Electronics 3,65 Prozent. Fuer die Chip- und Speicherzulieferer ist Googles Ausgabenerhoehung ein direktes Nachfragesignal. Wer die Schaufeln im Goldrausch verkauft, profitiert von jedem zusaetzlich investierten Dollar. Wer den Goldrausch finanziert, traegt zunaechst die Last.",
+        "Diese Asymmetrie ist die zentrale Lektion des Tages. Eine einzige Information kann zwei Gruppen von Unternehmen in entgegengesetzte Richtungen bewegen. Fuer die Zulieferer zaehlt die Menge der Bestellungen. Fuer die Plattformkonzerne zaehlt, ob die Investitionen den freien Cashflow so stark belasten, dass die Bewertung leidet."
+      ],
+      "mechanik": "Der Aktienkurs eines Unternehmens spiegelt Erwartungen. Wenn eine Firma gute Zahlen liefert, die aber bereits eingepreist waren, kann die Aktie trotzdem fallen. Bei Alphabet lag die positive Ueberraschung im Umsatz, die negative in den Investitionen. Hoehere Investitionen mindern den freien Cashflow, also das Geld, das nach allen Ausgaben uebrig bleibt. Da sich der Wert einer Aktie langfristig aus diesem freien Cashflow speist, kann die Aussicht auf jahrelang hohe Ausgaben die Bewertung druecken, selbst wenn der Umsatz stark waechst.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum dieselbe Nachricht Gewinner und Verlierer erzeugt",
+        "absaetze": [
+          "In einer Wertschoepfungskette hat jede Stufe ein eigenes Interesse. Die Hyperscaler, also die grossen Cloud- und Plattformkonzerne wie Alphabet, Microsoft, Amazon und Meta, kaufen Rechenleistung ein. Ihre Zulieferer sind Chiphersteller, Speicherproduzenten, Ausruester, Kuehl- und Stromtechnikfirmen. Wenn ein Hyperscaler mehr investiert, steigen die Bestellungen bei den Zulieferern. Deren erwartete Umsaetze und Gewinne wachsen, ihre Aktien steigen.",
+          "Fuer den ausgebenden Konzern selbst ist die Rechnung offener. Sein Wert haengt davon ab, ob die Milliardeninvestitionen kuenftig genug zusaetzlichen Gewinn und Cashflow erzeugen, um die Kapitalkosten zu schlagen. Solange diese Rendite unbewiesen bleibt, bewertet der Markt hohe Ausgaben als Risiko. Deshalb koennen die Zulieferer feiern, waehrend die Aktie des Auftraggebers faellt. Beobachten Sie in den kommenden Tagen die Zahlen von Microsoft, Amazon und Meta, um zu sehen, ob dieses Muster sich bestaetigt."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren verbrauchen enorme Mengen Strom und Erdgas. Je hoeher die Capex-Zusagen der Hyperscaler ausfallen, desto groesser wird die kuenftige Nachfrage nach Grundlaststrom und Gas.",
+          "teilbranchen": "Gaskraftwerke, LNG, Stromerzeuger"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der Bau von Rechenzentren und Stromnetzen benoetigt viel Kupfer, Aluminium und Stahl. Steigende Investitionsbudgets erhoehen die Rohstoffnachfrage mittelfristig.",
+          "teilbranchen": "Kupfer, Industriemetalle"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Kuehlung, Schaltanlagen, Transformatoren und Bauleistung fuer Rechenzentren sind Industrieprodukte. Die physische Seite des KI-Ausbaus faellt direkt bei Industriezulieferern an.",
+          "teilbranchen": "Elektrotechnik, Kuehltechnik, Anlagenbau"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die KI-Capex-Debatte beruehrt Konsumgueter kaum direkt. Tesla ist hier die Ausnahme, weil das Unternehmen als Autohersteller gefuehrt wird und sein Investitionsprofil unter Druck steht.",
+          "teilbranchen": "Automobil (Tesla)"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Nahrungsmittel und Haushaltsgueter haengen nicht am Investitionszyklus der Technologiekonzerne. Der Einfluss laeuft allenfalls ueber die allgemeine Marktstimmung.",
+          "teilbranchen": "keine wesentliche Betroffenheit"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Pharma und Medizintechnik sind vom KI-Infrastrukturausbau nur mittelbar betroffen. KI-Anwendungen in Forschung und Diagnostik sind ein langsamerer, sekundaerer Kanal.",
+          "teilbranchen": "Digital Health (langfristig)"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken finanzieren einen Teil des Rechenzentrumsbooms und profitieren von Kreditnachfrage. Zugleich steigt das Klumpenrisiko, falls die Renditen der KI-Investitionen enttaeuschen.",
+          "teilbranchen": "Projektfinanzierung, Kreditgeber"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Chip- und Speicherzulieferer gewinnen, weil hoehere Capex-Budgets direkte Bestellungen bedeuten. Die ausgebenden Plattformkonzerne selbst geraten unter Druck, weil der freie Cashflow schrumpft.",
+          "teilbranchen": "Halbleiter, Speicher, Cloud-Plattformen"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Alphabet wird als Kommunikationswert gefuehrt. Die erneute Anhebung der Investitionen belastete die Aktie nachboerslich, weil der Markt die Renditefrage in den Vordergrund rueckte.",
+          "teilbranchen": "Internet-Plattformen, Werbung"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren brauchen verlaessliche Grundlast. Stromversorger und Betreiber langfristiger Liefervertraege gehoeren zu den strukturellen Profiteuren des wachsenden Energiebedarfs.",
+          "teilbranchen": "Stromversorger, unabhaengige Erzeuger"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren sind Immobilien. Spezialisierte Data-Center-Vermieter profitieren von steigenden Ausbaubudgets, tragen aber hohe Kapitalintensitaet und Zinslast.",
+          "teilbranchen": "Rechenzentrums-REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+5,0 %",
+          "warum": "Speicherzulieferer profitiert direkt von Googles hoeherer KI-Investition (Handel 23.7.)."
+        },
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+3,65 %",
+          "warum": "Chip- und Speicherhersteller als Nutzniesser des Capex-Signals (Handel 23.7.)."
+        },
+        {
+          "firma": "Alphabet",
+          "logoKey": "alphabet",
+          "bewegung": "ca. -4,5 %",
+          "warum": "Umsatz-Beat, aber Investitionsbudget auf bis zu 205 Mrd. $ angehoben (nachboerslich 22.7.)."
+        },
+        {
+          "firma": "Tesla",
+          "logoKey": "tesla",
+          "bewegung": "ca. -4,0 %",
+          "warum": "Rekordumsatz, aber Gewinn-Miss und negativer freier Cashflow (nachboerslich 22.7.)."
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Dieselbe Nachricht, entgegengesetzte Wirkung",
+          "subtitle": "Kursreaktion auf Googles Capex-Erhoehung",
+          "unit": " %",
+          "source": "Yahoo Finance, TradingKey (Alphabet/Tesla nachboerslich 22.7.); TradingKey, Sunday Guardian (Asien-Handel 23.7.)",
+          "data": [
+            [
+              "SK Hynix",
+              5
+            ],
+            [
+              "Kospi",
+              3.72
+            ],
+            [
+              "Samsung",
+              3.65
+            ],
+            [
+              "Tesla",
+              -4
+            ],
+            [
+              "Alphabet",
+              -4.5
+            ]
+          ]
+        }
+      ],
+      "lehre": "Die Lehre: Kursbewegungen entstehen aus der Abweichung zu den Erwartungen und aus der Position in der Wertschoepfungskette, nicht aus der absoluten Guete einer Zahl.",
+      "sources": [
+        {
+          "title": "Alphabet Q2 2026 Earnings Release",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+          "tier": 1
+        },
+        {
+          "title": "Bloomberg: Google boosts 2026 spending to as much as $205 billion",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-22/google-boosts-2026-spending-estimate-to-as-much-as-205-billion",
+          "tier": 2
+        },
+        {
+          "title": "Sunday Guardian: Kospi surges 3.72% as semiconductor stocks rebound",
+          "url": "https://sundayguardianlive.com/business/korea-stock-market-krx-today-23-july-kospi-surges-372-as-semiconductor-stocks-rebound-samsung-sk-hynix-lead-check-market-performance-top-gainers-losers-what-investors-should-watch-244016/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Rekordzahlen von zwei KI-Schwergewichten, und die Anleger sind trotzdem nicht zufrieden.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "asien-chiprally-tsmc-preise",
+      "ressort": "news",
+      "kicker": "Maerkte · Halbleiter",
+      "headline": "Asiens Chipwerte setzen ihre Erholung fort und lehnen sich an hoehere Preise von TSMC an",
+      "dek": "Der Kospi steigt den dritten Handelstag in Folge. Neben Googles Investitionssignal treiben berichtete Preiserhoehungen des Auftragsfertigers TSMC fuer 2027 die Fantasie.",
+      "body": [
+        "Die asiatischen Halbleiterwerte setzten am Donnerstag ihre Erholung fort. Nach der scharfen Wende vom Montag, als der Kospi um 4,7 Prozent gestiegen war, legte der koreanische Leitindex erneut um 3,72 Prozent zu. SK Hynix gewann rund fuenf Prozent, Samsung Electronics 3,65 Prozent. In Japan fiel das Plus mit gut einem halben Prozent im Nikkei deutlich geringer aus, weil dort nach der starken Rally vom Montag Gewinnmitnahmen einsetzten.",
+        "Zwei Treiber wirken zusammen. Erstens das Investitionssignal von Alphabet, das hoehere Ausgaben fuer KI-Infrastruktur verspricht. Zweitens Berichte, wonach der weltgroesste Auftragsfertiger TSMC seine Preise fuer fortschrittliche Fertigungsstufen im Jahr 2027 um bis zu zehn Prozent anheben will, mit Aufschlaegen fuer KI- und Hochleistungschips. Hoehere Preise eines derart dominanten Zulieferers deuten auf knappe Kapazitaet hin.",
+        "Zugleich mehren sich Warnsignale. Bereits Anfang Juli meldete die Finanzagentur Bloomberg, dass Insider und Unternehmen die Rally nutzen, um eigene Aktien zu verkaufen und Kapital aufzunehmen. Solche Platzierungen sind ein Hinweis darauf, dass Beteiligte die Kurse fuer hoch halten."
+      ],
+      "mechanik": "Wenn ein marktbeherrschender Zulieferer wie TSMC seine Preise anheben kann, zeigt das Preissetzungsmacht. Diese entsteht, wenn die Nachfrage das Angebot uebersteigt und Kunden kaum ausweichen koennen. Fuer TSMC bedeutet das hoehere Margen. Fuer die Kunden wie Nvidia, Apple und AMD bedeutet es steigende Kosten, die sie entweder selbst tragen oder an ihre Abnehmer weitergeben.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+5,0 %",
+          "warum": "Hohe Nachfrage nach Hochleistungsspeicher fuer KI-Server (Handel 23.7.)."
+        },
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+3,65 %",
+          "warum": "Speicher- und Fertigungsgeschaeft profitiert vom Zyklus (Handel 23.7.)."
+        },
+        {
+          "firma": "SoftBank Group",
+          "logoKey": "softbank",
+          "bewegung": "+1,6 %",
+          "warum": "Technologie-Beteiligungsholding im Sog der Chip-Erholung (Handel 23.7.)."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TradingKey: Japan, South Korea stocks open higher, Kospi",
+          "url": "https://www.tradingkey.com/analysis/stocks/more/262048268-japan-south-korea-stocks-open-higher-kospi-tradingkey",
+          "tier": 2
+        },
+        {
+          "title": "TrendForce: TSMC reportedly plans up to 10% price hikes in 2027",
+          "url": "https://www.trendforce.com/news/2026/07/22/news-tsmc-reportedly-plans-up-to-10-price-hikes-in-2027-with-extra-hpc-premiums-apple-nvidia-in-focus/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Asiens Chipwerte lehnen sich an höhere Preise von TSMC, die Erholung bekommt einen zweiten Anlauf.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "oel-hard-asset-praemie",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Risiko",
+      "headline": "Oel steigt in Richtung 96 Dollar, Gold und Silber nahe ihren Rekorden",
+      "dek": "Eine neue Blockadedrohung im Roten Meer und anhaltende Spannungen mit dem Iran treiben eine Krisenpraemie durch die Rohstoffmaerkte. Kupfer bleibt zurueck.",
+      "body": [
+        "Die Rohstoffpreise trugen am Donnerstag erneut eine Krisenpraemie. Die Nordseesorte Brent stieg um 1,70 Prozent auf 95,67 Dollar je Barrel, die US-Sorte WTI um 1,49 Prozent auf 88,12 Dollar. Gold notierte bei 4.117 Dollar je Unze nahe seinem Rekord, Silber bewegte sich mit rund 59 Dollar ebenfalls in der Naehe historischer Hoechststaende. Der europaeische Erdgaspreis TTF hielt sich nahe einem Viermonatshoch.",
+        "Ausloeser ist eine Verdichtung geopolitischer Risiken. Die jemenitischen Huthi hatten am 20. Juli eine Seeblockade gegen Saudi-Arabien erklaert. Marktberichte sprechen von einem Rueckgang der Transite durch die Strasse von Hormus um mehr als die Haelfte. Gleichzeitig signalisierte Teheran Gespraechsbereitschaft, was die anfaenglichen Ausschlaege daempfte.",
+        "Aufschlussreich ist, was nicht mitzog. Kupfer gab um 0,84 Prozent nach. Ein breiter Konjunkturoptimismus wuerde auch das Industriemetall Kupfer heben. Dass Gold und Silber steigen, Kupfer aber faellt, deutet darauf hin, dass hier Angst und nicht Wachstumshoffnung am Werk ist."
+      ],
+      "mechanik": "Rohstoffpreise enthalten eine Risikopraemie. Wenn die Wahrscheinlichkeit einer Angebotsstoerung steigt, etwa durch eine Blockade einer wichtigen Seestrasse, zahlen Kaeufer einen Aufschlag, um sich Versorgung zu sichern. Diese Praemie kann wieder verschwinden, sobald die Lage sich entspannt. Fuer Anleger ist entscheidend, ob eine Preisbewegung fundamentale Knappheit widerspiegelt oder nur eine voruebergehende Angstpraemie.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Was eine Krisenpraemie von echter Knappheit unterscheidet",
+        "absaetze": [
+          "Eine Risikopraemie ist ein Preisaufschlag fuer die Moeglichkeit einer kuenftigen Stoerung, nicht fuer eine bereits eingetretene Verknappung. Sie laesst sich daran erkennen, dass Preise auf Schlagzeilen reagieren und wieder fallen, sobald die Bedrohung nachlaesst. Echte Knappheit dagegen zeigt sich in physischen Kennzahlen wie sinkenden Lagerbestaenden, steigenden Frachtraten und einer Terminkurve, in der naher Liefertermin teurer ist als ferner.",
+          "Der gleichlaufende Anstieg von Oel, Gold und Silber bei gleichzeitig schwaecherem Kupfer ist das typische Muster einer Krisenpraemie. Anleger kaufen Schutzwerte, meiden aber konjunktursensible Industriemetalle. Fuer die Aktienmaerkte ist das ein Warnsignal, weil es auf steigende Inflations- und Geopolitikangst hindeutet. Ein bullisches Signal fuer Aktien waere eine fallende Oelpraemie bei stabiler Nachfrage."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Ein hoeherer Oelpreis hebt die Erloese der Foerderunternehmen unmittelbar an, weil ein grosser Teil der Preissteigerung auf weitgehend fixe Foerderkosten trifft.",
+          "teilbranchen": "Explorer, integrierte Oelkonzerne, Tanker"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Gold und Silber profitieren von der Krisenpraemie, weil Anleger Schutz suchen. Kupfer gab hingegen leicht nach, was zeigt, dass die Bewegung Angst und nicht breite Konjunkturhoffnung widerspiegelt.",
+          "teilbranchen": "Edelmetalle steigen, Industriemetalle schwaecher"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Hoehere Energie- und Transportkosten belasten die Margen der Industrie. Besonders energieintensive Fertigung und Logistik spueren den Kostenschub.",
+          "teilbranchen": "Transport, Maschinenbau, Chemienahe Fertigung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Steigende Spritpreise wirken wie eine Steuer auf die Haushalte und mindern die Kaufkraft fuer groessere Anschaffungen. Airlines tragen zusaetzlich hoehere Kerosinkosten.",
+          "teilbranchen": "Airlines, Handel, Freizeit"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Hersteller verpackter Lebensmittel spueren hoehere Energie- und Frachtkosten. Ihre Preissetzungsmacht federt einen Teil ab, was den Sektor defensiver macht.",
+          "teilbranchen": "Verpackte Lebensmittel, Getraenke"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Pharma und Medizintechnik sind wenig energieintensiv und in der Nachfrage kaum konjunkturabhaengig. Der Oelpreis wirkt hier nur ueber Nebenkosten.",
+          "teilbranchen": "geringe direkte Betroffenheit"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Steigende Energiepreise heben die Inflationserwartungen und stuetzen hoehere Zinsen, was die Zinsmargen der Banken beguenstigt. Zugleich waechst das Rezessionsrisiko.",
+          "teilbranchen": "Banken, Versicherer"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Hoehere Oelpreise stuetzen hoehere Zinsen. Steigende Diskontsaetze belasten hoch bewertete Wachstumswerte mit weit in der Zukunft liegenden Gewinnen besonders stark.",
+          "teilbranchen": "Software, Halbleiter mit hoher Bewertung"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Telekommunikation und Internetplattformen verbrauchen wenig Oel. Der Einfluss laeuft nur ueber die allgemeine Zins- und Stimmungslage.",
+          "teilbranchen": "Telekom, Medien"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Gasgebundene Versorger geben hoehere Brennstoffkosten teils weiter, tragen aber ein Margenrisiko, wenn Regulierung die Weitergabe begrenzt. Der hohe europaeische Gaspreis verschaerft dies.",
+          "teilbranchen": "Gasversorger, Erzeuger"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Hoehere Energiepreise stuetzen hoehere Zinsen und verteuern die Finanzierung. Betriebskosten der Gebaeude steigen zusaetzlich.",
+          "teilbranchen": "Gewerbeimmobilien, REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Hecla Mining",
+          "logoKey": "hecla",
+          "bewegung": "Silber nahe Rekord",
+          "warum": "Groesster US-Silberproduzent mit hohem operativem Hebel auf den Silberpreis."
+        },
+        {
+          "firma": "TotalEnergies",
+          "logoKey": "totalenergies",
+          "bewegung": "Oel +1,7 %",
+          "warum": "Integrierter Oelkonzern profitiert von der hoeheren Brent-Notierung."
+        },
+        {
+          "firma": "Lufthansa",
+          "logoKey": "lufthansa",
+          "bewegung": "Kerosin teurer",
+          "warum": "Airlines tragen den Oelpreis direkt als Kostenblock."
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Hard Assets steigen, Kupfer bleibt zurueck",
+          "subtitle": "Tagesveraenderung ausgewaehlter Rohstoffe",
+          "unit": " %",
+          "source": "TradingEconomics (Brent, WTI, Kupfer); Fortune (Gold), Stand 22./23.7.2026",
+          "data": [
+            [
+              "Brent",
+              1.7
+            ],
+            [
+              "Gold",
+              1.55
+            ],
+            [
+              "WTI",
+              1.49
+            ],
+            [
+              "Kupfer",
+              -0.84
+            ]
+          ]
+        },
+        {
+          "type": "line",
+          "title": "Hecla Mining, groesster US-Silberproduzent",
+          "subtitle": "Schlusskurs in Dollar, letzte Wochen",
+          "unit": " USD",
+          "source": "Alpha Vantage, TIME_SERIES_DAILY (HL), Stand 22.7.2026",
+          "series": [
+            {
+              "t": "2026-05-15",
+              "v": 17.64
+            },
+            {
+              "t": "2026-05-29",
+              "v": 17.77
+            },
+            {
+              "t": "2026-06-12",
+              "v": 15.29
+            },
+            {
+              "t": "2026-06-26",
+              "v": 15.54
+            },
+            {
+              "t": "2026-07-10",
+              "v": 15.82
+            },
+            {
+              "t": "2026-07-17",
+              "v": 14.33
+            },
+            {
+              "t": "2026-07-20",
+              "v": 14.29
+            },
+            {
+              "t": "2026-07-21",
+              "v": 15.29
+            },
+            {
+              "t": "2026-07-22",
+              "v": 15.69
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "TradingEconomics: Brent Crude Oil",
+          "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+          "tier": 2
+        },
+        {
+          "title": "Fortune: Current price of gold, 22.7.2026",
+          "url": "https://fortune.com/article/current-price-of-gold-07-22-2026/",
+          "tier": 2
+        },
+        {
+          "title": "Investing.com: European gas prices near multi-month highs",
+          "url": "https://www.investing.com/news/commodities-news/european-gas-prices-hold-near-multimonth-highs-on-new-middle-east-transit-threats-4801945",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Öl nähert sich der 96-Dollar-Marke, während Gold und Silber ihre eigenen Rekorde jagen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "yen-vierzig-jahres-tief",
+      "ressort": "news",
+      "kicker": "Waehrungen · Japan",
+      "headline": "Der Yen faellt auf den tiefsten Stand seit fast vierzig Jahren",
+      "dek": "Mit 163,24 Yen je Dollar ist die japanische Waehrung so schwach wie seit 1986 nicht mehr. Tokio warnt verbal, doch der Markt handelt gegen die Drohung.",
+      "body": [
+        "Der japanische Yen fiel am Mittwoch auf 163,24 je US-Dollar, den schwaechsten Stand seit fast vierzig Jahren. Treiber ist die grosse Zinsdifferenz zwischen den USA und Japan. Waehrend die US-Notenbank ihren Leitzins bei 3,50 bis 3,75 Prozent haelt, liegt der japanische Leitzins bei nur einem Prozent. Kapital fliesst dorthin, wo es hoeher verzinst wird.",
+        "Japans Finanzministerin Satsuki Katayama sprach von angemessenem und entschlossenem Handeln, wann immer noetig. Der Regierungssprecher zeigte sich bereit, jederzeit angemessen zu reagieren. Bislang blieb es bei Worten. Eine tatsaechliche Intervention im Zeitraum Ende April bis Ende Mai hatte nur kurzlebige Wirkung. Der Markt testet derzeit, ab welchem Niveau Tokio zu Kaeufen greift.",
+        "Die naechste Sitzung der Bank of Japan steht am 30. und 31. Juli an. Der Konsens erwartet einen unveraenderten Leitzins. Solange die Zinsluecke gegenueber den USA bestehen bleibt, duerfte der Abwaertsdruck auf den Yen anhalten."
+      ],
+      "mechanik": "Der Wechselkurs zweier Waehrungen haengt stark von der Zinsdifferenz ab. Anleger leihen sich Geld in einer niedrig verzinsten Waehrung wie dem Yen und legen es in einer hoeher verzinsten Waehrung wie dem Dollar an. Dieser sogenannte Carry Trade schwaecht den Yen zusaetzlich. Das Risiko liegt darin, dass sich diese Positionen bei einer ploetzlichen Yen-Staerke schlagartig aufloesen koennen, was zu heftigen Marktbewegungen fuehrt.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Der Carry Trade und sein Aufloesungsrisiko",
+        "absaetze": [
+          "Beim Carry Trade nutzen Anleger die Zinsdifferenz zwischen zwei Waehrungen. Sie verschulden sich guenstig im Yen und investieren den Betrag in hoeher verzinste Anlagen in Dollar. Solange der Wechselkurs stabil bleibt oder der Yen weiter faellt, verdienen sie sowohl die Zinsdifferenz als auch den Waehrungsgewinn. Das treibt immer mehr Kapital in die Wette und schwaecht den Yen weiter.",
+          "Die Gefahr liegt in der Umkehr. Wenn die Bank of Japan ueberraschend die Zinsen anhebt oder eine Intervention den Yen stark aufwertet, muessen viele Anleger ihre Positionen gleichzeitig schliessen. Sie kaufen dann hastig Yen zurueck, was den Yen weiter treibt und eine Kettenreaktion ausloesen kann. Solche Aufloesungen haben in der Vergangenheit weltweit fuer scharfe, kurzfristige Kursstuerze gesorgt."
+        ]
+      },
+      "gewinnerVerlierer": [
+        {
+          "firma": "Toyota",
+          "logoKey": "toyota",
+          "bewegung": "Exportvorteil",
+          "warum": "Ein schwacher Yen erhoeht den Wert im Ausland erzielter Umsaetze fuer japanische Exporteure."
+        },
+        {
+          "firma": "SoftBank Group",
+          "logoKey": "softbank",
+          "bewegung": "+1,6 %",
+          "warum": "Technologiewerte profitierten von der allgemeinen Marktstaerke in Tokio."
+        }
+      ],
+      "sources": [
+        {
+          "title": "BigGo Finance: Yen at 163.24, weakest since 1986, carry trade",
+          "url": "https://finance.biggo.com/news/c2821a5a-5cbc-42fa-96ae-921b02a9ad02",
+          "tier": 2
+        },
+        {
+          "title": "CNBC: Yen slides past 163, raising intervention alert",
+          "url": "https://www.cnbc.com/amp/2026/07/22/yen-slides-past-163-raising-intervention-alert.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "devisenhandel-nacht.jpg",
+        "alt": "Devisenhandelsplatz bei Nacht, gebogene Bildschirme mit abstrakten Kurscharts, Skyline im Hintergrund",
+        "caption": "Der Yen fällt auf den tiefsten Stand seit fast vierzig Jahren, ein Rekord mit Ansage.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "cxmt-boersengang-dram",
+      "ressort": "news",
+      "kicker": "Kapitalmarkt · China",
+      "headline": "Chinas Speicherhersteller CXMT geht am Montag mit dem groessten Chip-Boersengang des Landes an die Boerse",
+      "dek": "Die Emission in Shanghai ist rund 570-fach ueberzeichnet. Fuer den weltweiten Speichermarkt ist der Zufluss frischen Kapitals ein zweischneidiges Signal.",
+      "body": [
+        "Der chinesische Speicherhersteller CXMT wird am kommenden Montag, dem 27. Juli, an der Technologieboerse STAR Market in Shanghai notiert. Mit einem Volumen von rund 8,55 Milliarden Dollar ist es der groesste Halbleiter-Boersengang in der Geschichte einer chinesischen Boerse. Die Emission war Berichten zufolge rund 570-fach ueberzeichnet, was die enorme Nachfrage inlaendischer Anleger zeigt. Die Bewertung liegt bei etwa 85 Milliarden Dollar.",
+        "CXMT ist der viertgroesste Hersteller von DRAM-Speicher weltweit mit einem Marktanteil von knapp acht Prozent. DRAM ist der Arbeitsspeicher, den Computer und Server fuer laufende Prozesse nutzen. Mit dem frischen Kapital kann das Unternehmen seine Kapazitaet ausbauen und die etablierten Anbieter Samsung, SK Hynix und Micron staerker herausfordern.",
+        "Fuer den Speichermarkt ist das ein zweischneidiges Signal. Kurzfristig bestaetigt die hohe Nachfrage den Aufschwung im Speicherzyklus. Mittelfristig droht zusaetzliche Kapazitaet die Preise fuer Standardspeicher zu druecken, sobald neue Fabriken produzieren."
+      ],
+      "mechanik": "In kapitalintensiven Industrien wie der Speicherfertigung bestimmt das Verhaeltnis von Angebot und Nachfrage die Preise. Fliesst viel Kapital in den Ausbau von Kapazitaet, entsteht spaeter oft ein Ueberangebot, das die Preise und Margen druckt. Dieser Kapitalzyklus erklaert, warum Speicherpreise stark schwanken. Ein Boersengang, der einem Herausforderer Milliarden zufuehrt, saet den Keim fuer kuenftigen Preisdruck.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "kurzfristig positiv",
+          "warum": "Profitiert heute vom Speicherzyklus, mittelfristig Konkurrenzdruck durch CXMT-Kapazitaet."
+        },
+        {
+          "firma": "Micron",
+          "logoKey": "micron",
+          "bewegung": "strukturelles Risiko",
+          "warum": "Zusaetzliche chinesische DRAM-Kapazitaet bedroht mittelfristig die Preismacht im Standardspeicher."
+        }
+      ],
+      "sources": [
+        {
+          "title": "SCMP: China memory giant CXMT valued at US$85 billion in record Shanghai IPO",
+          "url": "https://www.scmp.com/tech/article/3360615/china-memory-giant-cxmt-valued-us85-billion-record-shanghai-ipo",
+          "tier": 2
+        },
+        {
+          "title": "MarketScreener: CXMT sets July 27 listing date",
+          "url": "https://www.marketscreener.com/news/china-s-changxin-memory-technologies-sets-july-27-listing-date-sources-say-ce7f5edcdc8bf420",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Stapel von Hochleistungs-Speicherchips neben einem Silizium-Wafer vor Börsenmonitoren",
+        "caption": "Chinas größter Speicherhersteller wagt den größten Chip-Börsengang des Landes.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "kanada-zoelle-section-338",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · Nordamerika",
+      "headline": "Washington belegt kanadische Gueter mit 50-Prozent-Zoellen, wirksam ab dem 19. August",
+      "dek": "Zum ersten Mal seit rund hundert Jahren greift die US-Regierung auf einen selten genutzten Paragrafen des Zollrechts zurueck. Energie und kritische Mineralien bleiben ausgenommen.",
+      "body": [
+        "US-Praesident Donald Trump unterzeichnete am 20. Juli drei Proklamationen, die zusaetzliche Zoelle von 50 Prozent auf eine Reihe kanadischer Gueter verhaengen. Betroffen sind unter anderem Wein und Spirituosen, Zement, Moebel und Milchprodukte. Grundlage ist der Paragraf 338 des Zollgesetzes von 1930, ein selten genutztes Instrument, das dem Praesidenten erlaubt, Zoelle gegen Laender zu verhaengen, die US-Handel benachteiligen. Das betroffene Handelsvolumen liegt bei rund 20 Milliarden Dollar.",
+        "Wichtig ist die Ausnahmeliste. Energie, Kali, kritische Mineralien und Fisch bleiben zollfrei. Diese Guenstung mindert den Schaden fuer die kanadische Rohstoffwirtschaft und fuer US-Abnehmer, die auf diese Vorprodukte angewiesen sind. Das effektive Inkrafttreten ist der 19. August 2026, was Zeit fuer Verhandlungen laesst. Kanada zeigte sich gespraechsbereit.",
+        "Fuer die Maerkte ist die Botschaft die Planungsunsicherheit. Einseitig verhaengte Zoelle ueber einen selten genutzten Paragrafen sind schwerer kalkulierbar als ein ausgehandelter Rahmen. Unternehmen mit Lieferketten ueber die Grenze muessen mit hoeheren Kosten und geaenderten Bezugsquellen rechnen."
+      ],
+      "mechanik": "Ein Zoll ist eine Steuer auf Importe. Er verteuert die betroffenen Gueter im Einfuhrland und wirkt wie ein Kostenschock fuer Importeure und Verbraucher. Zugleich riskiert das verhaengende Land Vergeltung, die die eigenen Exporteure trifft. Fuer Unternehmen ist neben der direkten Kostenwirkung vor allem die Unsicherheit schaedlich, weil sie Investitionsentscheidungen aufschiebt.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum Paragraf 338 ungewoehnlich ist",
+        "absaetze": [
+          "Handelspolitik laeuft normalerweise ueber ausgehandelte Abkommen oder ueber etablierte Verfahren, die Untersuchungen und Fristen vorsehen. Paragraf 338 des Zollgesetzes von 1930 erlaubt dem Praesidenten dagegen, im Alleingang Zoelle von bis zu 50 Prozent zu verhaengen, wenn er ein Land als diskriminierend gegenueber dem US-Handel einstuft. Dieses Instrument wurde ueber Jahrzehnte praktisch nicht genutzt.",
+          "Die Wiederbelebung eines solchen Paragrafen erhoeht die Unberechenbarkeit der Handelspolitik. Fuer Investoren zaehlt weniger die einzelne Zollhoehe als die Frage, wie verlaesslich die Regeln kuenftig sind. Steigende Unsicherheit erhoeht die von Anlegern geforderte Risikopraemie und kann Bewertungen belasten, selbst wenn der unmittelbare wirtschaftliche Schaden begrenzt bleibt."
+        ]
+      },
+      "gewinnerVerlierer": [
+        {
+          "firma": "Constellation Brands",
+          "logoKey": "constellation",
+          "bewegung": "Kostenrisiko",
+          "warum": "Importeure von Wein und Spirituosen aus Kanada tragen hoehere Einfuhrkosten."
+        },
+        {
+          "firma": "Nutrien",
+          "logoKey": "nutrien",
+          "bewegung": "ausgenommen",
+          "warum": "Kali gehoert zur Ausnahmeliste, der kanadische Duengemittelkonzern bleibt verschont."
+        }
+      ],
+      "sources": [
+        {
+          "title": "USTR: Statement on President Trump imposing Section 338 tariffs on Canada",
+          "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-president-trump-imposing-section-338-tariffs-canada",
+          "tier": 1
+        },
+        {
+          "title": "White House Fact Sheet: Additional tariffs on Canada",
+          "url": "https://www.whitehouse.gov/fact-sheets/2026/07/fact-sheet-president-donald-j-trump-imposes-additional-tariffs-on-canada/",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Washington belegt kanadische Güter mit hohen Zöllen, wirksam schon in wenigen Wochen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "eu-us-handelsrahmen",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · Europa",
+      "headline": "Der EU-US-Handelsrahmen von Turnberry haelt bei 15 Prozent, doch Details bleiben offen",
+      "dek": "Fuer europaeische Exporteure ist ein ausgehandelter Rahmen die guenstigere Variante gegenueber einseitigen Zoellen. Ueber Ausnahmen wird weiter gerungen.",
+      "body": [
+        "Anders als im Fall Kanada beruht das Verhaeltnis zwischen der Europaeischen Union und den USA auf einem ausgehandelten Rahmen. Der im schottischen Turnberry vereinbarte Basiszollsatz von 15 Prozent bildet die Grundlage. Fuer europaeische Exporteure ist ein verhandelter Satz planbarer als eine einseitige Massnahme, weil er Rechtssicherheit schafft und Vergeltungsspiralen daempft.",
+        "Offen bleiben die Details. Die Europaeische Union strebt Berichten zufolge umfangreiche Ausnahmen an, um besonders exponierte Branchen wie Automobil, Maschinenbau und Pharma zu entlasten. Der genaue Umfang dieser Ausnahmen liess sich zum Redaktionsschluss nicht abschliessend aus offiziellen Quellen belegen und ist als offene Annahme zu behandeln.",
+        "Fuer die Bewertung europaeischer Exportwerte ist der Unterschied zwischen einem verhandelten Rahmen und einseitigen Zoellen erheblich. Planbarkeit senkt die Risikopraemie. Bleibt die Verhandlung ergebnislos, droht auch europaeischen Exporteuren die Unsicherheit, die derzeit auf kanadischen Guetern lastet."
+      ],
+      "mechanik": "Fuer Aktienbewertungen zaehlt neben der Hoehe einer Belastung vor allem ihre Verlaesslichkeit. Ein ausgehandelter, stabiler Zollsatz laesst sich in Preise und Lieferketten einplanen. Eine drohende, aber unbestimmte Belastung erhoeht die Unsicherheit und damit die von Anlegern geforderte Risikopraemie. Deshalb reagieren Maerkte oft positiver auf einen festen, auch hoeheren Satz als auf eine offene Drohung.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Volkswagen",
+          "logoKey": "volkswagen",
+          "bewegung": "Zoll-Exposure",
+          "warum": "Europaeische Autobauer sind stark vom US-Marktzugang und Zollniveau abhaengig."
+        },
+        {
+          "firma": "SAP",
+          "logoKey": "sap",
+          "bewegung": "gering betroffen",
+          "warum": "Software wird kaum ueber Warenzoelle belastet, die Belastung europaeischer Exporteure trifft eher Warenproduzenten."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Baker Botts: Trump Tariff Tracker, 21.7.2026",
+          "url": "https://ourtake.bakerbotts.com/post/102ndeb/trump-tariff-tracker-july-21-2026",
+          "tier": 2
+        },
+        {
+          "title": "USTR: Section 338 statement (Kontext Handelspolitik)",
+          "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-president-trump-imposing-section-338-tariffs-canada",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Der Handelsrahmen von Turnberry steht auf dem Papier, die Details bleiben offen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "nahost-hormus-geopolitik",
+      "ressort": "politik",
+      "kicker": "Geopolitik · Naher Osten",
+      "headline": "Eine Seeblockade im Roten Meer und neue Drohungen gegen den Iran halten die Oelmaerkte in Atem",
+      "dek": "Die Huthi erklaeren eine maritime Blockade gegen Saudi-Arabien. Die Transite durch die Strasse von Hormus sinken deutlich, waehrend Teheran zugleich Gespraeche andeutet.",
+      "body": [
+        "Die geopolitische Lage im Nahen Osten bleibt der wichtigste externe Risikofaktor fuer die Maerkte. Die jemenitischen Huthi erklaerten am 20. Juli eine Seeblockade gegen Saudi-Arabien. Nach Marktberichten sind die Transite durch die Strasse von Hormus, die wichtigste Oel-Seestrasse der Welt, um mehr als die Haelfte gefallen. Saudische Verladungen ueber die Rotmeer-Route gingen deutlich zurueck.",
+        "Zugleich signalisierte das iranische Aussenministerium Gespraechsbereitschaft. Diese Doppelbotschaft aus Eskalation und Dialogangebot erklaert, warum der Oelpreis zwar steigt, aber nicht in Panik ausbricht. Der US-Sender CNBC berichtete am Donnerstag ueber neue Drohungen Washingtons mit weiteren Schlaegen gegen den Iran. Der genaue Inhalt liess sich zum Redaktionsschluss nicht unabhaengig bestaetigen.",
+        "Fuer Anleger ist die Strasse von Hormus der entscheidende Engpass. Rund ein Fuenftel des weltweit gehandelten Oels passiert diese Meerenge. Jede glaubwuerdige Bedrohung dieses Nadeloehrs treibt eine Risikopraemie durch die gesamte Energiekette."
+      ],
+      "mechanik": "Ein geografischer Engpass wie die Strasse von Hormus ist ein Nadeloehr, durch das ein grosser Teil eines Rohstoffs fliesst. Wird dieses Nadeloehr bedroht, steigt der Preis, weil Kaeufer eine Absicherung gegen eine moegliche Unterbrechung suchen. Solche Chokepoints verleihen den Akteuren, die sie kontrollieren oder bedrohen koennen, wirtschaftliche und politische Macht.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Frontline",
+          "logoKey": "frontline",
+          "bewegung": "Frachtraten",
+          "warum": "Tankerreedereien profitieren von hoeheren Raten und Kriegspraemien bei Stoerungen der Seewege."
+        },
+        {
+          "firma": "Fraport",
+          "logoKey": "fraport",
+          "bewegung": "Kostenrisiko",
+          "warum": "Flughafenbetreiber und Airlines leiden unter steigenden Kerosinkosten."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Investing.com: European gas prices near highs on Middle East transit threats",
+          "url": "https://www.investing.com/news/commodities-news/european-gas-prices-hold-near-multimonth-highs-on-new-middle-east-transit-threats-4801945",
+          "tier": 2
+        },
+        {
+          "title": "CNBC: Oil prices, WTI, Brent, Trump, Iran, Hormuz (23.7.)",
+          "url": "https://www.cnbc.com/2026/07/23/oil-prices-today-wti-brent-trump-iran-hormuz.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Eine Seeblockade und neue Drohungen halten die Ölmärkte in Atem.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "alphabet-cloud-capex",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Kommunikation",
+      "headline": "Alphabet waechst kraeftig und investiert noch kraeftiger",
+      "dek": "Die Cloud-Sparte legt um 82 Prozent zu, doch das erhoehte Investitionsbudget und ein durch Buchgewinne aufgeblaehter Gewinn ruecken die Cashflow-Frage in den Mittelpunkt.",
+      "body": [
+        "Alphabet lieferte fuer das zweite Quartal ein starkes operatives Bild. Der Umsatz stieg um 24 Prozent auf 119,8 Milliarden Dollar und uebertraf die Erwartung von knapp 117 Milliarden. Die Google-Cloud-Sparte wuchs um 82 Prozent auf 24,8 Milliarden Dollar und zeigt damit, wie stark die Nachfrage nach KI-Rechenleistung ist. Auch das Werbegeschaeft und YouTube entwickelten sich solide.",
+        "Der ausgewiesene Nettogewinn von 112 Milliarden Dollar wirkt spektakulaer, ist aber irrefuehrend. Rund 98 Milliarden Dollar davon stammen aus nicht realisierten Buchgewinnen auf Beteiligungen, also aus Bewertungsaenderungen und nicht aus dem laufenden Geschaeft. Der ausgewiesene Gewinn je Aktie von 9,11 Dollar taugt deshalb kaum als Massstab fuer die operative Ertragskraft.",
+        "Im Zentrum stand die Investitionsplanung. Alphabet hob sein Capex-Budget fuer das Gesamtjahr auf bis zu 205 Milliarden Dollar an und stellte fuer 2027 noch hoehere Ausgaben in Aussicht. Allein im ersten Halbjahr flossen 80,6 Milliarden Dollar in Sachanlagen. Konzernchef Sundar Pichai sprach von einem mehrjaehrigen Investitionszyklus mit starken Nachfragesignalen, ohne eine konkrete Renditezeitachse zu nennen."
+      ],
+      "mechanik": "Investitionen in Rechenzentren und Chips erscheinen nicht sofort in der Gewinn- und Verlustrechnung. Sie werden ueber Jahre abgeschrieben und mindern den freien Cashflow bereits im Moment der Auszahlung. Da sich der Wert einer Aktie aus den kuenftigen freien Cashfluessen ableitet, kann ein stark steigendes Investitionsbudget die Bewertung belasten, bis der Markt ueberzeugt ist, dass die Investitionen ausreichend Rendite bringen.",
+      "company": {
+        "name": "Alphabet Inc.",
+        "ticker": "GOOGL",
+        "exchange": "NASDAQ",
+        "logoKey": "alphabet",
+        "whatTheyDo": "Alphabet ist der Mutterkonzern von Google. Das Unternehmen verdient das meiste Geld mit Werbung in der Suche und auf YouTube und baut die Cloud-Sparte fuer Unternehmenskunden und KI-Dienste rasch aus.",
+        "whyItMatters": "Als einer der groessten Investoren in KI-Infrastruktur setzt Alphabet den Massstab dafuer, wie viel Kapital die Branche in den Ausbau steckt.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2",
+            "119,8 Mrd. $ (+24 %)"
+          ],
+          [
+            "Google Cloud",
+            "24,8 Mrd. $ (+82 %)"
+          ],
+          [
+            "Capex-Ziel 2026",
+            "bis zu 205 Mrd. $"
+          ],
+          [
+            "Capex H1",
+            "80,6 Mrd. $"
+          ],
+          [
+            "Kursreaktion",
+            "ca. -4,5 % nachboerslich"
+          ]
+        ]
+      },
+      "factcheck": {
+        "claim": "Alphabets Nettogewinn stieg um rund 298 Prozent auf 112 Mrd. $.",
+        "verdict": "unsicher",
+        "evidence": "Zahl aus Earnings Release (Tier 1) und Sekundaermedien (Tier 2) belegt, aber stark verzerrt durch rund 98 Mrd. $ nicht realisierte Buchgewinne. Als Mass fuer operative Ertragskraft ungeeignet, deshalb im Text ausdruecklich eingeordnet."
+      },
+      "sources": [
+        {
+          "title": "Alphabet Q2 2026 Earnings Release",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+          "tier": 1
+        },
+        {
+          "title": "Yahoo Finance: GOOGL drops nearly 5% after hours on $205B capex",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/googl-drops-nearly-5-hours-212540090.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Ein Cloud-Konzern wächst kräftig und investiert noch kräftiger in die eigene Infrastruktur.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "tesla-q2-cashflow",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Automobil",
+      "headline": "Tesla meldet Rekordumsatz und verbrennt zum ersten Mal seit Anfang 2024 wieder Bargeld",
+      "dek": "Der Umsatz steigt um 26 Prozent, doch die operative Marge faellt auf 1,4 Prozent, die Regulierungsgutschriften brechen weg und der freie Cashflow wird negativ.",
+      "body": [
+        "Tesla steigerte den Umsatz im zweiten Quartal um 26 Prozent auf 28,24 Milliarden Dollar, ein Rekord, getragen von 480.126 ausgelieferten Fahrzeugen. Unter der Oberflaeche zeigt sich jedoch ein Qualitaetsproblem. Der bereinigte Gewinn je Aktie fiel auf 0,33 Dollar und verfehlte die Erwartung von rund 0,53 Dollar. Das operative Ergebnis brach um 57 Prozent auf 398 Millionen Dollar ein, die operative Marge sank von 4,1 auf 1,4 Prozent.",
+        "Zwei Faktoren belasten. Erstens fielen die Erloese aus dem Verkauf von Regulierungsgutschriften um 67 Prozent auf 146 Millionen Dollar. Diese Gutschriften waren lange eine margenstarke Einnahmequelle, die nun wegbricht. Zweitens verdoppelten sich die Investitionen auf 5,8 Milliarden Dollar. In der Folge wurde der freie Cashflow mit minus 1,09 Milliarden Dollar negativ, das erste Quartal mit Mittelabfluss seit Anfang 2024.",
+        "Beim Zukunftsgeschaeft berichtete Tesla Fortschritte. Der autonome Fahrdienst Robotaxi laeuft in sieben US-Ballungsraeumen an, ueber 55 Prozent der neuen Auslieferungen in Nordamerika enthalten ein Abo fuer das Fahrassistenzsystem, und die Produktion des Roboters Optimus soll noch in diesem Jahr beginnen. Belastbare Erloese aus diesen Feldern stehen jedoch aus."
+      ],
+      "mechanik": "Der freie Cashflow ist das Geld, das nach Betriebskosten und Investitionen uebrig bleibt. Wird er negativ, muss ein Unternehmen Reserven aufzehren oder sich verschulden. Bei Tesla trafen ein Margenrueckgang, wegfallende Sondereinnahmen und verdoppelte Investitionen zusammen. Fuer die Bewertung ist entscheidend, ob die hohen Investitionen in autonomes Fahren und Robotik kuenftig genug Ertrag bringen, um den heutigen Mittelabfluss zu rechtfertigen.",
+      "company": {
+        "name": "Tesla Inc.",
+        "ticker": "TSLA",
+        "exchange": "NASDAQ",
+        "logoKey": "tesla",
+        "whatTheyDo": "Tesla baut Elektroautos und Energiespeicher und entwickelt Software fuer autonomes Fahren sowie den humanoiden Roboter Optimus. Das Kerngeschaeft ist bislang der Fahrzeugverkauf.",
+        "whyItMatters": "Tesla wird an der Boerse wie ein Technologiekonzern bewertet. Die Luecke zwischen schwachem Autogeschaeft und teuren Zukunftswetten macht die Aktie zu einem Test fuer die Geduld der Anleger.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2",
+            "28,24 Mrd. $ (+26 %)"
+          ],
+          [
+            "Auslieferungen",
+            "480.126 (+25 %)"
+          ],
+          [
+            "Operative Marge",
+            "1,4 % (Vj. 4,1 %)"
+          ],
+          [
+            "Regulierungsgutschriften",
+            "146 Mio. $ (-67 %)"
+          ],
+          [
+            "Freier Cashflow",
+            "-1,09 Mrd. $"
+          ]
+        ]
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Tesla Q2: starker Umsatz, schwache Ertragsqualitaet",
+          "subtitle": "Veraenderung gegenueber Vorjahr",
+          "unit": " %",
+          "source": "Electrek, TradingKey (Tesla Q2 2026), Stand 22.7.2026",
+          "data": [
+            [
+              "Umsatz",
+              26
+            ],
+            [
+              "Auslieferungen",
+              25
+            ],
+            [
+              "Nettogewinn (GAAP)",
+              -5
+            ],
+            [
+              "EPS (bereinigt)",
+              -18
+            ],
+            [
+              "Reg.-Gutschriften",
+              -67
+            ]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Teslas freier Cashflow war im Q2 2026 mit rund -1,09 Mrd. $ negativ.",
+        "verdict": "bestätigt",
+        "evidence": "Belegt ueber Electrek und TradingKey (Tier 2) auf Basis der Tesla-Q2-Mitteilung. Konsistent mit verdoppeltem Capex (5,8 Mrd. $) und ruecklaeufiger operativer Marge."
+      },
+      "sources": [
+        {
+          "title": "Electrek: Tesla Q2 2026 financial results",
+          "url": "https://electrek.co/2026/07/22/tesla-tsla-q2-2026-financial-results/",
+          "tier": 2
+        },
+        {
+          "title": "TradingKey: Tesla Q2 2026 earnings report",
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262048061-tesla-tsla-earnings-report-q2-2026-capital-expenditures-robotaxi-fsd-tradingkey",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "vw-fabrik.jpg",
+        "alt": "Roboterarme schweißen Karosserien am Fließband einer Autofabrik",
+        "caption": "Rekordumsatz, aber zum ersten Mal seit Jahren verbrennt der Autobauer wieder Bargeld.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "sap-cloud-backlog",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Software",
+      "headline": "SAP waechst in der Cloud um 24 Prozent und faellt trotzdem an die Boerse zurueck",
+      "dek": "Der Softwarekonzern zeigt starke absolute Zahlen. Weil das Wachstumstempo hinter den hohen Erwartungen bleibt, notiert die Aktie nahe ihrem Jahrestief.",
+      "body": [
+        "Der Walldorfer Softwarekonzern SAP legte am Dienstagabend nach europaeischem Handelsschluss seine Quartalszahlen vor. Der Cloud-Umsatz stieg um 24 Prozent auf 6,0 Milliarden Euro, waehrungsbereinigt sogar um 28 Prozent. Der Auftragsbestand fuer die kommenden zwoelf Monate wuchs um 22 Prozent auf 21,2 Milliarden Euro. Das sind in absoluten Zahlen starke Werte.",
+        "Der Markt reagierte dennoch enttaeuscht. Analysten hatten mit einem Cloud-Wachstum von rund 27 Prozent und einem Zuwachs des Auftragsbestands von etwa 29 Prozent gerechnet. Der Auftragsbestand verfehlte diese Erwartung um rund sieben Prozentpunkte. Die Aktie fiel bereits am Mittwoch um gut vier Prozent und notierte nahe ihrem Jahrestief, nach einem Rueckgang von rund der Haelfte gegenueber dem Januar-Hoch von 263,55 Euro.",
+        "Das Muster gleicht dem von Alphabet an diesem Tag. Eine als teuer bewertete Aktie muss ihr hohes Wachstum bestaetigen. Verlangsamt sich das Tempo, auch von hohem Niveau aus, folgt eine Bewertungskorrektur."
+      ],
+      "mechanik": "Bei hoch bewerteten Wachstumsaktien preist der Markt bereits ein hohes kuenftiges Wachstum ein. Entscheidend ist dann das Tempo, also ob ein Unternehmen schneller oder langsamer waechst als erwartet. Verlangsamt sich das Wachstum, sinkt die Wachstumsfantasie und mit ihr das Bewertungsvielfache. Diese Bewertungskompression kann den Kurs druecken, obwohl die absoluten Zahlen weiter steigen.",
+      "company": {
+        "name": "SAP SE",
+        "ticker": "SAP",
+        "exchange": "Xetra",
+        "logoKey": "sap",
+        "whatTheyDo": "SAP ist Europas groesster Softwarekonzern. Das Unternehmen verkauft Unternehmenssoftware fuer Buchhaltung, Personal, Logistik und Vertrieb und stellt sein Geschaeft von Lizenzverkauf auf Cloud-Abonnements um.",
+        "whyItMatters": "SAP ist das schwerste Einzelmitglied im DAX. Als Barometer fuer die Umstellung europaeischer Firmen auf Cloud-Software hat der Konzern grosse Signalwirkung.",
+        "keyMetrics": [
+          [
+            "Cloud-Umsatz Q2",
+            "6,0 Mrd. € (+24 %)"
+          ],
+          [
+            "Cloud waehrungsbereinigt",
+            "+28 %"
+          ],
+          [
+            "Auftragsbestand 12 Monate",
+            "21,2 Mrd. € (+22 %)"
+          ],
+          [
+            "Cloud-Backlog gesamt",
+            "77,3 Mrd. €"
+          ],
+          [
+            "Kursreaktion",
+            "ca. -4,1 % (Xetra 22.7.)"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "SAP Investor Relations: Recent Results",
+          "url": "https://www.sap.com/investors/en/financial-documents-and-events/recent-results.html",
+          "tier": 1
+        },
+        {
+          "title": "ad-hoc-news: SAP cloud backlog soars to 77.3 billion yet stock languishes",
+          "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/sap-s-cloud-backlog-soars-to-77-3-billion-yet-the-stock-languishes/69820619",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "nvidia-neubewertung.jpg",
+        "alt": "Nahaufnahme eines High-End-Grafikprozessors mit Kühlkörper vor grünem Licht",
+        "caption": "Starkes Cloud-Wachstum reicht nicht, wenn der Markt eine noch höhere Latte anlegt.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "ezb-zinsentscheid-vorschau",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · Europa",
+      "headline": "Die EZB entscheidet heute ueber die Zinsen, ein Halten gilt als sicher",
+      "dek": "Der Einlagenzins duerfte bei 2,25 Prozent bleiben. Entscheidend wird der Ton von Praesidentin Lagarde zum September, weil steigende Oelpreise die Inflation wieder anfachen.",
+      "body": [
+        "Die Europaeische Zentralbank gibt heute um 14:15 Uhr ihren Zinsentscheid bekannt, um 14:45 Uhr folgt die Pressekonferenz von Praesidentin Christine Lagarde. Der Konsens ist eindeutig. Nahezu alle befragten Oekonomen erwarten ein Halten des Einlagenzinses bei 2,25 Prozent. Die Maerkte preisen eine Wahrscheinlichkeit von rund 88 Prozent fuer keine Aenderung ein.",
+        "Die EZB befindet sich in einem Straffungsmodus. Im Juni hatte sie den Zins angehoben. Rund 70 Prozent der Oekonomen erwarten einen weiteren Schritt im Jahresverlauf, ueberwiegend im September auf 2,50 Prozent. Die Juli-Sitzung ist eine Sitzung ohne neue Konjunkturprognosen. Fuer einen weiteren Schritt duerfte die EZB die September-Projektionen abwarten.",
+        "Der Ausloeser fuer den Anhebungsbias ist der Oelpreis. Der juengste Anstieg der Energiepreise durch die Nahost-Spannungen hat das Inflationsbild wieder verschaerft. Die Verbraucherpreise stiegen im Juni um 2,8 Prozent, die Kernrate lag bei 2,4 Prozent. Weil ein Halten erwartet wird, duerfte die Marktbewegung heute weniger vom Entscheid selbst als vom Ton Lagardes zum weiteren Zinspfad abhaengen."
+      ],
+      "mechanik": "Eine Zentralbank steuert die Wirtschaft ueber den Leitzins. Hoehere Zinsen verteuern Kredite, bremsen Nachfrage und daempfen die Inflation. Wichtig ist, dass Maerkte Erwartungen einpreisen. Ist ein Halten bereits erwartet, bewegt der Entscheid selbst kaum. Bewegend wird die sogenannte Forward Guidance, also die Signale ueber kuenftige Schritte. Deshalb liegt der Fokus heute auf dem Ton der Pressekonferenz.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Das Mandat der EZB und die Rolle der Erwartungen",
+        "absaetze": [
+          "Die Europaeische Zentralbank hat ein vorrangiges Ziel, die Preisstabilitaet, definiert als eine Inflationsrate von zwei Prozent auf mittlere Sicht. Um dieses Ziel zu erreichen, setzt sie vor allem den Leitzins ein. Steigt die Inflation ueber das Ziel, strafft sie die Geldpolitik. Faellt sie darunter, lockert sie. Ein Sonderproblem sind Energiepreisschocks, weil sie die Inflation treiben und zugleich das Wachstum bremsen.",
+          "Zentral ist die Verankerung der Erwartungen. Wenn Unternehmen und Haushalte darauf vertrauen, dass die Zentralbank die Inflation zum Ziel zurueckfuehrt, fordern sie keine ueberhoehten Lohn- und Preissteigerungen. Diese Selbstverstaerkung nennt man Erwartungsankerung. Steigt der Oelpreis stark, fuerchtet die EZB sogenannte Zweitrundeneffekte, bei denen sich der Preisschub ueber Loehne und Preise verfestigt. Ihr hawkisher Ton soll genau das verhindern."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Erloese der Energiekonzerne haengen am Rohstoffpreis, nicht direkt am Leitzins. Der Zins wirkt nur ueber Finanzierungskosten und Konjunktur.",
+          "teilbranchen": "geringe direkte Betroffenheit"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Hoehere Realzinsen erhoehen die Opportunitaetskosten von zinslosem Gold. Zugleich stuetzt die aktuelle Krisenpraemie die Edelmetalle trotz hoher Zinsen.",
+          "teilbranchen": "Edelmetalle, Industriemetalle"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Hoehere Zinsen verteuern Investitionskredite und bremsen zyklische Nachfrage. Auftragslastige Industrieunternehmen spueren dies mit Verzoegerung.",
+          "teilbranchen": "Maschinenbau, Bau"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Konsumkredite und Baufinanzierungen werden teurer, was groessere Anschaffungen daempft. Der zyklische Konsum reagiert empfindlich auf das Zinsniveau.",
+          "teilbranchen": "Automobil, Wohnbau, Handel"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "positiv",
+          "mechanismus": "Defensive Basiskonsumwerte werden in einem Umfeld hoher Zinsen und Unsicherheit relativ attraktiver, weil ihre Nachfrage stabil bleibt.",
+          "teilbranchen": "Lebensmittel, Haushaltsgueter"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "positiv",
+          "mechanismus": "Gesundheit gilt als defensiv und wenig zinssensibel im Umsatz. In der Rotation weg von teurer Technologie fliesst Kapital haeufig in diesen Sektor.",
+          "teilbranchen": "Pharma, Medizintechnik"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Ein laenger hohes Zinsniveau stuetzt die Zinsmargen der Banken. Eine Anhebung im September wuerde diesen Effekt verstaerken, solange die Kreditausfaelle niedrig bleiben.",
+          "teilbranchen": "Banken, Versicherer"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Hoch bewertete Technologiewerte reagieren stark auf den Diskontsatz, weil ihr Wert weit in der Zukunft liegt. Steigende Zinsen druecken diese Bewertungen.",
+          "teilbranchen": "Software, Halbleiter"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Wachstumsstarke Internetplattformen sind ebenfalls langlaufende Aktiva und leiden unter hoeheren Diskontsaetzen. Klassische Telekom mit hoher Verschuldung spuert teurere Refinanzierung.",
+          "teilbranchen": "Internet, Telekom"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger sind kapitalintensiv und stark verschuldet. Hoehere Zinsen verteuern ihre Finanzierung und mindern den Bewertungsvorteil ihrer stabilen Ausschuettungen gegenueber Anleihen.",
+          "teilbranchen": "Netzbetreiber, Erzeuger"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien sind der zinssensibelste Sektor. Hoehere Finanzierungskosten druecken Bewertungen und Projektrenditen unmittelbar.",
+          "teilbranchen": "Gewerbe, Wohnen, REITs"
+        }
+      ],
+      "sources": [
+        {
+          "title": "EZB: Geldpolitische Beschluesse (offizielle Mitteilungen)",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/index.en.html",
+          "tier": 1
+        },
+        {
+          "title": "Investing.com: What's next for the ECB, key expectations",
+          "url": "https://www.investing.com/news/economy-news/whats-next-for-the-ecb-key-expectations-for-next-week-4799670",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Ein Halten gilt als sicher, die eigentliche Botschaft steckt in den Nebensätzen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "fed-hike-risiko",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · USA",
+      "headline": "An den US-Terminmaerkten wird wieder ueber eine Zinserhoehung diskutiert",
+      "dek": "Vor der Fed-Sitzung am 28. und 29. Juli preisen die Maerkte ein spuerbares Risiko einer Anhebung ein. Der neue Notenbankchef Warsh gibt sich betont hart.",
+      "body": [
+        "Die US-Notenbank Federal Reserve entscheidet am 28. und 29. Juli ueber ihren Leitzins, der derzeit bei 3,50 bis 3,75 Prozent liegt. Ungewoehnlich ist die Richtung der Debatte. Statt ueber eine Zinssenkung wird ueber eine moegliche Anhebung diskutiert. Nach Marktdaten preisten die Terminmaerkte zuletzt eine Wahrscheinlichkeit von rund 36 Prozent fuer eine Erhoehung ein, gestiegen von 18 Prozent Anfang Juli. Die Mehrheit erwartet weiterhin ein Halten.",
+        "Der Grund liegt in der Inflation. Die juengsten Energiepreissteigerungen und eine hartnaeckige Teuerung von zuletzt 3,5 Prozent halten den Preisdruck hoch. Notenbankchef Kevin Warsh gibt sich betont hart und verweigert klare Vorabsignale zum weiteren Kurs. Er betont, die Preise seien zu hoch.",
+        "Fuer die Maerkte bedeutet ein wieder eingepreistes Anhebungsrisiko hoehere kurzfristige Zinsen und einen hoeheren Diskontsatz. Das belastet vor allem hoch bewertete Wachstumswerte, deren Gewinne weit in der Zukunft liegen, sowie zinssensible Sektoren wie Immobilien und Versorger."
+      ],
+      "mechanik": "Der Leitzins der Notenbank bestimmt die kurzfristigen Zinsen in der gesamten Wirtschaft. Er beeinflusst auch den Diskontsatz, mit dem Anleger kuenftige Gewinne auf heute abzinsen. Steigt dieser Satz, sind weit in der Zukunft liegende Gewinne heute weniger wert. Deshalb reagieren Wachstumsaktien besonders empfindlich, wenn der Markt eine straffere Geldpolitik erwartet.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Testimony, Minutes und Zinsentscheid sind drei verschiedene Ereignisse",
+        "absaetze": [
+          "Rund um die Notenbank gibt es unterschiedliche Ereignistypen, die oft verwechselt werden. Der Zinsentscheid ist die formale Festlegung des Leitzinses durch das zustaendige Gremium, in den USA den Offenmarktausschuss. Die Minutes sind das spaeter veroeffentlichte Protokoll einer zurueckliegenden Sitzung. Ein Testimony ist eine Anhoerung des Notenbankchefs vor dem Parlament, bei der keine Zinsen festgelegt werden.",
+          "Fuer die Maerkte ist die Unterscheidung wichtig, weil nur der Zinsentscheid unmittelbar den Leitzins veraendert. Minutes und Anhoerungen liefern Hinweise auf die kuenftige Haltung und koennen Erwartungen verschieben, ohne selbst etwas zu entscheiden. Die naechste tatsaechliche Zinsentscheidung der Fed faellt am 29. Juli."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Federal Reserve: FOMC-Kalender",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tier": 1
+        },
+        {
+          "title": "Chase: Warsh, prices are too high, what to expect from July Fed meeting",
+          "url": "https://www.chase.com/personal/investments/learning-and-insights/article/kevin-warsh-prices-are-too-high-what-to-expect-july-2026-federal-reserve-meeting",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "An den US-Terminmärkten wird plötzlich wieder über eine Zinserhöhung diskutiert.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "us-konjunktur-daten",
+      "ressort": "makro",
+      "kicker": "Konjunktur · USA",
+      "headline": "Ein schwacher Arbeitsmarkt trifft auf hartnaeckige Inflation und stellt die Fed vor ein Dilemma",
+      "dek": "Heute stehen die woechentlichen Erstantraege auf Arbeitslosenhilfe an, am Freitag folgen die Einkaufsmanagerindizes. Beide liefern Hinweise auf Wachstum und Preisdruck.",
+      "body": [
+        "Die US-Konjunkturdaten zeichnen ein widerspruechliches Bild. Im Juni entstanden nur 57.000 neue Stellen ausserhalb der Landwirtschaft, deutlich weniger als erwartet. Die Arbeitslosenquote lag bei 4,2 Prozent, wobei der Rueckgang eher auf eine sinkende Erwerbsbeteiligung als auf staerkere Einstellungen zurueckging. Gleichzeitig verharrt die Inflation mit zuletzt 3,5 Prozent ueber dem Ziel.",
+        "Diese Kombination aus schwaechelndem Arbeitsmarkt und hoher Teuerung ist ein Dilemma fuer die Notenbank. Senkt sie die Zinsen, um die Beschaeftigung zu stuetzen, riskiert sie hoehere Inflation. Haelt sie die Zinsen hoch, um die Inflation zu bekaempfen, belastet sie den Arbeitsmarkt. Genau dieser Zielkonflikt erklaert den harten Ton der Notenbank.",
+        "Heute veroeffentlichen die USA die woechentlichen Erstantraege auf Arbeitslosenhilfe sowie Zahlen zum Verkauf bestehender Haeuser. Am Freitag folgen die vorlaeufigen Einkaufsmanagerindizes fuer Juli, die als Fruehindikator fuer die Wachstumsseite besonders beachtet werden."
+      ],
+      "mechanik": "Konjunkturdaten bewegen Maerkte, weil sie die Erwartungen an die Geldpolitik verschieben. Ein schwacher Arbeitsmarkt spricht fuer niedrigere Zinsen, hohe Inflation fuer hoehere. Wenn beide gleichzeitig auftreten, entsteht Unsicherheit ueber den kuenftigen Zinspfad. Fruehindikatoren wie die Einkaufsmanagerindizes sind besonders wertvoll, weil sie die Richtung der Wirtschaft frueher anzeigen als amtliche Statistiken.",
+      "sources": [
+        {
+          "title": "Investing.com: Jobless claims and existing home sales highlight Thursday's data",
+          "url": "https://www.investing.com/news/stock-market-news/jobless-claims-and-existing-home-sales-highlight-thursdays-data-93CH-4782166",
+          "tier": 2
+        },
+        {
+          "title": "US Bureau of Labor Statistics: CPI News Release",
+          "url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Ein schwacher Arbeitsmarkt trifft auf hartnäckige Inflation und bringt die Fed in die Zwickmühle.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Unternehmen, die Oel und Gas foerdern, verarbeiten und transportieren.",
+      "lage": "Der Sektor profitiert von der Krisenpraemie. Brent stieg um 1,70 Prozent auf 95,67 Dollar, WTI um 1,49 Prozent. Die Nahost-Spannungen und die Blockadedrohung im Roten Meer treiben die Notierungen.",
+      "richtung": "up",
+      "tagesWert": "Brent 95,67 USD (+1,70 %); WTI 88,12 USD (+1,49 %), Stand 23.7.",
+      "istZustand": "Der Energiesektor ist derzeit von der Geopolitik dominiert. Die Bewertungen der grossen integrierten Konzerne sind gemessen an langfristigen Multiples moderat, weil der Markt einen Rueckgang der Oelpreise auf mittlere Sicht unterstellt. Der aktuelle Preis von rund 96 Dollar bei Brent enthaelt eine spuerbare Risikopraemie fuer die Strasse von Hormus, durch die etwa ein Fuenftel des Welt-Oels fliesst. Strukturell steht der Sektor zwischen zwei Kraeften. Kurzfristig stuetzt die knappe Kapazitaet der OPEC-Staaten und die Geopolitik die Preise. Langfristig lastet der Umbau zu erneuerbaren Energien auf der Nachfrageerwartung. Zusaetzlich entsteht ein neuer Nachfragekanal, weil Rechenzentren fuer KI enorme Mengen Strom und Gas benoetigen. Die Kapitaldisziplin der Foerderkonzerne ist hoeher als im vergangenen Zyklus, was hohe Ausschuettungen ermoeglicht."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Rohstoffen wie Metallen, Chemikalien und Baustoffen.",
+      "lage": "Zweigeteilt. Gold notiert bei 4.117 Dollar nahe dem Rekord, Silber nahe historischer Hoechststaende, waehrend Kupfer um 0,84 Prozent nachgab. Edelmetalle profitieren von der Krisenpraemie, Industriemetalle von der Dollarstaerke gebremst.",
+      "richtung": "up",
+      "tagesWert": "Gold 4.117 USD (+1,55 %); Kupfer -0,84 %, Stand 22.7.",
+      "istZustand": "Der Grundstoffsektor zerfaellt aktuell in zwei Lager. Edelmetalle wie Gold und Silber stehen nahe ihren Rekorden, getragen von Krisenpraemie, Notenbankkaeufen und der Suche nach Schutz vor Inflation. Der hohe Realzins wirkt normalerweise gegen zinsloses Gold, doch die geopolitische Unsicherheit ueberlagert diesen Effekt derzeit. Industriemetalle wie Kupfer folgen dagegen dem Konjunkturzyklus und der Dollarentwicklung. Strukturell gilt Kupfer als Gewinner der Elektrifizierung, weil Stromnetze, Elektroautos und Rechenzentren grosse Mengen benoetigen, waehrend das Angebot durch wenige neue Minen begrenzt bleibt. Die Bewertungen der Minenbetreiber schwanken stark mit dem Rohstoffpreis, weil ein grosser Teil der Preisbewegung bei weitgehend fixen Foerderkosten direkt auf den Gewinn durchschlaegt. Dieser operative Hebel macht den Sektor volatil in beide Richtungen."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbauer, Ruestungs-, Bau- und Transportunternehmen.",
+      "lage": "Gemischt. Die physische Seite des KI-Ausbaus, also Kuehl-, Schalt- und Stromtechnik, profitiert von hoeheren Investitionsbudgets. Steigende Energie- und Transportkosten belasten dagegen energieintensive Fertigung.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten Sektor-Tageswerte; Einordnung qualitativ",
+      "istZustand": "Die Industrie ist derzeit ein Nutzniesser mehrerer struktureller Themen. Der Ausbau von Rechenzentren fuer KI schafft direkte Nachfrage nach Kuehltechnik, Schaltanlagen, Transformatoren und Netzausruestung. Diese Nachfrage trifft auf zum Teil begrenzte Kapazitaeten und stuetzt die Auftragsbuecher. Die Ruestungsnachfrage bleibt durch die geopolitischen Spannungen hoch. Zugleich lasten hoehere Energie- und Finanzierungskosten auf zyklischen Teilbranchen wie Maschinenbau und Bau. Die Bewertungen der KI-nahen Industriewerte sind teils deutlich gestiegen und preisen viel Wachstum ein, was die Fallhoehe bei Enttaeuschungen erhoeht. Der Sektor ist spaet im Zyklus, weil viele Auftragsbuecher gut gefuellt sind, die kuenftige Nachfrage aber von einer soften Konjunktur und hohen Zinsen gebremst werden koennte. Die Spreizung zwischen strukturellen Gewinnern und zyklischen Nachzueglern ist gross."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter von Guetern, die Verbraucher bei guter Lage kaufen, etwa Autos, Reisen und Luxus.",
+      "lage": "Unter Druck. Tesla fiel nach schwachen Ertraegen nachboerslich, hoehere Spritpreise mindern die Kaufkraft, und steigende Zinsen verteuern Konsumkredite und Baufinanzierungen.",
+      "richtung": "down",
+      "tagesWert": "Tesla ca. -4,0 % nachboerslich (22.7.)",
+      "istZustand": "Der zyklische Konsum steht unter mehreren Belastungen. Hoehere Zinsen verteuern Konsum- und Baukredite und daempfen groessere Anschaffungen wie Autos und Wohnungen. Der juengste Anstieg der Energiepreise wirkt wie eine zusaetzliche Steuer auf die Haushalte und mindert das verfuegbare Einkommen. Die Bewertungen sind uneinheitlich. Einige Luxus- und Markenkonzerne handeln weiter mit Aufschlag wegen ihrer Preissetzungsmacht, waehrend massenmarktorientierte Anbieter und die Automobilbranche unter Margendruck stehen. Der Sektor ist stark konjunkturabhaengig und reagiert damit empfindlich auf das aktuell unsichere Umfeld aus schwachem Arbeitsmarkt und hoher Inflation. Strukturell veraendert der Wandel zur Elektromobilitaet die Automobilbranche tiefgreifend und erzeugt hohe Investitionslasten bei zugleich steigendem Wettbewerb aus China."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Hersteller von Guetern des taeglichen Bedarfs wie Lebensmitteln und Haushaltsartikeln.",
+      "lage": "Defensiv gefragt. In einem Umfeld aus hoher Unsicherheit und der Rotation weg von teurer Technologie gewinnen stabile Geschaeftsmodelle relativ an Attraktivitaet. Nestle berichtet heute Halbjahreszahlen.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten Sektor-Tageswerte; Nestle-H1-Bericht 23.7.",
+      "istZustand": "Der Basiskonsum ist der klassische defensive Sektor. Die Nachfrage nach Lebensmitteln und Haushaltsguetern bleibt in jeder Konjunkturlage stabil, was verlaessliche Umsaetze und Cashflows sichert. In Phasen hoher Unsicherheit und steigender Zinsen fliesst haeufig Kapital in diese Titel, weil ihre Ertraege planbar sind. Der Sektor kaempft jedoch mit strukturellen Herausforderungen. Handelsmarken der Supermaerkte gewinnen Marktanteile, und neue Abnehmspritzen der GLP-1-Klasse veraendern das Konsumverhalten bei bestimmten Lebensmitteln. Auffaellig ist die Schwaeche mehrerer kleinerer Basiskonsumwerte, die zuletzt stark eingebrochen sind. Die Bewertungen der grossen Markenkonzerne sind gemessen an ihrem geringen Wachstum eher hoch, was den defensiven Charakter relativiert. Die Preissetzungsmacht bleibt die entscheidende Kennzahl, weil sie bestimmt, ob Kostensteigerungen weitergegeben werden koennen."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharmakonzerne, Biotechfirmen und Medizintechnikhersteller.",
+      "lage": "Defensiv im Fokus. Roche legt heute Halbjahreszahlen vor, wobei die Frankenstaerke die berichteten Umsaetze druecken duerfte. Der Sektor gilt als relativer Gewinner der Rotation aus teurer Technologie.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten Sektor-Tageswerte; Roche-H1-Bericht 23.7.",
+      "istZustand": "Der Gesundheitssektor gilt als defensiv, weil die Nachfrage nach Medikamenten und Behandlungen wenig von der Konjunktur abhaengt. In der aktuellen Rotation weg von hoch bewerteter Technologie fliesst Kapital in solche stabilen Geschaeftsmodelle. Die grossen Pharmakonzerne stehen jedoch vor strukturellem Gegenwind. Wichtige Medikamente verlieren ihren Patentschutz, was Umsatz und Marge belastet und den Druck erhoeht, die Pipeline durch Zukaeufe und Forschung zu fuellen. Bei den europaeischen Konzernen kommt die Waehrung hinzu. Ein starker Schweizer Franken mindert die in Franken berichteten Umsaetze, obwohl das operative Geschaeft in konstanter Waehrung waechst. Die Bewertungen sind im historischen Vergleich moderat, was den Sektor fuer defensive Anleger attraktiv macht. Medizintechnik mit Einwegprodukten und hohen Wechselkosten bietet stabile, wiederkehrende Erloese und gilt als qualitativ hochwertiges Teilsegment."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer und Vermoegensverwalter.",
+      "lage": "Zinsgestuetzt. Ein laenger hohes Zinsniveau und die Aussicht auf eine EZB-Anhebung im September stuetzen die Zinsmargen. Heute berichten mit BNP Paribas mehrere europaeische Banken.",
+      "richtung": "up",
+      "tagesWert": "keine belegten Sektor-Tageswerte; BNP-Q2-Bericht 23.7.",
+      "istZustand": "Der Finanzsektor profitiert vom Zinsumfeld. Ein laenger hohes Leitzinsniveau erhoeht die Differenz zwischen den Zinsen, die Banken fuer Kredite verlangen, und jenen, die sie fuer Einlagen zahlen. Diese Zinsmarge ist die wichtigste Ertragsquelle klassischer Banken. Die Aussicht auf eine weitere EZB-Anhebung im September stuetzt diese Fantasie zusaetzlich. Zugleich waechst mit hoeheren Zinsen und einer softeren Konjunktur das Risiko von Kreditausfaellen, was die Institute durch Rueckstellungen abfedern muessen. Die Bewertungen der europaeischen Banken sind trotz der Kursgewinne der vergangenen Jahre im historischen Vergleich noch moderat, gemessen an Kurs-Buchwert-Verhaeltnissen. Versicherer und Vermoegensverwalter profitieren von hoeheren Kapitalmarktrenditen auf ihre Anlagen. Ein Risiko bleibt das hohe Engagement mancher Institute in der Finanzierung des Rechenzentrumsbooms, dessen Renditen noch unbewiesen sind."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Hersteller von Chips, Hardware und Unternehmenssoftware.",
+      "lage": "Gespalten. Asiens Chipzulieferer stiegen kraeftig, SK Hynix um fuenf Prozent, waehrend hoch bewertete US-Softwarewerte unter der Zinsangst leiden und der Nasdaq nachgab.",
+      "richtung": "up",
+      "tagesWert": "SK Hynix +5,0 %, Samsung +3,65 % (23.7.); Nasdaq -0,6 % (22.7.)",
+      "istZustand": "Die Informationstechnologie ist der Sektor im Zentrum des KI-Zyklus. Die Nachfrage nach Rechenleistung treibt die Bestellungen bei Chip-, Speicher- und Ausruesterunternehmen. Das bestaetigte hohe Investitionsbudget von Alphabet unterstreicht, wie stark die Hyperscaler investieren. Zugleich ist der Sektor gespalten. Die Zulieferer profitieren von den Bestellungen, waehrend die ausgebenden Plattformen unter der Cashflow-Frage leiden. Die Bewertungen sind uneinheitlich hoch, was den Sektor anfaellig fuer Zinsanstiege macht, weil hohe kuenftige Gewinne bei steigendem Diskontsatz an Gegenwartswert verlieren. Strukturell steht der Speichermarkt vor einem Test, weil der Boersengang des chinesischen Herstellers CXMT frisches Kapital in zusaetzliche Kapazitaet lenkt und mittelfristig die Preise fuer Standardspeicher druecken koennte. Die hohe Konzentration weniger sehr grosser Werte in den Indizes macht den Gesamtmarkt abhaengig von der Stimmung in diesem einen Sektor."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Internetplattformen, Medien und Telekommunikationsanbieter.",
+      "lage": "Belastet durch Alphabet. Die erneute Anhebung des Investitionsbudgets drueckte die Aktie nachboerslich um rund viereinhalb Prozent und faerbte auf die Stimmung im Sektor ab.",
+      "richtung": "down",
+      "tagesWert": "Alphabet ca. -4,5 % nachboerslich (22.7.)",
+      "istZustand": "Der Kommunikationssektor wird von wenigen sehr grossen Internetplattformen dominiert, allen voran Alphabet und Meta. Ihr Geschaeft mit digitaler Werbung ist hochprofitabel und wenig kapitalintensiv gewesen, was jahrelang hohe freie Cashfluesse ermoeglichte. Genau dieses Profil aendert sich durch die massiven KI-Investitionen. Die Konzerne wandeln sich von kapitalarmen zu kapitalintensiven Unternehmen, was die Bewertungslogik verschiebt. Der Markt bewertet nun staerker, ob die Milliardeninvestitionen ausreichend Rendite bringen. Die klassische Telekommunikation ist dagegen ein reifer, kapitalintensiver und hoch verschuldeter Teilbereich, der unter steigenden Zinsen leidet, weil seine Refinanzierung teurer wird. Die Bewertungen der grossen Plattformen sind trotz der juengsten Ruecksetzer im historischen Vergleich nicht guenstig, gemessen an ihrem sich verlangsamenden Gewinnwachstum und der neuen Investitionslast."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Betreiber von Strom-, Gas- und Wassernetzen sowie Kraftwerken.",
+      "lage": "Gemischt. Der wachsende Strombedarf der Rechenzentren stuetzt die Nachfrage, doch hoehere Zinsen belasten die kapitalintensiven und verschuldeten Versorger.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten Sektor-Tageswerte; Einordnung qualitativ",
+      "istZustand": "Die Versorger stehen im Spannungsfeld zweier Kraefte. Auf der Nachfrageseite entsteht durch den Ausbau von Rechenzentren fuer KI ein struktureller Rueckenwind, weil diese Anlagen enorme Mengen verlaesslichen Grundlaststroms benoetigen. Betreiber langfristiger Stromliefervertraege und Anbieter von Grundlast gehoeren zu den strukturellen Gewinnern dieses Trends. Auf der Finanzierungsseite belastet das hohe Zinsniveau. Versorger sind sehr kapitalintensiv und stark verschuldet, weil sie laufend in Netze und Kraftwerke investieren muessen. Hoehere Zinsen verteuern diese Finanzierung und mindern zugleich den Bewertungsvorteil ihrer stabilen Ausschuettungen gegenueber sicheren Anleihen. Die Bewertungen sind daher stark zinsabhaengig. In der aktuellen Rotation in defensive Werte finden manche Versorger Zuspruch, doch die Zinslast bleibt der begrenzende Faktor. Die Aussicht auf eine EZB-Anhebung im September wirkt hier eher daempfend."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Eigentuemer und Betreiber von Gewerbe- und Wohnimmobilien sowie Immobilienfonds.",
+      "lage": "Zinsbelastet. Die Aussicht auf laenger hohe oder steigende Zinsen verteuert die Finanzierung und drueckt die Bewertungen. Rechenzentrums-Immobilien bilden eine strukturelle Ausnahme.",
+      "richtung": "down",
+      "tagesWert": "keine belegten Sektor-Tageswerte; Einordnung qualitativ",
+      "istZustand": "Immobilien sind der zinssensibelste Sektor am Markt. Ihr Wert leitet sich aus kuenftigen Mieteinnahmen ab, die mit dem Zins abgezinst werden, und ihre Finanzierung haengt direkt am Zinsniveau. Die Aussicht auf laenger hohe oder sogar steigende Zinsen belastet daher Bewertungen und Projektrenditen. Besonders unter Druck steht Gewerbeimmobilie mit Buerobezug, weil hoehere Leerstaende und veraenderte Arbeitsgewohnheiten die Mieten daempfen. Eine strukturelle Ausnahme bilden Rechenzentrums-Immobilien, deren Nachfrage durch den KI-Ausbau kraeftig waechst. Diese spezialisierten Vermieter profitieren von langfristigen Vertraegen mit den Hyperscalern, tragen aber hohe Kapitalintensitaet und Zinslast. Die Bewertungen im Sektor haben sich nach den Rueckgaengen der vergangenen Jahre teils stabilisiert, bleiben aber anfaellig, solange die Notenbanken keine Zinssenkungen signalisieren. Der Sektor ist damit spaet im Anpassungszyklus, aber noch nicht am Wendepunkt."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "Munters Group AB",
+      "ticker": "MTRS",
+      "logoKey": "munters",
+      "marketCapEUR": "3,10 Mrd. €",
+      "capSource": "Google Finance 22.7.2026 (34,44 Mrd. SEK) umgerechnet mit EUR/SEK 0,08997 (Alpha Vantage 23.7.)",
+      "marktEinordnung": "Der Markt fuer Klima- und Kuehltechnik von Rechenzentren waechst mit jedem Dollar, den die Hyperscaler in KI-Infrastruktur stecken. Server erzeugen enorme Abwaerme, die abgefuehrt werden muss, sonst faellt die Anlage aus. Munters ist einer der fuehrenden europaeischen Anbieter von Luftbehandlung und Kuehlung und mit der eigenen Sparte Data Center Technologies direkt im Wachstumsfeld positioniert, inklusive des Uebergangs zur wassergestuetzten Fluessigkeitskuehlung fuer besonders dichte KI-Server.",
+      "thesis": "Munters ist ein unterschaetzter europaeischer Profiteur des bestaetigten KI-Investitionsbooms. Waehrend die US-Vergleichswerte Vertiv und Modine inzwischen mit rund 50 beziehungsweise 11 Milliarden Euro Boersenwert gehandelt werden, bringt Munters nur gut drei Milliarden Euro auf die Waage und bietet damit einen weniger ausgereizten Zugang zum selben Thema. Die Kuehlung ist die physische Voraussetzung jedes Rechenzentrums, und die Umstellung auf Fluessigkeitskuehlung erhoeht den Wert je Anlage. Das Unternehmen kombiniert dieses Wachstumsfeld mit stabileren Altgeschaeften in Luftbehandlung und Lebensmitteltechnik, was die Ertraege breiter abstuetzt. Fuer ein europalastiges Depot bietet der Titel zudem eine Diversifikation weg von den ueberwiegend amerikanischen und asiatischen KI-Werten. Der Kurs notiert bei rund 187 Schwedischen Kronen und hat die Euphorie mancher US-Vergleichswerte nicht mitgemacht.",
+      "counterarguments": [
+        "Das Auftragsgeschaeft ist zyklisch und projektabhaengig, was die Umsaetze von Quartal zu Quartal schwanken laesst.",
+        "Eine starke Abhaengigkeit von wenigen grossen Rechenzentrumskunden erhoeht das Klumpenrisiko, wenn diese ihre Investitionen verschieben.",
+        "Die Aktie notiert in Schwedischen Kronen, was fuer Anleger im Euroraum ein Waehrungsrisiko bedeutet, und die detaillierten Bewertungskennzahlen liessen sich in diesem Lauf nicht unabhaengig pruefen."
+      ],
+      "catalysts": [
+        "Der naechste Quartalsbericht mit Auftragseingang aus der Sparte Data Center Technologies.",
+        "Grossauftraege fuer Fluessigkeitskuehlung von Hyperscalern als Beleg der Technologiefuehrung."
+      ]
+    },
+    {
+      "name": "Hecla Mining Company",
+      "ticker": "HL",
+      "logoKey": "hecla",
+      "marketCapEUR": "8,97 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 22.7.2026 (10,26 Mrd. $), EUR/USD 1,1435 (Alpha Vantage 23.7.)",
+      "marktEinordnung": "Silber steht mit rund 59 Dollar je Unze nahe historischen Hoechststaenden. Der Markt vereint zwei Nachfragequellen, den monetaeren Schutzcharakter aehnlich Gold und die industrielle Verwendung in Solarmodulen, Elektronik und Elektrofahrzeugen. Das Angebot ist knapp, weil Silber ueberwiegend als Nebenprodukt anderer Minen anfaellt. Hecla ist der groesste Silberproduzent der USA und deckt einen erheblichen Teil der heimischen Foerderung ab, mit Minen in einer sicheren Jurisdiktion.",
+      "thesis": "Hecla ist ein Hebel auf einen Silberpreis nahe Rekordniveau bei zugleich sicherer US-Jurisdiktion. Weil ein grosser Teil einer Preissteigerung bei weitgehend fixen Foerderkosten direkt auf den Gewinn durchschlaegt, verfuegt das Unternehmen ueber einen hohen operativen Hebel. Die Zahlen belegen das, der Umsatz verdoppelte sich im juengsten Quartal gegenueber dem Vorjahr, die operative Marge liegt bei rund 55 Prozent. Bemerkenswert ist die Diskrepanz zum Kurs. Die Aktie notiert bei rund 15,70 Dollar und damit weit unter ihrem Zwoelfmonatshoch von 34,16 Dollar, obwohl der Silberpreis nahe Rekord steht. Sollte die Krisenpraemie an den Rohstoffmaerkten bestehen bleiben oder Silber neue Hoechststaende erreichen, ist der operative Hebel im Kurs bislang nur teilweise eingepreist. Die US-Jurisdiktion senkt das politische Risiko gegenueber vielen internationalen Minenbetreibern.",
+      "counterarguments": [
+        "Silber ist hochvolatil, die Aktie fiel bereits von 34 auf gut 15 Dollar, der operative Hebel wirkt in beide Richtungen.",
+        "Hecla ist Preisnehmer und hat keinen Einfluss auf den Silberpreis, ein Nachlassen der Krisenpraemie wuerde den Kurs schnell belasten.",
+        "Mit einem Kurs-Gewinn-Verhaeltnis von rund 21 ist die Aktie trotz des Rueckgangs nicht billig, und operative Stoerungen in den Minen koennten die Foerderung treffen."
+      ],
+      "catalysts": [
+        "Der naechste Quartalsbericht, der den operativen Hebel bei hohem Silberpreis zeigt.",
+        "Ein Ausbruch des Silberpreises auf neue Rekorde durch anhaltende Krisenpraemie."
+      ]
+    },
+    {
+      "name": "Ero Copper Corp",
+      "ticker": "ERO",
+      "logoKey": "erocopper",
+      "marketCapEUR": "2,45 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 22.7.2026 (2,80 Mrd. $), EUR/USD 1,1435 (Alpha Vantage 23.7.)",
+      "marktEinordnung": "Kupfer ist das zentrale Metall der Elektrifizierung. Stromnetze, Elektrofahrzeuge und der Ausbau von Rechenzentren fuer KI benoetigen grosse Mengen, waehrend das Angebot durch wenige neue Minen und lange Projektlaufzeiten begrenzt bleibt. Genau dieser strukturelle Nachfrageueberhang macht die Nische attraktiv. Ero Copper ist ein wachsender, kostenguenstiger Produzent mit Minen in Brasilien und dem Hochlauf des neuen Projekts Tucuma, das die Foerdermenge deutlich steigern soll.",
+      "thesis": "Ero Copper ist ein guenstig bewerteter Wachstumswert mit Hebel auf das strukturelle Kupferdefizit. Die Aktie handelt mit einem erwarteten Kurs-Gewinn-Verhaeltnis von rund 6,5 und einem Verhaeltnis von Unternehmenswert zu operativem Ergebnis von etwa 6, was fuer einen wachsenden Produzenten niedrig ist. Die Eigenkapitalrendite liegt bei rund 33 Prozent, der Umsatz verdoppelte sich zuletzt gegenueber dem Vorjahr. Der Kurs von rund 27 Dollar liegt deutlich unter dem Zwoelfmonatshoch von 39,80 Dollar und unter dem durchschnittlichen Analystenziel von 35,20 Dollar. Der Hochlauf des Projekts Tucuma hebt die Foerdermenge und damit den Umsatz, waehrend die Elektrifizierung und der wachsende Strombedarf der KI-Rechenzentren die langfristige Kupfernachfrage stuetzen. Der Titel bietet damit einen wachstumsstarken und zugleich preiswerten Zugang zum Elektrifizierungsthema abseits der ueberlaufenen Halbleiterwerte.",
+      "counterarguments": [
+        "Die Konzentration auf Brasilien bedeutet ein Laender- und Waehrungsrisiko ueber den Brasilianischen Real.",
+        "Der Hochlauf des Projekts Tucuma birgt Ausfuehrungsrisiken, in der Vergangenheit gab es bei Bergbauprojekten haeufig Verzoegerungen.",
+        "Kupfer gab zuletzt um 0,84 Prozent nach, der Titel ist damit keine kurzfristige Momentum-Wette, und als Preisnehmer haengt Ero am schwankenden Kupferpreis."
+      ],
+      "catalysts": [
+        "Das Erreichen der geplanten Foerdermenge im Projekt Tucuma.",
+        "Ein Ausbruch des Kupferpreises durch anhaltende Nachfrage aus Elektrifizierung und Netzausbau."
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "EZB-Zinsentscheid und Ton Lagardes zum September",
+      "when": "heute 14:15 bzw. 14:45",
+      "bullishIf": "Halten mit vorsichtigem Ton, der eine September-Anhebung offen laesst",
+      "bearishIf": "klares Signal fuer einen weiteren Schritt und Sorge vor Zweitrundeneffekten"
+    },
+    {
+      "what": "Europaeische Earnings-Flut",
+      "when": "heute Vormittag (Roche, Nestle, STMicro, Nokia, BNP, TotalEnergies)",
+      "bullishIf": "Guidance-Bestaetigungen und stabile Margen",
+      "bearishIf": "weitere Wachstumsverlangsamungen wie bei SAP"
+    },
+    {
+      "what": "Capex-Saison der US-Hyperscaler",
+      "when": "kommende Tage (Microsoft, Meta, Amazon)",
+      "bullishIf": "hohe Investitionen mit klarer Renditeaussage",
+      "bearishIf": "weitere Budgeterhoehungen ohne Renditeperspektive belasten die Plattformen"
+    },
+    {
+      "what": "Yen und Interventionsrisiko",
+      "when": "laufend, BOJ 30./31.7.",
+      "bullishIf": "geordnete Stabilisierung um oder unter 163",
+      "bearishIf": "weiterer Absturz und ungeordnete Intervention mit Carry-Trade-Aufloesung"
+    },
+    {
+      "what": "Oelpreis und Strasse von Hormus",
+      "when": "laufend",
+      "bullishIf": "Deeskalation und fallende Risikopraemie",
+      "bearishIf": "Brent nachhaltig ueber 100 Dollar durch echte Angebotsstoerung"
+    },
+    {
+      "what": "CXMT-Boersengang und DRAM-Preise",
+      "when": "Montag 27.7.",
+      "bullishIf": "geordnetes Debuet ohne Preisdruck auf Speicher",
+      "bearishIf": "Signale fuer kuenftiges Ueberangebot durch neue Kapazitaet"
+    },
+    {
+      "what": "Fed-Sitzung und Zinspfad",
+      "when": "28./29.7.",
+      "bullishIf": "Halten mit ausgewogenem Ton",
+      "bearishIf": "steigende Wahrscheinlichkeit einer Anhebung wegen Oelinflation"
+    },
+    {
+      "what": "Silber- und Goldpreis",
+      "when": "laufend",
+      "bullishIf": "neue Rekorde stuetzen den operativen Hebel der Minen wie Hecla",
+      "bearishIf": "nachlassende Krisenpraemie loest eine scharfe Korrektur aus"
+    }
+  ],
+  "learningNotes": [
+    "Eine Aktie reagiert auf die Abweichung von den Erwartungen, nicht auf die absolute Zahl. Alphabet und SAP fielen trotz Umsatz-Beats.",
+    "Steigender Umsatz bei stark wachsendem Capex und negativem freien Cashflow kann den Kurs belasten, weil die Bewertung am freien Cashflow haengt.",
+    "Dieselbe Nachricht kann Zulieferer heben und den Auftraggeber senken. Googles hoehere Investition trieb Asiens Chipwerte und drueckte die Alphabet-Aktie.",
+    "Ein gleichlaufender Aufschlag bei Oel, Gold und Silber bei zugleich schwaecherem Kupfer ist eher Krisenpraemie als breite Konjunkturhoffnung.",
+    "Eine hohe Zinsdifferenz macht Carry Trades lukrativ und den Yen schwach, erhoeht aber das Risiko einer abrupten Aufloesung."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "BWL",
+      "modell": "Free-Cash-Flow-Bewertung und Kapitalintensitaet",
+      "erklaerung": "Der Wert eines Unternehmens leitet sich aus den kuenftigen freien Cashfluessen ab, also aus dem Geld, das nach Betriebskosten und Investitionen uebrig bleibt. Investitionen in Sachanlagen erscheinen nicht sofort in der Gewinn- und Verlustrechnung. Stattdessen werden sie ueber Jahre abgeschrieben. Beim Cashflow schlagen sie aber sofort voll durch. Steigt die Investitionsquote stark, sinkt der freie Cashflow, selbst wenn der Umsatz waechst. Kapitalintensive Unternehmen binden viel Geld in Anlagen, was ihre Bewertung empfindlich fuer die Renditefrage macht.",
+      "anwendung": "Alphabet hob sein Investitionsbudget auf bis zu 205 Milliarden Dollar an, Tesla verdoppelte den Capex und rutschte in einen negativen freien Cashflow von 1,09 Milliarden Dollar. Beide Aktien fielen trotz Umsatzwachstum, weil der Markt die Belastung des freien Cashflows in den Vordergrund stellte."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Ungedeckte Zinsparitaet und Carry Trade",
+      "erklaerung": "Die ungedeckte Zinsparitaet besagt, dass die erwartete Wechselkursaenderung zwischen zwei Waehrungen ihrer Zinsdifferenz entsprechen sollte. Eine hoeher verzinste Waehrung sollte theoretisch abwerten, um den Zinsvorteil auszugleichen. In der Praxis tritt dies oft nicht ein, weshalb der Carry Trade funktioniert. Anleger verschulden sich in einer niedrig verzinsten Waehrung und legen in einer hoeher verzinsten an und verdienen sowohl die Zinsdifferenz als auch haeufig einen Waehrungsgewinn. Das treibt Kapitalstroeme und verstaerkt die Bewegung, birgt aber das Risiko einer abrupten Aufloesung.",
+      "anwendung": "Der Yen fiel auf 163,24 je Dollar, den tiefsten Stand seit fast vierzig Jahren, weil die grosse Zinsluecke zwischen den USA mit 3,50 bis 3,75 Prozent und Japan mit einem Prozent Carry Trades befeuert und den Yen schwaecht."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Geldpolitische Reaktionsfunktion und Erwartungsankerung",
+      "erklaerung": "Eine Zentralbank folgt einer Reaktionsfunktion, die grob beschreibt, wie sie den Leitzins an Inflation und Konjunktur anpasst. Steigt die Inflation ueber das Ziel, strafft sie, schwaechelt die Wirtschaft, lockert sie. Ein zentraler Baustein ist die Erwartungsankerung. Wenn Unternehmen und Haushalte darauf vertrauen, dass die Zentralbank die Inflation zum Ziel zurueckfuehrt, fordern sie keine ueberhoehten Loehne und Preise, und die Inflation stabilisiert sich von selbst. Ein Energiepreisschock gefaehrdet diesen Anker, weil er Zweitrundeneffekte ausloesen kann, bei denen sich der Preisschub ueber Loehne verfestigt.",
+      "anwendung": "Die EZB duerfte heute den Zins bei 2,25 Prozent halten, signalisiert aber einen moeglichen Schritt im September. Der Grund ist der Oelpreisanstieg, der die Inflation wieder anfacht und die EZB zu einem harten Ton zwingt, um die Erwartungen zu verankern."
+    },
+    {
+      "disziplin": "Politikwissenschaft",
+      "modell": "Chokepoint-Geopolitik und oekonomische Machtprojektion",
+      "erklaerung": "Ein Chokepoint ist ein geografischer Engpass, durch den ein grosser Teil eines Rohstoff- oder Warenstroms fliesst, etwa eine schmale Meerenge. Wer einen solchen Engpass kontrolliert oder glaubwuerdig bedrohen kann, verfuegt ueber ein Machtinstrument, weil eine Stoerung weltweite Preiswirkung entfaltet. Diese oekonomische Machtprojektion erlaubt es auch kleineren Akteuren, mit begrenzten Mitteln grosse Wirkung zu erzielen. Die Marktreaktion erfolgt ueber eine Risikopraemie, die schon bei der blossen Drohung entsteht, lange bevor eine tatsaechliche Unterbrechung eintritt.",
+      "anwendung": "Die Huthi erklaerten eine Seeblockade gegen Saudi-Arabien, die Transite durch die Strasse von Hormus fielen um mehr als die Haelfte. Weil rund ein Fuenftel des Welt-Oels diese Meerenge passiert, trieb allein die Drohung Brent in Richtung 96 Dollar."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Wie 205 Milliarden Dollar Investitionen durch Alphabets Zahlenwerk wandern",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Die Investitionen in Rechenzentren und Chips erscheinen zunaechst nicht als Aufwand. Sie werden aktiviert und ueber die Nutzungsdauer abgeschrieben. In den kommenden Jahren steigen deshalb die Abschreibungen, die als Kostenblock die operative Marge druecken. Der heutige Umsatzsprung von 24 Prozent zeigt die Ertragsseite, die kuenftige Margenbelastung durch Abschreibungen bleibt zunaechst unsichtbar.",
+      "Bilanz: Die Investitionen erhoehen die Sachanlagen, also Server, Rechenzentren und Netzwerktechnik. Werden sie aus dem laufenden Cash bezahlt, sinkt der Kassenbestand entsprechend. Die Bilanzsumme waechst, das Unternehmen bindet mehr Kapital in physischen Anlagen und wandelt sich damit von einem kapitalarmen zu einem kapitalintensiven Geschaeft.",
+      "Cashflow: Hier wird die Belastung sofort sichtbar. Die Investitionen von 80,6 Milliarden Dollar im ersten Halbjahr flossen als Abfluss in den Investitionscashflow. Sie mindern den freien Cashflow direkt, also den operativen Cashflow abzueglich Investitionen. Genau diese Kennzahl bestimmt, wie viel Geld fuer Dividenden, Aktienrueckkaeufe und Schuldenabbau uebrig bleibt.",
+      "Bewertung: In einem Discounted-Cashflow-Modell leitet sich der faire Wert aus den kuenftigen freien Cashfluessen ab. Steigt der Capex staerker als der operative Cashflow, sinkt der freie Cashflow und mit ihm der rechnerische Wert, sofern die Investitionen nicht genug kuenftiges Wachstum und Rendite erzeugen. Deshalb reagierte die Aktie negativ, obwohl der Umsatz stark stieg."
+    ],
+    "anfaengerfehler": "Der typische Anfaengerfehler ist es, den Nettogewinn mit der Cash-Erzeugung zu verwechseln. Alphabets ausgewiesener Nettogewinn von 112 Milliarden Dollar war durch rund 98 Milliarden Dollar nicht realisierte Buchgewinne auf Beteiligungen aufgeblaeht und sagt fast nichts ueber die operative Cash-Kraft aus. Wer nur auf den Gewinn je Aktie von 9,11 Dollar schaut, uebersieht die eigentliche Botschaft im Cashflow."
+  },
+  "glossar": [
+    {
+      "begriff": "Capex (Investitionsausgaben)",
+      "erklaerung": "Ausgaben fuer langfristige Anlagen wie Rechenzentren, Maschinen oder Server. Sie mindern den freien Cashflow sofort und werden ueber Jahre abgeschrieben."
+    },
+    {
+      "begriff": "Freier Cashflow",
+      "erklaerung": "Das Geld, das nach Betriebskosten und Investitionen uebrig bleibt. Aus ihm leitet sich langfristig der Wert einer Aktie ab."
+    },
+    {
+      "begriff": "HBM (High Bandwidth Memory)",
+      "erklaerung": "Gestapelter Hochleistungsspeicher, der fuer KI-Server besonders wichtig ist, weil er sehr schnell grosse Datenmengen bereitstellt."
+    },
+    {
+      "begriff": "DRAM",
+      "erklaerung": "Der Arbeitsspeicher, den Computer und Server fuer laufende Prozesse nutzen. Sein Preis schwankt stark mit Angebot und Nachfrage."
+    },
+    {
+      "begriff": "Carry Trade",
+      "erklaerung": "Eine Strategie, bei der Anleger sich in einer niedrig verzinsten Waehrung verschulden und in einer hoeher verzinsten anlegen, um die Zinsdifferenz zu verdienen."
+    },
+    {
+      "begriff": "Regulierungsgutschriften",
+      "erklaerung": "Zertifikate, die Elektroautohersteller wie Tesla an andere Hersteller verkaufen koennen. Sie waren lange eine margenstarke Zusatzeinnahme."
+    },
+    {
+      "begriff": "Paragraf 338",
+      "erklaerung": "Ein selten genutzter Abschnitt des US-Zollgesetzes von 1930, der dem Praesidenten erlaubt, im Alleingang Zoelle von bis zu 50 Prozent gegen als diskriminierend eingestufte Laender zu verhaengen."
+    },
+    {
+      "begriff": "Risikopraemie",
+      "erklaerung": "Ein Preisaufschlag fuer die Moeglichkeit einer kuenftigen Stoerung. Sie entsteht schon bei einer Drohung und kann wieder verschwinden, wenn sich die Lage entspannt."
+    },
+    {
+      "begriff": "Diskontsatz",
+      "erklaerung": "Der Zinssatz, mit dem kuenftige Gewinne auf ihren heutigen Wert abgezinst werden. Steigt er, sinkt der Gegenwartswert weit entfernter Gewinne."
+    },
+    {
+      "begriff": "Operativer Hebel",
+      "erklaerung": "Der Effekt, dass bei weitgehend fixen Kosten ein grosser Teil einer Umsatz- oder Preissteigerung direkt in den Gewinn faellt. Er wirkt in beide Richtungen."
+    },
+    {
+      "begriff": "Einlagenzins",
+      "erklaerung": "Der Zins, den die EZB Banken fuer bei ihr geparktes Geld zahlt. Er ist der wichtigste Leitzins fuer den Euroraum."
+    },
+    {
+      "begriff": "Forward Guidance",
+      "erklaerung": "Signale einer Zentralbank ueber ihre kuenftige Geldpolitik. Sie koennen Maerkte staerker bewegen als der aktuelle Zinsentscheid selbst."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "US-Schlusskurse 22.7. (S&P 500 7.498,96 +0,1 %, Nasdaq 25.690,90 -0,6 %, Dow 52.218,58, Russell 2.959,94), Quelle ABC/AP.",
+      "Alphabet Q2: Umsatz 119,8 Mrd. $ (+24 %), Cloud 24,8 Mrd. $ (+82 %), Capex-Ziel bis zu 205 Mrd. $ (Earnings Release Tier 1 + Bloomberg/Yahoo).",
+      "Tesla Q2: Umsatz 28,24 Mrd. $ (+26 %), op. Marge 1,4 %, Reg.-Gutschriften -67 %, freier Cashflow -1,09 Mrd. $ (Electrek/TradingKey).",
+      "Asien 23.7.: Kospi +3,72 %, SK Hynix +5 %, Samsung +3,65 % (Sunday Guardian/TradingKey).",
+      "Rohstoffe: Brent 95,67 $ (+1,70 %), WTI 88,12 $ (+1,49 %), Gold 4.117 $ (+1,55 %), Kupfer -0,84 % (TradingEconomics/Fortune).",
+      "USD/JPY 163,24, tiefster Yen-Stand seit 1986 (BigGo/CNBC).",
+      "SAP Q2: Cloud 6,0 Mrd. € (+24 %), Backlog 21,2 Mrd. € (+22 %), Aktie ca. -4,1 % (SAP IR/ad-hoc-news).",
+      "Kanada-Zoelle 50 % (Section 338), wirksam 19.8.2026, Energie/Kali/kritische Mineralien ausgenommen (USTR/White House Tier 1).",
+      "Termine: EZB 23.7. 14:15, Fed 28./29.7., BOJ 30./31.7. (offizielle Kalender).",
+      "Market-Caps der Picks via Alpha Vantage COMPANY_OVERVIEW 22.7. (EUR/USD 1,1435): Hecla 10,26 Mrd. $, Ero Copper 2,80 Mrd. $; Munters 34,44 Mrd. SEK (Google Finance, EUR/SEK 0,08997)."
+    ],
+    "uncertain": [
+      "Nachboersliche Kursreaktion Alphabet (ca. -4,5 %) und Tesla (ca. -4,0 %) aus Sekundaerquellen, Spanne -2,8 bis -5 %.",
+      "Nikkei-225-Schlussstand 23.7. (Intraday/Schluss-Konflikt der Quellen), als approx. gekennzeichnet.",
+      "VIX-Schluss 22.7. (Quellen nennen 17,05 fuer 21.7., 22.7. nicht sauber belegt), tile approx.",
+      "Silberpreis rund 59 $ und TTF-Gaspreis nahe Viermonatshoch qualitativ, exakter Tagesschluss nicht unabhaengig belegt.",
+      "EU-Wunsch nach 150 Mrd. € Zoll-Ausnahmen in aktuellen Primaerquellen nicht belegt, als offene Annahme markiert.",
+      "Alphabet-Nettogewinn +298 % durch rund 98 Mrd. $ nicht realisierte Buchgewinne verzerrt, im Text eingeordnet."
+    ],
+    "gaps": [
+      "STOXX-600-, CAC-40- (exakt), IBEX-35- (exakt), Hang-Seng- und Shanghai-Composite-Tagesschluesse teils nicht belegt.",
+      "Europaeische Earnings von Roche, Nestle, STMicro, Nokia, BNP und TotalEnergies berichten erst am Vormittag des 23.7., als Vorschau gefuehrt.",
+      "Sektor-ETF-Tageswerte fuer den Branchen-Monitor ueberwiegend nicht belegt, istZustand qualitativ.",
+      "2-jaehrige US-Treasury-Rendite 22.7. nicht exakt belegt (Vortagesreferenz 4,28 %)."
+    ]
+  }
+}

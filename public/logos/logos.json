@@ -674,5 +674,65 @@
     "file": null,
     "name": "Merit Medical Systems",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "tesla": {
+    "file": "tesla.svg",
+    "name": "Tesla",
+    "source": "https://commons.wikimedia.org/wiki/File:Tesla_Motors.svg",
+    "license": "Public domain",
+    "artist": "Tesla",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "hecla": {
+    "file": "hecla.svg",
+    "name": "Hecla Mining",
+    "source": "https://commons.wikimedia.org/wiki/File:Hecla_Mining_logo.svg",
+    "license": "Public domain",
+    "artist": "Hecla Mining Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "totalenergies": {
+    "file": "totalenergies.svg",
+    "name": "TotalEnergies",
+    "source": "https://commons.wikimedia.org/wiki/File:Total_wordmark_(2003-2021).svg",
+    "license": "Public domain",
+    "artist": "™/®Total SE",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "toyota": {
+    "file": "toyota.png",
+    "name": "Toyota",
+    "source": "https://commons.wikimedia.org/wiki/File:Registered_trademark_img_06.png",
+    "license": "Public domain",
+    "artist": "TOYOTA MOTOR CORPORATION.（トヨタ自動車株式会社）",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "constellation": {
+    "file": null,
+    "name": "Constellation Brands",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nutrien": {
+    "file": null,
+    "name": "Nutrien",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "sap": {
+    "file": "sap.svg",
+    "name": "SAP",
+    "source": "https://commons.wikimedia.org/wiki/File:SAP_2011_logo.svg",
+    "license": "Public domain",
+    "artist": "SAP SE",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "munters": {
+    "file": null,
+    "name": "Munters Group AB",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "erocopper": {
+    "file": null,
+    "name": "Ero Copper Corp",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

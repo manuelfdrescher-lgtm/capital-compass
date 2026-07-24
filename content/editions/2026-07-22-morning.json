@@ -303,7 +303,13 @@
           "url": "https://www.clickorlando.com/business/2026/07/21/asian-shares-mostly-gain-and-south-korea-and-japan-recover-some-losses-from-ai-stock-sell-offs/",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Die Chips drehen zurück, und die Börsen atmen nach Tagen der Nervosität auf.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "speicher-supercycle-micron",
@@ -434,7 +440,13 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-july-21-212344066.html",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Stapel von Hochleistungs-Speicherchips neben einem Silizium-Wafer vor Börsenmonitoren",
+        "caption": "Der Speichermarkt führt die Erholung an, getragen von Knappheit statt Euphorie.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "alphabet-tesla-vorschau",
@@ -483,7 +495,13 @@
           "url": "https://www.cnbc.com/2026/07/21/tesla-shares-poised-for-biggest-earnings-move-in-a-year.html",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Zwei Schwergewichte legen heute Abend die Rechnung für ihre KI-Wetten vor.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "brent-gold-krisenmetalle",
@@ -655,7 +673,13 @@
           "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "gold-bitcoin.jpg",
+        "alt": "Goldbarren und eine physische Bitcoin-Münze nebeneinander auf dunklem Untergrund",
+        "caption": "Öl und Gold laufen im Gleichschritt nach oben: die klassischen Krisenmetalle melden sich zurück.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "dax-25000-marke",
@@ -702,7 +726,13 @@
           "url": "https://www.onvista.de/news/2026/07-21-roundup-aktien-europa-schluss-halbleiterbranche-treibt-boersenerholung-voran-0-10-26534444",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Der DAX durchbricht eine runde Marke, die Anleger feiern eine psychologische Grenze.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "trump-kanada-zoelle",
@@ -817,7 +847,13 @@
           "url": "https://www.npr.org/2026/07/21/nx-s1-5901905/trump-imposes-tariffs-canadian-goods",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Neue Zölle auf kanadische Güter treffen Lieferketten, die längst über den Atlantik reichen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "us-iran-hormus",
@@ -850,7 +886,13 @@
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-july-21-dow-sp-500-nasdaq-084631499.html",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Die Risikoprämie im Ölpreis bleibt, solange die Spannungen am Golf nicht nachlassen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "eu-us-turnberry-zoelle",
@@ -876,7 +918,13 @@
           "url": "https://commission.europa.eu/topics/trade/eu-us-trade-deal_en",
           "tier": 1
         }
-      ]
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Europa ringt weiter um Ausnahmen vom Zollrahmen, den Washington längst als beschlossen sieht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "ezb-vorschau-23-juli",
@@ -909,7 +957,13 @@
           "url": "https://mezha.net/eng/bukvy/4b6b4ee1_ecb_to_hold/",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Die EZB dürfte stillhalten, doch der Unterton der Sitzung zeigt klar nach oben.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "fed-hoeher-fuer-laenger",
@@ -942,7 +996,13 @@
           "url": "https://tradingeconomics.com/united-states/2-year-note-yield",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Eine Öl-Rally drückt ausgerechnet dann auf die Zinshoffnung, wenn sie am nötigsten wäre.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "yen-40-jahres-tief",
@@ -975,7 +1035,13 @@
           "url": "https://www.cnbc.com/2026/06/16/boj-rate-hike-historic-inflation.html",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "devisenhandel-nacht.jpg",
+        "alt": "Devisenhandelsplatz bei Nacht, gebogene Bildschirme mit abstrakten Kurscharts, Skyline im Hintergrund",
+        "caption": "Der Yen nähert sich einem Vier-Jahrzehnte-Tief, ohne dass die Notenbank eingreift.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "novartis-q2-2026",
@@ -1064,7 +1130,13 @@
           "url": "https://www.globenewswire.com/news-release/2026/07/21/3330192/0/en/Novartis-delivered-sales-growth-in-Q2-and-further-advanced-the-pipeline-Full-year-guidance-reaffirmed.html",
           "tier": 1
         }
-      ]
+      ],
+      "image": {
+        "file": "gkv-gesundheit.jpg",
+        "alt": "Arzt bespricht mit einer Patientin Unterlagen in einer hellen Arztpraxis",
+        "caption": "Der Umsatz wächst, der Gewinn schrumpft: ein Pharmakonzern zwischen Wachstum und Kosten.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "julius-baer-h1-2026",
@@ -1121,7 +1193,13 @@
           "url": "https://www.onvista.de/news/2026/07-21-roundup-aktien-europa-schluss-halbleiterbranche-treibt-boersenerholung-voran-0-10-26534444",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "commerzbank-visa.jpg",
+        "alt": "Hand hält zwei verschiedene Bankkarten nebeneinander vor einem unscharfen Bankschalter",
+        "caption": "Ein Rekordgewinn reicht nicht, wenn der Markt schon die nächsten Risiken einpreist.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "sartorius-danaher",
@@ -1173,7 +1251,13 @@
           "url": "https://www.onvista.de/news/2026/07-21-roundup-aktien-frankfurt-schluss-dax-auf-tageshoch-knapp-ueber-25-000-punkten-0-10-26534429",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "gkv-gesundheit.jpg",
+        "alt": "Arzt bespricht mit einer Patientin Unterlagen in einer hellen Arztpraxis",
+        "caption": "Ein Laborausrüster bricht ein, obwohl die eigentliche Enttäuschung woanders lag.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     }
   ],
   "branchenMonitor": [

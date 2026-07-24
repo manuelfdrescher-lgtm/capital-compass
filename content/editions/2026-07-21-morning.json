@@ -283,7 +283,13 @@
           "url": "https://www.tradingkey.com/analysis/stocks/more/262042541-kospi-nekki-kioxia-samsung-skhynix-ai-softbank-adr-skhy-etf-goog-tradingkey",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Ein billiges KI-Modell aus China stellt die teure Annahme hinter dem Chip-Boom infrage.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "oel-ueber-90-hormus",
@@ -446,7 +452,13 @@
           "url": "https://www.ariva.de/eur-usd-euro-us-dollar-kurs/news/devisen-eurokurs-gibt-zum-us-dollar-etwas-nach-12074102",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Am Golf entscheidet sich, ob die Ölrechnung der Weltwirtschaft aus dem Ruder läuft.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "speichermarkt-cxmt",
@@ -507,7 +519,13 @@
           "url": "https://finance.biggo.com/news/db5b7cb8-ada3-4745-b602-612b0bc70c50",
           "tier": 3
         }
-      ]
+      ],
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Stapel von Hochleistungs-Speicherchips neben einem Silizium-Wafer vor Börsenmonitoren",
+        "caption": "Rekordpreise für Speicherchips, und die Anleger trauen dem Frieden trotzdem nicht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "wall-street-asien-indizes",
@@ -559,7 +577,13 @@
           "url": "https://www.finanzen.ch/nachrichten/aktien/xetra-schluss-dax-schliesst-gut-behauptet-weiter-unter-25-000-punkten-1036342133",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Wall Street schwächelt, Asien fängt sich: ein Tag im Zeichen geteilter Nerven.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "samsung-biologics-polypeptide",
@@ -597,7 +621,13 @@
           "url": "https://www.finanzen.ch/nachrichten/aktien/polypeptide-aktie-im-fokus-samsung-biologics-legt-uebernahmeangebot-vor-1036339842",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "gkv-gesundheit.jpg",
+        "alt": "Arzt bespricht mit einer Patientin Unterlagen in einer hellen Arztpraxis",
+        "caption": "Ein Wirkstoffhersteller wechselt den Besitzer, die Pharma-Lieferkette rückt enger zusammen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "us-iran-hormus",
@@ -622,7 +652,13 @@
           "url": "https://www.bloomberg.com/news/articles/2026-07-19/latest-oil-market-news-and-analysis-for-july-20",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Der Golf bleibt der größte Risikoherd, den die Weltmärkte gerade kennen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "eu-us-zoelle-turnberry",
@@ -642,7 +678,13 @@
           "url": "https://www.euronews.com/my-europe/2026/07/15/eu-pushes-us-to-exempt-150-billion-worth-of-eu-goods-from-turnberry-deal",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Brüssel verhandelt um Ausnahmen, während die Frachtschiffe längst unterwegs sind.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "bafin-helaba",
@@ -662,7 +704,13 @@
           "url": "https://www.finanznachrichten.de/nachrichten-2026-07/69066477-morning-briefing-deutschland-europa-015.htm",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "commerzbank-visa.jpg",
+        "alt": "Hand hält zwei verschiedene Bankkarten nebeneinander vor einem unscharfen Bankschalter",
+        "caption": "Die Aufsicht rügt eine Landesbank, das Vertrauen in die Kontrollen bleibt die eigentliche Währung.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "tsmc-rekordquartal",
@@ -832,7 +880,13 @@
           "url": "https://www.investing.com/news/stock-market-news/tsmc-q2-profit-jumps-77-to-record-far-surpasses-expectations-4794649",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Rekordzahlen, und trotzdem verkaufen die Anleger: ein Lehrstück über eingepreiste Erwartungen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "netflix-jahrestief",
@@ -1002,7 +1056,13 @@
           "url": "https://variety.com/2026/tv/news/netflix-q2-2026-earnings-1236812558/",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Solide Zahlen schützen nicht vor einem Jahrestief, wenn die Story ins Wanken gerät.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "salzgitter-prognose",
@@ -1076,7 +1136,13 @@
           "url": "https://www.ariva.de/dax-index/news/roundup-aktien-frankfurt-eroeffnung-dax-moderat-im-plus-nach-12073466",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "industriestrompreis.jpg",
+        "alt": "Industrieanlage mit Stromleitungen und Rauchsäulen im Morgenlicht",
+        "caption": "Ein Stahlkonzern hebt die Prognose, die Aktie honoriert die seltene gute Nachricht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "ezb-donnerstag",
@@ -1187,7 +1253,13 @@
           "url": "https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Frankfurt tagt donnerstags, doch über Zinssenkungen wird längst nicht mehr gesprochen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "fed-warsh-fomc",
@@ -1212,7 +1284,13 @@
           "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
           "tier": 1
         }
-      ]
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Vor der Fed-Sitzung wächst ausgerechnet die Wette auf eine Zinserhöhung.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     },
     {
       "id": "yen-40-jahres-tief",
@@ -1242,7 +1320,13 @@
           "url": "https://www.cnn.com/2026/07/01/economy/japanese-yen-low",
           "tier": 2
         }
-      ]
+      ],
+      "image": {
+        "file": "devisenhandel-nacht.jpg",
+        "alt": "Devisenhandelsplatz bei Nacht, gebogene Bildschirme mit abstrakten Kurscharts, Skyline im Hintergrund",
+        "caption": "Der Yen fällt auf den tiefsten Stand seit vier Jahrzehnten, und niemand greift ein.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
     }
   ],
   "branchenMonitor": [
