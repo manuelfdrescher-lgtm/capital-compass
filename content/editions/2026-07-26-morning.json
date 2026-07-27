@@ -50,7 +50,7 @@
         "note": "18-Monats-Hoch"
       },
       {
-        "label": "Oel (Brent)",
+        "label": "Öl (Brent)",
         "value": "98,38 USD",
         "delta": "-2,29 %",
         "direction": "down",
@@ -58,7 +58,7 @@
         "note": "Fr; Woche +~10 %"
       },
       {
-        "label": "Oel (WTI)",
+        "label": "Öl (WTI)",
         "value": "89,87 USD",
         "delta": "",
         "direction": "down",
@@ -119,7 +119,7 @@
         "Zweitens die geldpolitische und unternehmerische Kalenderballung. Die US-Notenbank entscheidet am Mittwoch, 29. Juli, über ihren Leitzins, aktuell 3,50 bis 3,75 Prozent. Der Markt erwartet mehrheitlich ein Halten mit straffem Ton, preist aber rund 34 Prozent Wahrscheinlichkeit einer Zinserhöhung ein. Am selben Abend berichten Microsoft und Meta, einen Tag später Apple und Amazon. Die vier großen Cloud-Konzerne planen für 2026 zusammen rund 725 Milliarden US-Dollar an Investitionen, gut die Hälfte mehr als noch im Januar erwartet.",
         "Die Verbindung beider Kräfte liegt im Zins. Ein höherer Ölpreis speist die Inflation über Sprit-, Transport- und Vorproduktkosten. Steigt dadurch die Zinserwartung, verteürt sich der Diskontsatz, mit dem Anleger künftige Gewinne auf heute abzinsen. Genau davon leben die hoch bewerteten Technologiewerte, deren Gewinne weit in der Zukunft liegen. Die entscheidende Frage der Woche lautet, ob die Cashflows der KI-Konzerne die enormen Investitionen tragen. Alphabet lieferte am 22. Juli die Warnung: trotz Umsatzplus ein negativer freier Cashflow von 5,9 Milliarden Dollar, die Aktie verlor 7,1 Prozent."
       ],
-      "mechanik": "Oel wirkt über zwei Kanäle auf Aktien. Direkt hebt ein höherer Preis Umsatz und Gewinn der Ölförderer, belastet aber alle Branchen mit hohem Energie- oder Spritkostenanteil. Indirekt treibt teures Oel die Inflation, was die Notenbank zu höheren Zinsen zwingen kann. Höhere Zinsen bedeuten einen höheren Diskontsatz, und ein höherer Diskontsatz senkt den heutigen Wert künftiger Gewinne besonders stark bei Wachstumsaktien.",
+      "mechanik": "Öl wirkt über zwei Kanäle auf Aktien. Direkt hebt ein höherer Preis Umsatz und Gewinn der Ölförderer, belastet aber alle Branchen mit hohem Energie- oder Spritkostenanteil. Indirekt treibt teures Öl die Inflation, was die Notenbank zu höheren Zinsen zwingen kann. Höhere Zinsen bedeuten einen höheren Diskontsatz, und ein höherer Diskontsatz senkt den heutigen Wert künftiger Gewinne besonders stark bei Wachstumsaktien.",
       "vertiefung": {
         "titel": "Tiefer verstehen: Warum ein Ölpreis den Aktienmarkt zweimal trifft",
         "absaetze": [
@@ -211,7 +211,7 @@
           "firma": "Weatherford",
           "logoKey": "weatherford",
           "bewegung": "+13,4 %",
-          "warum": "Ölfeldservice erholte sich vom 20.7. bis 24.7. mit der wieder steigenden Oel-Risikoprämie"
+          "warum": "Ölfeldservice erholte sich vom 20.7. bis 24.7. mit der wieder steigenden Öl-Risikoprämie"
         },
         {
           "firma": "Saudi Aramco (Anlagen)",
@@ -281,7 +281,7 @@
         }
       ],
       "image": {
-        "file": "hormus-oel-sperrung.jpg",
+        "file": "hormus-öl-sperrung.jpg",
         "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
         "caption": "Ein Ölpreisschock trifft ausgerechnet auf die entscheidende Woche für Notenbanken und Big Tech.",
         "credit": "Bild: The Capital Compass / KI-generiert"
@@ -291,14 +291,14 @@
       "id": "oel-iran-eskalation",
       "ressort": "news",
       "kicker": "News · Geopolitik & Rohstoffe",
-      "headline": "Iran-Konflikt greift auf Rotes Meer und Kaspische See über, Oel bleibt teuer",
+      "headline": "Iran-Konflikt greift auf Rotes Meer und Kaspische See über, Öl bleibt teuer",
       "dek": "Huthi-Raketen treffen saudische Ölanlagen, Tanker geraten auf mehreren Meeren unter Beschuss. Ein großflächiger physischer Förderausfall ist bislang nicht bestätigt, die Risikoprämie im Ölpreis bleibt jedoch hoch.",
       "body": [
         "Über das Wochenende hat sich der seit Wochen schwelende Iran-Konflikt geografisch ausgeweitet. Iran-nahe Huthi-Rebellen griffen nach Angaben der Berichterstattung saudische Aramco-Ölanlagen in Jizan und Yanbu am Roten Meer an. Zwei ballistische Raketen auf Yanbu wurden von saudischen Patriot-Batterien abgefangen, zuvor trafen die Huthi zwei saudische Tanker. Der Huthi-Führer erklärte, alle saudischen Öleinrichtungen könnten Ziele sein. Parallel meldeten Quellen Angriffe auf Handelsschiffe in der Straße von Hormus, im Schwarzen Meer und in der Kaspischen See.",
         "Die USA verzichteten zunächst auf neue Schläge. Nach Darstellung der Regierung stoppte Präsident Donald Trump 13 aufeinanderfolgende Nächte eskalierender Angriffe und betonte, seine Präferenz sei Diplomatie. Der Umfang der tatsächlichen Durchsatzstörung in der Straße von Hormus ist zwischen den Quellen umstritten und bleibt damit unsicher. Ein bestätigter großflächiger physischer Ausfall der Ölförderung liegt bislang nicht vor.",
         "Am Preis lässt sich die Nervosität klar ablesen. Brent gab am Freitag um 2,29 Prozent auf 98,38 Dollar nach, liegt damit aber weiter rund 10 Prozent über dem Vorwochenniveau und rund 30 Prozent über dem Stand vor einem Monat. Der Großteil dieses Aufschlags ist eine Risikoprämie, also der Preis für die Möglichkeit einer künftigen Störung. Solche Prämien sind reversibel: Beruhigt sich die Lage, können sie ebenso schnell schmelzen, wie sie entstanden sind."
       ],
-      "mechanik": "Eine Risikoprämie ist kein Aufschlag für eine bereits ausgefallene Förderung, sondern für die Wahrscheinlichkeit eines künftigen Ausfalls. Solange Oel physisch fließt, spiegelt der hohe Preis vor allem Angst. Deshalb kann der Preis fallen, sobald sich die Lage beruhigt, auch ohne dass sich an der tatsächlichen Fördermenge etwas ändert.",
+      "mechanik": "Eine Risikoprämie ist kein Aufschlag für eine bereits ausgefallene Förderung, sondern für die Wahrscheinlichkeit eines künftigen Ausfalls. Solange Öl physisch fließt, spiegelt der hohe Preis vor allem Angst. Deshalb kann der Preis fallen, sobald sich die Lage beruhigt, auch ohne dass sich an der tatsächlichen Fördermenge etwas ändert.",
       "gewinnerVerlierer": [
         {
           "firma": "Ölförderer (Upstream)",
@@ -337,7 +337,7 @@
         }
       ],
       "image": {
-        "file": "hormus-oel-sperrung.jpg",
+        "file": "hormus-öl-sperrung.jpg",
         "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
         "caption": "Der Iran-Konflikt greift vom Golf auf das Rote Meer und die Kaspische See über.",
         "credit": "Bild: The Capital Compass / KI-generiert"
@@ -540,7 +540,7 @@
         {
           "type": "bar",
           "title": "Rohstoffe: die Kraft hinter dem Wochenbild",
-          "subtitle": "Oel im Wochen- und Monatsvergleich, Gold- und Bitcoin-Stand",
+          "subtitle": "Öl im Wochen- und Monatsvergleich, Gold- und Bitcoin-Stand",
           "unit": "",
           "source": "Trading Economics, CoinDesk (Stand 24.-26.7.)",
           "allPositive": false,
@@ -775,11 +775,11 @@
       "id": "handel-zoelle",
       "ressort": "politik",
       "kicker": "Politik · Handel",
-      "headline": "Kanada-Zoelle treten Mitte August in Kraft, EU bleibt unter der vereinbarten Obergrenze",
-      "dek": "Neue US-Zoelle gegen Kanada werden zum 19. August wirksam. Für die EU gilt eine ausgehandelte Obergrenze, die den Handelskonflikt planbarer macht als einseitige Maßnahmen.",
+      "headline": "Kanada-Zölle treten Mitte August in Kraft, EU bleibt unter der vereinbarten Obergrenze",
+      "dek": "Neue US-Zölle gegen Kanada werden zum 19. August wirksam. Für die EU gilt eine ausgehandelte Obergrenze, die den Handelskonflikt planbarer macht als einseitige Maßnahmen.",
       "body": [
-        "Im Handelskonflikt zeichnet sich ein Muster ab, das für die Märkte wichtiger ist als jede einzelne Zahl. Neue US-Zoelle gegen Kanada auf Basis der Handelsklausel Section 338 in Höhe von 50 Prozent treten zum 19. August in Kraft, wobei Energie und Mineralien ausgenommen sind. Das ist eine einseitige Maßnahme, die kurzfristig Unsicherheit erzeugt.",
-        "Anders liegt der Fall bei der Europäischen Union. Neue US-Zoelle rund um den 24. Juli sollen die im sogenannten Turnberry-Rahmen vereinbarte Obergrenze von 15 Prozent nicht durchbrechen und gelten als tolerierbar. Ein ausgehandelter Rahmen ist für Unternehmen planbar, weil sie ihre Lieferketten und Preise darauf einstellen können.",
+        "Im Handelskonflikt zeichnet sich ein Muster ab, das für die Märkte wichtiger ist als jede einzelne Zahl. Neue US-Zölle gegen Kanada auf Basis der Handelsklausel Section 338 in Höhe von 50 Prozent treten zum 19. August in Kraft, wobei Energie und Mineralien ausgenommen sind. Das ist eine einseitige Maßnahme, die kurzfristig Unsicherheit erzeugt.",
+        "Anders liegt der Fall bei der Europäischen Union. Neue US-Zölle rund um den 24. Juli sollen die im sogenannten Turnberry-Rahmen vereinbarte Obergrenze von 15 Prozent nicht durchbrechen und gelten als tolerierbar. Ein ausgehandelter Rahmen ist für Unternehmen planbar, weil sie ihre Lieferketten und Preise darauf einstellen können.",
         "Für den Kapitalmarkt zählt genau diese Unterscheidung. Ein verhandelter, gedeckelter Zoll ist ein kalkulierbarer Kostenfaktor. Ein einseitiger, sprunghafter Zoll ist dagegen eine Quelle von Unsicherheit, die Investitionen verzögert und Risikoaufschläge erhöht. Für exportabhängige Branchen wie Automobil, Maschinenbau und Grundstoffe bleibt die Handelspolitik damit ein Dauerthema."
       ],
       "mechanik": "Ein Zoll ist eine Steuer auf Importe. Er verteürt eingeführte Waren, was entweder die Margen der Importeure drückt oder über höhere Preise die Verbraucher trifft. Für die Märkte ist die Planbarkeit entscheidend: Ein ausgehandelter Rahmen lässt sich einkalkulieren, ein einseitiger Zoll erzeugt Unsicherheit und lässt Unternehmen Investitionen aufschieben.",
@@ -788,7 +788,7 @@
           "firma": "Exportabhängige Industrie",
           "logoKey": "",
           "bewegung": "belastet",
-          "warum": "Zoelle verteuern Waren in wichtigen Absatzmärkten"
+          "warum": "Zölle verteuern Waren in wichtigen Absatzmärkten"
         },
         {
           "firma": "Binnenorientierte Anbieter",
@@ -880,7 +880,7 @@
       "dek": "Der Facebook- und Instagram-Konzern finanziert seine KI-Ambitionen aus dem Werbegeschäft. Für 2026 sind 125 bis 145 Milliarden Dollar an Investitionen geplant.",
       "body": [
         "Meta Platforms, der Mutterkonzern von Facebook, Instagram und WhatsApp, berichtet am Mittwoch, 29. Juli, nach Börsenschluss. Das Geschäftsmodell ruht fast vollständig auf digitaler Werbung. Aus diesen Erträgen finanziert Meta seine großen KI-Investitionen, die für 2026 mit 125 bis 145 Milliarden Dollar geplant sind.",
-        "Die Anleger achten auf zwei Dinge. Erstens auf die Robustheit des Werbegeschäfts, denn eine Konjunkturabkühlung durch teures Oel und hohe Zinsen könnte die Werbebudgets der Kunden treffen. Zweitens auf die Investitionsdisziplin. Meta hat in der Vergangenheit Phasen sehr hoher Ausgaben erlebt, in denen der Markt eine klarere Renditeperspektive verlangte.",
+        "Die Anleger achten auf zwei Dinge. Erstens auf die Robustheit des Werbegeschäfts, denn eine Konjunkturabkühlung durch teures Öl und hohe Zinsen könnte die Werbebudgets der Kunden treffen. Zweitens auf die Investitionsdisziplin. Meta hat in der Vergangenheit Phasen sehr hoher Ausgaben erlebt, in denen der Markt eine klarere Renditeperspektive verlangte.",
         "Die Parallele zu Alphabet ist offensichtlich, weil beide Konzerne ihr Geld überwiegend mit Werbung verdienen und beide massiv in KI investieren. Nach Alphabets negativem freiem Cashflow dürfte der Markt bei Meta besonders genau auf das Verhältnis von operativem Cashflow zu Investitionen schauen."
       ],
       "company": {
@@ -936,7 +936,7 @@
       "dek": "Der Handels- und Cloud-Konzern plant rund 200 Milliarden Dollar Investitionen. Das Cloud-Geschäft AWS ist die Gewinnmaschine, an der sich die KI-Wette entscheidet.",
       "body": [
         "Amazon berichtet am Donnerstag, 30. Juli, nach Börsenschluss, gemeinsam mit Apple. Der Konzern vereint zwei sehr unterschiedliche Geschäfte: den margenschwachen Onlinehandel und die hochprofitable Cloud-Sparte Amazon Web Services (AWS). Der Großteil des operativen Gewinns stammt aus AWS, weshalb dort auch die KI-Wette entschieden wird. Für 2026 plant Amazon Investitionen von rund 200 Milliarden Dollar.",
-        "Für die Anleger zählt das Wachstum von AWS und dessen operative Marge. Eine hohe Marge zeigt, dass Amazon die teure KI-Infrastruktur in profitable Cloud-Umsätze umsetzt. Zusätzlich achtet der Markt auf das Handelsgeschäft, das ein Konjunkturindikator ist. Teures Oel und hohe Zinsen belasten die Kaufkraft der Haushalte, was sich im Handel früher zeigt als in der Cloud.",
+        "Für die Anleger zählt das Wachstum von AWS und dessen operative Marge. Eine hohe Marge zeigt, dass Amazon die teure KI-Infrastruktur in profitable Cloud-Umsätze umsetzt. Zusätzlich achtet der Markt auf das Handelsgeschäft, das ein Konjunkturindikator ist. Teures Öl und hohe Zinsen belasten die Kaufkraft der Haushalte, was sich im Handel früher zeigt als in der Cloud.",
         "Amazon rundet damit ein Quartals-Quartett ab, das zusammen mit der Fed-Entscheidung über die Marktstimmung für den August entscheiden kann. Bestätigen die vier Konzerne, dass ihre Cashflows die Investitionen tragen, stützt das die KI-Erzählung. Häufen sich die Warnsignale, dürfte die Rotation aus teurer Technologie weitergehen."
       ],
       "company": {
@@ -988,18 +988,18 @@
       "id": "oelinflation-stagflation",
       "ressort": "makro",
       "kicker": "Makro · Inflation",
-      "headline": "Teures Oel belebt die Sorge vor hartnäckiger Inflation",
+      "headline": "Teures Öl belebt die Sorge vor hartnäckiger Inflation",
       "dek": "Ein Brent-Anstieg von rund 30 Prozent binnen eines Monats sickert mit Verzögerung in die Verbraucherpreise. Das verschärft das Dilemma der Notenbank in einer Woche voller Daten.",
       "body": [
         "Der Ölpreisanstieg ist mehr als ein Rohstoffthema, er ist ein Inflationsthema. Ein höherer Ölpreis verteürt zunächst Sprit und Heizstoffe, dann über Transport- und Vorproduktkosten fast die gesamte Konsumgüterkette. Diese Wirkung tritt mit Verzögerung ein, weshalb ein Brent-Sprung von rund 30 Prozent binnen eines Monats erst in den kommenden Monaten voll in den Verbraucherpreisen sichtbar wird.",
         "Die Ausgangslage ist bereits angespannt. Der Kern-PCE-Preisindex lag zuletzt bei 3,4 Prozent, die Verbraucherpreisinflation bei rund 3,5 Prozent, beide klar über dem Fed-Ziel von 2 Prozent. Kommt der Energieimpuls hinzu, wächst das Risiko, dass sich die Inflation nicht wie erhofft abkühlt. Am Donnerstag, 30. Juli, veröffentlicht die US-Statistik den Kern-PCE-Index für Juni sowie die erste Schätzung des Bruttoinlandsprodukts für das zweite Quartal.",
         "Für die Notenbank entsteht daraus ein klassisches Dilemma. Ein ölgetriebener Preisschub wirkt wie eine Steuer auf die Konjunktur, er dämpft also Wachstum und treibt zugleich die Inflation. Straffere Zinsen würgen die Konjunktur zusätzlich, lockerere Zinsen riskieren eine Verfestigung der Inflation. Genau dieses Spannungsfeld prägt die Fed-Sitzung am Mittwoch."
       ],
-      "mechanik": "Oel wirkt als Kostenschub, den Ökonomen Cost-push nennen. Der höhere Energiepreis zieht sich durch die Produktionskette und hebt am Ende die Verbraucherpreise. Gefährlich wird es, wenn daraus Zweitrundeneffekte entstehen: Beschäftigte fordern höhere Löhne, Unternehmen setzen höhere Preise, und die Inflation verselbstständigt sich.",
+      "mechanik": "Öl wirkt als Kostenschub, den Ökonomen Cost-push nennen. Der höhere Energiepreis zieht sich durch die Produktionskette und hebt am Ende die Verbraucherpreise. Gefährlich wird es, wenn daraus Zweitrundeneffekte entstehen: Beschäftigte fordern höhere Löhne, Unternehmen setzen höhere Preise, und die Inflation verselbstständigt sich.",
       "vertiefung": {
         "titel": "Tiefer verstehen: Was Zweitrundeneffekte so gefährlich macht",
         "absaetze": [
-          "Ein einmaliger Preisschub, etwa durch teures Oel, muss nicht dauerhaft inflationär sein. Fällt der Ölpreis später wieder, verschwindet der Effekt aus der Jahresrate. Gefährlich wird es erst, wenn der Schub Erwartungen verändert. Rechnen Beschäftigte mit dauerhaft höheren Preisen, fordern sie höhere Löhne. Rechnen Unternehmen mit höheren Löhnen und Kosten, heben sie ihre Preise. Diese Spirale nennt man Zweitrundeneffekte.",
+          "Ein einmaliger Preisschub, etwa durch teures Öl, muss nicht dauerhaft inflationär sein. Fällt der Ölpreis später wieder, verschwindet der Effekt aus der Jahresrate. Gefährlich wird es erst, wenn der Schub Erwartungen verändert. Rechnen Beschäftigte mit dauerhaft höheren Preisen, fordern sie höhere Löhne. Rechnen Unternehmen mit höheren Löhnen und Kosten, heben sie ihre Preise. Diese Spirale nennt man Zweitrundeneffekte.",
           "Deshalb reagieren Notenbanken auf Ölschocks nervöser, als es der einmalige Effekt nahelegt. Sie versuchen, die Erwartungen fest verankert zu halten, damit aus einem Preisschub keine dauerhafte Inflation wird. Das erklärt, warum Fed-Chef Warsh Härte signalisiert, obwohl der Ölanstieg zunächst ein Angebotsthema ist und die Notenbank die Fördermenge nicht beeinflussen kann."
         ]
       },
@@ -1016,7 +1016,7 @@
         }
       ],
       "image": {
-        "file": "hormus-oel-sperrung.jpg",
+        "file": "hormus-öl-sperrung.jpg",
         "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
         "caption": "Teures Öl nährt ausgerechnet dann die Sorge vor hartnäckiger Inflation, wenn die Fed tagt.",
         "credit": "Bild: The Capital Compass / KI-generiert"
@@ -1030,7 +1030,7 @@
       "dek": "Am Dienstag kommt das Verbrauchervertrauen, am Donnerstag die erste BIP-Schätzung für das zweite Quartal. Die Daten zeigen, ob die Konjunktur die straffen Zinsen weiter verträgt.",
       "body": [
         "Rund um die Fed-Sitzung liefert die US-Statistik zwei wichtige Konjunkturdaten. Am Dienstag, 28. Juli, veröffentlicht das Conference Board seinen Index zum Verbrauchervertrauen, der die Stimmung der Haushalte misst. Am Donnerstag, 30. Juli, folgt die erste Schätzung des Bruttoinlandsprodukts für das zweite Quartal. Im ersten Quartal war die US-Wirtschaft mit einer Jahresrate von 2,1 Prozent gewachsen.",
-        "Die Daten sind ein Realitätscheck für die Zinspolitik. Eine robuste Konjunktur stützt die Argumentation für straffe Zinsen, weil die Wirtschaft höhere Kosten des Geldes offenbar verträgt. Ein schwaches Verbrauchervertrauen oder ein enttäuschendes Wachstum würde dagegen die Sorge nähren, dass teures Oel und hohe Zinsen den Konsum bremsen.",
+        "Die Daten sind ein Realitätscheck für die Zinspolitik. Eine robuste Konjunktur stützt die Argumentation für straffe Zinsen, weil die Wirtschaft höhere Kosten des Geldes offenbar verträgt. Ein schwaches Verbrauchervertrauen oder ein enttäuschendes Wachstum würde dagegen die Sorge nähren, dass teures Öl und hohe Zinsen den Konsum bremsen.",
         "Für Anleger ist die Kombination heikel. Starke Daten sind gut für die Konjunktur, können aber die Zinserwartung nach oben treiben und damit zinssensible Aktien belasten. Schwache Daten entlasten die Zinsseite, nähren aber Wachstumssorgen. Diese Zweischneidigkeit prägt derzeit viele Datenveröffentlichungen."
       ],
       "mechanik": "Das Bruttoinlandsprodukt misst die gesamte Wirtschaftsleistung. Wächst es kräftig, deutet das auf robuste Nachfrage und stützt die Unternehmensgewinne, kann aber die Inflations- und Zinssorge verstärken. Das Verbrauchervertrauen ist ein Frühindikator: sinkt die Stimmung, halten Haushalte oft größere Anschaffungen zurück, was den Konsum dämpft.",
@@ -1116,7 +1116,7 @@
   "branchenMonitor": [
     {
       "sektor": "Energie",
-      "wasIstDas": "Unternehmen, die Oel und Gas fördern, verarbeiten, transportieren und ausrüsten.",
+      "wasIstDas": "Unternehmen, die Öl und Gas fördern, verarbeiten, transportieren und ausrüsten.",
       "lage": "Der Sektor steht im Zentrum des Wochengeschehens, gestützt vom Brent-Preis bei rund 98 Dollar und der Wochenerholung von etwa 10 Prozent.",
       "richtung": "up",
       "tagesWert": "keine frischen Sektordaten (Wochenende); Brent 98,38 USD (Fr)",
@@ -1144,7 +1144,7 @@
       "lage": "Belastet durch höhere Sprit- und Finanzierungskosten, die das verfügbare Einkommen schmälern.",
       "richtung": "down",
       "tagesWert": "keine Sektordaten belegt (Wochenende)",
-      "istZustand": "Der zyklische Konsum steht unter doppeltem Druck aus hohen Zinsen und teurem Oel. Hohe Leitzinsen verteuern Auto- und Konsumkredite sowie Hypotheken, der Ölpreis erhöht die Benzin- und Heizkosten der Haushalte. Beides schmälert das Budget für Ermessensausgaben. Die Bewertungen sind uneinheitlich, mit hoher Spreizung zwischen starken Marken und schwächeren Anbietern. Zyklisch ist der Sektor spät im Zyklus und reagiert empfindlich auf jede Konsumabkühlung. Strukturell prägen der Umbruch in der Automobilindustrie und die anhaltende China-Schwäche bei deutschen Herstellern die nächsten Quartale. Das Verbrauchervertrauen am Dienstag ist ein wichtiger Frühindikator."
+      "istZustand": "Der zyklische Konsum steht unter doppeltem Druck aus hohen Zinsen und teurem Öl. Hohe Leitzinsen verteuern Auto- und Konsumkredite sowie Hypotheken, der Ölpreis erhöht die Benzin- und Heizkosten der Haushalte. Beides schmälert das Budget für Ermessensausgaben. Die Bewertungen sind uneinheitlich, mit hoher Spreizung zwischen starken Marken und schwächeren Anbietern. Zyklisch ist der Sektor spät im Zyklus und reagiert empfindlich auf jede Konsumabkühlung. Strukturell prägen der Umbruch in der Automobilindustrie und die anhaltende China-Schwäche bei deutschen Herstellern die nächsten Quartale. Das Verbrauchervertrauen am Dienstag ist ein wichtiger Frühindikator."
     },
     {
       "sektor": "Basiskonsum",
@@ -1157,10 +1157,10 @@
     {
       "sektor": "Gesundheit",
       "wasIstDas": "Pharma, Biotechnologie, Medizintechnik und Gesundheitsdienstleister.",
-      "lage": "Weitgehend abgekoppelt von Oel und Zyklus, defensiver Charakter.",
+      "lage": "Weitgehend abgekoppelt von Öl und Zyklus, defensiver Charakter.",
       "richtung": "neutral",
       "tagesWert": "keine Sektordaten belegt (Wochenende)",
-      "istZustand": "Der Gesundheitssektor ist von den beiden Wochenthemen Oel und Konjunktur weitgehend unberührt, weil die Nachfrage nach Medikamenten und Behandlungen kaum vom Zyklus abhängt. Das verleiht dem Sektor defensiven Charakter. Zinssensibel bleiben vor allem junge, unprofitable Biotech-Firmen, deren Gewinne weit in der Zukunft liegen und durch höhere Diskontsätze stärker abgewertet werden. Bewertungstechnisch ist der Sektor gemischt: große Pharmakonzerne sind moderat bewertet, wachstumsstarke Plattformen und Medizintechnik teilweise ambitioniert. Strukturell prägen Patentabläufe, Innovationszyklen und der Preisdruck durch Regulierung die nächsten Quartale."
+      "istZustand": "Der Gesundheitssektor ist von den beiden Wochenthemen Öl und Konjunktur weitgehend unberührt, weil die Nachfrage nach Medikamenten und Behandlungen kaum vom Zyklus abhängt. Das verleiht dem Sektor defensiven Charakter. Zinssensibel bleiben vor allem junge, unprofitable Biotech-Firmen, deren Gewinne weit in der Zukunft liegen und durch höhere Diskontsätze stärker abgewertet werden. Bewertungstechnisch ist der Sektor gemischt: große Pharmakonzerne sind moderat bewertet, wachstumsstarke Plattformen und Medizintechnik teilweise ambitioniert. Strukturell prägen Patentabläufe, Innovationszyklen und der Preisdruck durch Regulierung die nächsten Quartale."
     },
     {
       "sektor": "Finanzen",
@@ -1210,11 +1210,11 @@
       "logoKey": "weatherford",
       "marketCapEUR": "5,59 Mrd. €",
       "capSource": "Alpha Vantage COMPANY_OVERVIEW 24.7. (6,357 Mrd. $), EUR/USD 1,1376 (AV 26.7.)",
-      "marktEinordnung": "Weatherford ist einer der vier großen globalen Ölfeld-Dienstleister und liefert Ausrüstung und Service für Bohrung, Komplettierung, Förderung und Wartung von Oel- und Gasquellen. Der Markt für Ölfeldservices ist milliardenschwer und eng an die Investitionsbudgets der Förderer gekoppelt. Steigt der Ölpreis nachhaltig, erhöhen die Produzenten ihre Ausgaben, und die Servicebranche verdient mit Verzögerung überproportional.",
-      "thesis": "Weatherford ist ein Hebel auf die aktuelle Oel-Risikoprämie ohne die binäre Wette einer einzelnen Bohrung. Als Dienstleister verdient das Unternehmen an der Aktivität der Produzenten, nicht am einzelnen Fund. Die Aktie fiel von rund 113 Dollar im Jahreshoch bis auf etwa 78 Dollar am 20. Juli, erholte sich mit der wieder steigenden Oel-Risikoprämie aber bis zum 24. Juli auf 88,68 Dollar. Die Bewertung ist moderat: Das erwartete Kurs-Gewinn-Verhältnis liegt bei 14,5 und damit unter dem laufenden von 16,9, was steigende Gewinne einpreist. Die Eigenkapitalrendite von rund 23 Prozent zeigt operative Qualität, das Analysten-Kursziel von 117,67 Dollar liegt rund ein Drittel über dem aktuellen Kurs. Die Bilanz wurde nach der früheren Restrukturierung deutlich gestärkt. Damit ist Weatherford ein zyklischer Wert am möglichen Wendepunkt seines Zyklus.",
+      "marktEinordnung": "Weatherford ist einer der vier großen globalen Ölfeld-Dienstleister und liefert Ausrüstung und Service für Bohrung, Komplettierung, Förderung und Wartung von Öl- und Gasquellen. Der Markt für Ölfeldservices ist milliardenschwer und eng an die Investitionsbudgets der Förderer gekoppelt. Steigt der Ölpreis nachhaltig, erhöhen die Produzenten ihre Ausgaben, und die Servicebranche verdient mit Verzögerung überproportional.",
+      "thesis": "Weatherford ist ein Hebel auf die aktuelle Öl-Risikoprämie ohne die binäre Wette einer einzelnen Bohrung. Als Dienstleister verdient das Unternehmen an der Aktivität der Produzenten, nicht am einzelnen Fund. Die Aktie fiel von rund 113 Dollar im Jahreshoch bis auf etwa 78 Dollar am 20. Juli, erholte sich mit der wieder steigenden Öl-Risikoprämie aber bis zum 24. Juli auf 88,68 Dollar. Die Bewertung ist moderat: Das erwartete Kurs-Gewinn-Verhältnis liegt bei 14,5 und damit unter dem laufenden von 16,9, was steigende Gewinne einpreist. Die Eigenkapitalrendite von rund 23 Prozent zeigt operative Qualität, das Analysten-Kursziel von 117,67 Dollar liegt rund ein Drittel über dem aktuellen Kurs. Die Bilanz wurde nach der früheren Restrukturierung deutlich gestärkt. Damit ist Weatherford ein zyklischer Wert am möglichen Wendepunkt seines Zyklus.",
       "counterarguments": [
         "Der jüngste Quartalsgewinn lag rund 71 Prozent unter dem Vorjahr und der Umsatz 8 Prozent niedriger. Das zeigt, dass die Servicebranche zuletzt in einem Abschwung steckte, dessen Wende noch nicht bestätigt ist.",
-        "Weatherford ist ein Preisnehmer. Fällt die Oel-Risikoprämie zurück, weil sich der Iran-Konflikt entspannt, kürzen die Produzenten ihre Budgets, und die These verliert ihren Treiber.",
+        "Weatherford ist ein Preisnehmer. Fällt die Öl-Risikoprämie zurück, weil sich der Iran-Konflikt entspannt, kürzen die Produzenten ihre Budgets, und die These verliert ihren Treiber.",
         "Als global tätiger Dienstleister ist das Unternehmen konjunktur- und regionenabhängig, ein weltweiter Nachfragerücklauf durch hohe Zinsen würde belasten."
       ],
       "catalysts": [
@@ -1247,7 +1247,7 @@
       "marketCapEUR": "8,54 Mrd. €",
       "capSource": "Alpha Vantage COMPANY_OVERVIEW 24.7. (9,718 Mrd. $), EUR/USD 1,1376 (AV 26.7.)",
       "marktEinordnung": "Halozyme ist ein Plattformunternehmen im Gesundheitssektor. Seine Kerntechnologie ENHANZE erlaubt es, Medikamente, die normalerweise per Infusion in die Vene gegeben werden, stattdessen schnell unter die Haut zu spritzen. Pharmakonzerne lizenzieren diese Technologie für ihre eigenen Präparate und zahlen dafür Lizenzgebühren. Der Markt für solche Darreichungsverbesserungen wächst, weil sie Patienten Zeit sparen und den Herstellern helfen, ihre Medikamente länger vor Nachahmern zu schützen.",
-      "thesis": "Halozyme ist ein defensiver Qualitätswert mit einem lizenzgebührengetriebenen Geschäftsmodell, das außergewöhnlich profitabel ist. Die operative Marge liegt bei rund 49 Prozent, die Eigenkapitalrendite bei fast 100 Prozent, weil Lizenzeinnahmen kaum zusätzliche Kosten verursachen. Der Umsatz wächst mit rund 42 Prozent gegenüber dem Vorjahr, der Gewinn mit rund 31 Prozent. Trotz dieser Qualität ist die Bewertung moderat: Das erwartete Kurs-Gewinn-Verhältnis liegt bei nur 11,2, deutlich unter dem laufenden von 28,4, was ein weiterhin kräftiges Gewinnwachstum einpreist. Die Aktie steht mit 81,93 Dollar nahe ihrem Jahreshoch und in einem klaren Aufwärtstrend. In einem Umfeld aus teurem Oel und hohen Zinsen bietet Halozyme das, was defensive Anleger suchen: hohe Margen, geringe Konjunkturabhängigkeit und ein niedriges Beta von 0,84. Der Titel ist damit ein Gegengewicht zu den zyklischen und zinssensiblen Ideen dieser Ausgabe.",
+      "thesis": "Halozyme ist ein defensiver Qualitätswert mit einem lizenzgebührengetriebenen Geschäftsmodell, das außergewöhnlich profitabel ist. Die operative Marge liegt bei rund 49 Prozent, die Eigenkapitalrendite bei fast 100 Prozent, weil Lizenzeinnahmen kaum zusätzliche Kosten verursachen. Der Umsatz wächst mit rund 42 Prozent gegenüber dem Vorjahr, der Gewinn mit rund 31 Prozent. Trotz dieser Qualität ist die Bewertung moderat: Das erwartete Kurs-Gewinn-Verhältnis liegt bei nur 11,2, deutlich unter dem laufenden von 28,4, was ein weiterhin kräftiges Gewinnwachstum einpreist. Die Aktie steht mit 81,93 Dollar nahe ihrem Jahreshoch und in einem klaren Aufwärtstrend. In einem Umfeld aus teurem Öl und hohen Zinsen bietet Halozyme das, was defensive Anleger suchen: hohe Margen, geringe Konjunkturabhängigkeit und ein niedriges Beta von 0,84. Der Titel ist damit ein Gegengewicht zu den zyklischen und zinssensiblen Ideen dieser Ausgabe.",
       "counterarguments": [
         "Das Geschäft hängt an wenigen großen Lizenzpartnern und deren Medikamenten. Fällt ein wichtiges Präparat aus oder läuft ein Patent aus, trifft das die Lizenzeinnahmen konzentriert.",
         "Die Bewertung wirkt auf Basis der erwarteten Gewinne günstig, das laufende Kurs-Gewinn-Verhältnis von 28 ist jedoch nicht niedrig. Bleibt das erwartete Gewinnwachstum aus, verschwindet der Bewertungsvorteil.",
@@ -1264,7 +1264,7 @@
       "what": "Fed-Zinsentscheid und Ton der Warsh-Pressekonferenz",
       "when": "Mi 29.7., 14 Uhr Ostküste",
       "bullishIf": "Halten mit klarem Signal, dass der Zinsgipfel erreicht ist",
-      "bearishIf": "Zinserhöhung oder sehr straffer Ton mit Betonung des Oel-Inflationsrisikos"
+      "bearishIf": "Zinserhöhung oder sehr straffer Ton mit Betonung des Öl-Inflationsrisikos"
     },
     {
       "what": "Big-Tech-Quartalszahlen Microsoft, Meta, Apple, Amazon",
@@ -1339,7 +1339,7 @@
   "financeLink": {
     "titel": "Finance Link: Wie ein höherer Ölpreis durch die Bilanz eines Ölfeld-Dienstleisters wandert",
     "absaetze": [
-      "Gewinn- und Verlustrechnung: Ein nachhaltig höherer Ölpreis bringt zunächst keinen direkten Umsatz für einen Dienstleister wie Weatherford, weil dieser kein Oel verkauft. Der Umsatz steigt erst, wenn die Produzenten wegen des höheren Preises mehr bohren und mehr Service nachfragen. Diese Kette hat eine Verzögerung von mehreren Quartalen. Steigt die Auslastung, wachsen Umsatz und operative Marge überproportional, weil viele Kosten fix sind.",
+      "Gewinn- und Verlustrechnung: Ein nachhaltig höherer Ölpreis bringt zunächst keinen direkten Umsatz für einen Dienstleister wie Weatherford, weil dieser kein Öl verkauft. Der Umsatz steigt erst, wenn die Produzenten wegen des höheren Preises mehr bohren und mehr Service nachfragen. Diese Kette hat eine Verzögerung von mehreren Quartalen. Steigt die Auslastung, wachsen Umsatz und operative Marge überproportional, weil viele Kosten fix sind.",
       "Bilanz: Mehr Aufträge binden Kapital. Der Dienstleister muss Vorräte an Ausrüstung aufbauen und offene Forderungen gegenüber den Produzenten vorfinanzieren. Beides erhöht das Umlaufvermögen. Nach der früheren Restrukturierung hat Weatherford seine Schulden reduziert, was die Bilanz belastbarer macht und Spielraum für den Aufschwung schafft.",
       "Cashflow: In der frühen Aufschwungphase kann der freie Cashflow zunächst sinken, weil Vorräte und Forderungen Kapital binden, bevor die Rechnungen bezahlt sind. Erst wenn die Zahlungen eingehen, dreht der operative Cashflow nach oben. Anleger sollten daher neben dem ausgewiesenen Gewinn besonders die Entwicklung des Working Capital verfolgen.",
       "Bewertung: Der Markt bewertet zyklische Servicewerte oft antizyklisch. Am Zyklustief wirken die Aktien mit hohem Kurs-Gewinn-Verhältnis teuer, weil die Gewinne niedrig sind, und am Zyklushoch mit niedrigem Verhältnis billig. Ein erwartetes Kurs-Gewinn-Verhältnis unter dem laufenden, wie bei Weatherford, deutet darauf hin, dass der Markt bereits steigende Gewinne einpreist."
