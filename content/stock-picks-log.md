@@ -44,3 +44,15 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-22-morning | B2Gold Corp. (BTG) | — _(4,26 Mrd. €; contrarian: Rekordgoldpreis gegen eine seit Februar um 38 % gefallene Aktie, Mali-Jurisdiktion und Goose-Ramp als Risiken)_
 - 2026-07-22-morning | Ormat Technologies, Inc. (ORA) | — _(5,58 Mrd. €; Geothermie als defensive, grundlastfähige Stromseite des KI-Rechenzentrumsbooms)_
 - 2026-07-22-morning | Merit Medical Systems, Inc. (MMSI) | — _(3,93 Mrd. €; verlässlich wachsender, margenverbessernder Medtech-Kompounder zu gefallenem Preis)_
+- 2026-07-23-morning | Munters Group AB (MTRS) | — _(3,10 Mrd. €; europäischer Profiteur des KI-Investitionsbooms bei Rechenzentrums-Kühlung)_
+- 2026-07-23-morning | Hecla Mining Company (HL) | — _(8,97 Mrd. €; Hebel auf Silberpreis nahe Rekordniveau bei sicherer US-Jurisdiktion)_
+- 2026-07-23-morning | Ero Copper Corp (ERO) | — _(2,45 Mrd. €; günstig bewerteter Wachstumswert mit Hebel auf das strukturelle Kupferdefizit)_
+- 2026-07-24-morning | Matador Resources (MTDR) | — _(6,00 Mrd. €; günstig bewerteter Ölproduzent mit Hebel auf den geopolitisch gestützten Ölpreis)_
+- 2026-07-24-morning | Comstock Resources (CRK) | — _(3,32 Mrd. €; contrariane Wette auf steigende US-Gaspreise über zwei Nachfragequellen)_
+- 2026-07-24-morning | Centrus Energy (LEU) | — _(3,01 Mrd. €; verbindet Energiesicherheit des Westens mit dem Strombedarf der KI-Infrastruktur)_
+- 2026-07-25-morning | FormFactor (FORM) | — _(7,73 Mrd. €; Werkzeug-Anbieter für den KI-Chip-Boom, ohne selbst das Fertigungsrisiko zu tragen)_
+- 2026-07-25-morning | Piper Sandler (PIPR) | — _(4,50 Mrd. €; kapitalarmer Hebel auf die Rückkehr der Kapitalmarktaktivität, M&A-Boutique)_
+- 2026-07-25-morning | Nomad Foods (NOMD) | — _(1,41 Mrd. €; defensive Substanzwert-Fallstudie, erstes Basiskonsum-Pick)_
+- 2026-07-26-morning | Weatherford International (WFRD) | — _(5,59 Mrd. €; Hebel auf die Öl-Risikoprämie ohne die binäre Wette einer einzelnen Bohrung)_
+- 2026-07-26-morning | Clearway Energy (CWEN) | — _(6,77 Mrd. €; Fallstudie zu strukturellem Rückenwind gegen Zinssensitivität bei erneuerbaren Energien)_
+- 2026-07-26-morning | Halozyme Therapeutics (HALO) | — _(8,54 Mrd. €; defensiver Qualitätswert mit lizenzgebührengetriebenem, sehr profitablem Geschäftsmodell)_
