@@ -828,5 +828,33 @@
     "file": null,
     "name": "Nomad Foods",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "weatherford": {
+    "file": null,
+    "name": "Weatherford",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "aramco": {
+    "file": null,
+    "name": "Saudi Aramco (Anlagen)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "amazon": {
+    "file": "amazon.svg",
+    "name": "Amazon",
+    "source": "https://commons.wikimedia.org/wiki/File:Amazon_logo.svg",
+    "license": "Public domain",
+    "artist": "Amazon.com, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "clearway": {
+    "file": null,
+    "name": "Clearway Energy",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "halozyme": {
+    "file": null,
+    "name": "Halozyme Therapeutics",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
