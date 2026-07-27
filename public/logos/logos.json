@@ -781,5 +781,52 @@
     "file": null,
     "name": "Centrus Energy",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "formfactor": {
+    "file": null,
+    "name": "FormFactor",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "westerndigital": {
+    "file": "westerndigital.svg",
+    "name": "Western Digital",
+    "source": "https://commons.wikimedia.org/wiki/File:WD_Logo.svg",
+    "license": "Public domain",
+    "artist": "Western Digital Corporation",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "uber": {
+    "file": "uber.svg",
+    "name": "Uber",
+    "source": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.svg",
+    "license": "Public domain",
+    "artist": "Wolff Olins, in collaboration with Uber's Brand Team [1]",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "verizon": {
+    "file": "verizon.svg",
+    "name": "Verizon",
+    "source": "https://commons.wikimedia.org/wiki/File:Verizon_2015_logo_-vector.svg",
+    "license": "Public domain",
+    "artist": "Michael Bierut (Pentagram)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "qualcomm": {
+    "file": "qualcomm.svg",
+    "name": "Qualcomm",
+    "source": "https://commons.wikimedia.org/wiki/File:Qualcomm-Logo.svg",
+    "license": "Public domain",
+    "artist": "Original:  Qualcomm",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "pipersandler": {
+    "file": null,
+    "name": "Piper Sandler",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nomadfoods": {
+    "file": null,
+    "name": "Nomad Foods",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
