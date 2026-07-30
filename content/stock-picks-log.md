@@ -56,3 +56,12 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-26-morning | Weatherford International (WFRD) | — _(5,59 Mrd. €; Hebel auf die Öl-Risikoprämie ohne die binäre Wette einer einzelnen Bohrung)_
 - 2026-07-26-morning | Clearway Energy (CWEN) | — _(6,77 Mrd. €; Fallstudie zu strukturellem Rückenwind gegen Zinssensitivität bei erneuerbaren Energien)_
 - 2026-07-26-morning | Halozyme Therapeutics (HALO) | — _(8,54 Mrd. €; defensiver Qualitätswert mit lizenzgebührengetriebenem, sehr profitablem Geschäftsmodell)_
+- 2026-07-27-morning | Copa Holdings (CPA) | — _(4,87 Mrd. €; strukturell profitable Qualitätsairline mit geografischem Burggraben)_
+- 2026-07-27-morning | Cognex (CGNX) | — _(9,05 Mrd. €; Qualitätsautomatisierer am Beginn einer zyklischen Erholung, verstärkt durch KI-gestützte Vision)_
+- 2026-07-27-morning | Ensign Group (ENSG) | — _(8,86 Mrd. €; defensiver Qualitätskompounder, kaum von Zinsen, Öl oder Konjunktur abhängig)_
+- 2026-07-28-morning | Triple Flag Precious Metals (TFPM) | — _(5,28 Mrd. €; verdient an Gold und Silber über Streaming/Royalty-Verträge, ohne selbst zu fördern)_
+- 2026-07-28-morning | Cranswick plc (CWK) | — _(ca. 3,4 Mrd. €; defensiver Qualitätswert aus dem britischen Lebensmittel-Grundbedarf)_
+- 2026-07-28-morning | Chemed Corporation (CHE) | — _(5,97 Mrd. €; konjunkturunabhängige Holding aus Hospizdienst VITAS und Rohrreinigung Roto-Rooter)_
+- 2026-07-29-morning | Cullen/Frost Bankers (CFR) | — _(ca. 9,2 Mrd. €; Regionalbank mit direktem Hebel auf ein Regime länger hoher Zinsen)_
+- 2026-07-29-morning | Nexstar Media Group (NXST) | — _(ca. 5,2 Mrd. €; Value-Fall mit klarem Katalysator im Midterm-Werbezyklus 2026)_
+- 2026-07-29-morning | Franklin Electric (FELE) | — _(ca. 4,25 Mrd. €; defensiver Pumpen-Weltmarktführer abseits überlaufener Themen)_
