@@ -889,5 +889,46 @@
     "file": null,
     "name": "Chemed Corporation",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "cxmt": {
+    "file": null,
+    "name": "CXMT",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "tenet": {
+    "file": "tenet.png",
+    "name": "Tenet Healthcare",
+    "source": "https://commons.wikimedia.org/wiki/File:Tenet_Health_logo.png",
+    "license": "Public domain",
+    "artist": "Tenet Health",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "digitalrealty": {
+    "file": null,
+    "name": "Digital Realty",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "asteralabs": {
+    "file": null,
+    "name": "Astera Labs",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "copa": {
+    "file": "copa.png",
+    "name": "Copa Holdings",
+    "source": "https://commons.wikimedia.org/wiki/File:Copa_airlines_logo.png",
+    "license": "Public domain",
+    "artist": "EEIM",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cognex": {
+    "file": null,
+    "name": "Cognex",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ensign": {
+    "file": null,
+    "name": "Ensign Group",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
