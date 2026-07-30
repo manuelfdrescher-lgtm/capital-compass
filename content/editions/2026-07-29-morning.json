@@ -1,0 +1,1456 @@
+{
+  "edition": {
+    "number": 19,
+    "date": "2026-07-29",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "US-Schlusskurse Dienstag 28.7.2026, Asien-Session und Rohstoffe/Devisen Mittwoch 29.7. früh (Berlin), Tages- und Wochenvorschau. Einzelne Index-Schlusswerte und Intraday-Rohstoffpreise sind als solche gekennzeichnet.",
+    "generatedAt": "2026-07-29T04:30:00Z"
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.428,78",
+        "delta": "+0,21 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss Di 28.7."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "24.876,91",
+        "delta": "-0,22 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Schluss Di 28.7."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "52.747,32",
+        "delta": "+1,03 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Rekord, Schluss Di"
+      },
+      {
+        "label": "Russell 2000",
+        "value": "2.953,80",
+        "delta": "+0,20 %",
+        "direction": "up",
+        "approx": false,
+        "note": "Schluss Di 28.7."
+      },
+      {
+        "label": "VIX",
+        "value": "18,21",
+        "delta": "-2,5 %",
+        "direction": "down",
+        "approx": false,
+        "note": "Angstbarometer"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,65 %",
+        "delta": "",
+        "direction": "flat",
+        "approx": false,
+        "note": "belegt 27.7., 28.7. offen"
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,1403",
+        "delta": "",
+        "direction": "flat",
+        "approx": false,
+        "note": "29.7. früh (AV)"
+      },
+      {
+        "label": "USD/JPY",
+        "value": "163,71",
+        "delta": "",
+        "direction": "up",
+        "approx": false,
+        "note": "Yen nahe 40-J.-Tief"
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "88 USD",
+        "delta": "steigt",
+        "direction": "up",
+        "approx": true,
+        "note": "29.7. früh, US-Iran"
+      },
+      {
+        "label": "Gold",
+        "value": "4.022 USD",
+        "delta": "-1,4 %",
+        "direction": "down",
+        "approx": true,
+        "note": "29.7. früh, Spot"
+      },
+      {
+        "label": "US-Leitzins (Fed)",
+        "value": "3,50-3,75 %",
+        "delta": "",
+        "direction": "flat",
+        "approx": false,
+        "note": "Entscheid heute 20:00 MESZ"
+      },
+      {
+        "label": "Bitcoin",
+        "value": "63.400 USD",
+        "delta": "",
+        "direction": "flat",
+        "approx": true,
+        "note": "29.7. früh"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "fed-entscheid-warsh-higher-for-longer",
+      "ressort": "titelseite",
+      "kicker": "Geldpolitik · Federal Reserve",
+      "headline": "Die Fed entscheidet heute, und erstmals seit Langem preist der Markt eine Zinserhöhung ein",
+      "dek": "Um 20:00 Uhr deutscher Zeit gibt die US-Notenbank ihren Beschluss bekannt. Die meisten Anleger erwarten unveränderte Zinsen, doch die Wahrscheinlichkeit einer Anhebung ist binnen einer Woche von rund 12 auf rund 38 Prozent gestiegen.",
+      "body": [
+        "Die US-Notenbank Federal Reserve gibt heute Mittwoch um 14:00 Uhr Ortszeit an der Ostküste, also 20:00 Uhr in Deutschland, ihre Zinsentscheidung bekannt. Um 14:30 Uhr Ortszeit folgt die Pressekonferenz des Fed-Vorsitzenden Kevin Warsh, der das Amt seit dem 22. Mai 2026 führt und den früheren Vorsitzenden Jerome Powell abgelöst hat. Der Leitzins-Korridor liegt seit vier Sitzungen unverändert bei 3,50 bis 3,75 Prozent.",
+        "Ungewöhnlich ist die Ausgangslage. Über Monate diskutierte der Markt fast ausschließlich über den Zeitpunkt der nächsten Zinssenkung. Nun preisen die Terminmärkte laut dem Beobachtungsinstrument CME FedWatch ein Halten mit rund 62 bis 68 Prozent ein, zugleich aber eine Zinserhöhung um 25 Basispunkte mit rund 32 bis 38 Prozent. Vor einer Woche lag diese Anhebungswahrscheinlichkeit noch bei etwa 12 Prozent. Treiber der Verschiebung ist der zuletzt wieder gestiegene Ölpreis und der damit verbundene Inflationsdruck. Die Kerninflation nach dem von der Fed bevorzugten Maß, dem Kern-PCE, lag zuletzt bei 3,4 Prozent und damit deutlich über dem Ziel von 2 Prozent.",
+        "Wichtig für die Einordnung ist, dass diese Julisitzung keine neuen Wirtschafts- und Zinsprojektionen enthält. Den nächsten sogenannten Dot Plot, also die Punktwolke der individuellen Zinserwartungen der Notenbanker, gibt es erst wieder im September. Die Börsen müssen die Haltung der Fed deshalb allein aus dem Wortlaut des Beschlusses und den Aussagen von Warsh in der Pressekonferenz ablesen. Genau diese Unsicherheit erklärt, warum viele Anleger vor der Bekanntgabe abwarten.",
+        "Der Begriff, der die Lage zusammenfasst, lautet higher for longer, also länger hohe Zinsen. Selbst wenn die Fed heute nicht anhebt, verschiebt sich die Erwartung einer ersten Lockerung immer weiter nach hinten. Eine Anhebung im September ist mit rund 80 Prozent eingepreist. Für die Bewertung von Aktien ist dieser Erwartungspfad oft wichtiger als der heutige Beschluss selbst, weil sich in ihm die Kosten des Geldes für die nächsten Quartale spiegeln."
+      ],
+      "mechanik": "Der Leitzins ist der Preis, zu dem sich Banken kurzfristig Geld leihen, und er wirkt wie ein Schwerefeld auf alle anderen Preise. Steigt er oder bleibt er länger hoch, werden sichere Anleihen attraktiver, Kredite teurer und weit in der Zukunft liegende Unternehmensgewinne weniger wert, weil sie stärker abgezinst werden. Deshalb reagieren hoch bewertete Wachstumsaktien empfindlicher auf die Fed als solide, gering verschuldete Firmen mit stabilen Erträgen.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Wonach eine Notenbank ihren Zins bemisst",
+        "absaetze": [
+          "Eine Notenbank wie die Fed hat ein doppeltes Mandat, nämlich stabile Preise und einen hohen Beschäftigungsstand. Als Faustregel, wie sie den Zins an die Lage anpasst, dient die nach dem Ökonomen John Taylor benannte Taylor-Regel. Sie besagt vereinfacht, dass der Leitzins höher liegen sollte, wenn die Inflation über dem Ziel liegt oder die Wirtschaft heiß läuft, und niedriger, wenn Inflation und Auslastung fallen.",
+          "Bei einer Kerninflation von 3,4 Prozent und einem noch robusten Arbeitsmarkt deutet diese Logik auf einen weiterhin straffen Kurs hin. Zusätzlich achtet die Fed auf die Inflationserwartungen, also darauf, welche Teuerung Haushalte und Unternehmen für die Zukunft einplanen. Verfestigen sich hohe Erwartungen, drohen Zweitrundeneffekte über höhere Löhne und Preise, die eine Notenbank besonders fürchtet. Ein wieder steigender Ölpreis ist deshalb gefährlich, weil er sich schnell in den Erwartungen festsetzen kann."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Sektor hängt am Ölpreis, und der zuletzt wieder steigende Ölpreis ist ein Treiber der hawkishen Fed. Ein festerer Dollar dämpft den in Dollar notierten Rohstoffpreis leicht, der Angebotsschock überlagert den Zinseffekt jedoch.",
+          "teilbranchen": "Förderer profitieren, hoch verschuldete Namen spüren die Finanzierungskosten"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Ein stärkerer Dollar verteuert Industriemetalle für Käufer außerhalb des Dollarraums und bremst die Nachfrage. Gold reagiert empfindlich auf steigende Realzinsen, weil zinslose Anlagen relativ unattraktiver werden.",
+          "teilbranchen": "Industriemetalle, Chemie, Goldminen"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Finanzierungskosten dämpfen die Investitionsneigung der Kunden bei langlebigen Investitionsgütern. Ein starker Dollar verteuert US-Exporte auf dem Weltmarkt.",
+          "teilbranchen": "Maschinenbau, Investitionsgüter"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Zinsen verteuern Konsumentenkredite, Autofinanzierungen und Hypotheken und schwächen die Nachfrage nach großen, kreditfinanzierten Anschaffungen.",
+          "teilbranchen": "Automobil, Wohnungsbau, langlebige Güter"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Grundbedarf bleibt weitgehend zinsunabhängig. Der defensive Charakter und die kurze Duration der stabilen Cashflows machen den Sektor robust gegen Diskontierungseffekte.",
+          "teilbranchen": "Nahrung, Getränke, Haushaltswaren"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Gesundheitsausgaben sind wenig zinsabhängig, was den Sektor defensiv macht. Junge, unprofitable Biotechs mit weit entfernten Erträgen bilden eine Ausnahme, weil ihre lange Duration unter höherer Diskontierung leidet.",
+          "teilbranchen": "Pharma stabil, unprofitable Biotech belastet"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken profitieren tendenziell von einer breiteren Zinsmarge, wenn die Differenz zwischen Kredit- und Einlagenzinsen steigt. Gegenläufig wirken das Risiko steigender Kreditausfälle und Bewertungsverluste auf Anleihebestände.",
+          "teilbranchen": "Geschäftsbanken begünstigt, Kreditrisiko als Gegenpol"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Wachstumsstarke Tech-Werte haben eine lange Duration, weil ein großer Teil ihres Werts aus weit entfernten künftigen Gewinnen stammt, und diese werden bei höheren Zinsen stärker abgezinst.",
+          "teilbranchen": "Unprofitable Wachstums- und Softwarewerte am stärksten"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Große werbefinanzierte Plattformen tragen den Durationseffekt und leiden unter höherer Diskontierung. Klassische Telekomkonzerne wirken als hoch verschuldete Bond-Proxys, deren Attraktivität bei hohen Renditen sinkt.",
+          "teilbranchen": "Internet über Duration, Telekom über Bond-Proxy"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger sind klassische Bond-Proxys mit stabilen Dividenden, deren Attraktivität sinkt, wenn Anleihen bei rund 4,6 Prozent wieder konkurrenzfähig werden. Zusätzlich belasten hohe Finanzierungskosten die kapitalintensiven Netzinvestitionen.",
+          "teilbranchen": "Regulierte Netze, dividendenstarke Titel"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien reagieren am empfindlichsten, weil höhere Zinsen die Finanzierungskosten der stark fremdfinanzierten Gesellschaften erhöhen und die Bewertungen über steigende Kapitalisierungsraten drücken.",
+          "teilbranchen": "Gewerbe- und Büroimmobilien, hoch verschuldete REITs"
+        }
+      ],
+      "lehre": "Die Lehre: Eine Zinsentscheidung bewegt Kurse vor allem über die Differenz zu dem, was der Markt bereits erwartet hat. Der absolute Zinswert allein entscheidet selten.",
+      "sources": [
+        {
+          "title": "Federal Reserve, FOMC-Sitzungskalender 2026",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tier": 1
+        },
+        {
+          "title": "Federal Reserve, Warsh sworn in as Chair (22.5.2026)",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+          "tier": 1
+        },
+        {
+          "title": "CBS News, Fed interest rate decision July 2026",
+          "url": "https://www.cbsnews.com/news/fed-interest-rate-decision-july-meeting/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Erstmals seit Langem preist der Markt wieder eine Zinserhöhung statt einer Senkung ein.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "wall-street-zwei-geschwindigkeiten",
+      "ressort": "news",
+      "kicker": "Aktienmärkte · USA",
+      "headline": "Der Dow erreicht ein Rekordhoch, während die Technologiewerte den Nasdaq nach unten ziehen",
+      "dek": "Am Dienstag lief die Wall Street in zwei Geschwindigkeiten. Industrie-, Finanz- und Gesundheitswerte trieben den Dow Jones auf einen Rekord, ein scharfer Ausverkauf bei Halbleitern drückte den technologielastigen Nasdaq ins Minus.",
+      "body": [
+        "Der Dow Jones Industrial Average stieg am Dienstag um rund 1,03 Prozent auf 52.747 Punkte und markierte damit ein Rekordhoch. Der breite S&P 500 legte leicht um 0,21 Prozent auf 7.428,78 Punkte zu. Der technologielastige Nasdaq Composite fiel dagegen um 0,22 Prozent auf 24.876 Punkte. Das Angstbarometer VIX, der Volatilitätsindex der Wall Street, notierte mit 18,21 etwas ruhiger als am Vortag.",
+        "Hinter dem Auseinanderlaufen der Indizes steht eine klare Rotation. Auf der Gewinnerseite standen Industrie-, Finanz- und Gesundheitswerte, die von guten Quartalszahlen und einem am Dienstag noch nachgebenden Ölpreis profitierten. Der Farbenhersteller Sherwin-Williams, der Technologiekonzern IBM und der Getränkeriese Coca-Cola gehörten zu den stärksten Werten im Dow. Auf der Verliererseite dominierten die Halbleiter. Der Philadelphia-Halbleiterindex fiel laut Tagesbericht um rund 4,5 Prozent, einzelne Speicher- und Chipwerte deutlich stärker.",
+        "Bemerkenswert ist, dass die großen Plattformkonzerne sich vom Chip-Ausverkauf abkoppelten. Die Google-Mutter Alphabet, der Softwarekonzern Microsoft und der iPhone-Hersteller Apple schlossen im Plus. Der Markt trennte damit sauber zwischen den Ausrüstern und Speicherherstellern, deren langfristige Preismacht durch Chinas Fortschritte infrage steht, und den Anwendern von Künstlicher Intelligenz, deren Geschäftsmodell von günstigeren Chips langfristig sogar profitieren könnte."
+      ],
+      "mechanik": "Ein Index ist ein Durchschnitt vieler Aktien. Wenn schwere Industrie- und Finanzwerte steigen und zugleich schwere Chipwerte fallen, können zwei Indizes am selben Tag in verschiedene Richtungen laufen, je nachdem welche Branchen sie stärker gewichten. Der Dow enthält kaum reine Chipwerte, der Nasdaq sehr viele. Deshalb ist das Auseinanderlaufen ein Signal für eine Branchenrotation innerhalb des Marktes, nicht für eine einheitliche Richtung.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Sherwin-Williams",
+          "bewegung": "+8,3 %",
+          "warum": "Starke Quartalszahlen, Profiteur günstigerer Rohstoffkosten",
+          "logoKey": "sherwin"
+        },
+        {
+          "firma": "IBM",
+          "bewegung": "+5,2 %",
+          "warum": "Solide Zahlen, Nachfrage nach Software und KI-Beratung",
+          "logoKey": "ibm"
+        },
+        {
+          "firma": "Coca-Cola",
+          "bewegung": "+5,0 %",
+          "warum": "Beat und angehobene Jahresprognose",
+          "logoKey": "cocacola"
+        },
+        {
+          "firma": "Micron",
+          "bewegung": "-8,9 %",
+          "warum": "Speicherwert im Sog des China-Chip-Ausverkaufs",
+          "logoKey": "micron"
+        },
+        {
+          "firma": "AMD",
+          "bewegung": "-8,1 %",
+          "warum": "Chipdesigner unter Druck, Bewertungssorgen",
+          "logoKey": "amd"
+        },
+        {
+          "firma": "Applied Materials",
+          "bewegung": "-7,8 %",
+          "warum": "Chip-Ausrüster, China-Absatzmarkt in Frage gestellt",
+          "logoKey": "appliedmaterials"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Wall Street am Dienstag: zwei Geschwindigkeiten",
+          "subtitle": "Ausgewählte Tagesbewegungen 28.7.2026, in Prozent",
+          "unit": " %",
+          "source": "Tagesbericht EBC, Einzelwerte teils nur eine Tagesquelle, 28.7.2026",
+          "allPositive": false,
+          "absolute": false,
+          "data": [
+            [
+              "Sherwin-Williams",
+              8.25
+            ],
+            [
+              "IBM",
+              5.21
+            ],
+            [
+              "Coca-Cola",
+              5
+            ],
+            [
+              "Alphabet",
+              1.85
+            ],
+            [
+              "Caterpillar",
+              -3.71
+            ],
+            [
+              "Applied Mat.",
+              -7.8
+            ],
+            [
+              "AMD",
+              -8.1
+            ],
+            [
+              "Micron",
+              -8.9
+            ]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Dow-Rekord bei 52.747, Halbleiter mit zweistelligen Tagesverlusten bei Einzelwerten",
+        "verdict": "unsicher",
+        "evidence": "Die Index-Schlussstände und die Einzelwert-Prozente stammen aus einem Tagesbericht (EBC) als Einzelquelle. Die Richtung Dow rauf, Nasdaq runter, Halbleiter schwach ist durch mehrere Marktberichte gedeckt, die exakten Einzelprozente sind es nicht."
+      },
+      "sources": [
+        {
+          "title": "EBC, Dow up Nasdaq down July 28 2026",
+          "url": "https://www.ebc.com/forex/dow-up-nasdaq-down-july-28-2026",
+          "tier": 2
+        },
+        {
+          "title": "Yahoo Finance, chip stocks extend rout",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-chip-stocks-extend-rout-094902224.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Der Dow erreicht ein Rekordhoch, während Technologiewerte den Nasdaq nach unten ziehen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "china-duv-chip-asien-erholung",
+      "ressort": "news",
+      "kicker": "Halbleiter · Asien",
+      "headline": "Asiens Chipwerte erholen sich nach dem Ausverkauf, gestützt von SK Hynix und Rekordmargen",
+      "dek": "Ein Bericht über Chinas eigene Belichtungsmaschinen hatte am Dienstag den koreanischen Leitindex Kospi um mehr als zehn Prozent einbrechen lassen. Am Mittwoch drehten die Kurse ins Plus, nachdem SK Hynix ein Rekordquartal vorgelegt hatte.",
+      "body": [
+        "Am Dienstag hatte ein Medienbericht die asiatischen Halbleiterwerte auf Talfahrt geschickt. Der koreanische Leitindex Kospi fiel um mehr als zehn Prozent, wobei ein automatischer Handelsstopp, ein sogenannter Circuit Breaker, ausgelöst wurde. Die Speicherhersteller SK Hynix und Samsung Electronics verloren zweistellig. Auslöser war ein Bericht des Branchendienstes The Information, aufgegriffen von TrendForce und Tom's Hardware, wonach das Unternehmen Shanghai Yuliangsheng mit der Serienfertigung eigener Belichtungsmaschinen begonnen habe.",
+        "Am Mittwoch drehte die Stimmung. Der Kospi erholte sich in der frühen Sitzung um rund 2,8 Prozent, SK Hynix legte um rund 3,7 Prozent zu, auch Samsung und der japanische Speicherhersteller Kioxia stiegen. Der Auslöser der Gegenbewegung war das Quartalsergebnis von SK Hynix. Der Konzern meldete einen Rekordumsatz von rund 79,3 Billionen koreanischen Won und eine operative Marge von 76 Prozent, getragen von der starken Nachfrage nach Hochleistungsspeicher HBM (High Bandwidth Memory, gestapelter Speicher für KI-Rechenzentren).",
+        "Entscheidend für die Einordnung ist die Technikstufe des chinesischen Fortschritts. Die gemeldeten Maschinen sind vom Typ DUV (Deep Ultraviolet), nicht vom fortschrittlicheren Typ EUV (Extreme Ultraviolet), den allein der niederländische Konzern ASML herstellt. Die chinesischen Geräte stehen ASML in Leistung und Zuverlässigkeit weiter nach, kritische Komponenten stammen weiterhin aus Japan, und eine offizielle Bestätigung der Hersteller fehlt. Das Monopol von ASML bei der Spitzenfertigung bleibt damit unberührt. Angreifbar ist der chinesische Absatzmarkt für die ältere DUV-Technik."
+      ],
+      "mechanik": "Die Aktien der Chiphersteller enthalten eine Burggraben-Prämie, also einen Aufschlag dafür, dass wenige Anbieter die Preise diktieren können. Sobald ein Bericht andeutet, dass China diese Abhängigkeit verringert, stellt der Markt genau diesen Aufschlag infrage und verkauft zuerst und prüft später. Weil der Bericht unbestätigt ist und nur die ältere Technikstufe betrifft, folgte eine schnelle Gegenbewegung, als mit SK Hynix ein harter Fakt in Form von Rekordzahlen auf den Tisch kam.",
+      "sektorCheck": [
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Sektor steht im Zentrum. Ausrüster wie ASML, Applied Materials und Lam Research verlieren potenziell den chinesischen DUV-Absatzmarkt. Speicher- und Logikhersteller bekommen mittelfristig zusätzliche chinesische Kapazität als Wettbewerb, kurzfristig stützen Rekordzahlen wie bei SK Hynix.",
+          "teilbranchen": "Halbleiter-Ausrüstung, Speicher, Logik"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Hyperscaler und Plattformen sind Chip-Käufer. Mehr Kapazität und potenziell günstigere Preise senken langfristig ihre Hardwarekosten für Rechenzentren. Zugleich belastet allgemeine Risikoscheu bei Tech-nahen Werten die Bewertungen.",
+          "teilbranchen": "Interaktive Medien, Telekom-Ausrüstung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Autohersteller und Konsumelektronik sind chipabhängig. Eine breitere und günstigere Chipversorgung reduziert langfristig Kostendruck und Lieferengpässe. Für China-exponierte Marken steigt zugleich das Risiko verschärfter Technologiekonflikte.",
+          "teilbranchen": "Automobil, Konsumelektronik"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Industrieautomation und Präzisionsmaschinenbau liefern Komponenten in die Chip-Lieferkette. Kritische Präzisionsteile kommen weiter aus Japan, was japanische Zulieferer stützt, während die Investitionen sich Richtung China verlagern können.",
+          "teilbranchen": "Fabrikautomation, Präzisionsmaschinen"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Chipfertigung braucht Spezialchemie, Industriegase, Photolack und Silizium-Wafer. Mehr chinesische Fab-Kapazität erhöht die Volumennachfrage, ein Teil der Wertschöpfung verlagert sich jedoch zu chinesischen Anbietern.",
+          "teilbranchen": "Elektronik-Spezialchemie, Industriegase"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Kanal läuft über Volatilität und Kapitalmarktaktivität. Der Kospi-Einbruch mit Circuit Breaker zeigt, wie Indexschwankungen Handelsvolumina und Risikobudgets beeinflussen. Der CXMT-Börsengang signalisiert hohe Emissionsaktivität in China.",
+          "teilbranchen": "Börsen, Kapitalmarktbanken"
+        },
+        {
+          "sektor": "Energie",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Es besteht kein direkter Kanal über Nachfrage, Kosten oder Preismacht. Ein sehr indirekter Effekt läuft nur über den Stromverbrauch der Chipfertigung, was für die Sektorbewertung unerheblich ist."
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Nahrung, Getränke und Haushaltsprodukte haben keine relevante Verbindung zum Lithografie-Ereignis. Bei allgemeiner Marktnervosität kann der defensive Sektor relative Zuflüsse sehen."
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Es gibt keinen direkten Kanal über Endmärkte oder Kosten. Medizintechnik nutzt zwar Chips, die Mengen sind für die Sektorbewertung jedoch nicht ausschlaggebend.",
+          "teilbranchen": "Medizintechnik als minimale Berührung"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Kein materieller Kanal. Ein theoretischer Zusammenhang besteht nur über den Stromverbrauch neuer chinesischer Fabs, der für westliche und koreanische Versorger irrelevant ist."
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Kein relevanter Kanal für die betroffenen Märkte. Ein enger Nebeneffekt läge nur bei Industrieimmobilien rund um neue Fab-Standorte in China."
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "SK Hynix",
+          "bewegung": "+3,7 %",
+          "warum": "Rekordquartal, HBM-getriebene Marge von 76 Prozent (Mi)",
+          "logoKey": "skhynix"
+        },
+        {
+          "firma": "Samsung Electronics",
+          "bewegung": "+4,6 %",
+          "warum": "Erholung nach dem Ausverkauf (Mi)",
+          "logoKey": "samsung"
+        },
+        {
+          "firma": "Kioxia",
+          "bewegung": "+7,3 %",
+          "warum": "Speicherhersteller im Sog der Gegenbewegung (Mi)",
+          "logoKey": "kioxia"
+        }
+      ],
+      "factcheck": {
+        "claim": "China startet Serienfertigung eigener DUV-Belichtungsmaschinen",
+        "verdict": "unsicher",
+        "evidence": "Der Bericht stammt von The Information und wurde von TrendForce und Tom's Hardware aufgegriffen. Eine offizielle Bestätigung der chinesischen Hersteller liegt nicht vor. Die Technikstufe ist DUV, nicht EUV. Die kursierende EUV-Formulierung ist fehlerhafte Sekundärverwertung."
+      },
+      "sources": [
+        {
+          "title": "TrendForce, China immersion DUV maß production",
+          "url": "https://www.trendforce.com/news/2026/07/28/news-china-reportedly-starts-mass-producing-immersion-duv-tools-smic-hua-hong-cxmt-deliveries-expected-this-year/",
+          "tier": 2
+        },
+        {
+          "title": "Tom's Hardware, China domestic immersion DUV",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-begins-mass-production-of-domestic-immersion-duv-lithography-machines",
+          "tier": 2
+        },
+        {
+          "title": "SK hynix Newsroom, Q2 2026 business results",
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Asiens Chipwerte erholen sich nach dem Ausverkauf, gestützt von starken Speicherzahlen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "oelpreis-springt-iran",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Energie",
+      "headline": "Der Ölpreis springt wieder an, nachdem die USA und Iran ihre Angriffe erneuern",
+      "dek": "Nach drei Tagen fallender Notierungen zog der Rohölpreis am Mittwoch wieder an. Auslöser war die Wiederaufnahme militärischer Angriffe im Konflikt zwischen den USA und Iran nach einer kurzen Feuerpause.",
+      "body": [
+        "Der Preis für die Nordseesorte Brent stieg am Mittwoch wieder an, nachdem er drei Tage in Folge gefallen war. Am Dienstag hatte Brent bei rund 87 US-Dollar notiert und war zeitweise unter 80 US-Dollar gerutscht, gestützt von Deeskalationssignalen und Gesprächen Irans mit Saudi-Arabien und Oman über die Straße von Hormus. Am Mittwoch drehte die Richtung, nachdem die USA und Iran laut Berichten von CNBC und Bloomberg ihre Angriffe nach der kurzen Pause wieder aufgenommen hatten.",
+        "Die Straße von Hormus, durch die ein erheblicher Teil des weltweiten Öltransports läuft, ist physisch weiter offen. Zurückgekehrt ist jedoch die geopolitische Risikoprämie, also der Aufschlag, den der Markt für die Möglichkeit einer Versorgungsstörung verlangt. Über den gesamten Monat gesehen steuert Brent auf den stärksten Monat seit mehr als zwei Jahren zu.",
+        "Der wieder steigende Ölpreis wirkt weit über den Energiesektor hinaus. Er ist einer der Gründe, warum der Markt für die heutige Fed-Sitzung ein höheres Zinsanhebungsrisiko einpreist, weil teure Energie die Inflation anheizt. Für Fluggesellschaften, Speditionen und die Chemieindustrie steigen die Kosten, für Ölförderer die Erlöse."
+      ],
+      "mechanik": "Öl ist zugleich Kostenfaktor und Umsatztreiber, je nachdem auf welcher Seite ein Unternehmen steht. Förderer verdienen an jedem Dollar mehr je Barrel, weil ihre Kosten weitgehend fix sind. Fluggesellschaften und Transportfirmen verlieren, weil Treibstoff zu ihren größten variablen Kosten zählt. Zusätzlich läuft ein indirekter Kanal über die Inflation, weil höhere Energiepreise die Notenbank zu einem strafferen Kurs zwingen können.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Höhere Ölpreise heben unmittelbar die Fördererlöse der Produzenten und die realisierten Preise je Barrel. Raffinerien hängen an den Crack-Spreads, Ölfelddienstleister am Investitionsbudget der Förderer.",
+          "teilbranchen": "Upstream, integrierte Konzerne, Oilfield Services"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Für die Chemieindustrie ist Öl ein zentraler Rohstoff, weil Naphtha die Inputkosten treibt und die Margen drückt. Gold kann als Krisenmetall bei geopolitischer Eskalation Rückenwind bekommen.",
+          "teilbranchen": "Petrochemie negativ, Gold potenziell positiv"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Transport und Logistik leiden unter höheren Diesel- und Kerosinkosten. Airlines sind besonders exponiert, weil Treibstoff einen sehr großen Teil der Betriebskosten ausmacht und sich nur mit Verzögerung weitergeben lässt.",
+          "teilbranchen": "Airlines, Speditionen, Schifffahrt"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Benzinpreise senken das verfügbare Einkommen der Haushalte und schwächen die Nachfrage nach aufschiebbaren Anschaffungen. Reisen und höherpreisiger Handel spüren den Kaufkraftentzug zuerst.",
+          "teilbranchen": "Einzelhandel, Restaurants, Reise"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die Nachfrage nach Grundnahrungsmitteln bleibt stabil und macht den Sektor defensiv. Auf der Kostenseite steigen Transport- und Verpackungskosten, was die Margen belastet, wenn Preiserhöhungen nur teilweise durchsetzbar sind.",
+          "teilbranchen": "Lebensmittelhersteller, Handel"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach medizinischen Leistungen hängt kaum vom Ölpreis ab. Ein begrenzter Kosteneffekt besteht bei Medizinprodukten über petrochemische Vorprodukte und Transportkosten."
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Ölpreis wirkt hier über Inflation und Zinsen, weil höhere Energiepreise den Inflationsdruck verstärken und die Notenbank straffer halten können. Höhere Zinsen können die Zinsmargen der Banken stützen.",
+          "teilbranchen": "Banken über Zinsmarge, Versicherer über Kapitalanlagen"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Der operative Ölkostenanteil ist gering, der Hauptkanal sind die Zinsen. Ölgetriebene Inflation kann die Renditen hochhalten und den Diskontsatz für weit entfernte Gewinne erhöhen, was Wachstumsbewertungen belastet.",
+          "teilbranchen": "Software, langlaufende Wachstumswerte"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "gemischt",
+          "mechanismus": "Die operative Belastung durch Öl ist niedrig, der wichtigste Kanal läuft wie bei der IT über Zinsen und Bewertung. Werbefinanzierte Modelle können leiden, wenn ein Kaufkraftentzug die Werbebudgets dämpft.",
+          "teilbranchen": "Internet und Medien, Telekom defensiver"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Versorger gelten als Bond-Proxys, deren relative Attraktivität bei ölgetriebener Inflation und höheren Zinsen sinkt. Auf der Kostenseite hängt die Wirkung von der Brennstoffart ab, regulierte Preisdurchreichung federt ab.",
+          "teilbranchen": "Regulierte Stromversorger, gasabhängige Erzeuger"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien reagieren stark auf Zinsen, weil ölgetriebene Inflation die Finanzierungskosten steigen lässt und die Bewertung über höhere Kapitalisierungszinsen drückt. Höhere Energiepreise verteuern zusätzlich den Gebäudebetrieb.",
+          "teilbranchen": "Zinssensitive REITs, energieintensive Objektklassen"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "ExxonMobil",
+          "bewegung": "Fokus",
+          "warum": "Integrierter Ölkonzern, Q2-Zahlen am Freitag erwartet",
+          "logoKey": "exxon"
+        },
+        {
+          "firma": "Airlines (Sektor)",
+          "bewegung": "Belastung",
+          "warum": "Kerosin ist einer der größten Kostenblöcke"
+        },
+        {
+          "firma": "Chemie (Sektor)",
+          "bewegung": "Belastung",
+          "warum": "Naphtha als ölbasierter Rohstoff verteuert die Produktion"
+        }
+      ],
+      "factcheck": {
+        "claim": "Öl steigt am 29.7. wegen wiederaufgenommener US-Iran-Angriffe",
+        "verdict": "bestätigt",
+        "evidence": "CNBC (Oil jumps as US-Iran resume strikes) und Bloomberg (Oil surges after three-day drop) berichten die Wiederaufnahme übereinstimmend. Der exakte 29.7.-Schlusspreis für Brent ist noch nicht belegt, die Richtung nach oben ist es."
+      },
+      "sources": [
+        {
+          "title": "CNBC, Oil jumps as US-Iran resume strikes (29.7.)",
+          "url": "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
+          "tier": 2
+        },
+        {
+          "title": "CNBC, Oil price today WTI Brent Hormuz (28.7.)",
+          "url": "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Der Ölpreis springt wieder an, nachdem die Angriffe zwischen den USA und dem Iran erneuert wurden.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "gold-yen-cross-asset",
+      "ressort": "news",
+      "kicker": "Cross-Asset · Edelmetalle und Devisen",
+      "headline": "Gold gibt trotz nervöser Märkte nach, der Yen fällt auf ein Mehrjahrzehnttief",
+      "dek": "Obwohl die Aktienmärkte nervös sind, verlor Gold am Mittwoch an Wert. Der Grund liegt im selben Ereignis, das die Aktien bewegt, nämlich in der Angst vor einer strafferen Fed. Der japanische Yen notiert so schwach wie seit Jahrzehnten nicht.",
+      "body": [
+        "Der Goldpreis fiel am Mittwoch früh um rund 1,4 Prozent auf etwa 4.022 US-Dollar je Feinunze. Auf den ersten Blick wirkt das widersprüchlich, weil Gold in unsicheren Zeiten als sicherer Hafen gilt und die Märkte durchaus nervös sind. Der entscheidende Treiber ist jedoch die Erwartung einer strafferen Fed. Steigen die Zinsen oder bleiben sie länger hoch, wird das zinslose Gold relativ unattraktiver, weil verzinste Anlagen wie Anleihen und Geldmarktpapiere mehr abwerfen. Zusätzlich belastet ein festerer US-Dollar den in Dollar gehandelten Goldpreis.",
+        "Am Devisenmarkt stach der japanische Yen heraus. Das Paar US-Dollar zu Yen notierte bei rund 163,7 und damit nahe einem Tief, wie es seit rund vier Jahrzehnten nicht erreicht wurde. Die Ursache liegt in der großen Zinsdifferenz zwischen den USA und Japan. Während die Fed bei 3,50 bis 3,75 Prozent liegt, hat die japanische Notenbank ihren Leitzins erst im Juni auf 1,00 Prozent angehoben. Anleger leihen sich günstig in Yen und legen das Geld höher verzinst in Dollar an, was den Yen schwächt.",
+        "Der Euro notierte gegenüber dem Dollar bei rund 1,1403. Der Kontrast zwischen einem fallenden Goldpreis und einem steigenden Ölpreis am selben Tag ist ein Lehrbeispiel dafür, dass verschiedene Anlageklassen über verschiedene Kanäle reagieren. Öl folgt der geopolitischen Versorgungsprämie, Gold folgt vor allem dem Realzins."
+      ],
+      "mechanik": "Gold zahlt keine Zinsen. Sein Preis hängt deshalb stark davon ab, wie viel Rendite man mit sicheren Alternativen erzielen kann. Steigt die reale, also inflationsbereinigte Anleiherendite, sinken die relativen Vorteile von Gold, und der Preis fällt, selbst wenn an den Aktienmärkten Unruhe herrscht. Beim Yen wirkt die Zinsdifferenz, weil Kapital dorthin fließt, wo es höher verzinst wird.",
+      "factcheck": {
+        "claim": "Gold rund 4.022 USD (-1,4 %), USD/JPY rund 163,7 nahe 40-Jahres-Tief",
+        "verdict": "unsicher",
+        "evidence": "USD/JPY 163,71 ist ein 29.7.-Wert (TradingEconomics). Der Goldpreis rund 4.022 USD ist ein 29.7.-Früh-Wert aus einer Tier-2-Quelle. Ein am Vortag genannter Silber-Rekord ließ sich für den 29.7. nicht belegen und wird deshalb nicht angeführt."
+      },
+      "sources": [
+        {
+          "title": "TradingEconomics, Gold",
+          "url": "https://tradingeconomics.com/commodity/gold",
+          "tier": 2
+        },
+        {
+          "title": "TradingEconomics, Japan currency (USD/JPY)",
+          "url": "https://tradingeconomics.com/japan/currency",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "gold-bitcoin.jpg",
+        "alt": "Goldbarren und eine physische Bitcoin-Münze nebeneinander auf dunklem Untergrund",
+        "caption": "Gold gibt trotz nervöser Märkte nach, während der Yen auf ein Mehrjahrzehnttief fällt.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "zoll-narrativ-faktencheck",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · USA",
+      "headline": "Das Zoll-Ultimatum zum ersten August stammt größtenteils aus dem Vorjahr",
+      "dek": "In Suchmaschinen und sozialen Netzen kursiert erneut ein angebliches US-Zollultimatum zum ersten August mit hohen Sätzen gegen mehrere Länder. Eine Prüfung der Quellen zeigt, dass die konkreten Zahlen überwiegend aus dem Juli 2025 stammen.",
+      "body": [
+        "Rund um den ersten August taucht regelmäßig ein angebliches Zollultimatum der US-Regierung auf, mit hohen Sätzen gegen Kanada, die Europäische Union, Brasilien sowie Japan und Korea. Eine Prüfung der Primärquellen ergibt jedoch, dass die konkrete Konstellation mit Brasilien 50 Prozent, Kanada 35 Prozent, der EU 30 Prozent und Japan und Korea je 25 Prozent nachweislich aus einem Bericht vom 21. Juli 2025 stammt. Der bekannte Handelspakt der USA mit der EU zu einem Satz von 15 Prozent und die Vereinbarung mit Japan wurden ebenfalls Ende Juli 2025 geschlossen.",
+        "Für das tatsächliche Bild im Sommer 2026 gibt es nur schwache Belege. Hinweise auf einen fortbestehenden Basiszoll von 10 Prozent und ein seit Juli 2026 aktives EU-Regime von 15 Prozent stammen aus wenig belastbaren Tier-3-Quellen. Eine frische, gut belegte Meldung über ein neues Ultimatum zum ersten August 2026 findet sich in seriosen Quellen nicht.",
+        "Der Fall ist ein Musterbeispiel für eine wiederkehrende Gefahr an den Märkten. Alte Schlagzeilen werden ohne Jahresangabe erneut geteilt und wirken wie frische Nachrichten. Wer darauf handelt, reagiert auf ein Ereignis, das ein Jahr zurückliegt. Diese Redaktion führt deshalb keine konkrete Zollzahl als aktuelles Ereignis, solange keine Tier-1- oder Tier-2-Quelle mit sichtbarem Datum aus dem Jahr 2026 vorliegt."
+      ],
+      "mechanik": "Zölle wirken auf Unternehmen über drei Kanäle. Sie erhöhen die Kosten importierter Vorprodukte, sie verteuern die eigenen Waren im Ausland und sie schaffen Unsicherheit, die Investitionen bremst. Eine falsche Datierung einer Zollmeldung kann Kurse kurzfristig bewegen, obwohl sich an der realen Lage nichts geändert hat. Sauberes Prüfen des Meldungsdatums ist deshalb Teil der Analyse.",
+      "factcheck": {
+        "claim": "Neues US-Zollultimatum zum ersten August 2026",
+        "verdict": "unsicher",
+        "evidence": "Die kursierenden Sätze stammen aus einem ABC-News-Bericht vom 21.7.2025. Für ein frisches 2026-Ultimatum fehlt eine belastbare Tier-1- oder Tier-2-Quelle. Als belegt gilt nur, dass das Narrativ überwiegend 2025-Material recycelt."
+      },
+      "sources": [
+        {
+          "title": "NBC News, US-EU trade deal 15 percent (2025)",
+          "url": "https://www.nbcnews.com/business/business-news/us-european-union-trade-deal-tariff-rate-fifteen-percent-rcna218380",
+          "tier": 2
+        },
+        {
+          "title": "ABC News, Aug 1 tariff deadline (Artikeldatum 21.7.2025)",
+          "url": "https://abcnews.com/Business/trumps-aug-1-tariff-deadline/story?id=123921765",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "containerhafen.jpg",
+        "alt": "Containerhafen in der Abenddämmerung, Verladekräne beladen ein großes Frachtschiff",
+        "caption": "Ein kursierendes Zoll-Ultimatum entpuppt sich größtenteils als Material aus dem Vorjahr.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "notenbanken-woche",
+      "ressort": "politik",
+      "kicker": "Geldpolitik · Notenbanken",
+      "headline": "Nach der Fed folgen die Bank of England und die Bank of Japan",
+      "dek": "Die heutige Fed-Entscheidung ist der Auftakt einer dichten Notenbankwoche. Am Donnerstag entscheidet die Bank of England, am Freitag die Bank of Japan. Die Europäische Zentralbank hat vergangene Woche pausiert.",
+      "body": [
+        "Nach der US-Notenbank am heutigen Mittwoch treten in dieser Woche zwei weitere große Zentralbanken zusammen. Die Bank of England entscheidet am Donnerstag über ihren Leitzins, der aktuell bei 3,75 Prozent liegt, und veröffentlicht zugleich ihren geldpolitischen Bericht. Die Bank of Japan tagt am Donnerstag und Freitag und dürfte laut mehreren Vorschauen ihren erst im Juni auf 1,00 Prozent angehobenen Leitzins bestätigen.",
+        "Die Europäische Zentralbank hatte bereits vergangene Woche getagt und ihren Einlagenzins wie erwartet bei 2,25 Prozent belassen. EZB-Präsidentin Christine Lagarde betonte die Abhängigkeit von den Daten. Am Markt wird wegen der Energiepreise über eine mögliche Bewegung im September spekuliert. Der nächste reguläre Termin liegt im September.",
+        "Besondere Aufmerksamkeit gilt der Bank of Japan. Der Yen notiert nahe einem Mehrjahrzehnttief, und ein unerwartet strenger Ton der Notenbank könnte den sogenannten Carry-Trade gefährden. Dabei leihen sich Anleger günstig in Yen und investieren das Geld in höher verzinste Anlagen. Kehrt sich dieser Handel abrupt um, kann das weltweit Kursbewegungen auslösen."
+      ],
+      "mechanik": "Notenbanken steuern die Wirtschaft über den Preis des Geldes. Hebt eine Notenbank die Zinsen, wird die eigene Währung für Anleger attraktiver, weil sie höhere Zinsen bietet. Bleibt eine Notenbank dagegen locker, während andere straffen, wertet ihre Währung ab. Genau diese Zinsdifferenz zwischen den USA und Japan erklärt den schwachen Yen und macht die Bank of Japan zu einem der wichtigsten Termine der Woche.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum ein schwacher Yen die ganze Welt betrifft",
+        "absaetze": [
+          "Der Carry-Trade ist einer der größten und leisesten Kapitalströme der Welt. Solange Japan extrem niedrige Zinsen hat, können sich Investoren dort fast kostenlos Geld leihen und es in höher verzinste Anlagen in den USA oder anderswo stecken. Die Differenz ist ihr Gewinn, solange der Yen schwach bleibt.",
+          "Das Risiko liegt in der Umkehr. Steigt der Yen plötzlich, etwa weil die Bank of Japan strenger wird als erwartet, werden die geliehenen Yen teurer zurückzuzahlen. Viele Anleger lösen dann gleichzeitig ihre Positionen auf, verkaufen ihre US-Anlagen und kaufen Yen zurück. Das kann eine Kettenreaktion an mehreren Märkten gleichzeitig auslösen, wie es im Sommer 2024 kurzzeitig zu beobachten war."
+        ]
+      },
+      "sources": [
+        {
+          "title": "ECB, Monetary policy decisions",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html",
+          "tier": 1
+        },
+        {
+          "title": "Bank of England, monetary policy",
+          "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+          "tier": 1
+        },
+        {
+          "title": "Nikkei, BoJ to keep key rate",
+          "url": "https://asia.nikkei.com/economy/bank-of-japan/bank-of-japan-to-keep-key-rate-at-next-week-s-policy-meeting-sources",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Nach der amerikanischen Notenbank folgen noch zwei weitere große Zentralbanken.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "us-datenwoche",
+      "ressort": "politik",
+      "kicker": "Konjunktur · USA",
+      "headline": "Das Verbrauchervertrauen fällt, die wichtigsten Konjunkturdaten kommen am Donnerstag",
+      "dek": "Das US-Verbrauchervertrauen ist im Juli gesunken. Am Donnerstag folgen mit der ersten Schätzung des Wirtschaftswachstums und dem bevorzugten Inflationsmaß der Fed zwei zentrale Datenpunkte am selben Morgen.",
+      "body": [
+        "Das vom Forschungsinstitut Conference Board erhobene US-Verbrauchervertrauen ist im Juli auf 90,8 Punkte gefallen und lag damit unter der Erwartung von 92,3 Punkten sowie unter dem Vormonatswert. Ein schwächeres Verbrauchervertrauen deutet darauf hin, dass die Haushalte vorsichtiger werden, was die Konsumausgaben dämpfen kann, den wichtigsten Treiber der US-Wirtschaft.",
+        "Der eigentliche Datenhöhepunkt folgt am Donnerstag. Um 8:30 Uhr Ortszeit an der Ostküste veröffentlicht das Statistikamt BEA am selben Morgen die erste Schätzung des Bruttoinlandsprodukts für das zweite Quartal und die Zahlen zu den persönlichen Einkommen und Ausgaben, die das von der Fed bevorzugte Inflationsmaß Kern-PCE enthalten. Beide Werte treffen einen Tag nach der Fed-Entscheidung ein.",
+        "Für die Märkte ist die Reihenfolge heikel. Die Fed entscheidet heute ohne die frischen Wachstums- und Inflationszahlen von morgen. Fällt das Wachstum schwach oder die Inflation hoch aus, könnte der Markt die heutige Botschaft der Fed am Donnerstag neu bewerten. Der nächste große Arbeitsmarktbericht folgt erst am 7. August."
+      ],
+      "mechanik": "Konjunkturdaten wirken auf Aktien vor allem über die Erwartung an die Geldpolitik. Ein schwaches Wachstum kann Zinssenkungshoffnungen nähren und Aktien stützen, eine hohe Inflation kann das Gegenteil bewirken. Weil die Fed heute vor der Veröffentlichung dieser Daten entscheidet, bleibt eine Lücke zwischen Beschluss und Datenlage, die zu einer verzögerten Marktreaktion führen kann.",
+      "factcheck": {
+        "claim": "US-BIP Q2 (Erstschätzung) und Kern-PCE Juni beide am Donnerstag 30.7.",
+        "verdict": "bestätigt",
+        "evidence": "Der Veröffentlichungskalender des BEA weist beide Berichte für den 30.7. um 8:30 Uhr ET aus. Consumer Confidence 90,8 (Conference Board) für Juli ist mehrfach belegt."
+      },
+      "sources": [
+        {
+          "title": "BEA, release schedule (GDP, PCE)",
+          "url": "https://www.bea.gov/news/schedule",
+          "tier": 1
+        },
+        {
+          "title": "Conference Board, Consumer Confidence July 90,8",
+          "url": "https://www.conference-board.org/topics/consumer-confidence/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Das Verbrauchervertrauen fällt, die wichtigsten Konjunkturdaten stehen noch aus.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "sk-hynix-rekord",
+      "ressort": "unternehmen",
+      "kicker": "Halbleiter · Speicher",
+      "headline": "SK Hynix verdient dank KI-Speicher so viel wie nie, die Aktie schwankt trotzdem",
+      "dek": "Der koreanische Speicherhersteller SK Hynix meldet ein Rekordquartal mit einer operativen Marge von 76 Prozent. Die Aktie fiel am Dienstag im Sog des Chip-Ausverkaufs und drehte am Mittwoch ins Plus.",
+      "body": [
+        "SK Hynix hat für das zweite Quartal 2026 einen Rekordumsatz von rund 79,3 Billionen koreanischen Won und eine operative Marge von 76 Prozent gemeldet. Treiber ist die Nachfrage nach Hochleistungsspeicher HBM für KI-Rechenzentren, dessen Auslieferung in der jeweils neuesten Generation im Quartal anlief. Nach eigenen Angaben überschritt der Halbjahresumsatz erstmals die Marke von 100 Billionen Won.",
+        "Trotz der Rekordzahlen fiel die Aktie im regulären Handel am Dienstag um rund 9 Prozent, bevor sie sich am Mittwoch erholte. Dieses Muster nennt man an der Börse sell the news. Wenn ein sehr gutes Ergebnis breit erwartet wird und die Aktie zuvor stark gestiegen ist, nehmen Anleger nach der Bestätigung Gewinne mit. Zusätzlich lastete der allgemeine Ausverkauf wegen der China-Chip-Sorgen auf dem Wert.",
+        "Die entscheidende Frage für die kommenden Quartale ist die Nachhaltigkeit der hohen Preise. Die operative Marge von 76 Prozent ist außergewöhnlich und spiegelt eine Phase knappen Angebots und hoher HBM-Preise. Steigt weltweit die Speicherkapazität, auch durch neue chinesische Anbieter, könnte sich der Zyklus drehen. Genau diese Sorge verband der Markt am Dienstag mit dem Bericht über Chinas Fortschritte."
+      ],
+      "mechanik": "Speicherchips sind ein zyklisches Geschäft, in dem sich Phasen von Knappheit und Überangebot abwechseln. In der Knappheit steigen Preise und Margen sprunghaft, weil die Kosten je zusätzlichem Chip niedrig sind. Dieser operative Hebel wirkt in beide Richtungen. Kippt der Zyklus in ein Überangebot, fallen die Preise schneller als die Kosten, und die Margen brechen ein. Deshalb belohnt der Markt Rekordmargen oft nur zögerlich.",
+      "company": {
+        "name": "SK Hynix",
+        "ticker": "000660.KS",
+        "exchange": "KRX",
+        "logoKey": "skhynix",
+        "whatTheyDo": "SK Hynix ist einer der weltweit größten Hersteller von Speicherchips. Das Unternehmen produziert Arbeitsspeicher DRAM und Flash-Speicher NAND und ist führend bei Hochleistungsspeicher HBM für KI-Rechenzentren.",
+        "whyItMatters": "Als einer von drei großen Speicheranbietern weltweit ist SK Hynix ein Frühindikator für den KI-Investitionszyklus und für den Speicherpreis-Zyklus insgesamt.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2 2026",
+            "ca. 79,3 Bio. KRW (Rekord)"
+          ],
+          [
+            "Operative Marge",
+            "76 %"
+          ],
+          [
+            "Kursreaktion Di",
+            "ca. -9 % (sell the news)"
+          ],
+          [
+            "Kursreaktion Mi",
+            "ca. +3,7 % (Erholung)"
+          ],
+          [
+            "Treiber",
+            "HBM-Speicher für KI"
+          ]
+        ]
+      },
+      "factcheck": {
+        "claim": "SK Hynix Q2 2026: Umsatz ca. 79,3 Bio. KRW, operative Marge 76 Prozent",
+        "verdict": "unsicher",
+        "evidence": "Umsatz und operative Marge sind aus dem SK-hynix-Newsroom und den Investing.com-Folien belegt. Ein extrahierter Nettogewinn über dem operativen Gewinn und ein Umsatzwachstum von +257 Prozent gegenüber Vorjahr wirken intern unplausibel und werden deshalb hier nicht angeführt."
+      },
+      "sources": [
+        {
+          "title": "SK hynix Newsroom, Q2 2026 business results",
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "tier": 1
+        },
+        {
+          "title": "Investing.com, SK hynix Q2 2026 slides",
+          "url": "https://www.investing.com/news/company-news/sk-hynix-q2-2026-slides-record-revenue-76-operating-margin-93CH-4818489",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "sk-hynix-ipo.jpg",
+        "alt": "Stapel von Hochleistungs-Speicherchips neben einem Silizium-Wafer vor Börsenmonitoren",
+        "caption": "Ein Speicherhersteller verdient dank KI-Nachfrage so viel wie nie, die Aktie schwankt trotzdem.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "mercedes-q2-china",
+      "ressort": "unternehmen",
+      "kicker": "Automobil · Europa",
+      "headline": "Mercedes-Benz steigert den Gewinn, senkt aber wegen China die Jahresprognose",
+      "dek": "Der Stuttgarter Autobauer meldet für das zweite Quartal einen um 22 Prozent höheren operativen Gewinn. Ein Einbruch der Verkäufe in China um fast ein Drittel zwingt das Unternehmen dennoch zu einer vorsichtigeren Prognose.",
+      "body": [
+        "Mercedes-Benz hat im zweiten Quartal 2026 ein operatives Ergebnis von rund 1,5 Milliarden Euro erzielt, ein Plus von rund 22 Prozent gegenüber dem Vorjahr. Der Wert lag knapp unter der Markterwartung von rund 1,6 Milliarden Euro. Der Quartalsgewinn stieg um rund 13 Prozent auf rund 1,09 Milliarden Euro. Der Halbjahresumsatz fiel um rund 4 Prozent auf rund 63,66 Milliarden Euro.",
+        "Das Sorgenkind bleibt China. Der Absatz brach dort im Quartal um rund 28 Prozent auf gut 210.000 Fahrzeuge ein. Ursachen sind die schwache Konsumstimmung, die starke lokale Konkurrenz durch chinesische Elektroautohersteller und der harte Preiswettbewerb. Zusätzlich belasteten Abschreibungen von rund 752 Millionen Euro auf chinesische Beteiligungen das Ergebnis.",
+        "In der Folge senkte der Konzern seine Jahresprognose. Der Absatz der Kernsparte Cars und der Konzernumsatz sollen nun leicht unter dem Vorjahr liegen, wo zuvor eine Stagnation erwartet worden war. Als Belastungsfaktoren nannte das Unternehmen die China-Schwäche und den Druck durch US-Zölle. Den Anteil elektrifizierter Fahrzeuge hob Mercedes-Benz zugleich an."
+      ],
+      "mechanik": "Bei einem Autobauer entscheidet die Mischung aus Menge, Preis und Modellmix über die Marge. Fällt der Absatz in einem margenstarken Markt wie China weg, sinkt die Profitabilität überproportional, weil hohe Fixkosten für Werke und Entwicklung auf weniger Fahrzeuge verteilt werden. Abschreibungen auf Beteiligungen sind Buchverluste, die den Gewinn belasten, ohne dass sofort Geld abfließt. Eine gesenkte Prognose wiegt an der Börse oft schwerer als das aktuelle Quartal, weil sie die Erwartung für die Zukunft senkt.",
+      "company": {
+        "name": "Mercedes-Benz Group",
+        "ticker": "MBG.DE",
+        "exchange": "XETRA",
+        "logoKey": "mercedes",
+        "whatTheyDo": "Mercedes-Benz entwickelt, produziert und verkauft Premium- und Luxusautomobile sowie Vans. Der Konzern verdient sein Geld vor allem mit hochpreisigen Fahrzeugen, deren Margen über dem Massenmarkt liegen.",
+        "whyItMatters": "Als einer der größten deutschen Industriekonzerne ist Mercedes-Benz ein Gradmesser für die Lage der europäischen Autoindustrie, für die China-Nachfrage und für die Wirkung der US-Zollpolitik.",
+        "keyMetrics": [
+          [
+            "Operatives Ergebnis Q2",
+            "ca. 1,5 Mrd. EUR (+22 %)"
+          ],
+          [
+            "Markterwartung",
+            "ca. 1,6 Mrd. EUR"
+          ],
+          [
+            "Quartalsgewinn",
+            "ca. 1,09 Mrd. EUR (+13 %)"
+          ],
+          [
+            "China-Absatz",
+            "ca. -28 %"
+          ],
+          [
+            "Prognose",
+            "gesenkt (Cars und Umsatz leicht unter Vorjahr)"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Mercedes-Benz IR, Capital Market Presentation Q2 2026",
+          "url": "https://group.mercedes-benz.com/dokumente/investoren/praesentationen/mercedes-benz-ir-capitalmarketpresentation-q2-2026.pdf",
+          "tier": 1
+        },
+        {
+          "title": "Business Recorder, Mercedes Q2 profit and China",
+          "url": "https://www.brecorder.com/news/40432136/mercedes-reports-higher-second-quarter-profit-but-flags-china-woes-for-car-sales",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "vw-fabrik.jpg",
+        "alt": "Roboterarme schweißen Karosserien am Fließband einer Autofabrik",
+        "caption": "Ein deutscher Autobauer steigert den Gewinn, senkt aber wegen China die Jahresprognose.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "microsoft-meta-ki-capex-test",
+      "ressort": "unternehmen",
+      "kicker": "Technologie · KI-Investitionen",
+      "headline": "Microsoft und Meta legen heute Abend Zahlen vor, im Fokus stehen die KI-Ausgaben",
+      "dek": "Nach dem US-Börsenschluss berichten mit Microsoft und Meta zwei der größten KI-Ausgeber. Im Zentrum steht die Rendite der gewaltigen Investitionen, also die Frage, ob sich die Milliardenausgaben für KI in Gewinn übersetzen.",
+      "body": [
+        "Am heutigen Mittwoch berichten nach US-Börsenschluss der Softwarekonzern Microsoft und der Facebook-Mutterkonzern Meta Platforms. Für Microsoft erwartet der Konsens einen Gewinn je Aktie von rund 4,24 US-Dollar und einen Umsatz von rund 87,7 Milliarden US-Dollar. Im Mittelpunkt steht das Wachstum der Cloud-Sparte Azure, das im Vorquartal bei rund 40 Prozent lag. Für Meta erwartet der Markt einen Umsatz von rund 60,3 Milliarden US-Dollar und einen Gewinn je Aktie von rund 7,23 US-Dollar.",
+        "Der eigentliche Prüfstein ist die Höhe und die Rendite der Investitionen. Die großen Technologiekonzerne geben derzeit dreistellige Milliardenbeträge für Rechenzentren und KI-Chips aus. Der Markt hat begonnen, genauer hinzusehen, ob diese Ausgaben durch den laufenden Cashflow gedeckt sind und ob sie sich in zusätzlichem Umsatz und Gewinn niederschlagen. Am Donnerstag folgen mit Apple und Amazon zwei weitere Schwergewichte.",
+        "Diese Woche ist damit ein Test des KI-Narrativs. Steigende Investitionen galten lange als Beweis für Zukunftschancen. Inzwischen fragt der Markt, ob die Kapitalausgaben die freien Mittel zu stark aufzehren. Für Zulieferer wie SK Hynix sind hohe Ausgaben der Hyperscaler gute Nachrichten, für die Ausgeber selbst hängt die Reaktion an der Balance zwischen Wachstum und Rendite."
+      ],
+      "mechanik": "Hohe Investitionen, im Finanzjargon Capex genannt, mindern den freien Cashflow, also das Geld, das nach den Investitionen übrig bleibt. Der Markt akzeptiert hohe Capex, solange sie künftiges Wachstum und eine gute Kapitalrendite versprechen. Kippt die Wahrnehmung, wird aus Wachstumsfantasie eine Sorge um verbranntes Kapital. Deshalb kann eine Aktie trotz starker Umsatzzahlen fallen, wenn die Investitionspläne die Erwartungen an den Cashflow enttäuschen.",
+      "company": {
+        "name": "Microsoft",
+        "ticker": "MSFT",
+        "exchange": "NASDAQ",
+        "logoKey": "microsoft",
+        "whatTheyDo": "Microsoft verdient sein Geld mit Software, Cloud-Diensten und Unternehmensanwendungen. Die Cloud-Plattform Azure vermietet Rechenleistung und ist einer der größten Profiteure des KI-Booms.",
+        "whyItMatters": "Microsoft ist einer der größten Investoren in KI-Infrastruktur weltweit. Die heutigen Zahlen und der Capex-Ausblick gelten als Maßstab dafür, ob sich die KI-Investitionen der Branche rechnen.",
+        "keyMetrics": [
+          [
+            "Konsens Gewinn je Aktie",
+            "ca. 4,24 USD"
+          ],
+          [
+            "Konsens Umsatz",
+            "ca. 87,7 Mrd. USD"
+          ],
+          [
+            "Fokus",
+            "Azure-Wachstum und Capex"
+          ],
+          [
+            "Bericht",
+            "heute nach US-Börsenschluss"
+          ],
+          [
+            "Zweiter Termin",
+            "Apple und Amazon am Donnerstag"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "AlphaStreet, Microsoft Q4 2026 preview",
+          "url": "https://news.alphastreet.com/microsoft-msft-q4-2026-preview-eps-est-4-24-reports-july-29/",
+          "tier": 2
+        },
+        {
+          "title": "AlphaStreet, Meta Q2 2026 preview",
+          "url": "https://news.alphastreet.com/meta-platforms-meta-q2-2026-preview-eps-est-7-23-reports-july-29/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Zwei Technologiekonzerne legen Zahlen vor, im Fokus stehen ihre KI-Investitionen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "boeing-q2-verlust-cashflow",
+      "ressort": "unternehmen",
+      "kicker": "Industrie · Luftfahrt",
+      "headline": "Boeing schreibt weiter Verlust, doch der Cashflow dreht ins Plus und der Auftragsbestand erreicht einen Rekord",
+      "dek": "Der Flugzeugbauer meldet für das zweite Quartal erneut einen Verlust je Aktie. Anleger achteten dennoch auf die positiven Signale, den erstmals wieder positiven freien Cashflow und einen Auftragsbestand auf Rekordhöhe.",
+      "body": [
+        "Boeing hat im zweiten Quartal 2026 einen Umsatz von rund 24,6 Milliarden US-Dollar erzielt, ein Plus von rund 8 Prozent. Unter dem Strich stand erneut ein Verlust. Der bereinigte Kernverlust je Aktie lag bei rund 0,76 US-Dollar und damit deutlich unter der Erwartung von rund minus 0,31 US-Dollar. Zugleich lieferte der Konzern positive Signale. Der operative Cashflow lag bei rund 1,4 Milliarden US-Dollar, der freie Cashflow drehte mit rund 0,6 Milliarden US-Dollar wieder ins Plus.",
+        "Besonders beachtet wurde der Auftragsbestand. Er erreichte mit rund 715 Milliarden US-Dollar einen Rekord und umfasst mehr als 6.200 Verkehrsflugzeuge. Im Quartal lieferte Boeing 171 kommerzielle Maschinen aus. Ein hoher Auftragsbestand gibt Investoren Sicherheit über künftige Umsätze, weil er zeigt, dass die Nachfrage nach Flugzeugen langfristig gesichert ist.",
+        "Der Fall zeigt, warum eine Aktie trotz eines Verlusts steigen kann. Für ein Unternehmen in der Sanierung ist die Frage, ob es Geld verbrennt oder erwirtschaftet, oft wichtiger als der bilanzielle Gewinn. Ein positiver freier Cashflow und ein Rekord-Auftragsbestand deuten darauf hin, dass die Wende operativ vorankommt. Die genaue Kursreaktion am Dienstag war quellenseitig uneinheitlich und wird hier nicht mit einer exakten Prozentzahl angeführt."
+      ],
+      "mechanik": "Der bilanzielle Gewinn und der Cashflow sind zwei verschiedene Dinge. Der Gewinn enthält Abschreibungen und Sonderbelastungen, die kein Geld kosten. Der freie Cashflow misst, wie viel Geld nach allen Ausgaben tatsächlich übrig bleibt. Bei einem Sanierungsfall wie Boeing schaut der Markt zuerst auf den Cashflow und den Auftragsbestand, weil sie zeigen, ob das Geschäft sich trägt, bevor der bilanzielle Gewinn zurückkehrt.",
+      "company": {
+        "name": "The Boeing Company",
+        "ticker": "BA",
+        "exchange": "NYSE",
+        "logoKey": "boeing",
+        "whatTheyDo": "Boeing baut Verkehrsflugzeuge, Rüstungsgüter und Raumfahrttechnik. Den Hauptumsatz erzielt der Konzern mit dem Verkauf und der Wartung von Passagierflugzeugen.",
+        "whyItMatters": "Als eines von zwei großen Passagierflugzeugbauern der Welt ist Boeing ein Schlüsselwert der Luftfahrtindustrie. Die Wende von Verlust zu positivem Cashflow ist ein wichtiges Signal für die gesamte Lieferkette.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2",
+            "ca. 24,6 Mrd. USD (+8 %)"
+          ],
+          [
+            "Kernverlust je Aktie",
+            "ca. -0,76 USD (Konsens ca. -0,31)"
+          ],
+          [
+            "Operativer Cashflow",
+            "ca. 1,4 Mrd. USD"
+          ],
+          [
+            "Freier Cashflow",
+            "ca. +0,6 Mrd. USD"
+          ],
+          [
+            "Auftragsbestand",
+            "ca. 715 Mrd. USD (Rekord)"
+          ]
+        ]
+      },
+      "factcheck": {
+        "claim": "Boeing Q2 2026: Kernverlust -0,76 USD, freier Cashflow positiv, Auftragsbestand 715 Mrd. USD",
+        "verdict": "bestätigt",
+        "evidence": "Kernzahlen aus der Boeing-Primärmeldung (Mediaroom) und Benzinga. Die exakte Kursreaktion war zwischen den Quellen uneinheitlich und wird nicht beziffert."
+      },
+      "sources": [
+        {
+          "title": "Boeing, Second Quarter 2026 Results (PR)",
+          "url": "https://boeing.mediaroom.com/2026-07-28-Boeing-Reports-Second-Quarter-Results",
+          "tier": 1
+        },
+        {
+          "title": "Benzinga, Boeing recovery signs cash flow",
+          "url": "https://www.benzinga.com/markets/earnings/26/07/60725262/boeing-flashes-recovery-signs-cash-flow-turns-positive-backlog-hits-all-time-high",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "vw-fabrik.jpg",
+        "alt": "Roboterarme schweißen Karosserien am Fließband einer Autofabrik",
+        "caption": "Der Verlust bleibt, doch der Zahlungsmittelfluss dreht überraschend ins Plus.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "higher-for-longer-regime",
+      "ressort": "makro",
+      "kicker": "Makroökonomie · Zinsregime",
+      "headline": "Was ein Zinsregime länger hoher Zinsen für Aktien bedeutet",
+      "dek": "Die Diskussion hat sich gedreht. Statt über den Zeitpunkt der nächsten Zinssenkung spricht der Markt wieder über eine mögliche Anhebung. Dieses Regime länger hoher Zinsen wirkt über klare Kanäle auf die Bewertung von Unternehmen.",
+      "body": [
+        "Über Monate war die Leitfrage an den Märkten, wann die Fed die Zinsen senkt. Nun hat sich die Erwartung gedreht. Mit einer Zinsanhebungswahrscheinlichkeit von rund 38 Prozent für heute und einer im September mit rund 80 Prozent eingepreisten Anhebung rücken länger hohe Zinsen ins Zentrum. Dieses Regime trägt Folgen für nahezu jede Anlageklasse.",
+        "Der erste Kanal ist die Diskontierung. Der Wert einer Aktie ergibt sich aus der Summe ihrer künftigen Gewinne, abgezinst auf heute. Steigt der Zins, mit dem abgezinst wird, verlieren weit in der Zukunft liegende Gewinne stark an Barwert. Deshalb treffen hohe Zinsen Wachstumswerte mit langer Ertragsduration härter als solide Firmen mit hohen laufenden Gewinnen. Der zweite Kanal sind die Finanzierungskosten. Verschuldete und kapitalintensive Geschäftsmodelle refinanzieren teurer, was Immobilien, Versorger und stark fremdfinanzierte Firmen belastet.",
+        "Der dritte Kanal ist die Konkurrenz durch sichere Anlagen. Werfen Staatsanleihen rund 4,6 Prozent ab, sinkt die relative Attraktivität dividendenstarker Bond-Proxys wie Versorger und Immobilien-Trusts. Der vierte Kanal ist der Dollar. Eine straffe Fed stärkt tendenziell die US-Währung, was US-Exporteure und in Dollar gehandelte Rohstoffe belastet. Auf der Gewinnerseite stehen Banken, deren Zinsmarge sich in einem höheren Zinsumfeld weiten kann."
+      ],
+      "mechanik": "Der Zins ist der Preis der Zeit. Er bestimmt, wie viel ein künftiger Euro heute wert ist. Ein höherer Zins macht künftige Gewinne weniger wert und heutige Gewinne relativ wichtiger. Deshalb verschiebt ein Regime länger hoher Zinsen die Gunst des Marktes von teuren Wachstumsversprechen hin zu soliden, gering verschuldeten Firmen mit stabilen laufenden Erträgen.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum Duration bei Aktien zählt",
+        "absaetze": [
+          "Der Begriff Duration stammt aus dem Anleihemarkt und misst, wie stark der Preis eines Wertpapiers auf Zinsänderungen reagiert. Er lässt sich auf Aktien übertragen. Eine Aktie, deren Gewinne vor allem in ferner Zukunft erwartet werden, verhält sich wie eine langlaufende Anleihe und reagiert stark auf Zinsen.",
+          "Ein junges Softwareunternehmen, das heute kaum Gewinn macht und seinen Wert aus Erwartungen für die 2030er Jahre zieht, hat eine sehr lange Duration. Steigt der Zins um einen Prozentpunkt, fällt der Barwert dieser fernen Gewinne spürbar. Ein etablierter Konsumguterkonzern mit hohen laufenden Gewinnen hat eine kurze Duration und ist robuster. Genau diese Logik erklärt, warum Technologiewerte in Zinsphasen stärker schwanken als defensive Werte."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Federal Reserve, FOMC-Sitzungskalender 2026",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tier": 1
+        },
+        {
+          "title": "Federal Reserve, Warsh sworn in as Chair (22.5.2026)",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+          "tier": 1
+        },
+        {
+          "title": "CBS News, Fed interest rate decision July 2026",
+          "url": "https://www.cbsnews.com/news/fed-interest-rate-decision-july-meeting/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "devisenhandel-nacht.jpg",
+        "alt": "Devisenhandelsplatz bei Nacht, gebogene Bildschirme mit abstrakten Kurscharts, Skyline im Hintergrund",
+        "caption": "Was ein Zinsregime mit dauerhaft höheren Sätzen für die Bewertung von Aktien bedeutet.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "china-chip-kapitalzyklus",
+      "ressort": "makro",
+      "kicker": "Makroökonomie · Kapitalzyklus",
+      "headline": "Chinas Chip-Aufbau und die Logik des Kapitalzyklus",
+      "dek": "Der Börsengang eines chinesischen Speicherherstellers mit einem Kurssprung von rund 470 Prozent und der Ausbau eigener Fertigung erzählen dieselbe Geschichte. Sie ist ein Lehrstück über den Kapitalzyklus, der ganze Branchen antreibt und wieder abstürzen lässt.",
+      "body": [
+        "Der Börsengang des chinesischen Speicherherstellers ChangXin Memory Technologies, kurz CXMT, debütierte in Shanghai mit einem Kurssprung von rund 470 Prozent. Gleichzeitig baut China über Anbieter wie Yuliangsheng eigene Fertigungskapazität auf. Beides zusammen beschreibt einen Kapitalzyklus, ein wiederkehrendes Muster, das in kapitalintensiven Branchen wie Halbleitern besonders ausgeprägt ist.",
+        "Die Logik des Kapitalzyklus ist einfach. Hohe Preise und Gewinne locken Kapital an. Neue Anbieter und Kapazitäten entstehen, oft gefördert durch staatliche Subventionen wie in China. Mit Verzögerung trifft diese zusätzliche Kapazität auf den Markt, das Angebot steigt, und die Preise fallen. Genau diese Sorge preist der Markt ein, wenn er die Speicherwerte trotz aktueller Rekordmargen mit Vorsicht behandelt.",
+        "Wichtig ist die zeitliche Einordnung. Der chinesische Kapazitätsaufbau ist ein strukturelles Thema für die kommenden Jahre, kein Ereignis für das nächste Quartal. Der Free Float von CXMT lag beim Debüt bei nur rund 6,7 Prozent, was die extreme Kursreaktion erklärt und die Bewertung als Signal entwertet. Für die etablierten Anbieter zählt, ob und wann die neue Kapazität den Preiszyklus tatsächlich dreht."
+      ],
+      "mechanik": "In kapitalintensiven Branchen bestimmt das Angebot oft mehr über die Preise als die Nachfrage. Wenn hohe Gewinne viele Anbieter zum Ausbau verleiten, entsteht mit Verzögerung ein Überangebot, das die Preise drückt. Anleger, die den Kapitalzyklus verstehen, sind bei Rekordmargen vorsichtig und bei Kapitulation der Anbieter aufmerksam, weil sich der Zyklus dann zu drehen beginnt.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Der Kapitalzyklus nach Marathon und Chancellor",
+        "absaetze": [
+          "Die Kapitalzyklus-Theorie wurde vom Investmenthaus Marathon Asset Management geprägt und vom Finanzautor Edward Chancellor bekannt gemacht. Ihr Kern lautet, dass die Rendite einer Branche weniger von der Nachfrage abhängt als vom Angebotsverhalten der Anbieter.",
+          "Fließt viel Kapital in eine profitable Branche, steigt die Kapazität, und die Renditen fallen mit Verzögerung. Zieht sich Kapital nach einer Krise zurück, verknappt sich das Angebot, und die Renditen erholen sich. Für Anleger folgt daraus eine unbequeme Regel. Der beste Zeitpunkt liegt oft dort, wo eine Branche unbeliebt ist und niemand investiert, und der gefährlichste dort, wo Euphorie und Subventionen den Ausbau treiben. Chinas subventionierter Chip-Aufbau ist ein Musterbeispiel für die zweite Situation."
+        ]
+      },
+      "sources": [
+        {
+          "title": "TrendForce, China immersion DUV maß production",
+          "url": "https://www.trendforce.com/news/2026/07/28/news-china-reportedly-starts-mass-producing-immersion-duv-tools-smic-hua-hong-cxmt-deliveries-expected-this-year/",
+          "tier": 2
+        },
+        {
+          "title": "Tom's Hardware, China domestic immersion DUV",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-begins-mass-production-of-domestic-immersion-duv-lithography-machines",
+          "tier": 2
+        },
+        {
+          "title": "SK hynix Newsroom, Q2 2026 business results",
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Chinas Aufbau einer eigenen Chipfertigung folgt der Logik eines langen Kapitalzyklus.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "oel-inflation-transmission",
+      "ressort": "makro",
+      "kicker": "Makroökonomie · Inflation",
+      "headline": "Wie ein steigender Ölpreis über Umwege die Zinsen hochhält",
+      "dek": "Der wieder anziehende Ölpreis ist mehr als eine Nachricht für den Energiesektor. Über die Inflation und die Erwartungen wirkt er direkt auf die Entscheidung der Notenbank und damit auf die Bewertung aller Aktien.",
+      "body": [
+        "Der Zusammenhang zwischen dem Ölpreis und der Geldpolitik verläuft über mehrere Stufen. Steigt der Ölpreis, verteuern sich Benzin, Diesel und Heizenergie unmittelbar. Weil Energie in fast jedem Produkt steckt, sickern höhere Energiekosten mit Verzögerung in viele andere Preise ein, von Transport über Verpackung bis zu Lebensmitteln. So wird aus einem Energiepreisschock ein breiterer Inflationsdruck.",
+        "Genau diese Kette ist der Grund, warum der wieder steigende Ölpreis die Zinsanhebungserwartung für die heutige Fed-Sitzung angetrieben hat. Eine Notenbank fürchtet vor allem, dass sich hohe Inflationserwartungen verfestigen. Wenn Haushalte und Unternehmen dauerhaft mit hoher Teuerung rechnen, fordern sie höhere Löhne und setzen höhere Preise durch, was die Inflation selbst verstetigt. Diese Zweitrundeneffekte will eine Notenbank verhindern.",
+        "Für die Aktienmärkte schließt sich der Kreis. Ein höherer Ölpreis führt über die Inflation zu einer straffer erwarteten Geldpolitik, diese hebt die Diskontsätze, und höhere Diskontsätze drücken die Bewertung vor allem der zinssensiblen Wachstumswerte. Der Ölpreis ist damit ein Beispiel dafür, dass ein einzelner Rohstoff über Transmissionskanäle die Bewertung von Aktien beeinflusst, die mit Öl auf den ersten Blick nichts zu tun haben."
+      ],
+      "mechanik": "Ein Transmissionskanal beschreibt den Weg, über den ein Ereignis auf die Wirtschaft wirkt. Beim Ölpreis läuft der wichtigste Weg über die Inflation und die Zinsen. Teure Energie treibt die Teuerung, die Notenbank hält die Zinsen hoch, und hohe Zinsen senken die Bewertung von Aktien. Wer diesen Weg kennt, versteht, warum ein Angriff im Nahen Osten den Kurs einer Softwarefirma in Kalifornien bewegen kann.",
+      "sources": [
+        {
+          "title": "CNBC, Oil jumps as US-Iran resume strikes (29.7.)",
+          "url": "https://www.cnbc.com/2026/07/29/oil-prices-today-brent-wti-iran-us-hormuz.html",
+          "tier": 2
+        },
+        {
+          "title": "CNBC, Oil price today WTI Brent Hormuz (28.7.)",
+          "url": "https://www.cnbc.com/2026/07/28/oil-price-today-wti-brent-us-iran-hormuz.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Ein steigender Ölpreis hält über mehrere Umwege die Zinsen hartnäckig oben.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Unternehmen, die Öl und Gas fördern, verarbeiten und verteilen.",
+      "lage": "Rückkehr der geopolitischen Risikoprämie stützt den Sektor, der Ölpreis stieg am Mittwoch nach der Wiederaufnahme der US-Iran-Angriffe.",
+      "richtung": "up",
+      "tagesWert": "Brent ca. 88 USD, steigend (29.7. früh); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Energiesektor ist nach der jahrelangen Unterinvestition in neue Förderung angebotsseitig knapp aufgestellt, was ihn anfällig für geopolitische Preissprünge macht. Die Bewertungen sind im historischen Vergleich moderat, weil der Markt langfristig mit der Energiewende rechnet. Kurzfristig treibt die Nahost-Risikoprämie den Preis, strukturell bleibt die Frage der Nachfrage nach 2030 offen. Integrierte Konzerne verdienen aktuell hohe freie Mittelflüsse und geben viel über Dividenden und Rückkäufe zurück. Der Kapitalzyklus spricht dafür, dass die Disziplin bei neuen Investitionen die Preise stützt."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Rohstoffen wie Metallen, Chemikalien und Baustoffen.",
+      "lage": "Gemischt, ein festerer Dollar belastet Industriemetalle, während Gold trotz Rückgang nahe Rekordniveau bleibt.",
+      "richtung": "neutral",
+      "tagesWert": "Gold ca. 4.022 USD (-1,4 %, 29.7. früh); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist zweigeteilt. Edelmetalle profitieren von der Unsicherheit und der Nachfrage nach Sachwerten, während Industriemetalle und Chemie unter der schwachen chinesischen Nachfrage und dem starken Dollar leiden. Die Bewertungen sind bei den Minen moderat, bei defensiver Spezialchemie höher. Der Chemieteil steht spät im Zyklus mit Überkapazitäten in Teilen Asiens. Ein wieder steigender Ölpreis verteuert die Rohstoffe der Petrochemie zusätzlich. Struktureller Treiber bleibt die Elektrifizierung, die die Nachfrage nach Kupfer und Spezialmaterialien langfristig stützt."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbauer, Rüstungs-, Bau- und Transportunternehmen.",
+      "lage": "Gemischt, Industriewerte trieben den Dow, höhere Zinsen und ein steigender Ölpreis belasten jedoch zinssensible und treibstoffabhängige Teilbranchen.",
+      "richtung": "neutral",
+      "tagesWert": "Industriewerte trieben den Dow-Rekord (Di); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist breit und uneinheitlich bewertet. Rüstung und Luftfahrt profitieren von hohen Auftragsbeständen, wie das Boeing-Rekordorderbuch zeigt, während zyklische Investitionsgüter von der Zinslast gebremst werden. Transport und Logistik leiden unter dem steigenden Treibstoffpreis. Die Bewertungen liegen im oberen Mittelfeld, gestützt von den Themen Reshoring und Automatisierung. Strukturell treibt die Verlagerung von Lieferketten und die Aufrüstung die Nachfrage, zyklisch bremst die schwache globale Investitionsneigung bei hohen Finanzierungskosten."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter von Gütern, die Verbraucher bei guter Lage kaufen, etwa Autos, Mode und Reisen.",
+      "lage": "Belastet, höhere Zinsen und ein steigender Benzinpreis dämpfen die Kaufkraft, Mercedes senkte wegen China die Prognose.",
+      "richtung": "down",
+      "tagesWert": "Mercedes senkt Jahresprognose (China -28 %); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist der zinssensibelste im Konsumbereich, weil viele Käufe kreditfinanziert sind. Die Autobauer stehen unter Druck durch die China-Schwäche, die lokale EV-Konkurrenz und die US-Zölle. Die Bewertungen sind gespalten, klassische Autobauer sind billig, Luxus- und Erlebnisanbieter teurer. Ein wieder steigender Ölpreis entzieht den Haushalten Kaufkraft und trifft aufschiebbare Ausgaben zuerst. Strukturell verschiebt sich Wert von Verbrennern zu Elektroautos, wobei die europäischen Hersteller in China Marktanteile an lokale Anbieter verlieren."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Anbieter von Gütern des täglichen Bedarfs wie Nahrung, Getränke und Hygiene.",
+      "lage": "Relativ fest, Coca-Cola hob nach einem Beat die Jahresprognose an, defensive Werte sind in nervösen Phasen gefragt.",
+      "richtung": "up",
+      "tagesWert": "Coca-Cola +5,0 % (Di, Beat und Prognoseanhebung); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor gilt als defensiver Anker, weil die Nachfrage konjunktur- und zinsunabhängig ist. Die stabilen Cashflows und die kurze Ertragsduration machen ihn robust gegen steigende Zinsen. Die Bewertungen liegen leicht über dem langjährigen Schnitt, weil Anleger in unsicheren Phasen Sicherheit bezahlen. Ein steigender Ölpreis erhöht Transport- und Verpackungskosten und drückt die Margen, wenn Preiserhöhungen nur teilweise durchsetzbar sind. Die Preismacht der großen Marken ist der entscheidende Werttreiber, weil sie es erlaubt, Kostensteigerungen weiterzugeben."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharmakonzerne, Medizintechnik und Gesundheitsdienstleister.",
+      "lage": "Fest, Gesundheitswerte trugen zum Dow-Rekord bei, der Sektor gilt als defensiv im nervösen Umfeld.",
+      "richtung": "up",
+      "tagesWert": "Amgen +4,5 % (Di, Dow-Gewinner); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist wenig konjunkturabhängig, weil Gesundheitsausgaben kaum aufschiebbar sind. Die Bewertungen sind nach Jahren der Zurückhaltung moderat, insbesondere bei den großen Pharmakonzernen, die günstiger als der Gesamtmarkt handeln. Der wichtigste strukturelle Treiber ist die alternde Bevölkerung in den Industrieländern. Belastungsfaktoren sind der regulatorische Druck auf die Medikamentenpreise in den USA und auslaufende Patente. Unprofitable Biotechs bilden eine zinssensible Ausnahme, weil ihre Erträge weit in der Zukunft liegen und unter höherer Diskontierung leiden."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer und Vermögensverwalter.",
+      "lage": "Fest, Finanzwerte stützten den Dow-Rekord, das Umfeld länger hoher Zinsen kann die Zinsmargen der Banken weiten.",
+      "richtung": "up",
+      "tagesWert": "Finanzwerte trieben den Dow-Rekord (Di); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor gehört zu den wenigen, die von länger hohen Zinsen profitieren können, weil sich die Differenz zwischen Kredit- und Einlagenzinsen weitet. Die Bewertungen sind im Vergleich zum Gesamtmarkt niedrig, gemessen an Kurs-Buchwert und Kurs-Gewinn. Das zentrale Risiko liegt in steigenden Kreditausfällen, falls hohe Zinsen die Wirtschaft bremsen, sowie in Bewertungsverlusten auf Anleihebestände. Regionalbanken mit niedrigem Einlagenzins und asset-sensibler Bilanz sind besonders direkte Profiteure des aktuellen Zinsumfelds, während die Belebung der Kapitalmärkte den Investmentbanken hilft."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Hersteller von Halbleitern, Software und Hardware.",
+      "lage": "Belastet, der China-Chip-Bericht löste einen Ausverkauf bei Halbleitern aus, höhere Zinsen drücken zusätzlich die Bewertung.",
+      "richtung": "down",
+      "tagesWert": "Halbleiterindex ca. -4,5 % (Di, Einzelquelle); keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist das Herz des KI-Booms und zugleich der zinssensibelste Teil des Marktes, weil ein großer Teil seines Werts aus fernen Gewinnen stammt. Die Bewertungen sind nach der KI-Rally hoch, was ihn anfällig für Rückschläge macht. Aktuell wirken zwei Kräfte gegenläufig, die starke KI-Nachfrage stützt Umsätze und Margen, während die Angst vor Chinas Chip-Autarkie und höhere Zinsen die Bewertung belasten. Strukturell bleibt die Nachfrage nach Rechenleistung der Treiber, das Risiko liegt in einem Überangebot im Speicherbereich und in geopolitischen Handelsbeschränkungen."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Telekomkonzerne, Medien und werbefinanzierte Internetplattformen.",
+      "lage": "Gemischt, große Plattformen wie Alphabet hielten sich fest, Meta berichtet heute nach Börsenschluss.",
+      "richtung": "neutral",
+      "tagesWert": "Alphabet +1,9 % (Di); Meta-Zahlen heute nachbörslich; keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor vereint zwei sehr verschiedene Welten. Die großen Internetplattformen sind hoch profitabel und werden von der KI-Fantasie getragen, tragen aber den Durationseffekt bei steigenden Zinsen. Klassische Telekomkonzerne sind hoch verschuldet und dividendenstark und wirken als Bond-Proxys. Die Bewertungen der Plattformen sind ambitioniert, die der Telekoms günstig. Ein struktureller Treiber ist die Verlagerung der Werbebudgets ins Digitale, ein Risiko liegt in der Regulierung großer Plattformen. Im US-Wahljahr 2026 stützen zusätzlich steigende politische Werbebudgets die Rundfunkbetreiber."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Betreiber von Strom-, Gas- und Wassernetzen sowie Kraftwerken.",
+      "lage": "Belastet, als Bond-Proxys leiden Versorger unter der Aussicht auf länger hohe Zinsen.",
+      "richtung": "down",
+      "tagesWert": "keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist klassisch zinssensibel, weil seine stabilen Dividenden mit Anleihen konkurrieren und seine kapitalintensiven Netzinvestitionen teuer refinanziert werden. Bei Renditen um 4,6 Prozent sinkt die relative Attraktivität der Dividenden. Die Bewertungen sind nach der Zinswende moderat. Ein struktureller Gegentrend ist die stark steigende Stromnachfrage durch KI-Rechenzentren, die den Versorgern langfristig Wachstum verschafft. Kurzfristig dominiert jedoch der Zinsdruck. Regulierte Netzbetreiber mit stabilen, planbaren Erträgen sind dabei robuster als stärker fremdfinanzierte Erzeuger."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Immobiliengesellschaften und börsennotierte Immobilien-Trusts.",
+      "lage": "Belastet, höhere Zinsen erhöhen die Finanzierungskosten und drücken die Bewertungen über steigende Kapitalisierungsraten.",
+      "richtung": "down",
+      "tagesWert": "keine belegten Sektor-ETF-Tageswerte",
+      "istZustand": "Der Sektor ist der zinsempfindlichste überhaupt, weil er hoch fremdfinanziert ist und die Bewertungen direkt an den Kapitalisierungszinsen hängen. Ein Regime länger hoher Zinsen belastet ihn über die Finanzierungskosten und über die Konkurrenz durch sichere Anleihen. Die Bewertungen einzelner Segmente sind nach den Rückgängen niedrig, insbesondere bei Büro- und Gewerbeimmobilien, wo zusätzlich strukturelle Nachfrageprobleme lasten. Wohn- und Logistikimmobilien sowie Rechenzentrums-Trusts sind fundamental robuster, leiden aber ebenfalls unter der Zinslast. Der Sektor wartet auf einen klaren Zinsgipfel als Wendepunkt."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "Cullen/Frost Bankers",
+      "ticker": "CFR",
+      "logoKey": "frost",
+      "marketCapEUR": "ca. 9,2 Mrd. EUR",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW und Schluss 28.7. (167,06 USD), EUR/USD 1,1403 (AV 29.7.); grenznah, in USD rund 10,5 Mrd.",
+      "marktEinordnung": "Regionalbanken sind der direkteste Weg, um vom Zinsumfeld zu profitieren. Der US-Bankenmarkt ist stark fragmentiert, und Frost Bank ist mit rund 200 Filialen die größte unabhängige Bank in Texas, einem der wirtschaftlich stärksten und wachstumsstaerksten US-Bundesstaaten. In dieser regionalen Nische ist Frost seit Jahrzehnten Marktführer mit einer außergewöhnlich treuen Einlagenbasis.",
+      "thesis": "Cullen/Frost ist eine Qualitätsbank, deren Geschäftsmodell direkt vom Regime länger hoher Zinsen profitiert. Die Bilanz ist asset-sensitiv, das heißt ihre Erträge steigen, wenn die Zinsen hoch bleiben, weil sich die Kredite schneller verteuern als die Einlagen. Der entscheidende Vorteil liegt im niedrigen Einlagenzins, den Frost dank einer sehr treuen Kundenbasis zahlt. Die Bank finanziert sich fast vollständig über günstige Kundeneinlagen und kaum über teures Fremdkapital am Kapitalmarkt, was viele schwächere Regionalbanken in der Zinskrise 2023 in Bedrängnis brachte. Mit einer Eigenkapitalrendite von rund 15,5 Prozent, einem Kurs-Gewinn-Verhältnis von rund 16 und einem konservativen Risikoprofil ist Frost ein Musterbeispiel für eine solide geführte Bank, die genau in dem Umfeld verdient, das der Markt heute fürchtet.",
+      "counterarguments": [
+        "Die Aktie notiert nahe ihrem 52-Wochen-Hoch, und das durchschnittliche Analystenkursziel von rund 159 US-Dollar liegt unter dem aktuellen Kurs von rund 167 US-Dollar. Der analystengedeckte Aufwärtsspielraum ist damit dünn, ein Großteil der guten Nachrichten könnte eingepreist sein.",
+        "Die Marktkapitalisierung liegt in US-Dollar mit rund 10,5 Milliarden über und nur nach Umrechnung in Euro knapp unter der Zehn-Milliarden-Grenze. Ein schwächerer Euro würde den Wert über die Grenze heben.",
+        "Die starke Fokussierung auf Texas bedeutet ein Klumpenrisiko, insbesondere gegenüber dem Energiesektor und dem regionalen Gewerbeimmobilienmarkt."
+      ],
+      "catalysts": [
+        "Die Q2-Zahlen Anfang August, mit Fokus auf Einlagenkosten, Zinsmarge und Kreditqualität.",
+        "Der heutige und der im September erwartete Fed-Beschluss, weil länger hohe Zinsen die Zinsmarge direkt stützen."
+      ]
+    },
+    {
+      "name": "Nexstar Media Group",
+      "ticker": "NXST",
+      "logoKey": "nexstar",
+      "marketCapEUR": "ca. 5,2 Mrd. EUR",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW und Schluss 28.7. (193,77 USD), EUR/USD 1,1403 (AV 29.7.)",
+      "marktEinordnung": "Der Sektor Kommunikation war in den vergangenen Wochen in dieser Rubrik kaum vertreten, weil Qualitätsnamen unter 10 Milliarden Euro schwer zu finden sind. Nexstar ist der größte Betreiber lokaler Fernsehsender in den USA und erreicht mehr als zwei Drittel der US-Haushalte. In diesem Markt für lokale Reichweite ist Nexstar durch eine jahrelange Konsolidierung zum Marktführer geworden, was ihm bei den Verhandlungen über Einspeisegebühren mit den Kabelnetzen Preismacht verschafft.",
+      "thesis": "Nexstar ist ein Value-Fall mit einem klaren zeitlichen Katalysator. Das Unternehmen verdient stabil an sogenannten Retransmission-Gebühren, also den Zahlungen der Kabel- und Streaminganbieter für die Einspeisung der lokalen Sender. Darüber legt sich ein strukturell schwankender, aber sehr margenstarker Ertragsstrom aus politischer Werbung. Das Jahr 2026 ist in den USA ein Zwischenwahljahr, in dem im November das gesamte Repräsentantenhaus und ein Drittel des Senats gewählt werden. Vor solchen Wahlen fließen enorme politische Werbebudgets in die lokalen Fernsehsender, deren Reichweite für den Wahlkampf entscheidend ist. Das gedrückte Vorjahresergebnis ohne Wahlkampf lässt das aktuelle Kurs-Gewinn-Verhältnis hoch erscheinen, während die Konsensschätzungen für das Wahljahr einen deutlich niedrigeren vorwärtsgerichteten Gewinnmultiplikator implizieren. Bei einer Dividendenrendite von rund 4 Prozent, hohem freiem Cashflow und einem durchschnittlichen Analystenkursziel von rund 252 US-Dollar gegenüber einem Kurs von rund 194 US-Dollar bietet der Fall einen selten klaren Erwartungshebel.",
+      "counterarguments": [
+        "Nexstar ist hoch verschuldet, was das Eigenkapital zinssensibel macht. Im Umfeld länger hoher Zinsen verteuert sich die Refinanzierung der Schulden.",
+        "Das lineare Fernsehen verliert strukturell an Reichweite, weil Zuschauer zu Streamingdiensten abwandern. Der politische Werbeschub ist zyklisch und fällt in Nicht-Wahljahren wieder weg.",
+        "Der niedrig erscheinende vorwärtsgerichtete Gewinnmultiplikator hängt stark von der Annahme eines sehr starken Wahljahrergebnisses ab und ist deshalb mit Unsicherheit behaftet."
+      ],
+      "catalysts": [
+        "Das Anlaufen der politischen Werbebudgets im zweiten Halbjahr 2026 vor den Zwischenwahlen im November.",
+        "Die kommenden Quartalszahlen, die den beginnenden Anstieg der politischen Werbeerlöse zeigen sollten."
+      ]
+    },
+    {
+      "name": "Franklin Electric",
+      "ticker": "FELE",
+      "logoKey": "franklinelectric",
+      "marketCapEUR": "ca. 4,25 Mrd. EUR",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW und Schluss 28.7. (109,71 USD), EUR/USD 1,1403 (AV 29.7.)",
+      "marktEinordnung": "Der Markt für Wasser- und Kraftstoffpumpen ist eine unscheinbare, aber unverzichtbare Nische. Franklin Electric ist globaler Marktführer bei Systemen zur Grundwasserförderung und bei Kraftstoff-Fördersystemen für Tankstellen. Die Nische wächst strukturell mit der wachsenden Weltbevölkerung, dem Bedarf an sauberem Wasser und der Notwendigkeit, Grundwasser effizient zu bewirtschaften. Als führender Anbieter mit einem dichten Vertriebs- und Servicenetz besitzt Franklin eine starke Stellung bei Ersatzteilen, die wiederkehrende Umsätze sichert.",
+      "thesis": "Franklin Electric ist ein defensiver Qualitäts-Compounder abseits der überlaufenen Themen Rüstung und Automatisierung. Das Geschäft ist wenig spektakulär, aber stabil, weil ein großer Teil des Umsatzes aus Ersatz- und Servicegeschäft stammt, das auch in schwachen Konjunkturphasen anfällt. Das Unternehmen verbindet eine solide Eigenkapitalrendite mit stetigem Wachstum und einer langen Geschichte steigender Dividenden. Am 28. Juli legte Franklin Q2-Zahlen vor, die die Erwartungen übertrafen, worauf die Aktie deutlich zulegte und ein neues Mehrmonatshoch markierte. Für langfristig orientierte Anleger liegt der Reiz in der Kombination aus Marktführerschaft in einer wachsenden Nische, hoher Kapitalrendite und der Fähigkeit, über Jahre verlässlich Wert zu schaffen. Die Aktie ist damit eher eine Wette auf ruhiges, stetiges Wachstum als auf einen kurzfristigen Kurssprung.",
+      "counterarguments": [
+        "Die Bewertung ist voll. Mit einem Kurs-Gewinn-Verhältnis von rund 32 auf Basis der vergangenen Gewinne bezahlt der Markt die Qualität bereits, das durchschnittliche Analystenkursziel liegt nach dem Kurssprung nur noch wenige Prozent über dem aktuellen Kurs.",
+        "Der nächste offensichtliche Katalysator ist mit den Q2-Zahlen bereits verbraucht, die Aktie ist am Berichtstag stark gestiegen. Kurzfristig fehlt ein neuer Auslöser.",
+        "Das Geschäft ist zyklisch von der Landwirtschaft und dem Wohnungsbau abhängig, die operative Marge von rund 10 Prozent lässt wenig Puffer bei einem Nachfrageeinbruch."
+      ],
+      "catalysts": [
+        "Die Verarbeitung der angehobenen Jahresprognose nach den Q2-Zahlen in den Analystenmodellen.",
+        "Struktureller Rückenwind aus Investitionen in Wasserinfrastruktur und Grundwasserbewirtschaftung."
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "Fed-Beschluss und Ton von Kevin Warsh",
+      "when": "Heute 20:00 MESZ, Pressekonferenz 20:30 MESZ",
+      "bullishIf": "Klares Halten mit taubenhaftem Ton, Signal gegen weitere Anhebungen",
+      "bearishIf": "Zinsanhebung oder deutlich hawkishe Sprache, die weitere Straffung andeutet"
+    },
+    {
+      "what": "Microsoft und Meta Quartalszahlen und Capex-Ausblick",
+      "when": "Heute nach US-Börsenschluss",
+      "bullishIf": "Starkes Cloud-Wachstum und durch Cashflow gedeckte Investitionen",
+      "bearishIf": "Enttäuschendes Wachstum oder Capex-Anstieg, der den freien Cashflow aufzehrt"
+    },
+    {
+      "what": "Ölpreis und Nahost-Eskalation",
+      "when": "Laufend",
+      "bullishIf": "Erneute Deeskalation, Brent fällt Richtung 80 USD, Inflationsdruck lässt nach",
+      "bearishIf": "Weitere Angriffe oder Störung der Straße von Hormus, Brent über 95 USD"
+    },
+    {
+      "what": "US-BIP Q2 und Kern-PCE Juni",
+      "when": "Donnerstag 30.7., 8:30 ET (14:30 MESZ)",
+      "bullishIf": "Nachlassende Kerninflation stützt Zinssenkungshoffnung",
+      "bearishIf": "Hartnäckig hoher Kern-PCE bestätigt higher for longer"
+    },
+    {
+      "what": "Apple und Amazon Quartalszahlen",
+      "when": "Donnerstag 30.7. nach US-Börsenschluss",
+      "bullishIf": "Starkes AWS-Wachstum und robuste Services-Erlöse",
+      "bearishIf": "Schwache Cloud-Marge oder vorsichtiger Ausblick"
+    },
+    {
+      "what": "Bank of Japan und Yen",
+      "when": "Freitag 31.7.",
+      "bullishIf": "Bestätigung des Kurses ohne Überraschung, stabiler Yen",
+      "bearishIf": "Hawkishe Überraschung, abrupte Yen-Aufwertung und Carry-Trade-Auflösung"
+    },
+    {
+      "what": "Speicherpreis-Zyklus und chinesische Chip-Kapazität",
+      "when": "Laufend, nächste Signale bei SK-Hynix-Ausblick und DRAM-Preisen",
+      "bullishIf": "Offizielle Relativierung der chinesischen Stückzahlen und Reife",
+      "bearishIf": "Bestätigung höherer chinesischer Kapazität und fallende Speicherpreise"
+    }
+  ],
+  "learningNotes": [
+    "Eine Zinsentscheidung bewegt Kurse vor allem über die Abweichung von der Markterwartung, weniger über den absoluten Zinswert.",
+    "Zwei Indizes können am selben Tag gegenläufig laufen, wenn eine Branchenrotation die unterschiedlich gewichteten Sektoren trifft.",
+    "Ein unbestätigter Bericht kann eine Burggraben-Prämie infrage stellen und dadurch mehrere Prozent kosten, bevor Fakten die Lage klären.",
+    "Ein steigender Ölpreis wirkt über Inflation und Zinsen auf Aktien, die mit Öl auf den ersten Blick nichts zu tun haben.",
+    "Bei einem Sanierungsfall ist der freie Cashflow oft aussagekräftiger als der bilanzielle Gewinn."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "VWL",
+      "modell": "Taylor-Regel",
+      "erklaerung": "Die Taylor-Regel ist eine Faustformel dafür, wie eine Notenbank ihren Leitzins setzen sollte. Sie wurde vom Ökonomen John Taylor formuliert und verbindet den Zins mit zwei Größen. Der Zins sollte höher liegen, wenn die Inflation über dem Ziel liegt, und höher, wenn die Wirtschaft über ihrer normalen Auslastung läuft. Umgekehrt sollte er sinken, wenn Inflation und Auslastung fallen. Die Regel liefert keinen exakten Wert, aber eine nachvollziehbare Richtung, an der sich Beobachter orientieren, um die Entscheidungen der Notenbank einzuordnen.",
+      "anwendung": "Bei einer Kerninflation von rund 3,4 Prozent und einem noch robusten Arbeitsmarkt deutet die Taylor-Regel auf einen weiterhin straffen Kurs hin, was das erhöhte Zinsanhebungsrisiko der heutigen Fed-Sitzung erklärt."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Kapitalzyklus-Theorie",
+      "erklaerung": "Die Kapitalzyklus-Theorie erklärt, warum die Rendite ganzer Branchen schwankt. Ihr Kern lautet, dass hohe Gewinne Kapital anziehen. Investoren und Staaten bauen neue Kapazität auf, die mit Verzögerung auf den Markt trifft. Das zusätzliche Angebot drückt die Preise, und die Renditen fallen, bis Anbieter aufgeben und sich das Angebot wieder verknappt. Der Zyklus dreht sich, weil das Angebotsverhalten der Anbieter der eigentliche Treiber ist. Die Theorie wurde vom Investmenthaus Marathon geprägt und rät dazu, bei Euphorie und Ausbau vorsichtig und bei Kapitulation aufmerksam zu sein.",
+      "anwendung": "Der chinesische Chip-Kapazitätsaufbau und der Börsengang von CXMT mit rund 470 Prozent Kurssprung sind ein Musterbeispiel für die Aufbauphase, die den etablierten Speicherherstellern trotz aktueller Rekordmargen ein künftiges Überangebot androht."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Ökonomischer Burggraben (Moat)",
+      "erklaerung": "Der ökonomische Burggraben beschreibt einen dauerhaften Wettbewerbsvorteil, der es einem Unternehmen erlaubt, über lange Zeit hohe Renditen gegen die Konkurrenz zu verteidigen. Der Begriff wurde vom Investor Warren Buffett geprägt und knüpft an die Wettbewerbsanalyse des Ökonomen Michael Porter an. Quellen eines Burggrabens sind unter anderem hohe Wechselkosten, Netzwerkeffekte, Größenvorteile, Patente und einzigartige Technologie. Je breiter der Burggraben, desto stabiler die Preismacht und die Gewinnmarge. Anleger zahlen für Firmen mit breitem Burggraben oft einen Aufschlag, weil ihre Gewinne verlässlicher sind.",
+      "anwendung": "Der niederländische Konzern ASML besitzt bei der EUV-Belichtung ein Monopol und damit einen sehr breiten Burggraben. Der Bericht über Chinas DUV-Fortschritte betrifft nur die ältere Technikstufe und ließ dennoch die Burggraben-Prämie der gesamten Chipbranche kurzzeitig schrumpfen."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Barwert und Aktien-Duration",
+      "erklaerung": "Der Wert einer Aktie entspricht der Summe ihrer künftigen Gewinne, abgezinst auf die Gegenwart. Diese Abzinsung heißt Barwertrechnung. Je weiter ein Gewinn in der Zukunft liegt, desto stärker mindert ihn ein höherer Zins. Die Kennzahl Duration misst, wie empfindlich ein Wertpapier auf Zinsänderungen reagiert. Aktien, deren Gewinne vor allem in ferner Zukunft erwartet werden, haben eine lange Duration und reagieren stark auf Zinsen. Aktien mit hohen laufenden Gewinnen haben eine kurze Duration und sind robuster.",
+      "anwendung": "Das heutige Zinsanhebungsrisiko der Fed trifft hoch bewertete Wachstums- und Softwarewerte mit langer Duration stärker als solide Industrie- und Finanzwerte, was das Auseinanderlaufen von Dow und Nasdaq am Dienstag miterklärt."
+    },
+    {
+      "disziplin": "Politikwissenschaft",
+      "modell": "Politischer Werbe- und Wahlzyklus",
+      "erklaerung": "Der politische Werbezyklus beschreibt das wiederkehrende Muster, dass in Wahljahren enorme Summen in politische Werbung fließen und in den Jahren dazwischen wieder wegfallen. In den USA ist dieses Muster besonders ausgeprägt, weil die Wahlkämpfe stark über bezahlte Werbung im Fernsehen und im Internet geführt werden. Für Medienunternehmen mit lokaler Reichweite bedeutet das einen planbaren, aber schwankenden Ertragsstrom, der alle zwei Jahre einen Höhepunkt erreicht. Das Jahr der Zwischenwahlen fällt dabei zwischen die Präsidentschaftswahlen und bringt vor allem den lokalen Sendern hohe Werbeeinnahmen.",
+      "anwendung": "Das Jahr 2026 ist in den USA ein Zwischenwahljahr, in dem das gesamte Repräsentantenhaus gewählt wird. Für den Aktien-Pick Nexstar Media, den größten Betreiber lokaler US-Fernsehsender, ist der anschwellende politische Werbestrom im zweiten Halbjahr der zentrale Ertragskatalysator."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Wie SK Hynix' Rekordquartal durch die Zahlenwerke wandert",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Der Rekordumsatz trifft auf einen operativen Hebel. Weil die Kosten je zusätzlichem Speicherchip in einer Knappheitsphase niedrig sind, fällt ein großer Teil des Umsatzsprungs direkt in den Gewinn durch, was die außergewöhnliche operative Marge von 76 Prozent erklärt. In der Gewinn- und Verlustrechnung zeigt sich das als überproportional steigendes operatives Ergebnis.",
+      "Bilanz: Ein Speicherhersteller wie SK Hynix ist kapitalintensiv. Hohe Investitionen in Fabriken und Anlagen stehen als Sachanlagen in der Bilanz und werden über Jahre abgeschrieben. In der Aufschwungphase steigen zudem die Vorräte und die Forderungen, weil mehr produziert und verkauft wird. Eine starke Netto-Cash-Position gibt dem Unternehmen Spielraum für den nächsten Investitionszyklus.",
+      "Cashflow: Der operative Cashflow steigt mit dem Gewinn, wird aber durch hohe Investitionen in neue Kapazität für Hochleistungsspeicher teilweise aufgezehrt. Der freie Cashflow, also das nach Investitionen verbleibende Geld, ist deshalb die entscheidende Größe, um zu beurteilen, ob das Unternehmen aus eigener Kraft wächst oder sich verschulden muss.",
+      "Bewertung: Weil das Geschäft zyklisch ist, bewertet der Markt Speicherhersteller oft mit niedrigen Gewinnmultiplikatoren gerade dann, wenn die Gewinne am höchsten sind, weil er das Ende des Zyklus vorwegnimmt. Das erklärt, warum die Aktie trotz Rekordzahlen zunächst fiel."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler ist es, auf den absoluten Rekord zu reagieren und zu kaufen, weil die Zahlen so gut aussehen. Erfahrene Anleger fragen bei zyklischen Werten zuerst, ob der Zyklus seinen Höhepunkt erreicht hat und wie viel davon bereits im Kurs steckt."
+  },
+  "glossar": [
+    {
+      "begriff": "FOMC (Offenmarktausschuss der Fed)",
+      "erklaerung": "Das Gremium der US-Notenbank, das über den Leitzins entscheidet. Es tagt achtmal im Jahr."
+    },
+    {
+      "begriff": "Basispunkt",
+      "erklaerung": "Ein Hundertstel Prozentpunkt. Eine Zinsanhebung um 25 Basispunkte entspricht 0,25 Prozentpunkten."
+    },
+    {
+      "begriff": "Dot Plot",
+      "erklaerung": "Eine Punktwolke, in der jedes Fed-Mitglied anonym seine Zinserwartung markiert. Sie erscheint nur bei den vierteljährlichen Projektionssitzungen."
+    },
+    {
+      "begriff": "Kern-PCE",
+      "erklaerung": "Das von der Fed bevorzugte Inflationsmaß, das Energie- und Nahrungsmittelpreise ausklammert, um den zugrundeliegenden Trend zu zeigen."
+    },
+    {
+      "begriff": "DUV- und EUV-Lithografie",
+      "erklaerung": "Zwei Techniken zur Belichtung von Chips. EUV ist die fortschrittlichere Stufe für die kleinsten Strukturen und wird allein von ASML gebaut. DUV ist die ältere, breiter verfügbare Stufe."
+    },
+    {
+      "begriff": "HBM (High Bandwidth Memory)",
+      "erklaerung": "Gestapelter Hochleistungsspeicher, der für KI-Rechenzentren gebraucht wird und derzeit besonders hohe Preise und Margen erzielt."
+    },
+    {
+      "begriff": "Nettozinsmarge",
+      "erklaerung": "Die Differenz zwischen den Zinsen, die eine Bank für Kredite einnimmt, und den Zinsen, die sie für Einlagen zahlt. Sie ist die zentrale Ertragsquelle einer Bank."
+    },
+    {
+      "begriff": "Bond-Proxy",
+      "erklaerung": "Eine Aktie mit stabiler, hoher Dividende, die sich ähnlich wie eine Anleihe verhält und deren Attraktivität bei steigenden Anleiherenditen sinkt."
+    },
+    {
+      "begriff": "Duration (bei Aktien)",
+      "erklaerung": "Ein Maß dafür, wie stark der Kurs auf Zinsänderungen reagiert. Aktien mit weit entfernten künftigen Gewinnen haben eine lange Duration."
+    },
+    {
+      "begriff": "Carry-Trade",
+      "erklaerung": "Ein Geschäft, bei dem sich Anleger in einer Währung mit niedrigen Zinsen wie dem Yen verschulden und das Geld in höher verzinste Anlagen stecken."
+    },
+    {
+      "begriff": "Freier Cashflow",
+      "erklaerung": "Das Geld, das einem Unternehmen nach allen laufenden Ausgaben und Investitionen tatsächlich übrig bleibt."
+    },
+    {
+      "begriff": "Sell the news",
+      "erklaerung": "Das Muster, dass eine Aktie trotz guter, aber erwarteter Nachrichten fällt, weil Anleger nach der Bestätigung Gewinne mitnehmen."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "FOMC-Sitzung 28./29.7.2026, Entscheid Mi 29.7. 14:00 ET, PK Kevin Warsh, kein Dot Plot (federalreserve.gov).",
+      "Kevin Warsh seit 22.5.2026 Fed-Vorsitzender, Nachfolger von Jerome Powell (federalreserve.gov).",
+      "US-BIP Q2 Erstschätzung und Kern-PCE Juni beide Do 30.7. 8:30 ET (BEA); Consumer Confidence Juli 90,8 (Conference Board).",
+      "China startet laut The Information/TrendForce/Tom's Hardware Serienfertigung von Immersions-DUV (nicht EUV); SK Hynix Q2 Umsatz ca. 79,3 Bio. KRW, operative Marge 76 % (SK-hynix-Newsroom).",
+      "Öl steigt am 29.7. nach Wiederaufnahme der US-Iran-Angriffe (CNBC, Bloomberg).",
+      "Mercedes-Benz Q2 EBIT ca. 1,5 Mrd. EUR (+22 %, unter Konsens 1,6 Mrd.), China-Absatz ca. -28 %, Prognose gesenkt (Mercedes IR, Business Recorder).",
+      "Boeing Q2 Umsatz ca. 24,6 Mrd. USD, Kernverlust -0,76 USD, freier Cashflow positiv, Auftragsbestand 715 Mrd. USD (Boeing, Benzinga).",
+      "Franklin Electric meldete Q2 am 28.7. mit EPS-Beat; Aktie stieg (RTTNews, MarketBeat). Marktkap. CFR/NXST/FELE via Alpha Vantage 29.7., EUR/USD 1,1403."
+    ],
+    "uncertain": [
+      "Exakte US-Index-Schlussstände und Einzelwert-Prozente vom 28.7. stammen aus einer Tagesquelle (EBC), nur die Richtung ist mehrfach belegt.",
+      "SK-Hynix-Nettogewinn und ein Umsatzwachstum von +257 % YoY wirken intern unplausibel und werden nicht angeführt.",
+      "Gold ca. 4.022 USD und Brent-29.7.-Niveau sind Früh-/Intraday-Werte ohne belegten Schlusskurs; Bitcoin ca. 63.400 USD gerundet.",
+      "US-Zoll-Ultimatum zum 1.8. ist überwiegend 2025-Material und wird nicht als aktuelles 2026-Ereignis geführt."
+    ],
+    "gaps": [
+      "Keine belegten Mittwoch-Schlüsse für Hang Seng, Shanghai, CSI 300, TAIEX, Sensex/Nifty; keine frischen Sektor-ETF-Tageswerte (istZustand qualitativ).",
+      "Kein belegter DAX-Tagesschluss; 10-Jahres-Rendite belegt nur bis 27.7. (4,65 %)."
+    ]
+  }
+}

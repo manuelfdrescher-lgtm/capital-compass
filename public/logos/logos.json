@@ -930,5 +930,66 @@
     "file": null,
     "name": "Ensign Group",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "sherwin": {
+    "file": "sherwin.svg",
+    "name": "Sherwin-Williams",
+    "source": "https://commons.wikimedia.org/wiki/File:Sherwin-Williams_wordmark.svg",
+    "license": "Public domain",
+    "artist": "™/®The Sherwin-Williams Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "ibm": {
+    "file": "ibm.svg",
+    "name": "IBM",
+    "source": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+    "license": "Public domain",
+    "artist": "Paul Rand",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cocacola": {
+    "file": "cocacola.svg",
+    "name": "Coca-Cola",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Coca-Cola_Company_(2020).svg",
+    "license": "Public domain",
+    "artist": "The Coca-Cola Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "amd": {
+    "file": "amd.svg",
+    "name": "AMD",
+    "source": "https://commons.wikimedia.org/wiki/File:AMD_Logo.svg",
+    "license": "Public domain",
+    "artist": "Advanced Micro Devices, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "appliedmaterials": {
+    "file": "appliedmaterials.svg",
+    "name": "Applied Materials",
+    "source": "https://commons.wikimedia.org/wiki/File:Applied_Materials_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "frost": {
+    "file": "frost.svg",
+    "name": "Cullen/Frost Bankers",
+    "source": "https://commons.wikimedia.org/wiki/File:Frost_Bank_logo.svg",
+    "license": "Public domain",
+    "artist": "Frost Bank",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nexstar": {
+    "file": "nexstar.svg",
+    "name": "Nexstar Media Group",
+    "source": "https://commons.wikimedia.org/wiki/File:Nexstar_Media_Group_logo_(color).svg",
+    "license": "Public domain",
+    "artist": "™/®Nexstar Media Group, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "franklinelectric": {
+    "file": null,
+    "name": "Franklin Electric",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
