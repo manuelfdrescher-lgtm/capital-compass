@@ -856,5 +856,38 @@
     "file": null,
     "name": "Halozyme Therapeutics",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "occidental": {
+    "file": null,
+    "name": "Occidental",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "boeing": {
+    "file": null,
+    "name": "The Boeing Company",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "mercedes": {
+    "file": "mercedes.svg",
+    "name": "Mercedes-Benz Group AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Group_black.svg",
+    "license": "Public domain",
+    "artist": "Mercedes-Benz Group AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "tripleflag": {
+    "file": null,
+    "name": "Triple Flag Precious Metals",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "cranswick": {
+    "file": null,
+    "name": "Cranswick plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "chemed": {
+    "file": null,
+    "name": "Chemed Corporation",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
