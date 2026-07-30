@@ -1,0 +1,995 @@
+{
+  "samsung": {
+    "file": "samsung.svg",
+    "name": "Samsung Electronics",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_wordmark.svg",
+    "license": "Public domain",
+    "artist": "Samsung",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#1428a0"
+  },
+  "sk-hynix": {
+    "file": "sk-hynix.svg",
+    "name": "SK Hynix",
+    "source": "https://commons.wikimedia.org/wiki/File:SK_Hynix.svg",
+    "license": "Public domain",
+    "artist": "SK Hynix Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#e2231a"
+  },
+  "broadcom": {
+    "file": "broadcom.svg",
+    "name": "Broadcom",
+    "source": "https://commons.wikimedia.org/wiki/File:Broadcom_logo_(2016-present).svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "apple": {
+    "file": "apple.svg",
+    "name": "Apple",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg",
+    "license": "Public domain",
+    "artist": "Original:  Rob Janoff",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#555555"
+  },
+  "deutz": {
+    "file": "deutz.png",
+    "name": "Deutz AG",
+    "source": "https://commons.wikimedia.org/wiki/File:KHD-Logo.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "MarkusHagenlocher",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#005ca9"
+  },
+  "nordex": {
+    "file": "nordex.svg",
+    "name": "Nordex SE",
+    "source": "https://commons.wikimedia.org/wiki/File:Nordex_Group_Logo.svg",
+    "license": "Public domain",
+    "artist": "Nordex SE",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#00a651"
+  },
+  "siltronic": {
+    "file": "siltronic.svg",
+    "name": "Siltronic",
+    "source": "https://commons.wikimedia.org/wiki/File:Siltronic_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "astrazeneca": {
+    "file": "astrazeneca.svg",
+    "name": "AstraZeneca",
+    "source": "https://commons.wikimedia.org/wiki/File:Astrazeneca_text_logo.svg",
+    "license": "Public domain",
+    "artist": "AstraZeneca plc",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#830051"
+  },
+  "levi-strauss": {
+    "file": "levi-strauss.svg",
+    "name": "Levi Strauss & Co.",
+    "source": "https://commons.wikimedia.org/wiki/File:Levi%27s_logo.svg",
+    "license": "Public domain",
+    "artist": "Levi Strauss &amp; Co.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#c41230"
+  },
+  "infineon": {
+    "file": "infineon.svg",
+    "name": "Infineon Technologies",
+    "source": "https://commons.wikimedia.org/wiki/File:Infineon-Logo.svg",
+    "license": "Public domain",
+    "artist": "™/®Infineon Technologies AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "volkswagen": {
+    "file": "volkswagen.svg",
+    "name": "Volkswagen",
+    "source": "https://commons.wikimedia.org/wiki/File:Volkswagen_logo_2019.svg",
+    "license": "Public domain",
+    "artist": "Volkswagen",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#001e50"
+  },
+  "rheinmetall": {
+    "file": "rheinmetall.svg",
+    "name": "Rheinmetall",
+    "source": "https://commons.wikimedia.org/wiki/File:Rheinmetall_AG_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#1f3b73"
+  },
+  "asml": {
+    "file": "asml.svg",
+    "name": "ASML Holding",
+    "source": "https://commons.wikimedia.org/wiki/File:ASML_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nvidia": {
+    "file": "nvidia.svg",
+    "name": "Nvidia",
+    "source": "https://commons.wikimedia.org/wiki/File:NVIDIA_logo.svg",
+    "license": "Apache License 2.0",
+    "artist": "Nvidia",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#76b900"
+  },
+  "microsoft": {
+    "file": "microsoft.png",
+    "name": "Microsoft",
+    "source": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(1981).png",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "alphabet": {
+    "file": "alphabet.svg",
+    "name": "Alphabet Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Alphabet_Inc_Logo_2015.svg",
+    "license": "Public domain",
+    "artist": "{{Lejonta Jones is Owner]|original|Alphabet Inc.}}",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "pepsico": {
+    "file": "pepsico.svg",
+    "name": "PepsiCo",
+    "source": "https://commons.wikimedia.org/wiki/File:PepsiCologo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#004b93"
+  },
+  "delta": {
+    "file": "delta.svg",
+    "name": "Delta Air Lines",
+    "source": "https://commons.wikimedia.org/wiki/File:Delta_logo.svg",
+    "license": "Public domain",
+    "artist": "Delta Air Lines",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung.",
+    "brandColor": "#c8102e"
+  },
+  "conocophillips": {
+    "file": "conocophillips.svg",
+    "name": "ConocoPhillips",
+    "source": "https://commons.wikimedia.org/wiki/File:ConocoPhillips_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "marathon-petroleum": {
+    "file": "marathon-petroleum.svg",
+    "name": "Marathon Petroleum",
+    "source": "https://commons.wikimedia.org/wiki/File:Marathon_Oil_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "micron": {
+    "file": "micron.svg",
+    "name": "Micron",
+    "source": "https://commons.wikimedia.org/wiki/File:Micron_Technology_logo_2024.svg",
+    "license": "Public domain",
+    "artist": "Micron Technology, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "meta": {
+    "file": "meta.svg",
+    "name": "Meta Platforms",
+    "source": "https://commons.wikimedia.org/wiki/File:Meta_Platforms_Inc._logo.svg",
+    "license": "Public domain",
+    "artist": "Meta Platforms",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen.",
+    "brandColor": "#0866ff"
+  },
+  "jpmorgan": {
+    "file": "jpmorgan.svg",
+    "name": "JPMorgan",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_of_JPMorganChase_2024.svg",
+    "license": "Public domain",
+    "artist": "JPMorgan Chase &amp; Co.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "goldman-sachs": {
+    "file": "goldman-sachs.svg",
+    "name": "Goldman Sachs",
+    "source": "https://commons.wikimedia.org/wiki/File:Goldman_Sachs_logo.svg",
+    "license": "Public domain",
+    "artist": "Goldman Sachs &amp; Co. LLC",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "jenoptik": {
+    "file": "jenoptik.svg",
+    "name": "Jenoptik AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Jenoptik-Logo_(Blue).svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "siemens-energy": {
+    "file": "siemens-energy.svg",
+    "name": "Siemens Energy",
+    "source": "https://commons.wikimedia.org/wiki/File:Siemens_Energy_logo.svg",
+    "license": "Public domain",
+    "artist": "Siemens Energy  (vector graphics image by Detmar Owen)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "hochtief": {
+    "file": null,
+    "name": "Hochtief",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "vossloh": {
+    "file": "vossloh.svg",
+    "name": "Vossloh",
+    "source": "https://commons.wikimedia.org/wiki/File:Vossloh_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "easyjet": {
+    "file": "easyjet.svg",
+    "name": "EasyJet",
+    "source": "https://commons.wikimedia.org/wiki/File:EasyJet_logo.svg",
+    "license": "Public domain",
+    "artist": "easyJet.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "bayer": {
+    "file": "bayer.svg",
+    "name": "Bayer",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_Bayer.svg",
+    "license": "Public domain",
+    "artist": "Bayer AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "qiagen": {
+    "file": "qiagen.svg",
+    "name": "Qiagen",
+    "source": "https://commons.wikimedia.org/wiki/File:Qiagen_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "lang-schwarz": {
+    "file": "lang-schwarz.svg",
+    "name": "Lang & Schwarz",
+    "source": "https://commons.wikimedia.org/wiki/File:LS2007.svg",
+    "license": "Public domain",
+    "artist": "Lang &amp; Schwarz Wertpapierhandelsbank AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "shein": {
+    "file": "shein.svg",
+    "name": "Shein",
+    "source": "https://commons.wikimedia.org/wiki/File:Shein_Logo_2017.svg",
+    "license": "Public domain",
+    "artist": "Shein",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "delta-air-lines": {
+    "file": "delta-air-lines.svg",
+    "name": "Delta Air Lines",
+    "source": "https://commons.wikimedia.org/wiki/File:Delta_logo.svg",
+    "license": "Public domain",
+    "artist": "Delta Air Lines",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "unicredit": {
+    "file": "unicredit.svg",
+    "name": "UniCredit",
+    "source": "https://commons.wikimedia.org/wiki/File:Unicredit_logo.svg",
+    "license": "Public domain",
+    "artist": "UniCredit S.p.A.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "wd-40": {
+    "file": "wd-40.svg",
+    "name": "WD-40 Company",
+    "source": "https://commons.wikimedia.org/wiki/File:WD-40_Company_logo.svg",
+    "license": "Public domain",
+    "artist": "WD-40 Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "commerzbank": {
+    "file": "commerzbank.svg",
+    "name": "Commerzbank",
+    "source": "https://commons.wikimedia.org/wiki/File:Commerzbank_(2009).svg",
+    "license": "Public domain",
+    "artist": "Lucas de Groot; MetaDesign, Berlin / Commerzbank AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "fresenius": {
+    "file": "fresenius.svg",
+    "name": "Fresenius SE",
+    "source": "https://commons.wikimedia.org/wiki/File:Fresenius_Logo.svg",
+    "license": "Public domain",
+    "artist": "Fresenius SE &amp; Co. KGaA",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "hafnia": {
+    "file": null,
+    "name": "Hafnia Limited",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "salzgitter": {
+    "file": "salzgitter.svg",
+    "name": "Salzgitter AG",
+    "source": "https://commons.wikimedia.org/wiki/File:SZAG_Wortbildmarke_de_links_rgb_4477.svg",
+    "license": "CC BY-SA 4.0",
+    "artist": "SalzgitterAG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "suss-microtec": {
+    "file": "suss-microtec.svg",
+    "name": "SUSS MicroTec SE",
+    "source": "https://commons.wikimedia.org/wiki/File:S%C3%BCss_Microtec_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "international-seaways": {
+    "file": null,
+    "name": "International Seaways, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "theon-international": {
+    "file": null,
+    "name": "THEON International Plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lancashire-holdings": {
+    "file": null,
+    "name": "Lancashire Holdings Limited",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "exxonmobil": {
+    "file": "exxonmobil.svg",
+    "name": "Exxon Mobil",
+    "source": "https://commons.wikimedia.org/wiki/File:Exxon_Mobil_Logo.svg",
+    "license": "Public domain",
+    "artist": "The original uploader was KUsam at English Wikipedia.",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "biogen": {
+    "file": null,
+    "name": "Biogen",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "skhynix": {
+    "file": "skhynix.svg",
+    "name": "SK Hynix",
+    "source": "https://commons.wikimedia.org/wiki/File:SK_Hynix.svg",
+    "license": "Public domain",
+    "artist": "SK Hynix Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "camtek": {
+    "file": null,
+    "name": "Camtek Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "frontline": {
+    "file": "frontline.svg",
+    "name": "Frontline plc",
+    "source": "https://commons.wikimedia.org/wiki/File:Frontline_Logo.svg",
+    "license": "Public domain",
+    "artist": "Frontline",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "wizz-air": {
+    "file": "wizz-air.svg",
+    "name": "Wizz Air Holdings plc",
+    "source": "https://commons.wikimedia.org/wiki/File:Wizz_Air_logo_2015.svg",
+    "license": "Public domain",
+    "artist": "Wizz Air",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "dht": {
+    "file": null,
+    "name": "DHT Holdings (Fr)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "vw": {
+    "file": null,
+    "name": "Volkswagen Vz.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "fraport": {
+    "file": "fraport.svg",
+    "name": "Fraport",
+    "source": "https://commons.wikimedia.org/wiki/File:Fraport_logo_2016.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "aerovironment": {
+    "file": "aerovironment.png",
+    "name": "AeroVironment",
+    "source": "https://commons.wikimedia.org/wiki/File:AeroVironment_Logo.png",
+    "license": "CC0",
+    "artist": "Avincreports",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "wellsfargo": {
+    "file": "wellsfargo.svg",
+    "name": "Wells Fargo",
+    "source": "https://commons.wikimedia.org/wiki/File:Wells_Fargo_Bank.svg",
+    "license": "Public domain",
+    "artist": "Wells Fargo",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "goldman": {
+    "file": "goldman.svg",
+    "name": "Goldman Sachs",
+    "source": "https://commons.wikimedia.org/wiki/File:Goldman_Sachs_logo.svg",
+    "license": "Public domain",
+    "artist": "Goldman Sachs &amp; Co. LLC",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "yaskawa": {
+    "file": null,
+    "name": "Yaskawa Electric",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "kioxia": {
+    "file": "kioxia.svg",
+    "name": "Kioxia",
+    "source": "https://commons.wikimedia.org/wiki/File:Kioxia.svg",
+    "license": "Public domain",
+    "artist": "Kioxia",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "mufg": {
+    "file": null,
+    "name": "Mitsubishi UFJ",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lufthansa": {
+    "file": "lufthansa.svg",
+    "name": "Lufthansa",
+    "source": "https://commons.wikimedia.org/wiki/File:Lufthansa_Logo_2018.svg",
+    "license": "Public domain",
+    "artist": "Lufthansa Group",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "flatex": {
+    "file": "flatex.svg",
+    "name": "flatexDEGIRO",
+    "source": "https://commons.wikimedia.org/wiki/File:Flatex_logo.svg",
+    "license": "Public domain",
+    "artist": "Flatex GmbH",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "citigroup": {
+    "file": "citigroup.svg",
+    "name": "Citigroup",
+    "source": "https://commons.wikimedia.org/wiki/File:Citi.svg",
+    "license": "Public domain",
+    "artist": "Citibank",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "evotec": {
+    "file": "evotec.svg",
+    "name": "Evotec",
+    "source": "https://commons.wikimedia.org/wiki/File:Evotec.svg",
+    "license": "Public domain",
+    "artist": "Evotec",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cleanspark": {
+    "file": null,
+    "name": "CleanSpark",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "blackrock": {
+    "file": "blackrock.svg",
+    "name": "BlackRock",
+    "source": "https://commons.wikimedia.org/wiki/File:BlackRock_wordmark.svg",
+    "license": "Public domain",
+    "artist": "BlackRock",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "renk": {
+    "file": "renk.svg",
+    "name": "RENK Group AG",
+    "source": "https://commons.wikimedia.org/wiki/File:RENK_Logo_RGB.svg",
+    "license": "Public domain",
+    "artist": "Renk GmbH",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "voestalpine": {
+    "file": "voestalpine.svg",
+    "name": "voestalpine AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Voestalpine_2017_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nexans": {
+    "file": "nexans.svg",
+    "name": "Nexans S.A.",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_Nexans.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "tsmc": {
+    "file": null,
+    "name": "TSMC (Taiwan Semiconductor)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "powell": {
+    "file": null,
+    "name": "Powell Industries",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "moelis": {
+    "file": "moelis.png",
+    "name": "Moelis & Company",
+    "source": "https://commons.wikimedia.org/wiki/File:Moelis_Logo.png",
+    "license": "Public domain",
+    "artist": "Moelis",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "spx": {
+    "file": null,
+    "name": "SPX Technologies",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "softbank": {
+    "file": "softbank.svg",
+    "name": "SoftBank Group",
+    "source": "https://commons.wikimedia.org/wiki/File:Softbank_mobile_logo.svg",
+    "license": "Public domain",
+    "artist": "Lusheeta",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "netflix": {
+    "file": "netflix.svg",
+    "name": "Netflix",
+    "source": "https://commons.wikimedia.org/wiki/File:Netflix_logo.svg",
+    "license": "Public domain",
+    "artist": "TM/®Netflix Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "disney": {
+    "file": null,
+    "name": "Walt Disney",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "spotify": {
+    "file": "spotify.svg",
+    "name": "Spotify",
+    "source": "https://commons.wikimedia.org/wiki/File:Spotify_logo_with_text.svg",
+    "license": "Public domain",
+    "artist": "Spotify",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "sentinelone": {
+    "file": "sentinelone.svg",
+    "name": "SentinelOne",
+    "source": "https://commons.wikimedia.org/wiki/File:SentinelOne_logo.svg",
+    "license": "Public domain",
+    "artist": "™/®SentinelOne",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "transmedics": {
+    "file": null,
+    "name": "TransMedics Group",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "kinsale": {
+    "file": null,
+    "name": "Kinsale Capital Group",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "polypeptide": {
+    "file": null,
+    "name": "PolyPeptide",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "establishmentlabs": {
+    "file": null,
+    "name": "Establishment Labs",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "palomar": {
+    "file": null,
+    "name": "Palomar Holdings",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "klaviyo": {
+    "file": null,
+    "name": "Klaviyo",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "sandisk": {
+    "file": "sandisk.svg",
+    "name": "SanDisk",
+    "source": "https://commons.wikimedia.org/wiki/File:SanDisk_Logo_2007.svg",
+    "license": "Public domain",
+    "artist": "SanDisk",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "amsosram": {
+    "file": "amsosram.svg",
+    "name": "ams-Osram",
+    "source": "https://commons.wikimedia.org/wiki/File:Ams_AG_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "exxon": {
+    "file": null,
+    "name": "Exxon Mobil",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "b2gold": {
+    "file": "b2gold.png",
+    "name": "B2Gold",
+    "source": "https://commons.wikimedia.org/wiki/File:B2gold_Logo.png",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "munichre": {
+    "file": "munichre.svg",
+    "name": "Munich Re",
+    "source": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchener_R%C3%BCck_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author (Munich Re)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "sartorius": {
+    "file": null,
+    "name": "Sartorius Vz.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "novartis": {
+    "file": "novartis.svg",
+    "name": "Novartis AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Novartis-Logo-2023.svg",
+    "license": "Public domain",
+    "artist": "Novartis",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "juliusbaer": {
+    "file": null,
+    "name": "Julius Bär Gruppe",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ormat": {
+    "file": null,
+    "name": "Ormat Technologies",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "meritmedical": {
+    "file": null,
+    "name": "Merit Medical Systems",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "tesla": {
+    "file": "tesla.svg",
+    "name": "Tesla",
+    "source": "https://commons.wikimedia.org/wiki/File:Tesla_Motors.svg",
+    "license": "Public domain",
+    "artist": "Tesla",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "hecla": {
+    "file": "hecla.svg",
+    "name": "Hecla Mining",
+    "source": "https://commons.wikimedia.org/wiki/File:Hecla_Mining_logo.svg",
+    "license": "Public domain",
+    "artist": "Hecla Mining Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "totalenergies": {
+    "file": "totalenergies.svg",
+    "name": "TotalEnergies",
+    "source": "https://commons.wikimedia.org/wiki/File:Total_wordmark_(2003-2021).svg",
+    "license": "Public domain",
+    "artist": "™/®Total SE",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "toyota": {
+    "file": "toyota.png",
+    "name": "Toyota",
+    "source": "https://commons.wikimedia.org/wiki/File:Registered_trademark_img_06.png",
+    "license": "Public domain",
+    "artist": "TOYOTA MOTOR CORPORATION.（トヨタ自動車株式会社）",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "constellation": {
+    "file": null,
+    "name": "Constellation Brands",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nutrien": {
+    "file": null,
+    "name": "Nutrien",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "sap": {
+    "file": "sap.svg",
+    "name": "SAP",
+    "source": "https://commons.wikimedia.org/wiki/File:SAP_2011_logo.svg",
+    "license": "Public domain",
+    "artist": "SAP SE",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "munters": {
+    "file": null,
+    "name": "Munters Group AB",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "erocopper": {
+    "file": null,
+    "name": "Ero Copper Corp",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "intel": {
+    "file": "intel.svg",
+    "name": "Intel",
+    "source": "https://commons.wikimedia.org/wiki/File:Intel_logo_(1968-2006).svg",
+    "license": "Public domain",
+    "artist": "The original uploader was KUsam at English Wikipedia., 7 July 2006 (original upload date)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "stmicro": {
+    "file": "stmicro.png",
+    "name": "STMicroelectronics",
+    "source": "https://commons.wikimedia.org/wiki/File:STMicroelectronics.png",
+    "license": "CC0",
+    "artist": "ST",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "americanairlines": {
+    "file": "americanairlines.svg",
+    "name": "American Airlines",
+    "source": "https://commons.wikimedia.org/wiki/File:American_Airlines_wordmark_(2013).svg",
+    "license": "Public domain",
+    "artist": "American Airlines",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nestle": {
+    "file": "nestle.svg",
+    "name": "Nestlé S.A.",
+    "source": "https://commons.wikimedia.org/wiki/File:Nestl%C3%A9_textlogo.svg",
+    "license": "Public domain",
+    "artist": "Société des Produits Nestlé S.A.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "matador": {
+    "file": null,
+    "name": "Matador Resources",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "comstock": {
+    "file": null,
+    "name": "Comstock Resources",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "centrus": {
+    "file": null,
+    "name": "Centrus Energy",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "formfactor": {
+    "file": null,
+    "name": "FormFactor",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "westerndigital": {
+    "file": "westerndigital.svg",
+    "name": "Western Digital",
+    "source": "https://commons.wikimedia.org/wiki/File:WD_Logo.svg",
+    "license": "Public domain",
+    "artist": "Western Digital Corporation",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "uber": {
+    "file": "uber.svg",
+    "name": "Uber",
+    "source": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.svg",
+    "license": "Public domain",
+    "artist": "Wolff Olins, in collaboration with Uber's Brand Team [1]",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "verizon": {
+    "file": "verizon.svg",
+    "name": "Verizon",
+    "source": "https://commons.wikimedia.org/wiki/File:Verizon_2015_logo_-vector.svg",
+    "license": "Public domain",
+    "artist": "Michael Bierut (Pentagram)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "qualcomm": {
+    "file": "qualcomm.svg",
+    "name": "Qualcomm",
+    "source": "https://commons.wikimedia.org/wiki/File:Qualcomm-Logo.svg",
+    "license": "Public domain",
+    "artist": "Original:  Qualcomm",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "pipersandler": {
+    "file": null,
+    "name": "Piper Sandler",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nomadfoods": {
+    "file": null,
+    "name": "Nomad Foods",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "weatherford": {
+    "file": null,
+    "name": "Weatherford",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "aramco": {
+    "file": null,
+    "name": "Saudi Aramco (Anlagen)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "amazon": {
+    "file": "amazon.svg",
+    "name": "Amazon",
+    "source": "https://commons.wikimedia.org/wiki/File:Amazon_logo.svg",
+    "license": "Public domain",
+    "artist": "Amazon.com, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "clearway": {
+    "file": null,
+    "name": "Clearway Energy",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "halozyme": {
+    "file": null,
+    "name": "Halozyme Therapeutics",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "occidental": {
+    "file": null,
+    "name": "Occidental",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "boeing": {
+    "file": null,
+    "name": "The Boeing Company",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "mercedes": {
+    "file": "mercedes.svg",
+    "name": "Mercedes-Benz Group AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_Group_black.svg",
+    "license": "Public domain",
+    "artist": "Mercedes-Benz Group AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "tripleflag": {
+    "file": null,
+    "name": "Triple Flag Precious Metals",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "cranswick": {
+    "file": null,
+    "name": "Cranswick plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "chemed": {
+    "file": null,
+    "name": "Chemed Corporation",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "cxmt": {
+    "file": null,
+    "name": "CXMT",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "tenet": {
+    "file": "tenet.png",
+    "name": "Tenet Healthcare",
+    "source": "https://commons.wikimedia.org/wiki/File:Tenet_Health_logo.png",
+    "license": "Public domain",
+    "artist": "Tenet Health",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "digitalrealty": {
+    "file": null,
+    "name": "Digital Realty",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "asteralabs": {
+    "file": null,
+    "name": "Astera Labs",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "copa": {
+    "file": "copa.png",
+    "name": "Copa Holdings",
+    "source": "https://commons.wikimedia.org/wiki/File:Copa_airlines_logo.png",
+    "license": "Public domain",
+    "artist": "EEIM",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cognex": {
+    "file": null,
+    "name": "Cognex",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ensign": {
+    "file": null,
+    "name": "Ensign Group",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "sherwin": {
+    "file": "sherwin.svg",
+    "name": "Sherwin-Williams",
+    "source": "https://commons.wikimedia.org/wiki/File:Sherwin-Williams_wordmark.svg",
+    "license": "Public domain",
+    "artist": "™/®The Sherwin-Williams Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "ibm": {
+    "file": "ibm.svg",
+    "name": "IBM",
+    "source": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+    "license": "Public domain",
+    "artist": "Paul Rand",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cocacola": {
+    "file": "cocacola.svg",
+    "name": "Coca-Cola",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Coca-Cola_Company_(2020).svg",
+    "license": "Public domain",
+    "artist": "The Coca-Cola Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "amd": {
+    "file": "amd.svg",
+    "name": "AMD",
+    "source": "https://commons.wikimedia.org/wiki/File:AMD_Logo.svg",
+    "license": "Public domain",
+    "artist": "Advanced Micro Devices, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "appliedmaterials": {
+    "file": "appliedmaterials.svg",
+    "name": "Applied Materials",
+    "source": "https://commons.wikimedia.org/wiki/File:Applied_Materials_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "frost": {
+    "file": "frost.svg",
+    "name": "Cullen/Frost Bankers",
+    "source": "https://commons.wikimedia.org/wiki/File:Frost_Bank_logo.svg",
+    "license": "Public domain",
+    "artist": "Frost Bank",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nexstar": {
+    "file": "nexstar.svg",
+    "name": "Nexstar Media Group",
+    "source": "https://commons.wikimedia.org/wiki/File:Nexstar_Media_Group_logo_(color).svg",
+    "license": "Public domain",
+    "artist": "™/®Nexstar Media Group, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "franklinelectric": {
+    "file": null,
+    "name": "Franklin Electric",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  }
+}

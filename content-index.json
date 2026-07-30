@@ -1,0 +1,380 @@
+{
+  "editions": [
+    {
+      "number": 1,
+      "date": "2026-07-10",
+      "slot": "evening",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-10-evening/",
+      "headline": "SK Hynix sammelt 26,5 Milliarden Dollar ein und krönt den Speicher-Boom"
+    },
+    {
+      "number": 2,
+      "date": "2026-07-12",
+      "slot": "update-16",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-12-update-16/",
+      "headline": "Iran erklärt die Straße von Hormus für gesperrt, und der Ölpreis bleibt erstaunlich ruhig"
+    },
+    {
+      "number": 3,
+      "date": "2026-07-12",
+      "slot": "update-19",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-12-update-19/",
+      "headline": "Am Golf verhärten sich die Fronten, und an der Wall Street beginnt die Stunde der Wahrheit"
+    },
+    {
+      "number": 4,
+      "date": "2026-07-13",
+      "slot": "evening",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-13-evening/",
+      "headline": "Öl springt, Chips stürzen, Gold fällt: ein Schock, vier Kanäle"
+    },
+    {
+      "number": 5,
+      "date": "2026-07-13",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-13-morning/",
+      "headline": "Seoul im Ausverkauf: Kospi verliert über fünf Prozent, SK Hynix stürzt zwei Handelstage nach dem Rekord-Debüt zweistellig"
+    },
+    {
+      "number": 6,
+      "date": "2026-07-14",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-14-morning/",
+      "headline": "Der Vormittag der Wahrheit: Inflationszahlen und fünf Großbanken testen die Zinshoffnung gleichzeitig"
+    },
+    {
+      "number": 7,
+      "date": "2026-07-14",
+      "slot": "evening",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-14-evening/",
+      "headline": "Kühlster Inflationsmonat seit Jahren trifft auf einen Notenbankchef, der von Härte spricht"
+    },
+    {
+      "number": 8,
+      "date": "2026-07-15",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-15-morning/",
+      "headline": "Zwei Motoren, zwei Richtungen: Der Chip-Zyklus liefert, während Chinas Realwirtschaft schwächelt"
+    },
+    {
+      "number": 9,
+      "date": "2026-07-16",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-16-morning/",
+      "headline": "Der Speicher bricht ein, während die KI-Rechenfabrik ihren Härtetest hat"
+    },
+    {
+      "number": 10,
+      "date": "2026-07-17",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-17-morning/",
+      "headline": "TSMC bricht jeden Rekord, und die Chip-Aktien fallen trotzdem"
+    },
+    {
+      "number": 11,
+      "date": "2026-07-21",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-21-morning/",
+      "headline": "Ein billiges KI-Modell aus China erschüttert die Chip-Börsen"
+    },
+    {
+      "number": 12,
+      "date": "2026-07-22",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-22-morning/",
+      "headline": "Die Chips drehen zurück, und die Börsen atmen auf"
+    },
+    {
+      "number": 13,
+      "date": "2026-07-23",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-23-morning/",
+      "headline": "Alphabet und Tesla fallen nach Rekordzahlen, während Asiens Chipwerte steigen"
+    },
+    {
+      "number": 14,
+      "date": "2026-07-24",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-24-morning/",
+      "headline": "Vier Schläge an einem Tag drücken die Wall Street"
+    },
+    {
+      "number": 15,
+      "date": "2026-07-25",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-25-morning/",
+      "headline": "Der Speicher-Ausverkauf greift um die Welt, Wall Street und Öl atmen durch"
+    },
+    {
+      "number": 16,
+      "date": "2026-07-26",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-26-morning/",
+      "headline": "Ölpreisschock trifft auf die entscheidende Woche für Notenbank und KI-Konzerne"
+    },
+    {
+      "number": 17,
+      "date": "2026-07-28",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-28-morning/",
+      "headline": "Chinas Vorstoß in die Chip-Fertigungstechnik erschüttert Asiens Halbleiterwerte"
+    },
+    {
+      "number": 18,
+      "date": "2026-07-27",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-27-morning/",
+      "headline": "Ölpreis fällt trotz Wochenend-Angriffen: Der Markt handelt die Entspannung"
+    },
+    {
+      "number": 19,
+      "date": "2026-07-29",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-29-morning/",
+      "headline": "Die Fed entscheidet heute, und erstmals seit Langem preist der Markt eine Zinserhöhung ein"
+    }
+  ],
+  "recentStockPicks": [
+    {
+      "slug": "2026-07-10-morning",
+      "name": "Siltronic AG (WAF)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-10-morning",
+      "name": "Levi Strauss & Co. (LEVI)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-10-morning",
+      "name": "Jenoptik AG (JEN)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-16",
+      "name": "Hafnia Limited (HAFN)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-16",
+      "name": "Salzgitter AG (SZG)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-16",
+      "name": "SUSS MicroTec SE (SMHN)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-19",
+      "name": "International Seaways, Inc. (INSW)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-19",
+      "name": "THEON International Plc (THEON)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-12-update-19",
+      "name": "Lancashire Holdings Limited (LRE)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-evening",
+      "name": "Camtek Ltd. (CAMT)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-evening",
+      "name": "Frontline plc (FRO)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-evening",
+      "name": "Wizz Air Holdings plc (WIZZ)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-13-morning",
+      "name": "DHT Holdings (DHT)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-13-morning",
+      "name": "Camtek (CAMT)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-13-morning",
+      "name": "AeroVironment (AVAV)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-14-morning",
+      "name": "Yaskawa Electric (6506)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-14-morning",
+      "name": "Fraport (FRA)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-14-morning",
+      "name": "flatexDEGIRO (FTK)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-14-evening",
+      "name": "Evotec SE (EVT)",
+      "confidence": "hoch"
+    },
+    {
+      "slug": "2026-07-14-evening",
+      "name": "Vossloh AG (VOS)",
+      "confidence": "mittel"
+    },
+    {
+      "slug": "2026-07-14-evening",
+      "name": "CleanSpark, Inc. (CLSK)",
+      "confidence": "niedrig"
+    },
+    {
+      "slug": "2026-07-15-morning",
+      "name": "RENK Group AG (R3NK)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-15-morning",
+      "name": "voestalpine AG (VOE)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-15-morning",
+      "name": "Nexans S.A. (NEX)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-16-morning",
+      "name": "Powell Industries, Inc. (POWL)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-16-morning",
+      "name": "Moelis & Company (MC)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-16-morning",
+      "name": "SPX Technologies, Inc. (SPXC)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-17-morning",
+      "name": "SentinelOne, Inc. (S)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-17-morning",
+      "name": "TransMedics Group, Inc. (TMDX)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-17-morning",
+      "name": "Kinsale Capital Group, Inc. (KNSL)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-21-morning",
+      "name": "Establishment Labs Holdings Inc. (ESTA)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-21-morning",
+      "name": "Palomar Holdings, Inc. (PLMR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-21-morning",
+      "name": "Klaviyo, Inc. (KVYO)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-22-morning",
+      "name": "B2Gold Corp. (BTG)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-22-morning",
+      "name": "Ormat Technologies, Inc. (ORA)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-22-morning",
+      "name": "Merit Medical Systems, Inc. (MMSI)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-23-morning",
+      "name": "Munters Group AB (MTRS)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-23-morning",
+      "name": "Hecla Mining Company (HL)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-23-morning",
+      "name": "Ero Copper Corp (ERO)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-24-morning",
+      "name": "Matador Resources (MTDR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-24-morning",
+      "name": "Comstock Resources (CRK)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-24-morning",
+      "name": "Centrus Energy (LEU)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-25-morning",
+      "name": "FormFactor (FORM)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-25-morning",
+      "name": "Piper Sandler (PIPR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-25-morning",
+      "name": "Nomad Foods (NOMD)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-26-morning",
+      "name": "Weatherford International (WFRD)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-26-morning",
+      "name": "Clearway Energy (CWEN)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-26-morning",
+      "name": "Halozyme Therapeutics (HALO)",
+      "confidence": "—"
+    }
+  ],
+  "lastUpdated": "2026-07-30T02:06:03.863Z"
+}
