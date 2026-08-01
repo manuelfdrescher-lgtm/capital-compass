@@ -991,5 +991,36 @@
     "file": null,
     "name": "Franklin Electric",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "chevron": {
+    "file": null,
+    "name": "Chevron",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "deutschebank": {
+    "file": "deutschebank.svg",
+    "name": "Deutsche Bank AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Deutsche_Bank_logo_without_wordmark.svg",
+    "license": "Public domain",
+    "artist": "Deutsche Bank AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "rambus": {
+    "file": "rambus.svg",
+    "name": "Rambus Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Rambus_logo.svg",
+    "license": "Public domain",
+    "artist": "Rambus Incorporated",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "chesapeakeutilities": {
+    "file": null,
+    "name": "Chesapeake Utilities Corporation",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "balchem": {
+    "file": null,
+    "name": "Balchem Corporation",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
