@@ -51,15 +51,16 @@ gültig – die Alt-Editionen unter `content/editions/` müssen dafür nicht ang
   „Fed-Chef Jerome Powell", „EZB-Präsidentin Christine Lagarde", „IBM-CEO Arvind
   Krishna". Leser*innen dürfen nie raten müssen, wer gemeint ist oder warum die Person
   relevant ist.
-- Bilder (redaktionelle Pflicht, ab sofort für JEDEN Artikel, nicht mehr nur
-  Leitartikel/große Meldungen): `image` mit `file` (nur lokale `.jpg`/`.png` unter
-  `public/images/`, **niemals** `.svg`), `alt`, `caption`, `credit`. `public/images/`
-  ist eine wachsende **Bildbank** wiederverwendbarer, bewusst generischer Motive
-  (Zentralbank-Fassade, Chip-Reinraum, Containerhafen, Handelsraum, Rechenzentrum,
-  Devisenhandel, Ölmeerenge, Goldbarren, Bankfassade, Fabrikfließband u. a.) – bei
-  wiederkehrenden Themen zuerst ein Bestandsbild mit neuer, artikelspezifischer
-  Caption wiederverwenden, nur bei echtem Bedarf ein neues (generisches, breit
-  wiederverwendbares) Motiv erzeugen. Details und Ablauf: siehe `.claude/agents/editor.md`.
+- Bilder (redaktionelle Pflicht für JEDEN Artikel, nicht nur Leitartikel/große
+  Meldungen): `image` mit `file` (nur lokale `.jpg`/`.png` unter `public/images/`,
+  **niemals** `.svg`), `alt`, `caption`, `credit`.
+  **Jeder Artikel bekommt ein eigenes, für seine Geschichte neu erzeugtes Bild.**
+  Keine Wiederverwendung von Bestandsmotiven aus `public/images/` und keine
+  geteilten Generikbilder über mehrere Artikel hinweg – auch nicht bei
+  wiederkehrenden Themen. Zwei Artikel derselben Ausgabe dürfen nie dieselbe
+  Bilddatei referenzieren. Der Dateiname beschreibt das konkrete Motiv
+  (z. B. `oeltanker-hormus-sonnenuntergang.jpg`), nicht die generische Kategorie.
+  Details und Ablauf: siehe `.claude/agents/editor.md`.
 
 ## Struktur (kommentiertes Beispiel)
 
