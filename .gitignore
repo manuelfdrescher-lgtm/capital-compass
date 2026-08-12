@@ -1,7 +1,8 @@
 node_modules/
 dist/
 .astro/
-qa/screenshots/
+qa/
+.cache/
 *.log
 .DS_Store
 .env

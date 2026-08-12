@@ -1,0 +1,1677 @@
+{
+  "edition": {
+    "number": 22,
+    "date": "2026-08-12",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "US-Schlusskurse Dienstag 11.8.2026 (ETF-gegengeprüft via Alpha Vantage: SPY -0,32 %, QQQ -0,34 %, IWM +0,34 %); Europa-Schluss Dienstag 11.8.; Asien Mittwoch 12.8. intraday (Tokio nach dem Feiertag wieder geöffnet). Renditen, Gold, Öl, Erdgas und Wechselkurse Stand Dienstag 11.8. bzw. Mittwoch früh. Wechselkurs USD/EUR 0,86663 laut Alpha Vantage, 12.8. 04:07 UTC. Der US-Verbraucherpreisindex für Juli erscheint erst heute 14:30 Berlin und ist zum Redaktionsschluss noch nicht veröffentlicht.",
+    "generatedAt": "2026-08-12T04:35:00Z",
+    "note": "Website-Index live zeigt weiter Höchstnummer 19 (29.7.); die Cowork-Kadenz steht bei Nr. 31. Diskrepanz in Quellen und Check erläutert. number bleibt null, der Ingest vergibt die kanonische Nummer."
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.728,20",
+        "delta": "-0,32 %",
+        "direction": "down",
+        "note": "Schluss Di 11.8."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "26.445,45",
+        "delta": "-0,60 %",
+        "direction": "down",
+        "note": "Schluss Di 11.8."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "53.791,85",
+        "delta": "-0,34 %",
+        "direction": "down",
+        "note": "Schluss Di 11.8."
+      },
+      {
+        "label": "Russell 2000",
+        "value": "3.027,12",
+        "delta": "+0,27 %",
+        "direction": "up",
+        "note": "Nebenwerte fester"
+      },
+      {
+        "label": "DAX",
+        "value": "26.391",
+        "delta": "+0,26 %",
+        "direction": "up",
+        "note": "Xetra-Schluss Di, Rekordnähe"
+      },
+      {
+        "label": "STOXX Europe 600",
+        "value": "660,51",
+        "delta": "+0,01 %",
+        "direction": "flat",
+        "note": "hält Rekordniveau"
+      },
+      {
+        "label": "Nikkei 225",
+        "value": "66.909",
+        "delta": "-0,09 %",
+        "direction": "flat",
+        "note": "Mi, nach Feiertag"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,72 %",
+        "delta": "+2 Bp.",
+        "direction": "up",
+        "note": "Monatshoch"
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "89,37 USD",
+        "delta": "+0,5 %",
+        "direction": "up",
+        "note": "Hormus-Prämie"
+      },
+      {
+        "label": "Gold",
+        "value": "4.375 USD",
+        "delta": "+0,95 %",
+        "direction": "up",
+        "note": "nahe Rekord"
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,1540",
+        "delta": "0,0 %",
+        "direction": "flat",
+        "note": "abwartend vor CPI"
+      },
+      {
+        "label": "US-Leitzins (Fed)",
+        "value": "3,50-3,75 %",
+        "direction": "flat",
+        "note": "seit 5 Sitzungen"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "cpi-entscheidungstag",
+      "ressort": "titelseite",
+      "kicker": "Geldpolitik · Wall Street",
+      "headline": "Die Börse hält den Atem an, bis am Nachmittag die Inflationszahl kommt",
+      "dek": "Vor dem US-Verbraucherpreisindex schichten Anleger aus großen Technologiewerten in zinssensible Nebenwerte um. Eine einzige Nachkommastelle entscheidet über die Fed-Sitzung im September.",
+      "subject": "US-Geldpolitik, CPI-Tag und Markterwartung",
+      "body": [
+        "Die Wall Street hat den Dienstag in vorsichtiger Zurückhaltung verbracht. Der breite Aktienindex S&P 500 schloss mit 7.728,20 Punkten 0,32 Prozent tiefer, der technologielastige Nasdaq Composite verlor rund 0,60 Prozent, der Dow Jones gab 0,34 Prozent nach. Auffällig war die Gegenbewegung bei den kleineren Werten: Der Nebenwerteindex Russell 2000 legte 0,27 Prozent zu. Die Börsenbarometer der großen Standardwerte gaben also nach, während die zinssensiblen Nebenwerte anzogen. Diese Rotation ließ sich am Mittwochmorgen über die börsengehandelten Indexfonds bestätigen, wo der S&P-Fonds SPY 0,32 Prozent verlor und der Russell-Fonds IWM 0,34 Prozent gewann.",
+        "Der Grund für die Zurückhaltung liegt im Kalender. Heute um 14:30 Uhr deutscher Zeit veröffentlicht das US-Arbeitsministerium den Verbraucherpreisindex für Juli. Diese Zahl gilt als wichtigster Termin der Woche, weil sie über die Zinssitzung der US-Notenbank Federal Reserve am 16. September entscheidet. Die Notenbank unter ihrem Vorsitzenden Kevin Warsh hält den Leitzins seit fünf Sitzungen bei 3,50 bis 3,75 Prozent und wiegt intern eine weitere Erhöhung gegen ein Abwarten ab. Nach den Prognosemärkten ist die September-Sitzung ein Münzwurf zwischen einer Erhöhung und einem Halten. Eine Senkung ist praktisch nicht eingepreist.",
+        "Der Konsens erwartet für Juli eine Gesamtinflation von 3,4 Prozent gegenüber dem Vorjahr nach 3,5 Prozent im Juni sowie eine Kernrate ohne Energie und Nahrung von 2,5 Prozent nach 2,6 Prozent. Auf Monatssicht rechnen die Häuser mit rund 0,1 Prozent bei der Gesamtrate und 0,2 Prozent beim Kern. Die eigentlich entscheidende Größe ist die zweite Nachkommastelle der monatlichen Kernrate. Verhärtet sich der Wert auf 0,3 Prozent, kehrt die Debatte über eine Zinserhöhung zurück. Bleibt er bei 0,2 Prozent oder darunter, verschiebt sich die Waage klar Richtung Halten.",
+        "Der Anleihemarkt hat die Nervosität vorweggenommen. Die Rendite zehnjähriger US-Staatsanleihen notiert bei rund 4,72 Prozent und damit auf einem Monatshoch, gestützt auch vom festeren Ölpreis. Am Rohstoffmarkt hielt sich Gold mit rund 4.375 Dollar je Feinunze nahe seinem Rekord, während Brent-Öl bei etwa 89 Dollar je Fass verharrte. Für die Börse gilt in diesen Stunden eine einfache Logik: Kommt die Inflation heißer als erwartet, gewinnen die Falken in der Fed die Oberhand. Kommt sie kühler, atmet der Markt auf."
+      ],
+      "mechanik": "Warum bewegt eine einzelne Nachkommastelle den ganzen Markt? Weil in den Kursen bereits eine Erwartung steckt und nur die Abweichung davon zählt. Die Fed richtet ihre Entscheidung an der monatlichen Dynamik der Kerninflation aus. Ein Monatswert von 0,2 Prozent hochgerechnet ergäbe rund 2,4 Prozent im Jahr, nahe am Ziel von zwei Prozent. Ein Wert von 0,3 Prozent ergäbe hochgerechnet etwa 3,7 Prozent, deutlich zu hoch. Der Markt übersetzt diese Differenz sofort in eine veränderte Zinserwartung, und daran hängen Anleihekurse, der Dollar und die Bewertung von Wachstumsaktien. Dass am Dienstag die zinssensiblen Nebenwerte anzogen, zeigt, wie eng viele Anleger auf ein freundliches Ergebnis setzen.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Wonach eine Notenbank ihre Zinsen richtet",
+        "absaetze": [
+          "Eine Notenbank wie die Federal Reserve hat ein gesetzliches Doppelmandat: stabile Preise und ein hoher Beschäftigungsstand. Diese beiden Ziele können sich widersprechen, und genau das passiert 2026. Der zuletzt schwache Arbeitsmarkt ruft nach Unterstützung durch niedrigere Zinsen, die hartnäckige Inflation ruft nach höheren Zinsen zur Dämpfung.",
+          "Ökonomen beschreiben das Verhalten der Notenbank oft mit der Taylor-Regel. Sie besagt vereinfacht, dass der Leitzins umso höher sein sollte, je weiter die Inflation über dem Ziel von zwei Prozent liegt, und umso niedriger, je schwächer die Wirtschaft läuft. Widersprechen sich beide Signale, muss die Notenbank gewichten. Fed-Chef Kevin Warsh hat mehrfach betont, dass er hartnäckig hohe Inflation nicht toleriert, und gewichtet damit die Preisstabilität stärker.",
+          "Für Anleger folgt daraus eine klare Lesart. Solange die Inflation das dominierende Signal ist, wirkt jede heiße Preiszahl kursbelastend und jede kühle Preiszahl kursstützend. Der Arbeitsmarkt tritt in den Hintergrund, solange er nicht vollständig einbricht. Der Verbraucherpreisindex heute Nachmittag ist deshalb der eigentliche Taktgeber der Woche."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Zinsen verteuern die Finanzierung kapitalintensiver Förder- und Infrastrukturprojekte. Der Ölpreis folgt primär Angebot, Nachfrage und Geopolitik, weshalb das reine Zinsthema den Sektor nur mittelbar trifft.",
+          "teilbranchen": "Förderung (Upstream), Ölfeldservice, Midstream, Raffinerien"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Steigende Zinsen dämpfen Baukonjunktur und Industrieproduktion und bremsen die Nachfrage nach Metallen, Chemie und Baustoffen. Gold wirkt gegenläufig, weil es bei fallenden Realzinsen zulegt.",
+          "teilbranchen": "Chemie, Industriemetalle, Baustoffe, Edelmetallminen"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Finanzierungskosten verteuern die Investitionen der Kunden und bremsen Auftragseingänge in zyklischen Segmenten. Bau- und maschinennahe Branchen reagieren empfindlich auf das Zinsniveau.",
+          "teilbranchen": "Maschinenbau, Bau, Transport, Luft- und Raumfahrt"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Hohe Zinsen verteuern Konsumentenkredite für Autos und langlebige Güter und schwächen die Kaufkraft. Ein heißer Kernwert im Verbraucherpreisindex würde die Zinssenkungsfantasie weiter ausbremsen.",
+          "teilbranchen": "Automobil, Einzelhandel, Reise und Freizeit, Wohnungsbau"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die stabile, wenig zinselastische Nachfrage nach Grundbedarf macht den Sektor robust gegenüber dem Zinsthema. Als defensiver Bereich profitiert er allenfalls relativ, wenn Anleger bei hawkishen Signalen in sichere Erträge rotieren.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Haushaltswaren, Lebensmitteleinzelhandel"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die defensive und konjunkturunabhängige Nachfrage schirmt den Sektor weitgehend gegen das Zinsthema ab. Nur unprofitable Biotechs mit weit entfernten Gewinnen reagieren spürbar auf steigende Diskontsätze.",
+          "teilbranchen": "Pharma, Medizintechnik, Krankenversicherer, unprofitables Biotech"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Eine steilere Kurve mit höheren Langfristrenditen weitet die Zinsmarge der Banken. Ein schwächerer Arbeitsmarkt erhöht zugleich das Risiko von Kreditausfällen und dämpft das Kreditwachstum.",
+          "teilbranchen": "Banken, Regionalbanken, Versicherer, Vermögensverwalter"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Als Wachstumssektor mit weit in der Zukunft liegenden Gewinnen reagiert die Informationstechnologie empfindlich auf steigende Diskontsätze, weil höhere Zinsen den Barwert künftiger Cashflows senken. Ein heißer Kernwert verstärkt den Bewertungsdruck auf teure Titel.",
+          "teilbranchen": "Software, Halbleiter, Hardware, unprofitable Wachstumstitel"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Hoch bewertete Internet- und Plattformwerte reagieren wie Wachstumsaktien negativ auf steigende Diskontsätze. Klassische Telekomkonzerne tragen hohe Schulden und leiden unter teurerer Refinanzierung.",
+          "teilbranchen": "Internetplattformen, Werbung, Telekommunikation, Medien"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Hohe Verschuldung und stabile Dividenden machen Versorger zum Anleiheersatz, der bei steigenden Renditen relativ an Attraktivität verliert. Teurere Refinanzierung der kapitalintensiven Netz- und Erzeugungsinvestitionen belastet zusätzlich.",
+          "teilbranchen": "Stromversorger, Gasversorger, Wasserversorger, Netzbetreiber"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Steigende Zinsen erhöhen die Finanzierungskosten und drücken über höhere Kapitalisierungssätze direkt die Objektbewertungen. Die hohen Dividendenrenditen der REITs verlieren gegenüber sicheren Anleihen an relativer Attraktivität.",
+          "teilbranchen": "Gewerbe-REITs, Wohn-REITs, Rechenzentren-REITs, Hypotheken-REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Riot Platforms",
+          "logoKey": "riot",
+          "bewegung": "+16,5 %",
+          "warum": "20-Jahres-Rechenzentrumsvertrag über rund 9,1 Mrd. Dollar mit dem KI-Unternehmen Anthropic."
+        },
+        {
+          "firma": "Plug Power",
+          "logoKey": "plugpower",
+          "bewegung": "+13,3 %",
+          "warum": "Bessere Quartalszahlen als erwartet setzten die Erholung fort."
+        },
+        {
+          "firma": "AppLovin",
+          "logoKey": "applovin",
+          "bewegung": "-5,1 %",
+          "warum": "Umsatz verfehlte die Erwartungen im Werbetechnik-Geschäft."
+        },
+        {
+          "firma": "AECOM",
+          "logoKey": "aecom",
+          "bewegung": "-4,5 %",
+          "warum": "Zahlen unter Erwartung und gesenkter Ausblick."
+        }
+      ],
+      "lehre": "Die Lehre: Eine Aktie reagiert auf Nachrichten relativ zu den Erwartungen, nicht auf die Nachricht allein. Die Rotation vor der Zahl zeigt, wie stark der Markt bereits eine Richtung wettet.",
+      "sources": [
+        {
+          "title": "TheStreet, Marktbericht Dienstag (11.8.)",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-11-2026",
+          "tier": 2
+        },
+        {
+          "title": "Alpha Vantage, GLOBAL_QUOTE SPY/QQQ/IWM (11.8.2026)",
+          "url": "",
+          "tier": 2
+        },
+        {
+          "title": "Newsquawk, CPI-Vorschau Juli",
+          "url": "https://www.newsquawk.com/headlines/preview-us-cpi-due-wednesday-12th-august-2026-at-1330bst0830edt",
+          "tier": 2
+        },
+        {
+          "title": "Federal Reserve, FOMC-Kalender",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "cpi-entscheidungstag-handelsraum.jpg",
+        "alt": "Händler blicken angespannt auf Kursbildschirme vor der Wanduhr im Handelsraum",
+        "caption": "Anspannung im Handelsraum vor der Inflationszahl am Nachmittag",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "ki-earnings-cluster",
+      "ressort": "news",
+      "kicker": "Technologie · Earnings",
+      "headline": "Die KI-Infrastruktur liefert starke Zahlen, doch der Markt fragt nach den Kosten",
+      "dek": "CoreWeave verdoppelt den Umsatz und meldet einen Auftragsbestand von 104 Milliarden Dollar. Super Micro steigt trotz Umsatzverfehlung, weil die Jahresprognose weit über dem Konsens liegt.",
+      "body": [
+        "Am Dienstagabend nach US-Börsenschluss berichteten drei Unternehmen, die im Zentrum des KI-Investitionsbooms stehen. Der KI-Cloud-Anbieter CoreWeave steigerte den Umsatz im zweiten Quartal um 112 Prozent auf 2,58 Milliarden Dollar und übertraf den Konsens knapp. Der bereinigte Verlust je Aktie fiel mit 1,03 Dollar geringer aus als erwartet. Die eigentliche Nachricht war der Auftragsbestand von rund 104 Milliarden Dollar, in dem eine Zusage von Meta über 21 Milliarden Dollar sowie eine mehrjährige Vereinbarung mit dem KI-Unternehmen Anthropic stecken. Das Management hob die Jahresprognose auf 12,4 bis 13,2 Milliarden Dollar an. Die Aktie legte nachbörslich rund 14 bis 16 Prozent zu.",
+        "Der Serverhersteller Super Micro lieferte ein Lehrstück über die Kraft des Ausblicks. Der Umsatz verfehlte mit 11,1 Milliarden Dollar den Konsens von rund 11,55 Milliarden, doch der Gewinn je Aktie lag mit 1,62 Dollar klar über der Erwartung. Entscheidend war die Prognose für das Geschäftsjahr 2027 von 65 bis 72 Milliarden Dollar Umsatz, weit über dem Konsens von rund 52,5 Milliarden. Die Aktie stieg nachbörslich rund 8,5 Prozent. Der Anbieter optischer Datacenter-Komponenten Lumentum wiederum steigerte den Umsatz um 109 Prozent auf 1,01 Milliarden Dollar, meldete aber einen hohen bilanziellen Verlust aus der Wandlung von Wandelanleihen, weshalb die anfängliche Kursreaktion verpuffte.",
+        "Ein weiterer Beleg für den Boom kam vom Kryptominenbetreiber Riot Platforms, dessen Aktie rund 16,5 Prozent sprang. Grund war ein Rechenzentrumsvertrag über 20 Jahre und rund 9,1 Milliarden Dollar mit Anthropic. Gemeinsam zeichnen diese Meldungen ein Bild anhaltend enormer Nachfrage nach Rechenleistung. Zugleich richtet sich der Blick der Anleger zunehmend auf die Kehrseite. Der Ausbau kostet gewaltige Summen, verschlingt Kapital und wird oft über Schulden oder neue Aktien finanziert. Die Frage, ob die Margen halten und die Investitionen sich amortisieren, wird zum eigentlichen Prüfstein."
+      ],
+      "mechanik": "Warum steigt eine Aktie trotz verfehltem Umsatz, während eine andere trotz Buchverlust nicht fällt? Weil der Markt künftige Gewinne bewertet und den aktuellen Stand zweitrangig behandelt. Bei Super Micro überstrahlt die weit über Konsens liegende Jahresprognose die Umsatzverfehlung, denn die Guidance verändert die Erwartung für die Zukunft direkt. Bei Lumentum stammt der Verlust aus einem nicht zahlungswirksamen Wandlungseffekt und berührt das operative Geschäft nicht. Der Auftragsbestand von CoreWeave wiederum ist ein Versprechen künftiger Umsätze, das die Nachfrage sichtbar macht. In allen drei Fällen zählt die Erwartung über morgen mehr als die Zahl von gestern.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "KI-Rechenzentren verbrauchen sehr viel Strom, was die Nachfrage nach Erdgas als Brennstoff für die Stromerzeugung erhöht. Gasförderer und integrierte Konzerne profitieren vom wachsenden Energiebedarf der Datacenter.",
+          "teilbranchen": "Erdgasförderung, integrierte Ölkonzerne, Midstream, LNG"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der Bau von Rechenzentren und Serverhardware verbraucht große Mengen Kupfer für Verkabelung und Stromversorgung sowie Spezialgase für die Chipfertigung. Hersteller dieser Rohstoffe sehen steigende Nachfrage aus dem KI-Capex-Boom.",
+          "teilbranchen": "Kupferbergbau, Industriegase, Elektronikchemie"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren brauchen aufwendige Kühlung, Stromverteilung, Transformatoren und Notstromtechnik, die von Industrieunternehmen geliefert werden. Der KI-Ausbau treibt die Auftragsbücher für Klima-, Elektro- und Bautechnik nach oben.",
+          "teilbranchen": "Kühl- und Klimatechnik, Elektrotechnik, Netztechnik, Anlagenbau"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Meldung betrifft Investitionsgüter und Unternehmens-IT, während der zyklische Konsum vom Ausgabeverhalten der Haushalte abhängt. Es besteht kein direkter Nachfragekanal von KI-Serverumsätzen zu Autos, Bekleidung oder Reisen.",
+          "teilbranchen": "Automobil, Einzelhandel, Luxus, Freizeit"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Nahrungsmittel, Getränke und Haushaltsprodukte werden unabhängig von KI-Infrastruktur nachgefragt und haben keine relevante Umsatzverbindung zu dieser Meldung. Nur langfristig könnten steigende Strompreise die Produktionskosten leicht belasten.",
+          "teilbranchen": "Lebensmittelhersteller, Getränke, Haushaltswaren"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Der Sektor wird von Demografie, Regulierung und Erstattung getrieben und hat keine unmittelbare Verbindung zu KI-Server- oder Rechenzentrums-Earnings. Ein Nutzen aus KI-gestützter Forschung ist langfristig und in dieser Meldung nicht angelegt.",
+          "teilbranchen": "Pharma, Biotech, Medizintechnik, Gesundheitsdienstleister"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der KI-Capex-Boom wird zunehmend über Anleihen, Kredite und Leasingstrukturen finanziert, was Banken und Kapitalmärkten Geschäft bringt. Zugleich entstehen Kreditrisiken, falls sich die hohen Investitionen später nicht amortisieren.",
+          "teilbranchen": "Banken, Investmentbanking, Anlagenfinanzierung, Leasing"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Die Meldung stammt aus dem Kern dieses Sektors, denn KI-Server, optische Komponenten und Halbleiter sind hier angesiedelt. Starke Umsätze und angehobene Prognosen von CoreWeave, Super Micro und Lumentum bestätigen die hohe Nachfrage entlang der KI-Hardwarekette.",
+          "teilbranchen": "Halbleiter, KI-Server, optische Komponenten, Halbleiterausrüstung"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Große Plattformkonzerne wie Meta sind als Großabnehmer von KI-Cloud-Kapazität die eigentlichen Treiber des Booms und mieten Rechenleistung für ihre Modelle an. Die enormen Investitionen belasten kurzfristig Free Cashflow und Margen und werfen Rentabilitätsfragen auf.",
+          "teilbranchen": "Internetplattformen, KI-Modellanbieter, Telekommunikation"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren sind extrem stromintensiv und schließen langfristige Lieferverträge mit Versorgern ab, was planbare Nachfrage schafft. Der 20-Jahres-Vertrag von Riot Platforms mit Anthropic zeigt beispielhaft, wie langfristig diese Stromabnahme sein kann.",
+          "teilbranchen": "Stromversorger, unabhängige Kraftwerksbetreiber, Netzbetreiber"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren sind physische Immobilien, deren Bau und Vermietung spezialisierten Datacenter-REITs zugutekommt. Die hohe Nachfrage nach KI-Kapazität hebt Auslastung, Mietpreise und Entwicklungsvolumen dieser Objekte.",
+          "teilbranchen": "Datacenter-REITs, Logistikimmobilien, Funkturm-REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "CoreWeave",
+          "logoKey": "coreweave",
+          "bewegung": "+14 bis 16 % (nachb.)",
+          "warum": "Umsatz plus 112 Prozent und Auftragsbestand von 104 Mrd. Dollar."
+        },
+        {
+          "firma": "Super Micro",
+          "logoKey": "supermicro",
+          "bewegung": "+8,5 % (nachb.)",
+          "warum": "Jahresprognose 2027 weit über Konsens trotz Umsatzverfehlung."
+        },
+        {
+          "firma": "Riot Platforms",
+          "logoKey": "riot",
+          "bewegung": "+16,5 %",
+          "warum": "20-Jahres-Datacenter-Vertrag über 9,1 Mrd. Dollar mit Anthropic."
+        },
+        {
+          "firma": "Lumentum",
+          "logoKey": "lumentum",
+          "bewegung": "annähernd unverändert (nachb.)",
+          "warum": "Starkes operatives Geschäft, aber hoher Buchverlust aus Anleihewandlung."
+        }
+      ],
+      "lehre": "Die Lehre: Guidance schlägt häufig die historische Quartalszahl, und ein bilanzieller Verlust ist nicht dasselbe wie ein Abfluss von Bargeld.",
+      "sources": [
+        {
+          "title": "Benzinga, CoreWeave Q2 und Kursreaktion",
+          "url": "https://www.benzinga.com/markets/tech/26/08/61132121/coreweave-stock-16-percent-earnings-nvidia-gpus-revenue",
+          "tier": 2
+        },
+        {
+          "title": "Seeking Alpha, Super Micro Ausblick",
+          "url": "https://seekingalpha.com/news/4630776-super-micro-computer-pops-on-strong-outlook",
+          "tier": 2
+        },
+        {
+          "title": "Yahoo Finance, Lumentum Q4 und Wandelanleihen-Verlust",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/lite-stock-gains-then-fades-211630012.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "ki-rechenzentrum-baustelle.jpg",
+        "alt": "Bauarbeiter in Warnwesten inspizieren halb installierte Serverracks in einem im Bau befindlichen Rechenzentrum",
+        "caption": "Ein KI-Rechenzentrum entsteht: Ausbau auf Hochtouren",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "oel-gold-hormus",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Geopolitik",
+      "headline": "Öl bleibt teuer und Gold nahe Rekord, weil zwei verschiedene Ängste zusammenwirken",
+      "dek": "Brent hält sich um 89 Dollar, im Verlauf nahe der Marke von 90 Dollar. Gold notiert bei rund 4.375 Dollar. Die Straße von Hormus bleibt der wunde Punkt der Weltwirtschaft.",
+      "body": [
+        "An den Rohstoffmärkten laufen zwei Bewegungen parallel, die auf den ersten Blick widersprüchlich wirken. Der Ölpreis der Nordseesorte Brent hielt sich am Dienstag und Mittwochmorgen bei rund 89 Dollar je Fass, nachdem er im Verlauf kurz die Marke von 90 Dollar berührt hatte. Zugleich notierte Gold mit etwa 4.375 Dollar je Feinunze weiter nahe seinem Rekord und liegt rund 31 Prozent über dem Vorjahr. Silber steht bei rund 65 Dollar, Kupfer bei rund 6,61 Dollar je Pfund. Das amerikanische Öl der Sorte WTI blieb mit rund 84 Dollar deutlich günstiger, sodass der Abstand zwischen beiden Sorten bei etwa 5,5 Dollar liegt.",
+        "Hinter beiden Bewegungen stehen unterschiedliche Treiber. Das Öl steigt an der Angebotsseite. In der Straße von Hormus, durch die ein großer Teil des globalen Rohöls verschifft wird, verhandeln Iran und Oman über eine neue Zwischenroute. Der Sprecher des iranischen Außenministeriums Esmaeil Baghaei bekräftigte die Forderung nach Servicegebühren für maritime Dienstleistungen und bezeichnete die Gespräche mit Oman als konstruktiv. Der Ton ist deeskalierend, doch eine Bestätigung, dass wieder mehr Schiffe die Meerenge passieren, liegt nicht vor. Solange diese Unsicherheit besteht, bleibt eine Knappheitsprämie im seeverschifften Brent.",
+        "Gold und Silber steigen dagegen aus einem monetären Grund. Ein schwacher Dollar verbilligt dollarpreisierte Edelmetalle für ausländische Käufer, und die Erwartung fallender Realzinsen verringert die Opportunitätskosten des zinslosen Goldes. Hinzu kommt die Absicherungsnachfrage angesichts der geopolitischen Risiken aus Hormus und den drohenden Russland-Sanktionen. Silber trägt über seine industrielle Verwendung in Elektronik und Solar einen zusätzlichen Nachfragehebel. Beide Bewegungen zusammen zeichnen das Bild eines Marktes, der gleichzeitig geopolitische Risiken und eine Wende bei den Realzinsen einpreist."
+      ],
+      "mechanik": "Warum können Öl und Gold gleichzeitig steigen? Weil sie auf verschiedene Ängste reagieren. Öl steigt, wenn das Angebot knapp wird, hier durch die Bedrohung der Straße von Hormus. Gold steigt, wenn Anleger niedrigere Realzinsen und einen schwächeren Dollar erwarten, denn dann kostet es weniger, zinsloses Gold zu halten. Ein hoher Ölpreis heizt zudem die Inflationssorge an, was Gold als Wertspeicher zusätzlich attraktiv macht. Der weite Abstand zwischen Brent und dem günstigeren US-Öl WTI zeigt, dass die Prämie geografisch dort sitzt, wo die Seewege bedroht sind.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum eine Meerenge die Weltwirtschaft in Atem hält",
+        "absaetze": [
+          "Ein Chokepoint ist eine geografische Engstelle, durch die ein großer Teil eines Warenstroms laufen muss. Die Straße von Hormus zwischen dem Persischen Golf und dem offenen Meer ist der wichtigste Chokepoint für Rohöl, weil ein erheblicher Teil des seeverschifften Öls sie passiert. Wird eine solche Engstelle bedroht, entsteht sofort eine Risikoprämie, weil Käufer und Verkäufer die Wahrscheinlichkeit einer Lieferstörung einpreisen.",
+          "Das Besondere an Chokepoints ist ihre Hebelwirkung. Eine relativ kleine Zahl von Schiffen oder ein einzelner Akteur kann den globalen Preis bewegen, weil es kaum Ausweichrouten gibt. Genau deshalb reagiert der Ölpreis so empfindlich auf jede Meldung aus Hormus, obwohl der physische Ölfluss nur teilweise gestört ist.",
+          "Für Anleger ist eine von einer Risikoprämie getriebene Preisbewegung fragil. Sie beruht auf Erwartungen und kann schnell zurückkommen, sobald ein glaubwürdiger Deeskalationspfad sichtbar wird. Das erklärt, warum der Ölpreis trotz der angespannten Lage nicht in Panik nach oben schießt. Er pendelt auf erhöhtem Niveau seitwärts, weil sich Angst und Hoffnung die Waage halten."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Ein Brent-Preis um 89 Dollar hebt Umsatz und Margen der Förderer, weil die Verkaufspreise steigen, während die Förderkosten weitgehend fix bleiben. Die Knappheitsprämie aus der Straße von Hormus stützt vor allem das seeverschiffte Brent.",
+          "teilbranchen": "Upstream, integrierte Ölkonzerne, Ölfeldservice, LNG"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Goldpreise nahe Rekord und Silber um 65 Dollar heben Umsatz und Cashflow der Edelmetallminen stark an, auch Kupfer bei 6,61 Dollar stützt die Förderer. Energieintensive Chemie und Stahl leiden dagegen unter hohen Gaskosten, besonders in Europa.",
+          "teilbranchen": "Goldminen, Silberminen, Kupfer, Chemie, Stahl"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Öl- und Gaspreise treiben Treibstoff-, Fracht- und Energiekosten bei Airlines, Logistikern und Herstellern und drücken deren Margen. Rüstung sowie Anbieter von Öl-, Gas- und Kraftwerksausrüstung profitieren dagegen von der Geopolitikprämie.",
+          "teilbranchen": "Fluggesellschaften, Logistik, Rüstung, Energieausrüstung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Hohe Kraftstoffpreise wirken wie eine Steuer auf das verfügbare Einkommen und schmälern das Budget der Haushalte für Autos, Reisen und Anschaffungen. Bei Herstellern und Handel steigen zugleich Energie- und Transportkosten.",
+          "teilbranchen": "Automobil, Non-Food-Einzelhandel, Reise und Freizeit, Gastronomie"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Steigende Energie-, Verpackungs- und Transportkosten erhöhen die Herstell- und Logistikkosten der Nahrungsmittel- und Haushaltsgüterproduzenten und drücken die Margen, solange sie nicht über Preise weitergegeben werden. Die stabile Nachfrage federt die Wirkung ab.",
+          "teilbranchen": "Nahrungsmittelhersteller, Getränke, Körperpflege, Lebensmitteleinzelhandel"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Medikamenten, Medizintechnik und Behandlungen hängt kaum vom Ölpreis ab und gilt als konjunkturunabhängig. Ein leichter Kostendruck entsteht nur bei erdölbasierten Vorprodukten und Kunststoffverbrauch.",
+          "teilbranchen": "Pharma, Biotech, Medizintechnik, Krankenversicherer"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Hohe Energiepreise befeuern Inflationssorgen und können die Zinserwartungen anheben, was die Zinsmargen der Banken stützt, aber Kreditrisiken in energieintensiven Branchen erhöht. Rohstoffhändler und Börsen profitieren von höherer Volatilität.",
+          "teilbranchen": "Banken, Versicherer, Rohstoffhandel, Börsenbetreiber"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Software und Halbleiter haben nur geringen direkten Bezug zum Ölpreis, sodass die Geschäftsmodelle kaum berührt werden. Ein moderater indirekter Kostenanstieg trifft nur die stromhungrigen Rechenzentren und Chipfabriken.",
+          "teilbranchen": "Halbleiter, Software, Hardware, Rechenzentren"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Werbung, Streaming, soziale Netzwerke und Telekommunikation reagieren kaum unmittelbar auf Öl- und Rohstoffpreise. Ein sehr indirekter Effekt ergibt sich nur über den Stromverbrauch der Netze und über eine mögliche Werbeschwäche bei hohen Energiekosten.",
+          "teilbranchen": "Telekommunikation, Internet, Medien, Werbung"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Gaskraftwerksbetreiber sehen ihre Brennstoffkosten stark steigen, was bei fehlender Weitergabe die Margen belastet. Betreiber von Erneuerbaren und Kernkraft profitieren relativ, weil hohe Gaspreise ihre Wettbewerbsposition im Strommarkt verbessern.",
+          "teilbranchen": "Gaskraftwerke, Netzbetreiber, Erneuerbare, Kernkraft"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Immobilienwerte hängen primär an Zinsen und Mieten, nur mittelbar am Ölpreis. Halten hohe Energiepreise über die Inflation die Zinsen länger hoch, würde dies Finanzierungskosten und Bewertungen belasten, während Betriebskosten für Heizung und Strom leicht steigen.",
+          "teilbranchen": "Büro, Wohnen, Handel, Logistik"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Exxon Mobil",
+          "logoKey": "exxon",
+          "bewegung": "fest",
+          "warum": "Integrierter Ölkonzern profitiert von der Brent-Prämie."
+        },
+        {
+          "firma": "Newmont",
+          "logoKey": "newmont",
+          "bewegung": "fest",
+          "warum": "Größter Goldproduzent, Hebel auf Gold nahe Rekord."
+        },
+        {
+          "firma": "Hecla Mining",
+          "logoKey": "hecla",
+          "bewegung": "fest",
+          "warum": "Größter US-Silberproduzent, Silber um 65 Dollar."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trading Economics, Brent Crude",
+          "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+          "tier": 2
+        },
+        {
+          "title": "Fortune, Goldpreis (11.8.)",
+          "url": "https://fortune.com/article/current-price-of-gold-08-11-2026/",
+          "tier": 2
+        },
+        {
+          "title": "GlobalSecurity/RFE-RL, Iran und Oman zu Hormus (11.8.)",
+          "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260811-pdo02.htm",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "oeltanker-hormus-sonnenuntergang.jpg",
+        "alt": "Ein Öltanker durchquert bei Sonnenuntergang eine enge Meerenge, begleitet von einem Marineschiff",
+        "caption": "Tanker unter Geleitschutz: die Nervosität um die Straße von Hormus",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "asien-europa-rundblick",
+      "ressort": "news",
+      "kicker": "Weltbörsen · Rundblick",
+      "headline": "Tokio kehrt ruhig aus dem Feiertag zurück, Europa bleibt an seinen Rekorden",
+      "dek": "Der Nikkei schließt nach dem Feiertag praktisch unverändert. In Korea treiben Spekulationen über Rekordausschüttungen von Samsung und SK Hynix die Chipwerte.",
+      "body": [
+        "Der asiatische Handel am Mittwoch gewann seinen wichtigsten Taktgeber zurück. Die Börse in Tokio, am Dienstag wegen des Feiertags Mountain Day geschlossen, eröffnete wieder und schloss mit 66.909 Punkten praktisch unverändert (minus 0,09 Prozent). Der breite Topix legte leicht zu. Hier lohnt eine Klarstellung zur Datumszuordnung. Der vielzitierte Sprung des Nikkei um gut zwei Prozent stammt von Montag, dem letzten Handelstag vor dem Feiertag. Die eigentliche Reaktion nach der Pause am Mittwoch war mit minus 0,09 Prozent faktisch eine Nullnummer.",
+        "Der wichtigste Einzelimpuls kam aus Südkorea. Der Kospi legte am Mittwochmorgen rund 1,3 Prozent zu, getragen von den Chipschwergewichten. Nach einem Bericht der Zeitung Seoul Economic Daily prüfen sowohl Samsung Electronics als auch SK Hynix Rekordausschüttungen an ihre Aktionäre. Kolportiert wird bei SK Hynix ein Gesamtvolumen um 100 Billionen Won mit Rückkäufen von potenziell rund 40 Billionen Won. Beide Konzerne betonten jedoch, dass weder Zeitpunkt noch Umfang feststehen. Bestätigt ist nur das bestehende Programm bis 2027. Samsung stieg am Mittwoch rund zwei Prozent, SK Hynix rund 1,7 Prozent.",
+        "In Europa hatte der Dienstag eine Fortsetzung der Rekordjagd gebracht. Der DAX markierte im Verlauf ein Allzeithoch bei rund 26.454 Punkten und schloss mit 26.391 Punkten 0,26 Prozent höher. Der breite STOXX Europe 600 hielt mit 660,51 Punkten sein Rekordniveau, während der französische CAC 40 und der Londoner FTSE 100 leicht nachgaben. Im DAX stützte Siemens Energy mit rund 2,6 Prozent nach Berichten über einen Rekord bei Gasturbinen-Aufträgen. Auf der Verliererseite fiel Adidas rund drei Prozent, nachdem der Wettbewerber On Holding beim Quartalsumsatz enttäuscht hatte und der Markt dies als Zeichen schwächerer Nachfrage im Sportartikelsegment las."
+      ],
+      "mechanik": "Warum stützt ein bloßer Rückkaufplan einen ganzen Sektor? Ein Aktienrückkauf senkt die Zahl der ausstehenden Aktien, wodurch der Gewinn je verbleibender Aktie steigt und ein Signal des Vertrauens in die eigene Finanzkraft gesendet wird. Selbst die Aussicht darauf treibt Kurse, weil Anleger die künftige Ausschüttung bereits einpreisen. Wichtig bleibt die Trennung zwischen Bericht und Bestätigung. Solange die Konzerne Zeitpunkt und Umfang offenlassen, handelt der Markt eine Erwartung, keine Tatsache. Die eigentliche zyklische Frage nach der künftigen Speicherpreisentwicklung bleibt davon unberührt.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+2,0 %",
+          "warum": "Spekulation über Rekordausschüttung stützt den Chipwert."
+        },
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+1,7 %",
+          "warum": "Geprüfter Rückkauf bis zu 40 Bio. Won signalisiert starken Cashflow."
+        },
+        {
+          "firma": "Siemens Energy",
+          "logoKey": "siemensenergy",
+          "bewegung": "+2,6 %",
+          "warum": "Bericht über Rekord bei Gasturbinen-Aufträgen."
+        },
+        {
+          "firma": "Adidas",
+          "logoKey": "adidas",
+          "bewegung": "-3,1 %",
+          "warum": "Schwache Zahlen des Wettbewerbers On Holding als negatives Signal gelesen."
+        }
+      ],
+      "sources": [
+        {
+          "title": "TradingKey, Asien 12.8. (Nikkei, Kospi, SK Hynix)",
+          "url": "https://www.tradingkey.com/analysis/stocks/more/262097441-japan-south-korea-stocks-kospi-nikkei-softbank-sk-hynix-samsung-kioxia-tradingkey",
+          "tier": 2
+        },
+        {
+          "title": "Seoul Economic Daily, Samsung und SK Hynix Ausschüttungen (12.8.)",
+          "url": "https://en.sedaily.com/finance/2026/08/12/samsung-sk-hynix-to-unveil-record-shareholder-returns",
+          "tier": 2
+        },
+        {
+          "title": "Trading Economics, Germany Stock Market (11.8.)",
+          "url": "https://tradingeconomics.com/germany/stock-market/news/528600",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "tokio-pendler-morgen.jpg",
+        "alt": "Pendler überqueren im Morgenlicht eine belebte Kreuzung im Finanzviertel von Tokio",
+        "caption": "Tokios Finanzviertel im Morgenlicht",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "cpi-vorschau-detail",
+      "ressort": "makro",
+      "kicker": "Makrodaten · USA",
+      "headline": "Die entscheidende Zahl der Woche kommt heute um 14:30 Uhr",
+      "dek": "Der Verbraucherpreisindex für Juli gilt als Wegweiser für die Fed-Sitzung im September. Die Nachkommastelle der Kernrate bestimmt die Marktrichtung.",
+      "body": [
+        "Am Mittwoch um 14:30 Uhr deutscher Zeit veröffentlicht das US-Arbeitsministerium den Verbraucherpreisindex für Juli. Zum Redaktionsschluss dieser Ausgabe liegt die Zahl noch nicht vor. Der Konsens erwartet eine Gesamtrate von 3,4 Prozent gegenüber dem Vorjahr nach 3,5 Prozent im Juni sowie eine Kernrate ohne Energie und Nahrung von 2,5 Prozent nach 2,6 Prozent. Auf Monatssicht rechnen die Häuser mit rund 0,1 Prozent bei der Gesamtrate und rund 0,2 Prozent beim Kern.",
+        "Die marktrelevante Größe ist die zweite Nachkommastelle der monatlichen Kernrate. Rundet der Wert auf 0,3 Prozent oder höher, dürfte die Debatte über eine Zinserhöhung neu aufflammen. Bleibt er bei 0,2 Prozent oder darunter, verschiebt sich die Erwartung Richtung eines Haltens im September. Ein zusätzlicher Aufwärtsfaktor ist der zuletzt gestiegene Ölpreis, der die Inflationssorge am Anleihemarkt bereits befeuert hat.",
+        "Die nächste Sitzung des Offenmarktausschusses der Fed findet am 15. und 16. September statt, mit dem Zinsentscheid am 16. September. Dieser Termin ist gegen den offiziellen Kalender der Notenbank geprüft. Nach den Prognosemärkten liegt die Wahrscheinlichkeit für eine Erhöhung nahe der für ein Halten, eine echte Münzwurf-Situation. Am Donnerstag folgt der Erzeugerpreisindex für Juli, am Freitag die Einzelhandelsumsätze und das vorläufige Verbrauchervertrauen der Universität Michigan."
+      ],
+      "mechanik": "Warum blicken Profis auf die Monatsrate statt auf die Jahresrate? Die Jahresrate blickt zwölf Monate zurück und trägt alte Preissprünge mit sich. Die Monatsrate zeigt das aktuelle Tempo der Teuerung. Für die Notenbank ist das aktuelle Tempo entscheidend, weil sie in die Zukunft steuert. Deshalb kann eine unveränderte Jahresrate zusammen mit einer heißen Monatsrate am Markt für Bewegung sorgen, obwohl die große Zahl gleich bleibt.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "Kiplinger, CPI-Vorschau Juli 2026",
+          "url": "https://www.kiplinger.com/investing/economy/cpi-report-july-2026-what-to-expect",
+          "tier": 2
+        },
+        {
+          "title": "US Bureau of Labor Statistics, CPI-Startseite",
+          "url": "https://www.bls.gov/cpi/",
+          "tier": 1
+        },
+        {
+          "title": "Newsquawk, CPI-Vorschau",
+          "url": "https://www.newsquawk.com/headlines/preview-us-cpi-due-wednesday-12th-august-2026-at-1330bst0830edt",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "statistikamt-schreibtisch.jpg",
+        "alt": "Schreibtisch mit ausgedruckten Inflationsberichten, Balkendiagrammen, Taschenrechner und Kaffeetasse im Morgenlicht",
+        "caption": "Die entscheidende Zahl der Woche wird vorbereitet",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "renditen-kurve-dollar",
+      "ressort": "makro",
+      "kicker": "Anleihen · Devisen",
+      "headline": "Die Renditen steigen über die ganze Kurve, der Dollar bleibt merkwürdig ruhig",
+      "dek": "Die zehnjährige US-Rendite notiert nahe 4,72 Prozent. Trotzdem tritt der Dollar auf der Stelle. Diese Kombination erzählt eine Geschichte über die Erwartung der Anleger.",
+      "body": [
+        "Am US-Anleihemarkt hat sich zuletzt ein aufschlussreiches Muster gezeigt. Die Rendite zehnjähriger Staatsanleihen liegt bei rund 4,72 Prozent und damit auf einem Monatshoch. Die zweijährige Rendite steht bei etwa 4,25 Prozent, die dreißigjährige bei rund 5,25 Prozent. Der jüngste Anstieg verlief weitgehend parallel über die gesamte Kurve, um rund sechs bis sieben Basispunkte, angetrieben von wiederauflebenden Zinserhöhungserwartungen vor dem Verbraucherpreisindex.",
+        "Auffällig ist, dass der Dollar trotz der gestiegenen Renditen kaum Bewegung zeigt. Der Dollar-Index DXY notiert bei rund 99,8, nahe einem Zweimonatstief. Der Euro steht bei etwa 1,154 Dollar, der japanische Yen bei rund 159 je Dollar. Üblicherweise stützen höhere Renditen die Währung, weil sie ausländisches Kapital anlocken. Dass der Dollar dennoch schwach bleibt, deutet darauf hin, dass der Markt am langen Ende weniger eine höhere reale Zinsdifferenz einpreist als eine höhere Inflations- und Risikoprämie.",
+        "Genau dieselbe Kraft treibt Gold nach oben. Wenn Anleger für die ferne Zukunft mehr Inflation und mehr Unsicherheit erwarten, verlangen sie für lange Anleihen eine höhere Rendite als Ausgleich, und zugleich flieht Kapital in reale Wertspeicher wie Gold. Für die Aktienbewertung ist das lange Ende der Kurve entscheidend, weil künftige Unternehmensgewinne mit dem langfristigen Zins abgezinst werden. Ein höheres langes Ende senkt den heutigen Wert weit entfernter Gewinne und trifft teure Wachstumsaktien am stärksten."
+      ],
+      "mechanik": "Was bedeutet es, wenn Renditen steigen, der Dollar aber nicht? Normalerweise ziehen höhere Zinsen die Währung mit nach oben, weil globale Anleger die höhere Verzinsung suchen. Bleibt die Währung schwach, obwohl die Renditen steigen, verlangt der Markt die Mehrrendite als Ausgleich für Inflations- und Risikosorgen, nicht als echten realen Zinsvorteil. Für den Anleger ist das ein Warnsignal, dass hinter dem Renditeanstieg eher Preissorgen als Wachstumsvertrauen stecken. Genau darauf reagiert auch der Goldpreis.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "Federal Reserve, Zinsstatistik H.15",
+          "url": "https://www.federalreserve.gov/releases/h15/",
+          "tier": 1
+        },
+        {
+          "title": "Trading Economics, US-Rendite 10 Jahre",
+          "url": "https://tradingeconomics.com/united-states/government-bond-yield",
+          "tier": 2
+        },
+        {
+          "title": "Trading Economics, Dollar-Index",
+          "url": "https://tradingeconomics.com/united-states/currency",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "anleihen-dollar-schreibtisch.jpg",
+        "alt": "Handelsschreibtisch mit Monitoren, die eine steigende Renditekurve zeigen, davor gefächerte Dollar-Banknoten",
+        "caption": "Steigende Renditen, ruhiger Dollar: der Handelsschreibtisch im Blick",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "notenbanken-rundblick",
+      "ressort": "makro",
+      "kicker": "Zentralbanken · Global",
+      "headline": "Australien hält einstimmig still, Deutschlands Inflation zieht wieder an",
+      "dek": "Die Reserve Bank of Australia belässt den Leitzins bei 4,35 Prozent. In Deutschland bestätigt sich eine Teuerung nahe 2,8 Prozent und begrenzt den Spielraum der EZB.",
+      "body": [
+        "Der geldpolitische Kalender bleibt dicht besetzt. Die australische Notenbank Reserve Bank of Australia unter ihrer Gouverneurin Michele Bullock beließ den Leitzins am Dienstag einstimmig bei 4,35 Prozent. Der Schritt folgte auf eine leicht nachgebende Inflation, die im zweiten Quartal auf 3,8 Prozent gefallen war. Die Notenbank verwies zugleich auf fortbestehende Preisrisiken, weshalb die Entscheidung überwiegend als vorsichtiges Halten mit wachsamer Grundhaltung gelesen wurde. Eine eindeutige Festlegung auf die nächste Richtung vermied das Gremium.",
+        "In Europa richtet sich der Blick auf Deutschland. Die vorläufige Inflationsrate für Juli lag bei 2,8 Prozent gegenüber dem Vorjahr und damit über den zuvor erwarteten 2,7 Prozent. Es ist der höchste Wert seit drei Monaten. Die endgültige Bestätigung durch das Statistische Bundesamt steht für heute an. Für die Europäische Zentralbank ist das ein relevantes Signal, weil Deutschland die größte Volkswirtschaft des Euroraums ist und eine wieder anziehende Teuerung den Spielraum für weitere Zinssenkungen begrenzt.",
+        "Der Einlagenzins der EZB unter Präsidentin Christine Lagarde liegt aktuell bei 2,25 Prozent. Die nächste Sitzung des EZB-Rats findet am 10. und 11. September statt, mit dem Zinsentscheid am 11. September. Die Kombination aus einer hawkishen Fed und einer vorsichtigen EZB zeigt ein globales Umfeld, in dem die großen Notenbanken derzeit eher abwarten als lockern. Für Anleger heißt das, dass der Rückenwind sinkender Zinsen, der Aktien in früheren Jahren getragen hat, vorerst schwach bleibt."
+      ],
+      "mechanik": "Warum begrenzt eine höhere Inflation in Deutschland den Spielraum der ganzen Eurozone? Die EZB setzt einen einzigen Leitzins für alle zwanzig Euro-Länder und orientiert sich am Durchschnitt. Deutschland hat als größte Volkswirtschaft ein hohes Gewicht in diesem Durchschnitt. Zieht die deutsche Teuerung an, steigt der Durchschnitt, und die EZB kann die Zinsen weniger leicht senken, ohne die Preisstabilität zu gefährden. Ein höherer Leitzins wiederum verteuert Kredite und bremst Investitionen und Konsum im gesamten Euroraum.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "Bloomberg, RBA hält Leitzins (11.8.)",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-11/australia-holds-key-rate-to-counter-elevated-inflation-pressures",
+          "tier": 2
+        },
+        {
+          "title": "Destatis, deutscher Verbraucherpreisindex Juli",
+          "url": "https://www.destatis.de/EN/Press/2026/07/PE26_270_611.html",
+          "tier": 1
+        },
+        {
+          "title": "EZB, geldpolitische Beschlüsse und Kalender",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade-abend.jpg",
+        "alt": "Beleuchtete Fassade eines modernen europäischen Zentralbankgebäudes in der Abenddämmerung",
+        "caption": "Zentralbankgebäude in der Abenddämmerung",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "graham-act-sanktionen",
+      "ressort": "politik",
+      "kicker": "Geopolitik · Sanktionen",
+      "headline": "Der US-Senat hat harte Sekundärzölle gegen Abnehmer russischer Energie beschlossen",
+      "dek": "Mit 86 zu 11 Stimmen verabschiedete der Senat den Graham Act. Das Gesetz droht Hauptabnehmern russischer Energie mit Zöllen von bis zu 100 Prozent. Das Repräsentantenhaus stimmt erst im September ab.",
+      "body": [
+        "Der US-Senat hat mit breiter Mehrheit von 86 zu 11 Stimmen den nach dem republikanischen Senator Lindsey Graham benannten Sanktionsgesetzentwurf verabschiedet. Das Gesetz mit der Nummer S.5025 ermächtigt den Präsidenten zu Zöllen von bis zu 100 Prozent auf Länder, die Hauptabnehmer russischer Energie sind. Ziel ist es, die Einnahmen Russlands aus dem Energieexport zu treffen und damit indirekt Druck im andauernden Konflikt aufzubauen. Der wiederauflebende Ölpreis hängt auch mit dieser Drohkulisse zusammen, weil eine Verdrängung russischer Mengen den globalen Preis treiben würde.",
+        "Für die Märkte ist die Struktur des Gesetzes entscheidend. China und Indien zählen zu den größten Abnehmern russischen Rohöls und wären von den Zöllen direkt betroffen. Das Repräsentantenhaus tagt nach der Sommerpause allerdings erst wieder ab dem 31. August, sodass eine Abstimmung frühestens im September ansteht. Zudem lässt der Gesetzestext dem Präsidenten Ermessensspielraum bei der Umsetzung. Die kurzfristige Marktwirkung ist deshalb eher eine Frage der Erwartung als ein unmittelbarer Schock für die Unternehmensgewinne.",
+        "Bei tatsächlicher Umsetzung wäre der wichtigste Wirkkanal eine Verteuerung des Handels und eine Störung der Lieferketten für China und Indien. Offizielle Reaktionen der Regierungen in Peking und Neu-Delhi ließen sich in den geprüften Quellen bisher nicht sauber belegen, was die Einschätzung der zweiten Runde von Effekten mit Unsicherheit behaftet. Auch die genaue Ausgestaltung der Zollstufen variiert je nach Quelle, weshalb die konkrete Höhe erst mit dem Gesetzestext des Repräsentantenhauses feststeht."
+      ],
+      "mechanik": "Was ist ein Sekundärzoll und warum wirkt er so stark? Ein normaler Zoll trifft Waren aus einem bestimmten Land. Ein Sekundärzoll trifft dagegen Länder, die mit einem sanktionierten Staat Geschäfte machen. Er zwingt Drittstaaten zu einer Wahl, entweder den Handel mit dem sanktionierten Land aufzugeben oder den Zugang zum großen US-Markt zu verlieren. Weil der US-Markt für die meisten Exporteure unverzichtbar ist, wirkt die Drohung weit über die eigenen Grenzen hinaus. Genau das macht Sekundärsanktionen zu einem mächtigen außenpolitischen Werkzeug.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "Congress.gov, S.5025 Graham Act (Text)",
+          "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5025/text",
+          "tier": 1
+        },
+        {
+          "title": "Jerusalem Post, Senat verabschiedet Russland-Sanktionen",
+          "url": "https://www.jpost.com/international/article-904886",
+          "tier": 2
+        },
+        {
+          "title": "CNBC, Russland-Sanktionsgesetz im Senat (7.8.)",
+          "url": "https://www.cnbc.com/2026/08/07/russia-sanctions-bill-lindsey-graham-senate.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "us-capitol-daemmerung.jpg",
+        "alt": "Die Kuppel des US-Kapitols in der Abenddämmerung unter dramatischem Wolkenhimmel",
+        "caption": "Das US-Kapitol: Schauplatz der neuen Sekundärzölle",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "polysilizium-solarzoll",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · Energie",
+      "headline": "Washington belegt Solar-Vorprodukte mit Zöllen und Mindestpreisen",
+      "dek": "Ab Dezember gelten 15 Prozent Zoll plus Mindestimportpreise auf Polysilizium, Wafer, Zellen und Module. US-Hersteller profitieren strukturell, importabhängige Projekte verteuern sich.",
+      "body": [
+        "Die US-Regierung hat eine Maßnahme im Rahmen des Handelsparagrafen Section 232 unterzeichnet, der Importe aus Gründen der nationalen Sicherheit beschränken kann. Betroffen sind Polysilizium und daraus gefertigte Vorprodukte der Solarindustrie. Ab dem 4. Dezember 2026 gilt ein Zoll von 15 Prozent zusätzlich zu Mindestimportpreisen. Diese liegen bei 21 Dollar je Kilogramm für Polysilizium sowie bei festen Untergrenzen je Watt für Zellen und Module. Die Anwaltskanzlei Wiley und das Fachmagazin pv magazine bestätigen die Maßnahme.",
+        "Die Begründung lautet, dass die USA bei Wafern und Zellen nahezu vollständig von Importen abhängen, vor allem aus Asien. Ein Mindestimportpreis wirkt wie eine Preisuntergrenze. Er verhindert, dass sehr günstige ausländische Ware den US-Markt unterbietet, und schützt damit die Margen heimischer Hersteller. Anbieter mit US-Fertigung wie First Solar sowie die in den USA produzierenden Hersteller Hanwha Q Cells und T1 Energy zählen zu den strukturellen Profiteuren, weil die Politik Investitionen in die heimische Produktion stützt.",
+        "Die Kehrseite tragen importabhängige Projektentwickler in den USA, deren Baukosten steigen, sowie asiatische Zell- und Modulexporteure, die einen wichtigen Absatzmarkt verlieren. Da die Maßnahme erst im Dezember wirksam wird, dürfte der unmittelbare Effekt zunächst in vorgezogenen Bestellungen und einer Neubewertung der betroffenen Aktien bestehen. Die eigentliche Verschiebung der Lieferketten setzt erst mit dem Inkrafttreten ein. Die Maßnahme reiht sich in ein breiteres Zollpaket ein, das Metalle mit 50 Prozent belegt und seit Ende Juli auch patentierte Arzneien erfasst."
+      ],
+      "mechanik": "Wie wirkt ein Mindestimportpreis anders als ein reiner Zoll? Ein Zoll schlägt einen prozentualen Aufschlag auf den Importpreis. Fällt der Weltmarktpreis stark, sinkt auch der Zollbetrag, und billige Ware bleibt billig. Ein Mindestimportpreis dagegen setzt eine feste Untergrenze, unter der Ware gar nicht in den Markt gelangen darf. Damit schützt er heimische Hersteller auch dann, wenn die Weltmarktpreise einbrechen. Für die US-Solarfertigung schafft das Planungssicherheit, für Projektentwickler bedeutet es höhere und stabilere Einkaufskosten.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "First Solar",
+          "logoKey": "firstsolar",
+          "bewegung": "strukturell positiv",
+          "warum": "US-Fertigung profitiert von der Abschottung des Heimatmarktes."
+        }
+      ],
+      "sources": [
+        {
+          "title": "pv magazine USA, Zoll und Mindestpreis auf Polysilizium (7.8.)",
+          "url": "https://pv-magazine-usa.com/2026/08/07/us-announces-tariffs-minimum-import-price-on-polysilicon-imports/",
+          "tier": 2
+        },
+        {
+          "title": "Wiley Law, Section-232-Zölle auf Polysilizium",
+          "url": "https://www.wiley.law/alert-Trump-Administration-Imposes-Section-232-Tariffs-and-Minimum-Import-Prices-on-Polysilicon-and-its-Derivatives",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "solarpanel-reinraum.jpg",
+        "alt": "Arbeiter in Reinraumanzügen prüfen Solarzellen an einer Fertigungslinie in blauem Industrielicht",
+        "caption": "Fertigungslinie für Solarpanels im Reinraum",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "hormus-diplomatie",
+      "ressort": "politik",
+      "kicker": "Diplomatie · Nahost",
+      "headline": "Iran und Oman ringen um eine neue Route durch die Straße von Hormus",
+      "dek": "Teheran verlangt Servicegebühren statt verbotener Durchfahrtszölle. Ein Teil-Deal nimmt Konturen an, doch eine Normalisierung des Schiffsverkehrs ist noch nicht belegt.",
+      "body": [
+        "Parallel zu den Spannungen um die Schifffahrt läuft in der Straße von Hormus eine diplomatische Bewegung. Der Sprecher des iranischen Außenministeriums Esmaeil Baghaei bekräftigte am Montag die Forderung, dass für erbrachte maritime Dienstleistungen eine Vergütung zu zahlen sei. Iran und Oman verhandeln über eine neue Zwischenroute, die die bisherige nördliche und südliche Passage vorübergehend ersetzen soll, bis ein überarbeitetes Verkehrstrennungsschema vereinbart ist. Baghaei bezeichnete die Gespräche mit Oman als reibungslos und konstruktiv.",
+        "Der Verhandlungsstand verschiebt sich damit von der Frage der vollen Kontrolle hin zur Ausgestaltung von Route und Gebühren. Das deckt sich mit dem zuvor bekannten Rahmen einer Einlaufroute durch iranische Gewässer um die Insel Larak sowie eines anfänglichen Fensters von 60 Tagen ohne Gebühren. Der Ton ist deeskalierend, und die indirekte Kommunikation mit den USA über Vermittler läuft weiter. Nach den Eskalationen des Vormonats bleibt die Lage jedoch fragil.",
+        "Für den Markt zählt vor allem eine offene Frage. Es liegt keine aktuelle Bestätigung vor, dass wieder deutlich mehr Schiffe die Meerenge passieren. In der Berichterstattung vom Dienstag wurde zugleich kein neuer Tankerangriff gemeldet, was jedoch kein Beleg für Entwarnung ist. Konkrete Transitzahlen und aktuelle Kriegsrisikoaufschläge für Tanker ließen sich für den Berichtszeitraum nicht mit belastbarer Quelle beziffern. Solange die Wiederöffnung nicht messbar ist, bleibt die Risikoprämie im Ölpreis erhalten."
+      ],
+      "mechanik": "Warum bleibt die Ölprämie hoch, obwohl verhandelt wird? Weil der Markt zwei gegenläufige Nachrichten gleichzeitig verarbeitet. Der Verhandlungsfortschritt senkt die Wahrscheinlichkeit einer vollständigen Schließung und nimmt Druck aus dem Preis. Die fehlende Bestätigung einer echten Normalisierung hält dagegen das Risiko einer erneuten Eskalation lebendig. Solange beide Kräfte wirken, bleibt die Prämie erhöht, ohne in Panik umzuschlagen. Erst ein glaubwürdiger, dauerhaft gesicherter Schiffsverkehr würde sie deutlich abbauen.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "GlobalSecurity/RFE-RL, Iran und Oman zu Hormus (11.8.)",
+          "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260811-pdo02.htm",
+          "tier": 2
+        },
+        {
+          "title": "Al Jazeera, Hintergrund Iran, Oman und USA zu Hormus",
+          "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-strasse-luftaufnahme.jpg",
+        "alt": "Luftaufnahme einer engen strategischen Meerenge zwischen zwei kargen Küsten mit mehreren Frachtschiffen im Abendlicht",
+        "caption": "Luftbild der Straße von Hormus im Abendlicht",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "coreweave-earnings",
+      "ressort": "unternehmen",
+      "kicker": "Earnings · KI-Cloud",
+      "headline": "CoreWeave verdoppelt den Umsatz und meldet einen Auftragsberg von 104 Milliarden Dollar",
+      "dek": "Der KI-Cloud-Anbieter hebt die Jahresprognose an und steigt nachbörslich zweistellig. Der riesige Auftragsbestand zeigt die Nachfrage, wirft aber Fragen zur Finanzierung auf.",
+      "body": [
+        "Der auf künstliche Intelligenz spezialisierte Cloud-Anbieter CoreWeave hat am Dienstagabend Zahlen vorgelegt, die den Boom der Branche eindrucksvoll belegen. Der Umsatz stieg im zweiten Quartal um 112 Prozent auf 2,58 Milliarden Dollar und übertraf den Konsens knapp. Der bereinigte Verlust je Aktie fiel mit 1,03 Dollar geringer aus als die erwarteten rund 1,18 Dollar. Das Unternehmen hob die Jahresprognose 2026 auf 12,4 bis 13,2 Milliarden Dollar an. Die Aktie legte nachbörslich rund 14 bis 16 Prozent zu, nachdem sie seit dem Mai-Bericht deutlich gefallen war.",
+        "Das Herzstück der Meldung ist der Auftragsbestand von rund 104 Milliarden Dollar. Darin stecken eine Zusage von Meta über 21 Milliarden Dollar sowie eine mehrjährige Vereinbarung mit dem KI-Unternehmen Anthropic. Dieser Auftragsberg zeigt, wie groß die Nachfrage nach Rechenleistung für KI-Modelle ist und wie stark große Technologiekonzerne bereit sind, sich langfristig Kapazität zu sichern. Für CoreWeave bedeutet das eine hohe Sichtbarkeit künftiger Umsätze, ein seltenes Gut für ein so junges Unternehmen.",
+        "Der Markt beachtet zunehmend die Kehrseite dieses Wachstums. Um die zugesagte Kapazität zu liefern, muss CoreWeave massiv in Rechenzentren, Grafikprozessoren und Strom investieren. Diese Investitionen verschlingen Kapital und werden über Schulden und neue Aktien finanziert, was die Bilanz belastet und Zinslast erzeugt. Der freie Cashflow bleibt deshalb tief negativ, obwohl der Umsatz explodiert. Der Kurs schwankt entsprechend stark, weil Anleger die enorme Chance gegen das Finanzierungsrisiko abwägen."
+      ],
+      "mechanik": "Warum ist ein Auftragsbestand nicht schon Gewinn? Ein Auftragsbestand ist ein Versprechen künftiger Umsätze, kein realisiertes Geschäft. Bevor auch nur ein Dollar davon als Umsatz verbucht wird, muss CoreWeave die Rechenzentren bauen, die teuren Grafikprozessoren kaufen und den Strom bezahlen. Diese Vorleistungen kosten heute Geld, während der Umsatz erst über Jahre einläuft. Der Auftragsberg zeigt also die Nachfrage, sagt aber nichts darüber, ob am Ende ein Gewinn übrig bleibt. Genau deshalb schaut der Markt zusätzlich auf die Investitionen, die Verschuldung und den freien Cashflow.",
+      "company": {
+        "name": "CoreWeave",
+        "ticker": "CRWV",
+        "exchange": "Nasdaq",
+        "logoKey": "coreweave",
+        "whatTheyDo": "CoreWeave betreibt spezialisierte Rechenzentren und vermietet Rechenleistung auf Grafikprozessoren für das Training und den Betrieb von KI-Modellen. Zu den Kunden zählen große Technologiekonzerne und KI-Unternehmen wie Meta und Anthropic. Das Geschäft ist extrem kapitalintensiv.",
+        "whyItMatters": "CoreWeave ist einer der reinsten börsennotierten Profiteure des KI-Infrastruktur-Booms und ein Gradmesser für die Nachfrage nach Rechenleistung. Der riesige Auftragsbestand zeigt die Kraft und zugleich die Finanzierungsfrage des Booms.",
+        "keyMetrics": [
+          [
+            "Kurs (Di 11.8.)",
+            "90,32 $"
+          ],
+          [
+            "Q2-Umsatz",
+            "2,58 Mrd. $ (+112 % j/j)"
+          ],
+          [
+            "Adj. Verlust je Aktie",
+            "-1,03 $ (besser als -1,18 erwartet)"
+          ],
+          [
+            "Auftragsbestand",
+            "~104 Mrd. $"
+          ],
+          [
+            "Jahresprognose 2026",
+            "12,4 bis 13,2 Mrd. $ (angehoben)"
+          ],
+          [
+            "Kursreaktion",
+            "+14 bis 16 % nachbörslich"
+          ]
+        ],
+        "priceSeries": [
+          {
+            "t": "2026-06-01",
+            "v": 124.82
+          },
+          {
+            "t": "2026-06-08",
+            "v": 102.37
+          },
+          {
+            "t": "2026-06-15",
+            "v": 106.71
+          },
+          {
+            "t": "2026-06-22",
+            "v": 111.29
+          },
+          {
+            "t": "2026-06-30",
+            "v": 99.54
+          },
+          {
+            "t": "2026-07-08",
+            "v": 90
+          },
+          {
+            "t": "2026-07-15",
+            "v": 77.12
+          },
+          {
+            "t": "2026-07-22",
+            "v": 82.64
+          },
+          {
+            "t": "2026-07-29",
+            "v": 60.82
+          },
+          {
+            "t": "2026-08-03",
+            "v": 85.76
+          },
+          {
+            "t": "2026-08-06",
+            "v": 85.33
+          },
+          {
+            "t": "2026-08-10",
+            "v": 88.19
+          },
+          {
+            "t": "2026-08-11",
+            "v": 90.32
+          }
+        ],
+        "priceSeriesSource": "Alpha Vantage, TIME_SERIES_DAILY, Tagesschlusskurse (Stand 11.8.2026, vor der nachbörslichen Reaktion)"
+      },
+      "charts": [
+        {
+          "type": "line",
+          "title": "CoreWeave: Kursverlauf Juni bis August 2026",
+          "subtitle": "Volatiler Weg von rund 125 Dollar im Juni auf 90,32 Dollar vor den Zahlen",
+          "unit": " $",
+          "source": "Alpha Vantage, TIME_SERIES_DAILY, Tagesschlusskurse",
+          "series": [
+            {
+              "t": "2026-06-01",
+              "v": 124.82
+            },
+            {
+              "t": "2026-06-08",
+              "v": 102.37
+            },
+            {
+              "t": "2026-06-15",
+              "v": 106.71
+            },
+            {
+              "t": "2026-06-22",
+              "v": 111.29
+            },
+            {
+              "t": "2026-06-30",
+              "v": 99.54
+            },
+            {
+              "t": "2026-07-08",
+              "v": 90
+            },
+            {
+              "t": "2026-07-15",
+              "v": 77.12
+            },
+            {
+              "t": "2026-07-22",
+              "v": 82.64
+            },
+            {
+              "t": "2026-07-29",
+              "v": 60.82
+            },
+            {
+              "t": "2026-08-03",
+              "v": 85.76
+            },
+            {
+              "t": "2026-08-06",
+              "v": 85.33
+            },
+            {
+              "t": "2026-08-10",
+              "v": 88.19
+            },
+            {
+              "t": "2026-08-11",
+              "v": 90.32
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Benzinga, CoreWeave Q2 und Kursreaktion",
+          "url": "https://www.benzinga.com/markets/tech/26/08/61132121/coreweave-stock-16-percent-earnings-nvidia-gpus-revenue",
+          "tier": 2
+        },
+        {
+          "title": "SiliconANGLE, CoreWeave Earnings Beat",
+          "url": "https://siliconangle.com/2026/08/11/coreweave-coasts-solid-earnings-beat-sending-stock-higher-hours/",
+          "tier": 2
+        },
+        {
+          "title": "Alpha Vantage, TIME_SERIES_DAILY CRWV (11.8.2026)",
+          "url": "",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-serverreihe.jpg",
+        "alt": "Lange Reihen leuchtender Serverracks in einem Hyperscale-Rechenzentrum, im Hintergrund ein Techniker im Gang",
+        "caption": "Reihen von Serverracks in einem Hyperscale-Rechenzentrum",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "supermicro-earnings",
+      "ressort": "unternehmen",
+      "kicker": "Earnings · KI-Server",
+      "headline": "Super Micro verfehlt den Umsatz und steigt trotzdem, weil die Prognose alles überstrahlt",
+      "dek": "Der Serverbauer bleibt beim Quartalsumsatz unter den Erwartungen. Die Jahresprognose 2027 liegt jedoch weit über dem Konsens, und die Aktie legt nachbörslich zu.",
+      "body": [
+        "Der Hersteller von KI-Servern Super Micro Computer hat am Dienstagabend ein Lehrstück darüber geliefert, wie stark ein Ausblick die aktuellen Zahlen überstrahlen kann. Der Umsatz im vierten Geschäftsquartal verfehlte mit 11,1 Milliarden Dollar den Konsens von rund 11,55 Milliarden. Der Gewinn je Aktie lag dagegen mit 1,62 Dollar klar über der Erwartung von rund 0,96 Dollar. Trotz der Umsatzverfehlung stieg die Aktie nachbörslich rund 8,5 Prozent.",
+        "Der Grund liegt in der Prognose. Für das Geschäftsjahr 2027 stellte das Unternehmen einen Umsatz von 65 bis 72 Milliarden Dollar in Aussicht, weit über dem Konsens von rund 52,5 Milliarden. Für das laufende erste Quartal nannte das Management 14,5 bis 15,5 Milliarden Dollar Umsatz. Diese Zahlen signalisieren, dass Super Micro mit einer anhaltend starken Nachfrage nach KI-Servern rechnet und Marktanteile gewinnen will. Der Markt bewertet ein Unternehmen anhand seiner künftigen Gewinne, weshalb eine kräftig angehobene Erwartung die schwächere Quartalszahl aufwiegt.",
+        "Zur Vorsicht mahnt die Historie des Unternehmens. Super Micro war in den vergangenen Jahren wegen Fragen zur Rechnungslegung und zu dünnen Margen mehrfach unter Druck. Die genaue Bruttomarge des Quartals ging aus den zugänglichen Meldungen nicht klar hervor, was die Beurteilung der Profitabilität erschwert. Der Kurs hatte sich von rund 50 Dollar im Juni auf zuletzt rund 31 Dollar mehr als halbiert, bevor die Prognose die Erholung auslöste. Die hohe Schwankungsbreite bleibt ein Merkmal des Titels."
+      ],
+      "mechanik": "Warum kann eine Umsatzverfehlung von einer starken Prognose überdeckt werden? Weil der Umsatz eines einzelnen Quartals die Vergangenheit beschreibt, während die Guidance die Erwartung für die Zukunft direkt setzt. Anleger diskontieren künftige Gewinne auf heute, und je höher die erwarteten künftigen Umsätze, desto höher der rechnerische Wert. Springt die Jahresprognose um mehr als ein Viertel über den Konsens, verschiebt das die gesamte Gewinnerwartung nach oben. Die verfehlte Quartalszahl wiegt dagegen leichter, weil sie nur einen abgeschlossenen Zeitraum betrifft.",
+      "company": {
+        "name": "Super Micro Computer",
+        "ticker": "SMCI",
+        "exchange": "Nasdaq",
+        "logoKey": "supermicro",
+        "whatTheyDo": "Super Micro entwickelt und baut Serversysteme und Speicherlösungen, insbesondere für KI- und Hochleistungsrechenzentren. Das Unternehmen integriert Grafikprozessoren und bietet Flüssigkeitskühlung für dichte KI-Cluster. Das Geschäft ist volumenstark bei tendenziell dünnen Margen.",
+        "whyItMatters": "Super Micro ist ein direkter Nutznießer des KI-Serverbooms und ein Anschauungsfall dafür, wie eine Guidance die aktuelle Quartalszahl dominiert. Die weit angehobene Jahresprognose ist ein Signal für die anhaltende Nachfrage.",
+        "keyMetrics": [
+          [
+            "Kurs (Di 11.8.)",
+            "31,60 $"
+          ],
+          [
+            "Q4-Umsatz",
+            "11,1 Mrd. $ (unter Konsens 11,55)"
+          ],
+          [
+            "Gewinn je Aktie",
+            "1,62 $ (Konsens 0,96)"
+          ],
+          [
+            "Prognose GJ2027",
+            "65 bis 72 Mrd. $ (Konsens 52,5)"
+          ],
+          [
+            "Prognose Q1",
+            "14,5 bis 15,5 Mrd. $"
+          ],
+          [
+            "Kursreaktion",
+            "+8,5 % nachbörslich"
+          ]
+        ],
+        "priceSeries": [
+          {
+            "t": "2026-06-01",
+            "v": 46.88
+          },
+          {
+            "t": "2026-06-08",
+            "v": 43.99
+          },
+          {
+            "t": "2026-06-15",
+            "v": 30.85
+          },
+          {
+            "t": "2026-06-22",
+            "v": 35.46
+          },
+          {
+            "t": "2026-06-30",
+            "v": 29.33
+          },
+          {
+            "t": "2026-07-08",
+            "v": 28.17
+          },
+          {
+            "t": "2026-07-15",
+            "v": 26.89
+          },
+          {
+            "t": "2026-07-22",
+            "v": 30.56
+          },
+          {
+            "t": "2026-07-29",
+            "v": 25.7
+          },
+          {
+            "t": "2026-08-03",
+            "v": 28.64
+          },
+          {
+            "t": "2026-08-06",
+            "v": 29.38
+          },
+          {
+            "t": "2026-08-10",
+            "v": 31.46
+          },
+          {
+            "t": "2026-08-11",
+            "v": 31.6
+          }
+        ],
+        "priceSeriesSource": "Alpha Vantage, TIME_SERIES_DAILY, Tagesschlusskurse (Stand 11.8.2026, vor der nachbörslichen Reaktion)"
+      },
+      "charts": [
+        {
+          "type": "line",
+          "title": "Super Micro: Kursverlauf Juni bis August 2026",
+          "subtitle": "Von rund 47 Dollar im Juni auf 31,60 Dollar vor den Zahlen",
+          "unit": " $",
+          "source": "Alpha Vantage, TIME_SERIES_DAILY, Tagesschlusskurse",
+          "series": [
+            {
+              "t": "2026-06-01",
+              "v": 46.88
+            },
+            {
+              "t": "2026-06-08",
+              "v": 43.99
+            },
+            {
+              "t": "2026-06-15",
+              "v": 30.85
+            },
+            {
+              "t": "2026-06-22",
+              "v": 35.46
+            },
+            {
+              "t": "2026-06-30",
+              "v": 29.33
+            },
+            {
+              "t": "2026-07-08",
+              "v": 28.17
+            },
+            {
+              "t": "2026-07-15",
+              "v": 26.89
+            },
+            {
+              "t": "2026-07-22",
+              "v": 30.56
+            },
+            {
+              "t": "2026-07-29",
+              "v": 25.7
+            },
+            {
+              "t": "2026-08-03",
+              "v": 28.64
+            },
+            {
+              "t": "2026-08-06",
+              "v": 29.38
+            },
+            {
+              "t": "2026-08-10",
+              "v": 31.46
+            },
+            {
+              "t": "2026-08-11",
+              "v": 31.6
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "TheStreet, Super Micro Q4 2026",
+          "url": "https://www.thestreet.com/latest-news/super-micro-computer-inc-smci-q4-2026-earnings-updates",
+          "tier": 2
+        },
+        {
+          "title": "Seeking Alpha, Super Micro Ausblick",
+          "url": "https://seekingalpha.com/news/4630776-super-micro-computer-pops-on-strong-outlook",
+          "tier": 2
+        },
+        {
+          "title": "Alpha Vantage, TIME_SERIES_DAILY SMCI (11.8.2026)",
+          "url": "",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "server-montagelinie.jpg",
+        "alt": "Techniker montieren Server-Racks an einer hell beleuchteten Fertigungslinie mit Kabelbündeln",
+        "caption": "Server-Montage in der Fertigung",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "lumentum-earnings",
+      "ressort": "unternehmen",
+      "kicker": "Earnings · Optik",
+      "headline": "Lumentum verdoppelt den Umsatz, doch ein Buchverlust verwirrt die Anleger",
+      "dek": "Der Anbieter optischer Komponenten für Rechenzentren wächst kräftig. Ein Milliardenverlust in der Bilanz stammt jedoch aus der Wandlung von Anleihen und kostet kein Bargeld.",
+      "body": [
+        "Der Hersteller optischer Komponenten Lumentum hat am Dienstagabend Zahlen vorgelegt, die auf den ersten Blick einen Widerspruch enthalten. Der Umsatz stieg im vierten Geschäftsquartal um 109 Prozent auf 1,01 Milliarden Dollar und übertraf den Konsens. Der bereinigte Gewinn je Aktie lag mit 3,23 Dollar klar über der Erwartung. Zugleich wies das Unternehmen einen bilanziellen Nettoverlust von rund 7,2 Milliarden Dollar aus. Die anfängliche Kursreaktion von rund drei Prozent verpuffte, als Anleger diesen Verlust verarbeiteten.",
+        "Die Auflösung liegt in der Herkunft des Verlustes. Er stammt aus einer einmaligen, nicht zahlungswirksamen Belastung von rund 7,8 Milliarden Dollar aus der Wandlung bestimmter Wandelanleihen in Stammaktien. Ein solcher Buchverlust kostet das Unternehmen kein Bargeld und berührt das operative Geschäft nicht. Er entsteht rein rechnerisch, weil die Umwandlung der Anleihen bilanziell erfasst werden muss. Der Kassenbestand lag zum Quartalsende bei 2,7 Milliarden Dollar.",
+        "Für die Zukunft gab Lumentum einen zuversichtlichen Ausblick. Für das erste Quartal des neuen Geschäftsjahres stellte das Unternehmen einen Umsatz von 1,225 bis 1,275 Milliarden Dollar und einen bereinigten Gewinn je Aktie von 4,05 bis 4,35 Dollar in Aussicht, jeweils klar über den bisherigen Erwartungen. Lumentum profitiert vom Ausbau der KI-Rechenzentren, weil diese enorme Mengen optischer Verbindungen für den schnellen Datentransport zwischen den Servern benötigen. Die Kursreaktion zeigt, dass der Markt zwischen einem operativen Einbruch und einem rein bilanziellen Effekt unterscheiden muss."
+      ],
+      "mechanik": "Warum ist ein Milliardenverlust in der Bilanz nicht immer ein schlechtes Zeichen? Weil die Rechnungslegung zwischen zahlungswirksamen und nicht zahlungswirksamen Posten unterscheidet. Ein Verlust aus der Wandlung von Anleihen entsteht rein rechnerisch und kostet kein Bargeld. Das operative Geschäft, also Umsatz, Marge und Cashflow, bleibt davon unberührt. Anleger, die nur auf den ausgewiesenen Nettoverlust schauen, ziehen den falschen Schluss. Wer die bereinigten Kennzahlen und den Cashflow liest, erkennt, dass Lumentum operativ kräftig gewachsen ist.",
+      "company": {
+        "name": "Lumentum Holdings",
+        "ticker": "LITE",
+        "exchange": "Nasdaq",
+        "logoKey": "lumentum",
+        "whatTheyDo": "Lumentum stellt optische und photonische Komponenten her, etwa Laser und Transceiver, die Daten in Rechenzentren und Telekomnetzen mit Licht übertragen. Die KI-Rechenzentren treiben die Nachfrage, weil sie riesige Mengen schneller optischer Verbindungen brauchen.",
+        "whyItMatters": "Lumentum ist ein Anschauungsfall für den Unterschied zwischen einem bilanziellen Buchverlust und der operativen Ertragskraft. Das starke Wachstum zeigt die Nachfrage aus dem KI-Ausbau.",
+        "keyMetrics": [
+          [
+            "Q4-Umsatz",
+            "1,01 Mrd. $ (+109 % j/j)"
+          ],
+          [
+            "Bereinigter Gewinn je Aktie",
+            "3,23 $ (über Konsens)"
+          ],
+          [
+            "GAAP-Nettoverlust",
+            "-7,2 Mrd. $ (nicht zahlungswirksam)"
+          ],
+          [
+            "Ursache",
+            "Wandlung von Wandelanleihen (~7,8 Mrd. $)"
+          ],
+          [
+            "Kassenbestand",
+            "2,7 Mrd. $"
+          ],
+          [
+            "Prognose Q1 Umsatz",
+            "1,225 bis 1,275 Mrd. $"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Yahoo Finance, Lumentum Q4 und Wandelanleihen-Verlust",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/lite-stock-gains-then-fades-211630012.html",
+          "tier": 2
+        },
+        {
+          "title": "AskTraders, Optik-Zulieferer der KI-Kette",
+          "url": "https://www.asktraders.com/analysis/cisco-applied-materials-and-coherent-earnings-preview-big-techs-ai-bellwethers-report-this-week/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "laserlabor-glasfaser.jpg",
+        "alt": "Ein Techniker im Laborkittel testet Glasfaser-Lasermodule an einer optischen Bank mit sichtbarem grünen Laserlicht",
+        "caption": "Test von Glasfaser-Lasermodulen im Optiklabor",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Unternehmen, die Öl und Gas fördern, verarbeiten und transportieren.",
+      "lage": "Fest. Die Hormus-Prämie hält Brent um 89 Dollar und stützt die Förderer, zusätzlich befeuert von den drohenden Russland-Sanktionen.",
+      "richtung": "up",
+      "tagesWert": "Brent ~89,37 $ (+0,5 %), WTI ~84 $ (Trading Economics, 11./12.8.)",
+      "istZustand": "Der Energiesektor lebt derzeit von einer erhöhten geopolitischen Risikoprämie bei zugleich disziplinierter Angebotssteuerung. Die Bewertungen der großen integrierten Konzerne sind gemessen an Cashflow-Vielfachen weiter moderat, weil der Markt die aktuelle Ölprämie als fragil und potenziell reversibel einstuft. Der weite Abstand von rund 5,5 Dollar zwischen dem seeverschifften Brent und dem binnenländischen US-Öl WTI zeigt, dass die Prämie geografisch konzentriert an den bedrohten Seewegen sitzt. In den nächsten Quartalen bleiben die Lage in der Straße von Hormus, die möglichen Sekundärsanktionen gegen Abnehmer russischer Energie und die Förderpolitik des Kartells OPEC die dominierenden Treiber. Nach dem Gedanken des Kapitalzyklus stützt die anhaltende Investitionszurückhaltung der Branche weiterhin enge Angebotspuffer und damit die Preise."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Rohstoffen wie Metallen, Chemikalien und Baustoffen.",
+      "lage": "Zweigeteilt. Gold nahe Rekord und Silber um 65 Dollar treiben die Minen, energieintensive Chemie leidet unter hohen Gaspreisen.",
+      "richtung": "up",
+      "tagesWert": "Gold ~4.375 $, Silber ~65 $, Kupfer ~6,61 $/lb (Fortune/Trading Economics, 11.8.)",
+      "istZustand": "Der Sektor ist klar zweigeteilt. Die Edelmetall- und Kupferminen erleben eine ausgeprägte Aufwärtsphase, getragen von Rekordpreisen bei Gold und Silber sowie von Vorratskäufen vor den US-Metallzöllen von 50 Prozent. Die Bewertungen der Minen sind trotz der Kursgewinne teils noch nicht hoch, weil der Markt die Nachhaltigkeit der Rohstoffpreise anzweifelt. Die Chemie- und Verpackungshersteller dagegen stehen spät im Zyklus mit Überkapazitäten in einzelnen Segmenten und leiden unter hohen Energiekosten, in Europa verschärft durch einen Gaspreis nahe dem Siebenfachen des US-Niveaus. Strukturelle Treiber der nächsten Quartale sind der Silberbedarf aus Solar und Elektronik, die zollgetriebene Verlagerung der Kupfernachfrage in die USA sowie die Frage, ob die Realzinsen weiter fallen. Angebot und Nachfrage bestimmen hier stärker als in defensiven Sektoren die Ertragslage."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbauer, Rüstung, Transport und Anbieter von Investitionsgütern.",
+      "lage": "Uneinheitlich. Datacenter- und Energieausrüster fest, klassische Zykliker gebremst von hohen Zinsen und teurem Treibstoff.",
+      "richtung": "neutral",
+      "tagesWert": "keine einheitlichen US-Sektordaten belegt; Siemens Energy in Europa +2,6 %",
+      "istZustand": "Die Industrie steht an einer konjunkturellen Weggabelung. Hohe Finanzierungskosten und teurer Treibstoff dämpfen klassische zyklische Investitionsgüter, Airlines und Logistiker, während die strukturelle Nachfrage aus dem KI-Rechenzentrumsbau einzelne Teilbranchen wie Kühltechnik, Stromverteilung und Elektroausrüstung überdurchschnittlich stützt. Die Bewertungen sind entsprechend gespreizt, mit hohen Vielfachen für Datacenter- und Rüstungszulieferer und moderaten für klassische Maschinenbauer. Der Bericht von Siemens Energy über einen Rekord bei Gasturbinen-Aufträgen unterstreicht, wie stark die Stromseite des KI-Booms die Auftragsbücher füllt. In den nächsten Quartalen entscheidet die Balance aus Reshoring-Investitionen, Verteidigungsbudgets und der Frage, wie lange der KI-Capex-Boom die Auftragspipelines trägt. Der schwache Arbeitsmarkt bleibt ein Risiko für die zyklischen Segmente."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter von Gütern, die Verbraucher bei guter Lage kaufen, etwa Autos, Reisen und Luxus.",
+      "lage": "Unter Druck. Hohe Benzinpreise und Langfristzinsen belasten die Kaufkraft.",
+      "richtung": "down",
+      "tagesWert": "keine einheitlichen Sektordaten belegt; Adidas in Europa -3,1 %",
+      "istZustand": "Der zyklische Konsum steht spät im Zyklus unter Druck von zwei Seiten. Der zuletzt schwache Arbeitsmarkt sät Zweifel an der künftigen Kaufkraft, und hohe Langfristzinsen verteuern die Finanzierung großer Anschaffungen wie Autos und Wohnimmobilien. Zusätzlich schmälern die gestiegenen Benzinpreise das verfügbare Einkommen. Die Bewertungen sind uneinheitlich, weil der Sektor in der Klassifikation von Amazon dominiert wird, das eine eigene Cloud- und Handelsdynamik hat. Der Kursrutsch bei Adidas nach schwachen Zahlen des Wettbewerbers On Holding zeigt, wie empfindlich der Sportartikel- und Konsumbereich auf Nachfragesignale reagiert. Strukturelle Treiber der nächsten Quartale sind die Entwicklung des Arbeitsmarktes, das Zinsniveau und die Frage, ob die einkommensstarken Haushalte ihre Ausgaben halten, während einkommensschwächere Haushalte sparen."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Hersteller von Gütern des täglichen Bedarfs wie Lebensmitteln und Haushaltswaren.",
+      "lage": "Defensiv stabil. Profitiert von Verunsicherung, gebremst durch die Dividendenkonkurrenz hoher Anleiherenditen.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Basiskonsum bleibt der klassische defensive Anker mit stabiler Nachfrage unabhängig von der Konjunktur. In der aktuellen Lage profitiert der Sektor von der Verunsicherung über Arbeitsmarkt und Inflation, weil Anleger in schwankenden Phasen planbare Erträge suchen. Gegenwind kommt von der Bewertungsseite, denn die stabilen Dividenden der Konsumriesen konkurrieren mit den nun hohen Renditen sicherer Anleihen um Kapital. Die Margen stehen unter Kostendruck durch höhere Energie- und Transportpreise, solange sich diese nicht voll an die Verbraucher weitergeben lassen. Strukturell prägt den Sektor der Kampf um Preissetzungsmacht gegenüber preissensiblen Verbrauchern und die Verschiebung hin zu günstigeren Eigenmarken. Die Bewertungen liegen nahe dem langfristigen Durchschnitt, mit einer leichten Prämie für besonders defensive Qualitätstitel."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharmakonzerne, Biotech, Medizintechnik und Gesundheitsdienstleister.",
+      "lage": "Ruhig. Von Öl und Halbleitern weitgehend entkoppelt, defensive Nachfrage stabil.",
+      "richtung": "neutral",
+      "tagesWert": "keine US-Sektordaten belegt; Qiagen in Europa -3,4 %",
+      "istZustand": "Der Gesundheitssektor zeigt seine typische defensive Verankerung, weil die Nachfrage nach Medikamenten und Behandlungen von Konjunktur, Ölpreis und Chip-Zyklus weitgehend unabhängig ist. Die Bewertungen der großen Pharmakonzerne sind gemessen an ihren Gewinnen moderat, teils gedrückt durch die Sorge vor Patentabläufen und regulatorischem Preisdruck in den USA. Wachstumsstarke Biotech-Werte mit weit in der Zukunft liegenden Gewinnen leiden dagegen unter den hohen Langfristzinsen, weil ihr Wert stark von der Abzinsung ferner Zahlungen abhängt. Strukturelle Treiber der nächsten Quartale sind die Pipeline neuer Wirkstoffe, die Entwicklung bei Abnehmmedikamenten sowie die US-Zölle auf patentierte Arzneien, die seit Ende Juli gelten. Der Sektor bleibt ein bevorzugter Zufluchtsort, wenn die Risikobereitschaft der Anleger sinkt."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer, Vermögensverwalter und Börsendienstleister.",
+      "lage": "Gemischt bis fest. Höhere Langfristrenditen helfen der Zinsmarge, der schwache Arbeitsmarkt erhöht das Kreditrisiko.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten US-Sektordaten (laut Tagesnarrativ unter den festeren Bereichen)",
+      "istZustand": "Der Finanzsektor profitiert derzeit von höheren Langfristrenditen, weil Banken kurzfristig günstig Geld aufnehmen und langfristig teurer verleihen. Gleichzeitig belastet der zuletzt schwache Arbeitsmarkt die Aussicht, weil steigende Arbeitslosigkeit das Risiko von Kreditausfällen erhöht und das Kreditwachstum bremst. Die Bewertungen der Großbanken sind gemessen an ihren Buchwerten weiter moderat, was Spielraum nach oben lassen kann, falls die Konjunktur nicht einbricht. Investmentbanken und Kapitalmarktdienstleister erleben eine Belebung durch die rege Emissions- und Übernahmetätigkeit, die auch aus der Finanzierung des KI-Capex-Booms gespeist wird. Strukturelle Treiber der nächsten Quartale sind die Kreditqualität, die Regulierung sowie die Frage, ob die Kapitalmarktaktivität den zinsbedingten Gegenwind überwiegt."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Hersteller von Software, Halbleitern, Hardware und IT-Ausrüstung.",
+      "lage": "Gespalten. Große Standardwerte gaben vor dem CPI leicht nach, die KI-Infrastruktur-Earnings kamen stark.",
+      "richtung": "down",
+      "tagesWert": "QQQ -0,34 %, Nasdaq Comp ~-0,6 % (Alpha Vantage/TheStreet, 11.8.)",
+      "istZustand": "Die Informationstechnologie ist der Sektor mit der größten internen Spreizung. Die Software-Mega-Caps handeln mit hohen, aber durch prall gefüllte Kassen und stabile Cashflows gestützten Bewertungen und gelten in Zinsphasen als relativ sicher. Die Halbleiter- und KI-Infrastrukturwerte dagegen sind hochzyklisch und reagieren empfindlich auf jede Änderung der Nachfrageerwartung, wie die starken Zahlen von CoreWeave, Super Micro und Lumentum am Dienstagabend zeigten. Der KI-Investitionsboom treibt weiter enorme Umsätze, wirft aber zunehmend Fragen nach Margen, Finanzierung und Nachhaltigkeit auf. Nach dem Gedanken des Kapitalzyklus erhöht der aktuelle Investitionsschub das künftige Angebot und damit das Risiko späterer Überkapazitäten. Strukturelle Treiber der nächsten Quartale sind die Earnings der KI-Infrastrukturwerte, die Speicherpreise und die Dauer der hohen Investitionsbudgets der großen Cloud-Konzerne."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Internetplattformen, Medien, Werbung und Telekommunikation.",
+      "lage": "Gemischt. Plattformkonzerne als KI-Großabnehmer im Fokus, klassische Werbung und Medien uneinheitlich.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten US-Sektordaten",
+      "istZustand": "Der Kommunikationssektor wird von wenigen digitalen Plattformkonzernen dominiert, die als Profiteure von KI-Anwendungen gelten und mit hohen Cashflows aufwarten. Ihre Bewertungen sind ambitioniert, aber durch das Gewinnwachstum gestützt. Als Großabnehmer von KI-Cloud-Kapazität, sichtbar an der 21-Milliarden-Dollar-Zusage von Meta an CoreWeave, tragen sie einen erheblichen Teil des Capex-Booms und damit auch dessen Margenrisiko. Die klassischen Telekom- und Medienanbieter dagegen tragen hohe Schulden und leiden unter dem strukturellen Rückgang linearer Fernseh- und Festnetzgeschäfte sowie unter den hohen Zinsen. Werbefinanzierte Geschäfte reagieren empfindlich auf ein schwächeres Konsumumfeld. Strukturelle Treiber der nächsten Quartale sind die Monetarisierung von KI-Funktionen, die Entwicklung der Werbemärkte und der Schuldenabbau bei den Telekomkonzernen."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Betreiber von Strom-, Gas- und Wassernetzen sowie Kraftwerken.",
+      "lage": "Gegenläufig. Hohe Zinsen belasten die Finanzierung, der KI-Strombedarf eröffnet eine strukturelle Wachstumsperspektive.",
+      "richtung": "neutral",
+      "tagesWert": "keine belegten US-Sektordaten",
+      "istZustand": "Der Versorgersektor steht im Spannungsfeld zweier gegenläufiger Kräfte. Auf der einen Seite belasten die hohen Langfristzinsen die stark verschuldeten, kapitalintensiven Unternehmen, weil ihre Finanzierung teurer wird und ihre stabilen Dividenden als Anleiheersatz an relativer Attraktivität verlieren. Auf der anderen Seite eröffnet der stark steigende Strombedarf der KI-Rechenzentren eine strukturelle Wachstumsperspektive, die den Sektor von einem reinen Zinsproxy zu einer Wachstumsstory wandeln kann. Der 20-Jahres-Stromvertrag von Riot Platforms mit dem KI-Unternehmen Anthropic über rund 9,1 Milliarden Dollar ist ein Musterbeispiel für diese planbare, langfristige Nachfrage. Die Bewertungen sind entsprechend uneinheitlich, mit einem Aufschlag für Betreiber, die glaubwürdig an der Stromnachfrage der Rechenzentren teilhaben. Strukturelle Treiber bleiben das Zinsniveau, der Netzausbau und die langfristigen Stromlieferverträge."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Immobiliengesellschaften und börsennotierte Immobilienfonds (REITs).",
+      "lage": "Belastet. Als zinssensibelster Sektor leidet Immobilien am stärksten unter den steigenden Langfristrenditen.",
+      "richtung": "down",
+      "tagesWert": "keine belegten US-Sektordaten",
+      "istZustand": "Der Immobiliensektor ist der zinssensibelste Bereich des Marktes und steht deshalb im Zentrum der aktuellen Renditebewegung. Steigende Langfristzinsen verteuern die Finanzierung der stark fremdfinanzierten REITs, lassen die Kapitalisierungsraten steigen und drücken damit die rechnerischen Immobilienwerte. Zugleich verlieren die hohen Dividendenrenditen an relativer Attraktivität gegenüber sicheren Anleihen. Die Bewertungen sind nach der Schwäche der vergangenen Jahre in vielen Teilsegmenten gedrückt, was bei einer Zinswende erhebliches Erholungspotenzial bergen kann. Genau darauf zielt die Rotation in zinssensible Werte vor dem Verbraucherpreisindex. Eine Ausnahme bilden Rechenzentrums-REITs, die vom KI-Ausbau profitieren und mit Aufschlag handeln. Strukturelle Treiber der nächsten Quartale sind die Zinsentwicklung, die Auslastung in den Segmenten Büro, Wohnen und Logistik sowie die anhaltende Nachfrage nach Rechenzentrumsfläche."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "Monarch Casino & Resort",
+      "ticker": "MCRI",
+      "logoKey": "monarch",
+      "marketCapEUR": "1,88 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 12.8.2026 (2,172 Mrd. $, Faktor USD/EUR 0,86663)",
+      "marktEinordnung": "Monarch Casino ist ein fokussierter Betreiber von zwei hochwertigen Regionalcasino-Resorts, dem Atlantis in Reno im Bundesstaat Nevada und dem Monarch in Black Hawk im Bundesstaat Colorado. Der Markt für Regionalcasinos außerhalb des Las-Vegas-Strip ist von hohen regulatorischen Eintrittsbarrieren geprägt, weil Glücksspiellizenzen streng limitiert sind. Monarch ist in seinen zwei Märkten führend, weil das Unternehmen eigene Premium-Immobilien entwickelt und betreibt statt ein breites, verwässertes Portfolio zu führen, was die überdurchschnittliche Profitabilität erklärt.",
+      "thesis": "Die These setzt auf einen defensiven Qualitätsbetreiber am Ende einer teuren Bauphase. Monarch erzielt eine hohe Eigenkapitalrendite von rund 20,5 Prozent bei einer operativen Marge von 27,4 Prozent und einer niedrigen Verschuldung. Nachdem der aufwendige Ausbau des Resorts in Black Hawk abgeschlossen ist, tritt der Standort in die Reifephase ein, in der der Wachstums-Capex sinkt und mehr freier Cashflow übrig bleibt. Das Insider-Engagement ist mit rund 32,5 Prozent hoch, was die Interessen des Managements eng an die der Aktionäre bindet. Der Gewinn je Aktie wuchs zuletzt um 23,6 Prozent gegenüber dem Vorjahr, deutlich schneller als der Umsatz mit 4,2 Prozent, was auf eine verbesserte Kostenstruktur hindeutet. Sollte der heutige Verbraucherpreisindex den Weg für sinkende Zinsen ebnen, stützt das die reale Kaufkraft der Regionalgäste. Das Analysten-Kursziel von 126,50 Dollar deutet Erholungspotenzial an, der Titel handelt nahe seinem Jahrestief.",
+      "kennzahlen": [
+        [
+          "Börsenwert",
+          "1,88 Mrd. € (2,172 Mrd. $)"
+        ],
+        [
+          "Kurs-Gewinn-Verhältnis",
+          "19,5 (forward 19,2)"
+        ],
+        [
+          "Eigenkapitalrendite",
+          "20,5 %"
+        ],
+        [
+          "Operative Marge",
+          "27,4 %"
+        ],
+        [
+          "Beta",
+          "1,35"
+        ],
+        [
+          "Analysten-Kursziel",
+          "126,50 $"
+        ]
+      ],
+      "counterarguments": [
+        "Mit nur zwei Standorten trägt Monarch ein hohes Klumpenrisiko. Eine lokale Nachfrageschwäche, ein Wetterereignis oder verschärfter Wettbewerb in einem der beiden Märkte würde unmittelbar durchschlagen.",
+        "Regionalcasinos hängen am Ausgabeverhalten der Mittelschicht. Ein schwacher Arbeitsmarkt und anhaltend hohe Zinsen würden das diskretionäre Budget der Gäste treffen und Umsatz sowie Marge belasten.",
+        "Mit einem Kurs-Gewinn-Verhältnis von rund 19 bei einem Umsatzwachstum von nur gut vier Prozent ist der Titel nicht billig. Viel Qualität ist bereits eingepreist, was den Spielraum für Enttäuschungen verringert."
+      ],
+      "catalysts": [
+        "Der nächste Quartalsbericht mit Fokus auf die Auslastung und Marge des Resorts in Black Hawk.",
+        "Eine mögliche Kapitalrückführung über Aktienrückkäufe oder eine Sonderdividende bei weiter sinkendem Wachstums-Capex.",
+        "Ein kühler Verbraucherpreisindex, der die Zinswende näher rückt und die reale Kaufkraft der Regionalgäste stützt."
+      ]
+    },
+    {
+      "name": "NexPoint Residential Trust",
+      "ticker": "NXRT",
+      "logoKey": "nexpoint",
+      "marketCapEUR": "rund 0,65 Mrd. € (Micro-Cap)",
+      "capSource": "stockanalysis.com 11.8.2026 (~0,65 Mrd. $ bei ~25,5 Mio. Aktien und Kurs ~25 $); Alpha Vantage nennt abweichend 1,29 Mrd. $, der Titel bleibt in jedem Fall weit unter 10 Mrd. €",
+      "marktEinordnung": "NexPoint Residential besitzt und modernisiert Mehrfamilien-Wohnanlagen im US-Sunbelt, also in zuzugsstarken Regionen des Südens wie Texas, Florida, Georgia und Arizona. Der Markt für bezahlbaren Wohnraum in diesen Wachstumsregionen wird strukturell von der Binnenmigration in arbeitsplatzreiche Metroregionen getragen. NexPoint verfolgt eine Value-Add-Strategie, kauft ältere Objekte, renoviert die Einheiten und hebt so Mieten und Objektwert. Als kleiner, extern gemanagter REIT ist der Titel ein fokussiertes und stark gehebeltes Vehikel auf dieses Sunbelt-Wohnthema.",
+      "thesis": "Die These ist eine bewusste Zins- und Erwartungswette. Als stark fremdfinanzierter Wohn-REIT reagiert NexPoint überproportional auf die Zinsentwicklung. Ein glaubwürdiger, durch den heutigen Verbraucherpreisindex ausgelöster Pfad sinkender Zinsen würde die Refinanzierungskosten senken und die Kapitalisierungsraten drücken, was den Nettoinventarwert stark hebeln würde. Der Kurs notiert nahe einem Mehrjahrestief, und die Dividendenrendite von rund 8,2 Prozent signalisiert, dass der Markt viel Pessimismus eingepreist hat. Bei Immobiliengesellschaften ist zudem der ausgewiesene Nettogewinn wenig aussagekräftig, weil hohe Abschreibungen ihn verzerren, weshalb die operative Kennzahl der Mittelzuflüsse relevanter ist. Wer auf eine Zinswende und eine Stabilisierung der Sunbelt-Mieten setzt, erhält hier einen Titel mit hoher Hebelwirkung auf genau dieses Szenario. Das Analysten-Kursziel von 29,60 Dollar deutet Erholungspotenzial an, die Ratings sind jedoch gemischt.",
+      "kennzahlen": [
+        [
+          "Börsenwert",
+          "rund 0,65 Mrd. € (Micro-Cap)"
+        ],
+        [
+          "Dividendenrendite",
+          "~8,2 %"
+        ],
+        [
+          "Umsatz (TTM)",
+          "253 Mio. $ (+0 bis 2 %)"
+        ],
+        [
+          "Beta",
+          "1,19"
+        ],
+        [
+          "52-Wochen-Spanne",
+          "23,35 bis 32,44 $"
+        ],
+        [
+          "Analysten-Kursziel",
+          "29,60 $"
+        ]
+      ],
+      "counterarguments": [
+        "Der hohe Verschuldungsgrad wirkt in beide Richtungen. Bleiben die langen Zinsen hoch, drücken die Zinsaufwendungen die Mittelzuflüsse und die Deckung der Dividende, die dann unter Druck geraten könnte.",
+        "Eine Angebotswelle neuer Wohnungen im Sunbelt bremst das Mietwachstum. Der Umsatz stagniert bereits, und Analysten haben zuletzt ihre Kursziele wegen des schwachen Nahfrist-Ausblicks gesenkt.",
+        "Als Mikro-Cap mit einem Börsenwert unter einer Milliarde Dollar trägt der Titel ein erhöhtes Liquiditäts- und Volatilitätsrisiko, das ihn zu einem bewusst spekulativen Baustein macht."
+      ],
+      "catalysts": [
+        "Ein kühler Verbraucherpreisindex und ein Fed-Signal in Richtung Zinswende.",
+        "Jede Andeutung sinkender Langfristrenditen oder eine Kompression der Kapitalisierungsraten bei Sunbelt-Transaktionen.",
+        "Eine Stabilisierung des Mietwachstums, sobald die Angebotswelle im Sunbelt abebbt."
+      ]
+    },
+    {
+      "name": "Marqeta",
+      "ticker": "MQ",
+      "logoKey": "marqeta",
+      "marketCapEUR": "1,41 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 12.8.2026 (1,624 Mrd. $, Faktor USD/EUR 0,86663)",
+      "marktEinordnung": "Marqeta betreibt eine cloudbasierte Plattform, über die Unternehmen per Programmierschnittstelle eigene Debit-, Kredit-, Prepaid- und virtuelle Karten ausgeben und Zahlungen abwickeln. Der Markt für modernes Card Issuing wächst mit der Verbreitung von Fintechs, Neobanken und eingebetteten Bezahlfunktionen in Apps. Marqeta gehört zu den führenden spezialisierten Anbietern auf der Ausgabeseite, weil die technische Tiefe der Schnittstellen und die aufwendigen Zertifizierungen hohe Wechselkosten schaffen, sobald ein Kunde sein Kartenprogramm auf der Plattform aufgesetzt hat.",
+      "thesis": "Die These setzt auf die Skalierung des verarbeiteten Volumens. Das über die Plattform abgewickelte Zahlungsvolumen wuchs im zweiten Quartal um rund 32 Prozent auf etwa 120 Milliarden Dollar und damit deutlich schneller als der Umsatz mit rund 17 bis 22 Prozent. Diese Schere legt Skaleneffekte im Betriebsmodell frei, sobald sich die Nettoabgaberate stabilisiert. Der Umsatz erreichte auf Zwölfmonatssicht rund 677 Millionen Dollar bei einer hohen Bruttomarge von rund 70 Prozent, und das Unternehmen ist knapp profitabel geworden. Neue Partnerschaften mit großen Plattformen und im Bereich der Stablecoin-Abwicklung eröffnen angrenzende Wachstumsfelder und passen zum Tagesthema der KI- und fintechgetriebenen Zahlungsinnovation. Der Kurs notiert nahe seinem Jahrestief, das Analysten-Kursziel von 20,80 Dollar deutet Erholungspotenzial an. Wer an die fortgesetzte Verlagerung des Zahlungsverkehrs auf programmierbare Kartenplattformen glaubt, erhält hier einen spezialisierten Anbieter mit Wechselkosten-Moat.",
+      "kennzahlen": [
+        [
+          "Börsenwert",
+          "1,41 Mrd. € (1,624 Mrd. $)"
+        ],
+        [
+          "Umsatz (TTM)",
+          "677 Mio. $ (+17 bis 22 %)"
+        ],
+        [
+          "Bruttomarge",
+          "~70 %"
+        ],
+        [
+          "Forward-KGV",
+          "~64 (trailing sehr hoch)"
+        ],
+        [
+          "Beta",
+          "1,29"
+        ],
+        [
+          "Analysten-Kursziel",
+          "20,80 $"
+        ]
+      ],
+      "counterarguments": [
+        "Die Kundenkonzentration ist hoch. Der Zahlungsdienst Block mit seiner Cash App war historisch ein dominanter Umsatzanteil, dessen Abhängigkeit ein Klumpenrisiko bleibt.",
+        "Der Umsatz wächst langsamer als das verarbeitete Volumen, was auf eine sinkende Abgaberate je Transaktion hindeutet und die Umsatzqualität belastet.",
+        "Mit einem Forward-KGV von rund 64 preist der Markt fortgesetztes Hochwachstum ein. Jede Wachstumsenttäuschung trifft das Bewertungsvielfache hart, und die Stablecoin- und Wallet-Narrative sind bislang Optionalität ohne belastbaren Umsatzbeitrag."
+      ],
+      "catalysts": [
+        "Der nächste Quartalsbericht mit Fokus auf die Nettoabgaberate und den Umsatzanteil außerhalb von Block.",
+        "Die konkrete Monetarisierung der Partnerschaften mit großen Plattformen und im Stablecoin-Geschäft.",
+        "Eine Fed-Wende, die die Bewertung unprofitabler bis knapp profitabler Wachstumswerte allgemein stützt."
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "US-Verbraucherpreisindex Juli",
+      "when": "Mittwoch 12.8., 14:30 Uhr",
+      "bullishIf": "Kernrate monatlich bei 0,2 % oder darunter, Jahresrate bei oder unter 2,5 %",
+      "bearishIf": "Kernrate monatlich auf 0,3 % oder höher, die Erhöhungsdebatte kehrt zurück"
+    },
+    {
+      "what": "Earnings Cisco",
+      "when": "Mittwoch 12.8. nach US-Schluss",
+      "bullishIf": "Starke KI-Netzwerk-Aufträge und angehobene Guidance",
+      "bearishIf": "Schwacher Auftragseingang oder vorsichtiger Ausblick"
+    },
+    {
+      "what": "US-Erzeugerpreisindex und Einzelhandel",
+      "when": "Donnerstag 13.8. und Freitag 14.8.",
+      "bullishIf": "Erzeugerpreise gedämpft, Einzelhandel stabil",
+      "bearishIf": "Erzeugerpreise heiß, Konsum bricht ein"
+    },
+    {
+      "what": "Earnings Applied Materials",
+      "when": "Donnerstag 13.8. nach US-Schluss",
+      "bullishIf": "Starke Nachfrage nach Chipfertigungsanlagen bestätigt den KI-Capex",
+      "bearishIf": "Vorsichtiger Ausblick oder China-Schwäche"
+    },
+    {
+      "what": "Straße von Hormus",
+      "when": "laufend, 60-Tage-Fenster läuft",
+      "bullishIf": "Oman-Route wird umgesetzt, Schiffsverkehr normalisiert sich messbar",
+      "bearishIf": "Neue Angriffe oder Stillstand, Brent nachhaltig über 90 Dollar"
+    },
+    {
+      "what": "Graham Act im Repräsentantenhaus",
+      "when": "ab 31.8., Abstimmung im September erwartet",
+      "bullishIf": "Verzögerung oder abgeschwächte Fassung",
+      "bearishIf": "Rasche Verabschiedung der Sekundärzölle gegen China und Indien"
+    },
+    {
+      "what": "Zehnjährige US-Rendite",
+      "when": "täglich",
+      "bullishIf": "Rendite fällt zurück unter 4,60 %",
+      "bearishIf": "Rendite steigt nachhaltig über 4,80 %, Druck auf zinssensible Sektoren"
+    },
+    {
+      "what": "Gold- und Silberpreis",
+      "when": "täglich",
+      "bullishIf": "Realzinsen fallen weiter, der Rekordlauf setzt sich fort",
+      "bearishIf": "Ein heißer CPI treibt die Zinserwartung hoch, Edelmetalle korrigieren"
+    },
+    {
+      "what": "Ausschüttungen von Samsung und SK Hynix",
+      "when": "offizielle Ankündigung frühestens Ende August",
+      "bullishIf": "Rekordprogramm über 100 Bio. Won wird bestätigt",
+      "bearishIf": "Bericht erweist sich als zu optimistisch oder wird relativiert"
+    }
+  ],
+  "learningNotes": [
+    "Eine Aktie reagiert auf Nachrichten relativ zu den Erwartungen, nicht auf die Nachricht allein.",
+    "Im inflationsgetriebenen Regime wirkt ein schwacher Arbeitsmarkt als Bremse gegen eine Zinserhöhung, nicht als Startsignal für eine Senkung.",
+    "Guidance schlägt oft die historische Quartalszahl, wie der Kurssprung von Super Micro trotz Umsatzverfehlung zeigt.",
+    "Ein bilanzieller Buchverlust ist nicht dasselbe wie ein Abfluss von Bargeld, wie der Fall Lumentum verdeutlicht.",
+    "Öl und Gold können gleichzeitig steigen, weil sie auf verschiedene Ängste reagieren, Angebotsknappheit und fallende Realzinsen."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "VWL",
+      "modell": "Realzins und Opportunitätskosten von Gold",
+      "erklaerung": "Der Realzins ist der Zins nach Abzug der erwarteten Inflation. Er zeigt, wie viel Kaufkraft ein Anleger real gewinnt, wenn er sein Geld in sicheren Anleihen anlegt. Gold zahlt keine Zinsen. Wer Gold hält, verzichtet also auf die Verzinsung, die er mit Anleihen erzielen könnte. Diesen Verzicht nennt man Opportunitätskosten. Sinkt der Realzins, etwa weil die Inflation steigt oder die Notenbank Zinssenkungen erwarten lässt, dann sinken die Opportunitätskosten des Goldhaltens, und Gold wird attraktiver. Ein schwacher Dollar verstärkt den Effekt, weil er dollarpreisiertes Gold für ausländische Käufer verbilligt.",
+      "anwendung": "Gold notiert bei rund 4.375 Dollar nahe seinem Rekord, obwohl die nominalen Renditen gestiegen sind. Der Markt preist offenbar höhere Inflation und damit sinkende Realzinsen ein, was zusammen mit dem schwachen Dollar die Goldnachfrage stützt."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Auftragsbestand und Umsatzvisibilität",
+      "erklaerung": "Der Auftragsbestand, im Englischen Backlog, ist die Summe aller verbindlich zugesagten, aber noch nicht als Umsatz verbuchten Aufträge. Er gibt Anlegern eine Vorstellung davon, wie sichtbar die künftigen Umsätze eines Unternehmens sind. Ein großer Auftragsbestand relativ zum Jahresumsatz signalisiert eine hohe Nachfrage und reduziert die Unsicherheit über die nächsten Quartale. Wichtig ist jedoch, dass ein Auftrag erst dann zu Gewinn wird, wenn das Unternehmen die nötigen Vorleistungen erbracht und die Kosten gedeckt hat. Ein Backlog zeigt die Nachfrage, nicht die Profitabilität. Die verwandte Kennzahl Book-to-Bill misst, ob mehr neue Aufträge hereinkommen als abgearbeitet werden.",
+      "anwendung": "CoreWeave meldet einen Auftragsbestand von rund 104 Milliarden Dollar bei einem Jahresumsatz von gut 12 Milliarden. Das zeigt enorme Nachfrage nach KI-Rechenleistung, sagt aber nichts darüber, ob nach den gewaltigen Investitionen in Rechenzentren am Ende ein Gewinn übrig bleibt."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Bilanzieller Gewinn gegen Cashflow",
+      "erklaerung": "Der in der Gewinn- und Verlustrechnung ausgewiesene Nettogewinn folgt Bilanzregeln und enthält viele Posten, die kein Bargeld bewegen. Dazu zählen Abschreibungen, Wertminderungen und Effekte aus der Wandlung von Anleihen. Solche nicht zahlungswirksamen Posten können den ausgewiesenen Gewinn stark verzerren, ohne dass dem Unternehmen tatsächlich Geld zu- oder abfließt. Der Cashflow dagegen zeigt die realen Zahlungsströme. Für die Beurteilung der Ertragskraft ist deshalb oft der operative Cashflow oder der bereinigte Gewinn aussagekräftiger als der nach Bilanzregeln ausgewiesene Nettogewinn. Professionelle Anleger lesen beide Größen und prüfen, woher eine große Abweichung stammt.",
+      "anwendung": "Lumentum weist einen Nettoverlust von rund 7,2 Milliarden Dollar aus, der vollständig aus der nicht zahlungswirksamen Wandlung von Wandelanleihen stammt. Operativ wuchs der Umsatz um 109 Prozent, und der bereinigte Gewinn je Aktie lag über den Erwartungen. Der Buchverlust kostet kein Bargeld."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Aktien-Duration und Sektorrotation",
+      "erklaerung": "Der Wert einer Aktie ergibt sich aus der Summe aller künftigen Gewinne, abgezinst auf heute. Je weiter ein Gewinn in der Zukunft liegt, desto stärker mindert ein höherer Zins seinen heutigen Wert. Aktien, deren Gewinne vor allem in ferner Zukunft erwartet werden, verhalten sich deshalb wie Anleihen mit sehr langer Laufzeit. Man spricht von langer Duration. Wenn Anleger auf sinkende Zinsen setzen, rotieren sie oft in zinssensible und kleinere Werte, die von fallenden Finanzierungskosten besonders profitieren. Umgekehrt leiden diese Werte, wenn die Zinsen steigen. Die Sektorrotation ist damit ein sichtbarer Ausdruck der Zinserwartung des Marktes.",
+      "anwendung": "Am Dienstag gaben die großen Standardwerte nach, während der Nebenwerteindex Russell 2000 zulegte. Diese Rotation in die zinssensiblen kleineren Werte zeigt, dass viele Anleger vor dem Verbraucherpreisindex auf ein freundliches Ergebnis und damit auf sinkende Zinsen setzen."
+    },
+    {
+      "disziplin": "Politikwissenschaft",
+      "modell": "Maritime Chokepoints und geoökonomische Verwundbarkeit",
+      "erklaerung": "Ein Chokepoint ist eine geografische Engstelle, durch die ein großer Teil eines Handelsstroms laufen muss, etwa eine Meerenge oder ein Kanal. Solche Engstellen verleihen dem Akteur, der sie kontrolliert oder bedroht, eine Macht, die weit über seine sonstige wirtschaftliche oder militärische Größe hinausgeht. Weil es kaum Ausweichrouten gibt, kann bereits die Drohung einer Störung globale Preise bewegen und ganze Lieferketten verteuern. Die Kontrolle über Chokepoints ist deshalb ein zentrales Instrument der Geoökonomie, also des Einsatzes wirtschaftlicher Mittel zur Verfolgung geopolitischer Ziele. Für Volkswirtschaften, die stark von Importen über einen einzigen Seeweg abhängen, entsteht daraus eine strukturelle Verwundbarkeit.",
+      "anwendung": "Die Straße von Hormus zeigt diese Hebelwirkung. Obwohl der Ölfluss nur teilweise gestört ist, hält allein die Bedrohung des Seewegs eine Risikoprämie im Brent-Preis um 89 Dollar. Iran nutzt die Kontrolle über die Route als Verhandlungshebel gegenüber Oman und den USA."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Wie CoreWeaves Auftragsberg durch die Bilanzen wandert",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: CoreWeave meldet einen um 112 Prozent höheren Umsatz von 2,58 Milliarden Dollar, bleibt aber beim bereinigten Ergebnis im Minus. Die hohen Abschreibungen auf die teuren Rechenzentren und Grafikprozessoren sowie die Zinslast auf die Finanzierung drücken das Ergebnis. Der Auftragsbestand von 104 Milliarden Dollar erscheint hier noch gar nicht, weil er erst über Jahre in Umsatz umgewandelt wird.",
+      "Bilanz: Um die zugesagte Kapazität zu liefern, baut CoreWeave massiv Sachanlagen auf, vor allem Rechenzentren und Grafikprozessoren. Diese erscheinen als Anlagevermögen und werden über ihre Nutzungsdauer abgeschrieben. Finanziert wird der Ausbau über Schulden und neue Aktien, weshalb die Verbindlichkeiten und das Eigenkapital wachsen. Der Auftragsbestand steht als vertragliche Zusage nicht direkt in der Bilanz, prägt aber die künftige Aktivseite.",
+      "Cashflow: Der operative Cashflow kann bereits positiv sein, doch der freie Cashflow bleibt tief negativ, weil die Investitionen in Rechenzentren enorme Summen verschlingen. Genau diese Lücke zwischen operativem Cashflow und den Investitionen muss über die Finanzierung geschlossen werden, was die Verschuldung treibt.",
+      "Bewertung: Der Markt bewertet CoreWeave anhand der Frage, ob aus dem riesigen Auftragsbestand am Ende ein nachhaltiger freier Cashflow wird. Solange die Investitionen steigen und die Finanzierung teuer bleibt, schwankt der Kurs stark zwischen der Fantasie enormer künftiger Umsätze und der Sorge um Verwässerung und Zinslast."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler ist, den Auftragsbestand von 104 Milliarden Dollar als sicheren künftigen Gewinn zu lesen. Ein Auftrag ist erst dann wertvoll, wenn die dafür nötigen Investitionen gedeckt sind und am Ende freier Cashflow übrig bleibt."
+  },
+  "glossar": [
+    {
+      "begriff": "Verbraucherpreisindex (CPI)",
+      "erklaerung": "Misst die Preisveränderung eines Warenkorbs typischer Konsumgüter und ist das wichtigste Maß für die Inflation."
+    },
+    {
+      "begriff": "Kernrate",
+      "erklaerung": "Die Inflationsrate ohne die stark schwankenden Bereiche Energie und Nahrung, die den zugrunde liegenden Preistrend besser zeigt."
+    },
+    {
+      "begriff": "FOMC",
+      "erklaerung": "Der Offenmarktausschuss der US-Notenbank, der über den Leitzins entscheidet. Nächste Sitzung am 15. und 16. September 2026."
+    },
+    {
+      "begriff": "Auftragsbestand (Backlog)",
+      "erklaerung": "Die Summe verbindlich zugesagter, aber noch nicht als Umsatz verbuchter Aufträge. Zeigt die Nachfrage, nicht den Gewinn."
+    },
+    {
+      "begriff": "Guidance",
+      "erklaerung": "Die Prognose des Managements für künftige Umsätze und Gewinne. Sie verändert die Erwartung direkt und wiegt oft schwerer als die aktuelle Zahl."
+    },
+    {
+      "begriff": "GAAP",
+      "erklaerung": "Die US-Bilanzregeln. Der nach GAAP ausgewiesene Gewinn kann durch nicht zahlungswirksame Posten stark von der Cash-Realität abweichen."
+    },
+    {
+      "begriff": "Wandelanleihe",
+      "erklaerung": "Eine Anleihe, die in Aktien des Unternehmens umgewandelt werden kann. Die Wandlung kann bilanzielle Buchverluste auslösen, ohne Bargeld zu kosten."
+    },
+    {
+      "begriff": "Realzins",
+      "erklaerung": "Der Zins nach Abzug der erwarteten Inflation. Sinkende Realzinsen senken die Opportunitätskosten von zinslosem Gold."
+    },
+    {
+      "begriff": "Opportunitätskosten",
+      "erklaerung": "Der entgangene Nutzen der besten nicht gewählten Alternative, etwa der Zinsverzicht beim Halten von Gold statt Anleihen."
+    },
+    {
+      "begriff": "Chokepoint",
+      "erklaerung": "Eine geografische Engstelle im Handel, etwa eine Meerenge, deren Bedrohung wegen fehlender Ausweichrouten globale Preise bewegt."
+    },
+    {
+      "begriff": "Sekundärsanktion",
+      "erklaerung": "Eine Strafmaßnahme, die Drittstaaten trifft, welche mit einem sanktionierten Land Handel treiben, und so über die eigenen Grenzen hinaus wirkt."
+    },
+    {
+      "begriff": "Abgaberate (Take-Rate)",
+      "erklaerung": "Der Anteil am abgewickelten Zahlungsvolumen, den ein Zahlungsdienstleister als Umsatz vereinnahmt. Eine sinkende Abgaberate belastet die Umsatzqualität."
+    },
+    {
+      "begriff": "Duration (Aktien)",
+      "erklaerung": "Ein Maß dafür, wie stark der Wert einer Aktie auf Zinsänderungen reagiert. Wachstumswerte mit fernen Gewinnen haben eine lange Duration."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "US-Rotation Di 11.8. ETF-gegengeprüft via Alpha Vantage GLOBAL_QUOTE: SPY -0,32 % (770,56), QQQ -0,34 % (718,45), IWM +0,34 % (300,99). Index-Punktstände (S&P 7.728,20 etc.) nur Einzelquelle STL.News (Tier 3), Richtung durch ETFs und TheStreet (Tier 2) bestätigt.",
+      "KI-Earnings Di nach Schluss: CoreWeave Umsatz 2,58 Mrd. $ (+112 %), Backlog ~104 Mrd. $, +14 bis 16 % nachb. (Benzinga/SiliconANGLE); Super Micro Umsatz 11,1 Mrd. $ unter Konsens, EPS 1,62 $, GJ2027-Prognose 65-72 Mrd. $, +8,5 % nachb. (TheStreet/Seeking Alpha); Lumentum Umsatz 1,01 Mrd. $ (+109 %), adj. EPS 3,23 $, GAAP-Verlust 7,2 Mrd. $ aus Anleihewandlung (Yahoo Finance).",
+      "Cap-Gate: MCRI 2,172 Mrd. $ -> 1,88 Mrd. €, MQ 1,624 Mrd. $ -> 1,41 Mrd. € (beide Alpha Vantage COMPANY_OVERVIEW 12.8., USD/EUR 0,86663); NXRT Micro-Cap ~0,65 Mrd. $ (stockanalysis; AV-Cap-Feld intern inkonsistent). Alle klar unter 10 Mrd. €.",
+      "Brent ~89,37 $ (+0,5 %), Gold ~4.375 $ (+0,95 %), Silber ~65 $, Kupfer ~6,61 $ (Trading Economics/Fortune 11./12.8.).",
+      "Renditen 10J ~4,72 %, 2J ~4,25 %, 30J ~5,25 % (Fed H.15 Stand 10.8., Anstieg parallel); DXY ~99,8, EUR/USD 1,154, USD/JPY ~159.",
+      "RBA hielt Leitzins 4,35 % einstimmig unter Gouverneurin Michele Bullock (Bloomberg 11.8.); DE VPI Juli vorl. 2,8 %, final heute (Destatis); EZB 2,25 %, Sitzung 10./11.9.",
+      "Graham Act S.5025 im Senat 86:11 (bzw. 86:12 laut anderer Quelle), Sekundärzölle bis 100 % auf Hauptabnehmer russischer Energie, House ab 31.8. (Congress.gov/Jerusalem Post/CNBC).",
+      "FOMC-Termin 15./16.9.2026 gegen offiziellen Fed-Kalender geprüft (Datums-Gate bestanden). CPI Juli erscheint erst heute 14:30 Berlin, als Vorschau geführt."
+    ],
+    "uncertain": [
+      "Exakte Index-Punktstände Di 11.8. nur Einzelquelle (Tier 3); Richtung und Größenordnung ETF- und Tier-2-bestätigt.",
+      "VIX-Schluss 11.8. nicht belegt, Kachel bewusst weggelassen.",
+      "Samsung/SK-Hynix-Rekordausschüttung (~100 Bio. Won) weiter unbestätigt, offizielle Ankündigung frühestens Ende August.",
+      "Genaue Bruttomarge Super Micro Q4 nicht sauber belegt; CoreWeave-Ist-Capex Q2 nicht bestätigt.",
+      "Graham-Act-Abstimmungsergebnis divergiert (86:11 vs. 86:12); genaue Zollstufen erst mit House-Text final.",
+      "Nikkei/Kospi Mi 12.8. intraday; Hang Seng/Shanghai Mi-Schluss nicht bestätigt (Vortagswerte verwendet)."
+    ],
+    "gaps": [
+      "US-CPI Juli noch nicht veröffentlicht (erscheint heute 14:30 Berlin); Ausgabe führt ihn als Vorschau.",
+      "Exakte Hormus-Transitraten und Bestätigung einer Verkehrsnormalisierung fehlen; kein neuer Tankerangriff gemeldet, aber keine Entwarnung.",
+      "Offizieller Renditeschluss Di 11.8. noch nicht in H.15; verwendete Werte Stand 10.8. plus Marktfarbe.",
+      "Tapestry- und JD.com-Berichtstermine dieser Woche nicht bestätigt, daher nicht als gesetzt geführt.",
+      "Offizielle Regierungsreaktionen China/Indien auf den Graham Act nicht belegt."
+    ]
+  }
+}

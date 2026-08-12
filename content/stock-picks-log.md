@@ -71,3 +71,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-31-morning | The Andersons Inc. (ANDE) | — _(2,11 Mrd. €; zyklischer, moderat bewerteter Agrarwert mit anziehender Ertragskraft)_
 - 2026-07-31-morning | STAG Industrial Inc. (STAG) | — _(6,50 Mrd. €; Qualitäts-REIT mit monatlicher Dividende und robusten Neuvermietungsspreads)_
 - 2026-07-31-morning | Lumen Technologies Inc. (LUMN) | — _(5,90 Mrd. €; gehebelter Turnaround auf den KI-Konnektivitätsbedarf, spekulativster der drei Picks)_
+- 2026-08-12-morning | Monarch Casino & Resort (MCRI) | — _(defensiver Qualitätsbetreiber am Ende einer teuren Bauphase, ~20,5 % Eigenkapitalrendite bei niedriger Verschuldung)_
+- 2026-08-12-morning | NexPoint Residential Trust (NXRT) | — _(bewusste Zinswette: stark fremdfinanzierter Wohn-REIT mit überproportionaler Reaktion auf sinkende Zinsen)_
+- 2026-08-12-morning | Marqeta (MQ) | — _(Skalierungswette: Zahlungsvolumen wächst mit ~32 % deutlich schneller als der Umsatz)_

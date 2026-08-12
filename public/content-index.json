@@ -89,7 +89,7 @@
       "date": "2026-07-23",
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-23-morning/",
-      "headline": "Alphabet und Tesla fallen nach Rekordzahlen, waehrend Asiens Chipwerte steigen"
+      "headline": "Alphabet und Tesla fallen nach Rekordzahlen, während Asiens Chipwerte steigen"
     },
     {
       "number": 14,
@@ -97,6 +97,62 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-24-morning/",
       "headline": "Vier Schläge an einem Tag drücken die Wall Street"
+    },
+    {
+      "number": 15,
+      "date": "2026-07-25",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-25-morning/",
+      "headline": "Der Speicher-Ausverkauf greift um die Welt, Wall Street und Öl atmen durch"
+    },
+    {
+      "number": 16,
+      "date": "2026-07-26",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-26-morning/",
+      "headline": "Ölpreisschock trifft auf die entscheidende Woche für Notenbank und KI-Konzerne"
+    },
+    {
+      "number": 17,
+      "date": "2026-07-28",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-28-morning/",
+      "headline": "Chinas Vorstoß in die Chip-Fertigungstechnik erschüttert Asiens Halbleiterwerte"
+    },
+    {
+      "number": 18,
+      "date": "2026-07-27",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-27-morning/",
+      "headline": "Ölpreis fällt trotz Wochenend-Angriffen: Der Markt handelt die Entspannung"
+    },
+    {
+      "number": 19,
+      "date": "2026-07-29",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-29-morning/",
+      "headline": "Die Fed entscheidet heute, und erstmals seit Langem preist der Markt eine Zinserhöhung ein"
+    },
+    {
+      "number": 20,
+      "date": "2026-07-30",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-30-morning/",
+      "headline": "Die Fed pausiert, doch der Anleihemarkt verkauft trotzdem"
+    },
+    {
+      "number": 21,
+      "date": "2026-07-31",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-07-31-morning/",
+      "headline": "Cloud-Rekorde von Microsoft und Amazon entfachen eine weltweite Technologie-Rally"
+    },
+    {
+      "number": 22,
+      "date": "2026-08-12",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-08-12-morning/",
+      "headline": "Die Börse hält den Atem an, bis am Nachmittag die Inflationszahl kommt"
     }
   ],
   "recentStockPicks": [
@@ -279,7 +335,142 @@
       "slug": "2026-07-22-morning",
       "name": "Merit Medical Systems, Inc. (MMSI)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-07-23-morning",
+      "name": "Munters Group AB (MTRS)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-23-morning",
+      "name": "Hecla Mining Company (HL)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-23-morning",
+      "name": "Ero Copper Corp (ERO)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-24-morning",
+      "name": "Matador Resources (MTDR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-24-morning",
+      "name": "Comstock Resources (CRK)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-24-morning",
+      "name": "Centrus Energy (LEU)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-25-morning",
+      "name": "FormFactor (FORM)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-25-morning",
+      "name": "Piper Sandler (PIPR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-25-morning",
+      "name": "Nomad Foods (NOMD)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-26-morning",
+      "name": "Weatherford International (WFRD)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-26-morning",
+      "name": "Clearway Energy (CWEN)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-26-morning",
+      "name": "Halozyme Therapeutics (HALO)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-27-morning",
+      "name": "Copa Holdings (CPA)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-27-morning",
+      "name": "Cognex (CGNX)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-27-morning",
+      "name": "Ensign Group (ENSG)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-28-morning",
+      "name": "Triple Flag Precious Metals (TFPM)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-28-morning",
+      "name": "Cranswick plc (CWK)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-28-morning",
+      "name": "Chemed Corporation (CHE)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-29-morning",
+      "name": "Cullen/Frost Bankers (CFR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-29-morning",
+      "name": "Nexstar Media Group (NXST)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-29-morning",
+      "name": "Franklin Electric (FELE)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-30-morning",
+      "name": "Rambus Inc. (RMBS)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-30-morning",
+      "name": "Chesapeake Utilities Corporation (CPK)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-30-morning",
+      "name": "Balchem Corporation (BCPC)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-31-morning",
+      "name": "The Andersons Inc. (ANDE)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-31-morning",
+      "name": "STAG Industrial Inc. (STAG)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-07-31-morning",
+      "name": "Lumen Technologies Inc. (LUMN)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-07-24T23:08:01.918Z"
+  "lastUpdated": "2026-08-12T20:56:36.527Z"
 }
