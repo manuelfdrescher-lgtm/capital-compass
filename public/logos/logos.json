@@ -1022,5 +1022,60 @@
     "file": null,
     "name": "Balchem Corporation",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "teladoc": {
+    "file": "teladoc.svg",
+    "name": "Teladoc Health",
+    "source": "https://commons.wikimedia.org/wiki/File:Teladoc_Logo.svg",
+    "license": "Public domain",
+    "artist": "Teladoc Health, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "tokyoelectron": {
+    "file": "tokyoelectron.svg",
+    "name": "Tokyo Electron",
+    "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Electron_logo.svg",
+    "license": "Public domain",
+    "artist": "Tokyo Electron",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "adidas": {
+    "file": "adidas.svg",
+    "name": "Adidas",
+    "source": "https://commons.wikimedia.org/wiki/File:Adidas_2022_logo.svg",
+    "license": "Public domain",
+    "artist": "Adidas",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "shell": {
+    "file": "shell.svg",
+    "name": "Shell",
+    "source": "https://commons.wikimedia.org/wiki/File:Shell_wordmark_2019.svg",
+    "license": "Public domain",
+    "artist": "Royal Dutch Shell",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "bmw": {
+    "file": "bmw.svg",
+    "name": "Bayerische Motoren Werke AG",
+    "source": "https://commons.wikimedia.org/wiki/File:BMW_logo_(gray).svg",
+    "license": "Public domain",
+    "artist": "BMW",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "andersons": {
+    "file": null,
+    "name": "The Andersons Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "stag": {
+    "file": null,
+    "name": "STAG Industrial Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lumen": {
+    "file": null,
+    "name": "Lumen Technologies Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

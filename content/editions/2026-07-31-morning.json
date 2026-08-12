@@ -1,0 +1,1555 @@
+{
+  "edition": {
+    "number": 21,
+    "date": "2026-07-31",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "US-Schluss 30.7.2026, Asien-Frühhandel und Devisen 31.7.2026 früh; einige asiatische Werte vorläufig (Session läuft).",
+    "generatedAt": "2026-07-31T04:20:00Z",
+    "note": "Vorläufige Ausgabennummer Nr. 21 laut Website-Zählung (content-index.json höchste Nr. 19 am 29.7.; Cowork-Ausgabe 30.7. vermutlich noch nicht eingespielt). Kanonische Nummer wird beim Ingest vergeben."
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.410,87",
+        "delta": "+1,29 %",
+        "direction": "up",
+        "note": "Schluss 30.7."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "25.015,87",
+        "delta": "+2,34 %",
+        "direction": "up",
+        "note": "Schluss 30.7."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "52.058,95",
+        "delta": "+0,90 %",
+        "direction": "up",
+        "note": "Schluss 30.7."
+      },
+      {
+        "label": "DAX",
+        "value": "25.612,03",
+        "delta": "+0,60 %",
+        "direction": "up",
+        "note": "Xetra-Schluss 30.7."
+      },
+      {
+        "label": "Kospi",
+        "value": "6.515",
+        "delta": "+16 %",
+        "direction": "up",
+        "approx": true,
+        "note": "Frühhandel 31.7."
+      },
+      {
+        "label": "Nikkei 225",
+        "value": "65.282",
+        "delta": "+5,5 %",
+        "direction": "up",
+        "approx": true,
+        "note": "Frühhandel 31.7."
+      },
+      {
+        "label": "US-Rendite 30 Jahre",
+        "value": "5,21 %",
+        "delta": "+11 Bp.",
+        "direction": "up",
+        "note": "Höchststand seit 2007"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,67 %",
+        "delta": "+7 Bp.",
+        "direction": "up",
+        "note": "Schluss 30.7."
+      },
+      {
+        "label": "VIX",
+        "value": "18,18",
+        "delta": "-12,0 %",
+        "direction": "down",
+        "note": "Angstbarometer"
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "87,08 USD",
+        "delta": "+0,2 %",
+        "direction": "flat",
+        "note": "31.7. früh"
+      },
+      {
+        "label": "Gold (Spot)",
+        "value": "4.075 USD",
+        "delta": "über 4.000",
+        "direction": "up",
+        "note": "31.7. früh"
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,1517",
+        "delta": "Dollar schwach",
+        "direction": "up",
+        "note": "31.7. 04:11 UTC"
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "cloud-rekorde-tech-rally",
+      "ressort": "titelseite",
+      "kicker": "Technologie · Kapitalmärkte",
+      "headline": "Cloud-Rekorde von Microsoft und Amazon entfachen eine weltweite Technologie-Rally",
+      "dek": "Azure überschreitet 100 Milliarden Dollar Jahresumsatz, AWS wächst wieder um 37 Prozent. In Asien springt der Kospi um 16 Prozent. Der Anleihemarkt sendet zugleich ein Warnsignal.",
+      "body": [
+        "Zwei Quartalsberichte haben binnen 24 Stunden die Stimmung an den Weltmärkten gedreht. Microsoft meldete, dass die Cloud-Sparte Azure erstmals mehr als 100 Milliarden Dollar Umsatz auf Jahresbasis erreicht, und legte am Donnerstag rund 16 Prozent zu, den besten Handelstag seit 2008. Nach US-Börsenschluss folgte Amazon mit einem Umsatz von 200,6 Milliarden Dollar und einem AWS-Wachstum von 36,7 Prozent, das sich gegenüber den Vorquartalen wieder beschleunigte. Die Aktie stieg nachbörslich um mehr als neun Prozent.",
+        "Die Botschaft für den Kapitalmarkt lautet, dass sich die enormen Investitionen in Künstliche Intelligenz in echte, wachsende Cloud-Erlöse übersetzen. Der S&P 500 gewann 1,29 Prozent, der Nasdaq Composite 2,34 Prozent. In Asien entlud sich die Erleichterung am Freitag in einer außergewöhnlichen Gegenbewegung: Der südkoreanische Kospi sprang um rund 16 Prozent, SK Hynix um etwa 28 Prozent und Samsung um rund 25 Prozent. Der Philadelphia-Halbleiterindex hatte am Vortag bereits 8,2 Prozent zugelegt.",
+        "Unter der Rally liegt ein Widerspruch, den erfahrene Anleger genau beobachten. Während die Aktienmärkte feiern, verlangt der Anleihemarkt eine immer höhere Prämie. Die Rendite 30-jähriger US-Staatsanleihen stieg auf 5,21 Prozent, den höchsten Stand seit 2007. Steigende Langfristzinsen sind das stärkste Gegenargument gegen hoch bewertete Wachstumswerte, weil sie deren künftige Gewinne stärker abwerten. Die entscheidende Frage der kommenden Wochen ist, ob die operative Stärke der KI-Wirtschaft oder die Zinslast die Oberhand behält."
+      ],
+      "mechanik": "Eine Aktie reagiert auf die Differenz zwischen Nachricht und Erwartung. Der Markt hatte befürchtet, die gigantischen KI-Ausgaben der Konzerne würden sich nicht rentieren. Als Azure und AWS zeigten, dass die Cloud-Umsätze diese Ausgaben tragen, kippte die Sorge in Erleichterung. Weil dieselben KI-Systeme Speicherchips aus Korea und Taiwan brauchen, übertrug sich die Erleichterung sofort auf die asiatischen Halbleiterwerte.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "KI-Rechenzentren verbrauchen enorme Mengen Strom, der zu großen Teilen aus Erdgas kommt. Der steigende Bedarf stützt die Nachfrage nach Gas und die Auslastung von Gaskraftwerken.",
+          "teilbranchen": "Erdgasproduzenten, Midstream-Pipelines, LNG-Infrastruktur"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren, Stromnetze und Chipfabriken benötigen viel Kupfer für die Verkabelung sowie Spezialmaterialien für die Fertigung. Höhere KI-Investitionen heben die Mengennachfrage.",
+          "teilbranchen": "Kupferbergbau, Industriegase, Elektronikmaterialien, Spezialchemie"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren brauchen Kühlung, Stromverteilung, Notstrom und Transformatoren, was direkte Aufträge für Elektro- und Klimatechnik erzeugt. Auch die Ausrüster für den Fabrikbau profitieren.",
+          "teilbranchen": "Elektrotechnik, HVAC-Kühltechnik, Rechenzentrumsbau, Netzausrüstung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Amazon liegt als E-Commerce-Konzern in diesem Sektor, weshalb die starke AWS-Marge das Ergebnis direkt stützt. Für den breiten Konsum bleibt die hohe Langfristrendite über teurere Finanzierung eine Belastung.",
+          "teilbranchen": "E-Commerce, Autos und Wohnbau (zinsbelastet)"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Nahrungsmittel und Haushaltsprodukte haben keinen direkten Bezug zu Cloud-Umsätzen. Ein leichter relativer Gegenwind entsteht nur durch die Kapitalrotation in Wachstumssektoren an solchen Tagen.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Körperpflege"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen hängt nicht am KI-Investitionszyklus. Langfristig kann KI-Rechenleistung die Forschung beschleunigen, was heute noch kein kursrelevanter Kanal ist.",
+          "teilbranchen": "Pharma, Biotech, Medizintechnik"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die gewaltige KI-Finanzierung schafft Geschäft für Investmentbanken und Kreditgeber. Zugleich belasten steigende Langfristrenditen die Bewertung bestehender Anleiheportfolios.",
+          "teilbranchen": "Investmentbanking, Private Credit, Infrastrukturfinanzierer"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Microsoft und die Chipwerte stehen im Zentrum des Ereignisses, weil bestätigte Cloud-Umsätze die These belegen, dass sich KI-Ausgaben in Erlöse übersetzen. Die Speicher-Rally zeigt den Nachfrageschub nach HBM- und Serverspeicher.",
+          "teilbranchen": "Halbleiter und HBM, Chip-Ausrüstung, Cloud-Software, Serverhardware"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Die großen Plattformkonzerne mit eigenen Clouds und KI-Diensten liegen in diesem Sektor und profitieren vom selben Nachfrageschub. Bestätigte KI-Monetarisierung stützt die Erwartungen an Werbe- und Cloud-Erlöse.",
+          "teilbranchen": "Internet-Plattformen, digitale Werbung, Telekomnetze (Datenverkehr)"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "KI-Rechenzentren schließen langfristige Stromlieferverträge ab und heben so Absatzmengen und planbare Erlöse. Höhere Zinsen belasten allerdings die kapitalintensiven Bilanzen.",
+          "teilbranchen": "Stromerzeuger, unabhängige Kraftwerksbetreiber, Kernkraft, Netzbetreiber"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Data-Center-REITs vermieten genau die Flächen, deren Nachfrage der KI-Boom treibt. Der breite REIT-Sektor leidet gleichzeitig unter der hohen Langfristrendite über Finanzierungskosten und Bewertungsabschläge.",
+          "teilbranchen": "Data-Center-REITs (positiv), Funkturm-REITs, Büro- und Handels-REITs (zinsbelastet)"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Microsoft",
+          "logoKey": "microsoft",
+          "bewegung": "+16 %",
+          "warum": "Azure überschreitet 100 Mrd. Dollar Jahresumsatz, bester Tag seit 2008."
+        },
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+28 %",
+          "warum": "Speichernachfrage für KI plus Aktienkäufe des Konzernchefs Chey."
+        },
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+25 %",
+          "warum": "Starke Q2-Zahlen treffen auf den Halbleiter-Rebound."
+        },
+        {
+          "firma": "Amazon",
+          "logoKey": "amazon",
+          "bewegung": "+9 % (nachbörslich)",
+          "warum": "AWS beschleunigt auf 37 Prozent Wachstum bei fast 40 Prozent Marge."
+        },
+        {
+          "firma": "Meta Platforms",
+          "logoKey": "meta",
+          "bewegung": "-9,2 %",
+          "warum": "Sorge, dass sich die eigenen KI-Investitionen langsamer amortisieren."
+        },
+        {
+          "firma": "Teladoc Health",
+          "logoKey": "teladoc",
+          "bewegung": "-26,8 %",
+          "warum": "Gesenkte Jahresprognose belastet den Telemedizin-Anbieter."
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Cloud-Umsatzwachstum im Quartal (Jahresvergleich)",
+          "unit": " %",
+          "source": "Unternehmensmeldungen Microsoft und Amazon, Q2/FY 2026",
+          "allPositive": true,
+          "data": [
+            [
+              "AWS (Amazon)",
+              36.7
+            ],
+            [
+              "Azure (Microsoft)",
+              43
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stock market today, Thursday July 30 2026 (Yahoo Finance Live)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-july-30-dow-sp-500-nasdaq-treasury-yields-microsoft-082255995.html",
+          "tier": 2
+        },
+        {
+          "title": "Amazon Q2 2026 Press Release Ex-99.1 (SEC EDGAR)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm",
+          "tier": 1
+        },
+        {
+          "title": "Chip rally sends Kospi up 17% past 6,500 (Korea Herald)",
+          "url": "https://www.koreaherald.com/article/10826609",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Rekordzahlen aus der Cloud entfachen eine weltweite Rally bei Technologiewerten.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "halbleiter-rally-asien",
+      "ressort": "news",
+      "kicker": "Aktienmärkte · Asien",
+      "headline": "Asiens Chipwerte erleben einen Rekordsprung, der Kospi steigt um 16 Prozent",
+      "dek": "SK Hynix und Samsung springen um mehr als 25 Prozent. Die Cloud-Zahlen aus den USA und ein Yen-Schock treiben eine V-förmige Erholung nach dem Ausverkauf der Vorwoche.",
+      "body": [
+        "Der südkoreanische Leitindex Kospi kletterte am Freitag im frühen Handel um rund 16 Prozent über die Marke von 6.500 Punkten. Getragen wurde der Sprung von den Speicherherstellern SK Hynix und Samsung Electronics, die beide um mehr als 25 Prozent zulegten. Der japanische Nikkei 225 gewann rund 5,5 Prozent, angeführt von SoftBank mit einem Plus von etwa 15 Prozent und Tokyo Electron mit rund 11 Prozent. Der taiwanische Taiex stieg um mehr als sieben Prozent.",
+        "Die Bewegung ist eine Gegenreaktion auf einen scharfen Ausverkauf um den 29. Juli, als Zinssorgen und Zweifel an den KI-Bewertungen die Kurse gedrückt hatten. Die starken Cloud-Zahlen von Microsoft und Amazon lieferten den Auslöser für die Kehrtwende. Ein zusätzlicher Treiber war die mutmaßliche japanische Devisenintervention vom Donnerstag, die den Yen stärkte und die abrupte Auflösung spekulativer Positionen auslöste."
+      ],
+      "mechanik": "Wenn ein Markt zuvor stark gefallen ist, sind viele Anleger vorsichtig positioniert und halten wenig. Eine gute Nachricht zwingt sie dann, schnell wieder einzusteigen, was die Kurse überproportional nach oben schiebt. Solche V-förmigen Bewegungen zeigen eher eine Positionierungsdynamik als eine ruhige Neubewertung der Fundamentaldaten.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+28 %",
+          "warum": "Speichernachfrage für KI plus Aktienkäufe des Konzernchefs."
+        },
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+25 %",
+          "warum": "Q2-Stärke trifft auf den Halbleiter-Rebound."
+        },
+        {
+          "firma": "SoftBank",
+          "logoKey": "softbank",
+          "bewegung": "+15 %",
+          "warum": "Technologie-Beteiligungen profitieren vom KI-Optimismus."
+        },
+        {
+          "firma": "Tokyo Electron",
+          "logoKey": "tokyoelectron",
+          "bewegung": "+11 %",
+          "warum": "Chip-Ausrüster im Sog der Speicher-Rally."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chip rally sends Kospi up 17% past 6,500 (Korea Herald)",
+          "url": "https://www.koreaherald.com/article/10826609",
+          "tier": 2
+        },
+        {
+          "title": "SK Hynix Shares Surge on US Peer Rally, Chey Purchase (Bloomberg)",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-30/sk-hynix-shares-surge-in-seoul-on-us-peer-rally-chey-purchase",
+          "tier": 2
+        },
+        {
+          "title": "Japan carries out yen-buying intervention as US executes rate check (Nikkei Asia)",
+          "url": "https://asia.nikkei.com/business/markets/currencies/japan-carries-out-yen-buying-intervention-as-us-executes-rate-check",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Asiens Chipwerte erleben einen Rekordsprung, ein Leitindex legt um sechzehn Prozent zu.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "adidas-rekordumsatz-kurssturz",
+      "ressort": "news",
+      "kicker": "Aktienmärkte · Zyklischer Konsum",
+      "headline": "Adidas fällt um 18 Prozent trotz Rekordumsatz zur Fußball-Weltmeisterschaft",
+      "dek": "Der Sportartikelkonzern verbucht dank der Weltmeisterschaft Rekorderlöse. Ein Marketing-Budget von über 900 Millionen Euro drückt die Marge und enttäuscht die Erwartung.",
+      "body": [
+        "Die Aktie von Adidas brach am Donnerstag zeitweise um bis zu 18,8 Prozent ein, den stärksten Tagesverlust seit dem Börsengang 1995. Auslöser war das Quartalsergebnis. Der Konzern meldete einen Rekordumsatz von rund 6,7 Milliarden Euro, angetrieben von der Fußball-Weltmeisterschaft, und hob sogar die Umsatzprognose an. Dennoch verkaufte der Markt die Aktie ab, weil ein Marketingaufwand von über 900 Millionen Euro die Marge belastete und der Gewinn hinter den Erwartungen zurückblieb.",
+        "Der Fall ist ein Lehrstück über die Trennung von Umsatz und Ertrag. Rekorderlöse allein sagen wenig über den Wert eines Unternehmens aus, wenn sie mit überproportional steigenden Kosten erkauft werden. Anleger bezahlen für den Gewinn, der am Ende übrig bleibt, und für die Marge, die zeigt, wie effizient Umsatz in Ertrag umgewandelt wird."
+      ],
+      "mechanik": "Der Aktienkurs bildet die Erwartung an künftige Gewinne ab. Wenn ein Konzern einen Rekordumsatz meldet, die Kosten aber schneller steigen als gedacht, sinkt die erwartete Gewinnmarge. Der Markt reagiert dann auf die enttäuschte Margenerwartung und nicht auf die schöne Umsatzzahl in der Überschrift.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Adidas",
+          "logoKey": "adidas",
+          "bewegung": "-18 %",
+          "warum": "WM-Marketingkosten über 900 Mio. Euro drücken die Marge unter die Erwartung."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Adidas Q2 2026: Record revenue, raised guidance and a share price drop (SGI Europe)",
+          "url": "https://www.sgieurope.com/financial-results/why-adidas-shares-fell-despite-record-sales-higher-guidance/122476.article",
+          "tier": 2
+        },
+        {
+          "title": "Adidas Stock Falls Record 18% as World Cup Marketing Bill Tops 900M Euro (TechTimes)",
+          "url": "https://www.techtimes.com/articles/322236/20260730/adidas-stock-falls-record-18-2026-world-cup-marketing-bill-tops-900m.htm",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "shein-hongkong.jpg",
+        "alt": "Hongkonger Hafen-Skyline in der Abenddämmerung hinter einem Ständer mit bunter Mode",
+        "caption": "Ein Rekordumsatz zur Fußball-Weltmeisterschaft schützt nicht vor einem Kursrutsch.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "gold-ueber-4000-trotz-renditehoch",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Sichere Häfen",
+      "headline": "Gold hält über 4.000 Dollar, obwohl die Anleiherenditen auf Mehrjahreshochs steigen",
+      "dek": "Die 30-jährige US-Rendite erreicht 5,21 Prozent. Normalerweise belastet ein solches Umfeld das zinslose Gold. Die geopolitische Prämie dominiert aktuell.",
+      "body": [
+        "Der Goldpreis notierte am Freitagmorgen bei rund 4.075 Dollar je Unze und damit klar über der Marke von 4.000 Dollar. Bemerkenswert ist das Niveau, weil die Rendite 30-jähriger US-Staatsanleihen mit 5,21 Prozent auf dem höchsten Stand seit 2007 liegt. Höhere Realzinsen erhöhen die Opportunitätskosten von Gold, das selbst keine Zinsen zahlt, und belasten den Preis normalerweise.",
+        "Dass Gold sich dennoch hält, deutet auf zwei überlagernde Kräfte hin. Die geopolitische Risikoprämie aus dem Nahen Osten und die anhaltende Nachfrage von Notenbanken und Absicherern stützen den Preis stärker, als die steigenden Zinsen ihn drücken. Silber notierte parallel bei rund 58 Dollar je Unze."
+      ],
+      "mechanik": "Gold zahlt keine Zinsen. Steigen die Renditen sicherer Anleihen, wird das Halten von Gold relativ teurer, was normalerweise auf den Preis drückt. Wenn Gold trotzdem steigt, überlagert eine andere Nachfrage diesen Zinseffekt, meist die Suche nach Sicherheit in geopolitisch unruhigen Zeiten.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "Gold/Silver Spot und Realtime FX (Alpha Vantage)",
+          "url": "",
+          "tier": 2
+        },
+        {
+          "title": "US 30-Year Treasury Yield Tops 5.2%, Highest Since 2007",
+          "url": "https://en.sedaily.com/international/2026/07/30/us-30-year-treasury-yield-tops-52-percent-highest-since",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "gold-bitcoin.jpg",
+        "alt": "Goldbarren und eine physische Bitcoin-Münze nebeneinander auf dunklem Untergrund",
+        "caption": "Gold hält sich über einer runden Marke, obwohl die Anleiherenditen auf Mehrjahreshochs steigen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "yen-intervention-usdjpy",
+      "ressort": "news",
+      "kicker": "Devisen · Japan",
+      "headline": "Japan greift am Devisenmarkt ein, der Yen springt unter 160 je Dollar",
+      "dek": "Nach mutmaßlich koordinierter Intervention fällt der Dollar-Yen-Kurs um rund 480 Punkte. Die Auflösung von Carry-Trades verstärkt die Bewegung zusätzlich.",
+      "body": [
+        "Der japanische Yen erlebte am Donnerstag seine stärkste Aufwertung seit Monaten. Der Dollar-Yen-Kurs stürzte von nahe 164 zeitweise unter 160 und bis in den Bereich von 158. Nach Berichten der Zeitung Nikkei Asia handelte es sich um eine mutmaßlich koordinierte Aktion, bei der Japan Yen kaufte, Südkorea Dollar verkaufte und die USA einen sogenannten Rate Check durchführten. Am Freitagmorgen notierte das Paar wieder bei rund 160,65.",
+        "Verstärkt wurde die Bewegung durch die Auflösung von Carry-Trades. Dabei leihen sich Investoren günstig in der Niedrigzinswährung Yen und legen das Geld in höher verzinsten Währungen an. Wertet der Yen plötzlich auf, werden diese Geschäfte zu Verlustbringern, und die erzwungene Rückabwicklung treibt den Yen weiter nach oben. Der US-Dollar-Index fiel im Zuge dessen um rund 0,8 Prozent auf etwa 100 Punkte."
+      ],
+      "mechanik": "Beim Carry-Trade verdient man an der Zinsdifferenz zweier Währungen, solange die Wechselkurse ruhig bleiben. Eine plötzliche Aufwertung der Finanzierungswährung dreht den Gewinn in einen Verlust. Viele Investoren müssen dann gleichzeitig schließen, was die Kursbewegung in einer selbstverstärkenden Schleife beschleunigt.",
+      "gewinnerVerlierer": [],
+      "sources": [
+        {
+          "title": "Japan carries out yen-buying intervention as US executes rate check (Nikkei Asia)",
+          "url": "https://asia.nikkei.com/business/markets/currencies/japan-carries-out-yen-buying-intervention-as-us-executes-rate-check",
+          "tier": 2
+        },
+        {
+          "title": "US Dollar Index slumps as suspected Japanese intervention rattles markets (FXStreet)",
+          "url": "https://www.fxstreet.com/news/united-states-dollar-index-slumps-as-suspected-japanese-intervention-rattles-markets-202607301554",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "devisenhandel-nacht.jpg",
+        "alt": "Devisenhandelsplatz bei Nacht, gebogene Bildschirme mit abstrakten Kurscharts, Skyline im Hintergrund",
+        "caption": "Japan greift am Devisenmarkt ein, und der Yen springt daraufhin deutlich zurück.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "fed-anleihemarkt-misstrauen",
+      "ressort": "politik",
+      "kicker": "Geldpolitik · USA",
+      "headline": "Der Anleihemarkt misstraut der Fed, die 30-jährige Rendite steigt auf 5,21 Prozent",
+      "dek": "Nach dem hawkishen Zinsentscheid und gestrichener Guidance verlangen Investoren eine höhere Laufzeitprämie. Die Zinskurve wird steiler.",
+      "body": [
+        "Die US-Notenbank Fed hatte am 29. Juli den Leitzins bei 3,50 bis 3,75 Prozent belassen, mit drei Gegenstimmen für eine Anhebung von Lorie Logan, der Präsidentin der Dallas-Fed, Beth Hammack, der Präsidentin der Cleveland-Fed, und Neel Kashkari, dem Präsidenten der Minneapolis-Fed. Fed-Chef Kevin Warsh trat in der Pressekonferenz betont hart auf, strich die Forward Guidance und verzichtete auf neue Projektionen.",
+        "Die Reaktion des Anleihemarktes gleicht einem Misstrauensvotum. Die Rendite 30-jähriger Anleihen stieg auf 5,21 Prozent, den höchsten Stand seit 2007, die zehnjährige auf rund 4,67 Prozent, während die zweijährige auf 4,24 Prozent fiel. Diese Kombination, ein steilerer Verlauf der Zinskurve, wird Bear Steepening genannt. Sie zeigt, dass Investoren für das Halten langer Laufzeiten eine höhere Prämie verlangen, weil sie der Fed die Inflationskontrolle weniger zutrauen. Kühlere Kern-PCE-Daten bremsten den Anstieg am Freitag nur leicht.",
+        "Für die kommende Sitzung am 15. und 16. September, die wieder Projektionen enthält, preist der Markt ein spürbares Risiko einer weiteren Anhebung ein. Zinssenkungen sind vorerst vom Tisch."
+      ],
+      "mechanik": "Die Fed steuert direkt nur den kurzfristigen Leitzins. Die langfristigen Zinsen setzen die Anleger am Markt, abhängig von ihrem Vertrauen in die künftige Inflation. Steigen die langen Zinsen trotz eines stabilen Leitzinses, verlangen Investoren eine Laufzeitprämie als Ausgleich für das Risiko, dass die Inflation länger hoch bleibt.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Laufzeitprämie und die Grenzen der Notenbank",
+        "absaetze": [
+          "Die Laufzeitprämie, im Fachjargon Term Premium, ist der Extra-Zins, den Anleger dafür verlangen, ihr Geld über viele Jahre in einer Anleihe zu binden. Sie steigt, wenn die Unsicherheit über die künftige Inflation und die Staatsverschuldung zunimmt. Genau das geschieht hier: Ein Fed-Chef, der keine Projektionen liefert und die Guidance streicht, erhöht die Unsicherheit, und der Markt fordert dafür eine höhere Prämie.",
+          "Forward Guidance ist das Versprechen einer Notenbank über den künftigen Zinspfad. Sie wirkt, weil sie die Erwartungen der Marktteilnehmer verankert. Fällt dieses Versprechen weg, müssen Investoren stärker raten, und dieses Raten schlägt sich in höheren und schwankungsanfälligeren Langfristzinsen nieder. Die Fed kann den Leitzins setzen, das Vertrauen in ihre Glaubwürdigkeit kann sie nicht verordnen."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Energie hat kurze Duration und niedrige Bewertungsmultiples, weshalb der höhere Diskontsatz kaum trifft. Belastend wirkt eher ein möglicher festerer Dollar, hier jedoch fiel der Dollar sogar.",
+          "teilbranchen": "Integrierte Ölkonzerne, Förderer, Midstream (zinssensibler)"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Realzinsen und teurere Finanzierung bremsen kapitalintensive Projekte und zyklische Rohstoffnachfrage. Bau und Industrieproduktion reagieren empfindlich auf die Zinskosten.",
+          "teilbranchen": "Bergbau, Chemie, Baustoffe, Verpackung"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Finanzierungskosten belasten verschuldete und bauzyklische Bereiche. Ein steileres Zinsumfeld signalisiert oft eine robuste Konjunkturerwartung, was die zyklische Auftragslage stützt.",
+          "teilbranchen": "Maschinenbau, Bauzulieferer, Transport, Verteidigung (defensiver)"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Langfristrenditen schlagen über Hypotheken- und Autokreditzinsen auf finanzierte Anschaffungen durch. Der gestiegene Diskontsatz belastet zusätzlich die höher bewerteten Wachstumstitel.",
+          "teilbranchen": "Wohnbau, Automobil, langlebige Güter, Reise"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Als defensiver Sektor ist Basiskonsum operativ wenig zinssensibel, leidet aber als Bond-Proxy unter der Konkurrenz höherer Anleiherenditen. Dividendenstarke Defensivwerte werden relativ unattraktiver.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Haushaltswaren, Tabak"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Große Pharmawerte mit soliden Cashflows sind relativ zinsrobust. Unprofitable Biotechs mit sehr langer Gewinnduration werden dagegen durch den höheren Diskontsatz stärker abgewertet.",
+          "teilbranchen": "Große Pharma (robust), Biotech ohne Gewinne (belastet)"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken profitieren strukturell von der steileren Kurve, weil sie kurz günstig refinanzieren und lang teurer verleihen, was die Zinsmarge stützt. Bewertungsverluste in Anleihebeständen wirken dagegen.",
+          "teilbranchen": "Geschäfts- und Regionalbanken (Marge), Versicherer, Immobilienfinanzierer (belastet)"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Technologie ist der klassische Long-Duration-Sektor, dessen Wert von weit entfernten Gewinnen abhängt, die der höhere Diskontsatz überproportional abwertet. Die Folge ist Multiple Compression bei den teuersten Titeln.",
+          "teilbranchen": "Software mit hohen Multiples, Halbleiter, unprofitable Wachstums-Tech"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Wachstumsstarke Internet-Plattformen leiden über den Diskontsatz an ihrer langen Gewinnduration. Klassische Telekomwerte mit hoher Verschuldung leiden zusätzlich über teurere Refinanzierung.",
+          "teilbranchen": "Internet-Plattformen, Telekom (verschuldungs- und dividendenbelastet)"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger sind der klassische Bond-Proxy, dessen stabile Dividenden bei einer 30-jährigen Rendite über fünf Prozent an relativer Attraktivität verlieren. Die hohe Kapitalintensität verteuert zudem jede Refinanzierung.",
+          "teilbranchen": "Strom-, Gas- und Wasserversorger, regulierte Netze"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "REITs leiden doppelt, weil ihre Dividendenrenditen mit den gestiegenen Anleiherenditen konkurrieren und höhere Zinsen zugleich Refinanzierung und Immobilienbewertung über steigende Kapitalisierungsraten belasten.",
+          "teilbranchen": "Büro- und Handels-REITs (am stärksten), Wohn-REITs, Hypotheken-REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "US-Banken",
+          "logoKey": "",
+          "bewegung": "relativ positiv",
+          "warum": "Steilere Kurve stützt die Zinsmarge aus kurzer Refinanzierung und langer Ausleihung."
+        },
+        {
+          "firma": "Versorger",
+          "logoKey": "",
+          "bewegung": "relativ negativ",
+          "warum": "Als Bond-Proxy verlieren stabile Dividenden gegen 5-Prozent-Anleihen an Reiz."
+        },
+        {
+          "firma": "Immobilien-REITs",
+          "logoKey": "",
+          "bewegung": "relativ negativ",
+          "warum": "Höhere Diskontsätze und Finanzierungskosten drücken die Bewertung."
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Veränderung der US-Renditen am Fed-Tag",
+          "unit": " Bp.",
+          "source": "Trading Economics und Seoul Economic Daily, 30.7.2026",
+          "absolute": true,
+          "data": [
+            [
+              "2 Jahre",
+              -4
+            ],
+            [
+              "10 Jahre",
+              7
+            ],
+            [
+              "30 Jahre",
+              11
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "US 30-Year Treasury Yield Tops 5.2%, Highest Since 2007",
+          "url": "https://en.sedaily.com/international/2026/07/30/us-30-year-treasury-yield-tops-52-percent-highest-since",
+          "tier": 2
+        },
+        {
+          "title": "US Government Bond Yields (Trading Economics)",
+          "url": "https://tradingeconomics.com/united-states/government-bond-yield",
+          "tier": 2
+        },
+        {
+          "title": "FOMC Meeting Calendars (Federal Reserve)",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Der Anleihemarkt misstraut der Notenbank, die langfristige Rendite klettert weiter.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "boe-haelt-leitzins",
+      "ressort": "politik",
+      "kicker": "Geldpolitik · Großbritannien",
+      "headline": "Bank of England hält den Leitzins bei 3,75 Prozent, drei Mitglieder wollen erhöhen",
+      "dek": "Gouverneur Andrew Bailey dämpft Zinserhöhungserwartungen ausdrücklich. Das Pfund bleibt nahe 1,34 Dollar.",
+      "body": [
+        "Die britische Notenbank Bank of England ließ ihren Leitzins am Donnerstag bei 3,75 Prozent unverändert. Das geldpolitische Komitee stimmte mit sechs zu drei Stimmen, wobei die drei Mitglieder Megan Greene, Catherine Mann und Huw Pill für eine Anhebung auf 4,00 Prozent plädierten. Der Dissens zeigt, wie umstritten die Inflationslage innerhalb der Notenbank ist.",
+        "Gouverneur Andrew Bailey trat Spekulationen auf baldige Zinserhöhungen ausdrücklich entgegen und bat, den Raum nicht mit dem Eindruck zu verlassen, die Bank steuere auf eine Anhebung zu. Er verwies zugleich auf Aufwärtsrisiken durch den Nahost-Konflikt und die Energiepreise. Das Pfund blieb nach der Entscheidung stabil nahe 1,34 Dollar."
+      ],
+      "mechanik": "Eine Notenbank wirkt über den Zinsbeschluss und über die Worte, die ihn begleiten. Wenn drei von neun Mitgliedern für höhere Zinsen stimmen, signalisiert das Aufwärtsdruck. Dämpft der Gouverneur diese Erwartung aktiv, hält er die Finanzierungskosten und den Wechselkurs bewusst niedriger, als der Dissens allein vermuten ließe.",
+      "sources": [
+        {
+          "title": "Bank of England holds UK interest rate steady at 3.75% (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/30/interest-rates-inflation-bank-of-england.html",
+          "tier": 2
+        },
+        {
+          "title": "Quotes: Bank of England policymakers set out views (Yahoo/Reuters)",
+          "url": "https://finance.yahoo.com/economy/policy/articles/quotes-bank-england-policymakers-set-110912159.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Die Bank of England hält den Leitzins, drei Ratsmitglieder hätten lieber erhöht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "boj-haelt-signalisiert-erhoehungen",
+      "ressort": "politik",
+      "kicker": "Geldpolitik · Japan",
+      "headline": "Bank of Japan hält bei 1,00 Prozent und signalisiert weitere Zinsschritte",
+      "dek": "Ratsmitglied Hajime Takata votiert für eine Anhebung. Gouverneur Kazuo Ueda warnt vor einer Inflation über dem Zielwert.",
+      "body": [
+        "Die Bank of Japan beließ ihren kurzfristigen Leitzins am Freitag bei 1,00 Prozent. Die Entscheidung fiel mit acht zu einer Stimme, wobei das Ratsmitglied Hajime Takata für eine Anhebung auf 1,25 Prozent plädierte. In ihrem Ausblick betonte die Notenbank die Bereitschaft, die Zinsen weiter anzuheben, und warnte vor einer zugrunde liegenden Inflation oberhalb des Zwei-Prozent-Ziels. Die Wachstumsprognose für das laufende Fiskaljahr wurde auf rund 0,8 Prozent angehoben.",
+        "Der Zeitpunkt ist heikel, weil Japan tags zuvor am Devisenmarkt interveniert hatte, um den schwachen Yen zu stützen. Eine straffere Geldpolitik würde den Yen fundamental stärken und den Interventionsdruck mindern. Gouverneur Kazuo Ueda muss die Inflationsbekämpfung gegen die Sorge um die konjunkturelle Wirkung höherer Zinsen abwägen."
+      ],
+      "mechanik": "Ein schwacher Yen entsteht vor allem durch die große Zinsdifferenz zu den USA. Solange Japan die Zinsen niedrig hält, fließt Kapital in höher verzinste Währungen und schwächt den Yen. Höhere japanische Zinsen würden diese Differenz verkleinern und den Yen stützen, weshalb die Zinspolitik und die Devisenintervention zwei Seiten derselben Medaille sind.",
+      "sources": [
+        {
+          "title": "BOJ keeps rates steady, signals further rate hikes (Reuters via MarketScreener)",
+          "url": "https://www.marketscreener.com/news/boj-keeps-rates-steady-signals-further-rate-hikes-ce7f50dbdb8ff620",
+          "tier": 2
+        },
+        {
+          "title": "BOJ holds rates at 1%, warns of underlying inflation (CNBC)",
+          "url": "https://www.cnbc.com/2026/07/31/boj-rates-yen-intervention-inflation-japan.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Die Bank of Japan hält still, signalisiert aber weitere Zinsschritte für die Zukunft.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "nahost-oelrisikopraemie",
+      "ressort": "politik",
+      "kicker": "Geopolitik · Energie",
+      "headline": "Nahost-Spannungen halten den Ölpreis oben, Brent notiert bei 87 Dollar",
+      "dek": "Nach Angriffen auf einen saudischen Tanker und US-saudischen Vergeltungsschlägen bleibt eine Risikoprämie eingepreist. Der europäische Gaspreis fällt.",
+      "body": [
+        "Der Ölpreis hält sich auf hohem Niveau. Die Sorte Brent notierte am Freitagmorgen bei rund 87 Dollar je Barrel, die US-Sorte WTI bei etwa 84 Dollar. Die eigentliche Preisspitze fiel auf den 29. Juli, als Brent nach einem Houthi-Angriff auf einen saudischen Tanker und koordinierten US-saudischen Schlägen gegen pro-iranische Milizen im Irak zeitweise auf rund 90 Dollar sprang. Am 30. und 31. Juli konsolidierte der Preis auf hohem Niveau.",
+        "Die Risikoprämie bleibt eingepreist, weil die Bedrohung zweier Schifffahrts-Nadelöhre, der Straße von Hormus und der Meerenge Bab el-Mandeb, fortbesteht. Der europäische Gaspreis TTF fiel dagegen am Donnerstag um 3,2 Prozent, weil ein Tanker Hormus passieren konnte. Der hohe Ölpreis bescherte Shell ein starkes Quartal mit einem bereinigten Gewinn von 9,8 Milliarden Dollar und einem neuen Aktienrückkauf über 4,2 Milliarden Dollar. Exxon und Chevron berichten im Tagesverlauf, Analysten erwarten das beste Quartal seit 15 Quartalen."
+      ],
+      "mechanik": "Ein geopolitisches Risiko wirkt auf den Ölpreis, bevor tatsächlich weniger Öl fließt. Der Markt preist die Wahrscheinlichkeit einer Lieferstörung ein, was den Preis als Versicherungsaufschlag hebt. Fällt die Bedrohung weg, verschwindet diese Prämie oft ebenso schnell, wie sie gekommen ist.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Höhere Öl- und Gaspreise heben die Erlöse pro Fass sofort, während die Förderkosten kurzfristig konstant bleiben. Das Shell-Ergebnis und die erwarteten Rekordzahlen von Exxon und Chevron belegen diesen Hebel.",
+          "teilbranchen": "Integrierte Ölkonzerne, Förderer, Ölfeld-Dienstleister, Tanker, LNG"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Chemieunternehmen leiden, weil Rohöl und Erdgas als Feedstock dienen und höhere Inputkosten die Margen drücken. Gold als sicherer Hafen profitiert dagegen von der Geopolitik.",
+          "teilbranchen": "Petrochemie, Basischemie, Düngemittel, Edelmetalle (positiv)"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Transport und Logistik leiden über höhere Diesel- und Kerosinkosten, die einen großen Teil der Betriebsausgaben ausmachen. Öl-Ausrüster profitieren dagegen von steigenden Investitionsbudgets der Förderer.",
+          "teilbranchen": "Fluggesellschaften, Luftfracht, Spedition, Öl- und Gasausrüstung, Verteidigung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Steigende Spritpreise verringern das verfügbare Einkommen und drücken die Kaufkraft für nicht lebensnotwendige Güter. Reise-, Freizeit- und Handelsanbieter spüren die schwächere Nachfrage.",
+          "teilbranchen": "Automobil, Reise und Tourismus, Einzelhandel, Restaurants"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Energie- und Transportkosten belasten Produktion und Distribution von Alltagsgütern. Da die Nachfrage stabil bleibt und viele Anbieter Preissetzungsmacht haben, ist der Sektor defensiver als der zyklische Konsum.",
+          "teilbranchen": "Lebensmittelproduktion, Getränke, Lebensmitteleinzelhandel"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach medizinischen Leistungen ist weitgehend ölpreisunabhängig, weil sie nicht am verfügbaren Einkommen hängt. Leichter Kostendruck entsteht nur bei erdölbasierten Vorprodukten.",
+          "teilbranchen": "Pharma, Biotech, Medizintechnik, Gesundheitsdienstleister"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Ölpreis wirkt über den Umweg der Inflation, denn teure Energie verstärkt das Zinsrisiko und ein möglicher Fed-Schritt stützt kurzfristig die Zinsmargen. Kreditrisiken energieabhängiger Schuldner steigen.",
+          "teilbranchen": "Banken (Zinsmarge), Versicherer, Kreditgeber mit Zyklik-Exposure"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Direkte Ölkosten spielen für Software kaum eine Rolle, die Belastung läuft über den Bewertungskanal. Von Ölinflation getriebenes Zinsrisiko drückt die Bewertung wachstumsstarker Techtitel.",
+          "teilbranchen": "Software, Halbleiter (energiekostensensitive Fertigung), Hardware"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "gemischt",
+          "mechanismus": "Telekom- und Medienkonzerne haben geringe direkte Ölkosten, spüren aber wie andere Wachstumswerte den Bewertungsdruck über das Zinsrisiko. Werbeabhängige Plattformen leiden mittelbar bei schwächerem Konsum.",
+          "teilbranchen": "Telekom, digitale Werbung, Medien und Streaming"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Betreiber fossiler Kraftwerke tragen höhere Brennstoffkosten, während der TTF-Gaspreisrückgang entlastet und regulierte Anbieter Kosten oft weiterreichen. Erneuerbare gewinnen relativ an Wettbewerbskraft.",
+          "teilbranchen": "Fossile Stromerzeuger, Erneuerbare, Gasversorger, regulierte Netze"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien reagieren kaum auf den Ölpreis selbst. Die Belastung läuft über das durch die Ölinflation verstärkte Zinsrisiko, das die Finanzierungskosten der fremdfinanzierten REITs erhöht und die Bewertung künftiger Mieten drückt.",
+          "teilbranchen": "Gewerbe-REITs, Wohn-REITs, Entwickler, Data-Center-REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Shell",
+          "logoKey": "shell",
+          "bewegung": "Q2 stark",
+          "warum": "Bereinigter Gewinn 9,8 Mrd. Dollar, Rückkauf über 4,2 Mrd. Dollar."
+        },
+        {
+          "firma": "Exxon Mobil",
+          "logoKey": "exxon",
+          "bewegung": "Bericht 31.7.",
+          "warum": "Konsens erwartet bestes Quartal seit 15 Quartalen."
+        },
+        {
+          "firma": "Fluggesellschaften",
+          "logoKey": "",
+          "bewegung": "belastet",
+          "warum": "Höhere Kerosinkosten drücken die Marge der Airlines."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Brent Crude Oil (Trading Economics)",
+          "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+          "tier": 2
+        },
+        {
+          "title": "EU Natural Gas TTF (Trading Economics)",
+          "url": "https://tradingeconomics.com/commodity/eu-natural-gas",
+          "tier": 2
+        },
+        {
+          "title": "Shell plc publishes second quarter 2026 press release (GlobeNewswire)",
+          "url": "https://www.globenewswire.com/news-release/2026/07/30/3335787/0/en/Shell-plc-publishes-second-quarter-2026-press-release.html",
+          "tier": 1
+        },
+        {
+          "title": "Chevron, ExxonMobil Earnings Preview (Benzinga)",
+          "url": "https://www.benzinga.com/trading-ideas/previews/26/07/60810684/chevron-exxonmobil-earnings-preview",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "hormus-oel-sperrung.jpg",
+        "alt": "Ein Öltanker fährt durch eine enge, stürmische Meerenge, im Hintergrund ein Kriegsschiff",
+        "caption": "Anhaltende Spannungen im Nahen Osten halten den Ölpreis strukturell oben.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "us-bip-q2-verlangsamung",
+      "ressort": "makro",
+      "kicker": "Konjunktur · USA",
+      "headline": "Die US-Wirtschaft wächst im zweiten Quartal nur noch 1,5 Prozent",
+      "dek": "Nach 2,1 Prozent im ersten Quartal verlangsamt sich das Wachstum. Der Konsum trägt, sinkende Staatsausgaben bremsen.",
+      "body": [
+        "Die US-Wirtschaft ist im zweiten Quartal 2026 nach der Erstschätzung des Statistikamts BEA mit einer auf das Jahr hochgerechneten Rate von 1,5 Prozent gewachsen. Im ersten Quartal hatte die Rate noch 2,1 Prozent betragen. Die Zahl traf die Erwartung der Ökonomen punktgenau.",
+        "Getragen wurde das Wachstum von den privaten Konsumausgaben und von Investitionen in Ausrüstungen und geistiges Eigentum. Gebremst wurde es von sinkenden Staatsausgaben, unter anderem durch Verkäufe aus der strategischen Ölreserve, und von steigenden Importen, die rechnerisch vom Wachstum abgezogen werden. Für die Fed ist die Verlangsamung ein zweischneidiges Signal, weil sie einerseits den Inflationsdruck mindert, andererseits die Widerstandskraft der Konjunktur gegen die hohen Zinsen testet."
+      ],
+      "mechanik": "Das Bruttoinlandsprodukt misst die gesamte Wirtschaftsleistung. Für die Börse zählt weniger die absolute Höhe als die Richtung im Verhältnis zur Erwartung. Eine Verlangsamung kann Aktien stützen, wenn sie die Notenbank zu einer sanfteren Gangart bewegt, und belasten, wenn sie als Vorbote einer Rezession gelesen wird.",
+      "sources": [
+        {
+          "title": "GDP (Advance Estimate), 2nd Quarter 2026 (BEA)",
+          "url": "https://www.bea.gov/sites/default/files/2026-07/gdp2q26-adv.pdf",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Das Wachstum verlangsamt sich spürbar, deutlich unter den Erwartungen der Ökonomen.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "us-kern-pce-juni",
+      "ressort": "makro",
+      "kicker": "Inflation · USA",
+      "headline": "Die von der Fed bevorzugte Kerninflation kühlt im Juni auf 3,3 Prozent ab",
+      "dek": "Der Kern-PCE steigt im Monat nur um 0,1 Prozent. Der Wert bleibt klar über dem Zwei-Prozent-Ziel der Notenbank.",
+      "body": [
+        "Der Kern-PCE-Preisindex, das bevorzugte Inflationsmaß der Fed, stieg im Juni um 3,3 Prozent gegenüber dem Vorjahr und nur um 0,1 Prozent gegenüber dem Vormonat. Der Monatswert fiel damit kühler aus als die erwarteten 0,2 Prozent. Der Gesamt-PCE lag bei 3,7 Prozent im Jahresvergleich und sank um 0,1 Prozent im Monat.",
+        "Die kühlere Kernrate lieferte am Freitag ein Gegengewicht zum harten Ton der Fed und bremste den Anstieg der Anleiherenditen leicht ab. Das Kernproblem bleibt jedoch bestehen: Mit 3,3 Prozent liegt die Kerninflation weiterhin deutlich über dem Zwei-Prozent-Ziel, was die Debatte über eine weitere Zinsanhebung im September am Leben hält."
+      ],
+      "mechanik": "Der Kern-PCE klammert die schwankungsreichen Preise für Energie und Nahrung aus, um den zugrunde liegenden Inflationstrend sichtbar zu machen. Die Fed schaut besonders auf den Monatswert, weil er zeigt, in welche Richtung sich die Inflation gerade bewegt. Ein niedriger Monatswert nährt die Hoffnung, dass der Höhepunkt überschritten ist.",
+      "sources": [
+        {
+          "title": "June 2026 PCE inflation falls 0.1% (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/economy/articles/june-2026-pce-consumer-spending-124715931.html",
+          "tier": 2
+        },
+        {
+          "title": "PCE Price Index Excluding Food and Energy (BEA)",
+          "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "zentralbank-fassade.jpg",
+        "alt": "Monumentale neoklassizistische Zentralbank-Fassade mit hohen Steinsäulen, Blick von unten auf einem Platz",
+        "caption": "Die von der Notenbank bevorzugte Inflationsmessgröße kühlt im Juni weiter ab.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "china-pmi-kontraktion",
+      "ressort": "makro",
+      "kicker": "Konjunktur · China",
+      "headline": "Chinas Industrie schrumpft im Juli, der Einkaufsmanagerindex fällt auf 49,2",
+      "dek": "Auch der Dienstleistungssektor rutscht unter die Wachstumsschwelle. Die Nachfrage bleibt schwach.",
+      "body": [
+        "Chinas amtlicher Einkaufsmanagerindex für das verarbeitende Gewerbe fiel im Juli auf 49,2 Punkte, nach 50,3 im Juni. Damit rutschte der Index erstmals seit Monaten wieder unter die Schwelle von 50, die Wachstum von Schrumpfung trennt. Der Index für den Dienstleistungssektor fiel auf 49,0 Punkte, der Gesamtindex auf 49,3.",
+        "Die Zahlen bestätigen die schwache Binnennachfrage der zweitgrößten Volkswirtschaft der Welt. Für den Rest der Weltwirtschaft ist das ein gemischtes Signal. Eine schwache chinesische Nachfrage dämpft die Rohstoffpreise und den Exportabsatz westlicher Konzerne, entlastet aber zugleich die globale Güterinflation. Besonders exponiert sind Autobauer wie BMW und Mercedes, die einen großen Teil ihres Absatzes in China erzielen."
+      ],
+      "mechanik": "Der Einkaufsmanagerindex befragt Einkaufsleiter, ob ihre Geschäfte besser oder schlechter laufen als im Vormonat. Ein Wert über 50 bedeutet Expansion, ein Wert darunter Schrumpfung. Weil Einkäufer früh auf Nachfrageänderungen reagieren, gilt der Index als vorlaufender Indikator für die Konjunktur.",
+      "sources": [
+        {
+          "title": "China's non-manufacturing PMI drops to 49 in July (Xinhua, NBS-Daten)",
+          "url": "https://english.news.cn/20260731/66ace940492c4932b502ab83350ce6a0/c.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "industriestrompreis.jpg",
+        "alt": "Industrieanlage mit Stromleitungen und Rauchsäulen im Morgenlicht",
+        "caption": "Chinas Industrie schrumpft im Juli, der Einkaufsmanagerindex rutscht unter die Wachstumsschwelle.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "eurozone-bip-inflation",
+      "ressort": "makro",
+      "kicker": "Konjunktur · Eurozone",
+      "headline": "Die Eurozone wächst im zweiten Quartal um 0,4 Prozent und übertrifft die Erwartung",
+      "dek": "Deutschland kommt auf 0,2 Prozent. Die deutsche Inflation steigt im Juli auf 2,8 Prozent, getrieben von der Energie.",
+      "body": [
+        "Die Wirtschaft der Eurozone wuchs im zweiten Quartal um 0,4 Prozent gegenüber dem Vorquartal und übertraf damit die Erwartung von 0,2 Prozent. In der gesamten EU betrug das Plus 0,5 Prozent. Deutschland kam auf 0,2 Prozent, Spanien mit 0,7 Prozent auf den stärksten Wert der großen Volkswirtschaften.",
+        "Zugleich stieg die deutsche Inflation im Juli auf 2,8 Prozent, nach einer Prognose von 2,7 Prozent. Haupttreiber war die Energie mit einem Anstieg von 8,3 Prozent, eine deutliche Beschleunigung gegenüber dem Juni. Die europaweite Schnellschätzung für Juli stand zum Redaktionsschluss noch aus. Die Daten stützen die Erwartung des Marktes, dass die Europäische Zentralbank ihren Einlagenzins am 10. September von 2,25 auf 2,50 Prozent anheben könnte."
+      ],
+      "mechanik": "Für die Aktienmärkte ist relevant, wie Wachstum und Inflation zusammen den Kurs der Zentralbank bestimmen. Ein Wachstum über der Erwartung bei gleichzeitig steigender Inflation erhöht die Wahrscheinlichkeit höherer Zinsen. Höhere Zinsen wiederum belasten zinssensible Sektoren und stützen den Euro.",
+      "sources": [
+        {
+          "title": "GDP up by 0.4% in the euro area and by 0.5% in the EU (Eurostat)",
+          "url": "https://ec.europa.eu/eurostat/en/web/products-euro-indicators/w/2-30072026-ap",
+          "tier": 1
+        },
+        {
+          "title": "Inflation rate of +2.8% expected in July 2026 (Destatis)",
+          "url": "https://www.destatis.de/EN/Press/2026/07/PE26_270_611.html",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "handelsraum-kurstafeln.jpg",
+        "alt": "Börsenhändler vor großen elektronischen Kurstafeln in einem Handelsraum",
+        "caption": "Die Eurozone wächst stärker als erwartet, die Inflation überrascht ebenfalls positiv.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "apple-q3-services-china",
+      "ressort": "unternehmen",
+      "kicker": "Earnings · Technologie",
+      "headline": "Apple übertrifft die Erwartung, doch Services und das China-Geschäft enttäuschen",
+      "dek": "Der Umsatz erreicht mit 109 Milliarden Dollar ein Rekord-Juni-Quartal. Vorstandschef Tim Cook verabschiedet sich mit seiner letzten Bilanzvorlage.",
+      "body": [
+        "Apple meldete für das dritte Geschäftsquartal einen Rekordumsatz von 109,4 Milliarden Dollar, ein Plus von 16 Prozent gegenüber dem Vorjahr, und einen Gewinn je Aktie von 2,02 Dollar. Beide Werte übertrafen die Erwartung der Analysten. Das iPhone-Geschäft wuchs kräftig auf 54,25 Milliarden Dollar, auch die Mac-Sparte übertraf die Prognose deutlich.",
+        "Die Aktie gab nachbörslich dennoch um rund drei bis vier Prozent nach. Der Grund liegt in zwei Schwachstellen. Die margenstarke Services-Sparte blieb mit 30,74 Milliarden Dollar unter der Erwartung von 31,22 Milliarden, und der Umsatz in Greater China fiel mit 18,8 Milliarden Dollar klar hinter die Prognose zurück. Beide Bereiche gelten als Schlüssel für die Bewertung, weil Services die Wiederkehr der Erlöse und China das größte Wachstumsrisiko verkörpert.",
+        "Die Vorlage war zugleich die letzte von Vorstandschef Tim Cook, der die Führung laut Medienberichten zum 1. September an den bisherigen Hardware-Chef John Ternus übergibt. Die offizielle Apple-Mitteilung nennt den Übergang nicht, weshalb diese Angabe auf Berichterstattung von Finanzmedien beruht."
+      ],
+      "company": {
+        "name": "Apple Inc.",
+        "ticker": "AAPL",
+        "exchange": "NASDAQ",
+        "logoKey": "apple",
+        "whatTheyDo": "Apple entwickelt und verkauft das iPhone, Mac-Computer, das iPad und Wearables und betreibt ein wachsendes Dienstleistungsgeschäft mit App Store, iCloud und Abonnements. Das Ökosystem bindet Kunden über Hardware und Software eng an die Marke.",
+        "whyItMatters": "Apple ist eines der wertvollsten Unternehmen der Welt und ein Gradmesser für den globalen Konsum und die Lieferketten. Die Services-Sparte bestimmt zunehmend die Bewertung, weil sie stabile und margenstarke Erlöse liefert.",
+        "keyMetrics": [
+          [
+            "Umsatz Q3",
+            "109,4 Mrd. $ (+16 %)"
+          ],
+          [
+            "Gewinn je Aktie",
+            "2,02 $"
+          ],
+          [
+            "iPhone",
+            "54,25 Mrd. $"
+          ],
+          [
+            "Services",
+            "30,74 Mrd. $ (unter Erwartung)"
+          ],
+          [
+            "Greater China",
+            "18,8 Mrd. $ (unter Erwartung)"
+          ],
+          [
+            "Kurs 30.7.",
+            "333,43 $ (Reaktion nachbörslich)"
+          ]
+        ],
+        "priceSeries": [
+          {
+            "t": "2026-06-01",
+            "v": 306.31
+          },
+          {
+            "t": "2026-06-08",
+            "v": 301.54
+          },
+          {
+            "t": "2026-06-15",
+            "v": 296.42
+          },
+          {
+            "t": "2026-06-22",
+            "v": 297.01
+          },
+          {
+            "t": "2026-06-29",
+            "v": 281.74
+          },
+          {
+            "t": "2026-07-06",
+            "v": 312.66
+          },
+          {
+            "t": "2026-07-13",
+            "v": 317.31
+          },
+          {
+            "t": "2026-07-20",
+            "v": 326.59
+          },
+          {
+            "t": "2026-07-27",
+            "v": 336.91
+          },
+          {
+            "t": "2026-07-30",
+            "v": 333.43
+          }
+        ],
+        "priceSeriesSource": "Alpha Vantage, TIME_SERIES_DAILY (Schlusskurse, wöchentliche Stützpunkte)"
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Apple Q3: Segmentumsatz",
+          "unit": " Mrd. $",
+          "source": "Apple Newsroom und Yahoo Finance, Q3 FY2026",
+          "absolute": true,
+          "allPositive": true,
+          "data": [
+            [
+              "iPhone",
+              54.25
+            ],
+            [
+              "Services",
+              30.74
+            ],
+            [
+              "Greater China",
+              18.8
+            ],
+            [
+              "Mac",
+              10.35
+            ],
+            [
+              "iPad",
+              6.19
+            ]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "Umsatz 109,4 Mrd. Dollar, Rekord-Juni-Quartal, EPS 2,02 Dollar.",
+        "verdict": "bestätigt",
+        "evidence": "Apple Newsroom (Primärquelle) für Umsatz, Marge und EPS; Segment- und China-Zahlen sowie Kursreaktion über Yahoo Finance."
+      },
+      "sources": [
+        {
+          "title": "Apple reports third quarter results (Apple Newsroom)",
+          "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
+          "tier": 1
+        },
+        {
+          "title": "Apple Q3 2026 earnings beat estimates but services revenue misses",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-q3-2026-earnings-beat-211056445.html",
+          "tier": 2
+        },
+        {
+          "title": "Apple Q3 2026 earnings, Tim Cook CEO final quarter (Variety)",
+          "url": "https://variety.com/2026/digital/news/apple-q3-2026-earnings-tim-cook-ceo-final-quarter-1236824534/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "chip-reinraum.jpg",
+        "alt": "Techniker in weißen Schutzanzügen arbeiten in einem Halbleiter-Reinraum an Fertigungsanlagen",
+        "caption": "Starke Kernzahlen werden von einem enttäuschenden Dienste- und China-Geschäft überschattet.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "amazon-q2-aws-beschleunigt",
+      "ressort": "unternehmen",
+      "kicker": "Earnings · Cloud",
+      "headline": "Amazon schlägt die Erwartungen, AWS wächst wieder um 37 Prozent",
+      "dek": "Die Cloud-Sparte beschleunigt und verdient eine operative Marge von fast 40 Prozent. Ein Buchgewinn aus der Anthropic-Beteiligung verzerrt den ausgewiesenen Gewinn.",
+      "body": [
+        "Amazon übertraf im zweiten Quartal die Erwartungen auf allen Ebenen. Der Konzernumsatz stieg um 20 Prozent auf 200,6 Milliarden Dollar, das operative Ergebnis um 43 Prozent auf 27,5 Milliarden Dollar. Im Zentrum stand die Cloud-Tochter AWS, die mit 42,2 Milliarden Dollar Umsatz um 36,7 Prozent wuchs und damit ihr Wachstum gegenüber den Vorquartalen beschleunigte. Die operative AWS-Marge lag bei fast 40 Prozent. Die Aktie stieg nachbörslich um mehr als neun Prozent.",
+        "Ein Detail verlangt Vorsicht. Der ausgewiesene Nettogewinn von 62,6 Milliarden Dollar und der Gewinn je Aktie von 5,75 Dollar sind durch einen Buchgewinn von rund 53 Milliarden Dollar aus der Beteiligung am KI-Unternehmen Anthropic stark verzerrt. Dieser Gewinn ist nicht operativ und wiederholt sich nicht. Für die eigentliche Ertragskraft zählt das operative Ergebnis, und dort liefert AWS den Löwenanteil.",
+        "Der Bericht ist der wichtigste Gegencheck zur starken Azure-Zahl von Microsoft. Beide Cloud-Anbieter beschleunigen, was die These der KI-getriebenen Nachfrage bestätigt. AWS blieb mit 36,7 Prozent knapp unter der Azure-Wachstumsrate von 43 Prozent."
+      ],
+      "company": {
+        "name": "Amazon.com Inc.",
+        "ticker": "AMZN",
+        "exchange": "NASDAQ",
+        "logoKey": "amazon",
+        "whatTheyDo": "Amazon betreibt den größten westlichen Online-Handelsplatz, die führende Cloud-Plattform AWS und ein schnell wachsendes Werbegeschäft. AWS liefert den größten Teil des operativen Gewinns des Konzerns.",
+        "whyItMatters": "Als größter Cloud-Anbieter der Welt ist AWS ein direkter Gradmesser für die KI-Investitionen der gesamten Wirtschaft. Das Wachstum von AWS beeinflusst die Erwartung an den ganzen Technologiesektor.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2",
+            "200,6 Mrd. $ (+20 %)"
+          ],
+          [
+            "AWS-Umsatz",
+            "42,2 Mrd. $ (+36,7 %)"
+          ],
+          [
+            "AWS-Marge",
+            "~39 %"
+          ],
+          [
+            "Operatives Ergebnis",
+            "27,5 Mrd. $ (+43 %)"
+          ],
+          [
+            "Werbung",
+            "19,8 Mrd. $ (+26 %)"
+          ],
+          [
+            "Kurs 30.7.",
+            "235,50 $ (Reaktion nachbörslich)"
+          ]
+        ],
+        "priceSeries": [
+          {
+            "t": "2026-06-01",
+            "v": 261.26
+          },
+          {
+            "t": "2026-06-08",
+            "v": 245.22
+          },
+          {
+            "t": "2026-06-15",
+            "v": 246.02
+          },
+          {
+            "t": "2026-06-22",
+            "v": 232.79
+          },
+          {
+            "t": "2026-06-29",
+            "v": 240.14
+          },
+          {
+            "t": "2026-07-06",
+            "v": 244.16
+          },
+          {
+            "t": "2026-07-13",
+            "v": 247.31
+          },
+          {
+            "t": "2026-07-20",
+            "v": 249.99
+          },
+          {
+            "t": "2026-07-27",
+            "v": 231.39
+          },
+          {
+            "t": "2026-07-30",
+            "v": 235.5
+          }
+        ],
+        "priceSeriesSource": "Alpha Vantage, TIME_SERIES_DAILY (Schlusskurse, wöchentliche Stützpunkte)"
+      },
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Amazon Q2: Umsatz nach Segment",
+          "unit": " Mrd. $",
+          "source": "Amazon Q2 2026 Pressemitteilung (SEC 8-K)",
+          "absolute": true,
+          "allPositive": true,
+          "data": [
+            [
+              "Nordamerika",
+              116.2
+            ],
+            [
+              "International",
+              42.2
+            ],
+            [
+              "AWS",
+              42.2
+            ]
+          ]
+        }
+      ],
+      "factcheck": {
+        "claim": "AWS-Umsatz 42,2 Mrd. Dollar mit 36,7 Prozent Wachstum; Nettogewinn durch Anthropic-Buchgewinn verzerrt.",
+        "verdict": "bestätigt",
+        "evidence": "Amazon Q2-Pressemitteilung bei der SEC (Primärquelle) für Umsatz, AWS und operatives Ergebnis; Konsens und Marge über Yahoo Finance."
+      },
+      "sources": [
+        {
+          "title": "Amazon Q2 2026 Press Release Ex-99.1 (SEC EDGAR)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm",
+          "tier": 1
+        },
+        {
+          "title": "Amazon Q2 2026 earnings: AWS grows 37%, revenue tops $200B",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-q2-2026-earnings-aws-204411872.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "rechenzentrum-server.jpg",
+        "alt": "Langer Korridor mit Server-Racks in einem KI-Rechenzentrum, kühles blaues Licht",
+        "caption": "Ein Cloud-Geschäft beschleunigt überraschend wieder auf ein Wachstum von 37 Prozent.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    },
+    {
+      "id": "bmw-q2-china-gewinneinbruch",
+      "ressort": "unternehmen",
+      "kicker": "Earnings · Automobil",
+      "headline": "BMW verdient ein Drittel weniger, der China-Absatz bricht um 30 Prozent ein",
+      "dek": "Die operative Automobilmarge fällt auf 2,3 Prozent. Der Vorstand senkt das Jahresziel und streicht 8.000 Stellen.",
+      "body": [
+        "Der Autobauer BMW meldete für das zweite Quartal einen Vorsteuergewinn von 1,7 Milliarden Euro, ein Rückgang um rund ein Drittel gegenüber dem Vorjahr. Die operative Marge im Automobilgeschäft, die entscheidende Kennzahl der Branche, fiel von 5,4 auf 2,3 Prozent. Der Konzern senkte sein Margenziel für das Gesamtjahr von zuvor 4 bis 6 Prozent auf nun 1 bis 3 Prozent und kündigte an, über ein Freiwilligenprogramm 8.000 Stellen zu streichen.",
+        "Hauptursache ist der Einbruch im wichtigsten Auslandsmarkt. Der Absatz in China fiel um rund 30 Prozent, was zur schwachen Nachfrage der gesamten Volkswirtschaft passt, die der Einkaufsmanagerindex vom Freitag bestätigt. Bemerkenswert ist, dass die Aktie trotz der schwachen Zahlen um rund 1,3 Prozent zulegte. Der Markt hatte die Schwäche offenbar bereits erwartet, und die knapp über der Erwartung liegende Marge reichte für eine Erleichterung."
+      ],
+      "company": {
+        "name": "Bayerische Motoren Werke AG",
+        "ticker": "BMW",
+        "exchange": "XETRA",
+        "logoKey": "bmw",
+        "whatTheyDo": "BMW entwickelt und produziert Premium-Automobile der Marken BMW, Mini und Rolls-Royce sowie Motorräder. Ein großer Teil des Absatzes und des Gewinns hängt am chinesischen Markt.",
+        "whyItMatters": "BMW ist ein Gradmesser für die deutsche Automobilindustrie und für die Nachfrage nach Premiumprodukten in China. Die Automobilmarge zeigt, wie stark Preisdruck und Kosten auf die Branche wirken.",
+        "keyMetrics": [
+          [
+            "Vorsteuergewinn Q2",
+            "1,7 Mrd. € (~-33 %)"
+          ],
+          [
+            "Auto-Marge",
+            "2,3 % (Vorjahr 5,4 %)"
+          ],
+          [
+            "China-Absatz",
+            "~-30 %"
+          ],
+          [
+            "Jahresziel Marge",
+            "gesenkt auf 1 bis 3 %"
+          ],
+          [
+            "Stellenabbau",
+            "8.000 (freiwillig)"
+          ],
+          [
+            "Kursreaktion",
+            "~+1,3 %"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "BMW reports second quarter earnings slump, cuts jobs (Global Banking & Finance)",
+          "url": "https://www.globalbankingandfinance.com/bmw-reports-second-quarter-earnings-slump-cuts-jobs/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "vw-fabrik.jpg",
+        "alt": "Roboterarme schweißen Karosserien am Fließband einer Autofabrik",
+        "caption": "Ein deutscher Autobauer verdient ein Drittel weniger, weil der Absatz in China einbricht.",
+        "credit": "Bild: The Capital Compass / KI-generiert"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Förderung und Verarbeitung von Öl und Gas.",
+      "lage": "Die hohe Ölrisikoprämie stützt Erlöse und Kurse, Shell meldete ein starkes Quartal.",
+      "richtung": "up",
+      "tagesWert": "Brent ~87 USD, +0,2 % (Trading Economics 31.7.)",
+      "istZustand": "Der Sektor profitiert aktuell von einer geopolitischen Risikoprämie, die Brent nahe 87 Dollar hält. Die Bewertungen der integrierten Konzerne bleiben mit niedrigen Kurs-Gewinn-Verhältnissen moderat, weil der Markt die hohen Gewinne als zyklisch und nicht dauerhaft einstuft. Strukturell steht die Branche zwischen zwei Kräften. Kurzfristig treiben Angebotsrisiken am Golf und volle Kassen für Rückkäufe die Kurse. Mittelfristig drückt der Ausbau erneuerbarer Energien auf die langfristige Nachfrageerwartung. Die Kapitaldisziplin der Förderer bleibt der wichtigste Werttreiber der nächsten Quartale."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Rohstoffe, Chemie, Bergbau und Baustoffe.",
+      "lage": "Kupfer profitiert vom KI-Infrastrukturbedarf, die Chemie leidet unter hohen Energiekosten.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist tief zyklisch und hängt am globalen Investitionszyklus. Die schwache China-Nachfrage, sichtbar am Einkaufsmanagerindex von 49,2, belastet die Mengen bei Industriemetallen und Basischemie. Ein Gegengewicht bildet der strukturelle Kupferbedarf für Stromnetze, Rechenzentren und Elektrifizierung, der die langfristige Nachfrage stützt. Die Chemie kämpft mit hohen Energiekosten als Feedstock, während Edelmetallproduzenten von der Goldnähe zum Rekord profitieren. Die Bewertungen spiegeln die zyklische Unsicherheit in unterdurchschnittlichen Multiples wider."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbau, Elektrotechnik, Transport und Verteidigung.",
+      "lage": "Rechenzentrumsausrüster gewinnen, Transport leidet unter hohen Kraftstoffkosten.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Die Industrie befindet sich in einer späten Zyklusphase mit gespaltener Dynamik. Elektrotechnik, Kühltechnik und Netzausrüster erleben durch den Bau von Rechenzentren einen strukturellen Nachfrageschub, der die Auftragsbücher füllt und hohe Bewertungen rechtfertigt. Klassische Transport- und Logistikbereiche leiden dagegen unter hohen Diesel- und Kerosinkosten. Die Verteidigungsbranche bleibt durch die geopolitische Lage strukturell gestützt. Höhere Finanzierungskosten bremsen bauzyklische Nischen, während die Reshoring-Welle die Automatisierung dauerhaft antreibt."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Autos, Handel, Reise und langlebige Güter.",
+      "lage": "Amazon stützt den Sektor, Adidas und BMW zeigen die Margenrisiken.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor steht unter Druck von zwei Seiten. Die hohen Langfristzinsen verteuern Auto- und Immobilienkredite und dämpfen die Nachfrage nach finanzierten Anschaffungen. Zugleich zeigen Adidas und BMW, wie empfindlich die Margen auf Kostensteigerungen und die China-Schwäche reagieren. Ein Lichtblick bleibt der Onlinehandel um Amazon, dessen Cloud-Gewinne das Konzernergebnis tragen. Die Bewertungen sind gespreizt, weil der Markt zwischen strukturellen Gewinnern des Onlinehandels und den zinsempfindlichen, konsumabhängigen Bereichen klar unterscheidet."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Nahrungsmittel, Getränke und Haushaltsprodukte.",
+      "lage": "Defensiv gefragt, leidet aber als Bond-Proxy unter der Zinskonkurrenz.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist der klassische defensive Anker mit stabilen, konjunkturunabhängigen Cashflows. In der aktuellen Risk-on-Stimmung um KI und Halbleiter rotiert Kapital aus solchen Titeln in Wachstumssektoren, was die relative Performance dämpft. Als teilweiser Bond-Proxy leidet der Sektor zusätzlich unter der Konkurrenz von Anleihen mit über fünf Prozent Rendite. Preissetzungsmacht und Volumenstabilität bleiben die Stärke, während höhere Energie- und Transportkosten die Margen leicht belasten. Die Bewertungen sind angesichts des schwachen Wachstums nicht günstig."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharma, Biotechnologie und Medizintechnik.",
+      "lage": "Weitgehend unbeeinflusst von den Tagesthemen, defensiv positioniert.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist von den Tagesthemen KI und Öl weitgehend abgekoppelt und wirkt defensiv. Große Pharmakonzerne mit soliden Cashflows sind zinsrobust und liefern verlässliche Erträge. Unter Druck stehen dagegen unprofitable Biotech-Werte, deren Gewinne weit in der Zukunft liegen und durch den gestiegenen Diskontsatz stärker abgewertet werden. Strukturelle Treiber bleiben die alternde Bevölkerung und der medizinische Fortschritt. Politische Risiken aus der US-Preisdebatte und Patentabläufe bei umsatzstarken Medikamenten prägen die Bewertung der nächsten Quartale."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer und Vermögensverwalter.",
+      "lage": "Steilere Zinskurve stützt die Bankmargen, Deutsche Bank meldete ein Rekordhalbjahr.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor gehört zu den relativen Gewinnern des higher-for-longer-Umfelds. Eine steilere Zinskurve verbessert die Nettozinsmarge der Banken, die kurzfristig günstig refinanzieren und langfristig teurer verleihen. Die Deutsche Bank untermauerte dies mit einem Rekordhalbjahr und einem neuen Aktienrückkauf. Gegen den Rückenwind stehen Bewertungsverluste in Anleiheportfolios und ein steigendes Kreditrisiko, falls hohe Zinsen die Konjunktur bremsen. Die massive KI-Finanzierung schafft zudem lukratives Geschäft für Investmentbanken. Die Bewertungen bleiben trotz der Kursgewinne moderat."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Halbleiter, Software und Hardware.",
+      "lage": "Cloud-Zahlen und Halbleiter-Rally treiben den Sektor, hohe Zinsen bleiben ein Risiko.",
+      "richtung": "up",
+      "tagesWert": "Nasdaq Composite +2,34 % (Schluss 30.7.)",
+      "istZustand": "Der Sektor steht im Zentrum des Marktgeschehens. Die bestätigten Cloud-Umsätze von Microsoft und Amazon belegen, dass sich die KI-Investitionen in Erlöse übersetzen, was die Halbleiterwerte in Asien um zweistellige Prozentsätze steigen ließ. Die Bewertungen sind hoch, was den Sektor anfällig für die steigenden Langfristzinsen macht, weil diese die weit entfernten Gewinne stärker abwerten. Der strukturelle Nachfragetreiber bleibt der Ausbau der KI-Infrastruktur mit Speicherchips, Beschleunigern und Netzwerktechnik. Die zentrale Spannung liegt zwischen operativer Stärke und Bewertungsrisiko durch die Zinsen."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Internet-Plattformen, Medien und Telekom.",
+      "lage": "Plattformkonzerne profitieren vom KI-Optimismus, Meta fiel dennoch nach Investitionssorgen.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist zweigeteilt. Die großen Internet- und Plattformkonzerne mit eigenen Clouds profitieren vom bestätigten KI-Nachfrageschub, doch die hohen Investitionsbudgets wecken Sorgen um die Amortisierung, sichtbar am Kursrückgang von Meta um mehr als neun Prozent. Klassische Telekomwerte mit hoher Verschuldung leiden unter teurerer Refinanzierung und der Bond-Proxy-Konkurrenz. Der strukturelle Treiber bleibt die Verschiebung der Werbebudgets ins Digitale sowie die Monetarisierung von KI-Diensten. Die Bewertungen der Plattformwerte reagieren empfindlich auf jede Änderung der Zins- und Wachstumserwartung."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Strom-, Gas- und Wasserversorger.",
+      "lage": "Als Bond-Proxy von den hohen Renditen belastet, KI-Strombedarf stützt strukturell.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor steht im aktuellen Zinsumfeld unter Druck, weil seine stabilen Dividenden gegen Anleiherenditen von über fünf Prozent an relativer Attraktivität verlieren. Die hohe Kapitalintensität verteuert zudem jede Refinanzierung und jedes Investitionsprogramm. Dem steht ein starker struktureller Treiber gegenüber, denn KI-Rechenzentren schließen langfristige Stromlieferverträge ab und verwandeln die traditionell defensive Branche in einen indirekten Profiteur des KI-Booms. Die Bewertung schwankt zwischen dem Zinsdruck auf der einen und der neuen Nachfragefantasie durch Rechenzentren auf der anderen Seite."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Immobiliengesellschaften und REITs.",
+      "lage": "Hohe Langfristzinsen belasten den Sektor, Data-Center-REITs bilden die Ausnahme.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist der klarste Verlierer des higher-for-longer-Umfelds. REITs leiden doppelt, weil ihre Dividendenrenditen direkt mit den gestiegenen Anleiherenditen konkurrieren und höhere Zinsen zugleich Refinanzierung und Immobilienbewertung über steigende Kapitalisierungsraten belasten. Eine Ausnahme bilden Data-Center- und Logistik-REITs, deren Mietnachfrage durch den KI-Boom und den Onlinehandel strukturell wächst. Büro- und Handels-REITs bleiben am stärksten belastet. Die Bewertungen sind gefallen, was den Sektor für zinssensible Anleger zu einem Anschauungsfall für die Wirkung der Laufzeitprämie macht."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "The Andersons Inc.",
+      "ticker": "ANDE",
+      "logoKey": "andersons",
+      "marketCapEUR": "2,11 Mrd. €",
+      "capSource": "Alpha Vantage 30.7.2026 (Kurs 71,52 $ ? 34,05 Mio. Aktien = 2,44 Mrd. $, EUR/USD 1,1517)",
+      "marktEinordnung": "Der Markt für nordamerikanischen Getreidehandel, Pflanzennährstoffe und Feedstock für Renewable Diesel ist zweistellig milliardenschwer. The Andersons besitzt einen assetbasierten Burggraben aus Getreidesilos, Umschlagpunkten und einer Waggonflotte, die Wettbewerbern hohe Eintrittskosten auferlegt. Das Wachstum kommt aus dem Feedstock-Bedarf für erneuerbaren Diesel und aus dem Segment für Pflanzennährstoffe.",
+      "thesis": "The Andersons ist ein zyklischer, moderat bewerteter Agrarwert mit anziehender Ertragskraft und einem defensiven Charakter, der in ein unruhiges Marktumfeld passt. Der Umsatz liegt bei rund 11 Milliarden Dollar über die vergangenen zwölf Monate, die Eigenkapitalrendite bei knapp 10 Prozent, das Kurs-Gewinn-Verhältnis bei rund 20. Das Beta von 0,66 zeigt, dass die Aktie in Marktturbulenzen weniger stark schwankt als der Gesamtmarkt, was sie in der aktuellen Risk-off-Phase als Anker interessant macht. Der Hebel liegt im Renewable-Diesel-Feedstock, wo steigende Blending-Vorgaben die Nachfrage nach Mais- und Sojaöl treiben, und im Rail-Leasing, das planbare Erträge liefert. Das jüngste Quartal zeigte ein Gewinnwachstum von über 100 Prozent gegenüber dem Vorjahr.",
+      "counterarguments": [
+        "Die Nettomarge ist mit rund 1,2 Prozent strukturell sehr dünn, weil das Ergebnis an schwer prognostizierbaren Handelsspannen, Ernten und dem Wetter hängt.",
+        "Das Renewables-Segment ist von regulatorischen Blending-Vorgaben und Crush-Spreads abhängig, was politisches Risiko erzeugt.",
+        "Die China-Schwäche drückt die Sojabohnen-Exportvolumina, und das Kurs-Gewinn-Verhältnis von rund 20 ist für ein margenschwaches Handelsgeschäft ambitioniert."
+      ],
+      "catalysts": [
+        "Q2-Zahlen Anfang August 2026",
+        "wiederkehrende USDA-Ernteschätzungen (WASDE) als Impulsgeber"
+      ]
+    },
+    {
+      "name": "STAG Industrial Inc.",
+      "ticker": "STAG",
+      "logoKey": "stag",
+      "marketCapEUR": "6,50 Mrd. €",
+      "capSource": "Alpha Vantage 30.7.2026 (Kurs 38,54 $ ? ~194 Mio. Aktien = 7,49 Mrd. $, EUR/USD 1,1517); stockanalysis.com 30.7.",
+      "marktEinordnung": "Der Markt für US-Industrie- und Logistikimmobilien wird von E-Commerce, Reshoring und der Suche nach Lieferketten-Resilienz getrieben. STAGs Nische sind einzelmietergenutzte Objekte in Sekundärmärkten, wo weniger Konkurrenz durch den Branchenriesen Prologis herrscht und die Anfangsrenditen höher liegen. Diese Fokussierung macht das Unternehmen zum führenden Spezialisten in einem bewusst gemiedenen Teilmarkt.",
+      "thesis": "STAG Industrial ist ein Qualitäts-REIT mit monatlicher Dividende und robusten Neuvermietungsspreads, den das higher-for-longer-Umfeld gerade als Anschauungsfall für Bond-Proxy-Risiken interessant macht. Der operative Cashflow je Aktie, im REIT-Jargon Core FFO, stieg im zweiten Quartal auf 0,65 Dollar, ein Plus von 3,2 Prozent, der Umsatz wuchs um 9,1 Prozent, und die Jahresprognose wurde angehoben. Die operative Marge liegt bei rund 37 Prozent, das Verhältnis von Kurs zu operativem Cashflow bei rund 15, die Dividendenrendite bei etwa 4 Prozent. Die These ist bewusst zweischneidig. Wer glaubt, dass die Langfristzinsen ihren Höhepunkt erreicht haben, findet in STAG einen soliden Compounder mit strukturellem Rückenwind aus der Logistiknachfrage. Wer mit weiter steigenden Zinsen rechnet, sieht das Kursrisiko.",
+      "counterarguments": [
+        "Das higher-for-longer-Umfeld trifft REITs direkt, weil die 30-jährige Rendite bei 5,21 Prozent die Bewertung über den Diskontsatz drückt und die Refinanzierung verteuert. STAG sitzt im Verlierer-Bucket der Bond-Proxys.",
+        "Das organische Wachstum des operativen Cashflows liegt nur bei rund 3 Prozent, und externes Wachstum über Zukäufe wird durch teures Kapital gebremst.",
+        "Single-Tenant-Objekte bergen ein binäres Leerstandsrisiko je Immobilie, und das Analystenvotum lautet mehrheitlich Halten bei rund 10 Prozent Kursluft."
+      ],
+      "catalysts": [
+        "Q2-Bericht am 30.7.2026 mit angehobener Guidance geliefert",
+        "nächste Fed-Entscheidung als Makrotreiber für den gesamten REIT-Sektor"
+      ]
+    },
+    {
+      "name": "Lumen Technologies Inc.",
+      "ticker": "LUMN",
+      "logoKey": "lumen",
+      "marketCapEUR": "5,90 Mrd. €",
+      "capSource": "Alpha Vantage 30.7.2026 (Kurs 6,56 $ ? ~1,04 Mrd. Aktien = 6,80 Mrd. $, EUR/USD 1,1517)",
+      "marktEinordnung": "Der Markt für Rechenzentrums-Konnektivität wächst durch den KI-Boom stark, weil KI-Traffic über Long-Haul-Glasfaser zwischen den Rechenzentren transportiert werden muss. Lumen besitzt eines der größten Intercity-Glasfasernetze der USA und monetarisiert es über Verträge mit Hyperscalern für den KI-Backbone. Das Unternehmen sitzt damit auf einem physischen Engpass, den die KI-Wirtschaft dringend braucht. Lumen ist der Netzbetreiber und Glasfasereigentümer, eine andere Gesellschaft als der ähnlich klingende Photonik-Zulieferer Lumentum.",
+      "thesis": "Lumen Technologies ist ein gehebelter Turnaround auf den KI-Konnektivitätsbedarf und damit die spekulativste der drei Fallstudien. Der Legacy-Umsatz aus klassischer Telefonie und Enterprise-Diensten schrumpft, während neue Glasfaser- und Backbone-Verträge das Kern-Asset für den KI-Traffic der Hyperscaler in Wert setzen. Der Umsatz liegt bei rund 12 Milliarden Dollar über zwölf Monate, das operative Ergebnis vor Abschreibungen bei 2,3 Milliarden Dollar, das Verhältnis von Unternehmenswert zu diesem Ergebnis bei rund 11. Das Eigenkapital funktioniert wie eine gehebelte Wette auf einen gelungenen Mix-Shift vom alten zum neuen Geschäft. Gelingt der Umbau, ist der Hebel groß, weil ein kleiner Teil des schwankenden Ergebnisses auf eine hohe Schuldenlast trifft.",
+      "counterarguments": [
+        "Die Verschuldung ist mit netto rund 18 Milliarden Dollar sehr hoch, das bilanzielle Eigenkapital negativ. Im higher-for-longer-Umfeld ist das Refinanzierungsrisiko akut und die Zinslast belastet den freien Cashflow.",
+        "Der Kernumsatz schrumpft weiter um rund neun Prozent, und die Legacy-Erosion könnte die neuen KI-Deals überkompensieren, während diese hohes Vorab-Investment binden.",
+        "Die Aktie ist mit einem Beta von 1,77 hochvolatil, die Dividende ist seit 2022 gestrichen, und das Analystenvotum lautet ausschließlich Halten oder Verkaufen."
+      ],
+      "catalysts": [
+        "Q2-Zahlen Anfang August 2026",
+        "weitere Backbone-Deals mit Hyperscalern sowie sichtbare Fortschritte beim Schuldenabbau"
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "Exxon und Chevron Q2-Zahlen",
+      "when": "31.7. im US-Handelsverlauf",
+      "bullishIf": "Rekordgewinne bestätigen die Ölprämie, hohe Rückkäufe",
+      "bearishIf": "Enttäuschung bei Produktion oder Cashflow"
+    },
+    {
+      "what": "Eurozone-CPI-Schnellschätzung Juli",
+      "when": "31.7. um 11:00 MESZ (Eurostat)",
+      "bullishIf": "Rate um oder unter 2,8 Prozent, entlastet die EZB",
+      "bearishIf": "deutlicher Anstieg über 3 Prozent, verstärkt Zinssorgen"
+    },
+    {
+      "what": "US-Renditen und September-Hike-Risiko",
+      "when": "laufend bis FOMC 15./16.9.",
+      "bullishIf": "kühlere Daten drücken die 30-jährige unter 5 Prozent",
+      "bearishIf": "30-jährige über 5,3 Prozent, neue Bewertungsdruckwelle"
+    },
+    {
+      "what": "Apple Services und China",
+      "when": "kommende Quartale",
+      "bullishIf": "Services-Wachstum erholt sich, China stabilisiert",
+      "bearishIf": "anhaltende Schwäche beider Bereiche"
+    },
+    {
+      "what": "USD/JPY nach der Intervention",
+      "when": "laufend",
+      "bullishIf": "Yen bleibt fester unter 160, Carry-Trade-Risiko sinkt",
+      "bearishIf": "erneuter Anstieg über 163, Interventionsdruck kehrt zurück"
+    },
+    {
+      "what": "China-Konjunktur nach schwachem PMI",
+      "when": "kommende Datenwochen",
+      "bullishIf": "Stimulus oder Nachfrageerholung",
+      "bearishIf": "weitere Kontraktion belastet Autobauer und Rohstoffe"
+    }
+  ],
+  "learningNotes": [
+    "Für den Kurs zählt die Abweichung von der Erwartung mehr als die absolute Zahl. Apple fiel trotz Rekordumsatz.",
+    "Rekorderlöse sind wertlos, wenn die Kosten schneller steigen. Der Markt bezahlt die Marge, wie Adidas zeigt.",
+    "Die Fed setzt den Leitzins, die Glaubwürdigkeit setzt der Markt. Fehlt sie, steigt die Laufzeitprämie und mit ihr die langen Zinsen.",
+    "Einmalige Buchgewinne verzerren den ausgewiesenen Gewinn. Bei Amazon zählt das operative Ergebnis mehr als die verzerrte Kopfzahl.",
+    "Steigende Langfristzinsen treffen lange Duration und Bond-Proxys zuerst. Versorger und REITs sind die klassischen Verlierer."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "VWL",
+      "modell": "Laufzeitprämie und Erwartungstheorie der Zinsstruktur",
+      "erklaerung": "Die Zinsstrukturkurve zeigt, welche Rendite Anleihen mit unterschiedlicher Laufzeit bieten. Nach der Erwartungstheorie spiegelt der langfristige Zins die erwarteten künftigen Kurzfristzinsen wider. In der Realität kommt ein Aufschlag hinzu, die Laufzeitprämie. Sie ist die Entschädigung dafür, dass Anleger ihr Geld über viele Jahre binden und das Risiko unerwarteter Inflation und Zinsänderungen tragen. Steigt die Unsicherheit über die künftige Geldpolitik, verlangen Investoren eine höhere Prämie, und die langen Zinsen steigen, obwohl der Leitzins unverändert bleibt.",
+      "anwendung": "Genau das zeigte sich am 30. Juli. Die Fed hielt den Leitzins stabil, doch weil ihr Vorsitzender die Guidance strich und keine Projektionen lieferte, stieg die Unsicherheit. Die 30-jährige Rendite kletterte auf 5,21 Prozent, ein direkter Ausdruck einer gestiegenen Laufzeitprämie."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Operating Leverage und die Trennung von Umsatz und Marge",
+      "erklaerung": "Der operative Hebel, im Fachjargon Operating Leverage, beschreibt, wie sich der Gewinn eines Unternehmens verändert, wenn der Umsatz steigt oder fällt. Unternehmen mit hohen Fixkosten haben einen starken Hebel, weil zusätzliche Umsätze überproportional auf den Gewinn durchschlagen. Der Hebel wirkt aber in beide Richtungen. Steigen die Kosten schneller als der Umsatz, sinkt die Marge, und der Gewinn kann trotz Rekordumsatz fallen. Für die Bewertung zählt deshalb die Marge, also der Anteil des Umsatzes, der als Gewinn übrig bleibt, stärker als der reine Umsatz.",
+      "anwendung": "Adidas führte dies vor. Der Konzern meldete einen Rekordumsatz zur Fußball-Weltmeisterschaft, doch ein Marketingbudget von über 900 Millionen Euro drückte die Marge, weshalb die Aktie um bis zu 18,8 Prozent fiel, den stärksten Tagesverlust seit dem Börsengang."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Carry-Trade und ungedeckte Zinsparität",
+      "erklaerung": "Die ungedeckte Zinsparität ist eine ökonomische Faustregel, nach der eine Währung mit höherem Zins gegenüber einer Niedrigzinswährung tendenziell abwerten sollte, sodass sich der Zinsvorteil ausgleicht. In der Praxis geschieht das oft nicht sofort, weshalb der Carry-Trade funktioniert. Investoren leihen sich in der Niedrigzinswährung, meist dem Yen, und legen das Geld höher verzinst an. Sie verdienen an der Zinsdifferenz, solange die Wechselkurse ruhig bleiben. Wertet die Finanzierungswährung plötzlich stark auf, kippt der Gewinn in einen Verlust, und die gleichzeitige Auflösung vieler Positionen verstärkt die Bewegung.",
+      "anwendung": "Am 30. Juli intervenierte Japan am Devisenmarkt, der Dollar-Yen-Kurs fiel von nahe 164 unter 160. Die erzwungene Auflösung von Yen-Carry-Trades verstärkte die Aufwertung und trug zur Rally an den asiatischen Aktienmärkten am Freitag bei."
+    },
+    {
+      "disziplin": "Politikwissenschaft",
+      "modell": "Zentralbank-Unabhängigkeit und Glaubwürdigkeit der Geldpolitik",
+      "erklaerung": "Die Wirksamkeit einer Notenbank hängt weniger von ihren formalen Instrumenten ab als von ihrer Glaubwürdigkeit. Wenn Marktteilnehmer darauf vertrauen, dass eine unabhängige Zentralbank die Inflation entschlossen bekämpft, verankern sich die Inflationserwartungen niedrig, und die langfristigen Zinsen bleiben moderat. Schwindet dieses Vertrauen, etwa weil die Führung als politisch beeinflusst oder unberechenbar wahrgenommen wird, verlangen Investoren höhere Risikoaufschläge. Kommunikation und Erwartungssteuerung sind deshalb ebenso wichtig wie der Zinsbeschluss selbst.",
+      "anwendung": "Der hawkishe Auftritt von Fed-Chef Kevin Warsh ohne Projektionen und ohne Guidance ließ den Anleihemarkt an der Berechenbarkeit der Fed zweifeln. Die steigende Laufzeitprämie und die 30-jährige Rendite auf dem höchsten Stand seit 2007 sind der Preis für dieses gesunkene Vertrauen."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Wie sich das AWS-Wachstum durch Amazons Abschlüsse zieht",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Der AWS-Umsatz von 42,2 Milliarden Dollar erscheint als Erlös. Weil die Cloud eine operative Marge von fast 40 Prozent hat, trägt sie überproportional zum operativen Ergebnis von 27,5 Milliarden Dollar bei. Der ausgewiesene Nettogewinn ist durch einen Buchgewinn von rund 53 Milliarden Dollar aus der Anthropic-Beteiligung verzerrt, ein nicht-operativer Posten, den ein Analyst herausrechnet.",
+      "Bilanz: Der massive Ausbau der Cloud schlägt sich in den Sachanlagen nieder, die durch die Rechenzentren stark wachsen. Die Beteiligung an Anthropic steht als Finanzanlage in der Bilanz, deren Wertsteigerung den Buchgewinn ausgelöst hat. Auf der Passivseite finanzieren wachsende Verbindlichkeiten und eigene Mittel den hohen Investitionsbedarf.",
+      "Cashflow: Der operative Cashflow ist bei Amazon traditionell stark, doch die hohen Investitionen in Rechenzentren, im vergangenen Jahr rund 169 Milliarden Dollar, drücken den freien Cashflow. Hier entscheidet sich die eigentliche Frage der KI-Ära, ob die Cloud-Gewinne die Investitionen dauerhaft übersteigen.",
+      "Bewertung: Weil der ausgewiesene Gewinn durch Einmaleffekte verzerrt ist, bewerten Profis Amazon eher über den operativen Cashflow und die Summe der Segmente. AWS wird dabei separat und höher bewertet als das margenschwache Handelsgeschäft."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler ist, den ausgewiesenen Gewinn je Aktie von 5,75 Dollar für bare Münze zu nehmen. Wer den einmaligen Buchgewinn aus der Anthropic-Beteiligung nicht herausrechnet, überschätzt die laufende Ertragskraft massiv und vergleicht Äpfel mit Birnen, wenn er die Zahl der Konsensschätzung gegenüberstellt."
+  },
+  "glossar": [
+    {
+      "begriff": "Laufzeitprämie (Term Premium)",
+      "erklaerung": "Der Extra-Zins, den Anleger für das Halten langlaufender Anleihen verlangen, als Ausgleich für das Risiko unerwarteter Inflation und Zinsänderungen."
+    },
+    {
+      "begriff": "Bear Steepening",
+      "erklaerung": "Eine steiler werdende Zinskurve, bei der die langfristigen Renditen stärker steigen als die kurzfristigen. Signal für gestiegene Inflations- oder Angebotssorgen."
+    },
+    {
+      "begriff": "Forward Guidance",
+      "erklaerung": "Das Versprechen einer Notenbank über den künftigen Zinspfad, mit dem sie die Erwartungen der Märkte verankert."
+    },
+    {
+      "begriff": "Carry-Trade",
+      "erklaerung": "Ein Geschäft, bei dem man sich in einer Niedrigzinswährung verschuldet und das Geld in einer höher verzinsten Währung anlegt, um an der Zinsdifferenz zu verdienen."
+    },
+    {
+      "begriff": "Bond-Proxy",
+      "erklaerung": "Aktien mit stabilen, anleiheähnlichen Dividenden, etwa Versorger und REITs, die bei steigenden Anleiherenditen an relativer Attraktivität verlieren."
+    },
+    {
+      "begriff": "Operativer Hebel (Operating Leverage)",
+      "erklaerung": "Der Effekt, dass sich der Gewinn bei hohen Fixkosten überproportional zum Umsatz verändert, in beide Richtungen."
+    },
+    {
+      "begriff": "Core FFO",
+      "erklaerung": "Funds from Operations, die zentrale Cashflow-Kennzahl für REITs, die den ausschüttbaren operativen Mittelzufluss aus Immobilien misst."
+    },
+    {
+      "begriff": "PCE-Preisindex",
+      "erklaerung": "Das von der Fed bevorzugte Inflationsmaß, das die Konsumausgaben abbildet. Die Kernrate klammert Energie und Nahrung aus."
+    },
+    {
+      "begriff": "Einkaufsmanagerindex (PMI)",
+      "erklaerung": "Ein Frühindikator aus einer Umfrage unter Einkaufsleitern. Ein Wert über 50 bedeutet Expansion, darunter Schrumpfung."
+    },
+    {
+      "begriff": "HBM (High Bandwidth Memory)",
+      "erklaerung": "Gestapelter Hochleistungsspeicher, der für KI-Beschleuniger gebraucht wird und Hersteller wie SK Hynix und Samsung antreibt."
+    },
+    {
+      "begriff": "VIX",
+      "erklaerung": "Der Volatilitätsindex, das Angstbarometer der Wall Street. Er misst die erwartete Schwankungsbreite des US-Aktienmarktes."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "US-Indizes Schluss 30.7.: S&P 500 7.410,87 (+1,29 %), Nasdaq Composite 25.015,87 (+2,34 %), Dow 52.058,95 (+0,90 %) (Yahoo Finance Live).",
+      "Microsoft +16 % nach Azure über 100 Mrd. Dollar Jahresumsatz (Yahoo Finance Live).",
+      "Amazon Q2: Umsatz 200,6 Mrd. $, AWS 42,2 Mrd. $ (+36,7 %), operatives Ergebnis 27,5 Mrd. $, Nettogewinn durch Anthropic-Buchgewinn ~53 Mrd. $ verzerrt (SEC 8-K).",
+      "Apple Q3: Umsatz 109,4 Mrd. $, EPS 2,02 $, Services 30,74 Mrd. $ (unter Erwartung), Greater China 18,8 Mrd. $ (unter Erwartung) (Apple Newsroom, Yahoo).",
+      "Fed hielt 29.7. bei 3,50 bis 3,75 %, drei Dissens (Logan, Hammack, Kashkari); 30-jährige Rendite 5,21 % (Seoul Economic Daily, Trading Economics).",
+      "FOMC nächste Sitzung 15./16.9.2026 mit Projektionen (federalreserve.gov).",
+      "US-BIP Q2 +1,5 % annualisiert (BEA); Kern-PCE Juni +3,3 % j/j, +0,1 % m/m (BEA/Yahoo).",
+      "BoE hielt 3,75 % (6:3); BoJ hielt 1,00 % (8:1, Takata-Dissens); China NBS-Manufacturing-PMI 49,2.",
+      "Eurozone-BIP Q2 +0,4 % QoQ (Eurostat); Deutschland-CPI Juli +2,8 % (Destatis).",
+      "Kospi +16 %, SK Hynix +28 %, Samsung +25 % im Frühhandel 31.7. (Korea Herald, Bloomberg).",
+      "Yen-Intervention 30.7., USD/JPY von nahe 164 unter 160, 31.7. früh ~160,65 (Nikkei Asia, FXStreet).",
+      "Brent ~87 USD, Gold ~4.075 USD, EUR/USD 1,1517 (Trading Economics, Alpha Vantage 31.7. 04:11 UTC).",
+      "Adidas bis -18,8 % trotz WM-Rekordumsatz, Marketingaufwand über 900 Mio. Euro (SGI Europe, TechTimes).",
+      "Market-Cap-Gate: ANDE 2,11 Mrd. €, STAG 6,50 Mrd. €, LUMN 5,90 Mrd. € (Alpha Vantage 30.7., EUR/USD 1,1517), alle unter 10 Mrd. €."
+    ],
+    "uncertain": [
+      "Apple CEO-Übergang an John Ternus zum 1.9. nur über Finanzmedien belegt, nicht in der Apple-Primärmitteilung.",
+      "Asiatische Werte vom 31.7. sind Frühhandels- und Intraday-Stände, keine Schlusskurse (Session lief zum Redaktionsschluss).",
+      "Eurozone-CPI-Schnellschätzung Juli und Exxon/Chevron Q2 zum Redaktionsschluss noch nicht veröffentlicht.",
+      "Fed-Gesamtabstimmung 9:3 aus den drei belegten Dissens abgeleitet, nicht wörtlich zitiert."
+    ],
+    "gaps": [
+      "Offizielle H.15-Renditen für den 30.7. zum Abruf noch nicht publiziert; 30.7.-Werte aus Tier-2-Quellen.",
+      "DXY-Tagesschluss nur qualitativ (~100, -0,8 %); kein exakter Tier-1-Wert.",
+      "STOXX Europe 600 und FTSE-100-Punktstand 30.7. nicht zweitquellenbestätigt."
+    ]
+  }
+}
