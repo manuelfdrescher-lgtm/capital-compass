@@ -65,3 +65,9 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-07-29-morning | Cullen/Frost Bankers (CFR) | — _(ca. 9,2 Mrd. €; Regionalbank mit direktem Hebel auf ein Regime länger hoher Zinsen)_
 - 2026-07-29-morning | Nexstar Media Group (NXST) | — _(ca. 5,2 Mrd. €; Value-Fall mit klarem Katalysator im Midterm-Werbezyklus 2026)_
 - 2026-07-29-morning | Franklin Electric (FELE) | — _(ca. 4,25 Mrd. €; defensiver Pumpen-Weltmarktführer abseits überlaufener Themen)_
+- 2026-07-30-morning | Rambus Inc. (RMBS) | — _(7,82 Mrd. €; Engpass-Profiteur des KI-Ausbaus, steigende Speichermengen brauchen mehr Schnittstellen-IP)_
+- 2026-07-30-morning | Chesapeake Utilities Corporation (CPK) | — _(2,87 Mrd. €; regulierter Versorger mit ungewöhnlich hohem Wachstumstempo für die Branche)_
+- 2026-07-30-morning | Balchem Corporation (BCPC) | — _(4,59 Mrd. €; defensive Qualitätsfallstudie für ein nervöses Marktumfeld)_
+- 2026-07-31-morning | The Andersons Inc. (ANDE) | — _(2,11 Mrd. €; zyklischer, moderat bewerteter Agrarwert mit anziehender Ertragskraft)_
+- 2026-07-31-morning | STAG Industrial Inc. (STAG) | — _(6,50 Mrd. €; Qualitäts-REIT mit monatlicher Dividende und robusten Neuvermietungsspreads)_
+- 2026-07-31-morning | Lumen Technologies Inc. (LUMN) | — _(5,90 Mrd. €; gehebelter Turnaround auf den KI-Konnektivitätsbedarf, spekulativster der drei Picks)_
