@@ -1,0 +1,1459 @@
+{
+  "edition": {
+    "number": 23,
+    "date": "2026-08-27",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "US-Schluss Mittwoch 26.8.2026, Nvidia-Zahlen nachbörslich, Asien-Handel Donnerstagmorgen 27.8., Alpha-Vantage-FX und Kursdaten vom 27.8. 04:02 UTC.",
+    "generatedAt": "2026-08-27T04:25:00Z",
+    "note": "Vorläufig Nr. 27; Website-Index (content-index.json) führte am 27.8. weiter bis Nr. 22 (12.8. morning). Ausgaben ab 13.8. nicht ingestet. Kanonische Nummer beim Ingest."
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.675,70",
+        "delta": "-0,04 %",
+        "direction": "flat",
+        "note": "Schluss 26.8."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "26.130,20",
+        "delta": "-0,08 %",
+        "direction": "flat",
+        "note": "Schluss 26.8."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "53.463,88",
+        "delta": "-0,21 %",
+        "direction": "down",
+        "note": "Schluss 26.8."
+      },
+      {
+        "label": "Nvidia (nachbörslich)",
+        "value": "rund 210 $",
+        "delta": "rund +4 %",
+        "direction": "up",
+        "note": "nach den Zahlen"
+      },
+      {
+        "label": "Nikkei 225",
+        "value": "66.229",
+        "delta": "-0,1 %",
+        "direction": "flat",
+        "note": "Do früh 27.8."
+      },
+      {
+        "label": "Hang Seng",
+        "value": "25.582",
+        "delta": "-0,3 %",
+        "direction": "down",
+        "note": "Do früh 27.8."
+      },
+      {
+        "label": "VIX",
+        "value": "15,82",
+        "delta": "-0,2 %",
+        "direction": "flat",
+        "note": "Angstbarometer"
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "4,63 %",
+        "delta": "rund -7 Bp.",
+        "direction": "down",
+        "note": "26.8."
+      },
+      {
+        "label": "US-Rendite 30 Jahre",
+        "value": "5,17 %",
+        "delta": "stabil",
+        "direction": "flat",
+        "note": "26.8."
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "87,6 USD",
+        "delta": "-1,1 %",
+        "direction": "down",
+        "note": "26.8."
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,166",
+        "delta": "Dollar fester",
+        "direction": "flat",
+        "note": "Alpha Vantage 27.8."
+      },
+      {
+        "label": "Bitcoin",
+        "value": "rund 79.000 USD",
+        "delta": "unter 80.000",
+        "direction": "down",
+        "note": "27.8."
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "nvidia-q2-fy27-beat",
+      "ressort": "titelseite",
+      "kicker": "Halbleiter · Künstliche Intelligenz",
+      "headline": "Nvidia übertrifft die Erwartungen und stellt 108 Milliarden Dollar für das laufende Quartal in Aussicht",
+      "dek": "Der wertvollste Chipkonzern der Welt meldet 96 Milliarden Dollar Umsatz und einen Ausblick über dem Konsens. Die Aktie dreht nachbörslich ins Plus, Asiens Chipwerte ziehen an.",
+      "body": [
+        "Nvidia hat am Mittwochabend nach US-Börsenschluss seinen mit Spannung erwarteten Bericht für das zweite Quartal des Geschäftsjahres 2027 vorgelegt und die Erwartungen in allen wichtigen Punkten übertroffen. Der Umsatz stieg auf 96,2 Milliarden US-Dollar, ein Plus von 106 Prozent gegenüber dem Vorjahr, und lag damit deutlich über dem Analystenkonsens von rund 92 Milliarden Dollar. Das Rechenzentrumsgeschäft allein erreichte 89,0 Milliarden Dollar. Der bereinigte Gewinn je Aktie kam auf 2,22 Dollar, die Bruttomarge auf 75,0 Prozent und damit über der erwarteten Marke von etwa 73,5 Prozent.",
+        "Entscheidend für die Kursreaktion war jedoch der Ausblick, nicht die berichtete Zahl. Für das laufende dritte Quartal stellte Nvidia einen Umsatz von 108,0 Milliarden Dollar in Aussicht, mit einer Schwankungsbreite von zwei Prozent. Der Markt hatte hier rund 104 Milliarden Dollar erwartet. Die Prognose liegt also klar über dem Konsens, und das obwohl sie keinerlei Umsätze aus dem China-Geschäft enthält. Zu einem Quartalsumsatz von mehr als 100 Milliarden Dollar haben in der Geschichte erst eine Handvoll US-Konzerne überhaupt gefunden.",
+        "Die Aktie hatte vor den Zahlen sieben Handelstage in Folge verloren und reagierte zunächst nervös. Im Verlauf der Analystenkonferenz drehte sie ins Plus und notierte nachbörslich rund vier Prozent höher, nachdem sie regulär bei etwa 210 Dollar geschlossen hatte. Am Donnerstagmorgen zogen die US-Terminmärkte an, die Nasdaq-Futures lagen fast ein Prozent im Plus. In Asien stiegen die Chipwerte, der Speicherhersteller SK Hynix und der Konkurrent Samsung legten je rund zwei bis drei Prozent zu, der japanische Speicheranbieter Kioxia rund vier Prozent.",
+        "Ein Streitpunkt bleibt China. Nvidia-Finanzchefin Colette Kress bestätigte, dass der Ausblick für das dritte Quartal keine Umsätze mit dem für China bestimmten H20-Chip enthält, weil geopolitische Fragen ungelöst sind. Lösten sich diese, könnte der Konzern zusätzlich zwei bis fünf Milliarden Dollar an H20-Umsatz liefern. Nvidia-Chef Jensen Huang sagte, künstliche Intelligenz habe ihren Wendepunkt erreicht, ihre Rechenleistung erzeuge inzwischen Umsatz. Die nächste Chip-Generation mit dem Namen Rubin soll im laufenden Quartal in die Auslieferung gehen. Als Risiko bleibt die auf 74 Prozent sinkende Bruttomarge im Ausblick, die Nvidia mit steigenden Speicherkosten begründet."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine Aktie reagiert auf die Abweichung von dem, was der Markt schon erwartet hat, weniger auf die absolute Höhe der Zahlen. Bei Nvidia steckte eine sehr hohe Erwartung im Kurs, und in den Quartalen zuvor war die Aktie trotz Rekordzahlen jedes Mal gefallen. Diesmal lagen das Ergebnis und der Ausblick zugleich über dem Konsens, und genau der Ausblick bestimmt den künftigen Cashflow-Pfad. Weil Nvidia der schwerste Einzelwert der US-Indizes ist, zieht seine Reaktion den gesamten Technologiehandel mit.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum der Ausblick mehr wiegt als der Rekordumsatz",
+        "absaetze": [
+          "Der Wert einer Aktie ist die Summe aller künftigen Gewinne, abgezinst auf heute. Berichtete Zahlen betreffen die Vergangenheit und sind zum Zeitpunkt der Veröffentlichung meist schon eingepreist. Der Ausblick dagegen verändert die Schätzung der künftigen Gewinne, und genau diese Schätzung bestimmt den Kurs. Deshalb kann ein Rekordquartal mit schwachem Ausblick fallen und ein durchschnittliches Quartal mit starkem Ausblick steigen.",
+          "Bei Nvidia kam ein zweiter Hebel hinzu. Die Prognose von 108 Milliarden Dollar klammert China vollständig aus. Der Markt erhält damit eine Art Untergrenze, denn jede Entspannung im China-Geschäft wäre zusätzlicher Umsatz obendrauf. Zugleich mahnt die auf 74 Prozent sinkende Bruttomarge zur Vorsicht, weil teurere Speicherbausteine die Kostenseite belasten. Der Test, ob der Investitionsboom in künstliche Intelligenz nachhaltig ist, fällt damit vorerst positiv aus, bleibt aber an die Ausgabenbereitschaft weniger Großkunden gebunden."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "KI-Rechenzentren verbrauchen enorm viel Strom, und ein Investitionsberg von rund 800 Milliarden Dollar im Jahr 2026 treibt die Nachfrage nach Erdgas und Stromlieferung für neue Serverfarmen.",
+          "teilbranchen": "Erdgasproduzenten, LNG-Anbieter, Pipelines, Gaskraftwerke"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der Bau von Rechenzentren und Chipfabriken braucht viel Kupfer, Industriegase und Spezialmaterialien. Die von Nvidia genannten steigenden Speicherkosten zeigen, dass die Nachfrage nach den Grundmaterialien anzieht.",
+          "teilbranchen": "Kupfer, Industriegase, Spezialchemie, Bauchemie"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Rechenzentren brauchen Kühlung, Stromverteilung und Transformatoren, und dieser Ausrüstungsbedarf steigt mit dem Investitionsboom direkt an. Auch die Anbieter von Chip-Produktionsanlagen profitieren.",
+          "teilbranchen": "Elektroausrüstung, Kühltechnik, Halbleiter-Fertigungsanlagen, Bau"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Nvidias Serverchips fließen in Unternehmens-Rechenzentren und berühren das Konsumverhalten der Haushalte kaum. Ein Wirkkanal entstünde erst spät, falls KI-Produktivität Löhne oder Konsumlaune verändert.",
+          "teilbranchen": "Konsumelektronik am Rand (KI-PCs, Gaming), sonst unberührt"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Lebensmittel, Getränke und Haushaltswaren hängen an Konsumausgaben und Rohstoffpreisen, und der KI-Investitionszyklus verändert diese Treiber praktisch nicht.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Haushalts- und Körperpflege"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Der Umsatz von Pharma und Medizintechnik hängt an Medikamenten, Patenten und Regulierung, worauf ein Nvidia-Quartal keinen direkten Einfluss hat. Ein schwacher positiver Kanal besteht bei KI-gestützter Wirkstoffforschung.",
+          "teilbranchen": "KI-Drug-Discovery leicht berührt, sonst unberührt"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der KI-Boom stützt die Aktienmärkte und damit Vermögensverwalter und Börsen. Zugleich birgt das Klumpenrisiko weniger KI-Werte die Gefahr, dass eine Korrektur breite Indexfonds mitzieht.",
+          "teilbranchen": "Vermögensverwalter, Broker, Börsen, Indexanbieter"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Nvidia ist der Kern dieses Sektors, und die starke Nachfrage sowie die neue Rubin-Plattform ziehen die gesamte Chip-Lieferkette nach oben, was die asiatischen Titel bestätigten.",
+          "teilbranchen": "Halbleiter (GPU, HBM-Speicher, Foundry), Netzwerkausrüstung, Ausrüster"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Die großen Cloud-Plattformen sind Nvidias wichtigste Kunden, und ihr hoher Investitionsberg bestätigt den Chipbedarf. Derselbe Ausgabenberg belastet aber kurzfristig ihren eigenen freien Cashflow.",
+          "teilbranchen": "Cloud- und Internet-Plattformen, digitale Werbung"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der Strombedarf der Rechenzentren zwingt Versorger zu höherer Erzeugung und neuen Netzanschlüssen, was Absatzmengen und Investitionsbedarf steigert.",
+          "teilbranchen": "regulierte Stromversorger, unabhängige Erzeuger, Erneuerbare mit Data-Center-Verträgen"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der Bau neuer Rechenzentren treibt die Nachfrage nach spezialisierten Immobilien mit Strom- und Glasfaseranschluss, was Betreibern von Data-Center-Flächen zugutekommt.",
+          "teilbranchen": "Data-Center-REITs, Logistik-REITs, Colocation"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Nvidia",
+          "logoKey": "nvidia",
+          "bewegung": "rund +4 %",
+          "warum": "nachbörslich, Umsatz und Ausblick über Konsens"
+        },
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+2 bis 3 %",
+          "warum": "Speicherhersteller profitiert von KI-Nachfrage"
+        },
+        {
+          "firma": "Kioxia",
+          "logoKey": "kioxia",
+          "bewegung": "rund +4 %",
+          "warum": "japanischer Speicheranbieter im Sog der Zahlen"
+        },
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+2 bis 3 %",
+          "warum": "Chip- und Speichergeschäft zieht an"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Nvidia: Ist und Ausblick gegen den Konsens",
+          "subtitle": "Quartalsumsatz in Milliarden US-Dollar",
+          "unit": " Mrd $",
+          "source": "Nvidia-Pressemitteilung (SEC) 26.8.2026, Konsens LSEG",
+          "absolute": true,
+          "allPositive": true,
+          "data": [
+            [
+              "Q2 Konsens",
+              92.3
+            ],
+            [
+              "Q2 Ist",
+              96.2
+            ],
+            [
+              "Q3 Konsens",
+              104
+            ],
+            [
+              "Q3 Ausblick",
+              108
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "NVIDIA Announces Financial Results for Q2 FY2027 (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm",
+          "tier": 1
+        },
+        {
+          "title": "Nvidia tops earnings estimates, guides to $108 billion (CoinDesk)",
+          "url": "https://www.coindesk.com/markets/2026/08/26/nvidia-tops-earnings-estimates-guides-to-usd108-billion-in-revenue-next-quarter",
+          "tier": 2
+        },
+        {
+          "title": "Stock futures rise as Nvidia shares jump 4% after earnings (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/26/stock-market-today-live-updates.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "ki-beschleuniger-platine.jpg",
+        "alt": "Nahaufnahme einer hochwertigen KI-Beschleunigerkarte mit Kühlrippen und goldenen Kontakten auf dunkler Werkbank",
+        "caption": "Der Baustein des KI-Booms: eine Beschleunigerkarte im Detail",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "wall-street-vor-nvidia-flat",
+      "ressort": "news",
+      "kicker": "Aktienmärkte · Wall Street",
+      "headline": "Wall Street tritt vor Nvidias Zahlen auf der Stelle, danach ziehen die Futures an",
+      "dek": "Ein Meta-Vergleich und die heißen Inflationsdaten bremsten die Kurse am Mittwoch. Nach Nvidias Bericht drehte die Stimmung, und Asien folgte nach oben.",
+      "body": [
+        "Die US-Börsen schlossen am Mittwoch nahezu unverändert, weil Anleger vor dem Nvidia-Bericht kein Risiko eingehen wollten. Der breite S&P 500 gab 0,04 Prozent auf 7.675,70 Punkte nach, der Dow Jones verlor 0,21 Prozent auf 53.463,88 Zähler, der technologielastige Nasdaq Composite schloss mit einem Minus von 0,08 Prozent bei 26.130,20 Punkten. Belastet wurde die Stimmung von den am Morgen veröffentlichten Inflationszahlen, die leicht über den Erwartungen lagen, sowie von einem milliardenschweren Rechtsvergleich des Plattformkonzerns Meta.",
+        "Nach Börsenschluss kehrte sich das Bild. Nvidias Zahlen und der starke Ausblick hoben die Terminmärkte, die Nasdaq-Futures legten am Donnerstagmorgen fast ein Prozent zu, die S&P-500-Futures rund ein halbes Prozent. In Asien stiegen vor allem die Chipwerte, während die breiten Indizes uneinheitlich blieben. Der japanische Nikkei 225 lag mit 66.229 Punkten knapp im Minus, der Hang Seng in Hongkong gab 0,3 Prozent nach, das Angstbarometer VIX notierte mit 15,82 auf niedrigem Niveau.",
+        "Am Anleihemarkt gaben die Renditen am Mittwoch leicht nach, die zehnjährige US-Staatsanleihe rentierte um 4,63 Prozent. Fallende Renditen und ein ruhigerer Ölpreis stützten die Aktien im regulären Handel, bevor Nvidia die Richtung für den Donnerstag vorgab."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Vor einem Großereignis wie den Nvidia-Zahlen bauen viele Anleger Risiko ab und warten ab, weshalb die Kurse oft seitwärts laufen. Fällt das Ereignis dann besser aus als befürchtet, kehren Käufer zurück, und die Bewegung setzt sich zuerst in den Terminmärkten fort, die rund um die Uhr handeln. So entsteht der Effekt, dass ein flacher Handelstag in einen kräftigen Anstieg der Futures übergeht.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+2 bis 3 %",
+          "warum": "Asiens Chipwerte folgen Nvidia nach oben"
+        },
+        {
+          "firma": "Meta Platforms",
+          "logoKey": "meta",
+          "bewegung": "belastet",
+          "warum": "17-Milliarden-Vergleich zum Jugendschutz"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stock Market Today, Aug. 26 (Motley Fool)",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/08/26/stock-market-today-aug-26-stocks-edge-lower-as-market-digests-meta-ruling-and-awaits-nvidia-s-earnings/",
+          "tier": 2
+        },
+        {
+          "title": "Stock futures rise as Nvidia shares jump 4% (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/26/stock-market-today-live-updates.html",
+          "tier": 2
+        },
+        {
+          "title": "Asian chip firms lifted by Nvidia (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-chip-firms-lifted-nvidia-024234685.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "handelsraum-wartestellung.jpg",
+        "alt": "Händler stehen mit verschränkten Armen im Handelsraum und blicken auf Anzeigetafeln über ihnen",
+        "caption": "Abwarten im Handelsraum, bis die Zahlen kommen",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "meta-jugendschutz-vergleich",
+      "ressort": "news",
+      "kicker": "Kommunikation · Regulierung",
+      "headline": "Meta zahlt 17 Milliarden Dollar in einem Vergleich zum Jugendschutz",
+      "dek": "Der Facebook- und Instagram-Konzern legt einen Rechtsstreit mit Dutzenden US-Bundesstaaten bei und muss neue Schutzregeln für Minderjährige einführen.",
+      "body": [
+        "Der Plattformkonzern Meta Platforms hat einen Rechtsstreit mit Dutzenden US-Bundesstaaten über Fragen des Jugendschutzes mit einer Zahlung von 17 Milliarden US-Dollar beigelegt. Der Vergleich verpflichtet das Unternehmen, auf Facebook und Instagram neue Schutzvorkehrungen für Nutzer unter 18 Jahren einzuführen. Dazu gehören eine standardmäßige Begrenzung der täglichen Nutzung auf zwei Stunden, nächtliche Sperren, Einschränkungen bei sichtbaren Like-Zählern sowie eine strengere Altersverifikation und die Entfernung von Nutzern unter 13 Jahren.",
+        "Für Meta ist die Summe verkraftbar, gemessen an einem Jahresgewinn im hohen zweistelligen Milliardenbereich, doch die Auflagen greifen in das Geschäftsmodell ein. Kürzere Nutzungszeiten und weniger sichtbare Interaktionssignale können die Zeit senken, die junge Nutzer auf den Plattformen verbringen, und damit die Zahl der ausgespielten Werbeanzeigen. Die Aktie zeigte sich am Mittwoch belastet, der genaue Kurseffekt ließ sich in den vorliegenden Quellen aber nicht sauber beziffern."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Das Geld eines Werbekonzerns kommt aus der Aufmerksamkeit der Nutzer. Je länger Menschen auf einer Plattform sind und je mehr Anzeigen sie sehen, desto höher der Umsatz. Regeln, die die Nutzungszeit begrenzen, treffen deshalb direkt den wichtigsten Rohstoff des Geschäfts. Die einmalige Vergleichszahlung belastet zwar das Quartal, entscheidender für den langfristigen Wert sind aber die dauerhaften Auflagen zur Nutzung.",
+      "sources": [
+        {
+          "title": "Stock Market Today, Aug. 26, Meta settlement (Motley Fool)",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/08/26/stock-market-today-aug-26-stocks-edge-lower-as-market-digests-meta-ruling-and-awaits-nvidia-s-earnings/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "jugendlicher-smartphone-nacht.jpg",
+        "alt": "Ein Jugendlicher sitzt nachts allein auf dem Bett, das Gesicht nur vom Licht des Smartphones erhellt",
+        "caption": "Nächtliche Bildschirmzeit: Kern des Jugendschutzstreits",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "asien-chipwerte-nvidia",
+      "ressort": "news",
+      "kicker": "Halbleiter · Asien",
+      "headline": "Asiens Chipwerte ziehen nach Nvidias Zahlen an, Korea hebt die Zinsen",
+      "dek": "Speicherhersteller und Auftragsfertiger profitieren vom starken Ausblick. Zugleich strafft die Bank von Korea ihre Geldpolitik.",
+      "body": [
+        "Die Zulieferer der künstlichen Intelligenz in Asien reagierten am Donnerstagmorgen positiv auf Nvidias Bericht. Der südkoreanische Speicherkonzern SK Hynix und der Rivale Samsung Electronics legten je rund zwei bis drei Prozent zu, der japanische Speicheranbieter Kioxia rund vier Prozent, der Auftragsfertiger TSMC notierte fester. Der Hintergrund ist einfach. Nvidias hoher Ausblick bedeutet mehr Bestellungen für Grafikprozessoren, und diese Chips brauchen große Mengen Hochleistungsspeicher, den vor allem SK Hynix und Samsung liefern.",
+        "Zugleich hob die Bank von Korea ihren Leitzins um 0,25 Prozentpunkte auf 3,0 Prozent an und reihte sich damit in die Notenbanken ein, die derzeit über straffere Geldpolitik nachdenken. Die breiten asiatischen Indizes blieben uneinheitlich, weil die Zinserhöhung und Inflationssorgen den Rückenwind aus dem Chipsektor teilweise ausglichen. Der Nikkei 225 schloss knapp im Minus, der Hang Seng in Hongkong gab leicht nach, der Shanghai Composite lag knapp im Plus."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Nvidia entwirft die Chips, verkauft aber komplette Systeme, in denen viel Hochleistungsspeicher steckt. Steigt die Nachfrage nach Nvidia-Systemen, steigt automatisch die Nachfrage nach diesem Speicher, weshalb die Zahlen des Chipdesigners die Kurse seiner Zulieferer bewegen. Eine Zinserhöhung wirkt in die Gegenrichtung, weil sie künftige Gewinne stärker abzinst und die Währung stützt, was den Rückenwind für den breiten Markt dämpft.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Kioxia",
+          "logoKey": "kioxia",
+          "bewegung": "rund +4 %",
+          "warum": "Speicher für KI-Server gefragt"
+        },
+        {
+          "firma": "SK Hynix",
+          "logoKey": "skhynix",
+          "bewegung": "+2 bis 3 %",
+          "warum": "Hauptlieferant von Hochleistungsspeicher"
+        },
+        {
+          "firma": "Samsung Electronics",
+          "logoKey": "samsung",
+          "bewegung": "+2 bis 3 %",
+          "warum": "Chip- und Speichergeschäft profitiert"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Asian chip firms lifted by Nvidia (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-chip-firms-lifted-nvidia-024234685.html",
+          "tier": 2
+        },
+        {
+          "title": "Asian stocks rise a third day (AOL/Reuters)",
+          "url": "https://www.aol.com/articles/asian-stocks-rise-third-day-015916000.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "seoul-finanzviertel-abend.jpg",
+        "alt": "Belebtes Finanzviertel in Seoul in der Abenddämmerung mit beleuchteten Bürotürmen und großer Anzeigetafel",
+        "caption": "Seouls Finanzviertel am Abend",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "bitcoin-unter-80000",
+      "ressort": "news",
+      "kicker": "Kryptowährungen",
+      "headline": "Bitcoin rutscht wieder unter 80.000 Dollar zurück",
+      "dek": "Die größte Kryptowährung hatte am Vortag kurz die Marke überschritten. Nun überwiegen Gewinnmitnahmen und Warnsignale einer Überhitzung.",
+      "body": [
+        "Bitcoin hatte am Dienstag und Mittwoch erstmals seit mehr als drei Monaten wieder die Marke von 80.000 US-Dollar überschritten und zeitweise über 81.000 Dollar erreicht. Am Donnerstagmorgen notierte die größte Kryptowährung wieder darunter, bei rund 79.000 Dollar. Beobachter führten den Rückgang auf Gewinnmitnahmen und technische Warnsignale einer kurzfristigen Überhitzung zurück. Als Treiber der vorherigen Erholung galten eine breitere Rückkehr der Risikofreude und angekündigte Anleiherückkäufe des US-Finanzministeriums.",
+        "Kryptowährungen gelten weiterhin als Barometer für die Risikobereitschaft. Weil Bitcoin keinen inneren Cashflow erzeugt, hängt sein Preis fast vollständig an Angebot, Nachfrage und Stimmung. In Phasen steigender Risikofreude fließt Geld zuerst in die spekulativsten Anlagen, in Phasen der Vorsicht zieht es sich ebenso schnell wieder zurück."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Eine Anlage ohne laufende Zahlungen wie Zinsen oder Dividenden lässt sich nicht über künftige Erträge bewerten, ihr Preis ergibt sich allein aus Angebot und Nachfrage. Deshalb schwankt Bitcoin besonders stark mit der allgemeinen Risikoneigung. Ein Sprung über eine runde Marke lockt kurzfristig Käufer an, danach nehmen viele Gewinne mit, und der Kurs fällt zurück, ohne dass sich fundamental etwas geändert hätte.",
+      "sources": [
+        {
+          "title": "Bitcoin crosses 80,000 for the first time since May (Forbes)",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/08/25/bitcoin-crosses-80000-for-the-first-time-since-may-amid-crypto-bounce-back/",
+          "tier": 2
+        },
+        {
+          "title": "Bitcoin tops 80,000, overbought warning (CoinDesk)",
+          "url": "https://www.coindesk.com/markets/2026/08/25/bitcoin-tops-usd80-000-solana-jumps-8-but-rally-now-runs-into-overbought-warning",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "krypto-mining-halle.jpg",
+        "alt": "Lange Reihen gestapelter Mining-Rechner mit Lüftern und Kabeln in kaltem blaugrünem Licht",
+        "caption": "Rechenleistung im Dauerbetrieb: eine Mining-Halle",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "kanada-gegenzoelle-8-september",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · Nordamerika",
+      "headline": "Kanada bereitet Gegenzölle von bis zu 50 Prozent auf US-Waren vor",
+      "dek": "Nach dem US-Strafzoll kündigt Ottawa Vergeltung ab dem 8. September an. Die eng verzahnten nordamerikanischen Lieferketten geraten unter Druck.",
+      "body": [
+        "Der Handelskonflikt zwischen den USA und Kanada verschärft sich. Nachdem die US-Regierung am 22. August einen Zoll von 50 Prozent auf kanadische Waren im Wert von rund 20 Milliarden US-Dollar verhängt hatte, kündigte der kanadische Premierminister Mark Carney am 25. August Gegenzölle von bis zu 50 Prozent auf US-Waren an. Diese sollen am 8. September in Kraft treten. Kanada veröffentlichte dazu eine offizielle Produktliste über das Finanzministerium.",
+        "Berichten zufolge sind Energie, Dünger und kritische Mineralien von den US-Zöllen ausgenommen, diese Ausnahmen sind allerdings nicht abschließend bestätigt. An den Märkten reagierte vor allem die Währung, der kanadische Dollar wertete ab, das Paar US-Dollar zu kanadischem Dollar stieg auf rund 1,39. Die eigentliche Gefahr liegt in der angedrohten Ausweitung der Zölle auf Fahrzeuge, Autoteile und Stahl, die die integrierte Autoproduktion zwischen den beiden Ländern empfindlich treffen würde."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Zoll ist eine Steuer auf eingeführte Waren. Er verteuert die betroffenen Produkte, senkt deren Absatz und drückt die Margen der Hersteller. In der Autoindustrie überqueren einzelne Teile mehrfach die Grenze, bevor ein Fahrzeug fertig ist, weshalb jeder Zoll die Kosten entlang der ganzen Kette erhöht. Ein schwächerer kanadischer Dollar wirkt teilweise dagegen, weil er kanadische Ware im Weltmarkt verbilligt.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Energie ist laut Berichten von den US-Zöllen ausgenommen, deshalb bleibt der Handelsstrom wahrscheinlich verschont. Der schwächere kanadische Dollar senkt zugleich die Kosten kanadischer Förderer in Dollar gerechnet.",
+          "teilbranchen": "Öl- und Gasförderung, Pipelines, Raffinerien mit Grenzlieferketten"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Stahl steht ausdrücklich auf der Liste einer möglichen Zollausweitung. Zölle verteuern grenzüberschreitend gehandelte Rohstoffe und drücken die Margen von Herstellern mit integrierten Lieferketten.",
+          "teilbranchen": "Stahl und Metalle, Düngemittel (Kali), kritische Mineralien, Aluminium"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Autoteile und Stahlprodukte drohen unter die Zölle zu fallen, und die Lieferketten sind eng verzahnt, sodass Komponenten mehrfach die Grenze überqueren. Jede Grenzüberquerung mit Zoll erhöht die Kosten.",
+          "teilbranchen": "Zulieferer, Maschinenbau, Transport und Logistik, Bauzulieferer"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Fahrzeuge und Autoteile sind das Kernrisiko einer Zollausweitung, und die Autoproduktion ist über Ontario und den Mittleren Westen eng integriert. Zölle verteuern jedes Fahrzeug entlang der Kette.",
+          "teilbranchen": "Automobilhersteller, Autoteile, Einzelhandel mit Importware"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Lebensmittel- und Agrarprodukte laufen stark über die Grenze, und Gegenzölle können Vorprodukte verteuern. Die unelastische Nachfrage nach Grundnahrungsmitteln federt den Effekt ab.",
+          "teilbranchen": "Lebensmittelverarbeitung, Getränke, Agrarhandel, Verpackung"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Pharma und Medizintechnik stehen nicht auf den bekannten Zollisten, und die Nachfrage nach Gesundheitsleistungen ist handelsunabhängig.",
+          "teilbranchen": "Medizintechnik mit Grenzfertigung geringfügig, sonst unberührt"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken handeln keine physischen Güter, spüren die Zölle aber über ihre Firmenkunden, deren Kreditrisiko steigt. Der schwächere kanadische Dollar wirkt zusätzlich über das Devisengeschäft.",
+          "teilbranchen": "Regionalbanken mit Industrie- und Auto-Exposure, Handelsfinanzierung, Versicherer"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Der Sektor handelt vor allem Software, Halbleiter und Dienstleistungen, die nicht im Fokus der Zölle stehen, und Kanada ist kein zentrales Glied dieser Lieferketten.",
+          "teilbranchen": "Elektronikfertigung geringfügig, Software und Halbleiter unberührt"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Telekommunikation und digitale Medien sind Dienstleistungen ohne physische Grenzflüsse, deshalb greifen Warenzölle hier nicht direkt.",
+          "teilbranchen": "Werbung über Konjunktur geringfügig, sonst unberührt"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Grenzüberschreitender Strom- und Gashandel schafft punktuelle Berührung, doch da Energie voraussichtlich ausgenommen ist, bleibt der direkte Effekt begrenzt.",
+          "teilbranchen": "grenzüberschreitende Strom- und Gasversorger geringfügig, regulierte Versorger stabil"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Immobilien sind standortgebunden und werden nicht über Grenzen gehandelt. Ein schwacher indirekter Kanal läuft über teurere Baumaterialien wie Stahl und Holz.",
+          "teilbranchen": "Industrie- und Logistikimmobilien geringfügig, Bauträger über Materialkosten"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Canada issues retaliatory tariffs up to 50% (Washington Post)",
+          "url": "https://www.washingtonpost.com/business/2026/08/25/canada-issues-retaliatory-tariffs-up-50-percent-us-imports/",
+          "tier": 2
+        },
+        {
+          "title": "Canada, Trump tariffs, Carney (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "grenzuebergang-lkw-schlange.jpg",
+        "alt": "Lastwagenschlange an einem Grenzübergang mit Zollhäuschen und Schranken bei grauem Wetter",
+        "caption": "Warten am Grenzübergang: Zölle treffen zuerst die Lieferkette",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "jackson-hole-warsh-rede",
+      "ressort": "politik",
+      "kicker": "Geldpolitik · Notenbanken",
+      "headline": "Jackson Hole beginnt, Warsh hält am Freitag seine erste Rede als Fed-Chef",
+      "dek": "Das wichtigste Notenbanktreffen des Jahres startet. Der neue Vorsitzende gibt sein Debüt in einer angespannten Zinsphase.",
+      "body": [
+        "Das jährliche Symposium der Federal Reserve von Kansas City in Jackson Hole findet von Donnerstag, 27. August, bis Samstag, 29. August, statt. Das offizielle Thema lautet in diesem Jahr Finanzinnovation und ihre Folgen für den Zahlungsverkehr. Der neue Fed-Vorsitzende Kevin Warsh hält seine erste Grundsatzrede als Notenbankchef am Freitag gegen 16:00 Uhr deutscher Zeit. Die vollständige Tagesordnung wird traditionell am Vorabend veröffentlicht.",
+        "Die Rede fällt in eine heikle Phase. Beim Zinsentscheid am 29. Juli hielt die Fed den Leitzins in der Spanne von 3,50 bis 3,75 Prozent, drei Mitglieder stimmten jedoch für eine Anhebung. Nach den am Mittwoch veröffentlichten Inflationszahlen, die leicht über den Erwartungen lagen, diskutiert der Markt eine Zinserhöhung im September. Warsh gilt als Kritiker klassischer Vorabführung durch die Notenbank, weshalb seine Rede besonders aufmerksam auf Hinweise zur Zinsrichtung durchsucht werden dürfte."
+      ],
+      "mechanik": "Mechanik einfach erklärt: In Jackson Hole geben Notenbankchefs oft Hinweise auf die künftige Zinsrichtung, ohne schon zu entscheiden. Ein restriktiver Ton, also die Andeutung höherer oder länger hoher Zinsen, hebt die Anleiherenditen und drückt vor allem hoch bewertete Wachstumsaktien, weil künftige Gewinne stärker abgezinst werden. Weil Warsh neu im Amt ist, ist die Unsicherheit über seinen Kurs besonders hoch.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum eine Rede ohne Zinsentscheid Märkte bewegt",
+        "absaetze": [
+          "Eine Notenbank steuert die Wirtschaft über zwei Kanäle, den tatsächlichen Zinsschritt und die Erwartungen, die sie setzt. Wenn Marktteilnehmer glauben, dass die Zinsen länger hoch bleiben, steigen schon heute die Renditen langlaufender Anleihen, weil diese die erwartete Zinsentwicklung über viele Jahre einpreisen. Eine Rede kann diese Erwartung verschieben, noch bevor ein einziger Beschluss gefasst ist.",
+          "Warshs Debüt ist deshalb heikel, weil ein neuer Vorsitzender seine Glaubwürdigkeit erst aufbauen muss. Zeigt er sich entschlossen gegen die Inflation, festigt das die Erwartung stabiler Preise und kann die langfristigen Renditen sogar senken. Bleibt er vage oder wirkt nachgiebig, kann der Markt höhere Inflationsrisiken einpreisen. Der Kurs der Notenbank wird so zu einem Kommunikationsspiel, in dem Worte fast so stark wirken wie Taten."
+        ]
+      },
+      "sources": [
+        {
+          "title": "Jackson Hole 2026 dates, schedule, Warsh first speech",
+          "url": "https://www.regardsofwallstreet.com/news/jackson-hole-2026-dates-schedule-warsh-first-speech",
+          "tier": 2
+        },
+        {
+          "title": "Will Fed chair Warsh say anything substantial at Jackson Hole (Marketplace)",
+          "url": "https://www.marketplace.org/story/2026/08/25/will-fed-chair-warsh-say-anything-substantial-at-jackson-hole",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "jackson-hole-rednerpult.jpg",
+        "alt": "Leeres Rednerpult auf einer Bühne in einer Berglodge, dahinter hohe Fenster mit Blick auf Nadelwald und Felsgipfel",
+        "caption": "Die Bühne steht bereit, bevor die Rede beginnt",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "graham-act-repraesentantenhaus",
+      "ressort": "politik",
+      "kicker": "Geopolitik · Sanktionen",
+      "headline": "Russland-Sanktionsgesetz wartet auf das Repräsentantenhaus",
+      "dek": "Der Senat hat das Graham-Gesetz mit großer Mehrheit verabschiedet. Nach der Sommerpause entscheidet ab dem 1. September die zweite Kammer.",
+      "body": [
+        "Der nach dem verstorbenen Senator Lindsey Graham benannte Sanctioning Russia Act of 2026 hat den US-Senat am 7. August mit 86 zu 11 Stimmen passiert. Das Gesetz richtet sich gegen Russland und Iran und sieht Sekundärzölle von bis zu 100 Prozent auf große Importeure russischer Energie vor, dazu gestaffelte Zölle von bis zu 500 Prozent auf direkte Russland-Importe. Der Präsident kann Ausnahmen im nationalen Interesse gewähren.",
+        "Das Repräsentantenhaus kehrt am 1. September aus der Sommerpause zurück und hat bis zu den Zwischenwahlen nur rund 15 Sitzungstage, was Zeitdruck erzeugt. Der entscheidende Marktkanal wären die Sekundärzölle gegen Käufer russischer Energie wie China und Indien. Sie könnten den Ölhandel dieser Länder belasten und damit indirekt auf die globalen Energiepreise wirken. Solange das Gesetz nicht durch die zweite Kammer ist, bleibt die Wirkung eine reine Erwartung."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Sekundärzoll richtet sich gegen Dritte, die weiter mit einem sanktionierten Land handeln, statt gegen das Land selbst. Ein Käufer russischen Öls wie Indien wird damit vor die Wahl gestellt, entweder auf das Öl zu verzichten oder hohe US-Zölle zu zahlen. Beides verändert globale Handelsströme und kann die Energiepreise bewegen, was wiederum auf die Inflation und damit die Notenbankpolitik durchschlägt.",
+      "sources": [
+        {
+          "title": "The Lindsey O. Graham Russia Sanctions Act (Steptoe)",
+          "url": "https://www.steptoe.com/en/news-publications/stepwise-risk-outlook/the-lindsey-o-graham-russia-sanctions-act-of-2026-outlook-for-markets-and-us-trade-policy.html",
+          "tier": 2
+        },
+        {
+          "title": "Russia sanctions bill passes Senate (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/07/russia-sanctions-bill-lindsey-graham-senate.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "kapitol-marmorkorridor.jpg",
+        "alt": "Langer leerer Marmorkorridor mit hohen Säulen in einem Parlamentsgebäude, poliertes Steinparkett spiegelt warmes Licht",
+        "caption": "Der Weg durch die zweite Kammer steht noch bevor",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "china-npc-kein-stimulus",
+      "ressort": "politik",
+      "kicker": "Politik · China",
+      "headline": "Chinas Volkskongress tagt, Anleger warten weiter auf Konjunkturhilfen",
+      "dek": "Der Ständige Ausschuss berät bis Freitag. Ein großes Stimulusprogramm zeichnet sich bislang nicht ab, die Juli-Daten blieben schwach.",
+      "body": [
+        "Der Ständige Ausschuss des Nationalen Volkskongresses tagt vom 25. bis 28. August. Die Sitzung ist überwiegend legislativer Natur, konkrete Beschlüsse für ein großes Konjunkturpaket lagen am Donnerstagmorgen nicht vor. Historisch fokussieren solche Sitzungen eher auf lokale Schuldenswaps und die Kapitalausstattung von Banken als auf direkte Nachfragehilfen. Ein großes Stimulusprogramm bleibt damit vorerst aus.",
+        "Für die Märkte ist das ein Enttäuschungsrisiko. Die chinesischen Konjunkturdaten für Juli fielen schwach aus, die Industrieproduktion wuchs mit 4,5 Prozent langsamer, der Einzelhandel legte nur 0,6 Prozent zu. Bleibt eine kräftige Wiederbelebung der Nachfrage aus, könnten zyklische Werte mit hohem China-Bezug unter Druck geraten, etwa Rohstoff-, Industrie- und Luxuskonzerne."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Politische Sitzungen bewegen Kurse über die Erwartung, die im Vorfeld aufgebaut wird. Hoffen Anleger auf Konjunkturhilfen und bleiben diese aus, entsteht eine negative Überraschung, obwohl objektiv nichts Schlechtes passiert ist. Betroffen sind vor allem Konzerne, die einen großen Teil ihres Absatzes in China erzielen, weil deren Umsatzerwartung an der chinesischen Binnennachfrage hängt.",
+      "sources": [
+        {
+          "title": "China's top legislature schedules session for late August (CGTN)",
+          "url": "https://news.cgtn.com/news/2026-08-21/China-s-top-legislature-schedules-session-for-late-August-1PMGdMviMEM/index.html",
+          "tier": 2
+        },
+        {
+          "title": "China economy sales investment July (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/17/china-economy-sales-investment-july-.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "volkskongress-plenarsaal.jpg",
+        "alt": "Weiter leerer Plenarsaal mit hunderten Reihen roter Sitze und langen Pulten von erhöhtem Blickwinkel",
+        "caption": "Der Plenarsaal vor Beginn der Tagung",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "us-pce-juli-heiss",
+      "ressort": "makro",
+      "kicker": "Konjunktur · USA",
+      "headline": "Die US-Inflation fällt höher aus als erwartet und heizt die Zinsdebatte an",
+      "dek": "Der von der Fed bevorzugte PCE-Preisindex stieg im Juli auf 3,7 Prozent. Die Wahrscheinlichkeit einer Zinserhöhung im September ist gestiegen.",
+      "body": [
+        "Das US-Handelsministerium veröffentlichte am Mittwoch den PCE-Preisindex für Juli, das von der Federal Reserve bevorzugte Inflationsmaß. Die Gesamtrate stieg auf 3,7 Prozent gegenüber dem Vorjahr und lag damit einen Zehntelpunkt über dem Konsens von 3,6 Prozent. Die Kernrate ohne Energie und Lebensmittel betrug 3,3 Prozent und traf die Erwartung. Zum Vormonat legten beide Werte je 0,2 Prozent zu. Das persönliche Einkommen stieg um 0,4 Prozent, der reale Konsum stagnierte jedoch nahezu, weil die Inflation die zusätzliche Kaufkraft aufzehrte.",
+        "Zugleich bestätigte die zweite Schätzung, dass die US-Wirtschaft im zweiten Quartal mit einer auf das Jahr hochgerechneten Rate von 1,5 Prozent wuchs, unverändert zur ersten Schätzung. Die Inflation liegt damit 1,3 Prozentpunkte über dem Ziel der Fed von 2 Prozent. Am Markt stieg die Wahrscheinlichkeit einer Zinserhöhung bei der nächsten Sitzung am 16. September, die zitierten Werte reichen je nach Quelle von rund 44 bis 65 Prozent. Der Preisdruck kommt vor allem von den Energiepreisen.",
+        "Die Zahl trifft auf einen nervösen Markt. Weil beim Juli-Entscheid drei Fed-Mitglieder für eine Anhebung stimmten, verstärkt ein heißer Inflationswert die Erwartung eines Schritts nach oben. Ein belastbarer Konsens für die genauen Juli-Werte ließ sich in den Primärquellen im Vorfeld nicht sauber verifizieren, die veröffentlichten Zahlen des Handelsministeriums sind jedoch eindeutig."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Die Fed steuert die Zinsen unter anderem nach der Inflation. Der PCE-Index misst, wie stark die Preise steigen, die US-Haushalte tatsächlich zahlen. Fällt der Wert höher aus als erwartet, wird eine Zinserhöhung wahrscheinlicher, die Anleiherenditen steigen, und zinssensible sowie hoch bewertete Aktien geraten unter Druck. Dass der reale Konsum stagniert, zeigt zugleich, dass die Inflation die Kaufkraft der Haushalte auffrisst.",
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Der Preisdruck ist laut Bericht ausdrücklich energiegetrieben. Höhere Energiepreise schlagen direkt auf Umsatz und Marge der Öl- und Gasförderer durch.",
+          "teilbranchen": "Öl- und Gasförderung, integrierte Konzerne, Raffinerien, Ölfeld-Dienstleister"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die energieintensive Branche leidet unter höheren Energiekosten, und höhere Zinsen bremsen zugleich die zinsempfindliche Bau- und Industrienachfrage nach Rohstoffen.",
+          "teilbranchen": "Chemie, Stahl, Aluminium, Papier und Verpackung, Baustoffe"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Finanzierungskosten verteuern große Investitionsprojekte der Kunden und bremsen die Auftragslage, während Energie-Infrastruktur punktuell profitiert.",
+          "teilbranchen": "Maschinenbau, Bau, Logistik, Elektroausrüstung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Der reale Konsum stagniert, weil die Inflation die Kaufkraft aufzehrt, und höhere Zinsen verteuern Kredite für große Anschaffungen. Beides trifft die nicht zwingend notwendigen Ausgaben.",
+          "teilbranchen": "Autos und Autohändler, Wohnungsbau, Luxus, Restaurants, Reise"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die Nachfrage nach Grundbedarf bleibt auch bei schwacher Kaufkraft stabil, was defensiv wirkt. Steigende Input- und Energiekosten drücken jedoch die Marge.",
+          "teilbranchen": "Lebensmittel, Getränke, Haushaltswaren, Discounter"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen hängt kaum von Zinsen oder Kaufkraft ab, weil sie medizinisch notwendig ist. Der Sektor gilt als defensiv.",
+          "teilbranchen": "Pharma und Biotech defensiv, unprofitables Biotech zinssensibler"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken profitieren von einer steilen Zinskurve, weil sie günstig kurzfristig einkaufen und teurer langfristig verleihen. Steigende Zinsen erhöhen aber das Risiko von Kreditausfällen.",
+          "teilbranchen": "Geschäftsbanken, Versicherer; belastet: Immobilienfinanzierer, Konsumkredit"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Wachstumsstarke Technologiewerte haben ihren Gewinn weit in der Zukunft, und ein höherer Zins senkt den heutigen Wert dieser fernen Gewinne über einen höheren Diskontsatz.",
+          "teilbranchen": "Software und Cloud, Halbleiter, unprofitable Wachstumsfirmen"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Große Werbe- und Plattformkonzerne leiden unter schwächerer Konsumkraft und höheren Diskontsätzen. Klassische Telekomanbieter sind defensiver, tragen aber oft hohe Schulden.",
+          "teilbranchen": "Digitalwerbung, soziale Medien, Streaming, Telekom"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger sind hoch verschuldet und zinssensibel, weil ihre Netze fremdfinanziert sind. Ihre stabilen Dividenden konkurrieren zudem mit nun besser verzinsten Anleihen.",
+          "teilbranchen": "Strom-, Gas- und Wasserversorger, unabhängige Erzeuger"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien sind der zinsempfindlichste Sektor, weil höhere Finanzierungskosten Käufe und Projekte verteuern und höhere Kapitalisierungszinsen die Objektwerte drücken.",
+          "teilbranchen": "Büros, Gewerbe, Wohn-REITs, Projektentwickler, Hypotheken-REITs"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Inflation Juli im Vergleich zum Fed-Ziel",
+          "subtitle": "PCE-Preisindex, Jahresrate in Prozent",
+          "unit": " %",
+          "source": "BEA, Personal Income and Outlays July 2026",
+          "absolute": true,
+          "allPositive": true,
+          "data": [
+            [
+              "Gesamt (PCE)",
+              3.7
+            ],
+            [
+              "Kern-PCE",
+              3.3
+            ],
+            [
+              "Fed-Ziel",
+              2
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Personal Income and Outlays, July 2026 (BEA)",
+          "url": "https://www.bea.gov/sites/default/files/2026-08/pi0726.pdf",
+          "tier": 1
+        },
+        {
+          "title": "Groß Domestic Product, 2nd Estimate Q2 2026 (BEA)",
+          "url": "https://www.bea.gov/sites/default/files/2026-08/gdp2q26-2nd.pdf",
+          "tier": 1
+        },
+        {
+          "title": "July 2026 PCE inflation data (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/economy/policy/articles/july-2026-pce-inflation-data-124921061.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "supermarkt-preisvergleich.jpg",
+        "alt": "Eine Kundin im Supermarktgang hält eine Ware in der Hand und prüft aufmerksam die Regalkante",
+        "caption": "Wo Inflation ankommt: der Preisvergleich im Regal",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "synchrone-notenbanken",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · Global",
+      "headline": "Korea hebt die Zinsen, EZB und Bank von Japan rücken näher an weitere Schritte",
+      "dek": "Der energiegetriebene Preisdruck erfasst mehrere Notenbanken zugleich. Im September stehen wichtige Sitzungen an.",
+      "body": [
+        "Die Zinswende nach oben ist ein globales Thema. Die Bank von Korea hob ihren Leitzins am Donnerstag um 0,25 Prozentpunkte auf 3,0 Prozent an. Die Europäische Zentralbank hält ihren Einlagensatz bei 2,25 Prozent, nachdem sie ihn im Juni erstmals seit Jahren angehoben hatte. Die Inflation in der Eurozone lag im Juli bei rund 2,9 Prozent und damit über dem Ziel von 2 Prozent. Die nächste Sitzung des EZB-Rats findet am 9. und 10. September in Berlin statt, ausgerichtet von der Bundesbank.",
+        "In Japan hält die Bank von Japan den Leitzins bei 1,0 Prozent. Die Kerninflation ohne frische Lebensmittel beschleunigte sich im Juli auf 1,8 Prozent, das hauseigene Preismaß der Notenbank liegt über dem 2-Prozent-Ziel. Die nächste Sitzung ist für den 17. und 18. September angesetzt, dieser Termin ist allerdings noch gegen den offiziellen Kalender der Bank von Japan zu bestätigen. Wenn mehrere große Notenbanken gleichzeitig über höhere Zinsen nachdenken, verschiebt das die globalen Kapitalströme und die Wechselkurse."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Zinsen bestimmen mit, wie attraktiv eine Währung ist. Hebt eine Notenbank die Zinsen an oder deutet dies an, werden Anlagen in dieser Währung für internationale Investoren interessanter, und die Währung tendiert zu steigen. Steigen die Zinsen weltweit synchron, wirkt das global bremsend auf Wachstum und belastet besonders hoch verschuldete Staaten und Unternehmen.",
+      "sources": [
+        {
+          "title": "ECB Governing Council calendar",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+          "tier": 1
+        },
+        {
+          "title": "BOJ price gauge stays above target (Bloomberg)",
+          "url": "https://www.bloomberg.com/news/articles/2026-08-25/boj-s-price-gauge-stays-above-target-amid-rate-hike-speculation",
+          "tier": 2
+        },
+        {
+          "title": "Asian stocks rise, Bank of Korea raises rate (AOL/Reuters)",
+          "url": "https://www.aol.com/articles/asian-stocks-rise-third-day-015916000.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "weltzeituhren-bankfoyer.jpg",
+        "alt": "Reihe großer runder Wanduhren für verschiedene Zeitzonen auf dunkler Holzvertäfelung in einem Bankfoyer",
+        "caption": "Verschiedene Zeitzonen, zunehmend gleiche Richtung",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "us-zinskurve-steil",
+      "ressort": "makro",
+      "kicker": "Anleihemärkte · USA",
+      "headline": "Die US-Zinskurve bleibt steil, das lange Ende zeigt Preissorgen",
+      "dek": "Kurzlaufende Renditen sinken langsamer als das lange Ende steigt. Der Abstand verrät, was der Markt über Wachstum und Inflation denkt.",
+      "body": [
+        "Die US-Anleiherenditen gaben am Mittwoch leicht nach, blieben aber auf hohem Niveau. Die zehnjährige US-Staatsanleihe rentierte um 4,63 Prozent, die dreißigjährige um 5,17 Prozent, die zweijährige um rund 4,21 Prozent. Die Kurve ist damit klar normal geneigt, das lange Ende liegt deutlich über dem kurzen. Der genaue Stand der zweijährigen Rendite war in den vorliegenden Quellen mit Unsicherheit behaftet.",
+        "Eine steile Kurve mit einem hohen langen Ende lässt sich als Signal lesen, dass Anleger für lange Laufzeiten eine höhere Prämie verlangen, etwa wegen Sorgen um Inflation, hohe Staatsverschuldung oder ein großes Anleiheangebot. Für Banken ist eine steile Kurve tendenziell günstig, weil sie kurzfristig billig Geld aufnehmen und langfristig teurer verleihen. Für zinssensible Sektoren wie Immobilien und Versorger sind hohe Langfristzinsen dagegen eine Belastung."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Die Zinskurve zeigt, welche Rendite Anleihen je nach Laufzeit bieten. Das kurze Ende folgt vor allem der erwarteten Notenbankpolitik, das lange Ende zusätzlich den Erwartungen zu Inflation und Verschuldung über viele Jahre. Steigt das lange Ende, verteuert das langfristige Kredite wie Hypotheken und drückt den Barwert weit entfernter Unternehmensgewinne, was hoch bewertete Wachstumsaktien belastet.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Zinskurve nach Laufzeit",
+          "subtitle": "Rendite von Staatsanleihen in Prozent",
+          "unit": " %",
+          "source": "Marktdaten 26.8.2026, 2-Jahres-Wert unsicher",
+          "absolute": true,
+          "allPositive": true,
+          "data": [
+            [
+              "2 Jahre",
+              4.21
+            ],
+            [
+              "10 Jahre",
+              4.63
+            ],
+            [
+              "30 Jahre",
+              5.17
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Selected Interest Rates H.15 (Federal Reserve)",
+          "url": "https://www.federalreserve.gov/releases/h15/",
+          "tier": 1
+        },
+        {
+          "title": "Asian stocks rise a third day, yields (AOL/Reuters)",
+          "url": "https://www.aol.com/articles/asian-stocks-rise-third-day-015916000.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "analyst-zinskurve-wandschirm.jpg",
+        "alt": "Ein Analyst steht mit verschränkten Armen vor einem großen Wandbildschirm mit ansteigender Kurve in einem abgedunkelten Büro",
+        "caption": "Die Kurve im Blick: das lange Ende bleibt teuer",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "oel-gold-devisen",
+      "ressort": "makro",
+      "kicker": "Rohstoffe und Devisen",
+      "headline": "Ölpreis fällt auf ein Wochentief, Gold hält sich hoch",
+      "dek": "Der Abbau der Kriegsprämie drückt den Rohölpreis. Ein festerer Dollar und hohe Realzinsen begleiten den Goldpreis nahe seiner Rekordzone.",
+      "body": [
+        "Der Rohölpreis fiel am Mittwoch auf ein Wochentief, die Nordseesorte Brent notierte bei rund 87,6 US-Dollar je Barrel, die US-Sorte WTI bei rund 81 Dollar. Beobachter führten den Rückgang darauf zurück, dass der Markt neue US-Sanktionen gegen Iran abschüttelte und Meldungen über mögliche Deeskalationsschritte in der Golfregion die Angebotssorgen dämpften. Im Jahresvergleich liegt Brent dennoch fast 30 Prozent höher, ein Nachhall der Kriegsprämie aus dem Iran-Konflikt.",
+        "Am Devisenmarkt legte der US-Dollar leicht zu, der Dollar-Index notierte bei rund 99, das Paar Euro zu Dollar bei rund 1,166 laut Alpha Vantage. Gold hielt sich fest im Bereich um 4.640 US-Dollar je Unze. Hohe Realzinsen, also Zinsen abzüglich Inflation, machen zinslose Anlagen wie Gold eigentlich unattraktiver, dennoch stützen anhaltende geopolitische Unsicherheit und Notenbankkäufe den Preis."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Ölpreis wirkt direkt auf die Inflation, weil Energie in fast allen Produktionskosten steckt. Fällt Öl, sinkt der Preisdruck und die Notenbanken bekommen etwas Spielraum. Gold wiederum konkurriert mit verzinsten sicheren Anlagen. Sind die realen Zinsen hoch, kostet das Halten von zinslosem Gold relativ mehr, was den Preis normalerweise bremst, solange nicht andere Kräfte wie Krisenangst überwiegen.",
+      "sources": [
+        {
+          "title": "Oil hits one-week low as investors shrug off Iran sanctions (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/25/oil-hits-one-week-low-as-investors-shrug-off-iran-sanctions.html",
+          "tier": 2
+        },
+        {
+          "title": "Brent crude oil (Trading Economics)",
+          "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "goldbarren-tresor.jpg",
+        "alt": "Ordentlich gestapelte Goldbarren auf einem Stahlregal in einem Banktresor unter kühlem Oberlicht",
+        "caption": "Gold hält sich nahe seinen Höchstständen",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "nvidia-geschaeftsmodell",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Halbleiter",
+      "headline": "Nvidia, der Taktgeber der KI-Wirtschaft, nach den Zahlen",
+      "dek": "Kein Konzern verkörpert den KI-Boom so sehr wie Nvidia. Ein Blick auf das Geschäftsmodell hinter dem Rekordquartal.",
+      "body": [
+        "Nvidia entwirft Grafik- und KI-Prozessoren, die das Rechenzentrumsgeschäft der Cloud-Konzerne antreiben. Der Konzern verkauft ganze Systeme aus Hardware und der Software-Plattform CUDA, die als Standard für die KI-Entwicklung gilt und Kunden an Nvidia bindet. Dieses Zusammenspiel aus Spitzenchips und Software ist der eigentliche Schutzwall des Unternehmens, weil ein Wechsel zu einem Konkurrenten für Kunden teuer und aufwändig wäre.",
+        "Die Zahlen vom Mittwochabend bestätigten die Dynamik. Mit 96,2 Milliarden Dollar Umsatz und einer Bruttomarge von 75,0 Prozent zeigt der Konzern eine seltene Kombination aus hohem Wachstum und hoher Profitabilität. Der Ausblick von 108 Milliarden Dollar für das laufende Quartal liegt über dem Konsens. Das strategische Langfristrisiko bleiben kundeneigene Chips der großen Cloud-Konzerne sowie das ungelöste China-Geschäft. Die im Ausblick auf 74 Prozent sinkende Bruttomarge zeigt zudem, dass teurere Speicherbausteine an der Marge zehren."
+      ],
+      "company": {
+        "name": "Nvidia",
+        "ticker": "NVDA",
+        "exchange": "Nasdaq",
+        "logoKey": "nvidia",
+        "whatTheyDo": "Nvidia entwirft Grafik- und KI-Prozessoren sowie komplette Rechenzentrums-Systeme und die dazugehörige Software-Plattform CUDA. Die Chips werden extern gefertigt, vor allem beim Auftragsfertiger TSMC.",
+        "whyItMatters": "Nvidia ist der schwerste Einzelwert der US-Indizes und der zentrale Zulieferer des KI-Investitionsbooms. Seine Zahlen gelten als Stimmungsbarometer für den gesamten Technologiesektor.",
+        "keyMetrics": [
+          [
+            "Umsatz Q2 FY27",
+            "96,2 Mrd. $ (+106 %)"
+          ],
+          [
+            "Rechenzentrum",
+            "89,0 Mrd. $ (+117 %)"
+          ],
+          [
+            "Bruttomarge",
+            "75,0 %"
+          ],
+          [
+            "Bereinigter Gewinn je Aktie",
+            "2,22 $"
+          ],
+          [
+            "Ausblick Q3",
+            "108,0 Mrd. $ (Marge rund 74 %)"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "NVIDIA Q2 FY2027 results (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm",
+          "tier": 1
+        },
+        {
+          "title": "Nvidia results, Q2 earnings (Fortune)",
+          "url": "https://fortune.com/2026/08/26/nvidia-results-q2-earnings",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "wafer-pruefung-reinraum.jpg",
+        "alt": "Techniker im weißen Reinraumanzug prüft einen spiegelnden Silizium-Wafer unter gelbem Reinraumlicht",
+        "caption": "Am Anfang der Wertschöpfungskette: der Wafer im Reinraum",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "crowdstrike-q2-beat",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Cybersicherheit",
+      "headline": "CrowdStrike springt nach Rekord bei den wiederkehrenden Umsätzen",
+      "dek": "Der Cybersicherheitskonzern hebt seine Jahresprognose an. Die Aktie legte am Berichtstag rund elf Prozent zu.",
+      "body": [
+        "CrowdStrike schützt Unternehmen vor Cyberangriffen über eine cloudbasierte Plattform, die Endgeräte wie Laptops und Server überwacht. Der Konzern berichtete am Mittwoch und überzeugte den Markt vor allem mit dem Neugeschäft. Der neu hinzugekommene jährlich wiederkehrende Umsatz stieg um 51 Prozent auf einen Rekordwert, das flexible Vertragsmodell Falcon Flex verdoppelte seinen wiederkehrenden Umsatz gegenüber dem Vorjahr. CrowdStrike hob daraufhin seine Prognose für das laufende Geschäftsjahr an.",
+        "Die Aktie reagierte mit einem Sprung von rund elf Prozent bei hohem Handelsvolumen. Das ist bemerkenswert, weil der Titel mit einem sehr hohen Bewertungsvielfachen von rund dem 175-Fachen des Gewinns gehandelt wird und vor den Zahlen bereits stark gestiegen war. Bei einer solchen Bewertung genügt ein bloßes Übertreffen der Erwartungen oft nicht, der Markt verlangt eine deutliche Anhebung des Ausblicks. Genau diese lieferte der Konzern. Einzelne Detailzahlen zum Quartalsumsatz waren in den Quellen mit Unsicherheit behaftet und sind an der Primärmitteilung zu prüfen."
+      ],
+      "company": {
+        "name": "CrowdStrike",
+        "ticker": "CRWD",
+        "exchange": "Nasdaq",
+        "logoKey": "crowdstrike",
+        "whatTheyDo": "CrowdStrike bietet Cybersicherheit als Cloud-Abonnement, das Endgeräte überwacht und Angriffe mit KI-Analyse erkennt. Der Umsatz ist wiederkehrend und wird als jährlich wiederkehrender Umsatz gemessen.",
+        "whyItMatters": "CrowdStrike gilt als Qualitätsmaßstab der Cybersicherheitsbranche. Seine Zahlen zeigen, wie robust die IT-Sicherheitsbudgets der Unternehmen sind.",
+        "keyMetrics": [
+          [
+            "Kursreaktion",
+            "rund +11 %"
+          ],
+          [
+            "Neues wiederkehrendes Geschäft",
+            "+51 % (Rekord)"
+          ],
+          [
+            "Falcon Flex",
+            "wiederkehrender Umsatz verdoppelt"
+          ],
+          [
+            "Prognose",
+            "für das Gesamtjahr angehoben"
+          ],
+          [
+            "Bewertung",
+            "rund 175-faches Ergebnis"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "CrowdStrike raises FY27 guidance after record Q2 ARR growth",
+          "url": "https://www.financial-news.co.uk/crowdstrike-raises-fy27-guidance-after-record-q2-arr-growth",
+          "tier": 2
+        },
+        {
+          "title": "CrowdStrike, Okta, HP move after hours (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/video/crowdstrike-okta-hp-inc-move-205845478.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "cybersicherheit-leitstand.jpg",
+        "alt": "Analysten in einem Cybersicherheits-Leitstand vor einer großen Wand leuchtender Monitore bei gedämpftem blauem Licht",
+        "caption": "Daueralarm: der Leitstand einer Sicherheitsfirma",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "synopsys-faellt-trotz-beat",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Software",
+      "headline": "Synopsys übertrifft die Zahlen und fällt trotzdem",
+      "dek": "Der Anbieter von Chipdesign-Software hob seine Prognose an, die Aktie verlor dennoch nachbörslich. Ein Lehrstück über eingepreiste Erwartungen.",
+      "body": [
+        "Synopsys stellt die Software her, mit der Halbleiterkonzerne ihre Chips entwerfen. Der Konzern berichtete am Mittwoch ein starkes drittes Quartal, der Umsatz stieg um 42 Prozent auf rund 2,48 Milliarden Dollar, der bereinigte Gewinn je Aktie übertraf die Erwartungen deutlich. Zugleich hob Synopsys seine Jahresprognose an. Getragen wird das Geschäft von der hohen Nachfrage nach maßgeschneiderten Chips für künstliche Intelligenz, die die Entwürfe immer komplexer macht.",
+        "Trotz dieser guten Nachrichten verlor die Aktie nachbörslich rund vier bis sechs Prozent. Der Grund liegt in der Bewertung. Der Titel war vor den Zahlen bereits hoch bewertet und stark gelaufen, sodass viel Optimismus im Kurs steckte. Wenn die Erwartung schon sehr hoch ist, reicht ein bloßes Übertreffen oft nicht aus, um den Kurs weiter zu treiben. Der Fall zeigt anschaulich, dass die Reaktion einer Aktie von der Abweichung gegenüber der Erwartung abhängt, nicht von der absoluten Qualität der Zahlen."
+      ],
+      "company": {
+        "name": "Synopsys",
+        "ticker": "SNPS",
+        "exchange": "Nasdaq",
+        "logoKey": "synopsys",
+        "whatTheyDo": "Synopsys liefert Software für den Entwurf von Halbleitern sowie geistiges Eigentum in Form fertiger Chip-Bausteine. Ohne solche Werkzeuge lassen sich moderne Chips nicht entwickeln.",
+        "whyItMatters": "Synopsys sitzt an einem Engpass der Chipindustrie und profitiert vom KI-Designboom. Seine Kursreaktion zeigt, wie stark hohe Erwartungen bereits eingepreist sein können.",
+        "keyMetrics": [
+          [
+            "Umsatz Q3",
+            "rund 2,48 Mrd. $ (+42 %)"
+          ],
+          [
+            "Gewinn je Aktie",
+            "über Erwartung"
+          ],
+          [
+            "Prognose",
+            "angehoben"
+          ],
+          [
+            "Kursreaktion",
+            "rund -4 bis -6 % nachbörslich"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Synopsys Q3 2026 earnings, guidance raised (Crypto Briefing)",
+          "url": "https://cryptobriefing.com/synopsys-q3-2026-earnings-guidance-raised",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "chipdesign-arbeitsplatz.jpg",
+        "alt": "Chipentwickler an einem Arbeitsplatz mit drei großen Monitoren, auf denen feine farbige Schaltungslayouts zu sehen sind",
+        "caption": "Wo Chips entstehen, bevor sie gefertigt werden",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "marvell-vorschau",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Halbleiter",
+      "headline": "Marvell berichtet heute Abend, der Test für die KI-Zulieferer geht weiter",
+      "dek": "Nach Nvidia richtet sich der Blick auf den Netzwerk- und Custom-Chip-Spezialisten. Seine Zahlen gelten als Gradmesser für die Ausgaben der Cloud-Konzerne.",
+      "body": [
+        "Nach Nvidias Bericht steht am Donnerstagabend der nächste wichtige KI-Zulieferer im Fokus. Marvell entwirft Netzwerkchips und maßgeschneiderte Spezialchips für die großen Cloud-Konzerne. Der Analystenkonsens erwartet einen Umsatz von rund 2,7 Milliarden Dollar, ein Plus von etwa 30 Prozent gegenüber dem Vorjahr. Besonders im Blick steht das Geschäft mit kundenspezifischen Rechenchips, das eng an die Investitionsbudgets der Hyperscaler gekoppelt ist.",
+        "Die Zahlen gelten als wichtiger Test, weil Marvell nach den starken Nvidia-Ergebnissen zeigen muss, ob der KI-Rückenwind breit durch die Zulieferkette trägt. Die Aktie ist hoch bewertet, was den Spielraum für Enttäuschungen verringert. Bereits ein guter Bericht könnte deshalb wenig bewirken, wenn der Ausblick die hohen Erwartungen nicht deutlich übertrifft. Konkrete Konsenswerte für den Gewinn je Aktie waren in den Quellen widersprüchlich und sind an der Primärquelle zu prüfen."
+      ],
+      "company": {
+        "name": "Marvell Technology",
+        "ticker": "MRVL",
+        "exchange": "Nasdaq",
+        "logoKey": "marvell",
+        "whatTheyDo": "Marvell entwirft Netzwerk-, Speicher- und maßgeschneiderte Rechenchips für Rechenzentren, die großen Cloud-Konzerne sind die wichtigsten Kunden.",
+        "whyItMatters": "Marvell ist ein Gradmesser dafür, ob der KI-Investitionsschub über Nvidia hinaus die gesamte Zulieferkette trägt. Seine Zahlen wirken auf den ganzen Chipsektor.",
+        "keyMetrics": [
+          [
+            "Umsatz-Konsens",
+            "rund 2,7 Mrd. $"
+          ],
+          [
+            "Wachstum",
+            "rund +30 % erwartet"
+          ],
+          [
+            "Fokus",
+            "kundenspezifische Rechenchips (XPU)"
+          ],
+          [
+            "Bericht",
+            "Donnerstag 27.8. nachbörslich"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Marvell earnings preview (Barchart via search)",
+          "url": "",
+          "tier": 2
+        },
+        {
+          "title": "Asian chip firms lifted by Nvidia (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/asian-chip-firms-lifted-nvidia-024234685.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "netzwerkswitch-glasfaser.jpg",
+        "alt": "Nahaufnahme eines Hochgeschwindigkeits-Netzwerkswitches, aus dessen leuchtenden Anschlüssen orange und türkise Glasfaserkabel fächern",
+        "caption": "Die Verbindungen, ohne die kein Rechenzentrum arbeitet",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Firmen, die Öl, Gas und andere Energieträger fördern, verarbeiten und transportieren.",
+      "lage": "Etwas ruhiger, weil der Ölpreis auf ein Wochentief nachgab, nachdem der Markt neue Iran-Sanktionen abschüttelte.",
+      "richtung": "down",
+      "tagesWert": "Brent rund 87,6 $ (-1,1 %, 26.8.)",
+      "istZustand": "Der Sektor ist nach der starken Rallye der vergangenen Monate moderat bewertet und stark vom Ölpreis getrieben. Aktuell steht er in einer späten Zyklusphase, in der ein hohes Angebot aus den USA auf eine unsichere Nachfrage trifft. Das zentrale strukturelle Thema bleibt der Iran-Konflikt mit der Straße von Hormus als größtem Risiko, über die ein großer Teil des Welthandels mit Öl läuft. Ein zweites Thema ist die steigende Stromnachfrage der Rechenzentren, die Erdgasproduzenten strukturell stützt. Im Jahresvergleich liegt Brent noch fast 30 Prozent höher, ein Nachhall der Kriegsprämie."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Rohstoffen wie Metallen, Chemikalien und Baustoffen.",
+      "lage": "Gemischt, Stahl steht im Fokus der drohenden US-Zoll-Ausweitung gegen Kanada.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der zyklische Sektor hängt eng an der globalen Industrieproduktion und ist derzeit von schwacher China-Nachfrage und Handelskonflikten belastet. Bewertungstechnisch liegt er im unteren Mittelfeld, was für eine frühzyklische bis mittlere Phase spricht. Das Kapitalzyklus-Denken ist hier zentral, denn nach Jahren zurückhaltender Investitionen in Bergbau und Chemie kann ein knapperes Angebot die Preise stützen, sobald die Nachfrage anzieht. Kurzfristig belasten die drohende US-Zoll-Ausweitung auf kanadischen Stahl und ein fester Dollar. Zugleich stützt der Materialbedarf für den Bau von Rechenzentren einzelne Teilbranchen wie Kupfer und Industriegase."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbau, Rüstung, Transport und industrielle Ausrüstung.",
+      "lage": "Zweigeteilt, Rechenzentrums-Zulieferer profitieren von Nvidias Ausblick, Autozulieferer bangen um die Zölle.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der breite Industriesektor ist ordentlich bewertet und profitiert strukturell von zwei Themen. Erstens treibt der KI-Ausbau die Nachfrage nach Elektrotechnik, Kühlung und Stromverteilung für Rechenzentren, was den Zulieferern hohe Auftragsbestände beschert, und Nvidias starker Ausblick bestätigt diesen Kanal. Zweitens stützen steigende Verteidigungsbudgets die Rüstungsindustrie. Belastend wirken höhere Zinsen, die die Investitionsfinanzierung der Kunden verteuern, sowie die drohende Ausweitung der US-Zölle auf Fahrzeuge und Autoteile, die integrierte nordamerikanische Lieferketten trifft."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter nicht lebensnotwendiger Güter wie Autos, Mode und Reisen.",
+      "lage": "Unter Druck, weil die heißen Inflationsdaten die reale Kaufkraft und die Zinsangst belasten.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor reagiert am stärksten auf die Kombination aus hohen Zinsen und vorsichtigen Konsumenten. Die am Mittwoch veröffentlichten Daten zeigten, dass der reale Konsum stagniert, weil die Inflation die Kaufkraft aufzehrt. Kreditkosten für Autos und große Anschaffungen bleiben hoch, was die Nachfrage bremst. Bewertungstechnisch ist der Sektor gespalten, hoch bewertete Wachstumsmarken stehen soliden, aber langsam wachsenden Händlern gegenüber. Strukturell belastet die drohende Zoll-Ausweitung auf Fahrzeuge die eng verzahnte Autoproduktion zwischen den USA und Kanada. Der Sektor bleibt der Seismograph für die reale Kaufkraft der Haushalte."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Hersteller von Gütern des täglichen Bedarfs wie Lebensmitteln und Haushaltswaren.",
+      "lage": "Ruhig, defensiver Charakter, aber unter Druck durch die wieder attraktivere Anleihekonkurrenz.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der defensive Sektor liefert stabile Nachfrage unabhängig vom Konjunkturzyklus und dient in unsicheren Phasen als Zufluchtsort. Die Bewertung ist gemessen an den Wachstumsraten eher hoch, was die Kurschancen begrenzt. Das strukturelle Thema der nächsten Quartale ist der Kampf um Preissetzungsmacht, denn nach Jahren der Preiserhöhungen stoßen viele Marken an Grenzen, weil Verbraucher zu günstigeren Handelsmarken wechseln. Als klassischer Dividendensektor steht der Basiskonsum zudem in Konkurrenz zu nun wieder attraktiveren Anleiherenditen, was die relative Bewertung dämpft. Discounter können von sparsameren Verbrauchern profitieren."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharmakonzerne, Biotechnologie, Medizintechnik und Gesundheitsdienstleister.",
+      "lage": "Ruhig, ohne große Tagesnachricht, defensiver Charakter gefragt.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor gilt als defensiv, weil die Grundnachfrage nach Gesundheit konjunkturunabhängig ist, und ist relativ günstig bewertet. Innerhalb des Sektors klafft jedoch eine Lücke, etablierte Pharma- und Medizintechnikkonzerne sind stabil, während unprofitables Biotech unter dem höheren Diskontsatz leidet, der weit entfernte Gewinne stärker abwertet. Das strukturelle Großthema bleibt die Innovation, etwa mRNA-basierte Krebsimpfstoffe oder Abnehmpräparate. Politische Risiken durch mögliche Preisregulierung und Erstattungsentscheidungen sind der wichtigste Belastungsfaktor der nächsten Quartale."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer, Vermögensverwalter und Börsenbetreiber.",
+      "lage": "Stabil, eine steile Zinskurve stützt die Zinsmargen der Banken, das Klumpenrisiko der KI-Werte mahnt.",
+      "richtung": "up",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist moderat bewertet und profitiert derzeit von einer steilen Zinskurve, die die Zinsmarge der Banken zwischen billiger kurzfristiger Refinanzierung und teurer langfristiger Kreditvergabe ausweitet. Versicherer verdienen an höheren Wiederanlagerenditen. Das zentrale Risiko der nächsten Quartale ist die Kreditqualität, denn eine schwächere Konjunktur oder ein Zinsanstieg können Ausfälle erhöhen, besonders bei Gewerbeimmobilien. Strukturell verändert die Finanzierung von KI-Infrastruktur über Privatkredite das Geschäft großer Vermögensverwalter. Der Sektor ist damit sowohl ein Gewinner höherer Zinsen als auch der erste Ort, an dem sich Konjunkturschwäche zeigt."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Halbleiter, Software und IT-Hardware.",
+      "lage": "Fest, Nvidias starke Zahlen und der Ausblick hoben die Chipwerte, Asien folgte nach oben.",
+      "richtung": "up",
+      "tagesWert": "Nvidia nachbörslich rund +4 %, Asiens Chipwerte im Plus (27.8.)",
+      "istZustand": "Der Sektor ist das teuerste Segment des Marktes und trägt den Großteil der Kursgewinne des Jahres. Seine Bewertung ruht auf der Annahme, dass der KI-Investitionszyklus jahrelang weiterläuft, und Nvidias Ausblick von 108 Milliarden Dollar stützt diese Annahme vorerst. Als Long-Duration-Sektor mit weit in der Zukunft liegenden Gewinnen reagiert er besonders empfindlich auf steigende Zinsen, weshalb die heiße Inflationszahl gegenläufig wirkt. Das dominierende Thema der nächsten Quartale sind steigende Speicherpreise, die die Margen der Serverhersteller drücken könnten. Das größte Risiko bleibt ein Klumpenrisiko, weil ein Großteil des Indexgewinns an wenigen KI-Werten hängt."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Telekomkonzerne, Medien sowie Internet- und Plattformkonzerne.",
+      "lage": "Belastet, ein Meta-Vergleich über 17 Milliarden Dollar zum Jugendschutz drückte die Stimmung.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist zweigeteilt. Auf der einen Seite stehen hoch bewertete Internet- und Plattformkonzerne, die zugleich die größten Investoren in KI-Rechenzentren und Nvidias Hauptkunden sind. Der Meta-Vergleich zeigt, wie regulatorische Auflagen das werbegetriebene Geschäftsmodell treffen können, weil kürzere Nutzungszeiten die Zahl der Anzeigen senken. Auf der anderen Seite stehen klassische Telekomkonzerne, die als hoch verschuldete Dividendenzahler unter höheren Finanzierungskosten leiden. Das strukturelle Thema ist die Monetarisierung von KI, denn die Plattformen müssen zeigen, dass ihre Milliardeninvestitionen sich in höheren Werbe- oder Cloud-Erlösen auszahlen."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Strom-, Gas- und Wasserversorger.",
+      "lage": "Belastet, hohe Langfristzinsen drücken den zinssensiblen Sektor.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor gilt traditionell als sicherer Dividendenhafen, ist aber stark verschuldet und kapitalintensiv, weshalb hohe Langfristzinsen die Refinanzierung großer Investitionsprogramme direkt verteuern. Als Bond-Proxy verliert er an relativer Attraktivität, wenn sichere Anleihen ähnliche Renditen bieten, was die heiße Inflationszahl verschärft. Das große strukturelle Thema ist die Stromnachfrage der Rechenzentren, die nach Jahren der Stagnation erstmals wieder kräftig steigt und Versorger mit Rechenzentrumsstandorten zu einer indirekten KI-Wette macht. Der Sektor steht damit zwischen zinsbedingtem Gegenwind und einem strukturellen Nachfrageschub."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Börsennotierte Immobiliengesellschaften und REITs.",
+      "lage": "Unter Druck, der zinssensibelste Sektor leidet unter dem hohen langen Ende und der heißen Inflation.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Immobilien sind der zinssensibelste Sektor, weil höhere Kapitalisierungszinsen die Objektwerte senken und die Refinanzierung auslaufender Kredite verteuern. Die Bewertung ist nach dem Zinsanstieg der vergangenen Jahre gedrückt, viele REITs handeln unter dem Wert ihrer Immobilien. Das strukturelle Bild ist gespalten, Büroimmobilien leiden unter hohem Leerstand, während Rechenzentrums-, Logistik- und Wohn-REITs von struktureller Nachfrage profitieren, was der KI-Boom zusätzlich stützt. Das dominierende Thema der nächsten Quartale bleibt die Zinsentwicklung, denn erst sinkende Langfristzinsen würden den Sektor breit entlasten."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "McGrath RentCorp",
+      "ticker": "MGRC",
+      "logoKey": "mcgrath",
+      "marketCapEUR": "2,39 Mrd. €",
+      "capSource": "Alpha Vantage 27.8.2026, 2,79 Mrd. $ zu USD/EUR 0,85771",
+      "marktEinordnung": "McGrath RentCorp vermietet modulare Gebäude wie Klassenzimmer und Baustellenbüros, tragbare Lagercontainer sowie elektronische Testgeräte an Firmen und öffentliche Auftraggeber. Der Markt für modulare Raumlösungen wächst mit Schulfinanzierung, Bauzyklen und dem langfristigen Trend zu modularer statt konventioneller Bauweise. McGrath ist die klare Nummer zwei im US-Modularvermietungsmarkt und besitzt hohe regionale Flottendichte. Wichtig zur Abgrenzung, McGrath ist nicht der größere Wettbewerber WillScot Mobile Mini.",
+      "thesis": "Der Kern ist die Vermietökonomik. Ein modulares Gebäude oder Testgerät wird einmal gekauft und über eine lange Nutzungsdauer viele Male vermietet, sodass die kumulierten Cash-Rückflüsse den Anschaffungspreis deutlich übersteigen. Die zentralen Margenhebel sind Auslastung und Mietrate, beide relativ stabil über den Zyklus, was der Firma einen defensiven, wiederkehrenden Umsatzsockel gibt. McGrath ist ein Dividenden-Aristokrat mit über drei Jahrzehnten Dividendensteigerungen, moderater Verschuldung und niedriger Beta von rund 0,45. Nach dem 2024 aufgelösten Übernahmeversuch durch WillScot ist die Aktie eigenständig geblieben und handelt mit Bewertungsabschlag zum größeren Wettbewerber. In der aktuellen Rotation aus teuren Wachstumswerten in Qualität passt dieses Profil gut. Der Lernpunkt liegt darin, wie kapitalintensive Vermietgeschäfte Kapital in wiederkehrenden Cashflow verwandeln und warum Auslastung mal Mietrate wichtiger ist als reines Umsatzwachstum.",
+      "counterarguments": [
+        "Trotz defensiver Beta besteht Konjunkturexposure über die Bau- und Gewerbenachfrage. Im zweiten Quartal 2026 gingen Umsatz und Ergebnis je rund sechs Prozent zurück, ein Zeichen für nachlassende Modular-Nachfrage nach dem pandemiebedingten Bildungsboom.",
+        "Analysten verweisen auf Margendruck bei gleichzeitig solider Mietstärke, das Verhältnis kann sich weiter eintrüben.",
+        "Das Segment für Testgeräte ist zyklisch und hängt an Halbleiter- und Telekom-Investitionen, was die Ergebnisschwankung erhöht."
+      ],
+      "catalysts": [
+        "Quartalsbericht voraussichtlich Ende Oktober 2026 als Test für Auslastungsgrad und Mietratenentwicklung im Modularsegment.",
+        "Eine anhaltende Marktrotation aus teuren Wachstumswerten in defensive Qualität spielt dem Profil des Titels in die Karten."
+      ]
+    },
+    {
+      "name": "Polaris",
+      "ticker": "PII",
+      "logoKey": "polaris",
+      "marketCapEUR": "3,10 Mrd. €",
+      "capSource": "Alpha Vantage 27.8.2026, 3,62 Mrd. $ zu USD/EUR 0,85771",
+      "marktEinordnung": "Polaris ist der nordamerikanische Marktführer bei Offroad-Powersport-Fahrzeugen, also geländegängigen Zweisitzern, Quads und Schneemobilen, dazu kommen Indian-Motorräder und ein kleineres Marinegeschäft. Der Markt ist ein klassischer Bereich für nicht zwingend notwendige Großanschaffungen. Nach dem Pandemie-Nachfrageschub folgte eine Normalisierung, kombiniert mit Händler-Lagerabbau und hohen Zinsen. Wichtig zur Abgrenzung, dies ist das Offroad-Powersport-Geschäft und ein anderer Markt als die Wohnmobile von Winnebago.",
+      "thesis": "Der Fall ist ein tiefer zyklischer Tiefpunkt mit Turnaround-Möglichkeit. Der Gewinn je Aktie ist auf Zwölfmonatssicht negativ, während das operative Ergebnis vor Abschreibungen mit rund 492 Millionen Dollar klar positiv bleibt. Diese Lücke illustriert den operativen Hebel nach unten, denn eine hohe Fixkostenbasis trifft auf eingebrochene Volumina, wodurch die Nettomarge zusammenbricht, obwohl die operative Cash-Erzeugung fortbesteht. Die Bewertung ist auf Umsatzbasis stark gedrückt, mit einem Kurs-Umsatz-Verhältnis unter 0,5, historisch ein Krisenniveau. Das zweite Quartal 2026 lieferte einen Ergebnisbeat und eine angehobene Jahresprognose, ein erstes Stabilisierungssignal. Endet der Lagerabbau und sinken die Zinsen, kehrt sich der operative Hebel nach oben um, weil Zusatzvolumen mit hoher Grenzmarge durchschlägt. Der Spannungspunkt ist die Dividende mit einer Rendite um vier Prozent, die bei negativem Gewinn gefährdet sein könnte. Der Lernpunkt ist, warum operatives Ergebnis und Nettogewinn in zyklischen Industrien stark auseinanderlaufen.",
+      "counterarguments": [
+        "Zölle auf importierte Komponenten und Stahl belasten die Kostenseite und können eine Margenerholung verzögern.",
+        "Die Dividendennachhaltigkeit ist fraglich, bei anhaltenden Verlusten ist eine Kürzung möglich, was ein Kernargument der Value-These aushebeln würde.",
+        "Es ist offen, ob die Powersport-Nachfrage nach dem Pandemie-Vorzieheffekt dauerhaft niedriger liegt statt nur zyklisch schwach zu sein."
+      ],
+      "catalysts": [
+        "Quartalsbericht voraussichtlich Ende Oktober 2026 mit Blick auf Einzelhandelstrends, Händlerlagerbestände und Aussagen zur Dividende.",
+        "Ein Ende des Lagerabbaus bei den Händlern zusammen mit sinkenden Zinsen würde den operativen Hebel nach oben sichtbar machen."
+      ]
+    },
+    {
+      "name": "Innodata",
+      "ticker": "INOD",
+      "logoKey": "innodata",
+      "marketCapEUR": "1,69 Mrd. €",
+      "capSource": "Alpha Vantage 27.8.2026, 1,97 Mrd. $ zu USD/EUR 0,85771",
+      "marktEinordnung": "Innodata ist ein Zulieferer für die generative künstliche Intelligenz abseits der bekannten Namen. Das Unternehmen erstellt und kuratiert Trainingsdaten, betreibt Datenannotation, unterstützt die Feinabstimmung von Modellen und bewertet deren Qualität für große Technologiekonzerne. Der adressierbare Markt wächst mit dem KI-Investitionszyklus schnell, weil Hyperscaler die Datenaufbereitung auslagern. Innodata hat sich vom klassischen Datendienstleister zum KI-Zulieferer gewandelt und mehrere sehr große Technologiekunden gewonnen.",
+      "thesis": "Der Fall ist reines Hochmomentum-Wachstum mit operativem Hebel. Der Umsatz wuchs zuletzt rund 58 Prozent gegenüber dem Vorjahr, der Gewinn je Aktie mehr als verdoppelt, und die Firma ist bereits profitabel, mit einer Nettomarge um 15 Prozent und einer hohen Eigenkapitalrendite. Der Wachstumsmechanismus ist ein Land-and-Expand-Modell, bei dem bestehende Großkunden ihre KI-Programme ausweiten, wodurch Umsatz auf eine skalierende Kostenbasis trifft und die Margen steigen können. Die hohe Beta von rund 2,9 macht die Aktie zu einem Hebel auf den KI-Investitionszyklus und auf den Risikoappetit des Marktes. Die Bewertung mit einem Kurs-Umsatz-Verhältnis um sechs ist vertretbar, solange das Wachstum hält, wird aber teuer, sobald es sich verlangsamt. Der Kurs zeigt die Volatilität eindrucksvoll, von über 120 Dollar im Hoch auf rund 34 Dollar im Tief und aktuell etwa 56 Dollar. Der Lernpunkt ist, wie stark der Kurs bei Hochbeta-Wachstumswerten von der Wachstumsrate relativ zur Erwartung abhängt und warum Kundenkonzentration das größte fundamentale Einzelrisiko bleibt.",
+      "counterarguments": [
+        "Die Kundenkonzentration ist extrem, wenige große Technologiekunden tragen den Großteil des Umsatzes, und der Verlust eines einzigen Programms hätte einen überproportionalen Umsatzeinbruch zur Folge.",
+        "Anbieter wie Scale AI und interne Teams der Kunden konkurrieren, was Preisdruck erzeugen kann.",
+        "Die sehr hohe Beta bedeutet ein erhebliches Rückschlagrisiko, wie der Absturz von über 120 auf 34 Dollar bereits gezeigt hat."
+      ],
+      "catalysts": [
+        "Quartalsbericht voraussichtlich Anfang November 2026 mit Blick auf neue Kundengewinne und die Offenlegung zur Kundenkonzentration.",
+        "Nvidias starker Ausblick und der anhaltende KI-Investitionsschub stützen die Nachfrage nach Trainingsdaten, dem Kerngeschäft des Unternehmens."
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "Marvell-Zahlen am Donnerstagabend",
+      "when": "27.8. nachbörslich",
+      "bullishIf": "Umsatz und Ausblick klar über Konsens, starke Nachfrage nach kundenspezifischen Rechenchips",
+      "bearishIf": "Ausblick enttäuscht trotz Beat, KI-Rückenwind trägt nicht breit durch die Zulieferkette"
+    },
+    {
+      "what": "Warshs erste Rede in Jackson Hole",
+      "when": "Freitag 28.8., 16:00 Uhr deutscher Zeit",
+      "bullishIf": "klare Zusage zur Preisstabilität ohne akute Hike-Signale beruhigt die Renditen",
+      "bearishIf": "restriktiver Ton verstärkt die Erwartung einer Zinserhöhung im September"
+    },
+    {
+      "what": "Fed-Sitzung mit neuen Projektionen",
+      "when": "15./16.9.",
+      "bullishIf": "Fed hält still und signalisiert Geduld",
+      "bearishIf": "Zinserhöhung oder klar restriktive Projektionen"
+    },
+    {
+      "what": "Nvidia-China-Geschäft und H20-Genehmigungen",
+      "when": "laufend",
+      "bullishIf": "Lösung der Geopolitik bringt zusätzlich 2 bis 5 Mrd. $ H20-Umsatz",
+      "bearishIf": "dauerhafte Blockade und formelle Umsatzabgabe an die US-Regierung"
+    },
+    {
+      "what": "Kanadische Gegenzölle",
+      "when": "in Kraft ab 8.9.",
+      "bullishIf": "Verhandlungslösung oder enge Ausnahmen begrenzen den Schaden",
+      "bearishIf": "Ausweitung auf Fahrzeuge, Autoteile und Stahl trifft die Lieferketten"
+    },
+    {
+      "what": "US-Erstanträge auf Arbeitslosenhilfe",
+      "when": "Donnerstag 27.8., 14:30 Uhr deutscher Zeit",
+      "bullishIf": "stabile Zahlen stützen das Bild eines robusten Arbeitsmarkts",
+      "bearishIf": "deutlicher Anstieg nährt Konjunktursorgen"
+    },
+    {
+      "what": "Speicherpreise als Margenrisiko für KI-Server",
+      "when": "ab 2027",
+      "bullishIf": "moderater Preisanstieg, Margen der Serverhersteller halten",
+      "bearishIf": "kräftiger Anstieg drückt die Bruttomargen breit"
+    },
+    {
+      "what": "Chinas Volkskongress-Ergebnisse",
+      "when": "bis 28.8.",
+      "bullishIf": "überraschende Fiskal- oder Nachfragehilfen",
+      "bearishIf": "rein legislative Beschlüsse ohne Stimulus enttäuschen zyklische Werte"
+    }
+  ],
+  "learningNotes": [
+    "Eine Aktie reagiert auf die Abweichung von der Erwartung, nicht auf die absolute Nachricht, das zeigen Nvidia und Synopsys am selben Tag mit gegensätzlicher Reaktion.",
+    "Der Ausblick wiegt oft schwerer als die berichteten Zahlen, weil er den künftigen Cashflow-Pfad neu justiert.",
+    "Steigende Zinsen treffen Wachstumsaktien mit langer Duration stärker als Substanzwerte, weil weit entfernte Gewinne stärker abgezinst werden.",
+    "Ein hoher operativer Hebel lässt Gewinne im Abschwung überproportional einbrechen und im Aufschwung überproportional steigen.",
+    "Wenn ein Großteil des Indexgewinns an wenigen KI-Werten hängt, entsteht ein Klumpenrisiko, das in ruhigen Phasen unterschätzt wird."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "BWL",
+      "modell": "Erwartung gegen Realisation",
+      "erklaerung": "An der Börse zählt vor allem, wie sich ein Ergebnis zur Erwartung verhält, die bereits im Kurs steckt. Die absolute Höhe der Zahlen ist dabei zweitrangig. Ein Unternehmen kann Rekordzahlen melden und trotzdem fallen, wenn die Erwartung schon sehr hoch war und der Ausblick sie nicht übertrifft. Umgekehrt kann eine Aktie nach durchschnittlichen Zahlen steigen, wenn der Markt Schlimmeres befürchtet hatte. Anleger sollten deshalb immer fragen, was schon eingepreist war, bevor sie eine Kursreaktion bewerten.",
+      "anwendung": "Am selben Tag übertrafen Nvidia und Synopsys die Erwartungen. Nvidia stieg, weil auch der Ausblick über dem Konsens lag, Synopsys fiel, weil die hohe Erwartung bereits vollständig im Kurs steckte."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Diskontsatz und Duration einer Aktie",
+      "erklaerung": "Der Wert einer Aktie ist die Summe aller künftigen Gewinne, abgezinst auf heute. Der Abzinsungssatz hängt an den Zinsen. Bei einem Wachstumswert liegen die großen Gewinne weit in der Zukunft, seine sogenannte Duration ist lang. Steigt der Zins, sinkt der Barwert weit entfernter Gewinne überproportional, deshalb fallen Wachstumsaktien stärker als Substanzwerte, wenn die Zinsen steigen. Das erklärt, warum ein und dieselbe Zinsnachricht Sektoren so unterschiedlich trifft.",
+      "anwendung": "Deshalb reagiert der teure Technologiesektor um Nvidia so empfindlich auf jedes Zinssignal aus Jackson Hole, und deshalb leiden zinssensible Sektoren wie Immobilien und Versorger unter dem hohen langen Ende der US-Zinskurve besonders."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Zweitrundeneffekte und Erwartungsankerung",
+      "erklaerung": "Ein Preisschock, etwa durch teureres Öl, hebt zunächst nur die direkt betroffenen Preise. Gefährlich wird es in der zweiten Runde, wenn Arbeitnehmer wegen der höheren Lebenshaltungskosten höhere Löhne fordern und Unternehmen diese über weitere Preiserhöhungen weitergeben. So kann aus einem einmaligen Schock eine sich selbst tragende Inflation werden. Notenbanken versuchen, die Inflationserwartungen zu verankern, damit Löhne und Preise stabil bleiben. Gelingt das, bleibt der Schock einmalig.",
+      "anwendung": "Genau diese Sorge treibt die Debatte um eine Fed-Zinserhöhung im September, denn der PCE-Wert von 3,7 Prozent liegt klar über Ziel und der Preisdruck kommt aus der Energie, die in die breite Wirtschaft durchsickern könnte."
+    },
+    {
+      "disziplin": "Politikwissenschaft",
+      "modell": "Unabhängigkeit der Notenbank und Zeitinkonsistenz",
+      "erklaerung": "Regierungen haben einen Anreiz, kurzfristig für niedrige Zinsen und viel Wachstum zu sorgen, auch wenn das langfristig die Inflation anheizt. Dieses Problem heißt Zeitinkonsistenz, die kurzfristig verlockende Politik ist langfristig schädlich. Eine unabhängige Notenbank soll dem entgegenwirken, weil sie ohne Rücksicht auf Wahltermine handeln kann. Ihre Glaubwürdigkeit ist ihr wichtigstes Gut, denn nur wenn Bürger ihr vertrauen, bleiben die Inflationserwartungen niedrig.",
+      "anwendung": "Deshalb wird die erste Rede des neuen Fed-Chefs Kevin Warsh in Jackson Hole am Freitag so genau beobachtet, der Markt sucht Hinweise, wie unabhängig und wie entschlossen gegen die Inflation der neue Kurs ausfällt."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Operativer Hebel",
+      "erklaerung": "Der operative Hebel beschreibt, wie stark der Gewinn eines Unternehmens auf Veränderungen des Umsatzes reagiert. Firmen mit hohen Fixkosten haben einen hohen Hebel, weil ihre Kosten kurzfristig gleich bleiben, egal wie viel sie verkaufen. Steigt der Umsatz, verteilen sich die Fixkosten auf mehr Stück und der Gewinn steigt überproportional. Fällt der Umsatz, bricht der Gewinn ebenso überproportional ein, obwohl das Geschäft weiterläuft. Deshalb schwanken Gewinne stärker als Umsätze.",
+      "anwendung": "Bei dem Pick Polaris ist der Gewinn je Aktie negativ, während das operative Ergebnis vor Abschreibungen klar positiv bleibt. Diese Lücke ist der operative Hebel nach unten, der sich bei anziehender Nachfrage umkehren würde."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Wie Nvidias Rekordquartal durch die drei Abschlüsse wandert",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Nvidia meldete 96,2 Milliarden Dollar Umsatz und eine Bruttomarge von 75,0 Prozent, was einen sehr hohen Bruttogewinn ergibt. Weil die Betriebskosten im Verhältnis klein bleiben, fällt ein Nettogewinn von rund 60 Milliarden Dollar an. Entscheidend für den Kurs war jedoch der Ausblick von 108 Milliarden Dollar mit einer auf 74 Prozent sinkenden Bruttomarge, denn dieser justiert die erwartete künftige Gewinnreihe.",
+      "Bilanz: Der Konzern hat hohe Liefervereinbarungen von rund 279 Milliarden Dollar gemeldet, vor allem für Speicher und Fertigungskapazität. Solche Verpflichtungen tauchen teils als Vorauszahlungen und Vorräte in der Bilanz auf und binden Kapital, bevor der zugehörige Umsatz realisiert wird. Zugleich wächst die Barmittelposition durch den hohen Gewinn.",
+      "Cashflow: Ein Geschäft mit 75 Prozent Bruttomarge wandelt Gewinn sehr effizient in Barmittel um. Aus diesem operativen Cashflow finanziert Nvidia Investitionen in Kapazität sowie Aktienrückkäufe. Steigende Speicherkosten und hohe Vorauszahlungen an Zulieferer können den freien Cashflow jedoch bremsen, weil sie Kapital im Umlaufvermögen binden.",
+      "Bewertung: Der Markt bewertet Nvidia mit einem hohen Vielfachen künftiger Gewinne. Solange Umsatz und Ausblick wie jetzt über dem Konsens liegen, rechtfertigt das die Bewertung. Sinkt die Marge stärker als erwartet oder verlangsamt sich das Wachstum, sinkt das vertretbare Vielfache, und die Aktie fällt, selbst wenn die aktuellen Zahlen stark sind."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler ist, allein auf den Rekordumsatz zu schauen und die sinkende Bruttomarge im Ausblick sowie das ausgeklammerte China-Geschäft zu ignorieren. An der Börse wird die Zukunft gehandelt, deshalb entscheiden Ausblick und Marge oft mehr als die berichtete Umsatzzahl."
+  },
+  "glossar": [
+    {
+      "begriff": "PCE-Preisindex",
+      "erklaerung": "Das von der US-Notenbank bevorzugte Inflationsmaß, das die Preise der von Haushalten tatsächlich gekauften Güter erfasst und Verhaltensänderungen berücksichtigt."
+    },
+    {
+      "begriff": "Kern-PCE",
+      "erklaerung": "Der PCE-Preisindex ohne die schwankungsanfälligen Energie- und Lebensmittelpreise, er zeigt den zugrundeliegenden Preistrend."
+    },
+    {
+      "begriff": "Guidance",
+      "erklaerung": "Die vom Management veröffentlichte Prognose für Umsatz oder Gewinn kommender Quartale, oft wichtiger für den Kurs als die berichteten Zahlen."
+    },
+    {
+      "begriff": "Bruttomarge",
+      "erklaerung": "Der Anteil des Umsatzes, der nach Abzug der direkten Herstellungskosten übrig bleibt, ein Maß für die Preissetzungsmacht."
+    },
+    {
+      "begriff": "Hyperscaler",
+      "erklaerung": "Die großen Cloud-Konzerne, die riesige Rechenzentren betreiben und die wichtigsten Abnehmer von KI-Chips sind."
+    },
+    {
+      "begriff": "Capex",
+      "erklaerung": "Investitionsausgaben eines Unternehmens für langlebige Güter wie Fabriken, Rechenzentren oder Ausrüstung."
+    },
+    {
+      "begriff": "HBM (Hochleistungsspeicher)",
+      "erklaerung": "Gestapelter Hochleistungsspeicher, der in KI-Servern verbaut wird, seine Preise gelten als Margenrisiko für die Chipbranche."
+    },
+    {
+      "begriff": "Diskontsatz",
+      "erklaerung": "Der Zinssatz, mit dem künftige Gewinne auf ihren heutigen Wert zurückgerechnet werden, er steigt mit den Marktzinsen."
+    },
+    {
+      "begriff": "Duration einer Aktie",
+      "erklaerung": "Bildlich die Frage, wie weit in der Zukunft die großen Gewinne einer Aktie liegen, je länger, desto empfindlicher reagiert sie auf Zinsänderungen."
+    },
+    {
+      "begriff": "Zinskurve",
+      "erklaerung": "Die grafische Darstellung der Anleiherenditen nach Laufzeit, eine steile Kurve zeigt hohe Langfristzinsen im Vergleich zu kurzen."
+    },
+    {
+      "begriff": "Wiederkehrender Jahresumsatz (ARR)",
+      "erklaerung": "Der auf ein Jahr hochgerechnete Umsatz aus laufenden Abonnements, eine Schlüsselgröße bei Softwarefirmen wie CrowdStrike."
+    },
+    {
+      "begriff": "Operativer Hebel",
+      "erklaerung": "Die Eigenschaft von Firmen mit hohen Fixkosten, dass ihr Gewinn stärker schwankt als ihr Umsatz, in beide Richtungen."
+    },
+    {
+      "begriff": "Beta",
+      "erklaerung": "Ein Maß dafür, wie stark eine Aktie im Vergleich zum Gesamtmarkt schwankt, ein Wert unter eins bedeutet geringere Schwankung."
+    },
+    {
+      "begriff": "VIX",
+      "erklaerung": "Der Volatilitätsindex, das Angstbarometer der Wall Street, ein niedriger Wert signalisiert Gelassenheit der Anleger."
+    },
+    {
+      "begriff": "Sekundärzoll",
+      "erklaerung": "Ein Zoll, der Dritte trifft, die weiter mit einem sanktionierten Land handeln, etwa Käufer russischer Energie."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "Nvidia Q2 FY27: Umsatz 96,2 Mrd. $ (+106 %), Rechenzentrum 89,0 Mrd. $, Bruttomarge 75,0 %, bereinigter Gewinn je Aktie 2,22 $, Ausblick Q3 108,0 Mrd. $ (SEC-Pressemitteilung).",
+      "US-Schluss 26.8.: S&P 500 7.675,70 (-0,04 %), Dow 53.463,88 (-0,21 %), Nasdaq Composite 26.130,20 (-0,08 %) (Motley Fool).",
+      "US-PCE Juli: Gesamt 3,7 % z. Vj. (Konsens 3,6 %), Kern 3,3 %, je +0,2 % z. Vm.; BIP Q2 2. Schätzung +1,5 % (BEA).",
+      "Meta-Vergleich über 17 Mrd. $ mit US-Bundesstaaten zum Jugendschutz (Motley Fool).",
+      "CrowdStrike hob nach Rekord beim Neugeschäft die Jahresprognose an, Aktie rund +11 % am Berichtstag.",
+      "Synopsys übertraf und hob die Prognose an, fiel dennoch rund 4 bis 6 % nachbörslich.",
+      "Bank von Korea hob den Leitzins um 25 Bp auf 3,0 % an (27.8.).",
+      "EZB-Sitzung 9./10.9. in Berlin (offizieller EZB-Kalender), FOMC 15./16.9., Jackson Hole 27.-29.8., Warsh-Rede Fr 28.8.",
+      "Market-Cap-Gate: MGRC 2,79 Mrd. $ (2,39 Mrd. €), PII 3,62 Mrd. $ (3,10 Mrd. €), INOD 1,97 Mrd. $ (1,69 Mrd. €), alle unter 10 Mrd. €; USD/EUR 0,85771 (AV 27.8.)."
+    ],
+    "uncertain": [
+      "Nvidias genaues Tagesvorzeichen im regulären Handel 26.8. (Quellen zwischen leicht plus und leicht minus, Schluss rund 210 $); nachbörslich rund +4 %.",
+      "Fed-Hike-Wahrscheinlichkeit für September zwischen 44 und 65 Prozent je nach Quelle, keine verifizierte CME-FedWatch-Zahl.",
+      "Exakter Stand der zweijährigen US-Rendite (rund 4,21 %, Quelle schwach).",
+      "CrowdStrike-Detailzahlen zu Quartalsumsatz und wiederkehrendem Umsatz (Quellen widersprüchlich, Primärmitteilung noch zu prüfen).",
+      "BOJ-Sitzungstermin 17./18.9. nicht gegen den offiziellen BOJ-Kalender geprüft.",
+      "Von den Kanada-Zöllen ausgenommene Kategorien (Energie, Dünger, kritische Mineralien) laut Berichten, nicht primärquellenbelegt.",
+      "Marvell-Konsens für den Gewinn je Aktie in den Quellen widersprüchlich.",
+      "Pick-Quartalstermine (MGRC und PII Ende Oktober, INOD Anfang November) aus dem Fiskalrhythmus abgeleitet."
+    ],
+    "gaps": [
+      "Exakte Schlussstände und Tagesveränderungen für DAX, STOXX 600 und FTSE 100 am 26.8. nur teilweise belegt.",
+      "US-Erstanträge auf Arbeitslosenhilfe erst Donnerstagnachmittag verfügbar.",
+      "China-Volkskongress-Beschlüsse am 27.8. noch ausstehend.",
+      "Der von hdfcsky gelieferte US-Schluss 26.8. war mit den Vortageswerten identisch und wurde als recycelt verworfen, ersetzt durch Motley-Fool-Werte."
+    ]
+  }
+}

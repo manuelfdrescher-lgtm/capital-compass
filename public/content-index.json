@@ -153,6 +153,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-08-12-morning/",
       "headline": "Die Börse hält den Atem an, bis am Nachmittag die Inflationszahl kommt"
+    },
+    {
+      "number": 23,
+      "date": "2026-08-27",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-08-27-morning/",
+      "headline": "Nvidia übertrifft die Erwartungen und stellt 108 Milliarden Dollar für das laufende Quartal in Aussicht"
     }
   ],
   "recentStockPicks": [
@@ -485,7 +492,22 @@
       "slug": "2026-08-12-morning",
       "name": "Marqeta (MQ)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-08-27-morning",
+      "name": "McGrath RentCorp (MGRC)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-08-27-morning",
+      "name": "Polaris (PII)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-08-27-morning",
+      "name": "Innodata (INOD)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-08-12T21:14:57.410Z"
+  "lastUpdated": "2026-08-27T11:51:00.486Z"
 }

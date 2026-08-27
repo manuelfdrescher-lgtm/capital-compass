@@ -74,3 +74,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-08-12-morning | Monarch Casino & Resort (MCRI) | — _(defensiver Qualitätsbetreiber am Ende einer teuren Bauphase, ~20,5 % Eigenkapitalrendite bei niedriger Verschuldung)_
 - 2026-08-12-morning | NexPoint Residential Trust (NXRT) | — _(bewusste Zinswette: stark fremdfinanzierter Wohn-REIT mit überproportionaler Reaktion auf sinkende Zinsen)_
 - 2026-08-12-morning | Marqeta (MQ) | — _(Skalierungswette: Zahlungsvolumen wächst mit ~32 % deutlich schneller als der Umsatz)_
+- 2026-08-27-morning | McGrath RentCorp (MGRC) | — _(Vermietökonomik: einmal gekauft, über lange Nutzungsdauer viele Male vermietet)_
+- 2026-08-27-morning | Polaris (PII) | — _(tiefer zyklischer Tiefpunkt mit Turnaround-Möglichkeit, Gewinn je Aktie zwölfmonatig negativ)_
+- 2026-08-27-morning | Innodata (INOD) | — _(Hochmomentum-Wachstum mit operativem Hebel, Umsatz zuletzt rund 58 % über Vorjahr)_
