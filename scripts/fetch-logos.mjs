@@ -6,6 +6,7 @@
 //
 // Aufruf:  npm run logos            (Startbestand + alle Keys aus Editionen)
 //          npm run logos -- --force (auch vorhandene neu laden)
+//          npm run logos -- --only=autozone,whirlpool (nur diese Keys)
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -244,7 +245,14 @@ async function fetchLogo(key, searchTerm, logos) {
 
 const force = process.argv.includes("--force");
 const logos = loadLogosJson();
-const wanted = { ...SEED, ...collectKeysFromEditions() };
+const allWanted = { ...SEED, ...collectKeysFromEditions() };
+// --only=key1,key2 beschränkt den Lauf auf einzelne Keys (spart die langen
+// Wiederholungsversuche für die vielen Keys ohne Commons-Logo).
+const onlyArg = process.argv.find((a) => a.startsWith("--only="));
+const only = onlyArg ? new Set(onlyArg.slice(7).split(",").filter(Boolean)) : null;
+const wanted = only
+  ? Object.fromEntries(Object.entries(allWanted).filter(([key]) => only.has(key)))
+  : allWanted;
 
 let ok = 0, failed = 0, skipped = 0;
 for (const [key, searchTerm] of Object.entries(wanted)) {
