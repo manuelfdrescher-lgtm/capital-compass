@@ -1077,5 +1077,63 @@
     "file": null,
     "name": "Lumen Technologies Inc.",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "schwab": {
+    "file": null,
+    "name": "Charles Schwab",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "viking": {
+    "file": null,
+    "name": "Viking Therapeutics",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "allstate": {
+    "file": "allstate.svg",
+    "name": "Allstate",
+    "source": "https://commons.wikimedia.org/wiki/File:Allstate_wordmark.svg",
+    "license": "Public domain",
+    "artist": "Allstate",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "autozone": {
+    "file": "autozone.png",
+    "name": "AutoZone",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_of_AutoZone.png",
+    "license": "Public domain",
+    "artist": "AutoZone, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "kbhome": {
+    "file": "kbhome.svg",
+    "name": "KB Home",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_-_KB_Home.svg",
+    "license": "CC BY-SA 4.0",
+    "artist": "KB Home",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "ingredion": {
+    "file": "ingredion.svg",
+    "name": "Ingredion",
+    "source": "https://commons.wikimedia.org/wiki/File:Ingredion.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "whirlpool": {
+    "file": "whirlpool.png",
+    "name": "Whirlpool",
+    "source": "https://commons.wikimedia.org/wiki/File:Whirlpool_Logo.png",
+    "license": "Public domain",
+    "artist": "© 2016 Whirlpool",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "aaon": {
+    "file": "aaon.svg",
+    "name": "AAON",
+    "source": "https://commons.wikimedia.org/wiki/File:AAON_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
   }
 }

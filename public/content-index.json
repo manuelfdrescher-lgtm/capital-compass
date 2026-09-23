@@ -160,6 +160,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-08-27-morning/",
       "headline": "Nvidia übertrifft die Erwartungen und stellt 108 Milliarden Dollar für das laufende Quartal in Aussicht"
+    },
+    {
+      "number": 24,
+      "date": "2026-09-23",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-09-23-morning/",
+      "headline": "Die großen Notenbanken drehen den Zins nach oben, die Wall Street hält sich an der KI-Rally fest"
     }
   ],
   "recentStockPicks": [
@@ -507,7 +514,22 @@
       "slug": "2026-08-27-morning",
       "name": "Innodata (INOD)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-09-23-morning",
+      "name": "Ingredion (INGR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-09-23-morning",
+      "name": "Whirlpool (WHR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-09-23-morning",
+      "name": "AAON (AAON)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-08-27T11:51:00.486Z"
+  "lastUpdated": "2026-09-23T18:19:14.507Z"
 }

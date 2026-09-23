@@ -77,3 +77,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-08-27-morning | McGrath RentCorp (MGRC) | — _(Vermietökonomik: einmal gekauft, über lange Nutzungsdauer viele Male vermietet)_
 - 2026-08-27-morning | Polaris (PII) | — _(tiefer zyklischer Tiefpunkt mit Turnaround-Möglichkeit, Gewinn je Aktie zwölfmonatig negativ)_
 - 2026-08-27-morning | Innodata (INOD) | — _(Hochmomentum-Wachstum mit operativem Hebel, Umsatz zuletzt rund 58 % über Vorjahr)_
+- 2026-09-23-morning | Ingredion (INGR) | — _(defensives Geschäftsmodell mit vertraglicher Weitergabe der Agrarrohstoffpreise)_
+- 2026-09-23-morning | Whirlpool (WHR) | — _(Lehrfall für operativen Hebel im zyklischen Trog, Aktie von rund 56 auf 34 Dollar gefallen)_
+- 2026-09-23-morning | AAON (AAON) | — _(Wachstumshebel auf den KI-Infrastrukturzyklus über Rechenzentrumskühlung, hoch bewertet)_
