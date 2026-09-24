@@ -68,9 +68,15 @@ if (existsSync(dest)) {
 writeFileSync(dest, JSON.stringify(json, null, 2) + "\n");
 console.log(`✅ Valide. Einsortiert als content/editions/${slug}.json (Ausgabe Nr. ${edition.edition.number}, ${edition.articles.length} Artikel).`);
 
-// Fehlende Logos gleich mitziehen
+// Fehlende Logos gleich mitziehen, aber nur für die Firmen dieser Ausgabe
+// (ein Vollabruf fragt jedes Mal alle Keys ohne Commons-Logo erneut an und
+// dauert dann rund 20 Minuten).
+const logoKeys = [...new Set(JSON.stringify(json).match(/"logoKey":\s*"[^"]+"/g) ?? [])]
+  .map((m) => m.replace(/^"logoKey":\s*"|"$/g, ""));
 try {
-  execFileSync("node", ["scripts/fetch-logos.mjs"], { cwd: root, stdio: "inherit" });
+  if (logoKeys.length > 0) {
+    execFileSync("node", ["scripts/fetch-logos.mjs", `--only=${logoKeys.join(",")}`], { cwd: root, stdio: "inherit" });
+  }
 } catch {
   console.warn("⚠️  Logo-Abruf fehlgeschlagen; Fallback-Chips greifen.");
 }

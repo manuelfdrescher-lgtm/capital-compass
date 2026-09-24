@@ -70,6 +70,7 @@ const MANUAL_COMMONS = {
   fresenius: "Fresenius Logo.svg",
   exxonmobil: "Exxon Mobil Logo.svg",
   frontline: "Frontline Logo.svg",
+  mcdonalds: "McDonald's Golden Arches.svg", // Wikidata liefert sonst die Hochformat-Variante mit Slogan
 };
 
 // Bekannte Markenfarben für den typografischen Fallback-Chip
