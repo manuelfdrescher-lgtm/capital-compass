@@ -1,0 +1,1504 @@
+{
+  "edition": {
+    "number": 25,
+    "date": "2026-09-24",
+    "slot": "morning",
+    "schemaVersion": 2,
+    "dataAsOf": "US-Schluss Mittwoch 23.9.2026, Asien-Handel Donnerstagfrüh 24.9., Makro- und Earnings-Stand bis 24.9.2026 04:20 UTC, FX und Caps Alpha Vantage 24.9. 04:05 UTC.",
+    "generatedAt": "2026-09-24T04:20:00Z",
+    "note": "Vorläufig Nr. 25 (Website-Index live 24.9. bis Nr. 24 = 23.9. morning). Kanonische Nummer beim Ingest."
+  },
+  "market": {
+    "tiles": [
+      {
+        "label": "S&P 500",
+        "value": "7.706",
+        "delta": "-0,73 %",
+        "direction": "down",
+        "approx": true,
+        "note": "Schluss 23.9."
+      },
+      {
+        "label": "Nasdaq Composite",
+        "value": "26.936",
+        "delta": "-1,11 %",
+        "direction": "down",
+        "approx": true,
+        "note": "Schluss 23.9."
+      },
+      {
+        "label": "Dow Jones",
+        "value": "51.512",
+        "delta": "-0,63 %",
+        "direction": "down",
+        "approx": true,
+        "note": "Schluss 23.9."
+      },
+      {
+        "label": "Russell 2000",
+        "value": "2.838",
+        "delta": "-1,60 %",
+        "direction": "down",
+        "approx": true,
+        "note": "Schluss 23.9."
+      },
+      {
+        "label": "Nikkei 225",
+        "value": "65.828",
+        "delta": "+1,25 %",
+        "direction": "up",
+        "approx": true,
+        "note": "Do früh 24.9."
+      },
+      {
+        "label": "US-Rendite 10 Jahre",
+        "value": "5,11 %",
+        "delta": "+13,9 Bp.",
+        "direction": "up",
+        "approx": false,
+        "note": "20-Jahres-Hoch"
+      },
+      {
+        "label": "US-Rendite 2 Jahre",
+        "value": "4,90 %",
+        "delta": "+11,8 Bp.",
+        "direction": "up",
+        "approx": false,
+        "note": "23.9."
+      },
+      {
+        "label": "VIX",
+        "value": "15,18",
+        "delta": "niedrig",
+        "direction": "flat",
+        "approx": false,
+        "note": "Angstbarometer"
+      },
+      {
+        "label": "Öl (Brent)",
+        "value": "100 USD",
+        "delta": "über 100",
+        "direction": "up",
+        "approx": true,
+        "note": "Quellen uneins"
+      },
+      {
+        "label": "Gold",
+        "value": "4.320 USD",
+        "delta": "-1,3 %",
+        "direction": "down",
+        "approx": true,
+        "note": "23.9."
+      },
+      {
+        "label": "EUR/USD",
+        "value": "1,14",
+        "delta": "seitwärts",
+        "direction": "flat",
+        "approx": true,
+        "note": "AV 24.9."
+      },
+      {
+        "label": "US-Leitzins (Fed)",
+        "value": "3,75-4,00 %",
+        "delta": "+25 Bp.",
+        "direction": "flat",
+        "approx": false,
+        "note": "seit 17.9."
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "renditesprung-drueckt-aktien",
+      "ressort": "titelseite",
+      "kicker": "Anleihemärkte · Aktien",
+      "headline": "Anleiherenditen springen auf ein Zwanzigjahreshoch und ziehen die Aktienmärkte nach unten",
+      "dek": "Ein überraschend starker Konjunkturindikator treibt die fünfjährige US-Rendite erstmals seit 2007 über fünf Prozent. Wachstumswerte und Nebenwerte verlieren am stärksten, nur die Energieaktien halten sich.",
+      "body": [
+        "Die US-Aktienmärkte haben den Mittwoch mit deutlichen Verlusten beendet, ausgelöst durch einen kräftigen Sprung der Anleiherenditen. Der breite S&P 500 fiel um 0,73 Prozent auf rund 7.706 Punkte, der technologielastige Nasdaq Composite verlor 1,11 Prozent auf etwa 26.936 Zähler, der Dow Jones Industrial gab 0,63 Prozent auf rund 51.512 Punkte nach. Am stärksten traf es die Nebenwerte, der Russell 2000 verlor 1,60 Prozent. Rund 72 Prozent aller US-Werte schlossen im Minus.",
+        "Auslöser war ein überraschend starker Einkaufsmanagerindex. Der S&P Global Flash Composite für September kletterte auf 58,4 Punkte und zeigte die stärkste Geschäftsaktivität seit über fünf Jahren. Eine Zahl über 50 signalisiert Wachstum, ein Wert von 58,4 deutet auf eine kräftige Beschleunigung hin. Für die Anleihemärkte war das ein Warnsignal, denn eine heiß laufende Wirtschaft macht weitere Zinserhöhungen der Notenbank wahrscheinlicher und schürt Inflationssorgen.",
+        "In der Folge stiegen die Renditen über die gesamte Kurve. Die zweijährige US-Staatsanleihe rentierte mit 4,895 Prozent, die fünfjährige erreichte mit 4,996 Prozent erstmals seit 2007 die Marke von fünf Prozent und berührte im Handelsverlauf sogar 5,036 Prozent. Die zehnjährige Rendite kletterte auf 5,106 Prozent und damit auf ein Niveau, das zuletzt vor rund zwanzig Jahren zu sehen war. Die dreißigjährige Anleihe rentierte bei 5,396 Prozent.",
+        "Der Wirkungskanal ist die Abzinsung. Der Wert einer Aktie ist der auf heute abgezinste Strom aller künftig erwarteten Gewinne. Steigt der Zins, mit dem diese künftigen Gewinne abgezinst werden, sinkt ihr heutiger Barwert. Am stärksten trifft das Unternehmen, deren Gewinne weit in der Zukunft liegen, also hoch bewertete Technologie- und Wachstumswerte sowie unprofitable Nebenwerte. Genau diese Segmente verloren am meisten, sichtbar an der Schwäche von Nasdaq und Russell 2000.",
+        "Bemerkenswert war die Ruhe an der Volatilitätsfront. Das Angstbarometer VIX (Volatilitätsindex, das Maß für die erwartete Schwankung am Aktienmarkt) verharrte bei rund 15 Punkten. Der Ausverkauf verlief damit geordnet und ohne Panik. Einziger steigender Sektor war die Energie mit einem Plus von 0,89 Prozent, gestützt vom hohen Ölpreis. Die Anleger richten den Blick nun auf die PCE-Inflationsdaten am kommenden Mittwoch und auf die Micron-Zahlen am 30. September."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Aktienkurse und Anleiherenditen hängen über die Abzinsung zusammen. Steigen die Renditen, wird ein künftiger Gewinn heute weniger wert, weil man das Geld alternativ zinsbringend anlegen könnte. Firmen, deren Gewinne weit in der Zukunft liegen, verlieren dadurch am meisten an Wert. Deshalb fielen Technologie- und Wachstumswerte stärker als der Gesamtmarkt, während der Energiesektor dank des hohen Ölpreises gegen den Trend zulegte.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum ein starker Konjunkturindikator die Aktien fallen lässt",
+        "absaetze": [
+          "Auf den ersten Blick wirkt es widersprüchlich, dass eine gute Konjunkturnachricht die Aktien drückt. Die Auflösung liegt in der Reaktion der Notenbank. Ein sehr starker Einkaufsmanagerindex signalisiert, dass die Wirtschaft nahe oder über ihrer Normalauslastung arbeitet. In einer solchen Lage steigt die Gefahr, dass die Inflation hoch bleibt, und die Notenbank hat einen Grund, die Zinsen eher zu erhöhen oder länger hoch zu halten.",
+          "Über diesen Kanal verwandelt sich eine gute Nachricht für die Realwirtschaft in eine schlechte Nachricht für die Bewertung von Aktien. Höhere erwartete Zinsen heben die Renditen am Anleihemarkt, und höhere Renditen senken über die Abzinsung den Barwert künftiger Unternehmensgewinne. Anleger sprechen dann von einem Regime, in dem gute Daten schlechte Kurse bedeuten. Dieses Muster tritt vor allem in Phasen auf, in denen die Inflation noch nicht sicher unter Kontrolle ist."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "positiv",
+          "mechanismus": "Der starke PMI signalisiert eine robuste Konjunktur und stützt die Nachfrage nach Öl und Gas. Der Sektor hat kurze Duration mit hohen laufenden Cashflows, weshalb ihn der Diskontierungskanal kaum belastet.",
+          "teilbranchen": "Integrierte Konzerne, Exploration und Produktion, Ölfeld-Services"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die höhere Konjunkturaktivität stützt die Nachfrage nach Metallen und Chemie. Gegenläufig verteuern höhere Zinsen die kapitalintensive Produktion und ein festerer Dollar drückt auf die Rohstoffpreise.",
+          "teilbranchen": "Industriemetalle, Chemie, Baustoffe"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der PMI-Sprung deutet auf eine bessere Auftragslage hin. Höhere Zinsen verteuern jedoch die Finanzierung langlebiger Investitionsgüter und bremsen zinssensible Teilbranchen.",
+          "teilbranchen": "Maschinenbau, Bau, Transport, Verteidigung"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Renditen verteuern Konsumkredite, Auto- und Immobilienfinanzierung und dämpfen die Nachfrage. Wachstumsstarke Online-Werte leiden zusätzlich über den Diskontierungskanal.",
+          "teilbranchen": "Automobil, Wohnungsbau, Online-Handel, Luxus, Freizeit"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Als Anleihe-Ersatz mit stabilen Dividenden verliert der Sektor an relativer Attraktivität, wenn sichere Anleihen wieder rund 5 Prozent bieten. Die stabilen Cashflows werden stärker abgezinst.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Körperpflege, Lebensmittelhandel"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Große Pharma- und Medizintechnikkonzerne wirken defensiv und sind nur moderat zinssensibel. Unprofitables Biotech mit weit entfernten Gewinnen leidet dagegen deutlich über den Diskontierungskanal.",
+          "teilbranchen": "Biotech (stark), Pharma und Medizintechnik (moderat), Krankenversicherer"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken profitieren von höheren Zinsen und einer steilen Kurve über eine breitere Zinsmarge. Gegenläufig steigen bei kräftigem Renditesprung unrealisierte Verluste im Anleihebuch und das Ausfallrisiko.",
+          "teilbranchen": "Banken (Zinsmarge positiv), Versicherer, Immobilienfinanzierer (belastet)"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "IT ist der klassische Long-Duration-Sektor, dessen Wert stark an Gewinnen in ferner Zukunft hängt und deshalb am empfindlichsten auf einen höheren Diskontsatz reagiert. Das erklärt den Nasdaq-Rückgang.",
+          "teilbranchen": "Software und Cloud (am stärksten), Halbleiter, Hardware"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Hoch bewertete Internetplattformen leiden über den Diskontierungskanal. Klassische Telekomwerte sind hoch verschuldete Anleihe-Ersatztitel, deren Refinanzierung teurer wird.",
+          "teilbranchen": "Internetplattformen (Long-Duration), Medien, Telekom (schuldenbelastet)"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger sind hoch verschuldet und kapitalintensiv, weshalb höhere Renditen die Refinanzierung der Netze direkt verteuern. Als Anleihe-Ersatz verlieren sie an Attraktivität, wenn Anleihen rund 5 Prozent bieten.",
+          "teilbranchen": "Strom- und Gasversorger, Wasserversorger, Erneuerbare"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Immobilien reagieren am unmittelbarsten, weil REITs stark fremdfinanziert sind und höhere Kapitalisierungszinsen die Objektwerte senken. Die Refinanzierung auslaufender Kredite wird teurer.",
+          "teilbranchen": "Büro-, Wohn-, Logistik- und Rechenzentrums-REITs"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Energiesektor (XLE)",
+          "logoKey": "",
+          "bewegung": "+0,9 %",
+          "warum": "Einziger steigender Sektor, gestützt vom Ölpreis über 100 Dollar"
+        },
+        {
+          "firma": "IonQ",
+          "logoKey": "",
+          "bewegung": "+5,9 %",
+          "warum": "Ankündigung eines Echtzeit-Decoders für die Quanten-Fehlerkorrektur"
+        },
+        {
+          "firma": "McDonald's",
+          "logoKey": "mcdonalds",
+          "bewegung": "-4,3 %",
+          "warum": "Investorentag mit hohem Franchise-Unterstützungsprogramm als Margensorge gelesen"
+        },
+        {
+          "firma": "Paychex",
+          "logoKey": "paychex",
+          "bewegung": "-6,6 %",
+          "warum": "Solide Zahlen ohne angehobene Kernprognose treffen auf hohe Bewertung und Zinsschock"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Renditen springen quer über die Kurve (23.9.)",
+          "subtitle": "Tagesveränderung in Basispunkten",
+          "unit": " Bp.",
+          "source": "TheStreet, 23.9.2026 (Tier 2)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            [
+              "2 Jahre",
+              11.8
+            ],
+            [
+              "5 Jahre",
+              15.4
+            ],
+            [
+              "10 Jahre",
+              13.9
+            ],
+            [
+              "30 Jahre",
+              9.3
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stock Market Today (Sept. 23, 2026): Nasdaq, Russell 2000 sink as 5-year Treasury hits 5% (TheStreet)",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
+          "tier": 2
+        },
+        {
+          "title": "Dow, S&P 500, Nasdaq tumble as 10-year Treasury yield surges to 2007 high (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-23-dow-sp-500-nasdaq-080556640.html",
+          "tier": 2
+        },
+        {
+          "title": "Dow Jones keeps sliding as yields climb on a strong PMI (FXStreet)",
+          "url": "https://www.fxstreet.com/news/dow-jones-industrial-average-keeps-sliding-as-yields-climb-on-a-strong-pmi-202609231606",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "handelsraum-ausverkauf-rote-schirme.jpg",
+        "alt": "Händler im Hemd greift sich im Handelsraum an den Kopf, vor ihm eine Wand rot leuchtender Kursbildschirme, Kollegen telefonieren",
+        "caption": "Rote Schirme: der Renditesprung zieht die Aktienmärkte nach unten",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "fuenfjahresrendite-ueber-fuenf-prozent",
+      "ressort": "news",
+      "kicker": "Anleihemärkte · Zinsen",
+      "headline": "Fünfjährige US-Rendite überschreitet erstmals seit 2007 die Fünf-Prozent-Marke",
+      "dek": "Die gesamte Zinskurve verschiebt sich nach oben. Für Sparer bedeutet das höhere sichere Erträge, für zinssensible Aktien und den Staatshaushalt steigende Lasten.",
+      "body": [
+        "Der Anleihemarkt hat am Mittwoch eine symbolische Schwelle durchbrochen. Die Rendite fünfjähriger US-Staatsanleihen stieg auf 4,996 Prozent und berührte im Handelsverlauf 5,036 Prozent, den ersten Stand über fünf Prozent seit dem Jahr 2007. Die zehnjährige Rendite kletterte auf 5,106 Prozent, ein Niveau von vor rund zwanzig Jahren. Die zweijährige lag bei 4,895 Prozent, die dreißigjährige bei 5,396 Prozent.",
+        "Treiber war der starke Einkaufsmanagerindex, der die Erwartung weiterer Zinsschritte der Notenbank nährte. Höhere Renditen wirken über mehrere Kanäle. Für private Sparer und institutionelle Anleger steigen die sicheren Erträge, was Anleihen im Vergleich zu dividendenstarken Aktien attraktiver macht. Für den US-Staatshaushalt verteuert sich die Refinanzierung der hohen Schuldenlast, was mittelfristig den fiskalischen Spielraum einengt.",
+        "Für Unternehmen und Verbraucher steigen die Finanzierungskosten. Der durchschnittliche US-Hypothekenzins orientiert sich an der zehnjährigen Rendite und dürfte weiter zulegen, was den Wohnungsmarkt bremst. Auch die Refinanzierung von Unternehmensanleihen wird teurer, besonders für hoch verschuldete Firmen und kapitalintensive Sektoren wie Versorger und Immobilien."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Die Zinskurve zeigt, welche Rendite Anleihen je nach Laufzeit bieten. Das kurze Ende folgt der erwarteten Notenbankpolitik, das lange Ende zusätzlich den Erwartungen zu Inflation und Verschuldung über viele Jahre. Steigt die gesamte Kurve, werden langfristige Kredite wie Hypotheken teurer und der Barwert weit entfernter Unternehmensgewinne sinkt, was hoch bewertete Aktien belastet.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Banken (Zinsmarge)",
+          "logoKey": "",
+          "bewegung": "relativ fest",
+          "warum": "Eine steile Kurve weitet die Marge zwischen kurzfristiger Refinanzierung und langfristiger Kreditvergabe"
+        },
+        {
+          "firma": "Immobilien-REITs",
+          "logoKey": "",
+          "bewegung": "unter Druck",
+          "warum": "Höhere Kapitalisierungszinsen senken die Objektwerte und verteuern die Refinanzierung"
+        },
+        {
+          "firma": "Versorger",
+          "logoKey": "",
+          "bewegung": "unter Druck",
+          "warum": "Als Anleihe-Ersatz verlieren sie an Attraktivität, wenn sichere Anleihen rund 5 Prozent bieten"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stock Market Today (Sept. 23, 2026): 5-year Treasury hits 5% for first time since 2007 (TheStreet)",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
+          "tier": 2
+        },
+        {
+          "title": "10-year Treasury yield surges to 2007 high (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-23-dow-sp-500-nasdaq-080556640.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "schatzamt-portikus-morgenlicht.jpg",
+        "alt": "Neoklassische Fassade eines Finanzministeriums mit hohen Säulen und breiter Granittreppe im kalten Morgenlicht, eine einzelne Person steigt hinauf",
+        "caption": "Die Staatsfinanzierung wird teurer: fünf Prozent für fünf Jahre",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "asien-nikkei-softbank",
+      "ressort": "news",
+      "kicker": "Aktienmärkte · Asien",
+      "headline": "Tokioter Börse steigt gegen schwache US-Vorgaben, Südkorea bleibt feiertagsbedingt geschlossen",
+      "dek": "Der Nikkei legt getragen von Halbleiter- und Technologiewerten zu. SoftBank springt kräftig, während der US-Renditeschock in Asien zunächst wenig nachwirkt.",
+      "body": [
+        "Die asiatischen Börsen zeigten sich am Donnerstagmorgen uneinheitlich. Der japanische Nikkei 225 stieg um 1,25 Prozent auf rund 65.828 Punkte und trotzte damit den schwachen US-Vorgaben. Getragen wurde der Index von Halbleiter- und Technologiewerten. Die Aktie des Technologiekonzerns SoftBank sprang um 6,24 Prozent, der Speicherhersteller Kioxia legte 3,76 Prozent zu.",
+        "Die südkoreanische Börse blieb am Donnerstag feiertagsbedingt geschlossen, sodass der Leitindex Kospi keine Kursstellung lieferte. Für die chinesischen Festlandbörsen und Hongkong lagen zum Redaktionsschluss keine gesicherten Schlusswerte für den 24. September vor. Am Vortag hatte der Hang Seng 1,01 Prozent und der Shanghai Composite 0,45 Prozent verloren.",
+        "Die relative Stärke Japans passt zu einem Muster der vergangenen Wochen, in dem der Halbleiterkomplex trotz der Zinsdebatte gefragt bleibt. Die für September geplante Börsennotierung der SoftBank-Tochter SB Energy wurde nach Marktberichten wegen zu geringer Nachfrage verschoben. Der US-Renditeschock des Vortags wirkte in Asien zunächst gedämpft."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Aktienmärkte verschiedener Regionen sind über Kapitalströme und gemeinsame Themen verbunden, reagieren aber nicht immer im Gleichschritt. Ein starker Halbleiterzyklus kann eine einzelne Börse stützen, obwohl die globalen Zinsen steigen. Solche Abkopplungen halten oft nur kurz, weil höhere US-Renditen früher oder später über den Wechselkurs und die Kapitalströme auf alle Märkte wirken.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "SoftBank",
+          "logoKey": "softbank",
+          "bewegung": "+6,2 %",
+          "warum": "Stärke im Technologie- und Beteiligungsgeschäft trägt den Nikkei"
+        },
+        {
+          "firma": "Kioxia",
+          "logoKey": "",
+          "bewegung": "+3,8 %",
+          "warum": "Speicherwerte profitieren vom anhaltend starken Halbleiterzyklus"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Japan, South Korea stocks: Nikkei, SoftBank, Kioxia (TradingKey)",
+          "url": "https://www.tradingkey.com/analysis/stocks/more/262183783-japan-south-korea-stocks-kospi-nikkei-softbank-kioxia-tradingkey",
+          "tier": 2
+        },
+        {
+          "title": "Hong Kong gave up 1.01% by the close, Shanghai lower (24/7 Wall St.)",
+          "url": "https://247wallst.com/cards/hong-kong-gave-up-1-01-by-the-close-more-than-double-shang-hsi-market-bell-01m36mppxg5qq67yxa3351y3dm",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "tokio-skyline-fuji-sonnenaufgang.jpg",
+        "alt": "Skyline von Tokio bei Sonnenaufgang mit dicht stehenden Bürotürmen, am Horizont der schneebedeckte Fuji",
+        "caption": "Tokio steigt gegen die schwachen US-Vorgaben",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "oel-ueber-hundert-hormuz",
+      "ressort": "news",
+      "kicker": "Rohstoffe · Geopolitik",
+      "headline": "Ölpreis hält sich über hundert Dollar, während der Konflikt an der Straße von Hormuz anhält",
+      "dek": "Die Sorge um eine der wichtigsten Öltransitrouten hält die Risikoprämie hoch. Gold gibt leicht nach, Bitcoin schwankt in einer weiten Spanne.",
+      "body": [
+        "Am Rohstoffmarkt bleibt Öl das bestimmende Thema. Die Nordseesorte Brent notiert seit Anfang September wieder über hundert Dollar je Barrel, getrieben vom anhaltenden Konflikt zwischen den USA und Iran an der Straße von Hormuz. Durch diese Meerenge läuft rund ein Fünftel des globalen Ölhandels, weshalb jede Eskalation die Angebotssorgen verstärkt. Die exakten Tagesstände für den 23. September sind quellenabhängig, eine Quelle nannte Brent um 103 Dollar und WTI um 92 Dollar, eine andere niedrigere Werte. Die Richtung nach oben ist gut belegt, das Niveau bleibt mit Unsicherheit behaftet.",
+        "Der hohe Ölpreis war ein zentraler Grund für die Stärke des Energiesektors, der als einziger US-Sektor am Mittwoch zulegte. Zugleich ist er der wichtigste Treiber der aktuellen Inflation und damit indirekt auch des Renditesprungs, weil er die Notenbanken zu strafferer Politik zwingt. Energie steckt in fast allen Produktionskosten, weshalb ein hoher Ölpreis über die gesamte Wirtschaft wirkt.",
+        "Bei den anderen Rohstoffen gab Gold leicht nach und notierte im Bereich um 4.320 Dollar je Unze, nach einer Bandbreite verschiedener Quellen zwischen 4.318 und 4.352 Dollar. Die größte Kryptowährung Bitcoin schwankte in einer weiten Spanne zwischen rund 84.000 und 87.000 Dollar. Am Devisenmarkt zeigte sich der Dollar fest, der Dollar-Index lag nahe einem Zweimonatshoch bei rund 100,6."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Ölpreis wirkt über zwei Wege. Erstens hebt er direkt die Gewinne der Förderkonzerne, weil deren Kosten weitgehend fix sind und ein höherer Verkaufspreis fast vollständig als Gewinn ankommt. Zweitens treibt er die Inflation, weil Energie in fast allen Produktionskosten steckt, was die Notenbanken zu höheren Zinsen zwingt und über diesen Umweg zinssensible Aktien belastet.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Warum eine Meerenge den Ölpreis bewegt",
+        "absaetze": [
+          "Die Straße von Hormuz verbindet den Persischen Golf mit dem offenen Meer und ist die wichtigste Transitroute für Öl aus dem Nahen Osten. Rund ein Fünftel des weltweit gehandelten Öls passiert diese Enge. Wird der Schiffsverkehr durch militärische Auseinandersetzungen bedroht, steigt die Wahrscheinlichkeit von Lieferausfällen, und der Markt preist eine Risikoprämie in den Ölpreis ein, selbst wenn noch kein Barrel tatsächlich fehlt.",
+          "Diese Risikoprämie ist der Aufschlag, den Käufer für die Unsicherheit über die künftige Verfügbarkeit zu zahlen bereit sind. Sie kann rasch steigen und ebenso schnell wieder abschmelzen, sobald sich die Lage entspannt. Für die Weltwirtschaft ist der entscheidende Punkt, dass ein dauerhaft höherer Ölpreis über die Energiekosten in die allgemeine Inflation durchsickert und damit die Geldpolitik weltweit strafft."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "direkt",
+          "richtung": "positiv",
+          "mechanismus": "Upstream-Förderer verkaufen Öl und Gas zu höheren Preisen, während die Förderkosten weitgehend fix bleiben, sodass jeder zusätzliche Dollar fast vollständig als Gewinn durchschlägt.",
+          "teilbranchen": "Öl- und Gasförderung, integrierte Konzerne, Services; Raffinerien gemischt"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Chemieunternehmen nutzen Öl und Gas als Rohstoff und Energiequelle, weshalb ein hoher Ölpreis ihre Produktionskosten direkt hebt und die Bruttomarge drückt, sofern sie nicht weitergeben können.",
+          "teilbranchen": "Basischemie, Düngemittel, Stahl, Aluminium, Papier"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Fluggesellschaften und Speditionen leiden unter hohen Treibstoffkosten. Anbieter von Energieinfrastruktur und Verteidigung profitieren dagegen von höheren Investitionen und geopolitischen Spannungen.",
+          "teilbranchen": "Airlines und Transport (negativ), Energie-Equipment und Verteidigung (positiv)"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Teures Benzin entzieht den Haushalten Kaufkraft, die dann für Autos, Reisen und Restaurants fehlt. Zusätzlich verteuern die inflationsbedingt höheren Zinsen kreditfinanzierte Käufe.",
+          "teilbranchen": "Automobil, Einzelhandel, Reise und Freizeit, Restaurants"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Höhere Energie- und Transportkosten verteuern Produktion und Distribution und drücken die Marge. Der defensive Charakter erlaubt vielen Anbietern jedoch, Preise weiterzugeben.",
+          "teilbranchen": "Lebensmittelhersteller und -händler, Getränke, Körperpflege"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "kaum",
+          "richtung": "neutral",
+          "mechanismus": "Die Nachfrage nach Medikamenten und Behandlungen ist medizinisch begründet und weitgehend unabhängig vom Ölpreis. Energie ist nur bei einzelnen energieintensiven Herstellern ein spürbarer Kostenfaktor.",
+          "teilbranchen": "Allenfalls energieintensive Wirkstoffproduktion, sonst unauffällig"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die energiegetriebene Inflation zwingt Notenbanken zu strafferer Politik, was die Zinsmarge der Banken hebt, zugleich aber das Kreditausfallrisiko der Schuldner erhöht.",
+          "teilbranchen": "Banken, Versicherer, Kapitalmarktdienstleister"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Der operative Betrieb ist vom Ölpreis wenig betroffen. Über die energiegetriebene Inflation und höhere Zinsen leiden die hohen Bewertungen jedoch über den Diskontierungskanal.",
+          "teilbranchen": "Software und Wachstumstech (Bewertung), energieintensive Chipfertigung"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Werbefinanzierte Plattformen spüren sinkende Werbebudgets, wenn hohe Energiekosten Konsum und Firmenausgaben dämpfen. Telekomanbieter tragen höhere Energiekosten für ihre Netze.",
+          "teilbranchen": "Internet und Werbung, Medien, Telekom (Netzenergie)"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Versorger mit Gas- und Ölkraftwerken tragen höhere Brennstoffkosten, die je nach Regulierung nur zeitverzögert weitergegeben werden. Betreiber ohne fossile Brennstoffe sind relativ im Vorteil.",
+          "teilbranchen": "Konventionelle Erzeuger (negativ), Netzbetreiber, Erneuerbare"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "indirekt",
+          "richtung": "negativ",
+          "mechanismus": "Über die energiegetriebene Inflation und höhere Zinsen steigen die Finanzierungskosten und die Objektwerte geraten unter Druck. Höhere Betriebskosten für Gebäude belasten die Nettomieteinnahmen zusätzlich.",
+          "teilbranchen": "REITs allgemein, energieintensive Büro- und Industrieimmobilien"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Öl- und Gasförderer",
+          "logoKey": "",
+          "bewegung": "fest",
+          "warum": "Hoher Ölpreis hebt Umsatz und Marge im Fördergeschäft direkt"
+        },
+        {
+          "firma": "Fluggesellschaften",
+          "logoKey": "",
+          "bewegung": "unter Druck",
+          "warum": "Treibstoff ist ein großer Kostenblock, der die Marge belastet"
+        },
+        {
+          "firma": "Chemieproduzenten",
+          "logoKey": "",
+          "bewegung": "unter Druck",
+          "warum": "Öl und Gas sind Rohstoff und Energie zugleich, was die Herstellkosten hebt"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Oil prices surge as US-Iran strikes intensify in Strait of Hormuz (Al Jazeera)",
+          "url": "https://www.aljazeera.com/economy/2026/9/7/oil-prices-surge-as-us-iran-strikes-intensify-in-strait-of-hormuz",
+          "tier": 2
+        },
+        {
+          "title": "Oil prices today: WTI, Brent, US-Iran Hormuz attacks (CNBC)",
+          "url": "https://www.cnbc.com/2026/09/09/oil-prices-today-wti-brent-us-iran-hormuz-attacks.html",
+          "tier": 2
+        },
+        {
+          "title": "Mid-Morning Look: September 23, 2026 (Investrade)",
+          "url": "https://investrade.com/mid-morning-look-september-23-2026/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "zapfsaeule-nacht-regen.jpg",
+        "alt": "Nahaufnahme einer Hand mit Zapfpistole im Tankstutzen eines Autos an einer Tankstelle bei Nacht und Regen",
+        "caption": "Öl über hundert Dollar kommt an der Zapfsäule an",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "graham-act-gesetz",
+      "ressort": "politik",
+      "kicker": "Geopolitik · Sanktionen",
+      "headline": "US-Sanktionsgesetz gegen Russland und Iran ist in Kraft",
+      "dek": "Nach der Zustimmung beider Kammern hat der Präsident das Graham-Gesetz unterzeichnet. Es erlaubt Sekundärzölle bis zu hundert Prozent auf Käufer russischer Energie.",
+      "body": [
+        "Der nach dem verstorbenen Senator Lindsey Graham benannte Sanctioning Russia and Iran Act of 2026 ist Gesetz geworden. Der Senat hatte am 7. August mit 86 zu 11 Stimmen zugestimmt, das Repräsentantenhaus folgte am 17. September mit 262 zu 159 Stimmen, kurz darauf unterzeichnete der Präsident das Gesetz. Damit ist ein monatelanges Gesetzgebungsverfahren abgeschlossen.",
+        "Das Gesetz richtet sich gegen Russland und Iran und sieht Sekundärzölle von bis zu hundert Prozent auf die größten Abnehmer russischer Energie vor, dazu gestaffelte Zölle von bis zu fünfhundert Prozent auf direkte Importe aus Russland. Der wichtigste Marktkanal sind die Sekundärzölle gegen Länder wie Indien und China, die weiter russisches Öl kaufen. Der Präsident kann Ausnahmen im nationalen Interesse gewähren, was dem Instrument den Charakter eines Verhandlungshebels gibt.",
+        "Für die Ölmärkte ist die Wirkung zweischneidig. Werden russische Barrel tatsächlich vom Weltmarkt verdrängt, verknappt sich das Angebot und die Preise westlicher Anbieter steigen. Zugleich bleibt offen, ob die Vollmachten wirklich ausgeübt oder vor allem als Drohkulisse genutzt werden. Analysten betonen diese Unsicherheit, weil die tatsächliche Durchsetzung über Second-Order-Effekte auf Raffineriemargen, Schwellenländer-Währungen und Handelsströme entscheidet."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Sekundärzoll richtet sich gegen Dritte, die weiter mit einem sanktionierten Land handeln, statt gegen das Land selbst. Ein Käufer russischen Öls wie Indien wird damit vor die Wahl gestellt, auf das Öl zu verzichten oder hohe US-Zölle zu zahlen. Beides verändert globale Handelsströme und kann den Ölpreis bewegen, was über die Energiekosten wieder auf Inflation und Geldpolitik durchschlägt.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Westliche Ölförderer",
+          "logoKey": "",
+          "bewegung": "potenziell positiv",
+          "warum": "Verdrängung russischer Barrel könnte das Angebot verknappen und Preise stützen"
+        },
+        {
+          "firma": "Raffinerien in Indien",
+          "logoKey": "",
+          "bewegung": "potenziell belastet",
+          "warum": "Sekundärzölle könnten den günstigen Bezug russischen Öls erschweren"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trump signs sweeping new Russia sanctions bill to honor Lindsey Graham (NBC News)",
+          "url": "https://www.nbcnews.com/world/russia/trump-signs-sweeping-new-russia-sanctions-bill-honor-lindsey-graham-rcna598675",
+          "tier": 2
+        },
+        {
+          "title": "The Lindsey O. Graham Russia Sanctions Act of 2026: Outlook for Markets (Steptoe)",
+          "url": "https://www.steptoe.com/en/news-publications/stepwise-risk-outlook/the-lindsey-o-graham-russia-sanctions-act-of-2026-outlook-for-markets-and-us-trade-policy.html",
+          "tier": 2
+        },
+        {
+          "title": "H.R. 5334 (rules.house.gov)",
+          "url": "https://rules.house.gov/bill/119/hr-5334",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "zollkontrolle-containerhafen.jpg",
+        "alt": "Zollbeamte in dunklen Uniformen kontrollieren gestapelte Container am Kai neben einem Frachtschiff",
+        "caption": "Sanktionen werden im Hafen durchgesetzt",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "us-kanada-zollkrieg",
+      "ressort": "politik",
+      "kicker": "Handelspolitik · Nordamerika",
+      "headline": "Der Handelskrieg zwischen den USA und Kanada bleibt eskaliert",
+      "dek": "Nach dem Scheitern der Gespräche stehen Zölle von bis zu fünfzig Prozent auf beiden Seiten. Die eng verzahnte Autoindustrie ist das größte Risiko.",
+      "body": [
+        "Der Handelskonflikt zwischen den USA und Kanada bleibt scharf gestellt. Nachdem die Verhandlungen im August gescheitert waren, verhängten die USA einen Zoll von fünfzig Prozent auf kanadische Waren im Wert von rund zwanzig Milliarden Dollar, darunter Wein, Möbel, Milchprodukte, Zement und Kleidung. Kanada reagierte seit dem 8. September mit Gegenzöllen in gleicher Höhe auf US-Stahl, Milchprodukte, Haushaltsgeräte, Agrartechnik, Papier und Elektronik.",
+        "Der kanadische Premierminister Mark Carney sprach von einem Land, das sich mit den USA im Handelskrieg befinde, und stellte weitere Gespräche vorerst nicht in Aussicht. An den Märkten reagierte vor allem die Währung, das Paar US-Dollar zu kanadischem Dollar notierte bei rund 1,41.",
+        "Die eigentliche Gefahr liegt in einer Ausweitung der Zölle auf Fahrzeuge, Autoteile und Stahl. In der nordamerikanischen Autoproduktion überqueren einzelne Teile mehrfach die Grenze, bevor ein Fahrzeug fertig ist. Jeder Zoll erhöht damit die Kosten entlang der gesamten Kette und träfe Hersteller wie Zulieferer auf beiden Seiten empfindlich."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Ein Zoll ist eine Steuer auf eingeführte Waren. Er verteuert die betroffenen Produkte, senkt deren Absatz und drückt die Margen der Hersteller. In der Autoindustrie überqueren Teile mehrfach die Grenze, weshalb ein Zoll die Kosten an jeder Station der Kette erhöht. Ein schwächerer kanadischer Dollar wirkt teilweise dagegen, weil er kanadische Ware im Weltmarkt verbilligt.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Nordamerikanische Autobauer",
+          "logoKey": "",
+          "bewegung": "Risiko",
+          "warum": "Eine Ausweitung auf Fahrzeuge und Teile träfe die grenzüberschreitende Produktion"
+        },
+        {
+          "firma": "US-Stahlproduzenten",
+          "logoKey": "",
+          "bewegung": "gemischt",
+          "warum": "Schutz vor Importen steht höheren Kosten für stahlverarbeitende Kunden gegenüber"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Canada to hit US with retaliatory tariffs as trade war escalates (Al Jazeera)",
+          "url": "https://www.aljazeera.com/news/2026/8/23/canada-to-hit-us-with-retaliatory-tariffs-as-trade-war-escalates",
+          "tier": 2
+        },
+        {
+          "title": "US-Canada trade talks collapse, ushering in wave of new tariffs (CNBC)",
+          "url": "https://www.cnbc.com/2026/08/22/us-canada-trade-talks-collapse-ushering-in-wave-of-new-tariffs.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "holzlager-export-bahn.jpg",
+        "alt": "Großes Exportlager für Schnittholz an einem Gleisanschluss mit hohen Holzstapeln und einem Gabelstapler, dahinter Nadelwald im Nebel",
+        "caption": "Holz, Stahl, Autos: der Zollkrieg trifft den Warenverkehr",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "us-haushalt-cr-dezember",
+      "ressort": "politik",
+      "kicker": "Politik · USA",
+      "headline": "Der US-Haushalt ist bis Mitte Dezember finanziert, der nächste Streit fällt nach die Zwischenwahlen",
+      "dek": "Eine Übergangsfinanzierung wendet einen Regierungsstillstand zum Monatsende ab. Der neue Stichtag am 11. Dezember bündelt mehrere Risiken.",
+      "body": [
+        "Ein befürchteter Regierungsstillstand zum 30. September findet nicht statt. Anfang September unterzeichnete der Präsident eine Übergangsfinanzierung, die die US-Bundesbehörden bis zum 11. Dezember 2026 finanziert. Ein Regierungsstillstand entsteht, wenn der Kongress die laufenden Ausgaben nicht rechtzeitig bewilligt, was Behörden vorübergehend lahmlegt und die Wirtschaft belastet. Dieses Risiko ist damit vorerst vom Tisch.",
+        "Der neue Stichtag am 11. Dezember liegt nach den Zwischenwahlen im November. Für die Märkte bündelt dieses Datum mehrere Risiken, denn kurz zuvor tagt am 8. und 9. Dezember die Notenbank, und im selben Zeitfenster können weitere Zollentscheidungen fallen. Die kurzfristige Unsicherheit über die Staatsfinanzen ist damit gesunken, verschiebt sich aber gebündelt in den Dezember.",
+        "Für den Anleihemarkt ist die abgewendete Blockade eine leichte Entlastung, weil ein Stillstand die Unsicherheit über Wirtschaftsdaten und Auszahlungen erhöht hätte. Der dominierende Treiber der Renditen bleibt jedoch die Inflations- und Zinsdebatte, nicht der Haushaltsstreit."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der US-Kongress muss die Ausgaben der Bundesbehörden regelmäßig bewilligen. Geschieht das nicht, kommt es zu einem Regierungsstillstand, bei dem Behörden schließen und Zahlungen stocken. Eine Übergangsfinanzierung schiebt diese Frist nach hinten. Für die Märkte zählt vor allem, ob die Unsicherheit steigt, denn ein Stillstand kann Wirtschaftsdaten verzögern und das Vertrauen dämpfen.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "US-Staatsanleihen",
+          "logoKey": "",
+          "bewegung": "leichte Entlastung",
+          "warum": "Ein abgewendeter Stillstand senkt die kurzfristige fiskalische Unsicherheit"
+        },
+        {
+          "firma": "Rüstungs- und Behördenzulieferer",
+          "logoKey": "",
+          "bewegung": "planbarer",
+          "warum": "Durchlaufende Finanzierung sichert Aufträge und Auszahlungen bis Dezember"
+        }
+      ],
+      "sources": [
+        {
+          "title": "House passes bill to avert government shutdown ahead of midterm elections (Washington Post)",
+          "url": "https://www.washingtonpost.com/business/2026/09/01/house-passes-bill-avert-government-shutdown-ahead-midterm-elections/",
+          "tier": 2
+        },
+        {
+          "title": "House sends Trump spending bill, pushes next shutdown showdown past midterms (Washington Times)",
+          "url": "https://www.washingtontimes.com/news/2026/sep/1/house-sends-trump-spending-bill-push-next-shutdown-showdown-past/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "haushaltsakten-buero-nacht.jpg",
+        "alt": "Hoher Stapel gebundener Haushaltsdokumente auf einem Holzschreibtisch in einem dunklen Parlamentsbüro, daneben Lesebrille und grüne Bankerlampe",
+        "caption": "Aufgeschoben bis Dezember: der Haushalt liegt wieder auf dem Tisch",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "pmi-heiss-treibt-zinsdebatte",
+      "ressort": "makro",
+      "kicker": "Konjunktur · USA",
+      "headline": "Einkaufsmanagerindex auf Fünfjahreshoch befeuert die Debatte über weitere Zinserhöhungen",
+      "dek": "Die US-Wirtschaft läuft heiß, der Arbeitsmarkt bleibt robust. Beide Signale stärken die Falken in der Notenbank und treiben die Renditen.",
+      "body": [
+        "Die US-Wirtschaft zeigt eine überraschende Stärke. Der von S&P Global erhobene Flash Composite Einkaufsmanagerindex stieg im September auf 58,4 Punkte und signalisierte die kräftigste Geschäftsaktivität seit über fünf Jahren. Der Index befragt Einkaufsmanager in Industrie und Dienstleistung, ein Wert über 50 zeigt Wachstum an. Ein Stand von 58,4 deutet auf eine deutliche Beschleunigung hin und lag klar über den Erwartungen.",
+        "Zugleich bleibt der Arbeitsmarkt robust. Die Erstanträge auf Arbeitslosenhilfe fielen in der Woche bis zum 12. September auf 196.000 und damit auf ein niedriges Niveau. Ein starker Arbeitsmarkt und eine heiß laufende Wirtschaft sind die Kombination, die den Falken in der Notenbank Argumente liefert, weil sie auf anhaltenden Preisdruck ohne konjunkturelle Schwäche deuten.",
+        "Der Preisdruck bleibt sichtbar. Der Verbraucherpreisindex für August stieg um 3,4 Prozent gegenüber dem Vorjahr, die Kernrate ohne Energie und Lebensmittel lag bei 2,4 Prozent. Zum Vormonat kletterte der Gesamtindex um 0,4 Prozent, getrieben vor allem von Energie, deren Preis im Jahresvergleich um mehr als sechzehn Prozent zulegte. Das von der Notenbank bevorzugte PCE-Maß für August folgt am kommenden Mittwoch."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Die Notenbank steuert die Zinsen unter anderem nach der Konjunktur und der Inflation. Ein sehr starker Einkaufsmanagerindex deutet auf eine Wirtschaft nahe der Vollauslastung hin, was den Preisdruck hoch hält. In der Folge wird eine Zinserhöhung wahrscheinlicher, die Anleiherenditen steigen, und zinssensible sowie hoch bewertete Aktien geraten unter Druck.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Was der Einkaufsmanagerindex misst",
+        "absaetze": [
+          "Der Einkaufsmanagerindex ist eine Umfrage unter Einkaufsleitern von Unternehmen. Sie werden gefragt, ob sich Auftragseingang, Produktion, Beschäftigung und Preise gegenüber dem Vormonat verbessert, verschlechtert oder nicht verändert haben. Aus den Antworten wird ein Indexwert gebildet, bei dem 50 die Trennlinie zwischen Wachstum und Schrumpfung markiert.",
+          "Der Wert gilt als Frühindikator, weil Einkaufsmanager sehr nah am tatsächlichen Geschäft sind und ihre Bestellungen dem Umsatz vorauslaufen. Ein Stand von 58,4 ist ungewöhnlich hoch und signalisiert eine kräftige Expansion. Für die Notenbank ist ein solcher Wert ein Warnsignal, weil eine heiß laufende Wirtschaft die Inflation länger hoch halten kann, was die Argumente für straffere Zinsen stärkt."
+        ]
+      },
+      "sektorCheck": [
+        {
+          "sektor": "Energie",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Der Sektor profitiert davon, dass die energiegetriebene Inflation selbst der Auslöser der Straffung ist und hohe Preise den Cashflow stützen. Ein stärkerer Dollar und schwächere Nachfrage bremsen das Volumen.",
+          "teilbranchen": "Upstream, integrierte Konzerne, Ölfeld-Services"
+        },
+        {
+          "sektor": "Grundstoffe",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Als frühzyklischer, kapitalintensiver Sektor leidet die Nachfrage unter höheren Finanzierungskosten für Bau und Industrie. Ein festerer Dollar verteuert global gehandelte Rohstoffe für Käufer außerhalb des Dollarraums.",
+          "teilbranchen": "Chemie, Metalle und Bergbau, Baustoffe, Verpackung"
+        },
+        {
+          "sektor": "Industrie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Höhere Zinsen verteuern die Finanzierung von Maschinen und Infrastrukturprojekten, weshalb Kunden Investitionen verschieben. Verschuldete Teilbranchen spüren steigende Refinanzierungskosten in der Marge.",
+          "teilbranchen": "Maschinenbau, Bau, Transport, Nutzfahrzeuge"
+        },
+        {
+          "sektor": "Zyklischer Konsum",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Teurere Konsum- und Autokredite senken die kreditfinanzierte Nachfrage nach hochpreisigen Anschaffungen. Die energiegetriebene Inflation reduziert parallel das real verfügbare Einkommen.",
+          "teilbranchen": "Automobil, Luxus, Einzelhandel, Reise, Bauträger"
+        },
+        {
+          "sektor": "Basiskonsum",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Die Grundnachfrage bleibt stabil, weshalb der Sektor im Straffungsumfeld defensiv wirkt. Belastend sind höhere Energie- und Inputkosten, die sich je nach Preissetzungsmacht auf die Marge legen.",
+          "teilbranchen": "Nahrungsmittel, Getränke, Haushaltswaren, Lebensmittelhandel"
+        },
+        {
+          "sektor": "Gesundheit",
+          "betroffenheit": "indirekt",
+          "richtung": "gemischt",
+          "mechanismus": "Etablierte Pharmakonzerne mit stabilen Cashflows wirken defensiv und relativ zinsunempfindlich. Unprofitables Biotech mit weit entfernten Gewinnen leidet unter dem höheren Diskontsatz.",
+          "teilbranchen": "Pharma (defensiv), Medizintechnik, Biotech (belastet)"
+        },
+        {
+          "sektor": "Finanzen",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Banken profitieren von einer breiteren Zinsmarge, wenn Kreditzinsen schneller steigen als die Refinanzierung. Gegenläufig steigen bei hohen Zinsen das Kreditausfallrisiko und Bewertungsverluste in Anleiheportfolios.",
+          "teilbranchen": "Banken (positiv), Versicherer, Immobilienfinanzierer (belastet)"
+        },
+        {
+          "sektor": "Informationstechnologie",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Als Long-Duration-Growth-Sektor liegt ein großer Teil des Werts in weit entfernten Gewinnen, die der höhere Diskontsatz stärker abwertet. Die weniger vorab festgelegte Fed unter Warsh erhöht die Bewertungsunsicherheit.",
+          "teilbranchen": "Software und SaaS, Halbleiter, unprofitable Tech-Werte"
+        },
+        {
+          "sektor": "Kommunikation",
+          "betroffenheit": "direkt",
+          "richtung": "gemischt",
+          "mechanismus": "Hoch verschuldete Telekom-Netzbetreiber spüren steigende Refinanzierungskosten für ihre Netze im Zinsergebnis. Wachstumsstarke Plattformen leiden zusätzlich über den Diskontierungskanal.",
+          "teilbranchen": "Telekom (Verschuldung), Internetplattformen (Duration), Werbung"
+        },
+        {
+          "sektor": "Versorger",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Versorger finanzieren hohe Netzinvestitionen fremdkapitalbasiert, weshalb steigende Zinsen die Refinanzierung spürbar verteuern. Als anleiheähnliche Dividendentitel werden sie bei höheren Anleiherenditen unattraktiver.",
+          "teilbranchen": "Strom- und Gasversorger, Wasserversorger, Erneuerbare"
+        },
+        {
+          "sektor": "Immobilien",
+          "betroffenheit": "direkt",
+          "richtung": "negativ",
+          "mechanismus": "Der Sektor gehört zu den größten Verlierern, weil höhere Zinsen die Fremdfinanzierung verteuern und die Bewertungen über steigende Kapitalisierungszinsen drücken. REITs verlieren relativ an Attraktivität gegenüber Anleihen.",
+          "teilbranchen": "REITs aller Segmente, Projektentwickler, Gewerbeimmobilien"
+        }
+      ],
+      "gewinnerVerlierer": [
+        {
+          "firma": "Zyklische Industriewerte",
+          "logoKey": "",
+          "bewegung": "gemischt",
+          "warum": "Bessere Auftragslage steht höheren Finanzierungskosten gegenüber"
+        },
+        {
+          "firma": "Long-Duration-Growth",
+          "logoKey": "",
+          "bewegung": "unter Druck",
+          "warum": "Höhere erwartete Zinsen senken den Barwert weit entfernter Gewinne"
+        }
+      ],
+      "charts": [
+        {
+          "type": "bar",
+          "title": "US-Inflation bleibt über dem Zwei-Prozent-Ziel",
+          "subtitle": "Verbraucherpreise August 2026, Veränderung zum Vorjahr",
+          "unit": " %",
+          "source": "BLS CPI Release, August 2026 (Tier 1)",
+          "allPositive": true,
+          "absolute": true,
+          "data": [
+            [
+              "Gesamt",
+              3.4
+            ],
+            [
+              "Kern",
+              2.4
+            ],
+            [
+              "Fed-Ziel",
+              2
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "S&P Global Flash US PMI, September 2026 (S&P Global)",
+          "url": "https://www.pmi.spglobal.com/Public/Home/PressRelease/ed177f50167b4203ac490a961ea706be",
+          "tier": 1
+        },
+        {
+          "title": "CPI Release, August 2026 (BLS)",
+          "url": "https://www.bls.gov/news.release/cpi.htm",
+          "tier": 1
+        },
+        {
+          "title": "US weekly jobless claims unexpectedly fall (Detroit News/Reuters)",
+          "url": "https://www.detroitnews.com/story/business/2026/09/17/us-weekly-jobless-claims-unexpectedly-fall/91805887007/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "maschinenbau-halle-schweissen.jpg",
+        "alt": "Voll ausgelastete Maschinenbauhalle, im Vordergrund sprühen Funken beim Schweißen, dahinter Montagelinien und Hallenkräne",
+        "caption": "Die Industrie läuft auf Hochtouren",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "fed-erhoeht-zinsen-warsh",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · Notenbanken",
+      "headline": "Die Notenbank hat die Zinsen erstmals seit über drei Jahren erhöht",
+      "dek": "Auf der Septembersitzung stieg der Leitzins um einen Viertelpunkt. Der neue Vorsitzende Kevin Warsh nennt die Inflation zu hoch und stellt eine weitere Anhebung in Aussicht.",
+      "body": [
+        "Die US-Notenbank hat am 16. September ihren Leitzins um 25 Basispunkte auf ein Zielband von 3,75 bis 4,00 Prozent angehoben, wirksam ab dem 17. September. Es war die erste Zinserhöhung seit Juli 2023, und der Beschluss fiel einstimmig mit zwölf zu null Stimmen. Der begleitende Ausblick der Notenbanker, der sogenannte Dot-Plot, signalisierte eine weitere Anhebung noch in diesem Jahr, voraussichtlich im Dezember, sowie eine für 2027.",
+        "Der neue Vorsitzende Kevin Warsh begründete den Schritt mit der hartnäckig hohen Inflation. Sie sei zu hoch und das schon zu lange, sagte er. Der Arbeitsmarkt sei nahe der Vollbeschäftigung, weshalb die Priorität auf der Preisstabilität liege. Auf einen festen Zinspfad legte sich Warsh nicht fest, was zur seiner Linie einer weniger vorab gebundenen Notenbank passt.",
+        "Die nächste Sitzung findet am 27. und 28. Oktober ohne neue Projektionen statt, die übernächste am 8. und 9. Dezember mit aktualisiertem Ausblick. Für die Märkte bedeutet die Kombination aus vollzogener Erhöhung und der Aussicht auf eine weitere, dass das Umfeld höherer Zinsen länger anhalten dürfte, als viele Anleger zuvor erwartet hatten."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Leitzins ist der Preis, zu dem sich Banken kurzfristig Geld leihen. Hebt die Notenbank ihn an, steigen die Finanzierungskosten in der gesamten Wirtschaft, was Nachfrage und Inflation dämpfen soll. Für Aktien wirkt das doppelt, weil höhere Zinsen die Kredite verteuern und zugleich den Barwert künftiger Gewinne senken. Eine in Aussicht gestellte weitere Erhöhung verstärkt diesen Effekt schon vor der Umsetzung.",
+      "vertiefung": {
+        "titel": "Tiefer verstehen: Was der Dot-Plot der Notenbank aussagt",
+        "absaetze": [
+          "Der Dot-Plot ist eine grafische Übersicht, in der jedes stimmberechtigte Mitglied der Notenbank anonym einträgt, wo es den Leitzins am Jahresende der kommenden Jahre erwartet. Jeder Punkt steht für eine Einschätzung. Aus der Verteilung der Punkte lässt sich ablesen, in welche Richtung die Mehrheit tendiert.",
+          "Wichtig ist, dass der Dot-Plot keine Zusage ist, sondern eine Momentaufnahme der Erwartungen. Die Notenbank kann von ihm abweichen, wenn sich die Daten ändern. Für die Märkte ist er dennoch ein zentrales Signal, weil er die Erwartung über den künftigen Zinspfad prägt. Signalisiert er weitere Erhöhungen, preisen die Anleihemärkte diese ein, und die Renditen steigen bereits vor der eigentlichen Entscheidung."
+        ]
+      },
+      "gewinnerVerlierer": [
+        {
+          "firma": "US-Banken",
+          "logoKey": "",
+          "bewegung": "gestützt",
+          "warum": "Höhere Zinsen und eine steile Kurve weiten die Zinsmarge"
+        },
+        {
+          "firma": "Wachstumsaktien",
+          "logoKey": "",
+          "bewegung": "belastet",
+          "warum": "Die Aussicht auf länger hohe Zinsen senkt den Barwert künftiger Gewinne"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Federal Reserve Implementation Note, 16.9.2026 (Federal Reserve)",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm",
+          "tier": 1
+        },
+        {
+          "title": "FOMC Calendars (Federal Reserve)",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+          "tier": 1
+        },
+        {
+          "title": "Fed rate decision September 2026 (CNBC)",
+          "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "notenbank-marmorfassade.jpg",
+        "alt": "Strenge weiße Marmorfassade eines Notenbank-Hauptsitzes mit schmalen hohen Fenstern und leerem Steinplatz im tiefen Sonnenlicht",
+        "caption": "Die erste Zinserhöhung seit über drei Jahren",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "synchrone-notenbank-straffung",
+      "ressort": "makro",
+      "kicker": "Geldpolitik · Global",
+      "headline": "Europas und Japans Notenbanken straffen im Gleichschritt mit der US-Notenbank",
+      "dek": "Die EZB hebt den Einlagensatz auf 2,50 Prozent, die Bank von Japan auf 1,25 Prozent. Der gemeinsame Nenner ist die energiegetriebene Inflation.",
+      "body": [
+        "Die Straffung der Geldpolitik ist zu einem globalen Thema geworden. Die Europäische Zentralbank hob am 10. September ihren Einlagensatz um 25 Basispunkte auf 2,50 Prozent an. Als Grund nannte sie die gestiegene Inflation, die im August auf 3,3 Prozent kletterte, getrieben von Energiepreisen, die um mehr als vierzehn Prozent zulegten. Die Kernrate ohne Energie und Lebensmittel fiel dagegen auf 2,4 Prozent, was zeigt, dass der Druck vor allem von der Energie kommt.",
+        "Die Bank von Japan zog am 18. September nach und hob ihren Leitzins um 25 Basispunkte auf 1,25 Prozent an, bei einem Abstimmungsverhältnis von sieben zu zwei. Die Bank von England hielt ihren Leitzins am 17. September dagegen bei 3,75 Prozent, wobei drei der neun Mitglieder für eine Anhebung stimmten. Damit haben die drei größten Notenbanken der Welt binnen einer Woche entweder erhöht oder eine Erhöhung ernsthaft erwogen.",
+        "Wenn mehrere große Notenbanken gleichzeitig straffen, verschiebt das die globalen Kapitalströme und Wechselkurse. Die Straffung der Bank von Japan stützt den Yen und erhöht das Risiko, dass sogenannte Carry-Trades aufgelöst werden, bei denen Anleger sich billig in Yen verschulden und das Geld anderswo anlegen. Eine solche Auflösung kann weltweit für Volatilität sorgen und trifft risikoreiche Wachstumswerte zusätzlich."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Zinsen bestimmen mit, wie attraktiv eine Währung ist. Hebt eine Notenbank die Zinsen, werden Anlagen in dieser Währung interessanter, und die Währung tendiert zu steigen. Straffen viele Notenbanken zugleich, wirkt das global bremsend auf das Wachstum und belastet besonders hoch verschuldete Schuldner, deren Zinslast steigt. Die Auflösung von Carry-Trades kann diesen Effekt über plötzliche Kapitalbewegungen verstärken.",
+      "gewinnerVerlierer": [
+        {
+          "firma": "Japanischer Yen",
+          "logoKey": "",
+          "bewegung": "gestützt",
+          "warum": "Die Zinserhöhung der Bank von Japan macht die Währung attraktiver"
+        },
+        {
+          "firma": "Hoch verschuldete Unternehmen",
+          "logoKey": "",
+          "bewegung": "belastet",
+          "warum": "Synchrone Straffung hebt die Zinslast weltweit gleichzeitig"
+        }
+      ],
+      "sources": [
+        {
+          "title": "ECB hikes rates to 2.5% as energy shock pushes eurozone inflation higher (Euronews)",
+          "url": "https://www.euronews.com/business/2026/09/10/ecb-hikes-rates-to-25-as-energy-shock-pushes-eurozone-inflation-higher",
+          "tier": 2
+        },
+        {
+          "title": "Bank of Japan hikes and Bank of England on hold (FXStreet)",
+          "url": "https://www.fxstreet.com/analysis/bank-of-japan-hikes-and-bank-of-england-on-hold-202609180552",
+          "tier": 2
+        },
+        {
+          "title": "ECB Governing Council calendar (ECB)",
+          "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "tokio-notenbank-kuppel-regen.jpg",
+        "alt": "Historisches graues Notenbankgebäude mit grüner Kuppel in Tokio in der Dämmerung, davor Passanten mit Regenschirmen, dahinter moderne Türme",
+        "caption": "Tokio zieht mit: die Notenbanken straffen im Gleichschritt",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "paychex-beat-and-fade",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Dienstleistungen",
+      "headline": "Paychex übertrifft die Erwartungen und verliert dennoch fast sieben Prozent",
+      "dek": "Der Lohnabrechnungs-Dienstleister meldet solide Zahlen, doch die kaum angehobene Kernprognose enttäuscht in einem Umfeld steigender Zinsen.",
+      "body": [
+        "Paychex bietet Lohnabrechnung, Personalverwaltung und Zusatzleistungen vor allem für kleine und mittlere Unternehmen an. Der Konzern meldete für sein erstes Geschäftsquartal einen Umsatz von 1.630,5 Millionen Dollar, ein Plus von sechs Prozent gegenüber dem Vorjahr. Der ausgewiesene Gewinn je Aktie stieg um vierzehn Prozent auf 1,21 Dollar, der bereinigte Gewinn je Aktie lag bei 1,34 Dollar.",
+        "Trotz dieser soliden Zahlen fiel die Aktie am Mittwoch deutlich, die Quellen nennen ein Minus zwischen 6,6 und 8,8 Prozent. Damit war Paychex einer der größten Verlierer im S&P 500 an diesem Tag. Der Grund liegt in der Prognose. Der Konzern bestätigte seine Jahresziele im Kern, hob sie aber nicht spürbar an. Für einen defensiven Qualitätswert mit hoher Bewertung reicht eine bloße Bestätigung oft nicht, um den Kurs zu stützen.",
+        "Verstärkt wurde die Reaktion durch das Marktumfeld. An einem Tag, an dem die Renditen kräftig stiegen, geraten defensive und zinssensible Werte besonders unter Druck. Paychex gilt als solcher Titel, weil ein Teil seiner Erträge aus der Verzinsung von treuhänderisch gehaltenen Kundengeldern stammt und die Aktie als Anleihe-Ersatz gehandelt wird. Der Fall zeigt beispielhaft das Muster, dass Kurse auf die Abweichung von der Erwartung reagieren, nicht auf die absolute Höhe der Zahlen."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Bei einem hoch bewerteten Qualitätswert steckt die Erwartung stetigen Wachstums bereits im Kurs. Werden solide Zahlen gemeldet, aber die Prognose nur bestätigt statt angehoben, fehlt die positive Überraschung, und der Kurs kann fallen. An einem Tag steigender Zinsen verstärkt sich das, weil defensive und anleiheähnliche Titel gegenüber wieder attraktiveren Anleihen an Reiz verlieren.",
+      "company": {
+        "name": "Paychex",
+        "ticker": "PAYX",
+        "exchange": "Nasdaq",
+        "logoKey": "paychex",
+        "whatTheyDo": "Paychex bietet Lohnabrechnung, Personalverwaltung und Zusatzleistungen im Abonnement an. Die Kunden sind vor allem kleine und mittlere Unternehmen. Ein Teil der Erträge stammt aus der Verzinsung treuhänderisch verwalteter Kundengelder.",
+        "whyItMatters": "Paychex ist ein Gradmesser für die Gesundheit kleiner und mittlerer US-Unternehmen und zeigt, wie stark defensive Qualitätswerte auf Zinsbewegungen reagieren.",
+        "keyMetrics": [
+          [
+            "Umsatz Q1 FY27",
+            "1.630,5 Mio. $ (+6 %)"
+          ],
+          [
+            "Gewinn je Aktie",
+            "1,21 $ (+14 %)"
+          ],
+          [
+            "Bereinigter Gewinn je Aktie",
+            "1,34 $"
+          ],
+          [
+            "Kursreaktion",
+            "rund -6,6 bis -8,8 %"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Paychex reports first quarter fiscal 2027 results (StockTitan)",
+          "url": "https://www.stocktitan.net/news/PAYX/paychex-reports-first-quarter-fiscal-2027-io8royzod0jl.html",
+          "tier": 1
+        },
+        {
+          "title": "Paychex Q1 FY27 slides: double-digit earnings growth, AI expansion (Investing.com)",
+          "url": "https://www.investing.com/news/company-news/paychex-q1-fy27-slides-doubledigit-earnings-growth-ai-expansion-93CH-4913490",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "baeckerei-buero-lohnabrechnung.jpg",
+        "alt": "Inhaberin einer kleinen Bäckerei prüft nach Ladenschluss im engen Hinterbüro die Lohnabrechnung am Laptop",
+        "caption": "Die Kundschaft von Paychex: kleine Betriebe mit Lohnbuchhaltung",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "autozone-doppelter-miss",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Einzelhandel",
+      "headline": "AutoZone steigert den Gewinn kräftig und verfehlt dennoch die Erwartungen",
+      "dek": "Der Kfz-Teilehändler wächst und weitet die Marge aus, bleibt aber bei Umsatz und Gewinn hinter dem Konsens. Ein Lehrstück über die Rolle der Erwartung.",
+      "body": [
+        "AutoZone ist die größte US-Handelskette für Kfz-Ersatzteile und Zubehör. Der Konzern meldete für sein viertes Geschäftsquartal einen Umsatz von 6,6 Milliarden Dollar, ein Plus von 5,6 Prozent gegenüber dem Vorjahr. Der verwässerte Gewinn je Aktie stieg von 48,71 auf 56,05 Dollar, der Nettogewinn kletterte auf 931,6 Millionen Dollar. Die Bruttomarge verbesserte sich um 182 Basispunkte auf 53,3 Prozent.",
+        "Trotz dieser absolut starken Zahlen verfehlte AutoZone die Erwartungen. Der Analystenkonsens lag beim Umsatz bei rund 6,68 Milliarden Dollar und beim Gewinn je Aktie bei rund 54 Dollar. Damit blieb der Konzern bei beiden Kennzahlen hinter dem Konsens, ein doppelter Fehlschlag gegenüber den Erwartungen. Das Management verwies auf ein schwaches Marktumfeld zu Beginn des Quartals.",
+        "Am Folgetag schloss die Aktie mit einem Minus von rund 1,8 Prozent. Der Fall verdeutlicht ein zentrales Prinzip des Kapitalmarkts. Eine absolute Gewinnsteigerung ist irrelevant, wenn sie hinter der bereits eingepreisten Erwartung zurückbleibt. Der Markt handelt die Abweichung von der Erwartung, nicht das absolute Ergebnis. AutoZone bleibt operativ stark, doch die Messlatte lag höher als die gelieferten Zahlen."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Der Kurs einer Aktie enthält bereits die Erwartung des Marktes an das nächste Ergebnis. Meldet ein Unternehmen einen höheren Gewinn, der aber unter dieser Erwartung liegt, wird die Differenz als Enttäuschung verarbeitet, und der Kurs kann fallen. Entscheidend ist immer der Abstand zwischen dem gelieferten Ergebnis und dem, was der Markt schon eingepreist hatte.",
+      "company": {
+        "name": "AutoZone",
+        "ticker": "AZO",
+        "exchange": "NYSE",
+        "logoKey": "autozone",
+        "whatTheyDo": "AutoZone ist die größte US-Handelskette für Kfz-Ersatzteile, Zubehör und Wartungsprodukte. Kunden sind private Autobesitzer und gewerbliche Werkstätten. Der Konzern wächst über neue Filialen und kauft eigene Aktien in großem Umfang zurück.",
+        "whyItMatters": "AutoZone ist ein Gradmesser für die Ausgaben rund um die Fahrzeugwartung und ein Beispiel für ein Geschäftsmodell, das über konsequente Aktienrückkäufe den Gewinn je Aktie hebt.",
+        "keyMetrics": [
+          [
+            "Umsatz Q4 FY26",
+            "6,6 Mrd. $ (+5,6 %)"
+          ],
+          [
+            "Gewinn je Aktie",
+            "56,05 $ (Konsens rund 54)"
+          ],
+          [
+            "Bruttomarge",
+            "53,3 % (+182 Bp.)"
+          ],
+          [
+            "Aktienrückkäufe FY26",
+            "2 Mrd. $"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "AutoZone Q4 earnings: EPS 56.05, revenue 6.6 billion (GuruFocus)",
+          "url": "https://www.gurufocus.com/news/9091393/is-autozone-inc-azo-undervalued-after-q4-earnings-miss-eps-at-5605-revenue-at-66-billion-gf-score-84100",
+          "tier": 2
+        },
+        {
+          "title": "AutoZone 8-K filing (StockTitan)",
+          "url": "https://www.stocktitan.net/sec-filings/AZO/8-k-autozone-inc-reports-material-event-2b5132d82ff9.html",
+          "tier": 1
+        }
+      ],
+      "image": {
+        "file": "autoteile-laden-regalgang.jpg",
+        "alt": "Kunde in Arbeitsjacke vergleicht im Gang eines Autoteilegeschäfts zwei Produkte, Regale mit Motoröl, Filtern und Bremsteilen",
+        "caption": "Im Autoteilehandel wachsen die Gewinne, aber nicht wie erwartet",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "cintas-beat-guidance-flach",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Dienstleistungen",
+      "headline": "Cintas knackt erstmals die Drei-Milliarden-Marke im Quartal, die Aktie gibt leicht nach",
+      "dek": "Der Anbieter von Berufskleidung und Betriebsausstattung übertrifft die Erwartungen und hebt die Prognose an. Für einen Premiumwert reicht das nicht ganz.",
+      "body": [
+        "Cintas vermietet und pflegt Berufskleidung und liefert Betriebsausstattung wie Matten, Erste-Hilfe-Material und Hygieneprodukte im Abonnement. Der Konzern meldete für sein erstes Geschäftsquartal einen Umsatz von 3,01 Milliarden Dollar, ein Plus von 10,9 Prozent gegenüber dem Vorjahr und damit erstmals über der Marke von drei Milliarden in einem Quartal. Der bereinigte Gewinn je Aktie stieg von 1,20 auf 1,39 Dollar und übertraf den Konsens.",
+        "Auch die Prognose hob Cintas an. Für das Gesamtjahr stellt der Konzern nun einen Umsatz zwischen 12,15 und 12,27 Milliarden Dollar in Aussicht sowie einen bereinigten Gewinn je Aktie zwischen 5,45 und 5,54 Dollar. Der Mittelpunkt der Umsatzprognose lag jedoch nur auf Höhe des Konsenses und leicht darunter, womit die klare positive Überraschung fehlte.",
+        "Die Aktie gab vorbörslich rund 1,2 Prozent nach. Bei einem hoch bewerteten Qualitätswert, der über Jahre stetig gewachsen ist, reicht ein solider Beat oft nicht aus. Der Markt erwartet, dass auch die Prognose den Konsens klar übertrifft. Cintas zeigt damit dasselbe Muster wie viele Berichte dieser Tage, in denen gute Zahlen den Kurs nicht mehr treiben."
+      ],
+      "mechanik": "Mechanik einfach erklärt: Bei einem Premiumwert mit hohem Bewertungsvielfachen ist stetiges Wachstum bereits eingepreist. Um den Kurs zu heben, muss ein Unternehmen die Erwartung an die Zukunft übertreffen, nicht nur die Schätzung für das abgelaufene Quartal. Wird die Prognose nur bestätigt oder liegt sie auf Konsensniveau, fehlt der Anlass für steigende Kurse, und die Aktie kann trotz eines Beats leicht nachgeben.",
+      "company": {
+        "name": "Cintas",
+        "ticker": "CTAS",
+        "exchange": "Nasdaq",
+        "logoKey": "cintas",
+        "whatTheyDo": "Cintas vermietet und pflegt Berufskleidung und liefert Betriebsausstattung wie Matten, Hygiene- und Erste-Hilfe-Produkte im Abonnement. Die Umsätze sind wiederkehrend und über viele Branchen breit gestreut.",
+        "whyItMatters": "Cintas ist ein Gradmesser für die Beschäftigung und Aktivität in der US-Wirtschaft, weil mehr Arbeitsplätze mehr Uniformen und Ausstattung bedeuten.",
+        "keyMetrics": [
+          [
+            "Umsatz Q1 FY27",
+            "3,01 Mrd. $ (+10,9 %)"
+          ],
+          [
+            "Bereinigter Gewinn je Aktie",
+            "1,39 $"
+          ],
+          [
+            "Bruttomarge",
+            "51,5 %"
+          ],
+          [
+            "Kursreaktion",
+            "rund -1,2 %"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "Cintas beats estimates but stock edges lower (Investing.com)",
+          "url": "https://ca.investing.com/news/earnings/cintas-beats-estimates-but-stock-edges-lower-4849893",
+          "tier": 2
+        },
+        {
+          "title": "Cintas issues FY2027 earnings guidance (MarketBeat)",
+          "url": "https://www.marketbeat.com/instant-alerts/guidance-cintas-nasdaq-ctas-issues-fy-2027-earnings-guidance-2026-09-23/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "industriewaescherei-berufskleidung.jpg",
+        "alt": "Hunderte saubere Arbeitsuniformen an Bügeln fahren in einer Industriewäscherei an Deckenschienen entlang",
+        "caption": "Das Geschäft mit Berufskleidung im Mietmodell",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    },
+    {
+      "id": "mcdonalds-investorentag",
+      "ressort": "unternehmen",
+      "kicker": "Unternehmen · Gastronomie",
+      "headline": "McDonald's fällt auf ein Vierjahrestief nach dem Investorentag",
+      "dek": "Ein milliardenschweres Unterstützungsprogramm für Franchisenehmer wird vom Markt als Zeichen für Margendruck gelesen. Auch Wettbewerber geben nach.",
+      "body": [
+        "Die Aktie von McDonald's fiel am Mittwoch um rund 4,3 Prozent auf ein Vierjahrestief bei etwa 248 Dollar. Auslöser war der Investorentag des Konzerns, auf dem das Management ein Unterstützungsprogramm für Franchisenehmer im Umfang von 8,5 Milliarden Dollar vorstellte. Der Markt las die hohen geplanten Investitionen als Zeichen dafür, dass die Franchisenehmer unter Druck stehen und der Konzern mehr eigenes Geld einsetzen muss.",
+        "McDonald's arbeitet überwiegend mit einem Franchisemodell, bei dem selbständige Betreiber die Restaurants führen und Gebühren an den Konzern zahlen. Dieses Modell liefert stabile, margenstarke Erträge, solange die Franchisenehmer gesund sind. Ein großes Unterstützungsprogramm signalisiert, dass die Betreiber mit höheren Kosten und schwächerer Nachfrage kämpfen, was mittelfristig auf die Gebühreneinnahmen und die Marge des Konzerns drücken kann.",
+        "Auch Wettbewerber gaben nach, die Kette Wendy's schwächer, während Yum Brands sich stabil hielt. Der Rückgang von McDonald's als schwergewichtiger Bestandteil des Dow Jones trug zur Schwäche des Index bei. Der Fall zeigt, dass auch angekündigte Investitionen den Kurs bewegen können, wenn der Markt sie als Reaktion auf zugrunde liegende Schwäche deutet."
+      ],
+      "mechanik": "Mechanik einfach erklärt: In einem Franchisemodell verdient der Konzern vor allem an Gebühren der selbständigen Betreiber, was margenstarke und stabile Erträge liefert. Kündigt der Konzern hohe Unterstützungszahlungen an, wertet der Markt das als Signal, dass die Betreiber unter Druck stehen. Höhere eigene Ausgaben und mögliche künftige Gebührenausfälle senken die erwartete Marge, was den Kurs auch ohne aktuelle Gewinnwarnung drücken kann.",
+      "company": {
+        "name": "McDonald's",
+        "ticker": "MCD",
+        "exchange": "NYSE",
+        "logoKey": "mcdonalds",
+        "whatTheyDo": "McDonald's betreibt und lizenziert die weltweit größte Schnellrestaurantkette. Der Großteil der Restaurants wird von selbständigen Franchisenehmern geführt, die Gebühren und Mieten an den Konzern zahlen.",
+        "whyItMatters": "McDonald's ist ein Gradmesser für den Konsum breiter Bevölkerungsschichten und ein Beispiel dafür, wie ein Franchisemodell stabile Margen liefert, aber von der Gesundheit der Betreiber abhängt.",
+        "keyMetrics": [
+          [
+            "Kursreaktion",
+            "rund -4,3 %"
+          ],
+          [
+            "Kursniveau",
+            "rund 248 $ (Vierjahrestief)"
+          ],
+          [
+            "Franchise-Programm",
+            "8,5 Mrd. $"
+          ],
+          [
+            "Indexgewicht",
+            "Dow-Schwergewicht"
+          ]
+        ]
+      },
+      "sources": [
+        {
+          "title": "McDonald's falls 4% after Investor Day (Yahoo Finance)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-falls-4-investor-day-142936117.html",
+          "tier": 2
+        },
+        {
+          "title": "McDonald's falls 4% as Investor Day sets 8.5B franchisee support plan (24/7 Wall St.)",
+          "url": "https://247wallst.com/investing/2026/09/23/mcdonalds-falls-4-as-investor-day-sets-8-5b-franchisee-support-plan-wendys-dips-yum-brands-holds-steady/",
+          "tier": 2
+        }
+      ],
+      "image": {
+        "file": "drive-in-schlange-abend.jpg",
+        "alt": "Autoschlange mit leuchtenden Rücklichtern an einem Drive-in-Schalter eines Schnellrestaurants in der Abenddämmerung",
+        "caption": "Nach dem Investorentag steht die Schnellrestaurant-Kette unter Druck",
+        "credit": "Bild: KI-generiert (redaktionelle Illustration)"
+      }
+    }
+  ],
+  "branchenMonitor": [
+    {
+      "sektor": "Energie",
+      "wasIstDas": "Unternehmen, die Öl, Gas und Kraftstoffe fördern, verarbeiten und transportieren.",
+      "lage": "Fester, einziger steigender US-Sektor am 23.9., gestützt vom Ölpreis über hundert Dollar.",
+      "richtung": "up",
+      "tagesWert": "Energiesektor (XLE) rund +0,9 % (TheStreet, 23.9.)",
+      "istZustand": "Der Sektor ist nach der Rally der vergangenen Monate moderat bewertet und stark vom Ölpreis getrieben. Er steht in einer späten Zyklusphase, in der ein hohes US-Angebot auf eine unsichere globale Nachfrage trifft. Das zentrale strukturelle Thema bleibt die Geopolitik, mit dem Iran-Konflikt und der Straße von Hormuz als größtem Risiko für die Angebotsseite. Ein zweites Thema ist die steigende Stromnachfrage der Rechenzentren, die Erdgasproduzenten strukturell stützt. Weil die Förderkosten weitgehend fix sind, schlägt jeder zusätzliche Dollar beim Ölpreis überproportional auf den Gewinn durch, was den Sektor zum operativen Hebel auf den Rohstoffpreis macht."
+    },
+    {
+      "sektor": "Grundstoffe",
+      "wasIstDas": "Hersteller von Chemie, Metallen, Baustoffen und Verpackungen als Vorprodukte der Industrie.",
+      "lage": "Belastet, hohe Ölpreise heben die Rohstoffkosten der Chemie, ein fester Dollar drückt die Preise.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der zyklische Sektor hängt eng an der globalen Industrieproduktion und ist derzeit von schwacher China-Nachfrage, Handelskonflikten und hohen Energiekosten belastet. Bewertungstechnisch liegt er im unteren Mittelfeld, was für eine frühe bis mittlere Zyklusphase spricht. Das Kapitalzyklus-Denken ist hier zentral, denn nach Jahren zurückhaltender Investitionen in Bergbau und Chemie kann ein knapperes Angebot die Preise stützen, sobald die Nachfrage anzieht. Kurzfristig belasten der hohe Ölpreis als Rohstoff- und Energiekosten sowie ein fester Dollar, der global gehandelte Rohstoffe für Käufer außerhalb des Dollarraums verteuert. Der Kennametal-Fall in dieser Ausgabe zeigt, wie stark Rohstoffpreise die Ergebnisse verschieben können."
+    },
+    {
+      "sektor": "Industrie",
+      "wasIstDas": "Maschinenbau, Bau, Transport, Luft- und Raumfahrt sowie Verteidigung.",
+      "lage": "Gemischt, bessere Auftragslage laut PMI steht höheren Finanzierungs- und Treibstoffkosten gegenüber.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der breite Industriesektor ist ordentlich bewertet und erhält vom starken Einkaufsmanagerindex Rückenwind für die Auftragslage. Strukturell profitiert er von zwei Themen, dem Ausbau der Rechenzentren mit Bedarf an Elektrotechnik, Kühlung und Stromverteilung sowie steigenden Verteidigungsbudgets. Belastend wirken die höheren Zinsen, die die Investitionsfinanzierung der Kunden verteuern, und der hohe Ölpreis, der Fluggesellschaften und Speditionen über die Treibstoffkosten trifft. Zusätzlich droht eine Ausweitung der US-Zölle auf Fahrzeuge und Autoteile, die die integrierten nordamerikanischen Lieferketten empfindlich treffen würde. Der Sektor steht damit zwischen zyklischem Auftrieb und steigenden Kosten."
+    },
+    {
+      "sektor": "Zyklischer Konsum",
+      "wasIstDas": "Anbieter von Gütern und Diensten, die Verbraucher bei guter Lage vermehrt kaufen, etwa Autos, Reisen und Luxus.",
+      "lage": "Unter Druck, höhere Kreditkosten und teures Benzin belasten die kreditfinanzierte Nachfrage.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor reagiert am stärksten auf die Kombination aus hohen Zinsen und vorsichtigen Konsumenten. Teurere Konsum- und Autokredite senken die Nachfrage nach hochpreisigen Anschaffungen, während der hohe Ölpreis über teures Benzin die Kaufkraft entzieht. Bewertungstechnisch ist der Sektor gespalten, zwischen teuren Online-Wachstumswerten und günstigeren zyklischen Titeln. Strukturell belastet die drohende Ausweitung der US-Zölle auf Fahrzeuge die eng verzahnte Autoproduktion zwischen den USA und Kanada. Der schwache Investorentag von McDonald's in dieser Ausgabe zeigt, wie empfindlich der Markt auf Anzeichen von Druck bei den Endkunden reagiert. Der Sektor bleibt der klassische Verlierer eines Umfelds aus hohen Zinsen und teurer Energie."
+    },
+    {
+      "sektor": "Basiskonsum",
+      "wasIstDas": "Hersteller und Händler von Gütern des täglichen Bedarfs wie Lebensmittel und Körperpflege.",
+      "lage": "Gemischt, defensive Nachfrage stützt, doch als Anleihe-Ersatz leidet der Sektor unter hohen Renditen.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der defensive Sektor liefert stabile Nachfrage unabhängig vom Konjunkturzyklus und dient in unsicheren Phasen als Zufluchtsort. Belastend wirken die höheren Energie- und Inputkosten, die sich je nach Preissetzungsmacht auf die Bruttomarge legen, wie die Margenschwäche von General Mills in dieser Ausgabe zeigt. Als klassischer Dividendensektor steht der Basiskonsum zudem in Konkurrenz zu wieder attraktiveren Anleiherenditen nahe fünf Prozent, was seine relative Bewertung drückt. Das strukturelle Thema der nächsten Quartale ist der Kampf um Preissetzungsmacht, denn viele Marken stoßen an Grenzen, weil Verbraucher zu günstigeren Handelsmarken wechseln. Der Sektor bleibt eine defensive Wette mit Zinsgegenwind."
+    },
+    {
+      "sektor": "Gesundheit",
+      "wasIstDas": "Pharma, Biotech, Medizintechnik und Gesundheitsdienstleister.",
+      "lage": "Schwächer im breiten Ausverkauf, aber vom Ölpreis kaum berührt, defensiver Charakter gefragt.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor gilt als defensiv, weil die Grundnachfrage nach Gesundheit konjunkturunabhängig ist, und ist relativ günstig bewertet. Innerhalb des Sektors klafft eine Lücke, denn etablierte Pharma- und Medizintechnikkonzerne sind stabil, während unprofitables Biotech unter dem höheren Diskontsatz leidet, der weit entfernte Gewinne stärker abwertet. Am Renditetag des 23.9. traf dieser Diskontierungskanal vor allem die Biotech-Werte. Das strukturelle Großthema bleibt die Innovation, etwa mRNA-basierte Therapien und Abnehmpräparate. Politische Risiken durch mögliche Preisregulierung und Erstattungsentscheidungen sind der wichtigste Belastungsfaktor der nächsten Quartale. In einer erneuten Rotation kann der Sektor als Zufluchtsort Zulauf bekommen."
+    },
+    {
+      "sektor": "Finanzen",
+      "wasIstDas": "Banken, Versicherer, Vermögensverwalter und Kapitalmarktdienstleister.",
+      "lage": "Gemischt, eine steile Kurve stützt die Zinsmargen, doch das Kreditrisiko steigt.",
+      "richtung": "neutral",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist moderat bewertet und profitiert von einer steilen Zinskurve, die die Zinsmarge der Banken zwischen billiger kurzfristiger Refinanzierung und teurer langfristiger Kreditvergabe ausweitet. Versicherer verdienen an höheren Wiederanlagerenditen nahe fünf Prozent. Das zentrale Risiko der nächsten Quartale ist die Kreditqualität, denn eine schwächere Konjunktur oder ein zweigeteilter Konsument können Ausfälle bei Konsumkrediten erhöhen. Bei einem kräftigen Renditesprung wie am 23.9. drohen zudem unrealisierte Verluste in den Anleiheportfolios der Institute. Strukturell verändert die Finanzierung von KI-Infrastruktur über Privatkredite das Geschäft großer Vermögensverwalter. Der Sektor ist damit zugleich Gewinner höherer Zinsen und erster Ort, an dem sich Konjunkturschwäche zeigt."
+    },
+    {
+      "sektor": "Informationstechnologie",
+      "wasIstDas": "Software, Halbleiter, Hardware und IT-Dienstleistungen.",
+      "lage": "Belastet, als Long-Duration-Sektor litt IT am stärksten unter dem Renditesprung.",
+      "richtung": "down",
+      "tagesWert": "Nasdaq Composite rund -1,1 % (23.9.)",
+      "istZustand": "Der Sektor ist das teuerste Segment des Marktes und trägt den Großteil der Kursgewinne des Jahres. Seine Bewertung ruht auf der Annahme, dass der KI-Investitionszyklus jahrelang weiterläuft. Als Segment mit weit in der Zukunft liegenden Gewinnen reagiert er am empfindlichsten auf steigende Zinsen, was den Rückgang am 23.9. erklärt. Der nächste große Test ist der Micron-Bericht am 30. September, der als Gradmesser für den Speicherzyklus und die KI-Nachfrage gilt. Das größte Risiko bleibt ein Klumpenrisiko, weil ein Großteil des Indexgewinns an wenigen KI-Werten hängt, deren Erwartungslatte inzwischen sehr hoch liegt. Der Sektor bleibt Wachstumsmotor und zugleich der zinssensibelste Teil des Marktes."
+    },
+    {
+      "sektor": "Kommunikation",
+      "wasIstDas": "Internetplattformen, Medien, Werbung und Telekommunikation.",
+      "lage": "Uneinheitlich, Plattformen leiden über die Bewertung, Telekom über die Verschuldung.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor ist zweigeteilt. Auf der einen Seite stehen hoch bewertete Internet- und Plattformkonzerne, die zugleich die größten Investoren in KI-Rechenzentren sind und über den Diskontierungskanal auf steigende Zinsen reagieren. Auf der anderen Seite stehen klassische Telekomkonzerne, die als hoch verschuldete Dividendenzahler unter höheren Finanzierungskosten leiden. Das strukturelle Thema ist die Monetarisierung der künstlichen Intelligenz, denn die Plattformen müssen zeigen, dass ihre Milliardeninvestitionen Rendite bringen, bevor die Bewertung neue Fantasie entwickelt. Am Renditetag traf der Bewertungskanal beide Seiten des Sektors zugleich. Werbeeinnahmen bleiben zudem konjunktursensibel, falls hohe Energiekosten den Konsum dämpfen."
+    },
+    {
+      "sektor": "Versorger",
+      "wasIstDas": "Betreiber von Strom-, Gas- und Wassernetzen und Kraftwerken.",
+      "lage": "Belastet, hohe Langfristzinsen drücken den zinssensiblen Sektor über die Refinanzierung.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Der Sektor gilt traditionell als sicherer Dividendenhafen, ist aber stark verschuldet und kapitalintensiv, weshalb hohe Langfristzinsen die Refinanzierung großer Investitionsprogramme direkt verteuern. Als Anleihe-Ersatz verliert er an relativer Attraktivität, wenn sichere Anleihen nahe fünf Prozent bieten, was der Renditesprung am 23.9. verschärft hat. Das große strukturelle Thema ist die Stromnachfrage der Rechenzentren, die nach Jahren der Stagnation erstmals wieder kräftig steigt und Versorger mit Rechenzentrumsstandorten zu einer indirekten KI-Wette macht. Regulierte Wasserversorger wie der heutige Pick California Water gehören zum selben zinssensiblen Feld. Der Sektor steht zwischen zinsbedingtem Gegenwind und einem strukturellen Nachfrageschub."
+    },
+    {
+      "sektor": "Immobilien",
+      "wasIstDas": "Börsennotierte Immobiliengesellschaften und REITs, die Objekte besitzen und vermieten.",
+      "lage": "Unter Druck, der zinssensibelste Sektor leidet am hohen langen Ende der Zinskurve.",
+      "richtung": "down",
+      "tagesWert": "keine Sektordaten belegt",
+      "istZustand": "Immobilien sind der zinssensibelste Sektor, weil höhere Kapitalisierungszinsen die Objektwerte senken und die Refinanzierung auslaufender Kredite verteuern. Der Renditesprung auf ein Zwanzigjahreshoch am 23.9. traf den Sektor deshalb direkt. Die Bewertung ist nach dem Zinsanstieg der vergangenen Jahre gedrückt, viele REITs handeln unter dem Wert ihrer Immobilien. Das strukturelle Bild ist gespalten, denn Büroimmobilien leiden unter hohem Leerstand, während Rechenzentrums-, Logistik- und Wohn-REITs von struktureller Nachfrage profitieren, was der KI-Boom zusätzlich stützt. Das dominierende Thema der nächsten Quartale bleibt die Zinsentwicklung, denn erst sinkende Langfristzinsen würden den Sektor breit entlasten."
+    }
+  ],
+  "stockPicks": [
+    {
+      "name": "California Water Service Group",
+      "ticker": "CWT",
+      "logoKey": "californiawater",
+      "marketCapEUR": "2,57 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 24.9.2026, 2,924 Mrd. $ zu USD/EUR 0,87871",
+      "marktEinordnung": "California Water ist eine regulierte Wasserversorgerin in Kalifornien, Washington, New Mexico und Hawaii. Die regulierte US-Wasserinfrastruktur steht vor einem strukturellen Investitionszyklus in dreistelliger Milliardenhöhe, weil Leitungsnetze überaltert sind, neue Grenzwerte für Schadstoffe Aufbereitungsanlagen erzwingen und Wasserknappheit im Westen Speicherinvestitionen verlangt. Eine regulierte Versorgerin verdient an genau diesem Kapitaleinsatz, weil die Regulierungsbehörde die anerkannte Investitionsbasis verzinst. California Water ist in ihren Kernmärkten etablierter Platzhirsch mit jahrzehntelanger regulatorischer Beziehung, was den Markteintritt für Wettbewerber praktisch ausschließt. Wichtig zur Abgrenzung, dies ist die börsennotierte Wasserversorgerin und nicht der Geschäftsreiseanbieter CWT und nicht Consolidated Water.",
+      "thesis": "Die Ertragslogik einer regulierten Wasserversorgerin folgt der Formel Investitionsbasis mal erlaubte Eigenkapitalrendite. California Water wächst primär über Investitionen, die in diese Basis wandern und dann regulatorisch verzinst werden, sodass das Gewinnwachstum kapitalintensiv, aber gut prognostizierbar ist. Die jüngsten Quartalszahlen zeigen ein Umsatzwachstum von 16,5 Prozent und ein Gewinnwachstum von 31,4 Prozent gegenüber dem Vorjahr, getragen von bewilligten Tariferhöhungen. Bei einem Kurs-Gewinn-Verhältnis von 21 und einer Dividendenrendite von 2,7 Prozent bepreist der Markt Stabilität und einen langen Dividendenwachstumspfad. Die niedrige Beta von 0,49 macht den Titel zum Lehrstück dafür, wie Zinssensitivität und regulatorischer Cashflow zusammenwirken, denn Wasserversorger werden als Anleihe-Ersatz gehandelt und leiden an Tagen wie dem 23.9. unter steigenden Renditen, während sie bei fallenden Zinsen über eine höhere Bewertung profitieren. Die operative Marge von rund 28 Prozent unterstreicht die Preissetzungsmacht innerhalb des regulatorischen Rahmens.",
+      "counterarguments": [
+        "Steigen die Fremdkapitalzinsen schneller, als die Regulierungsbehörde neue erlaubte Renditen genehmigt, komprimiert das die reale Marge zwischen zwei Tarifrunden. Dieses regulatorische Nachlaufen belastet ein kapitalintensives Modell mit einer Eigenkapitalrendite von nur rund acht Prozent in einem Umfeld von Renditen nahe fünf Prozent besonders stark.",
+        "Der Großteil der Investitionsbasis liegt in Kalifornien. Dürre, politischer Druck auf die Wasserpreise und Verzögerungen bei der kalifornischen Regulierungsbehörde sind konzentrierte Einzelrisiken, die eine einzelne ungünstige Entscheidung überproportional wirken lassen."
+      ],
+      "catalysts": [
+        "Der nächste Quartalsbericht, aus dem Fiskalrhythmus abgeleitet voraussichtlich Ende Oktober 2026 (Termin nicht bestätigt), mit Blick auf Fortschritte im laufenden Tarifverfahren, das die künftige Investitionsbasis und die erlaubte Rendite festlegt.",
+        "Jede Entscheidung der Regulierungsbehörde zu Tariferhöhungen oder anerkannten Investitionen, die den künftigen Gewinnpfad direkt bestimmt."
+      ]
+    },
+    {
+      "name": "Kennametal",
+      "ticker": "KMT",
+      "logoKey": "kennametal",
+      "marketCapEUR": "2,01 Mrd. €",
+      "capSource": "Alpha Vantage COMPANY_OVERVIEW 24.9.2026, 2,287 Mrd. $ zu USD/EUR 0,87871",
+      "marktEinordnung": "Kennametal entwickelt Wolframkarbide, Keramiken und Hartstoffe für die Metallzerspanung und den Verschleißschutz. Der adressierbare Markt umfasst die globale Fertigung, Luftfahrt, Energie und den Maschinenbau, die alle Präzisionswerkzeuge als Verbrauchsmaterial benötigen. Die Nische ist strukturell interessant, weil Zerspanungswerkzeuge Verschleißteile mit hoher Wiederkaufrate sind, was einen wiederkehrenden Umsatzsockel schafft, der stärker von der Industrieauslastung als von Neuanschaffungen abhängt. Kennametal gehört mit seiner Materialkompetenz und globalen Vertriebspräsenz zu den etablierten Anbietern, konkurriert aber intensiv mit Sandvik und der Iscar-Gruppe. Wichtig zur Abgrenzung, dies ist der US-Werkzeughersteller aus Pittsburgh und nicht der Baumaschinenkonzern Komatsu.",
+      "thesis": "Kennametal ist eine Fallstudie für die Qualität von Gewinnen im zyklischen Umfeld. Im vierten Geschäftsquartal 2026 sprang der Umsatz um 43 Prozent auf 737 Millionen Dollar, die operative Marge stieg auf 41,1 Prozent nach 6,1 Prozent im Vorjahr, der bereinigte Gewinn je Aktie erreichte mit 2,96 Dollar einen Rekord. Der optisch niedrige Wert des Kurs-Gewinn-Verhältnisses von rund sieben auf Basis der Vergangenheit macht den Titel scheinbar billig. Der entscheidende Punkt ist der Mechanismus hinter dem Gewinnsprung, denn das Management führte rund 252 Millionen Dollar des Quartalsergebnisses auf das günstige Timing zwischen gestiegenen Wolframpreisen und den eigenen Kosten zurück. Dieser Effekt ist kein nachhaltiger operativer Fortschritt. Zugleich stieg das Vorratsvermögen von 538 Millionen auf 1,108 Milliarden Dollar und der operative Cashflow drehte von plus 208 Millionen auf minus 4 Millionen Dollar, belastet durch die Wolframpreise und Vorauszahlungen an Lieferanten. Tragfähig ist die Value-These allein über den operativen Hebel im zyklischen Trog, während das verzerrte Kurs-Gewinn-Verhältnis in die Irre führt. Bei einem Kurs-Umsatz-Verhältnis von rund eins und einem Verhältnis von Unternehmenswert zu operativem Ergebnis von rund fünf ist ein gedämpftes Industrieumfeld eingepreist, und die eigene Prognose für das neue Geschäftsjahr nennt einen bereinigten Gewinn je Aktie zwischen 4,15 und 5,15 Dollar.",
+      "counterarguments": [
+        "Der Gewinnsprung ist stark von einem Rohstoffpreis-Timing getrieben, das sich umkehren kann. Fallen die Wolframpreise oder holt der Kostenanstieg die Verkaufspreise ein, verschwindet ein großer Teil des ausgewiesenen Gewinns, und der optisch niedrige Bewertungswert erweist sich als Falle.",
+        "Der operative Cashflow ist negativ und das Vorratsvermögen hat sich mehr als verdoppelt, was Kapital bindet und die Qualität der Gewinne infrage stellt. Als zyklischer Werkzeuglieferant mit einer Beta von 1,33 hängt Kennametal zudem direkt an der globalen Industrieproduktion, sodass eine Abkühlung in China oder Europa den vermuteten Aufschwung abwürgen würde."
+      ],
+      "catalysts": [
+        "Der Bericht zum ersten Geschäftsquartal 2027, aus dem Fiskalrhythmus abgeleitet voraussichtlich Ende Oktober bis Anfang November 2026 (Termin nicht bestätigt), mit Blick darauf, ob sich der operative Cashflow normalisiert und das Vorratsvermögen abgebaut wird.",
+        "Die Entwicklung der Wolframpreise und der Verkaufspreise, die über die Nachhaltigkeit der Marge entscheidet."
+      ]
+    },
+    {
+      "name": "indie Semiconductor",
+      "ticker": "INDI",
+      "logoKey": "indiesemi",
+      "marketCapEUR": "0,65 Mrd. €",
+      "capSource": "stockanalysis.com 24.9.2026, 0,737 Mrd. $ zu USD/EUR 0,87871 (Alpha-Vantage-Tageslimit erschöpft, siehe Quellen und Check)",
+      "marktEinordnung": "indie Semiconductor liefert Halbleiter und Software für Fahrerassistenz, Radar, Sensorik im Fahrzeuginnenraum und Konnektivität. Die Nische wächst strukturell, weil der Halbleitergehalt pro Fahrzeug unabhängig von der Zahl der verkauften Autos steigt, getrieben durch den Ausbau der Fahrerassistenz, die Elektrifizierung und regulatorische Sicherheitsanforderungen. Der adressierbare Markt für Automobilhalbleiter wird über die Dekade auf einen mittleren dreistelligen Milliardenbereich taxiert, wobei die Fahrerassistenz eines der am schnellsten wachsenden Segmente ist. indie positioniert sich als spezialisierter Nischenanbieter mit einem Auftragsbestand an gewonnenen Designs, steht aber gegen etablierte Riesen wie NXP, Infineon und Texas Instruments. Wichtig zur Abgrenzung, dies ist der Automobilchip-Anbieter aus Aliso Viejo und hat nichts mit Indie-Games oder indischen Halbleiterfirmen zu tun.",
+      "thesis": "indie Semiconductor ist ein Lehrstück für die Bewertung vorprofitabler Hochwachstumsfirmen über eine Design-Win-Pipeline statt über laufende Gewinne. Bei einem Kurs-Umsatz-Verhältnis von rund drei auf einen Umsatz von 231 Millionen Dollar bepreist der Markt künftiges Umsatzwachstum, das mit rund 28 Prozent pro Jahr projiziert wird. Der Mechanismus der These liegt im Übergang vom gewonnenen Design zum Serienumsatz, denn zugesagte Designs bei Autoherstellern materialisieren sich mit mehrjähriger Verzögerung als Umsatz über die Modelllaufzeit, sodass die heutigen Verluste in eine spätere Skalenphase münden sollen. Die sehr hohe Beta von 2,78 macht den Titel extrem hebelwirksam auf Zins- und Risikobewegungen, weil bei unprofitablen Wachstumswerten ein Großteil des Werts in weit entfernten Cashflows liegt, die stark auf den Diskontsatz reagieren. Genau deshalb litt ein Titel wie dieser am Renditetag des 23.9. besonders. Der Investment-Case steht und fällt damit, ob das Unternehmen den Break-even erreicht, bevor die Liquidität knapp wird. Das ist die zentrale analytische Frage, kein Kaufhinweis.",
+      "counterarguments": [
+        "Die ausgewiesene Bruttomarge ist negativ und der Konzern verbrennt Kapital. Bei einem Börsenwert von nur rund 737 Millionen Dollar besteht ein reales Risiko, dass eine Kapitalerhöhung nötig wird, falls sich der Weg zur Profitabilität verzögert, was den Wertanteil je Aktie verwässern würde.",
+        "Automobilhalbleiter unterliegen dem Autoproduktionszyklus, und indie konkurriert gegen kapital- und skalenstärkere Anbieter. Eine schwache Autokonjunktur oder verschobene Assistenzprogramme der Hersteller würden die Umwandlung gewonnener Designs in Umsatz verzögern."
+      ],
+      "catalysts": [
+        "Der Bericht zum dritten Quartal 2026, voraussichtlich Anfang bis Mitte November 2026 (Termin nicht bestätigt), mit Blick auf den Bruttomargenpfad, den Auftragsbestand und jede Aussage zum Zeitpunkt des Break-even.",
+        "Neue gewonnene Designs bei Autoherstellern oder größere Verträge, die den Wachstumspfad bestätigen."
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "what": "PCE-Inflationsdaten für August",
+      "when": "Mittwoch 30.9.2026",
+      "bullishIf": "Rückläufige Kerninflation entlastet die Renditen und die Zinsdebatte",
+      "bearishIf": "Erneut hohe Werte verfestigen die Erwartung weiterer Zinserhöhungen"
+    },
+    {
+      "what": "Micron-Quartalszahlen als Test des Speicher- und KI-Zyklus",
+      "when": "Mittwoch 30.9.2026 nachbörslich",
+      "bullishIf": "Starke Nachfrage nach Hochleistungsspeicher und angehobene Prognose",
+      "bearishIf": "Sorge um sinkende Margen am Zyklushochpunkt oder vorsichtiger Ausblick"
+    },
+    {
+      "what": "Verlauf der US-Anleiherenditen nach dem Sprung über fünf Prozent",
+      "when": "laufend",
+      "bullishIf": "Renditen stabilisieren sich oder geben nach und entlasten die Bewertungen",
+      "bearishIf": "Weiterer Anstieg verstärkt den Druck auf zinssensible und hoch bewertete Aktien"
+    },
+    {
+      "what": "Ölpreis und der Konflikt an der Straße von Hormuz",
+      "when": "laufend",
+      "bullishIf": "Deeskalation lässt die Risikoprämie abschmelzen und entlastet die Inflation",
+      "bearishIf": "Eskalation treibt Brent weiter und verschärft den Inflations- und Zinsdruck"
+    },
+    {
+      "what": "Nächste Fed-Sitzung ohne neue Projektionen",
+      "when": "27./28.10.2026",
+      "bullishIf": "Die Notenbank signalisiert Geduld und keine weitere baldige Erhöhung",
+      "bearishIf": "Deutlich restriktiver Ton bestätigt eine weitere Erhöhung im Dezember"
+    },
+    {
+      "what": "Nike-Quartalszahlen als Gradmesser für globalen Konsum",
+      "when": "Donnerstag 1.10.2026",
+      "bullishIf": "Erholung in China und angehobene Prognose",
+      "bearishIf": "Anhaltende Schwäche in China und Margendruck"
+    },
+    {
+      "what": "Costco-Zahlen als Signal für den US-Konsum",
+      "when": "berichtet nach Schluss am 24.9.2026",
+      "bullishIf": "Robuste vergleichbare Umsätze und stabile Mitgliederzahlen",
+      "bearishIf": "Nachlassende Kundenfrequenz oder Margendruck"
+    },
+    {
+      "what": "Bündelung der Risiken im Dezember (Fed, Haushalt, Zölle)",
+      "when": "8. bis 11.12.2026",
+      "bullishIf": "Geordnete Einigung beim Haushalt und keine Zolleskalation",
+      "bearishIf": "Zusammentreffen von Zinsentscheid, Haushaltsstreit und Zöllen erhöht die Volatilität"
+    }
+  ],
+  "learningNotes": [
+    "Eine gute Konjunkturnachricht kann Aktien fallen lassen, wenn sie über höhere erwartete Zinsen den Diskontsatz hebt.",
+    "Aktien reagieren auf die Abweichung von der Erwartung und auf die Qualität der Prognose, nicht auf die absolute Höhe der Zahlen.",
+    "Ein hoher ausgewiesener Gewinn ist wenig wert, wenn ihm kein operativer Cashflow gegenübersteht.",
+    "Long-Duration-Aktien mit weit entfernten Gewinnen reagieren am empfindlichsten auf steigende Renditen.",
+    "Ein optisch niedriges Kurs-Gewinn-Verhältnis kann eine Falle sein, wenn der Gewinn durch Sondereffekte überhöht ist."
+  ],
+  "lernecke": [
+    {
+      "disziplin": "VWL",
+      "modell": "Diskontierung und der Barwert künftiger Zahlungen",
+      "erklaerung": "Der Barwert ist der heutige Wert einer Zahlung, die erst in der Zukunft fließt. Weil Geld heute mehr wert ist als dasselbe Geld später, rechnet man künftige Beträge mit einem Zinssatz herunter, dem Diskontsatz. Je höher dieser Satz und je weiter die Zahlung in der Zukunft liegt, desto stärker schrumpft ihr heutiger Wert. Der Wert einer Aktie ist die Summe aller künftig erwarteten Gewinne, jeweils auf heute abgezinst. Steigt der Diskontsatz, weil die Anleiherenditen klettern, sinkt dieser Barwert, und zwar am stärksten bei Unternehmen, deren Gewinne weit in der Zukunft liegen.",
+      "anwendung": "Der Sprung der US-Renditen auf ein Zwanzigjahreshoch am 23.9. hob den Diskontsatz für alle Aktien und traf hoch bewertete Technologiewerte sowie unprofitable Nebenwerte am härtesten, weil deren Gewinne besonders weit in der Zukunft liegen."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Qualität der Gewinne (Gewinn gegen Cashflow)",
+      "erklaerung": "Der ausgewiesene Gewinn einer Firma und das tatsächlich erwirtschaftete Bargeld können weit auseinanderfallen. Die Gewinn- und Verlustrechnung folgt Buchungsregeln, die Umsätze und Kosten Perioden zuordnen, unabhängig davon, wann Geld fließt. Einmalige Effekte, Bewertungsgewinne bei Vorräten oder das günstige Timing von Rohstoffpreisen können den Gewinn heben, ohne dass mehr Bargeld entsteht. Die Qualität der Gewinne beschreibt, wie gut der ausgewiesene Gewinn durch echten operativen Cashflow gedeckt ist. Ein hoher Gewinn bei zugleich negativem operativem Cashflow ist ein Warnsignal, das genauer geprüft werden muss.",
+      "anwendung": "Kennametal meldete einen Rekordgewinn, doch rund 252 Millionen Dollar davon stammten aus dem Timing der Wolframpreise, während der operative Cashflow auf minus vier Millionen Dollar drehte und das Vorratsvermögen sich mehr als verdoppelte."
+    },
+    {
+      "disziplin": "BWL",
+      "modell": "Erwartung gegen Realisation (buy the rumor, sell the news)",
+      "erklaerung": "An der Börse ist im Kurs bereits enthalten, was der Markt für die Zukunft erwartet. Eine Aktie reagiert deshalb auf die Abweichung einer Nachricht von der eingepreisten Erwartung, weniger auf deren absolute Höhe. Ist ein gutes Ergebnis bereits erwartet worden, fehlt bei seiner Bestätigung die zusätzliche Überraschung, die neue Käufer anlockt. Wer zuvor auf die Erwartung gesetzt hat, realisiert dann seinen Gewinn, und der Kurs kann trotz objektiv guter Zahlen fallen. Für die Beurteilung ist daher immer der Abstand zwischen dem gelieferten Ergebnis und dem, was der Markt schon eingepreist hatte, entscheidend.",
+      "anwendung": "Paychex und Cintas übertrafen die Erwartungen und fielen dennoch, weil die Prognose nur bestätigt statt spürbar angehoben wurde, und AutoZone verlor trotz eines Gewinnsprungs, weil das Ergebnis unter dem Konsens lag."
+    },
+    {
+      "disziplin": "VWL",
+      "modell": "Kapitalzyklus-Theorie",
+      "erklaerung": "Die Kapitalzyklus-Theorie erklärt, warum die Gewinne kapitalintensiver Branchen in Wellen verlaufen. In guten Zeiten mit hohen Preisen investieren viele Anbieter in neue Kapazitäten. Das steigende Angebot drückt später die Preise und die Gewinne, woraufhin die Investitionen versiegen. Nach Jahren geringer Investitionen wird das Angebot knapp, die Preise erholen sich, und der Zyklus beginnt von vorn. Für Anleger ist die Phase geringer Investitionen und knappen Angebots oft die attraktivste, weil dann eine anziehende Nachfrage auf ein begrenztes Angebot trifft und die Preise sowie die Gewinne überproportional steigen können.",
+      "anwendung": "Der Grundstoffsektor und der heutige Pick Kennametal veranschaulichen den Kapitalzyklus, denn nach Jahren zurückhaltender Investitionen in Chemie und Bergbau kann ein knapperes Angebot die Preise stützen, sobald die Industrieauslastung wieder anzieht."
+    },
+    {
+      "disziplin": "Politikwissenschaft",
+      "modell": "Sekundärsanktionen als außenpolitisches Instrument",
+      "erklaerung": "Sekundärsanktionen richten sich gegen Dritte, die weiter mit einem sanktionierten Land Handel treiben, statt gegen das Land selbst. Der sanktionierende Staat nutzt dabei die Größe seines eigenen Marktes und seiner Währung als Hebel. Ein Drittland wird vor die Wahl gestellt, entweder den Handel mit dem sanktionierten Land aufzugeben oder den Zugang zum sanktionierenden Markt zu verlieren. Dieses Instrument ist wirksam, solange der sanktionierende Markt unverzichtbar ist, birgt aber das Risiko, Handelspartner zu verprellen und die Bildung alternativer Handelsblöcke zu beschleunigen. Häufig dient die Androhung eher als Verhandlungshebel denn als tatsächlich vollzogene Maßnahme.",
+      "anwendung": "Das in Kraft getretene Graham-Gesetz erlaubt Sekundärzölle von bis zu hundert Prozent auf Käufer russischer Energie wie Indien und China, wodurch die USA ihre Marktmacht nutzen, um die Öleinnahmen Russlands zu treffen."
+    }
+  ],
+  "financeLink": {
+    "titel": "Finance Link: Wie Kennametals Rekordgewinn durch die Abschlüsse wandert",
+    "absaetze": [
+      "Gewinn- und Verlustrechnung: Kennametal meldete im vierten Quartal einen Umsatz von 737 Millionen Dollar und eine operative Marge von 41,1 Prozent nach nur 6,1 Prozent im Vorjahr. Der Sprung wirkt spektakulär, doch rund 252 Millionen Dollar des operativen Ergebnisses stammten aus dem günstigen Timing zwischen gestiegenen Wolframpreisen und den eigenen Kosten. Ohne diesen Effekt läge die Marge deutlich niedriger, was zeigt, dass die Ertragskraft überzeichnet ist.",
+      "Bilanz: Der Rohstoffpreisanstieg hat das Vorratsvermögen von 538 Millionen auf 1,108 Milliarden Dollar mehr als verdoppelt. Teures Wolfram und Vorauszahlungen an Lieferanten binden Kapital, das in Vorräten steckt und nicht für andere Zwecke zur Verfügung steht. Eine solche Aufblähung der Bilanz ist ein Warnzeichen, weil sie Liquidität schluckt und bei fallenden Rohstoffpreisen zu Abwertungen führen kann.",
+      "Cashflow: Hier zeigt sich der Kern des Problems. Der operative Cashflow drehte von plus 208 Millionen auf minus vier Millionen Dollar. Trotz des Rekordgewinns floss also unter dem Strich kein Geld ins Unternehmen, sondern es floss knapp Geld ab, weil der Gewinn in teuren Vorräten gebunden ist. Der Unterschied zwischen ausgewiesenem Gewinn und tatsächlichem Barmittelzufluss ist das Herzstück der Analyse.",
+      "Bewertung: Das Kurs-Gewinn-Verhältnis von rund sieben auf Basis der Vergangenheit lässt die Aktie billig erscheinen. Weil der Gewinn jedoch durch einen einmaligen Rohstoffeffekt aufgebläht ist, führt dieses Vielfache in die Irre. Aussagekräftiger sind das Verhältnis von Unternehmenswert zu operativem Ergebnis und die normalisierte Marge über den Zyklus, die zeigen, was das Geschäft in einem durchschnittlichen Jahr verdient."
+    ],
+    "anfaengerfehler": "Der typische Anfängerfehler ist, allein auf den Rekordgewinn und das optisch niedrige Kurs-Gewinn-Verhältnis zu schauen und den negativen operativen Cashflow sowie das aufgeblähte Vorratsvermögen zu übersehen. Ein hoher Gewinn ohne echten Barmittelzufluss ist von geringerer Qualität, und ein billig wirkendes Vielfache auf einem durch Sondereffekte überhöhten Gewinn ist keine echte Unterbewertung."
+  },
+  "glossar": [
+    {
+      "begriff": "Barwert",
+      "erklaerung": "Der heutige Wert einer künftigen Zahlung, abgezinst mit einem Zinssatz. Je höher der Zins und je ferner die Zahlung, desto kleiner der Barwert."
+    },
+    {
+      "begriff": "Diskontsatz",
+      "erklaerung": "Der Zinssatz, mit dem künftige Zahlungen auf heute heruntergerechnet werden. Steigende Anleiherenditen heben ihn und drücken die Aktienbewertungen."
+    },
+    {
+      "begriff": "Duration einer Aktie",
+      "erklaerung": "Bildlich die Frage, wie weit in der Zukunft die großen Gewinne einer Aktie liegen. Je länger, desto empfindlicher reagiert der Kurs auf Zinsänderungen."
+    },
+    {
+      "begriff": "Einkaufsmanagerindex (PMI)",
+      "erklaerung": "Eine Umfrage unter Einkaufsleitern von Unternehmen. Ein Wert über 50 signalisiert Wachstum, ein Wert darunter Schrumpfung. Er gilt als Frühindikator der Konjunktur."
+    },
+    {
+      "begriff": "Zinskurve",
+      "erklaerung": "Die Darstellung der Renditen von Anleihen nach Laufzeit. Eine steile Kurve bedeutet, dass lange Laufzeiten deutlich mehr Rendite bieten als kurze."
+    },
+    {
+      "begriff": "Qualität der Gewinne",
+      "erklaerung": "Das Maß dafür, wie gut ein ausgewiesener Gewinn durch echten operativen Cashflow gedeckt ist. Hoher Gewinn bei negativem Cashflow ist ein Warnsignal."
+    },
+    {
+      "begriff": "Operativer Cashflow",
+      "erklaerung": "Das Bargeld, das ein Unternehmen aus seinem laufenden Geschäft tatsächlich erwirtschaftet, vor Investitionen und Finanzierung."
+    },
+    {
+      "begriff": "Operativer Hebel",
+      "erklaerung": "Die Eigenschaft von Firmen mit hohen Fixkosten, dass ihr Gewinn stärker schwankt als ihr Umsatz, in beide Richtungen."
+    },
+    {
+      "begriff": "Kapitalzyklus",
+      "erklaerung": "Das Muster, dass hohe Preise Investitionen anlocken, das steigende Angebot die Preise drückt und knappes Angebot nach einer Investitionsflaute die Preise wieder hebt."
+    },
+    {
+      "begriff": "Erwartung gegen Realisation",
+      "erklaerung": "Der Kurs reagiert auf die Abweichung eines Ergebnisses von der bereits eingepreisten Erwartung, nicht auf die absolute Höhe der Zahlen."
+    },
+    {
+      "begriff": "Guidance",
+      "erklaerung": "Die vom Management veröffentlichte Prognose für Umsatz oder Gewinn kommender Quartale, oft wichtiger für den Kurs als die berichteten Zahlen."
+    },
+    {
+      "begriff": "Dot-Plot",
+      "erklaerung": "Eine Übersicht, in der jedes Mitglied der US-Notenbank anonym seinen erwarteten Leitzins einträgt. Sie zeigt die Tendenz, ist aber keine Zusage."
+    },
+    {
+      "begriff": "Sekundärzoll",
+      "erklaerung": "Ein Zoll gegen Dritte, die weiter mit einem sanktionierten Land handeln, statt gegen das Land selbst. Er nutzt die Marktmacht des sanktionierenden Staates."
+    },
+    {
+      "begriff": "Risikoprämie",
+      "erklaerung": "Der Aufschlag, den Käufer für Unsicherheit zu zahlen bereit sind, etwa im Ölpreis für das Risiko von Lieferausfällen."
+    },
+    {
+      "begriff": "VIX",
+      "erklaerung": "Der Volatilitätsindex, das Angstbarometer der Wall Street. Ein niedriger Wert signalisiert Gelassenheit der Anleger."
+    },
+    {
+      "begriff": "Anleihe-Ersatz",
+      "erklaerung": "Aktien mit stabilen Dividenden wie Versorger, die wie Anleihen gehalten werden und bei steigenden Renditen an relativer Attraktivität verlieren."
+    }
+  ],
+  "verificationLog": {
+    "confirmed": [
+      "US-Schluss 23.9.: S&P 500 -0,73 %, Nasdaq Composite -1,11 %, Dow -0,63 %, Russell 2000 -1,60 % (TheStreet, Yahoo Finance).",
+      "US-Renditen 23.9.: 2J 4,895 %, 5J 4,996 % (intraday 5,036 %, erstmals über 5 % seit 2007), 10J 5,106 %, 30J 5,396 % (TheStreet).",
+      "S&P Global Flash Composite PMI September 58,4, höchster Stand seit über 5 Jahren (S&P Global).",
+      "US-CPI August: Gesamt +3,4 % z. Vj., Kern +2,4 %, +0,4 % z. Vm., energiegetrieben (BLS).",
+      "Fed-Zinsentscheid 16.9.: +25 Bp. auf 3,75 bis 4,00 %, einstimmig 12-0, erste Erhöhung seit Juli 2023; nächste FOMC 27./28.10., dann 8./9.12. (Federal Reserve).",
+      "EZB +25 Bp. auf 2,50 % Einlagensatz am 10.9.; BoJ +25 Bp. auf 1,25 % am 18.9.; BoE hielt 3,75 % am 17.9. (Euronews, FXStreet).",
+      "Graham-Gesetz in Kraft: Senat 86-11 (7.8.), Repräsentantenhaus 262-159 (17.9.), Unterzeichnung durch den Präsidenten (NBC News, rules.house.gov).",
+      "US-Haushalt per Übergangsfinanzierung bis 11.12.2026 gesichert, kein Shutdown zum 30.9. (Washington Post).",
+      "Nikkei 225 Do früh 24.9. +1,25 % auf rund 65.828, SoftBank +6,24 %; Kospi feiertagsbedingt geschlossen (TradingKey).",
+      "Kennametal Q4 FY26: Umsatz 737 Mio. $ (+43 %), op. Marge 41,1 % (Vorjahr 6,1 %), bereinigter Gewinn je Aktie 2,96 $ Rekord, +252 Mio. $ aus Rohstoffpreis-Timing, Vorräte 1,108 Mrd. $ (von 538 Mio.), operativer Cashflow -4 Mio. $ (von +208 Mio.), FY27-Ausblick bereinigter Gewinn je Aktie 4,15-5,15 $ (StockTitan/Kennametal IR).",
+      "Earnings 22./23.9.: AutoZone Q4 Umsatz 6,6 Mrd. $ (+5,6 %), Gewinn je Aktie 56,05 $ (unter Konsens rund 54); Paychex Umsatz 1.630,5 Mio. $ (+6 %), Aktie rund -6,6 bis -8,8 %; Cintas Umsatz 3,01 Mrd. $ (+10,9 %), Aktie rund -1,2 %; McDonald's rund -4,3 % nach Investorentag (StockTitan, Investing.com, Yahoo Finance, 24/7 Wall St.).",
+      "Market-Cap-Gate: CWT 2,924 Mrd. $ (2,57 Mrd. €, AV 24.9.), KMT 2,287 Mrd. $ (2,01 Mrd. €, AV 24.9.), INDI 0,737 Mrd. $ (0,65 Mrd. €, stockanalysis 24.9.), alle unter 10 Mrd. €; USD/EUR 0,87871 (AV 24.9. 04:05 UTC)."
+    ],
+    "uncertain": [
+      "Punktstände der US-Indizes am 23.9. quellenabhängig (S&P rund 7.706 bzw. 7.697,95, Prozentwerte gesichert).",
+      "Ölpreis-Niveau 23.9. widersprüchlich (Brent rund 103 vs. rund 99 $, WTI rund 92 vs. rund 90 $), Richtung nach oben und über 100 $ gut belegt.",
+      "VIX 15,18, DXY 100,56, EUR/USD und Bitcoin (Spanne 84.000 bis 87.000 $) je nur über eine oder wenige Quellen belegt.",
+      "Pick-Quartalstermine (CWT, KMT, INDI) aus dem Fiskalrhythmus abgeleitet, nicht offiziell bestätigt.",
+      "INDI-Kennzahlen und Cap über stockanalysis.com statt Alpha Vantage, da AV-Tageslimit erschöpft."
+    ],
+    "gaps": [
+      "Alpha-Vantage-Tageslimit (25 Requests, geteilter Key) zum Laufzeitpunkt erschöpft, daher keine eigenen Kursreihen für Pick-Charts und keine AV-Treasury-Verifikation; Renditen über TheStreet (Tier 2) belegt.",
+      "Exakte Schlussstände für DAX, STOXX 600, FTSE 100 am 23.9. nur als Prozentbewegung belegt (DAX -1,05 %, FTSE -0,43 %), STOXX 600 nicht belegt.",
+      "Hang Seng und Shanghai Composite für den 24.9. nicht belegt, nur der 23.9.-Schluss.",
+      "Erdgaspreis für den 23.9. nicht belegt.",
+      "Keine Desktop-Bridge (geplanter Lauf), daher update_artifact übersprungen."
+    ]
+  }
+}

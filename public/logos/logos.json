@@ -1135,5 +1135,50 @@
     "license": "Public domain",
     "artist": "Unknown authorUnknown author",
     "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "mcdonalds": {
+    "file": "mcdonalds.svg",
+    "name": "McDonald's",
+    "source": "https://commons.wikimedia.org/wiki/File:McDonald%27s_Golden_Arches.svg",
+    "license": "Public domain",
+    "artist": "McDonald's",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
+  },
+  "paychex": {
+    "file": "paychex.svg",
+    "name": "Paychex",
+    "source": "https://commons.wikimedia.org/wiki/File:Paychex_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cintas": {
+    "file": "cintas.svg",
+    "name": "Cintas",
+    "source": "https://commons.wikimedia.org/wiki/File:Cintas-Logo.SVG",
+    "license": "Public domain",
+    "artist": "Cintas",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "californiawater": {
+    "file": "californiawater.svg",
+    "name": "California Water Service Group",
+    "source": "https://commons.wikimedia.org/wiki/File:California_Water_Service_Group_logo.svg",
+    "license": "Public domain",
+    "artist": "Original: California Water Service Group Vector:  Benstown",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "kennametal": {
+    "file": "kennametal.svg",
+    "name": "Kennametal",
+    "source": "https://commons.wikimedia.org/wiki/File:Kennametal.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "indiesemi": {
+    "file": null,
+    "name": "indie Semiconductor",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

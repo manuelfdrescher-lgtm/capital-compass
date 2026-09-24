@@ -80,3 +80,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-09-23-morning | Ingredion (INGR) | — _(defensives Geschäftsmodell mit vertraglicher Weitergabe der Agrarrohstoffpreise)_
 - 2026-09-23-morning | Whirlpool (WHR) | — _(Lehrfall für operativen Hebel im zyklischen Trog, Aktie von rund 56 auf 34 Dollar gefallen)_
 - 2026-09-23-morning | AAON (AAON) | — _(Wachstumshebel auf den KI-Infrastrukturzyklus über Rechenzentrumskühlung, hoch bewertet)_
+- 2026-09-24-morning | California Water Service Group (CWT) | — _(regulierte Wasserversorgerin, Wachstum über die Investitionsbasis mal erlaubte Eigenkapitalrendite)_
+- 2026-09-24-morning | Kennametal (KMT) | — _(Fallstudie zur Gewinnqualität im Zyklus, Umsatz im vierten Geschäftsquartal +43 %)_
+- 2026-09-24-morning | indie Semiconductor (INDI) | — _(vorprofitabler Hochwachstumswert, Bewertung über die Design-Win-Pipeline)_
