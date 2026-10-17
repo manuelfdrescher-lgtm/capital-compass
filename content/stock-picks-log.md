@@ -83,3 +83,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-09-24-morning | California Water Service Group (CWT) | — _(regulierte Wasserversorgerin, Wachstum über die Investitionsbasis mal erlaubte Eigenkapitalrendite)_
 - 2026-09-24-morning | Kennametal (KMT) | — _(Fallstudie zur Gewinnqualität im Zyklus, Umsatz im vierten Geschäftsquartal +43 %)_
 - 2026-09-24-morning | indie Semiconductor (INDI) | — _(vorprofitabler Hochwachstumswert, Bewertung über die Design-Win-Pipeline)_
+- 2026-10-17-morning | CSW Industrials (CSW) | — _(serieller Zukäufer margenstarker Nischengeschäfte nach dem Rasierklingen-Prinzip)_
+- 2026-10-17-morning | Theon International (THEON) | — _(Profiteur der europäischen Wiederaufrüstung, Halbjahresumsatz +35 %)_
+- 2026-10-17-morning | Tronox Holdings (TROX) | — _(spekulative Deep-Value-Fallstudie am unteren Ende des Rohstoffzyklus)_

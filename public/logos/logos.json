@@ -122,12 +122,12 @@
     "brandColor": "#76b900"
   },
   "microsoft": {
-    "file": "microsoft.png",
+    "file": "microsoft.svg",
     "name": "Microsoft",
-    "source": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(1981).png",
+    "source": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(2012).svg",
     "license": "Public domain",
-    "artist": "Unknown authorUnknown author",
-    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+    "artist": "Microsoft Corporation — Jason Wells",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
   },
   "alphabet": {
     "file": "alphabet.svg",
@@ -694,10 +694,10 @@
   "totalenergies": {
     "file": "totalenergies.svg",
     "name": "TotalEnergies",
-    "source": "https://commons.wikimedia.org/wiki/File:Total_wordmark_(2003-2021).svg",
+    "source": "https://commons.wikimedia.org/wiki/File:TotalEnergies_wordmark_(2021-present).svg",
     "license": "Public domain",
-    "artist": "™/®Total SE",
-    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+    "artist": "™/®TotalEnergies SE",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
   },
   "toyota": {
     "file": "toyota.png",
@@ -738,10 +738,10 @@
   "intel": {
     "file": "intel.svg",
     "name": "Intel",
-    "source": "https://commons.wikimedia.org/wiki/File:Intel_logo_(1968-2006).svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Intel_logo_2023.svg",
     "license": "Public domain",
-    "artist": "The original uploader was KUsam at English Wikipedia., 7 July 2006 (original upload date)",
-    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+    "artist": "Intel",
+    "note": "Logo von Wikimedia Commons (manuell verifizierte Datei); Markenrechte beim jeweiligen Unternehmen."
   },
   "stmicro": {
     "file": "stmicro.png",
@@ -1179,6 +1179,53 @@
   "indiesemi": {
     "file": null,
     "name": "indie Semiconductor",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "dell": {
+    "file": "dell.svg",
+    "name": "Dell",
+    "source": "https://commons.wikimedia.org/wiki/File:Dell_logo_2016.svg",
+    "license": "Public domain",
+    "artist": "Brand Union Studio (NY)[1]",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "travelers": {
+    "file": "travelers.png",
+    "name": "The Travelers Companies",
+    "source": "https://commons.wikimedia.org/wiki/File:Trav_umb_5inch.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "Peter Lewis",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "truist": {
+    "file": "truist.svg",
+    "name": "Truist Financial",
+    "source": "https://commons.wikimedia.org/wiki/File:Truist_Financial_logo.svg",
+    "license": "Public domain",
+    "artist": "Truist",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "citizens": {
+    "file": "citizens.svg",
+    "name": "Citizens Financial Group",
+    "source": "https://commons.wikimedia.org/wiki/File:Citizens_Financial_Group_logo.svg",
+    "license": "Public domain",
+    "artist": "Citizens Financial Group",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "csw": {
+    "file": null,
+    "name": "CSW Industrials",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "theon": {
+    "file": null,
+    "name": "Theon International",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "tronox": {
+    "file": null,
+    "name": "Tronox Holdings",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

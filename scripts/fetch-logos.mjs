@@ -71,6 +71,9 @@ const MANUAL_COMMONS = {
   exxonmobil: "Exxon Mobil Logo.svg",
   frontline: "Frontline Logo.svg",
   mcdonalds: "McDonald's Golden Arches.svg", // Wikidata liefert sonst die Hochformat-Variante mit Slogan
+  intel: "Intel logo 2023.svg", // Wikidata lieferte das Logo von 1968–2006
+  microsoft: "Microsoft logo (2012).svg", // Wikidata lieferte das Logo von 1981
+  totalenergies: "TotalEnergies wordmark (2021-present).svg", // statt Total-Schriftzug 2003–2021
 };
 
 // Bekannte Markenfarben für den typografischen Fallback-Chip
