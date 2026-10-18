@@ -181,6 +181,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-10-17-morning/",
       "headline": "Chinesischer Speicher-Durchbruch treibt KI-Werte in den zweiten Abverkauf"
+    },
+    {
+      "number": 27,
+      "date": "2026-10-18",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-10-18-morning/",
+      "headline": "Speicher-Angst und teures Geld setzen die Wall Street unter Druck"
     }
   ],
   "recentStockPicks": [
@@ -573,7 +580,22 @@
       "slug": "2026-10-17-morning",
       "name": "Tronox Holdings (TROX)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-10-18-morning",
+      "name": "Rational AG (RAA)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-10-18-morning",
+      "name": "Kinsale Capital Group (KNSL)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-10-18-morning",
+      "name": "Befesa S.A. (BFSA)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-10-17T14:01:36.617Z"
+  "lastUpdated": "2026-10-18T12:38:31.099Z"
 }

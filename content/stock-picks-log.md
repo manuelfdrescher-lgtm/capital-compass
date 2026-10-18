@@ -86,3 +86,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-10-17-morning | CSW Industrials (CSW) | — _(serieller Zukäufer margenstarker Nischengeschäfte nach dem Rasierklingen-Prinzip)_
 - 2026-10-17-morning | Theon International (THEON) | — _(Profiteur der europäischen Wiederaufrüstung, Halbjahresumsatz +35 %)_
 - 2026-10-17-morning | Tronox Holdings (TROX) | — _(spekulative Deep-Value-Fallstudie am unteren Ende des Rohstoffzyklus)_
+- 2026-10-18-morning | Rational AG (RAA) | — _(Profiküchen-Weltmarktführer mit Preissetzungsmacht durch messbare Kostenersparnis)_
+- 2026-10-18-morning | Kinsale Capital Group (KNSL) | — _(Spezialversicherer mit strukturellem Wachstum und außergewöhnlicher Profitabilität)_
+- 2026-10-18-morning | Befesa S.A. (BFSA) | — _(zyklischer Deep-Value-Fall, abhängig von Zinkpreis, Behandlungsentgelten und Stahlproduktion)_

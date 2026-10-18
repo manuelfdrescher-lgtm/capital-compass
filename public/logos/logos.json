@@ -1227,5 +1227,26 @@
     "file": null,
     "name": "Tronox Holdings",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "mtb": {
+    "file": "mtb.svg",
+    "name": "M&T Bank",
+    "source": "https://commons.wikimedia.org/wiki/File:M%26T_Bank_wordmark.svg",
+    "license": "Public domain",
+    "artist": "M&amp;T Bank Corporation",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "rational": {
+    "file": "rational.svg",
+    "name": "Rational AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Rational_AG_201x_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "befesa": {
+    "file": null,
+    "name": "Befesa S.A.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
