@@ -110,6 +110,7 @@ export const ArticleSchema = z.object({
   image: ArticleImageSchema.optional(),
   body: z.array(nonEmpty).min(1),
   mechanik: z.string().optional(),
+  sapBezug: z.string().optional(), // 2 bis 4 Sätze: Bezug der Nachricht zu SAP und „All in on AI“ (SAP-Schwerpunkt bis 12.02.2027)
   vertiefung: z
     .object({ titel: nonEmpty, absaetze: z.array(nonEmpty).min(1) })
     .optional(),

@@ -48,6 +48,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     </aside>
   )}
 
+  {a.sapBezug && (
+    <aside class="mechanik-box">
+      <span class="mechanik-box__titel">Bezug zu SAP: All in on AI</span>
+      {a.sapBezug}
+    </aside>
+  )}
+
   {a.charts?.map((chart, i) =>
     chart.type === "bar" ? (
       <BarChart chart={chart} id={`${a.id}-chart-${i}`} />
