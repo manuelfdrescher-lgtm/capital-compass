@@ -1,6 +1,9 @@
 ---
+// Drei Aktien als Karten. Die Abschnitte liegen per Subgrid auf gemeinsamen
+// Zeilenspuren: These, Markteinordnung, Gegenargumente usw. beginnen in allen
+// drei Karten auf exakt derselben Höhe, egal wie lang der Text davor ist.
 import LogoChip from "./LogoChip.astro";
-import LineChart from "./LineChart.astro";
+import KursChart from "./KursChart.astro";
 
 interface Props {
   picks: any[];
@@ -18,28 +21,30 @@ const { picks } = Astro.props;
           <span class="pick__cap">{p.ticker} · Börsenwert {p.marketCapEUR}</span>
         </div>
       </div>
-      {p.whatTheyDo && <p class="pick__was">{p.whatTheyDo}</p>}
-      {p.priceSeries && p.priceSeries.length > 1 && (
-        <LineChart
-          id={`pick-${p.ticker}`}
-          chart={{
-            title: `${p.name}, Kursverlauf`,
-            unit: p.priceUnit ?? "",
-            source: p.priceSeriesSource ?? "Kursdaten siehe Fußzeile",
-            series: p.priceSeries,
-          }}
-        />
-      )}
+      <p class="pick__was">{p.whatTheyDo ?? ""}</p>
+      <div class="pick__chart">
+        {p.priceSeries && p.priceSeries.length > 1 && (
+          <KursChart
+            id={`pick-${p.ticker}`}
+            titel="Kursverlauf"
+            reihen={[{ label: p.name, unit: p.priceUnit ?? "", source: p.priceSeriesSource ?? "Kursdaten siehe Quellen", series: p.priceSeries }]}
+            spanne="1J"
+            format="kompakt"
+          />
+        )}
+      </div>
       <div class="pick__abschnitt">
         <strong>These</strong>
         {p.thesis}
       </div>
-      {p.marktEinordnung && (
-        <div class="pick__abschnitt">
-          <strong>Markteinordnung</strong>
-          {p.marktEinordnung}
-        </div>
-      )}
+      <div class="pick__abschnitt">
+        {p.marktEinordnung && (
+          <>
+            <strong>Markteinordnung</strong>
+            {p.marktEinordnung}
+          </>
+        )}
+      </div>
       <div class="pick__abschnitt">
         <strong>Die stärksten Gegenargumente</strong>
         <ul>{p.counterarguments.map((c) => <li>{c}</li>)}</ul>
@@ -48,11 +53,11 @@ const { picks } = Astro.props;
         <strong>Katalysatoren</strong>
         <ul>{p.catalysts.map((c) => <li>{c}</li>)}</ul>
       </div>
-      <div class="pick__abschnitt">
+      <div class="pick__abschnitt pick__quelle">
         <strong>Quelle Börsenwert</strong>
         {p.capSource}
       </div>
     </section>
   ))}
 </div>
-<p class="ressort-untertitel" style="margin-top:18px">Analyse-Fallstudien zu Lernzwecken. Keine Kauf-, Verkaufs- oder Halteempfehlung.</p>
+<p class="hinweiszeile">Analyse-Fallstudien zu Lernzwecken. Keine Kauf-, Verkaufs- oder Halteempfehlung.</p>

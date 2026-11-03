@@ -69,11 +69,11 @@ const nav = [
         )}
         <div class="masthead__doppel" role="presentation"></div>
         {edition && (
-          <div class="datumszeile">
+          <p class="datumszeile">
             <span>{formatDateLong(edition.date)}</span>
             <span>{slotLabel(edition.slot)} · Ausgabe Nr. {edition.number}</span>
             <span>Für Manuel Drescher</span>
-          </div>
+          </p>
         )}
         <nav class="hauptnav" aria-label="Ressorts">
           {nav.map((item) => (
@@ -90,8 +90,10 @@ const nav = [
       </main>
 
       <footer class="fusszeile">
-        <CompassRose class="fusszeile__kompass" size={30} />
-        <p class="fusszeile__claim">Insight · Context · Perspective</p>
+        <div class="fusszeile__kopf">
+          <CompassRose class="fusszeile__kompass" size={30} />
+          <p class="fusszeile__claim">Insight · Context · Perspective</p>
+        </div>
         <p><strong>Wichtiger Hinweis:</strong> The Capital Compass dient ausschließlich der Bildung und dem Kapitalmarktverständnis. Es ist keine Anlageberatung. Es gibt keine Kauf-, Verkaufs- oder Halteempfehlungen und keine Trading-Signale. Chancen und Risiken werden nur als analytische Lernpunkte dargestellt.</p>
         <p>Jede Zahl dieser Ausgabe ist vor Veröffentlichung gegen unabhängige Quellen geprüft. Quellen mit Tier-Kennzeichnung stehen an jedem Artikel. Unternehmenslogos: Wikimedia Commons, Markenrechte bei den jeweiligen Unternehmen. „Ein Kurs bewegt sich mit der Differenz zwischen Nachricht und Erwartung.“</p>
       </footer>

@@ -2,7 +2,7 @@
 // Unternehmens-Panel: "Kurz erklärt"-Box, Kennzahlen und interaktiver
 // Kurschart aus echten Daten.
 import LogoChip from "./LogoChip.astro";
-import LineChart from "./LineChart.astro";
+import KursChart from "./KursChart.astro";
 
 interface Props {
   company: any;
@@ -19,14 +19,11 @@ const { company, articleId } = Astro.props;
       <p style="margin:0"><strong>Warum das wichtig ist:</strong> {company.whyItMatters}</p>
     </div>
     {company.priceSeries && company.priceSeries.length > 1 && (
-      <LineChart
+      <KursChart
         id={`kurs-${articleId}`}
-        chart={{
-          title: `${company.name} (${company.ticker}${company.exchange ? `, ${company.exchange}` : ""}), Kursverlauf`,
-          unit: "",
-          source: company.priceSeriesSource ?? "Kursdaten siehe Quellen & Check",
-          series: company.priceSeries,
-        }}
+        titel={`${company.name} (${company.ticker}${company.exchange ? `, ${company.exchange}` : ""}), Kursverlauf`}
+        reihen={[{ label: company.name, unit: "", source: company.priceSeriesSource ?? "Kursdaten siehe Quellen & Check", series: company.priceSeries }]}
+        spanne="1J"
       />
     )}
   </div>

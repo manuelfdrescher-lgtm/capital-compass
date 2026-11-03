@@ -38,12 +38,14 @@ const richtungLabel = { up: "aufwärts", down: "abwärts", neutral: "seitwärts"
           <span class="monitor-karte__label">Heute</span>
           <p class="monitor-karte__lage">{s.lage}</p>
         </div>
-        {s.istZustand && (
-          <div class="monitor-karte__zeile">
-            <span class="monitor-karte__label">Ist-Zustand</span>
-            <p class="monitor-karte__istzustand">{s.istZustand}</p>
-          </div>
-        )}
+        <div class="monitor-karte__zeile">
+          {s.istZustand && (
+            <>
+              <span class="monitor-karte__label">Ist-Zustand</span>
+              <p class="monitor-karte__istzustand">{s.istZustand}</p>
+            </>
+          )}
+        </div>
         <span class="monitor-karte__wert">{s.tagesWert}</span>
       </article>
     ))}

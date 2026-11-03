@@ -253,3 +253,7 @@ in `src/lib/edition-schema.mjs`, nicht im Zod-Schema selbst — alte Ausgaben mi
   Sätze"). `counterarguments` (min. 2) und `catalysts` (min. 1) bleiben unverändert
   Pflicht, unabhängig von `schemaVersion`.
 - Jeder `branchenMonitor`-Eintrag: `istZustand` vorhanden und mind. 260 Zeichen.
+
+## Kursverläufe (automatisch, seit 03.11.2026)
+
+`scripts/ingest.mjs` ruft nach dem Einsortieren `scripts/fetch-history.mjs` auf (Yahoo-Finance-Chart-API, kostenlos). Das Skript füllt `stockPicks[].priceSeries` (5 Jahre, in Euro umgerechnet) und schreibt den Markt-Verlauf (DAX, SAP, Euro Stoxx 50, S&P 500, Nasdaq 100, Gold, Brent, EUR/USD, Bitcoin) nach `content/market-history.json`. Die Redaktion muss diese Felder nicht liefern. Schlägt der Abruf fehl, entfallen die Charts ohne Fehler.

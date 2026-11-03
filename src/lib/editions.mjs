@@ -42,3 +42,12 @@ export function getLogos() {
   if (!existsSync(path)) return {};
   return JSON.parse(readFileSync(path, "utf8"));
 }
+
+// Kursverläufe für den interaktiven Markt-Chart der neuesten Ausgabe
+// (scripts/fetch-history.mjs). Fehlt die Datei, entfällt der Chart.
+export function getMarketHistory() {
+  const path = join(process.cwd(), "content", "market-history.json");
+  if (!existsSync(path)) return null;
+  const json = JSON.parse(readFileSync(path, "utf8"));
+  return Array.isArray(json.reihen) && json.reihen.length > 0 ? json : null;
+}

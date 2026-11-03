@@ -1,35 +1,53 @@
 ---
+// Märkte im Überblick: Kacheln in festen Reihen (Subgrid, damit Label,
+// Wert, Veränderung und Notiz reihenweise exakt fluchten) und darunter
+// der interaktive Verlaufs-Chart für Indizes, SAP, Rohstoffe und Devisen.
+import Emblem from "./Emblem.astro";
+import KursChart from "./KursChart.astro";
+
 interface Props {
   tiles: any[];
+  stand?: string;
+  history?: any;
 }
-const { tiles } = Astro.props;
+const { tiles, stand, history } = Astro.props;
 const arrow = { up: "▲", down: "▼", flat: "◆" };
-// Ein einziges Grid mit fester Spaltenzahl (zwei Reihen), damit die
-// Trennlinien zwischen den Reihen exakt fluchten. Ist die zweite Reihe
-// nicht vollständig gefüllt, übernimmt die letzte Kachel die Restspalten
-// (grid-column: span), statt eine graue Leerfläche stehen zu lassen.
-const spalten = Math.max(1, Math.ceil(tiles.length / 2));
-const zweiteReihe = Math.max(0, tiles.length - spalten);
-const luecke = zweiteReihe > 0 ? spalten - zweiteReihe : 0;
+// Auf dem Desktop sechs Spalten. Ist die letzte Reihe nicht voll, nimmt die
+// letzte Kachel die Restspalten ein, statt eine Leerfläche zu lassen.
+const rest = tiles.length % 6;
+const restSpan = rest === 0 ? 1 : 6 - rest + 1;
 ---
 
 <section class="marktpanel" aria-label="Märkte im Überblick">
   <div class="marktpanel__kopf">
-    <h2 class="marktpanel__titel">Märkte im Überblick</h2>
+    <Emblem name="maerkte" size={44} class="marktpanel__bild" />
+    <div>
+      <h2 class="marktpanel__titel">Märkte im Überblick</h2>
+      {stand && <p class="marktpanel__stand">{stand}</p>}
+    </div>
   </div>
-  <div class="marktkacheln" style={`--mk-spalten: ${spalten}`}>
+  <div class="marktkacheln">
     {tiles.map((t, i) => (
-      <div
-        class="kachel"
-        style={i === tiles.length - 1 && luecke > 0 ? `grid-column: span ${luecke + 1}` : undefined}
-      >
+      <div class={`kachel${i === tiles.length - 1 && restSpan > 1 ? " kachel--rest" : ""}`} style={i === tiles.length - 1 && restSpan > 1 ? `--rest-span: ${restSpan}` : undefined}>
         <span class="kachel__label">{t.label}</span>
-        <span class="kachel__wert">{t.approx ? "ca. " : ""}{t.value}</span>
+        <span class="kachel__wert">{t.approx && <span class="kachel__ca">ca.</span>}{t.value}</span>
         <span class={t.delta ? `kachel__delta kachel__delta--${t.direction}` : "kachel__delta kachel__delta--leer"}>
-          {t.delta ? `${arrow[t.direction]} ${t.delta}` : " "}
+          {t.delta ? `${arrow[t.direction]} ${t.delta}` : " "}
         </span>
-        {t.note && <span class="kachel__note">{t.note}</span>}
+        <span class="kachel__note">{t.note ?? ""}</span>
       </div>
     ))}
   </div>
+  {history && (
+    <div class="marktpanel__chart">
+      <KursChart
+        id="markt-verlauf"
+        titel="Verlauf: Indizes, SAP, Rohstoffe, Devisen"
+        untertitel="Instrument und Zeitraum wählen. Überfahren zeigt Datum, Wert und Veränderung."
+        reihen={history.reihen}
+        spanne="1J"
+        format="breit"
+      />
+    </div>
+  )}
 </section>

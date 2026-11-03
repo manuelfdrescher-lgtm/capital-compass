@@ -1,0 +1,294 @@
+---
+// Interaktiver Kurs-Chart als Inline-SVG ohne Framework.
+// Zeitraum-Tasten (1M bis 5J, Max), bei mehreren Reihen Instrument-Tasten.
+// Überfahren zeigt Datum, Wert und Veränderung seit Zeitraumbeginn;
+// ein Klick setzt einen Messpunkt, danach zeigt die Anzeige die
+// Veränderung zwischen Messpunkt und Mausposition. Erneuter Klick löst ihn.
+import { FORMATE, PAD, verfuegbareSpannen, ausschnitt, geometrie, zahl, prozent, datumLang } from "../lib/kurschart.mjs";
+
+interface Reihe {
+  key?: string;
+  label: string;
+  unit?: string;
+  source: string;
+  series: { t: string; v: number }[];
+}
+interface Props {
+  id: string;
+  titel: string;
+  untertitel?: string;
+  reihen: Reihe[];
+  spanne?: string; // Startzeitraum, z. B. "1J"
+  tabelle?: boolean; // Datentabelle (nur für kurze Reihen sinnvoll)
+  format?: "breit" | "normal" | "kompakt";
+}
+const { id, titel, untertitel, reihen, spanne = "1J", tabelle = false, format = "normal" } = Astro.props;
+const { w: W, h: H } = FORMATE[format];
+
+const erste = reihen[0];
+const spannen = verfuegbareSpannen(erste.series);
+const start = (spannen.find((s) => s.key === spanne) ?? spannen[spannen.length - 1]).key;
+const teil = ausschnitt(erste.series, start);
+const g = geometrie(teil, W, H);
+const a = teil[0];
+const z = teil[teil.length - 1];
+const delta = ((z.v - a.v) / a.v) * 100;
+const zeigeSpannen = spannen.length > 2;
+---
+
+<figure class={`kurschart${reihen.length === 1 ? " kurschart--einzeln" : ""}`} data-kurschart id={id} data-spanne={start}>
+  <figcaption class="kurschart__kopf">
+    <span class="chart__titel">{titel}</span>
+    {untertitel && <span class="chart__untertitel">{untertitel}</span>}
+  </figcaption>
+
+  {reihen.length > 1 && (
+    <div class="kurschart__reihen" role="group" aria-label="Instrument wählen">
+      {reihen.map((r, i) => (
+        <button type="button" data-reihe={i} aria-pressed={i === 0 ? "true" : "false"}>{r.label}</button>
+      ))}
+    </div>
+  )}
+
+  <div class="kurschart__leiste">
+    <p class="kurschart__stand" aria-live="polite">
+      <span class="kurschart__name">{erste.label}</span>
+      <span class="kurschart__wert">{zahl(z.v)}{erste.unit ?? ""}</span>
+      <span class={`kurschart__delta ${delta >= 0 ? "ist-plus" : "ist-minus"}`}>{prozent(delta)}</span>
+      <span class="kurschart__seit">seit {datumLang(a.t)}</span>
+    </p>
+    {zeigeSpannen && (
+      <div class="kurschart__spannen" role="group" aria-label="Zeitraum wählen">
+        {spannen.map((s) => (
+          <button type="button" data-spanne={s.key} title={s.label} aria-pressed={s.key === start ? "true" : "false"}>{s.key}</button>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <div class="kurschart__buehne">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${titel}: Verlauf von ${datumLang(a.t)} bis ${datumLang(z.t)}, ${prozent(delta)}.`}>
+      <g class="kc-gitter">
+        {g.gitter.map((l) => (
+          <g>
+            <line class="gitter" x1={PAD.left} x2={W - PAD.right} y1={l.y} y2={l.y} />
+            <text class="achsenlabel" x="0" y={l.y + 4}>{l.label}</text>
+          </g>
+        ))}
+      </g>
+      <line class="achse" x1={PAD.left} x2={W - PAD.right} y1={H - PAD.bottom} y2={H - PAD.bottom} />
+      <g class="kc-x">
+        {g.xTicks.map((t) => (
+          <text class="achsenlabel" x={t.x} y={H - PAD.bottom + 20} text-anchor={t.anker}>{t.label}</text>
+        ))}
+      </g>
+      <path class="flaeche" d={g.flaeche} />
+      <path class="linie" d={g.pfad} />
+      <g class="kc-punkte">
+        {g.punkte.length <= 40 && g.punkte.map((p) => <circle class="datenpunkt" r="3.5" cx={p.x} cy={p.y} />)}
+      </g>
+      <g class="pin" hidden>
+        <line class="pin-linie" x1="0" x2="0" y1={PAD.top} y2={H - PAD.bottom} />
+        <circle class="pin-punkt" r="5" cx="0" cy="0" />
+      </g>
+      <g class="fadenkreuz" hidden>
+        <line class="fadenkreuz-linie" x1="0" x2="0" y1={PAD.top} y2={H - PAD.bottom} />
+        <circle class="fadenkreuz-punkt" r="5" cx="0" cy="0" />
+      </g>
+      <rect class="hover-flaeche" x={PAD.left} y={PAD.top} width={W - PAD.left - PAD.right} height={H - PAD.top - PAD.bottom} fill="transparent" />
+    </svg>
+    <div class="kurschart__tipp" hidden></div>
+  </div>
+
+  <p class="kurschart__hinweis">Überfahren zeigt Datum und Wert. Ein Klick setzt einen Messpunkt und misst die Veränderung bis zur Mausposition.</p>
+  <p class="chart__quelle kurschart__quelle">Quelle: {erste.source}</p>
+
+  {tabelle && (
+    <details class="aufklapp datentabelle">
+      <summary>Datentabelle anzeigen</summary>
+      <div class="aufklapp__inhalt">
+        <table>
+          <thead><tr><th scope="col">Datum</th><th scope="col">Wert{erste.unit ? ` (${erste.unit.trim()})` : ""}</th></tr></thead>
+          <tbody>
+            {erste.series.map((p) => (
+              <tr><td>{datumLang(p.t)}</td><td>{zahl(p.v)}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </details>
+  )}
+
+  <script type="application/json" data-reihen set:html={JSON.stringify(reihen.map((r) => ({ label: r.label, unit: r.unit ?? "", source: r.source, series: r.series })))} />
+</figure>
+
+<script>
+  import { PAD, verfuegbareSpannen, ausschnitt, geometrie, zahl, prozent, datumLang } from "../lib/kurschart.mjs";
+
+  const NS = "http://www.w3.org/2000/svg";
+  type Punkt = { x: number; y: number; t: string; v: number };
+
+  function el(name: string, attrs: Record<string, string | number>, text?: string) {
+    const e = document.createElementNS(NS, name);
+    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, String(v));
+    if (text) e.textContent = text;
+    return e;
+  }
+
+  function init(fig: HTMLElement) {
+    if (fig.dataset.bound) return;
+    fig.dataset.bound = "1";
+    const reihen = JSON.parse(fig.querySelector("script[data-reihen]")?.textContent || "[]");
+    const svg = fig.querySelector("svg")!;
+    // Auf schmalen Bildschirmen ein höheres Seitenverhältnis, damit der
+    // Verlauf und die Achsen lesbar bleiben.
+    if ((fig.querySelector(".kurschart__buehne") as HTMLElement).clientWidth < 560) {
+      svg.setAttribute("viewBox", "0 0 420 300");
+      fig.classList.add("kurschart--schmal");
+    }
+    const W = svg.viewBox.baseVal.width;
+    const H = svg.viewBox.baseVal.height;
+    const gitter = svg.querySelector(".kc-gitter")!;
+    const xAchse = svg.querySelector(".kc-x")!;
+    const linie = svg.querySelector(".linie")!;
+    const flaeche = svg.querySelector(".flaeche")!;
+    const punkteG = svg.querySelector(".kc-punkte")!;
+    const kreuz = svg.querySelector<SVGGElement>(".fadenkreuz")!;
+    const pinG = svg.querySelector<SVGGElement>(".pin")!;
+    const tipp = fig.querySelector<HTMLElement>(".kurschart__tipp")!;
+    const buehne = fig.querySelector<HTMLElement>(".kurschart__buehne")!;
+    const name = fig.querySelector(".kurschart__name")!;
+    const wert = fig.querySelector(".kurschart__wert")!;
+    const deltaEl = fig.querySelector(".kurschart__delta")!;
+    const seit = fig.querySelector(".kurschart__seit")!;
+    const quelle = fig.querySelector(".kurschart__quelle")!;
+    const spannenKnoepfe = [...fig.querySelectorAll<HTMLButtonElement>("[data-spanne]")];
+    const reihenKnoepfe = [...fig.querySelectorAll<HTMLButtonElement>("[data-reihe]")];
+
+    let reihe = 0;
+    let spanne = fig.dataset.spanne || "1J";
+    let punkte: Punkt[] = [];
+    let pin: Punkt | null = null;
+
+    function setzeKreis(g: SVGGElement, p: Punkt) {
+      const l = g.querySelector("line")!;
+      const c = g.querySelector("circle")!;
+      l.setAttribute("x1", String(p.x));
+      l.setAttribute("x2", String(p.x));
+      c.setAttribute("cx", String(p.x));
+      c.setAttribute("cy", String(p.y));
+      g.removeAttribute("hidden");
+    }
+
+    function zeichnen() {
+      const r = reihen[reihe];
+      const verfuegbar = verfuegbareSpannen(r.series).map((s) => s.key);
+      if (!verfuegbar.includes(spanne)) spanne = verfuegbar.includes("1J") ? "1J" : verfuegbar[verfuegbar.length - 1];
+      spannenKnoepfe.forEach((b) => {
+        b.hidden = !verfuegbar.includes(b.dataset.spanne!);
+        b.setAttribute("aria-pressed", String(b.dataset.spanne === spanne));
+      });
+      reihenKnoepfe.forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.reihe) === reihe)));
+
+      const teil = ausschnitt(r.series, spanne);
+      const g = geometrie(teil, W, H);
+      punkte = g.punkte;
+      pin = null;
+      pinG.setAttribute("hidden", "");
+      kreuz.setAttribute("hidden", "");
+      tipp.hidden = true;
+
+      gitter.replaceChildren(
+        ...g.gitter.map((l) => {
+          const grp = el("g", {});
+          grp.append(el("line", { class: "gitter", x1: PAD.left, x2: W - PAD.right, y1: l.y, y2: l.y }));
+          grp.append(el("text", { class: "achsenlabel", x: 0, y: l.y + 4 }, l.label));
+          return grp;
+        })
+      );
+      xAchse.replaceChildren(
+        ...g.xTicks.map((t) => el("text", { class: "achsenlabel", x: t.x, y: H - PAD.bottom + 20, "text-anchor": t.anker }, t.label))
+      );
+      // Rahmenelemente an das aktuelle Seitenverhältnis anpassen
+      svg.querySelector(".achse")?.setAttribute("x2", String(W - PAD.right));
+      svg.querySelector(".achse")?.setAttribute("y1", String(H - PAD.bottom));
+      svg.querySelector(".achse")?.setAttribute("y2", String(H - PAD.bottom));
+      const flaecheHover = svg.querySelector(".hover-flaeche");
+      flaecheHover?.setAttribute("width", String(W - PAD.left - PAD.right));
+      flaecheHover?.setAttribute("height", String(H - PAD.top - PAD.bottom));
+      svg.querySelectorAll(".pin-linie, .fadenkreuz-linie").forEach((l) => l.setAttribute("y2", String(H - PAD.bottom)));
+      linie.setAttribute("d", g.pfad);
+      punkteG.replaceChildren(...(g.punkte.length <= 40 ? g.punkte.map((p) => el("circle", { class: "datenpunkt", r: 3.5, cx: p.x, cy: p.y })) : []));
+      flaeche.setAttribute("d", g.flaeche);
+
+      const a = teil[0];
+      const z = teil[teil.length - 1];
+      const d = ((z.v - a.v) / a.v) * 100;
+      name.textContent = r.label;
+      wert.textContent = `${zahl(z.v)}${r.unit}`;
+      deltaEl.textContent = prozent(d);
+      deltaEl.className = `kurschart__delta ${d >= 0 ? "ist-plus" : "ist-minus"}`;
+      seit.textContent = `seit ${datumLang(a.t)}`;
+      quelle.textContent = `Quelle: ${r.source}`;
+    }
+
+    function naechster(clientX: number): Punkt {
+      const rect = svg.getBoundingClientRect();
+      const sx = ((clientX - rect.left) / rect.width) * W;
+      let lo = 0;
+      let hi = punkte.length - 1;
+      while (hi - lo > 1) {
+        const m = (lo + hi) >> 1;
+        if (punkte[m].x < sx) lo = m; else hi = m;
+      }
+      return Math.abs(punkte[lo].x - sx) <= Math.abs(punkte[hi].x - sx) ? punkte[lo] : punkte[hi];
+    }
+
+    function veraenderung(von: Punkt, bis: Punkt) {
+      const d = ((bis.v - von.v) / von.v) * 100;
+      return `<span class="${d >= 0 ? "ist-plus" : "ist-minus"}">${prozent(d)}</span>`;
+    }
+
+    function zeige(p: Punkt) {
+      const r = reihen[reihe];
+      setzeKreis(kreuz, p);
+      const start = punkte[0];
+      tipp.innerHTML = pin && pin !== p
+        ? `<strong>${datumLang(pin.t)} → ${datumLang(p.t)}</strong><span>${zahl(pin.v)}${r.unit} → ${zahl(p.v)}${r.unit}</span><span>${veraenderung(pin, p)} im gewählten Abschnitt</span>`
+        : `<strong>${datumLang(p.t)}</strong><span>${zahl(p.v)}${r.unit}</span><span>${veraenderung(start, p)} seit ${datumLang(start.t)}</span>`;
+      tipp.hidden = false;
+      const breite = buehne.clientWidth;
+      const px = (p.x / W) * breite;
+      const py = (p.y / H) * buehne.clientHeight;
+      // Rechts neben dem Punkt, am rechten Rand auf die linke Seite wechseln.
+      const tw = tipp.offsetWidth;
+      const links = px + 14 + tw > breite ? px - tw - 14 : px + 14;
+      tipp.style.left = `${Math.max(links, 0)}px`;
+      tipp.style.top = `${Math.max(py - tipp.offsetHeight - 12, 0)}px`;
+    }
+
+    function verstecke() {
+      kreuz.setAttribute("hidden", "");
+      tipp.hidden = true;
+    }
+
+    svg.addEventListener("mousemove", (e) => zeige(naechster(e.clientX)));
+    svg.addEventListener("mouseleave", verstecke);
+    svg.addEventListener("touchmove", (e) => { if (e.touches[0]) zeige(naechster(e.touches[0].clientX)); }, { passive: true });
+    svg.addEventListener("click", (e) => {
+      const p = naechster(e.clientX);
+      if (pin === p) { pin = null; pinG.setAttribute("hidden", ""); }
+      else { pin = p; setzeKreis(pinG, p); }
+      zeige(p);
+    });
+    spannenKnoepfe.forEach((b) => b.addEventListener("click", () => { spanne = b.dataset.spanne!; zeichnen(); }));
+    reihenKnoepfe.forEach((b) => b.addEventListener("click", () => { reihe = Number(b.dataset.reihe); zeichnen(); }));
+    zeichnen();
+  }
+
+  function alle() {
+    document.querySelectorAll<HTMLElement>("[data-kurschart]").forEach(init);
+  }
+  alle();
+  document.addEventListener("astro:page-load", alle);
+</script>

@@ -15,7 +15,8 @@ const W = 640;
 const rowH = 30;
 const padTop = 6;
 const padBottom = 6;
-const labelW = 150;
+// Kategorie-Labels linksbündig in einer eigenen Spalte; Breite nach dem längsten Label.
+const labelW = Math.min(230, Math.max(90, Math.ceil(Math.max(...rows.map(([l]) => String(l).length)) * 6.6) + 12));
 const H = padTop + rows.length * rowH + padBottom;
 
 const maxAbs = Math.max(...rows.map(([, v]) => Math.abs(v)), 1e-9);
@@ -47,8 +48,10 @@ function bar(v) {
 ---
 
 <figure class="chart" role="img" aria-label={`Balkendiagramm: ${chart.title}`}>
-  <p class="chart__titel">{chart.title}</p>
-  {chart.subtitle && <p class="chart__untertitel">{chart.subtitle}</p>}
+  <figcaption class="kurschart__kopf">
+    <span class="chart__titel">{chart.title}</span>
+    {chart.subtitle && <span class="chart__untertitel">{chart.subtitle}</span>}
+  </figcaption>
   <svg viewBox={`0 0 ${W} ${H}`} aria-hidden="true">
     <line class="achse achse--null" x1={zeroX} y1={padTop - 2} x2={zeroX} y2={H - padBottom + 2} />
     {rows.map(([label, v], i) => {
@@ -59,8 +62,9 @@ function bar(v) {
       const valueLabel = `${sign}${formatNumberDE(v)}${chart.unit ?? ""}`;
       const labelX = positive ? x + len + 6 : x - 6;
       return (
-        <g>
-          <text x={labelW} y={y + rowH / 2 + 4} text-anchor="end" class="achsenlabel" font-size="12.5">{label}</text>
+        <g class="balken-zeile">
+          <title>{label}: {valueLabel}</title>
+          <text x="0" y={y + rowH / 2 + 4} class="achsenlabel balken-label" font-size="12.5">{label}</text>
           <rect
             class={chart.allPositive || positive ? "balken--positiv" : "balken--negativ"}
             x={x}
@@ -73,7 +77,7 @@ function bar(v) {
       );
     })}
   </svg>
-  <figcaption class="chart__quelle">Quelle: {chart.source}</figcaption>
+  <p class="chart__quelle">Quelle: {chart.source}</p>
   <details class="aufklapp datentabelle">
     <summary>Datentabelle anzeigen</summary>
     <div class="aufklapp__inhalt">

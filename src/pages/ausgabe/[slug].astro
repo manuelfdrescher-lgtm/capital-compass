@@ -65,7 +65,7 @@ const unternehmen = data.articles.filter((a) => a.ressort === "unternehmen");
     {data.learningNotes.map((note) => <li>{note}</li>)}
   </ol>
   {data.financeLink && (
-    <article class="karte" style="max-width:820px; margin:26px auto 0">
+    <article class="karte finance-link" style="margin-top:26px">
       <h3 style="margin-top:0; font-family:var(--display)">{data.financeLink.titel}</h3>
       {data.financeLink.absaetze.map((p) => <p>{p}</p>)}
       <aside class="mechanik-box" style="margin-bottom:0">

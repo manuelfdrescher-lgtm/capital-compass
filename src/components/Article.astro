@@ -6,7 +6,8 @@ import FactcheckBox from "./FactcheckBox.astro";
 import CompanyPanel from "./CompanyPanel.astro";
 import SourcesList from "./SourcesList.astro";
 import BarChart from "./BarChart.astro";
-import LineChart from "./LineChart.astro";
+import KursChart from "./KursChart.astro";
+import Emblem from "./Emblem.astro";
 
 interface Props {
   article: any;
@@ -28,8 +29,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
       <img src={`${base}/images/${a.image.file}`} alt={a.image.alt} loading={lead ? "eager" : "lazy"} />
       {(a.image.caption || a.image.credit) && (
         <figcaption>
-          <span>{a.image.caption}</span>
-          {a.image.credit && <span>{a.image.credit}</span>}
+          {a.image.caption && <span class="artikel-bild__text">{a.image.caption}</span>}
+          {a.image.credit && <span class="artikel-bild__credit">{a.image.credit}</span>}
         </figcaption>
       )}
     </figure>
@@ -43,14 +44,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
   {a.mechanik && (
     <aside class="mechanik-box">
-      <span class="mechanik-box__titel">Mechanik einfach erklärt</span>
+      <span class="mechanik-box__titel"><Emblem name="mechanik" size={30} class="box-bild" />Mechanik einfach erklärt</span>
       {a.mechanik.replace(/^Mechanik einfach erklärt:\s*/i, "")}
     </aside>
   )}
 
   {a.sapBezug && (
-    <aside class="mechanik-box">
-      <span class="mechanik-box__titel">Bezug zu SAP: All in on AI</span>
+    <aside class="mechanik-box sap-box">
+      <span class="mechanik-box__titel"><Emblem name="sap" size={30} class="box-bild" />Bezug zu SAP: All in on AI</span>
       {a.sapBezug}
     </aside>
   )}
@@ -59,7 +60,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     chart.type === "bar" ? (
       <BarChart chart={chart} id={`${a.id}-chart-${i}`} />
     ) : (
-      <LineChart chart={chart} id={`${a.id}-chart-${i}`} />
+      <KursChart
+        id={`${a.id}-chart-${i}`}
+        titel={chart.title}
+        untertitel={chart.subtitle}
+        reihen={[{ label: chart.title, unit: chart.unit ?? "", source: chart.source, series: chart.series }]}
+        spanne="Max"
+        format="breit"
+        tabelle={chart.series.length <= 60}
+      />
     )
   )}
 

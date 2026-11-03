@@ -1,4 +1,5 @@
 ---
+import Emblem from "./Emblem.astro";
 interface Props {
   factcheck: any; // { claim, verdict, evidence }
 }
@@ -12,7 +13,7 @@ const mod =
 ---
 
 <aside class={`factcheck-box factcheck-box--${mod}`}>
-  <span class="factcheck-box__titel">Fact Check <span class="factcheck-box__verdict">{factcheck.verdict}</span></span>
-  <p style="margin:0 0 6px; font-style:italic">„{factcheck.claim}“</p>
-  <p style="margin:0"><strong>Beleg:</strong> {factcheck.evidence}</p>
+  <span class="factcheck-box__titel"><Emblem name="faktencheck" size={30} class="box-bild" />Fact Check <span class="factcheck-box__verdict">{factcheck.verdict}</span></span>
+  <p class="factcheck-box__claim">„{factcheck.claim}“</p>
+  <p class="factcheck-box__beleg"><strong>Beleg:</strong> {factcheck.evidence}</p>
 </aside>

@@ -81,6 +81,13 @@ try {
   console.warn("⚠️  Logo-Abruf fehlgeschlagen; Fallback-Chips greifen.");
 }
 
+// Kursverläufe für die interaktiven Charts (Märkte, Drei Aktien); nicht fatal.
+try {
+  execFileSync("node", ["scripts/fetch-history.mjs", dest], { cwd: root, stdio: "inherit" });
+} catch {
+  console.warn("⚠️  Kursverläufe nicht geladen; Charts entfallen.");
+}
+
 if (doCommit) {
   execFileSync("git", ["add", "content/", "public/logos/"], { cwd: root, stdio: "inherit" });
   execFileSync("git", ["commit", "-m", `Ausgabe ${slug} (extern angeliefert)`], { cwd: root, stdio: "inherit" });

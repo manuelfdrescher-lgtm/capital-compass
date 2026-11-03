@@ -1,20 +1,41 @@
 ---
-// Ressort-Überschrift mit Kompass-Ornament und gestochenen Doppellinien.
-import CompassRose from "./CompassRose.astro";
+// Ressort-Überschrift: Rubrik-Bild im Stil des Logos, Titel und
+// Untertitel linksbündig, darunter die gestochene Doppellinie.
+import Emblem from "./Emblem.astro";
 
 interface Props {
   titel: string;
   untertitel?: string;
   level?: "h1" | "h2";
+  bild?: string;
 }
-const { titel, untertitel, level = "h2" } = Astro.props;
+
+// Wiederkehrende Rubriken bekommen automatisch ihr Bild.
+const BILDER: Record<string, string> = {
+  "Im Fokus": "fokus",
+  "Branchen-Monitor": "branchen",
+  News: "news",
+  Politik: "politik",
+  Unternehmen: "unternehmen",
+  Makro: "makro",
+  "Drei Aktien des Tages": "aktien",
+  Watchlist: "watchlist",
+  Lernecke: "lernecke",
+  "Vertiefung: Die Modelle dahinter": "mechanik",
+  "Finance Link": "gewinner",
+  "Glossar dieser Ausgabe": "glossar",
+  Archiv: "archiv",
+};
+
+const { titel, untertitel, level = "h2", bild } = Astro.props;
 const Tag = level;
+const name = bild ?? BILDER[titel];
 ---
 
-<div class="ressort-kopf">
-  <div class="ornament-linie" role="presentation">
-    <CompassRose size={26} withRing={false} />
+<div class={`ressort-kopf${name ? "" : " ressort-kopf--ohne-bild"}`}>
+  {name && <Emblem name={name} size={84} class="ressort-kopf__bild" />}
+  <div class="ressort-kopf__text">
+    <Tag class="ressort-titel">{titel}</Tag>
+    {untertitel && <p class="ressort-untertitel">{untertitel}</p>}
   </div>
-  <Tag class="ressort-titel">{titel}</Tag>
-  {untertitel && <p class="ressort-untertitel">{untertitel}</p>}
 </div>

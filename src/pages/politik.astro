@@ -13,6 +13,6 @@ const artikel = data.articles.filter((a) => a.ressort === "politik");
 <Base title="Politik" active="politik" edition={data.edition}>
   <RessortKopf level="h1" titel="Politik" untertitel="Deutsche Politik und ihre Wirkung auf Märkte, Branchen und Standort: Gesetzgebung, Haushalt, Regulierung." />
   <hr class="ressort-linie" />
-  {artikel.length === 0 && <p style="text-align:center">Diese Ausgabe enthält keine Politik-Artikel.</p>}
+  {artikel.length === 0 && <p class="hinweiszeile">Diese Ausgabe enthält keine Politik-Artikel.</p>}
   {artikel.map((a) => <Article article={a} />)}
 </Base>

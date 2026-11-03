@@ -11,6 +11,6 @@ const artikel = data.articles.filter((a) => a.ressort === "news" || a.ressort ==
 <Base title="News" active="news" edition={data.edition}>
   <RessortKopf level="h1" titel="News" untertitel="Alle wichtigen Meldungen seit der letzten Ausgabe, priorisiert nach Relevanz und Lernwert." />
   <hr class="ressort-linie" />
-  {artikel.length === 0 && <p style="text-align:center">Diese Ausgabe enthält keine separaten News-Artikel.</p>}
+  {artikel.length === 0 && <p class="hinweiszeile">Diese Ausgabe enthält keine separaten News-Artikel.</p>}
   {artikel.map((a) => <Article article={a} />)}
 </Base>

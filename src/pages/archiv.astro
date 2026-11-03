@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import RessortKopf from "../components/RessortKopf.astro";
 import { getAllEditions, getLatestEdition } from "../lib/editions.mjs";
 import { formatDateLong, slotLabel } from "../lib/format.mjs";
 
@@ -9,11 +10,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <Base title="Archiv" active="archiv" edition={latest.data.edition}>
-  <div class="ressort-kopf">
-    <h1 class="ressort-titel">Archiv</h1>
-    <p class="ressort-untertitel">Alle Ausgaben mit stabilen URLs. Die Suche durchsucht sämtliche Artikel.</p>
-  </div>
-  <hr class="ressort-linie" />
+  <RessortKopf level="h1" titel="Archiv" untertitel="Alle Ausgaben mit stabilen URLs. Die Suche durchsucht sämtliche Artikel." />
 
   <div class="suche" id="suche"></div>
 
@@ -21,14 +18,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
     {editions.map(({ slug, data }) => (
       <li>
         <span>
-          <a href={`${base}/ausgabe/${slug}/`} style="font-weight:700; font-size:18px; text-decoration:none">
+          <span class="nummer">Nr. {data.edition.number}{data.edition.isExample ? " · Beispiel" : ""}</span>
+          <a class="archiv-liste__titel" href={`${base}/ausgabe/${slug}/`}>
             {formatDateLong(data.edition.date)} · {slotLabel(data.edition.slot)}
           </a>
-          <span class="dek" style="display:block; font-size:14px; margin:2px 0 0">
+          <span class="archiv-liste__dek">
             {data.articles.find((a) => a.ressort === "titelseite")?.headline}
           </span>
         </span>
-        <span class="nummer">Nr. {data.edition.number}{data.edition.isExample ? " · Beispiel" : ""}</span>
       </li>
     ))}
   </ul>

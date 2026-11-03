@@ -41,7 +41,7 @@ const { data } = getLatestEdition();
   {data.financeLink && (
     <>
       <RessortKopf titel="Finance Link" untertitel="Eine News der Ausgabe, komplett durch Gewinn- und Verlustrechnung, Bilanz, Cashflow und Bewertung gedacht." />
-      <article class="karte" style="max-width:820px; margin:0 auto" data-pagefind-body>
+      <article class="karte finance-link" data-pagefind-body>
         <h3 style="margin-top:0; font-family:var(--display)">{data.financeLink.titel}</h3>
         {data.financeLink.absaetze.map((p) => <p>{p}</p>)}
         <aside class="mechanik-box" style="margin-bottom:0">
