@@ -188,6 +188,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-10-18-morning/",
       "headline": "Speicher-Angst und teures Geld setzen die Wall Street unter Druck"
+    },
+    {
+      "number": 28,
+      "date": "2026-11-03",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-03-morning/",
+      "headline": "Zweifel an der KI-Rendite schicken Technologieaktien auf Talfahrt"
     }
   ],
   "recentStockPicks": [
@@ -595,7 +602,22 @@
       "slug": "2026-10-18-morning",
       "name": "Befesa S.A. (BFSA)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-03-morning",
+      "name": "Vaisala Oyj (VAIAS)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-03-morning",
+      "name": "LeMaitre Vascular (LMAT)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-03-morning",
+      "name": "Mueller Water Products (MWA)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-10-18T12:38:31.099Z"
+  "lastUpdated": "2026-11-03T10:53:16.087Z"
 }

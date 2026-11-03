@@ -89,3 +89,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-10-18-morning | Rational AG (RAA) | — _(Profiküchen-Weltmarktführer mit Preissetzungsmacht durch messbare Kostenersparnis)_
 - 2026-10-18-morning | Kinsale Capital Group (KNSL) | — _(Spezialversicherer mit strukturellem Wachstum und außergewöhnlicher Profitabilität)_
 - 2026-10-18-morning | Befesa S.A. (BFSA) | — _(zyklischer Deep-Value-Fall, abhängig von Zinkpreis, Behandlungsentgelten und Stahlproduktion)_
+- 2026-11-03-morning | Vaisala Oyj (VAIAS) | — _(rund 2,0 Mrd. €; Weltmarktführer für Wetter- und Umweltmesstechnik, Auftragseingang +38 %)_
+- 2026-11-03-morning | LeMaitre Vascular (LMAT) | — _(rund 1,66 Mrd. €; Nischenkonsolidierer der Gefäßchirurgie mit 72 % Bruttomarge)_
+- 2026-11-03-morning | Mueller Water Products (MWA) | — _(rund 3,35 Mrd. €; Margenexpansion im defensiven Wasserinfrastruktur-Markt)_

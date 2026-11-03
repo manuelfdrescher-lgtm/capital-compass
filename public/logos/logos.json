@@ -1248,5 +1248,39 @@
     "file": null,
     "name": "Befesa S.A.",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "palantir": {
+    "file": "palantir.svg",
+    "name": "Palantir Technologies",
+    "source": "https://commons.wikimedia.org/wiki/File:Palantir_Technologies_logo.svg",
+    "license": "Public domain",
+    "artist": "Palantir Technologies.\n\nThe original uploader was KarimKoueider at English Wikipedia.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "vertex": {
+    "file": "vertex.png",
+    "name": "Vertex Pharmaceuticals",
+    "source": "https://commons.wikimedia.org/wiki/File:VertexPharma-logo2.png",
+    "license": "Public domain",
+    "artist": "Vertex Pharmaceuticals Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "vaisala": {
+    "file": "vaisala.svg",
+    "name": "Vaisala Oyj",
+    "source": "https://commons.wikimedia.org/wiki/File:Vaisala_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "lemaitre": {
+    "file": null,
+    "name": "LeMaitre Vascular",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "muellerwater": {
+    "file": null,
+    "name": "Müller Water Products",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

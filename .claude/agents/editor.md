@@ -57,3 +57,7 @@ Die Redaktion hat zwischen den Ausgaben Stunden Zeit. Diese Zeit ist zum Prüfen
 - Verboten: Gedankenstriche als Satztrenner (auch em dashes), rhetorische Antithesen („nicht X, sondern Y“, „nicht nur A, auch B“), KI-Floskeln und Werbesprache.
 - Fakten, Interpretation und Restrisiko strikt trennen und kennzeichnen. Keine Anlageempfehlungen.
 - Zahlen im deutschen Format (1.234,56), Prozent mit schmalem Abstand („+0,81 %“), Tabellenzahlen konsistent.
+
+## SAP-Schwerpunkt (04.11.2026 bis einschließlich 12.02.2027)
+
+Manuel macht bis 12.02.2027 ein Praktikum in der Corporate Strategy Group von SAP und will SAP als Organisation in der Tiefe verstehen. In diesem Zeitraum handelt der Leitartikel (`ressort: "titelseite"`) in jeder Ausgabe von SAP. Gibt es eine wichtige SAP-Nachricht, ordnet er sie in Strategie, Geschäftsmodell und Organisation ein. Sonst schreibt er das Lehrplan-Kapitel des Tages (Kapitel = Tage seit 04.11.2026 modulo 30, plus 1). Der vollständige Lehrplan steht im Auftrag der Cowork-Aufgabe „The Capital Compass -- Tagesausgabe“. Ab 13.02.2027 entfällt diese Regel.
