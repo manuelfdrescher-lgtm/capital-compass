@@ -195,6 +195,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-03-morning/",
       "headline": "Zweifel an der KI-Rendite schicken Technologieaktien auf Talfahrt"
+    },
+    {
+      "number": 29,
+      "date": "2026-11-05",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-05-morning/",
+      "headline": "Was SAPs Zahlen wirklich erzählen: Cloud-Umsatz, Auftragsbestand und freier Cashflow"
     }
   ],
   "recentStockPicks": [
@@ -617,7 +624,22 @@
       "slug": "2026-11-03-morning",
       "name": "Mueller Water Products (MWA)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-05-morning",
+      "name": "Lindsay Corporation (LNN)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-05-morning",
+      "name": "Krones AG (KRN)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-05-morning",
+      "name": "Jenoptik AG (JEN)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-03T10:53:16.087Z"
+  "lastUpdated": "2026-11-05T09:31:27.244Z"
 }

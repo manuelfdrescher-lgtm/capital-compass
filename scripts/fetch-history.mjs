@@ -21,6 +21,22 @@ const HEADERS = { "User-Agent": "Mozilla/5.0" };
 const HOSTS = ["query1.finance.yahoo.com", "query2.finance.yahoo.com"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// GICS-Sektoren, gemessen an den US-Sektorfonds (SPDR Select Sector)
+const SEKTOREN = [
+  ["Energie", "XLE"],
+  ["Grundstoffe", "XLB"],
+  ["Industrie", "XLI"],
+  ["Zyklischer Konsum", "XLY"],
+  ["Basiskonsum", "XLP"],
+  ["Gesundheit", "XLV"],
+  ["Finanzen", "XLF"],
+  ["Informationstechnologie", "XLK"],
+  ["Kommunikation", "XLC"],
+  ["Versorger", "XLU"],
+  ["Immobilien", "XLRE"],
+  ["Gesamtmarkt", "SPY"], // Maßstab: S&P 500
+];
+
 const INSTRUMENTE = [
   { key: "dax", label: "DAX", symbol: "^GDAXI", unit: " Pkt." },
   { key: "sap", label: "SAP-Aktie", symbol: "SAP.DE", unit: " €" },
@@ -46,11 +62,13 @@ async function getJson(path) {
   return null;
 }
 
-async function verlauf(symbol) {
+// gesamtrendite: Schlusskurse inklusive Dividenden (adjclose), damit
+// dividendenstarke Sektoren nicht schlechter aussehen, als sie sind.
+async function verlauf(symbol, gesamtrendite = false) {
   const j = await getJson(`/v8/finance/chart/${encodeURIComponent(symbol)}?range=5y&interval=1d`);
   const r = j?.chart?.result?.[0];
   if (!r?.timestamp) return null;
-  const closes = r.indicators?.quote?.[0]?.close ?? [];
+  const closes = (gesamtrendite ? r.indicators?.adjclose?.[0]?.adjclose : null) ?? r.indicators?.quote?.[0]?.close ?? [];
   const punkte = [];
   r.timestamp.forEach((ts, i) => {
     const v = closes[i];
@@ -127,9 +145,26 @@ for (const inst of INSTRUMENTE) {
   });
   console.log(`✓ ${inst.label}: ${r.punkte.length} Tage`);
 }
-if (history.length > 0) {
+const sektoren = {};
+for (const [name, symbol] of SEKTOREN) {
+  const r = await verlauf(symbol, true);
+  await sleep(300);
+  if (!r || r.punkte.length < 30) {
+    console.warn(`⚠️  Sektor ${name} (${symbol}): kein Verlauf geladen`);
+    continue;
+  }
+  const grenze = new Date(Date.parse(r.punkte[r.punkte.length - 1].t) - 400 * 86400000).toISOString().slice(0, 10);
+  sektoren[name] = {
+    symbol,
+    source: `Yahoo Finance (${symbol}, SPDR), Gesamtrendite inkl. Dividenden in US-Dollar`,
+    series: r.punkte.filter((p) => p.t >= grenze).map((p) => ({ t: p.t, v: runden(p.v) })),
+  };
+  console.log(`✓ Sektor ${name} (${symbol})`);
+}
+
+if (history.length > 0 || Object.keys(sektoren).length > 0) {
   const ziel = join(dirname(fileURLToPath(import.meta.url)), "..", "content", "market-history.json");
-  writeFileSync(ziel, JSON.stringify({ stand: json.edition?.date ?? null, reihen: history }));
+  writeFileSync(ziel, JSON.stringify({ stand: json.edition?.date ?? null, reihen: history, sektoren }));
   console.log("✓ content/market-history.json geschrieben");
 }
 

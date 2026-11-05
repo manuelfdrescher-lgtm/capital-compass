@@ -6,11 +6,13 @@ import "@fontsource-variable/source-serif-4";
 import "@fontsource/barlow-condensed/400.css";
 import "@fontsource/barlow-condensed/500.css";
 import "@fontsource/barlow-condensed/600.css";
+import "@fontsource/special-elite/400.css";
 import "../styles/global.css";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import CompassRose from "../components/CompassRose.astro";
 import MastheadLogo from "../components/MastheadLogo.astro";
+import RubrikDock from "../components/RubrikDock.astro";
 import { formatDateLong, slotLabel } from "../lib/format.mjs";
 
 // Eigenes Marken-Logo (Vollversion mit Wortmarke) hat Vorrang: dann wird die
@@ -30,14 +32,14 @@ const { title, description, active = "", edition } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const nav = [
-  { href: `${base}/`, key: "titelseite", label: "Titelseite" },
-  { href: `${base}/news/`, key: "news", label: "News" },
-  { href: `${base}/politik/`, key: "politik", label: "Politik" },
-  { href: `${base}/branchen-monitor/`, key: "branchen-monitor", label: "Branchen-Monitor" },
-  { href: `${base}/unternehmen/`, key: "unternehmen", label: "Unternehmen" },
-  { href: `${base}/drei-aktien/`, key: "drei-aktien", label: "Drei Aktien" },
-  { href: `${base}/lernecke/`, key: "lernecke", label: "Lernecke" },
-  { href: `${base}/archiv/`, key: "archiv", label: "Archiv" },
+  { href: `${base}/`, key: "titelseite", label: "Titelseite", bild: "topthemen" },
+  { href: `${base}/news/`, key: "news", label: "News", bild: "news" },
+  { href: `${base}/politik/`, key: "politik", label: "Politik", bild: "politik" },
+  { href: `${base}/branchen-monitor/`, key: "branchen-monitor", label: "Branchen-Monitor", bild: "branchen" },
+  { href: `${base}/unternehmen/`, key: "unternehmen", label: "Unternehmen", bild: "unternehmen" },
+  { href: `${base}/drei-aktien/`, key: "drei-aktien", label: "Drei Aktien", bild: "aktien" },
+  { href: `${base}/lernecke/`, key: "lernecke", label: "Lernecke", bild: "lernecke" },
+  { href: `${base}/archiv/`, key: "archiv", label: "Archiv", bild: "archiv" },
 ];
 ---
 
@@ -50,6 +52,7 @@ const nav = [
     <meta name="description" content={description ?? "The Capital Compass: a daily briefing on markets, business and the global economy. Bildung, keine Anlageberatung."} />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <script is:inline>document.documentElement.classList.add("js-an");</script>
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
@@ -71,19 +74,27 @@ const nav = [
         {edition && (
           <p class="datumszeile">
             <span>{formatDateLong(edition.date)}</span>
-            <span>{slotLabel(edition.slot)} · Ausgabe Nr. {edition.number}</span>
+            <span>Ausgabe Nr. {edition.number}</span>
             <span>Für Manuel Drescher</span>
           </p>
         )}
-        <nav class="hauptnav" aria-label="Ressorts">
+        <nav class="hauptnav" aria-label="Ressorts" data-hauptnav>
+          <div class="hauptnav__leiste">
           {nav.map((item) => (
-            <a href={item.href} aria-current={active === item.key ? "page" : undefined}>{item.label}</a>
+            <a href={item.href} aria-current={active === item.key ? "page" : undefined}>
+              <span class="hauptnav__text">{item.label}</span>
+              <img class="hauptnav__bild" src={`${base}/images/rubriken/leiste/${item.bild}.png`} alt="" width="68" height="68" decoding="async" aria-hidden="true" />
+              <span class="hauptnav__blase" aria-hidden="true">{item.label}</span>
+            </a>
           ))}
+          </div>
         </nav>
         {edition?.isExample && (
           <p class="beispiel-banner">Beispiel-Ausgabe mit erfundenen Demodaten. Keine echten Kurse, keine echten Nachrichten.</p>
         )}
       </header>
+
+      <RubrikDock active={active} />
 
       <main id="inhalt">
         <slot />
@@ -98,5 +109,126 @@ const nav = [
         <p>Jede Zahl dieser Ausgabe ist vor Veröffentlichung gegen unabhängige Quellen geprüft. Quellen mit Tier-Kennzeichnung stehen an jedem Artikel. Unternehmenslogos: Wikimedia Commons, Markenrechte bei den jeweiligen Unternehmen. „Ein Kurs bewegt sich mit der Differenz zwischen Nachricht und Erwartung.“</p>
       </footer>
     </div>
+    <script>
+      // Grafiken bauen sich auf, sobald sie ins Bild kommen. Der Ausgangs-
+      // zustand steht im CSS (.js-an), damit beim Laden nichts flackert.
+      const ziele = document.querySelectorAll<HTMLElement>("[data-einblenden]");
+      const zeigen = (el: Element) => el.classList.add("gezeigt");
+      if ("IntersectionObserver" in window) {
+        const beobachter = new IntersectionObserver((eintraege) => {
+          for (const e of eintraege) {
+            if (e.isIntersecting) {
+              zeigen(e.target);
+              beobachter.unobserve(e.target);
+            }
+          }
+        }, { threshold: 0.2 });
+        ziele.forEach((el) => beobachter.observe(el));
+      } else {
+        ziele.forEach(zeigen);
+      }
+      window.addEventListener("beforeprint", () => ziele.forEach(zeigen));
+
+      // Vergleichs-Grafiken: Antippen (Handy) oder Klick hebt eine Reihe hervor.
+      document.querySelectorAll<SVGSVGElement>(".grafik--punkte svg").forEach((svg) => {
+        svg.addEventListener("click", (e) => {
+          const zeile = (e.target as Element).closest(".punkt-zeile");
+          const aktiv = zeile?.classList.contains("ist-aktiv");
+          svg.querySelectorAll(".punkt-zeile").forEach((z) => z.classList.remove("ist-aktiv"));
+          if (zeile && !aktiv) zeile.classList.add("ist-aktiv");
+          svg.classList.toggle("hat-fokus", !!zeile && !aktiv);
+        });
+      });
+
+      // Navigation: Nur die Rubrik unter dem Cursor wechselt von der Schrift
+      // zum Bild, das zur Mitte hin wächst. Die anderen bleiben Schrift. Auf
+      // dem Handy zeigt ein Tippen kurz das Bild, dann öffnet sich die
+      // Rubrik. Animiert werden nur Deckkraft und Größe, die Mausposition
+      // wird höchstens einmal pro Bildschirmbild ausgewertet.
+      const hauptnav = document.querySelector<HTMLElement>("[data-hauptnav]");
+      if (hauptnav) {
+        const links = [...hauptnav.querySelectorAll<HTMLAnchorElement>("a")];
+        const ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const maus = matchMedia("(hover: hover) and (pointer: fine)");
+        let mitten: { x: number; y: number; zone: number }[] = [];
+        let schritt = 0;
+        let nah = -1;
+        const ende = () => {
+          cancelAnimationFrame(schritt);
+          mitten = [];
+          links[nah]?.style.removeProperty("--s");
+          links[nah]?.classList.remove("ist-nah");
+          nah = -1;
+          hauptnav.classList.remove("ist-dock");
+        };
+        const vergroessern = (x: number, y: number) => {
+          let best = Infinity;
+          let ziel = -1;
+          mitten.forEach((m, i) => {
+            const d = Math.hypot(x - m.x, (y - m.y) * 2);
+            if (d < best) { best = d; ziel = i; }
+          });
+          if (ziel !== nah) {
+            links[nah]?.style.removeProperty("--s");
+            links[nah]?.classList.remove("ist-nah");
+            links[ziel]?.classList.add("ist-nah");
+            nah = ziel;
+          }
+          const f = Math.max(0, 1 - (best / mitten[ziel].zone) ** 2);
+          links[ziel].style.setProperty("--s", (0.8 + 0.2 * f).toFixed(3));
+        };
+        hauptnav.addEventListener("pointerenter", (ev) => {
+          if (ev.pointerType !== "mouse" || ruhig || !maus.matches) return;
+          const rahmen = links.map((a) => a.getBoundingClientRect());
+          mitten = rahmen.map((r, i) => {
+            // Zone: bis zur Hälfte des Wegs zur Nachbar-Rubrik
+            const x = r.left + r.width / 2;
+            const nachbar = [rahmen[i - 1], rahmen[i + 1]].filter(Boolean).map((q) => Math.abs(q!.left + q!.width / 2 - x) / 2);
+            return { x, y: r.top + r.height / 2, zone: Math.max(r.width / 2, ...nachbar) };
+          });
+          hauptnav.classList.add("ist-dock");
+          vergroessern(ev.clientX, ev.clientY);
+        });
+        hauptnav.addEventListener("pointermove", (ev) => {
+          if (!mitten.length) return;
+          cancelAnimationFrame(schritt);
+          schritt = requestAnimationFrame(() => vergroessern(ev.clientX, ev.clientY));
+        });
+        hauptnav.addEventListener("pointerleave", ende);
+        // Klick auf das Bild statt auf die Schrift: zur Rubrik unter dem Cursor
+        hauptnav.addEventListener("click", (ev) => {
+          if (!hauptnav.classList.contains("ist-dock") || (ev.target as Element).closest("a") || nah < 0) return;
+          if (ev.metaKey || ev.ctrlKey) window.open(links[nah].href, "_blank");
+          else location.href = links[nah].href;
+        });
+        // Touch: Tippen zeigt kurz das Bild, dann öffnet sich die Rubrik
+        links.forEach((a) => a.addEventListener("click", (ev) => {
+          if (ruhig || maus.matches || ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
+          ev.preventDefault();
+          a.classList.add("ist-gedrueckt");
+          setTimeout(() => { location.href = a.href; }, 320);
+        }));
+        window.addEventListener("pageshow", () => { ende(); links.forEach((a) => a.classList.remove("ist-gedrueckt")); });
+        // Handy: die aktuelle Rubrik in die Mitte der Leiste holen und die
+        // Ränder dort weich ausblenden, wo noch Rubriken folgen
+        const leiste = hauptnav.querySelector<HTMLElement>(".hauptnav__leiste")!;
+        const aktuell = leiste.querySelector<HTMLElement>('[aria-current="page"]');
+        if (aktuell && leiste.scrollWidth > leiste.clientWidth) {
+          leiste.scrollLeft = aktuell.offsetLeft - (leiste.clientWidth - aktuell.offsetWidth) / 2;
+        }
+        let raender = 0;
+        const raenderSetzen = () => {
+          const rest = leiste.scrollWidth - leiste.clientWidth - leiste.scrollLeft;
+          leiste.classList.toggle("mehr-links", leiste.scrollLeft > 2);
+          leiste.classList.toggle("mehr-rechts", rest > 2);
+        };
+        leiste.addEventListener("scroll", () => {
+          cancelAnimationFrame(raender);
+          raender = requestAnimationFrame(raenderSetzen);
+        }, { passive: true });
+        window.addEventListener("resize", raenderSetzen);
+        raenderSetzen();
+      }
+    </script>
   </body>
 </html>

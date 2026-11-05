@@ -1282,5 +1282,76 @@
     "file": null,
     "name": "Müller Water Products",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "coreweave": {
+    "file": "coreweave.svg",
+    "name": "CoreWeave",
+    "source": "https://commons.wikimedia.org/wiki/File:CoreWeave_logo.svg",
+    "license": "Public domain",
+    "artist": "CoreWeave, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "firstsolar": {
+    "file": null,
+    "name": "First Solar",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "hca": {
+    "file": "hca.svg",
+    "name": "HCA Healthcare",
+    "source": "https://commons.wikimedia.org/wiki/File:2019_HCA_logo.svg",
+    "license": "Public domain",
+    "artist": "HCA Healthcare",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "centene": {
+    "file": null,
+    "name": "Centene",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "trumpmedia": {
+    "file": null,
+    "name": "Trump Media",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lockheed": {
+    "file": "lockheed.svg",
+    "name": "Lockheed Martin",
+    "source": "https://commons.wikimedia.org/wiki/File:Lockheed_Martin_logo_(2011%E2%80%932022).svg",
+    "license": "Public domain",
+    "artist": "Lockheed Martin",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "advantest": {
+    "file": "advantest.svg",
+    "name": "Advantest",
+    "source": "https://commons.wikimedia.org/wiki/File:ADVANTEST_company_logos.svg",
+    "license": "Public domain",
+    "artist": "鉄之介",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cvs": {
+    "file": "cvs.svg",
+    "name": "CVS Health",
+    "source": "https://commons.wikimedia.org/wiki/File:CVS_Health_Logo.svg",
+    "license": "Public domain",
+    "artist": "CVS Health",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "lindsay": {
+    "file": "lindsay.svg",
+    "name": "Lindsay Corporation",
+    "source": "https://commons.wikimedia.org/wiki/File:Lindsay_Corporation.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "krones": {
+    "file": "krones.svg",
+    "name": "Krones AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Krones_Logo.svg",
+    "license": "Public domain",
+    "artist": "Original uploader was Александр Мотин at ru.wikipedia",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
   }
 }

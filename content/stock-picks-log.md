@@ -92,3 +92,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-03-morning | Vaisala Oyj (VAIAS) | — _(rund 2,0 Mrd. €; Weltmarktführer für Wetter- und Umweltmesstechnik, Auftragseingang +38 %)_
 - 2026-11-03-morning | LeMaitre Vascular (LMAT) | — _(rund 1,66 Mrd. €; Nischenkonsolidierer der Gefäßchirurgie mit 72 % Bruttomarge)_
 - 2026-11-03-morning | Mueller Water Products (MWA) | — _(rund 3,35 Mrd. €; Margenexpansion im defensiven Wasserinfrastruktur-Markt)_
+- 2026-11-05-morning | Lindsay Corporation (LNN) | — _(rund 0,96 Mrd. €; Qualitätskompounder im Bewässerungs-Duopol, Treiber Ersatzzyklus und Mechanisierung in Schwellenländern)_
+- 2026-11-05-morning | Krones AG (KRN) | — _(rund 3,5 Mrd. €; Weltmarktführer für Abfüll- und Verpackungstechnik, Rekordauftragsbestand 4,33 Mrd. €)_
+- 2026-11-05-morning | Jenoptik AG (JEN) | — _(rund 2,3 Mrd. €; Photonikkonzern als Nischenprofiteur des Halbleiter-Investitionszyklus)_

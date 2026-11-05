@@ -1,53 +1,149 @@
 ---
-// Zwei Ansichten: kompakt (Titelseite, eine Zeile je Sektor) und
-// vollständig (Branchen-Monitor-Seite, eine Karte je Sektor mit
-// Tageslage UND der strukturellen Einordnung istZustand — dem
-// "kleinen einordnenden Artikel je Industrie").
+// Branchen-Monitor: oben die Sektor-Bilanz (schraffierter Balken: wie viele
+// der 11 GICS-Sektoren aufwärts, seitwärts, abwärts), darunter ein Raster
+// aus Sektor-Karten mit Kupferstich-Motiv, Richtungs-Plakette, Tageslage
+// und Wert. Kompakt (Titelseite) oder vollständig mit Ist-Zustand
+// (Branchen-Monitor-Seite). Die Abschnitte liegen per Subgrid auf
+// gemeinsamen Zeilenspuren, damit Karten einer Reihe exakt fluchten.
+import Emblem from "./Emblem.astro";
+import SektorHantel from "./SektorHantel.astro";
+import { sektorKennzahlen, prozentKurz } from "../lib/sektoren.mjs";
+import { datumLang } from "../lib/kurschart.mjs";
+
 interface Props {
   monitor: any[];
   compact?: boolean;
+  daten?: Record<string, any> | null; // Kursreihen der Sektorfonds (nur neueste Ausgabe)
 }
-const { monitor, compact = false } = Astro.props;
+const { monitor, compact = false, daten = null } = Astro.props;
+const kennzahlen = Object.fromEntries(monitor.map((s) => [s.sektor, daten ? sektorKennzahlen(daten[s.sektor]) : null]));
+const mitDaten = Object.values(kennzahlen).filter(Boolean);
+const stand = mitDaten[0]?.stand;
+const ohneWert = (w) => !w || /keine .*belegt/i.test(w);
+const markt = daten?.Gesamtmarkt ? sektorKennzahlen(daten.Gesamtmarkt) : null;
+const hantel = mitDaten.length >= 6
+  ? monitor.filter((s) => kennzahlen[s.sektor]).map((s) => ({ sektor: s.sektor, w1: kennzahlen[s.sektor].w1, m1: kennzahlen[s.sektor].m1 }))
+  : null;
+
+const BILD: Record<string, string> = {
+  Energie: "sektor-energie",
+  Grundstoffe: "sektor-grundstoffe",
+  Industrie: "sektor-industrie",
+  "Zyklischer Konsum": "sektor-zyklisch",
+  Basiskonsum: "sektor-basis",
+  Gesundheit: "sektor-gesundheit",
+  Finanzen: "sektor-finanzen",
+  Informationstechnologie: "sektor-it",
+  Kommunikation: "sektor-kommunikation",
+  Kommunikationsdienste: "sektor-kommunikation",
+  Versorger: "sektor-versorger",
+  Immobilien: "sektor-immobilien",
+};
+const slug = (t: string) => "sektor-" + t.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/[^a-z0-9]+/g, "-");
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const pfeil = { up: "▲", down: "▼", neutral: "◆" };
 const richtungLabel = { up: "aufwärts", down: "abwärts", neutral: "seitwärts" };
+
+const zahl = (r) => monitor.filter((s) => s.richtung === r).length;
+const bilanz = [
+  { r: "up", n: zahl("up") },
+  { r: "neutral", n: zahl("neutral") },
+  { r: "down", n: zahl("down") },
+].filter((b) => b.n > 0);
+const gesamt = monitor.length || 1;
+const BW = 760;
+let x = 0;
+const segmente = bilanz.map((b) => {
+  const w = (b.n / gesamt) * BW;
+  const seg = { ...b, x, w };
+  x += w;
+  return seg;
+});
 ---
 
-{compact ? (
-  <ul class="monitor">
+<section class={`sektoren${compact ? " sektoren--kompakt" : ""}`} aria-label="Branchen-Monitor">
+  <div class="sektor-bilanz" data-einblenden>
+    <p class="sektor-bilanz__titel">Sektor-Bilanz der Ausgabe</p>
+    <svg class="sektor-bilanz__balken" viewBox={`0 0 ${BW} 26`} preserveAspectRatio="none" role="img" aria-label={bilanz.map((b) => `${b.n} ${richtungLabel[b.r]}`).join(", ")}>
+      <defs>
+        <pattern id="bilanz-up" class="schraffur schraffur--auf" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><rect class="schraffur__grund" width="5" height="5" /><line class="schraffur__linie" x1="0" y1="0" x2="0" y2="5" /></pattern>
+        <pattern id="bilanz-neutral" class="schraffur schraffur--seit" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><rect class="schraffur__grund" width="5" height="5" /><line class="schraffur__linie" x1="0" y1="0" x2="0" y2="5" /></pattern>
+        <pattern id="bilanz-down" class="schraffur schraffur--ab" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><rect class="schraffur__grund" width="5" height="5" /><line class="schraffur__linie" x1="0" y1="0" x2="0" y2="5" /></pattern>
+      </defs>
+      {segmente.map((s, i) => (
+        <rect class={`bilanz-segment bilanz-segment--${s.r}`} style={`--i: ${i}`} x={s.x} y="0" width={s.w} height="26" fill={`url(#bilanz-${s.r})`} />
+      ))}
+    </svg>
+    <p class="sektor-bilanz__legende">
+      {bilanz.map((b) => (
+        <span class={`richtung richtung--${b.r}`}>{pfeil[b.r]} {b.n} {richtungLabel[b.r]}</span>
+      ))}
+    </p>
+  </div>
+
+  {!compact && hantel && (
+    <SektorHantel zeilen={hantel} stand={datumLang(stand)} quelle="Yahoo Finance, SPDR Select Sector Fonds und SPDR S&P 500 (SPY), Gesamtrendite" markt={markt ? { w1: markt.w1, m1: markt.m1 } : null} />
+    <aside class="mechanik-box lesehilfe">
+      <span class="mechanik-box__titel"><Emblem name="branchen" size={30} class="box-bild" />So liest du den Branchen-Monitor</span>
+      <p>Ein Sektorfonds bündelt alle Aktien einer Branche aus dem S&amp;P 500, etwa alle großen Energiekonzerne. Seine Entwicklung zeigt, wie die ganze Branche läuft, unabhängig vom einzelnen Unternehmen. Alle elf Sektoren kommen aus derselben Fondsfamilie und folgen derselben Methodik. Deshalb lassen sie sich jeden Tag und über das ganze Jahr direkt vergleichen.</p>
+      <p>Gemessen wird die Gesamtrendite inklusive Dividenden. So werden Branchen mit hohen Ausschüttungen wie Versorger oder Basiskonsum fair verglichen. Die gestrichelte Linie zeigt den Gesamtmarkt. Ein Sektor rechts davon läuft besser als der Markt, ein Sektor links davon schlechter.</p>
+      <p>Wandert das Geld von einer Branche in eine andere, sprechen Anleger von Sektor-Rotation. Steigende Zinsen treffen meist Wachstumsbranchen wie Technologie, weil deren Gewinne weit in der Zukunft liegen und beim Abzinsen stärker an Wert verlieren. Defensive Branchen wie Basiskonsum, Gesundheit und Versorger halten sich dann oft besser, weil ihre Nachfrage auch im Abschwung stabil bleibt. Das Warum zu jeder Branche steht in den Karten darunter.</p>
+    </aside>
+  )}
+
+  <ul class="sektor-raster">
     {monitor.map((s) => (
-      <li class="monitor__zeile">
-        <span class={`monitor__pfeil monitor__pfeil--${s.richtung}`} aria-label={richtungLabel[s.richtung]}>{pfeil[s.richtung]}</span>
-        <span class="monitor__sektor">{s.sektor}
-          <span class="monitor__def">{s.wasIstDas}</span>
-        </span>
-        <span class="monitor__lage">{s.lage}</span>
-        <span class="monitor__wert">{s.tagesWert}</span>
-      </li>
-    ))}
-  </ul>
-) : (
-  <div class="monitor-karten">
-    {monitor.map((s) => (
-      <article class="karte monitor-karte">
-        <div class="monitor-karte__kopf">
-          <h3 class="monitor-karte__sektor">{s.sektor}</h3>
-          <span class={`monitor-karte__pfeil monitor-karte__pfeil--${s.richtung}`} aria-label={richtungLabel[s.richtung]}>{pfeil[s.richtung]}</span>
+      <li class={`sektor sektor--${s.richtung}`} id={compact ? undefined : slug(s.sektor)}>
+        {compact && <a class="sektor__link" href={`${base}/branchen-monitor/#${slug(s.sektor)}`} aria-label={`${s.sektor} ausführlich im Branchen-Monitor`}></a>}
+        <div class="sektor__kopf">
+          <Emblem name={BILD[s.sektor] ?? "branchen"} size={60} class="sektor__bild" />
+          <div>
+            <h3 class="sektor__name">{s.sektor.replace("Informationstechnologie", "Informations\u00ADtechnologie")}</h3>
+            <span class={`richtung richtung--${s.richtung}`}>{pfeil[s.richtung]} {richtungLabel[s.richtung]}</span>
+          </div>
         </div>
-        <p class="monitor-karte__def">{s.wasIstDas}</p>
-        <div class="monitor-karte__zeile">
-          <span class="monitor-karte__label">Heute</span>
-          <p class="monitor-karte__lage">{s.lage}</p>
-        </div>
-        <div class="monitor-karte__zeile">
-          {s.istZustand && (
+        <p class="sektor__def">{s.wasIstDas}</p>
+        <div class="sektor__mess">
+          {kennzahlen[s.sektor] && (
             <>
-              <span class="monitor-karte__label">Ist-Zustand</span>
-              <p class="monitor-karte__istzustand">{s.istZustand}</p>
+              <svg class="sektor__spark" viewBox="0 0 120 32" preserveAspectRatio="none" aria-hidden="true">
+                <path class="sektor__spark-flaeche" d={kennzahlen[s.sektor].spark.flaeche} />
+                <path class={`sektor__spark-linie ${kennzahlen[s.sektor].spark.plus ? "ist-plus" : "ist-minus"}`} d={kennzahlen[s.sektor].spark.pfad} />
+              </svg>
+              <dl class="sektor__perf">
+                {[["1 Tag", "d1"], ["1 Woche", "w1"], ["1 Monat", "m1"], ["1 Jahr", "j1"]].map(([label, k]) => (
+                  <div>
+                    <dt>{label}</dt>
+                    <dd class={kennzahlen[s.sektor][k] >= 0 ? "ist-plus" : "ist-minus"}>{prozentKurz(kennzahlen[s.sektor][k])}</dd>
+                  </div>
+                ))}
+              </dl>
             </>
           )}
         </div>
-        <span class="monitor-karte__wert">{s.tagesWert}</span>
-      </article>
+        <div class="sektor__abschnitt">
+          {!compact && <span class="sektor__label">Heute</span>}
+          <p class="sektor__lage">{s.lage}</p>
+        </div>
+        {!compact && [
+          ["Ist-Zustand", s.istZustand],
+          ["Treiber", s.treiber],
+          ["Beobachten", s.beobachten],
+          ["Schwergewichte", s.schwergewichte?.join(", ")],
+          ["Bezug zu SAP", s.sapBezug],
+        ].map(([label, text]) => (
+          <div class={`sektor__abschnitt${label === "Bezug zu SAP" ? " sektor__abschnitt--sap" : ""}`}>
+            {text && (
+              <>
+                <span class="sektor__label">{label}</span>
+                <p class="sektor__text">{text}</p>
+              </>
+            )}
+          </div>
+        ))}
+        <p class="sektor__wert">{ohneWert(s.tagesWert) ? "" : s.tagesWert}</p>
+      </li>
     ))}
-  </div>
-)}
+  </ul>
+  {stand && <p class="chart__quelle sektor__quelle">Sektor-Kennzahlen: Yahoo Finance, US-Sektorfonds (SPDR Select Sector), Gesamtrendite inklusive Dividenden bis {datumLang(stand)}. Richtung, Lage und Einordnung: Redaktion.</p>}
+</section>

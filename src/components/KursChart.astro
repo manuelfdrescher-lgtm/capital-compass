@@ -37,7 +37,8 @@ const zeigeSpannen = spannen.length > 2;
 ---
 
 <figure class={`kurschart${reihen.length === 1 ? " kurschart--einzeln" : ""}`} data-kurschart id={id} data-spanne={start}>
-  <figcaption class="kurschart__kopf">
+  <figcaption class="kurschart__kopf grafik__kopf">
+    <span class="grafik__kicker">Grafik</span>
     <span class="chart__titel">{titel}</span>
     {untertitel && <span class="chart__untertitel">{untertitel}</span>}
   </figcaption>
@@ -68,6 +69,11 @@ const zeigeSpannen = spannen.length > 2;
 
   <div class="kurschart__buehne">
     <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${titel}: Verlauf von ${datumLang(a.t)} bis ${datumLang(z.t)}, ${prozent(delta)}.`}>
+      <defs>
+        <pattern id={`${id}-schraffur`} class="schraffur schraffur--flaeche" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+          <line class="schraffur__linie" x1="0" y1="0" x2="0" y2="6" />
+        </pattern>
+      </defs>
       <g class="kc-gitter">
         {g.gitter.map((l) => (
           <g>
@@ -82,8 +88,9 @@ const zeigeSpannen = spannen.length > 2;
           <text class="achsenlabel" x={t.x} y={H - PAD.bottom + 20} text-anchor={t.anker}>{t.label}</text>
         ))}
       </g>
-      <path class="flaeche" d={g.flaeche} />
+      <path class="flaeche" d={g.flaeche} fill={`url(#${id}-schraffur)`} />
       <path class="linie" d={g.pfad} />
+      <circle class="endpunkt" r="4.5" cx={g.punkte[g.punkte.length - 1].x} cy={g.punkte[g.punkte.length - 1].y} />
       <g class="kc-punkte">
         {g.punkte.length <= 40 && g.punkte.map((p) => <circle class="datenpunkt" r="3.5" cx={p.x} cy={p.y} />)}
       </g>
@@ -153,6 +160,7 @@ const zeigeSpannen = spannen.length > 2;
     const linie = svg.querySelector(".linie")!;
     const flaeche = svg.querySelector(".flaeche")!;
     const punkteG = svg.querySelector(".kc-punkte")!;
+    const endpunkt = svg.querySelector(".endpunkt")!;
     const kreuz = svg.querySelector<SVGGElement>(".fadenkreuz")!;
     const pinG = svg.querySelector<SVGGElement>(".pin")!;
     const tipp = fig.querySelector<HTMLElement>(".kurschart__tipp")!;
@@ -220,6 +228,9 @@ const zeigeSpannen = spannen.length > 2;
       linie.setAttribute("d", g.pfad);
       punkteG.replaceChildren(...(g.punkte.length <= 40 ? g.punkte.map((p) => el("circle", { class: "datenpunkt", r: 3.5, cx: p.x, cy: p.y })) : []));
       flaeche.setAttribute("d", g.flaeche);
+      const letzter = g.punkte[g.punkte.length - 1];
+      endpunkt.setAttribute("cx", String(letzter.x));
+      endpunkt.setAttribute("cy", String(letzter.y));
 
       const a = teil[0];
       const z = teil[teil.length - 1];

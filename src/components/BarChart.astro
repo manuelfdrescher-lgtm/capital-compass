@@ -1,7 +1,9 @@
 ---
-// Horizontaler Balken-Chart als reines SVG, direkt aus den JSON-Daten.
-// Positiv Blau, negativ Rot; bei allPositive einfarbig Blau.
-// Direkte Wertelabels, Quellenzeile, aufklappbare Datentabelle.
+// Vergleichs-Grafik nach Art der McKinsey-Reports, im Stil des Blatts:
+// Die Überschrift ist die Kernaussage (automatisch aus den Daten), der
+// bisherige Titel steht als Kicker darüber. Darstellung als Punkt-
+// Diagramm: dünner Stiel von der Nulllinie, Punkt am Wert, Reihen nach
+// Größe sortiert. Nur die Extreme sind farbig hervorgehoben, der Rest grau.
 import { formatNumberDE } from "../lib/format.mjs";
 
 interface Props {
@@ -10,73 +12,100 @@ interface Props {
 }
 const { chart, id } = Astro.props;
 
-const rows = chart.data ?? [];
-const W = 640;
-const rowH = 30;
-const padTop = 6;
-const padBottom = 6;
-// Kategorie-Labels linksbündig in einer eigenen Spalte; Breite nach dem längsten Label.
-const labelW = Math.min(230, Math.max(90, Math.ceil(Math.max(...rows.map(([l]) => String(l).length)) * 6.6) + 12));
-const H = padTop + rows.length * rowH + padBottom;
+const zahlText = (v) =>
+  chart.decimals != null
+    ? new Intl.NumberFormat("de-DE", { minimumFractionDigits: chart.decimals, maximumFractionDigits: chart.decimals }).format(v)
+    : formatNumberDE(v);
+const fmt = (v) => `${!chart.absolute && v > 0 ? "+" : ""}${zahlText(v)}${chart.unit ?? ""}`;
 
-const maxAbs = Math.max(...rows.map(([, v]) => Math.abs(v)), 1e-9);
-const hasNeg = !chart.allPositive && rows.some(([, v]) => v < 0);
+const rows = [...(chart.data ?? [])];
+if (chart.sortiert !== false) rows.sort((a, b) => b[1] - a[1]);
+const n = rows.length;
+const maxRow = rows[0];
+const minRow = rows[n - 1];
+const pos = rows.filter(([, v]) => v > 0);
+const neg = rows.filter(([, v]) => v < 0);
 
-// Wertelabel-Breite dynamisch aus dem längsten formatierten Wert schätzen
-// (Schriftgröße 12.5px, tabular-nums ≈ 7.2px je Zeichen plus etwas Puffer).
-const valueStrings = rows.map(([, v]) =>
-  `${!chart.absolute && v > 0 ? "+" : ""}${formatNumberDE(v)}${chart.unit ?? ""}`
-);
-const valueW = Math.ceil(Math.max(1, ...valueStrings.map((s) => s.length)) * 7.2) + 10;
-
-// Bei negativen Balken links einen Gutter in Wertelabel-Breite reservieren,
-// damit das Label des tiefsten Balkens nicht in die Kategorie-Labels läuft.
-const plotX = labelW + 8 + (hasNeg ? valueW : 0);
-const plotW = W - plotX - valueW;
-// Null-Linie: bei nur positiven Werten ganz links, sonst proportional
-const negMax = hasNeg ? Math.max(...rows.filter(([, v]) => v < 0).map(([, v]) => Math.abs(v))) : 0;
-const posMax = Math.max(...rows.map(([, v]) => Math.max(v, 0)), 0);
-const span = (hasNeg ? negMax : 0) + posMax || maxAbs;
-const zeroX = plotX + (hasNeg ? (negMax / span) * plotW : 0);
-const scale = plotW / span;
-
-function bar(v) {
-  const len = Math.abs(v) * scale;
-  const x = v >= 0 ? zeroX : zeroX - len;
-  return { x, len };
+// Kernaussage als Überschrift
+let aussage = chart.title;
+if (n >= 2) {
+  if (chart.absolute || chart.allPositive) aussage = `${maxRow[0]} liegt mit ${fmt(maxRow[1])} vorn, ${minRow[0]} mit ${fmt(minRow[1])} hinten`;
+  else if (neg.length === 0) aussage = `Alle ${n} im Plus, ${maxRow[0]} führt mit ${fmt(maxRow[1])}`;
+  else if (pos.length === 0) aussage = `Alle ${n} im Minus, ${minRow[0]} fällt mit ${fmt(minRow[1])} am stärksten`;
+  else if (pos.length === 1) aussage = `Nur ${maxRow[0]} legt zu (${fmt(maxRow[1])}), ${minRow[0]} fällt am stärksten (${fmt(minRow[1])})`;
+  else if (neg.length === 1) aussage = `Nur ${minRow[0]} verliert (${fmt(minRow[1])}), ${maxRow[0]} führt mit ${fmt(maxRow[1])}`;
+  else aussage = `${maxRow[0]} führt mit ${fmt(maxRow[1])}, ${minRow[0]} bildet mit ${fmt(minRow[1])} das Schlusslicht`;
 }
+const hervor = new Set(n >= 3 ? [maxRow[0], minRow[0]] : rows.map(([l]) => l));
+
+// Geometrie für zwei Varianten: breit (Desktop) und schmal (Handy, höhere
+// Schrift relativ zur Breite, damit nichts winzig wird).
+function bau(W: number) {
+  const rowH = 36;
+  const padTop = 8;
+  const achseH = 30;
+  const H = padTop + n * rowH + achseH;
+  const zeichen = 7.4;
+  const labelW = Math.min(W * 0.34, Math.max(90, Math.ceil(Math.max(...rows.map(([l]) => String(l).length)) * zeichen) + 14));
+  const wertW = Math.ceil(Math.max(1, ...rows.map(([, v]) => fmt(v).length)) * zeichen) + 20;
+  const hatNeg = neg.length > 0 && !chart.allPositive;
+  const negMax = hatNeg ? Math.abs(minRow[1]) : 0;
+  const posMax = Math.max(0, maxRow[1]);
+  const plotX = labelW + 10 + (hatNeg ? wertW : 0);
+  const plotW = W - plotX - wertW - 4;
+  const span = negMax + posMax || 1;
+  const zeroX = plotX + (negMax / span) * plotW;
+  const scale = plotW / span;
+  const xVon = (v: number) => zeroX + v * scale;
+  const roh = span / (W < 500 ? 2 : 4);
+  const pot = Math.pow(10, Math.floor(Math.log10(roh)));
+  const schritt = [1, 2, 2.5, 5, 10].map((f) => f * pot).find((x) => x >= roh) ?? 10 * pot;
+  const ticks: number[] = [];
+  for (let v = Math.ceil(-negMax / schritt) * schritt; v <= posMax + schritt * 1e-6; v += schritt) ticks.push(Number(v.toPrecision(10)));
+  const zeilen = rows.map(([label, v], i) => {
+    const y = padTop + i * rowH + rowH / 2;
+    const x = xVon(v);
+    const wertX = v >= 0 ? x + 13 : x - 13;
+    const leitEnde = Math.min(zeroX, v >= 0 ? zeroX : wertX - fmt(v).length * zeichen) - 10;
+    const labelEnde = Math.min(String(label).length * zeichen + 10, labelW);
+    return { label, v, i, y, x, wertX, leitEnde, labelEnde, art: hervor.has(label) ? (v >= 0 ? "plus" : "minus") : "grau" };
+  });
+  return { W, H, padTop, achseH, zeroX, xVon, ticks, zeilen };
+}
+const varianten = [
+  { klasse: "grafik__svg--breit", g: bau(760) },
+  { klasse: "grafik__svg--schmal", g: bau(400) },
+];
+const tickLabel = (v) => `${v > 0 && !chart.absolute ? "+" : ""}${formatNumberDE(v)}${chart.unit ?? ""}`;
 ---
 
-<figure class="chart" role="img" aria-label={`Balkendiagramm: ${chart.title}`}>
-  <figcaption class="kurschart__kopf">
-    <span class="chart__titel">{chart.title}</span>
+<figure class="chart grafik grafik--punkte" data-einblenden id={id} aria-label={`Grafik: ${aussage}`}>
+  <figcaption class="grafik__kopf">
+    <span class="grafik__kicker">Grafik · {chart.title}</span>
+    <span class="chart__titel">{aussage}</span>
     {chart.subtitle && <span class="chart__untertitel">{chart.subtitle}</span>}
   </figcaption>
-  <svg viewBox={`0 0 ${W} ${H}`} aria-hidden="true">
-    <line class="achse achse--null" x1={zeroX} y1={padTop - 2} x2={zeroX} y2={H - padBottom + 2} />
-    {rows.map(([label, v], i) => {
-      const y = padTop + i * rowH;
-      const { x, len } = bar(v);
-      const positive = v >= 0;
-      const sign = !chart.absolute && v > 0 ? "+" : "";
-      const valueLabel = `${sign}${formatNumberDE(v)}${chart.unit ?? ""}`;
-      const labelX = positive ? x + len + 6 : x - 6;
-      return (
-        <g class="balken-zeile">
-          <title>{label}: {valueLabel}</title>
-          <text x="0" y={y + rowH / 2 + 4} class="achsenlabel balken-label" font-size="12.5">{label}</text>
-          <rect
-            class={chart.allPositive || positive ? "balken--positiv" : "balken--negativ"}
-            x={x}
-            y={y + 5}
-            width={Math.max(len, 1)}
-            height={rowH - 12}
-          />
-          <text x={labelX} y={y + rowH / 2 + 4} text-anchor={positive ? "start" : "end"} class="wertlabel">{valueLabel}</text>
+  {varianten.map(({ klasse, g }) => (
+    <svg class={`grafik__svg ${klasse}`} viewBox={`0 0 ${g.W} ${g.H}`} role="img" aria-label={`${aussage}. ${rows.map(([l, v]) => `${l} ${fmt(v)}`).join(", ")}`}>
+      {g.ticks.map((v) => (
+        <g>
+          <line class={v === 0 ? "achse achse--null" : "gitter"} x1={g.xVon(v)} x2={g.xVon(v)} y1={g.padTop - 2} y2={g.H - g.achseH + 4} />
+          <text class="achsenlabel" x={g.xVon(v)} y={g.H - 8} text-anchor="middle">{tickLabel(v)}</text>
         </g>
-      );
-    })}
-  </svg>
+      ))}
+      {g.zeilen.map((z) => (
+        <g class={`punkt-zeile punkt-zeile--${z.art}`} style={`--i: ${z.i}`}>
+          <title>{z.label}: {fmt(z.v)}</title>
+          <rect class="zeilen-band" x="0" y={z.y - 18} width={g.W} height="36" />
+          <text class="balken-label" x="0" y={z.y + 5}>{z.label}</text>
+          {z.leitEnde - z.labelEnde > 12 && <line class="leitlinie" x1={z.labelEnde} x2={z.leitEnde} y1={z.y} y2={z.y} />}
+          <line class={`stiel ${z.v >= 0 ? "stiel--rechts" : "stiel--links"}`} x1={g.zeroX} x2={z.x} y1={z.y} y2={z.y} />
+          <circle class="punkt" cx={z.x} cy={z.y} r="7" />
+          <text class="wertlabel" x={z.wertX} y={z.y + 5} text-anchor={z.v >= 0 ? "start" : "end"}>{fmt(z.v)}</text>
+        </g>
+      ))}
+    </svg>
+  ))}
   <p class="chart__quelle">Quelle: {chart.source}</p>
   <details class="aufklapp datentabelle">
     <summary>Datentabelle anzeigen</summary>

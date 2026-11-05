@@ -14,6 +14,16 @@ const { tiles, stand, history } = Astro.props;
 const arrow = { up: "▲", down: "▼", flat: "◆" };
 // Auf dem Desktop sechs Spalten. Ist die letzte Reihe nicht voll, nimmt die
 // letzte Kachel die Restspalten ein, statt eine Leerfläche zu lassen.
+// Kacheln mit passendem Verlauf werden klickbar und schalten den Chart um.
+const SCHLUESSEL: [RegExp, string][] = [
+  [/^dax/i, "dax"], [/s&p/i, "sp500"], [/nasdaq/i, "nasdaq100"], [/euro stoxx/i, "eurostoxx"],
+  [/^gold/i, "gold"], [/brent/i, "brent"], [/^eur\/usd/i, "eurusd"], [/^bitcoin/i, "bitcoin"],
+];
+const reiheFuer = (label: string) => {
+  const key = SCHLUESSEL.find(([re]) => re.test(label))?.[1];
+  const idx = key ? (history?.reihen ?? []).findIndex((r: any) => r.key === key) : -1;
+  return idx >= 0 ? idx : null;
+};
 const rest = tiles.length % 6;
 const restSpan = rest === 0 ? 1 : 6 - rest + 1;
 ---
@@ -28,7 +38,14 @@ const restSpan = rest === 0 ? 1 : 6 - rest + 1;
   </div>
   <div class="marktkacheln">
     {tiles.map((t, i) => (
-      <div class={`kachel${i === tiles.length - 1 && restSpan > 1 ? " kachel--rest" : ""}`} style={i === tiles.length - 1 && restSpan > 1 ? `--rest-span: ${restSpan}` : undefined}>
+      <div
+        class={`kachel${i === tiles.length - 1 && restSpan > 1 ? " kachel--rest" : ""}${reiheFuer(t.label) !== null ? " kachel--klick" : ""}`}
+        style={i === tiles.length - 1 && restSpan > 1 ? `--rest-span: ${restSpan}` : undefined}
+        data-zeige-reihe={reiheFuer(t.label) ?? undefined}
+        role={reiheFuer(t.label) !== null ? "button" : undefined}
+        tabindex={reiheFuer(t.label) !== null ? 0 : undefined}
+        aria-label={reiheFuer(t.label) !== null ? `${t.label}: Verlauf im Chart zeigen` : undefined}
+      >
         <span class="kachel__label">{t.label}</span>
         <span class="kachel__wert">{t.approx && <span class="kachel__ca">ca.</span>}{t.value}</span>
         <span class={t.delta ? `kachel__delta kachel__delta--${t.direction}` : "kachel__delta kachel__delta--leer"}>
@@ -51,3 +68,16 @@ const restSpan = rest === 0 ? 1 : 6 - rest + 1;
     </div>
   )}
 </section>
+
+<script>
+  // Klick auf eine Kachel schaltet den Verlaufs-Chart auf dieses Instrument.
+  document.querySelectorAll<HTMLElement>("[data-zeige-reihe]").forEach((k) => {
+    const zeigen = () => {
+      const chart = document.getElementById("markt-verlauf");
+      chart?.querySelector<HTMLButtonElement>(`[data-reihe="${k.dataset.zeigeReihe}"]`)?.click();
+      chart?.scrollIntoView({ behavior: "smooth", block: "center" });
+    };
+    k.addEventListener("click", zeigen);
+    k.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); zeigen(); } });
+  });
+</script>

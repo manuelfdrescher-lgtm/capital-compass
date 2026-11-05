@@ -2,13 +2,15 @@
 import Base from "../layouts/Base.astro";
 import BranchenMonitor from "../components/BranchenMonitor.astro";
 import RessortKopf from "../components/RessortKopf.astro";
-import { getLatestEdition } from "../lib/editions.mjs";
+import { getLatestEdition, getMarketHistory } from "../lib/editions.mjs";
 
 const { data } = getLatestEdition();
+const historie = getMarketHistory();
+const sektorDaten = historie && (!historie.stand || historie.stand === data.edition.date) ? historie.sektoren : null;
 ---
 
 <Base title="Branchen-Monitor" active="branchen-monitor" edition={data.edition}>
   <RessortKopf level="h1" titel="Branchen-Monitor" untertitel="Alle 11 GICS-Sektoren (Global Industry Classification Standard) in jeder Ausgabe: was der Sektor ist, wie es ihm heute geht, und wie er strukturell dasteht, unabhängig vom Tagesgeschehen." />
   <hr class="ressort-linie" />
-  <BranchenMonitor monitor={data.branchenMonitor} />
+  <BranchenMonitor monitor={data.branchenMonitor} daten={sektorDaten} />
 </Base>

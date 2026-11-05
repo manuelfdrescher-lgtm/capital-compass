@@ -42,6 +42,7 @@ gültig – die Alt-Editionen unter `content/editions/` müssen dafür nicht ang
   strukturelle Treiber der nächsten Quartale, wo hilfreich verankert in einschlägigen
   ökonomischen Rahmenkonzepten). Das ist der „kleine einordnende Artikel je Industrie",
   den Leser*innen unabhängig vom Tagesgeschehen verstehen können sollen.
+- SAP-Schwerpunkt (04.11.2026 bis 12.02.2027): Jeder Artikel außer Leitartikel und Lernecke bekommt `sapBezug` (String, 2 bis 4 Sätze): was die Nachricht für SAP und seine Strategie „All in on AI“ bedeutet. Nur öffentlich belegte Fakten. Wird als Kasten „Bezug zu SAP: All in on AI“ unter der Mechanik-Box gezeigt.
 - News-Artikel (`ressort: "news"`) brauchen eine `mechanik`-Box,
   Unternehmens-Artikel (`ressort: "unternehmen"`) ein `company`-Objekt.
 - Jeder Artikel braucht mindestens eine Quelle mit Tier-Kennzeichnung
@@ -252,3 +253,7 @@ in `src/lib/edition-schema.mjs`, nicht im Zod-Schema selbst — alte Ausgaben mi
   Sätze"). `counterarguments` (min. 2) und `catalysts` (min. 1) bleiben unverändert
   Pflicht, unabhängig von `schemaVersion`.
 - Jeder `branchenMonitor`-Eintrag: `istZustand` vorhanden und mind. 260 Zeichen.
+
+## Kursverläufe (automatisch, seit 03.11.2026)
+
+`scripts/ingest.mjs` ruft nach dem Einsortieren `scripts/fetch-history.mjs` auf (Yahoo-Finance-Chart-API, kostenlos). Das Skript füllt `stockPicks[].priceSeries` (5 Jahre, in Euro umgerechnet) und schreibt den Markt-Verlauf (DAX, SAP, Euro Stoxx 50, S&P 500, Nasdaq 100, Gold, Brent, EUR/USD, Bitcoin) nach `content/market-history.json`. Die Redaktion muss diese Felder nicht liefern. Schlägt der Abruf fehl, entfallen die Charts ohne Fehler.

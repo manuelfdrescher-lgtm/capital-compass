@@ -1,0 +1,120 @@
+---
+// Rubriken-Dock wie beim Mac: schwebt unten, sobald der Kopf aus dem Bild
+// gescrollt ist. Beim Überfahren vergrößern sich das Bild unter dem Cursor
+// und seine Nachbarn. Auf dem Handy wischt man mit dem Finger darüber.
+import Emblem from "./Emblem.astro";
+
+interface Props {
+  active?: string;
+}
+const { active = "" } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const items = [
+  { key: "titelseite", label: "Titelseite", bild: "topthemen", href: `${base}/` },
+  { key: "news", label: "News", bild: "news", href: `${base}/news/` },
+  { key: "politik", label: "Politik", bild: "politik", href: `${base}/politik/` },
+  { key: "branchen-monitor", label: "Branchen-Monitor", bild: "branchen", href: `${base}/branchen-monitor/` },
+  { key: "unternehmen", label: "Unternehmen", bild: "unternehmen", href: `${base}/unternehmen/` },
+  { key: "drei-aktien", label: "Drei Aktien", bild: "aktien", href: `${base}/drei-aktien/` },
+  { key: "lernecke", label: "Lernecke", bild: "lernecke", href: `${base}/lernecke/` },
+  { key: "archiv", label: "Archiv", bild: "archiv", href: `${base}/archiv/` },
+];
+---
+
+<nav class="dock" aria-label="Rubriken (Dock)" data-dock>
+  <ul class="dock__leiste">
+    {items.map((it) => (
+      <li>
+        <a class="dock__item" href={it.href} aria-current={active === it.key ? "page" : undefined}>
+          <span class="dock__label">{it.label}</span>
+          <Emblem name={`leiste/${it.bild}`} size={52} class="dock__bild" laden="eager" />
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<script>
+  const dock = document.querySelector<HTMLElement>("[data-dock]");
+  const fein = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  const finger = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+  const ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (dock && (fein || finger)) {
+    const items = [...dock.querySelectorAll<HTMLAnchorElement>(".dock__item")];
+    const kopf = document.querySelector(".hauptnav");
+    // Dock zeigen, sobald die Navigation oben aus dem Bild ist
+    const beobachter = new IntersectionObserver(([e]) => dock.classList.toggle("dock--an", !e.isIntersecting));
+    if (kopf) beobachter.observe(kopf);
+    if (fein && !ruhig) {
+      dock.addEventListener("mousemove", (ev) => {
+        dock.classList.add("dock--aktiv");
+        for (const it of items) {
+          const r = it.getBoundingClientRect();
+          const d = Math.abs(ev.clientX - (r.left + r.width / 2));
+          const s = 1 + 0.75 * Math.max(0, 1 - d / 150) ** 2;
+          it.style.setProperty("--s", s.toFixed(3));
+        }
+      });
+      dock.addEventListener("mouseleave", () => {
+        dock.classList.remove("dock--aktiv");
+        items.forEach((it) => it.style.setProperty("--s", "1"));
+      });
+    }
+    if (finger) {
+      // Mit dem Finger über die Leiste wischen: Das Bild darunter wächst
+      // samt Nachbarn, über ihm steht der Name. Loslassen öffnet die Rubrik,
+      // Wegziehen nach oben bricht ab.
+      let mitten: number[] = [];
+      let nah = -1;
+      let schritt = 0;
+      let oben = 0;
+      const setzen = (x: number) => {
+        let best = Infinity;
+        let ziel = -1;
+        mitten.forEach((m, i) => {
+          const d = Math.abs(x - m);
+          if (d < best) { best = d; ziel = i; }
+          const s = ruhig ? 1 : 1 + 0.65 * Math.max(0, 1 - d / 95) ** 2;
+          items[i].style.setProperty("--s", s.toFixed(3));
+        });
+        if (ziel !== nah) {
+          items[nah]?.classList.remove("ist-nah");
+          items[ziel]?.classList.add("ist-nah");
+          nah = ziel;
+        }
+      };
+      const ruecksetzen = () => {
+        cancelAnimationFrame(schritt);
+        mitten = [];
+        dock.classList.remove("dock--aktiv");
+        items.forEach((it) => { it.style.removeProperty("--s"); it.classList.remove("ist-nah"); });
+      };
+      dock.addEventListener("pointerdown", (ev) => {
+        if (ev.pointerType === "mouse") return;
+        try { dock.setPointerCapture(ev.pointerId); } catch {}
+        mitten = items.map((it) => { const r = it.getBoundingClientRect(); return r.left + r.width / 2; });
+        oben = dock.getBoundingClientRect().top;
+        nah = -1;
+        dock.classList.add("dock--aktiv");
+        setzen(ev.clientX);
+      });
+      dock.addEventListener("pointermove", (ev) => {
+        if (!mitten.length) return;
+        cancelAnimationFrame(schritt);
+        schritt = requestAnimationFrame(() => setzen(ev.clientX));
+      });
+      dock.addEventListener("pointerup", (ev) => {
+        if (!mitten.length) return;
+        const ziel = ev.clientY > oben - 70 ? items[nah] : null;
+        ruecksetzen();
+        if (!ziel) return;
+        ziel.classList.add("ist-gedrueckt");
+        setTimeout(() => { location.href = ziel.href; }, 180);
+      });
+      dock.addEventListener("pointercancel", ruecksetzen);
+      // Navigiert wird beim Loslassen, nicht über den normalen Link-Klick
+      dock.addEventListener("click", (ev) => ev.preventDefault());
+      window.addEventListener("pageshow", () => items.forEach((it) => it.classList.remove("ist-gedrueckt")));
+    }
+  }
+</script>

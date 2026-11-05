@@ -32,6 +32,7 @@
   --display: "Playfair Display", "Playfair Display Variable", Georgia, serif;
   --serif: "Source Serif 4 Variable", "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --schreibmaschine: "Special Elite", "American Typewriter", "Courier New", monospace;
   --schatten: 0 1px 0 rgba(17, 17, 17, 0.04), 0 10px 28px -18px rgba(17, 17, 17, 0.28);
 }
 
@@ -121,9 +122,11 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 
 /* ---------- Rubrik-Bilder (Kupferstich im Stil des Logos) ---------- */
 
-.emblem { display: block; flex: none; mix-blend-mode: multiply; }
+/* Die Bilder sind transparente Tinte (PNG mit Alphakanal): kein Kasten,
+   kein Blend-Modus nötig. Im Dunkelmodus wird die Tinte hell. */
+.emblem { display: block; flex: none; }
 @media (prefers-color-scheme: dark) {
-  .emblem { mix-blend-mode: screen; filter: invert(1) brightness(1.05); }
+  .emblem { filter: invert(0.9) sepia(0.12); }
 }
 .box-bild { width: 30px; height: 30px; }
 
@@ -149,22 +152,14 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 .masthead__logo { color: var(--tinte); display: block; margin: 14px auto 2px; height: auto; }
 .masthead__logo-img { display: block; margin: 14px auto 2px; height: auto; }
 
-/* Eigenes Marken-Logo (Vollversion). Der weiße Bildhintergrund wird per
-   Blend-Modus mit dem Papier verschmolzen: multiply im Hellmodus (Weiß
-   verschwindet, dunkle Gravur bleibt), invert+screen im Dunkelmodus. */
-.masthead__marke { display: block; margin: 12px auto 6px; max-width: 620px; }
-.masthead__marke-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  mix-blend-mode: multiply;
-}
+/* Eigenes Marken-Logo: transparente Tinte (PNG mit Alphakanal), fügt sich
+   ohne Kasten in jedes Papier ein. Im Dunkelmodus wird die Tinte hell. */
+.masthead__marke { display: block; margin: 14px auto 10px; max-width: 430px; }
+.masthead__marke-img { display: block; width: 100%; height: auto; }
 @media (prefers-color-scheme: dark) {
-  .masthead__marke-img { mix-blend-mode: screen; filter: invert(1) brightness(1.05); }
+  .masthead__marke-img { filter: invert(0.9) sepia(0.12); }
 }
-:root[data-theme="dark"] .masthead__marke-img { mix-blend-mode: screen; filter: invert(1) brightness(1.05); }
-:root[data-theme="light"] .masthead__marke-img { mix-blend-mode: multiply; filter: none; }
-@media (max-width: 640px) { .masthead__marke { max-width: 400px; } }
+@media (max-width: 640px) { .masthead__marke { max-width: 290px; } }
 
 .masthead__the {
   font-family: var(--display);
@@ -232,24 +227,143 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 /* ---------- Navigation ---------- */
 
 .hauptnav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px 30px;
+  --band: 62px;      /* Höhe zwischen der Linie oben und der Doppellinie unten */
+  --bild: 58px;      /* Bildgröße bei voller Vergrößerung, passt zwischen die Linien */
+  --ruhe: 0.8;       /* Größe am Rand der Rubrik als Anteil davon */
+  position: relative;
+  z-index: 20;
   font-family: var(--sans);
   font-weight: 500;
-  font-size: 15.5px;
+  font-size: clamp(12.5px, 1.2vw, 15px);
+  line-height: 22px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 11px 0 9px;
+  padding: 0;
   border-bottom: 3px double var(--haarlinie-stark);
   margin-bottom: 30px;
 }
-.hauptnav a { text-decoration: none; padding: 2px 0; border-bottom: 2px solid transparent; }
-.hauptnav a:hover { color: var(--akzent-rot); }
-.hauptnav a[aria-current="page"] {
+.hauptnav__leiste {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0 clamp(18px, 2.2vw, 30px);
+  min-height: var(--band);
+}
+/* Zentriert, solange alles passt; sonst beginnt die Leiste links */
+.hauptnav a:first-child { margin-left: auto; }
+.hauptnav a:last-child { margin-right: auto; }
+.hauptnav a {
+  position: relative;
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  text-decoration: none;
+  padding: 2px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Die Laufweite hängt auch hinter dem letzten Buchstaben. Der negative
+   Rand gleicht das aus: Abstände und Zentrierung sind dadurch exakt, und
+   der Unterstrich endet bündig mit dem letzten Buchstaben. */
+.hauptnav__text {
+  white-space: nowrap;
+  margin-right: -0.1em;
+  padding-bottom: 2px;
+  background: linear-gradient(currentColor, currentColor) left bottom / calc(100% - 0.1em) 2px no-repeat;
+  background-size: 0 2px;
+  transition: opacity 0.16s ease, transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.hauptnav a[aria-current="page"] .hauptnav__text {
   color: var(--akzent-rot);
-  border-bottom-color: var(--akzent-rot);
+  background-size: calc(100% - 0.1em) 2px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .hauptnav a:hover .hauptnav__text { color: var(--akzent-rot); }
+}
+
+/* Rubrik-Bilder: liegen unsichtbar über der Schrift, immer mittig zwischen
+   den Linien. Nur die Rubrik unter dem Cursor wechselt zum Bild, es wächst
+   zur Mitte hin (nie über die Linien hinaus), sein Name erscheint unter
+   der Doppellinie. Das Bild
+   ist in voller Größe angelegt und wird verkleinert, so bleibt es auch
+   vergrößert gestochen scharf. */
+.hauptnav__bild {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--bild);
+  height: var(--bild);
+  margin: calc(var(--bild) / -2) 0 0 calc(var(--bild) / -2);
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.5);
+  scale: 1;
+  filter: drop-shadow(0 2px 2px rgba(17, 17, 17, 0.24)) drop-shadow(0 7px 9px rgba(17, 17, 17, 0.2));
+  transition: opacity 0.18s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), scale 0.08s linear;
+  will-change: transform, opacity;
+  -webkit-user-select: none;
+  user-select: none;
+}
+@media (prefers-color-scheme: dark) {
+  .hauptnav__bild {
+    filter: invert(0.9) sepia(0.12) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.6)) drop-shadow(0 7px 10px rgba(0, 0, 0, 0.5));
+  }
+}
+.hauptnav__blase {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + var(--band) / 2 + 5px);
+  white-space: nowrap;
+  font-size: 12.5px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--tinte);
+  background: var(--karte);
+  border: 1px solid var(--haarlinie);
+  border-radius: 8px;
+  padding: 1px 9px;
+  box-shadow: 0 1px 0 rgba(17, 17, 17, 0.04), 0 8px 18px -8px rgba(17, 17, 17, 0.35);
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -4px);
+  transition: opacity 0.14s ease, transform 0.18s ease;
+}
+.hauptnav.ist-dock a.ist-nah .hauptnav__text { opacity: 0; transform: scale(0.8); }
+.hauptnav.ist-dock a.ist-nah .hauptnav__bild { opacity: 1; transform: none; scale: var(--s, var(--ruhe)); }
+.hauptnav.ist-dock a.ist-nah .hauptnav__blase { opacity: 1; transform: translate(-50%, 0); }
+.hauptnav a:focus-visible .hauptnav__text,
+.hauptnav a.ist-gedrueckt .hauptnav__text { opacity: 0; transform: scale(0.8); }
+.hauptnav a:focus-visible .hauptnav__bild { opacity: 1; transform: none; scale: 1; }
+.hauptnav a:focus-visible .hauptnav__blase { opacity: 1; transform: translate(-50%, 0); }
+.hauptnav a.ist-gedrueckt .hauptnav__bild { opacity: 1; transform: none; scale: 1; transition-delay: 0s; }
+
+/* Handy: eine Zeile zum Wischen, an den Rändern weich ausgeblendet */
+@media (max-width: 760px) {
+  .hauptnav {
+    --band: 54px;
+    --bild: 50px;
+    font-size: 14px;
+  }
+  .hauptnav__leiste {
+    gap: 0 24px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    --links: #000;
+    --rechts: #000;
+    -webkit-mask-image: linear-gradient(90deg, var(--links) 0, #000 22px, #000 calc(100% - 28px), var(--rechts));
+    mask-image: linear-gradient(90deg, var(--links) 0, #000 22px, #000 calc(100% - 28px), var(--rechts));
+  }
+  /* Weicher Rand nur auf der Seite, auf der noch Rubriken folgen */
+  .hauptnav__leiste.mehr-links { --links: transparent; }
+  .hauptnav__leiste.mehr-rechts { --rechts: transparent; }
+  .hauptnav__leiste::-webkit-scrollbar { display: none; }
+  .hauptnav a { scroll-snap-align: center; }
+  .hauptnav__blase { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hauptnav__text, .hauptnav__bild { transition: opacity 0.15s ease; transform: none !important; scale: 1 !important; }
 }
 
 /* ---------- Beispiel-Banner ---------- */
@@ -293,6 +407,9 @@ a:hover { text-decoration-color: var(--akzent-rot); }
   max-width: 110ch;
 }
 .marktpanel__chart { border-top: 1px solid var(--haarlinie-stark); padding: 4px 18px 6px; }
+.marktpanel__chart figure.kurschart, .pick figure.kurschart { border-top: 0; padding-top: 6px; }
+.pick .grafik__kicker { display: none; }
+.pick .chart__titel { font-size: 16px; }
 .marktpanel__titel {
   font-family: var(--sans);
   font-weight: 600;
@@ -443,7 +560,8 @@ h1.headline, h2.headline {
   font-weight: 700;
   line-height: 1.1;
   margin: 0 0 12px;
-  text-wrap: balance;
+  text-wrap: pretty;
+  hyphens: manual;
   letter-spacing: 0.002em;
 }
 h1.headline { font-size: clamp(32px, 4.8vw, 50px); }
@@ -500,7 +618,10 @@ h2.headline { font-size: clamp(25px, 3.4vw, 34px); }
     column-gap: 44px;
     column-rule: 1px solid var(--haarlinie);
   }
-  .artikel__body--spalten > * { break-inside: avoid-column; }
+  /* Absätze dürfen über den Spaltenwechsel laufen, damit beide Spalten
+     gleich lang enden; mindestens drei Zeilen je Spaltenende. */
+  .artikel__body--spalten { column-fill: balance; }
+  .artikel__body--spalten > p { break-inside: auto; orphans: 3; widows: 3; }
 }
 
 .artikel--leit .artikel__body p:first-of-type::first-letter {
@@ -770,10 +891,8 @@ details.aufklapp > .aufklapp__inhalt p { margin: 0 0 12px; }
   justify-content: center;
   overflow: hidden;
   border-radius: 3px;
-  background: #fdfcf9;
-  border: 1px solid var(--haarlinie);
 }
-.logo-chip img { max-width: 27px; max-height: 27px; object-fit: contain; }
+.logo-chip img { max-width: 30px; max-height: 30px; object-fit: contain; mix-blend-mode: multiply; }
 .logo-chip--text {
   font-family: var(--sans);
   font-weight: 600;
@@ -786,8 +905,10 @@ details.aufklapp > .aufklapp__inhalt p { margin: 0 0 12px; }
   line-height: 1;
   padding: 2px;
 }
+/* Im Dunkelmodus brauchen dunkle Markenlogos eine helle Fläche. */
 @media (prefers-color-scheme: dark) {
-  .logo-chip { background: #f0ece2; }
+  .logo-chip:not(.logo-chip--text) { background: #e8e1d1; }
+  .logo-chip img { mix-blend-mode: normal; }
   .logo-chip--text { background: #3d372c; }
 }
 
@@ -814,12 +935,94 @@ details.aufklapp > .aufklapp__inhalt p { margin: 0 0 12px; }
 
 /* ---------- Charts ---------- */
 
-figure.chart, figure.kurschart { margin: 26px 0; break-inside: avoid; }
-.chart__titel { font-family: var(--sans); font-weight: 600; font-size: 17px; letter-spacing: 0.02em; margin: 0; display: block; }
-.chart__untertitel { font-family: var(--sans); font-size: 14px; color: var(--tinte-60); margin: 2px 0 0; display: block; }
-.kurschart__kopf { display: block; margin: 0 0 12px; }
-.chart .balken-zeile:hover rect { opacity: 0.78; }
-.chart .balken-label { font-size: 12.5px; fill: var(--tinte); }
+/* Grafiken im Stil des Blatts: Doppellinie oben, roter Kicker,
+   Playfair-Titel, kursive Unterzeile, Kupferstich-Schraffur. */
+figure.chart, figure.kurschart {
+  margin: 30px 0;
+  padding-top: 12px;
+  border-top: 3px double var(--haarlinie-stark);
+  break-inside: avoid;
+}
+.grafik__kopf { display: block; margin: 0 0 14px; }
+.grafik__kicker {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--akzent-rot);
+  margin-bottom: 3px;
+}
+.chart__titel { font-family: var(--display); font-weight: 700; font-size: 21px; line-height: 1.2; margin: 0; display: block; text-wrap: balance; }
+.chart__untertitel { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--tinte-60); margin: 3px 0 0; display: block; }
+.chart__quelle { border-top: 1px solid var(--haarlinie); padding-top: 7px; }
+
+/* Schraffur (Kupferstich): Grundton plus feine Diagonalen */
+.schraffur--pos .schraffur__grund { fill: var(--chart-blau); opacity: 0.16; }
+.schraffur--pos .schraffur__linie { stroke: var(--chart-blau); stroke-width: 2.1; }
+.schraffur--neg .schraffur__grund { fill: var(--chart-rot); opacity: 0.16; }
+.schraffur--neg .schraffur__linie { stroke: var(--chart-rot); stroke-width: 2.1; }
+.schraffur--flaeche .schraffur__linie { stroke: var(--chart-blau); stroke-width: 1; opacity: 0.32; }
+
+/* Balken-Chart */
+.grafik svg { width: 100%; height: auto; display: block; overflow: visible; }
+.grafik text { font-family: var(--sans); font-variant-numeric: tabular-nums; fill: var(--tinte); }
+.grafik .gitter { stroke: var(--haarlinie); stroke-dasharray: 1 3; }
+.grafik .achse--null { stroke: var(--haarlinie-stark); stroke-width: 1.6; }
+.grafik .achsenlabel { font-size: 12px; fill: var(--tinte-60); }
+.grafik .balken-label { font-size: 15px; font-weight: 600; }
+.grafik .leitlinie { stroke: var(--tinte-40); stroke-width: 1; stroke-dasharray: 1.5 4; }
+.grafik .wertlabel { font-size: 15px; font-weight: 600; }
+.grafik .wertlabel.ist-plus { fill: var(--positiv); }
+.grafik .wertlabel.ist-minus { fill: var(--negativ); }
+.grafik .balken { stroke-width: 1.3; }
+.grafik .balken--pos { stroke: var(--chart-blau); transform-origin: left center; }
+.grafik .balken--neg { stroke: var(--chart-rot); transform-origin: right center; }
+.grafik .zeilen-band { fill: transparent; transition: fill 0.15s ease; }
+.grafik .balken-zeile:hover .zeilen-band { fill: var(--papier-tief); }
+/* Aufbau beim Hineinscrollen: Ohne JavaScript oder bei reduzierter
+   Bewegung stehen die Balken sofort da. Mit JavaScript (.js-an) warten sie,
+   bis der Beobachter die Grafik als sichtbar markiert (.gezeigt). */
+.grafik .balken, .bilanz-segment {
+  transform-box: fill-box;
+  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+.grafik .wertlabel { transition: opacity 0.5s ease; transition-delay: calc(0.45s + var(--i, 0) * 80ms); }
+@media (prefers-reduced-motion: no-preference) {
+  .js-an [data-einblenden]:not(.gezeigt) .balken,
+  .js-an [data-einblenden]:not(.gezeigt) .bilanz-segment { transform: scaleX(0); }
+  .js-an [data-einblenden]:not(.gezeigt) .wertlabel { opacity: 0; }
+}
+/* ---------- Schreibmaschine (Erscheinungsbild) ---------- */
+
+/* Logo, Datumszeile, Navigation und Rubrik-Überschriften tragen die
+   Schreibmaschinenschrift des Logos. Fließtext, Schlagzeilen und Zahlen
+   bleiben in ihren Lesetypen. */
+.datumszeile, .hauptnav, .ressort-titel, .marktpanel__titel, .brief-kasten__titel,
+.mechanik-box__titel, .factcheck-box__titel, .kurz-erklaert__titel, .sektor-bilanz__titel, .dock__label {
+  font-family: var(--schreibmaschine);
+  font-weight: 400;
+}
+.datumszeile { letter-spacing: 0.06em; }
+/* Handy: Datum oben, Ausgabe und Leser darunter, ohne Raute am Zeilenanfang */
+@media (max-width: 560px) {
+  .datumszeile { font-size: 12.5px; letter-spacing: 0.04em; }
+  .datumszeile > span:first-child { flex-basis: 100%; text-align: center; }
+  .datumszeile > span:nth-child(2)::before { content: none; }
+}
+.hauptnav { letter-spacing: 0.1em; }
+.ressort-titel { letter-spacing: 0.08em; }
+.marktpanel__titel, .brief-kasten__titel, .mechanik-box__titel, .factcheck-box__titel,
+.kurz-erklaert__titel, .sektor-bilanz__titel { letter-spacing: 0.1em; }
+.kicker--sap { display: flex; align-items: center; gap: 8px; }
+.kicker__bild { width: 26px; height: 26px; }
+
+@media print {
+  [data-einblenden] .balken, [data-einblenden] .bilanz-segment { transform: none !important; }
+  [data-einblenden] .wertlabel { opacity: 1 !important; }
+}
 
 /* Interaktiver Kurs-Chart */
 .kurschart svg { width: 100%; height: auto; display: block; overflow: visible; }
@@ -828,7 +1031,8 @@ figure.chart, figure.kurschart { margin: 26px 0; break-inside: avoid; }
 .kurschart .achse { stroke: var(--haarlinie-stark); }
 .kurschart .gitter { stroke: var(--haarlinie); stroke-dasharray: 1 3; }
 .kurschart .linie { stroke: var(--chart-blau); fill: none; stroke-width: 2; stroke-linejoin: round; }
-.kurschart .flaeche { fill: var(--chart-blau); opacity: 0.07; }
+.kurschart .linie { stroke-width: 2.2; }
+.kurschart .endpunkt { fill: var(--akzent-rot); stroke: var(--karte); stroke-width: 2.5; }
 .kurschart .achsenlabel { font-size: 12px; fill: var(--tinte-60); }
 .kurschart__reihen, .kurschart__spannen { display: flex; flex-wrap: wrap; gap: 6px; }
 .kurschart__reihen { margin: 0 0 12px; }
@@ -1012,74 +1216,88 @@ figure.chart, figure.kurschart { margin: 26px 0; break-inside: avoid; }
 
 /* ---------- Branchen-Monitor ---------- */
 
-.monitor { list-style: none; margin: 0; padding: 0; }
-.monitor__zeile {
-  display: grid;
-  grid-template-columns: 22px 220px minmax(0, 1fr) 150px;
-  gap: 14px;
-  padding: 13px 0;
-  border-bottom: 1px solid var(--haarlinie);
-  align-items: baseline;
-}
-.monitor__pfeil { font-size: 15px; }
-.monitor__pfeil--up { color: var(--positiv); }
-.monitor__pfeil--down { color: var(--negativ); }
-.monitor__pfeil--neutral { color: var(--neutral); }
-.monitor__sektor { font-family: var(--sans); font-weight: 600; font-size: 16.5px; }
-.monitor__def { font-size: 13.5px; color: var(--tinte-60); display: block; font-family: var(--serif); font-weight: 400; font-style: italic; }
-.monitor__lage { font-size: 15px; }
-.monitor__wert {
+/* Sektor-Bilanz: schraffierter Balken mit Legende */
+.sektor-bilanz { margin: 0 0 22px; }
+.sektor-bilanz__titel {
   font-family: var(--sans);
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  font-size: 14px;
-  color: var(--tinte-60);
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--akzent-rot);
+  margin: 0 0 8px;
 }
-@media (max-width: 760px) {
-  .monitor__zeile { grid-template-columns: 22px minmax(0, 1fr); }
-  .monitor__lage, .monitor__wert { grid-column: 2 / -1; }
-}
+.sektor-bilanz__balken { display: block; width: 100%; height: 26px; border: 1.5px solid var(--haarlinie-stark); }
+.bilanz-segment { stroke: var(--karte); stroke-width: 2; transform-origin: left center; }
+.sektor-bilanz__legende { display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 8px 0 0; }
+.schraffur--auf .schraffur__grund { fill: var(--positiv); opacity: 0.18; }
+.schraffur--auf .schraffur__linie { stroke: var(--positiv); stroke-width: 2.1; }
+.schraffur--ab .schraffur__grund { fill: var(--negativ); opacity: 0.18; }
+.schraffur--ab .schraffur__linie { stroke: var(--negativ); stroke-width: 2.1; }
+.schraffur--seit .schraffur__grund { fill: var(--neutral); opacity: 0.16; }
+.schraffur--seit .schraffur__linie { stroke: var(--neutral); stroke-width: 1.6; }
 
-/* Vollständige Ansicht: eine Karte je Sektor mit Tageslage UND
-   struktureller Einordnung (istZustand) — der "kleine einordnende
-   Artikel je Industrie". */
-.monitor-karten {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-  margin: 22px 0;
+/* Richtungs-Plakette */
+.richtung {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 1px 10px;
+  line-height: 1.5;
+  white-space: nowrap;
 }
-.monitor-karte { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-/* Ab zwei Spalten liegen Kopf, Definition, Heute, Ist-Zustand und Wert per
-   Subgrid auf gemeinsamen Zeilenspuren: nebeneinander stehende Karten
-   fluchten Abschnitt für Abschnitt. */
-@media (min-width: 860px) {
-  .monitor-karten { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 0; }
-  .monitor-karte { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 6px; margin-bottom: 18px; }
-}
-.monitor-karte__kopf {
+.richtung--up { color: var(--positiv); }
+.richtung--down { color: var(--negativ); }
+.richtung--neutral { color: var(--neutral); }
+
+/* Raster der Sektor-Karten */
+.sektor-raster { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+.sektor {
+  background: var(--karte);
+  border: 1px solid var(--haarlinie);
+  padding: 14px 16px 12px;
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-.monitor-karte__sektor {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 21px;
-  margin: 0;
+.sektor:hover { border-color: var(--haarlinie-stark); box-shadow: var(--schatten); }
+@media (min-width: 560px) {
+  .sektor-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 0; }
+  .sektor { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 8px; margin-bottom: 16px; }
+  .sektoren:not(.sektoren--kompakt) .sektor { grid-row: span 10; }
 }
-.monitor-karte__pfeil { font-size: 17px; }
-.monitor-karte__pfeil--up { color: var(--positiv); }
-.monitor-karte__pfeil--down { color: var(--negativ); }
-.monitor-karte__pfeil--neutral { color: var(--neutral); }
-.monitor-karte__def {
-  font-size: 13.5px;
-  color: var(--tinte-60);
-  font-style: italic;
-  margin: 0 0 6px;
+@media (min-width: 900px) {
+  .sektoren--kompakt .sektor-raster { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
-.monitor-karte__zeile { margin: 8px 0 0; }
-.monitor-karte__label {
+@media (min-width: 1100px) {
+  .sektoren--kompakt .sektor-raster { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.sektor__kopf { display: flex; align-items: center; gap: 12px; }
+.sektor__bild { width: 60px; height: 60px; }
+.sektor__kopf > div { min-width: 0; }
+.sektor__name { font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.15; margin: 0 0 5px; hyphens: manual; overflow-wrap: break-word; }
+.sektor__def { font-style: italic; color: var(--tinte-60); font-size: 13.5px; line-height: 1.4; margin: 0; }
+.sektor__mess { display: grid; grid-template-columns: 1fr; gap: 6px; align-content: start; border-top: 1px solid var(--haarlinie); padding-top: 8px; }
+.sektor__mess:empty { border-top: 0; padding-top: 0; }
+.sektor__spark { width: 100%; height: 34px; display: block; }
+.sektor__spark-flaeche { fill: var(--tinte); opacity: 0.05; }
+.sektor__spark-linie { fill: none; stroke-width: 1.6; vector-effect: non-scaling-stroke; }
+.sektor__spark-linie.ist-plus { stroke: var(--positiv); }
+.sektor__spark-linie.ist-minus { stroke: var(--negativ); }
+.sektor__perf { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; margin: 0; }
+.sektor__perf dt { font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tinte-40); }
+.sektor__perf dd { margin: 0; font-family: var(--sans); font-weight: 600; font-size: 14.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sektor__abschnitt { min-width: 0; }
+.sektor__label {
   display: block;
   font-family: var(--sans);
   font-weight: 600;
@@ -1089,20 +1307,21 @@ figure.chart, figure.kurschart { margin: 26px 0; break-inside: avoid; }
   color: var(--akzent-blau);
   margin-bottom: 2px;
 }
-.monitor-karte__lage, .monitor-karte__istzustand { font-size: 15px; margin: 0; }
-.monitor-karte__istzustand { color: var(--tinte-60); }
-.monitor-karte__wert {
-  margin-top: auto;
+.sektor__abschnitt--sap .sektor__label { color: var(--akzent-rot); }
+.sektor__lage, .sektor__text { font-size: 15px; line-height: 1.45; margin: 0; }
+.sektor__text { color: var(--tinte-60); }
+.sektoren--kompakt .sektor__lage { font-size: 14.5px; }
+.sektor__wert {
   font-family: var(--sans);
   font-weight: 500;
   font-variant-numeric: tabular-nums;
   font-size: 13px;
   color: var(--tinte-60);
-  border-top: 1px solid var(--haarlinie);
-  padding-top: 8px;
-  width: 100%;
+  margin: 0;
+  align-self: end;
 }
-.monitor-karte__zeile:last-of-type { margin-bottom: 12px; }
+.sektor__wert:not(:empty) { border-top: 1px solid var(--haarlinie); padding-top: 7px; }
+.sektor__quelle { margin-top: 4px; }
 
 /* ---------- Drei Aktien ---------- */
 
@@ -1318,3 +1537,278 @@ figure.chart, figure.kurschart { margin: 26px 0; break-inside: avoid; }
   figure.chart svg { max-height: 65mm; }
   .brief-kasten { position: static; }
 }
+
+/* ---------- Blocksatz für alle Fließtexte ---------- */
+/* Deutsche Silbentrennung (lang="de") hält die Wortabstände gleichmäßig;
+   die letzte Zeile eines Absatzes bleibt linksbündig. */
+.artikel__body p,
+.dek,
+.mechanik-box,
+.kurz-erklaert p,
+.factcheck-box p,
+.lehre,
+.pick__was,
+.pick__abschnitt,
+.pick li,
+.sektor__def,
+.sektor__lage,
+.sektor__text,
+.lernpunkte li,
+.lernecke-modell .mechanik-box,
+.glossar dd,
+.finance-link p,
+.brief-liste li,
+.marktpanel__stand,
+.ressort-untertitel,
+.archiv-liste__dek,
+.hinweiszeile,
+.fusszeile p,
+details.aufklapp > .aufklapp__inhalt p,
+.artikel-bild__text {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  text-wrap: wrap;
+}
+
+/* ---------- Punkt-Diagramm (McKinsey-Logik: Aussage oben, Extreme farbig) ---------- */
+.grafik--punkte .stiel { stroke: var(--tinte-40); stroke-width: 2; stroke-linecap: round; transform-box: fill-box; transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), stroke 0.2s ease; transition-delay: calc(var(--i, 0) * 70ms); }
+.grafik--punkte .stiel--rechts { transform-origin: left center; }
+.grafik--punkte .stiel--links { transform-origin: right center; }
+.grafik--punkte .punkt { fill: var(--tinte-40); stroke: var(--karte); stroke-width: 2.5; transform-box: fill-box; transform-origin: center; transition: transform 0.25s cubic-bezier(0.3, 1.6, 0.5, 1), opacity 0.5s ease, fill 0.2s ease; }
+.grafik--punkte .punkt-zeile--plus .stiel { stroke: var(--positiv); stroke-width: 3; }
+.grafik--punkte .punkt-zeile--plus .punkt { fill: var(--positiv); }
+.grafik--punkte .punkt-zeile--minus .stiel { stroke: var(--negativ); stroke-width: 3; }
+.grafik--punkte .punkt-zeile--minus .punkt { fill: var(--negativ); }
+.grafik--punkte .punkt-zeile--grau .wertlabel { fill: var(--tinte-60); font-weight: 500; }
+.grafik--punkte .punkt-zeile--plus .wertlabel { fill: var(--positiv); }
+.grafik--punkte .punkt-zeile--minus .wertlabel { fill: var(--negativ); }
+.grafik--punkte .punkt-zeile { transition: opacity 0.2s ease; cursor: pointer; }
+/* Fokus: Überfahren (Desktop) oder Antippen (Handy) hebt eine Reihe hervor */
+@media (hover: hover) {
+  .grafik--punkte svg:hover .punkt-zeile:not(:hover) { opacity: 0.35; }
+  .grafik--punkte .punkt-zeile:hover .punkt { transform: scale(1.45); }
+}
+.grafik--punkte svg.hat-fokus .punkt-zeile:not(.ist-aktiv) { opacity: 0.35; }
+.grafik--punkte .punkt-zeile.ist-aktiv .punkt { transform: scale(1.45); }
+@media (prefers-reduced-motion: no-preference) {
+  .js-an [data-einblenden]:not(.gezeigt) .stiel { transform: scaleX(0); }
+  .js-an [data-einblenden]:not(.gezeigt) .punkt { opacity: 0; }
+}
+@media print {
+  [data-einblenden] .stiel { transform: none !important; }
+  [data-einblenden] .punkt { opacity: 1 !important; }
+}
+
+/* ---------- Rubriken-Dock (wie beim Mac, nur mit Maus) ---------- */
+.dock { display: none; }
+@media (hover: hover) and (pointer: fine) and (min-width: 900px) {
+  .dock {
+    display: block;
+    position: fixed;
+    left: 50%;
+    bottom: 14px;
+    z-index: 50;
+    transform: translate(-50%, 140%);
+    transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
+    pointer-events: none;
+  }
+  .dock.dock--an { transform: translate(-50%, 0); pointer-events: auto; }
+  .dock__leiste {
+    list-style: none;
+    margin: 0;
+    padding: 8px 14px 6px;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    background: color-mix(in srgb, var(--karte) 78%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    backdrop-filter: blur(18px) saturate(1.4);
+    border: 1px solid var(--haarlinie);
+    border-radius: 22px;
+    box-shadow: 0 18px 40px -18px rgba(17, 17, 17, 0.45), 0 2px 6px rgba(17, 17, 17, 0.08);
+  }
+  .dock__item {
+    --s: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(56px * var(--s));
+    text-decoration: none;
+    transition: width 0.18s ease-out;
+  }
+  .dock--aktiv .dock__item { transition: width 0.06s linear; }
+  .dock__bild { width: 100%; height: auto; transition: transform 0.2s ease; }
+  .dock__item:active .dock__bild { transform: scale(0.9); }
+  .dock__item[aria-current="page"]::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--tinte-60);
+    margin-top: 2px;
+  }
+  .dock__label {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: var(--tinte);
+    background: var(--karte);
+    border: 1px solid var(--haarlinie);
+    border-radius: 8px;
+    padding: 3px 10px;
+    box-shadow: var(--schatten);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .dock__item:hover .dock__label, .dock__item:focus-visible .dock__label { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Handy: dasselbe Dock unten, mit dem Finger bedienbar. Wischen über die
+   Leiste vergrößert das Bild unter dem Finger, Loslassen öffnet die Rubrik.
+   Vergrößert wird per transform, damit die Leiste nie breiter wird. */
+@media (hover: none) and (pointer: coarse) {
+  .seite { padding-bottom: 84px; }
+  .dock {
+    --zelle: calc((min(100vw, 420px) - 52px) / 8);
+    display: block;
+    position: fixed;
+    left: 50%;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    z-index: 50;
+    transform: translate(-50%, 160%);
+    transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1);
+    pointer-events: none;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+  .dock.dock--an { transform: translate(-50%, 0); pointer-events: auto; }
+  .dock__leiste {
+    list-style: none;
+    margin: 0;
+    padding: 7px 10px 6px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    background: color-mix(in srgb, var(--karte) 80%, transparent);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    backdrop-filter: blur(18px) saturate(1.4);
+    border: 1px solid var(--haarlinie);
+    border-radius: 20px;
+    box-shadow: 0 18px 40px -18px rgba(17, 17, 17, 0.45), 0 2px 6px rgba(17, 17, 17, 0.08);
+  }
+  .dock__item {
+    --gross: 1.7; /* volle Vergrößerung; das Bild ist so groß angelegt und bleibt scharf */
+    position: relative;
+    display: block;
+    width: var(--zelle);
+    height: calc(var(--zelle) + 6px);
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .dock__bild {
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    width: calc(var(--zelle) * var(--gross));
+    height: calc(var(--zelle) * var(--gross));
+    max-width: none;
+    margin-left: calc(var(--zelle) * var(--gross) / -2);
+    transform: scale(calc(var(--s, 1) / var(--gross)));
+    transform-origin: 50% 100%;
+    transition: transform 0.18s ease-out;
+    will-change: transform;
+    pointer-events: none;
+  }
+  .dock--aktiv .dock__bild { transition: transform 0.05s linear; }
+  .dock__item.ist-gedrueckt .dock__bild { transform: scale(1); transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+  .dock__item[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: var(--tinte-60);
+  }
+  .dock__label {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    white-space: nowrap;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: var(--tinte);
+    background: var(--karte);
+    border: 1px solid var(--haarlinie);
+    border-radius: 8px;
+    padding: 3px 10px;
+    box-shadow: var(--schatten);
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, calc(var(--zelle) * (1 - var(--s, 1))));
+    transition: opacity 0.12s ease;
+  }
+  .dock--aktiv .dock__item.ist-nah .dock__label { opacity: 1; }
+}
+
+/* ---------- Klickbare Marktkacheln und Branchen-Karten ---------- */
+.kachel--klick { position: relative; cursor: pointer; }
+/* Hinweis direkt hinter dem Namen, nichts rechtsbündig */
+.kachel--klick .kachel__label::after { content: " ›"; color: var(--akzent-rot); opacity: 0.55; transition: opacity 0.15s ease; }
+.kachel--klick:hover .kachel__label, .kachel--klick:focus-visible .kachel__label { color: var(--akzent-rot); }
+.kachel--klick:hover .kachel__label::after { opacity: 1; }
+.kachel--klick:active { transform: scale(0.98); }
+.sektor { position: relative; }
+.sektor__link { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.sektor__link:focus-visible { outline: 2px solid var(--akzent-blau); outline-offset: 2px; }
+@media (hover: hover) {
+  .sektor { transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.2), box-shadow 0.25s ease, border-color 0.15s ease; }
+  .sektoren--kompakt .sektor:hover { transform: translateY(-4px); }
+}
+.sektor:active { transform: scale(0.985); }
+.sektor:target { border-color: var(--akzent-rot); box-shadow: 0 0 0 3px color-mix(in srgb, var(--akzent-rot) 25%, transparent); }
+
+/* Hantel-Diagramm: leerer Punkt = Woche, voller Punkt = Monat */
+.grafik--hantel .hantel__steg { stroke: var(--tinte-40); stroke-width: 3; stroke-linecap: round; opacity: 0.55; }
+.grafik--hantel .punkt-zeile--plus .hantel__steg { stroke: var(--positiv); }
+.grafik--hantel .punkt-zeile--minus .hantel__steg { stroke: var(--negativ); }
+.grafik--hantel .hantel__punkt-woche { fill: var(--karte); stroke: var(--tinte-60); stroke-width: 2; transition: opacity 0.5s ease; }
+.hantel__legende { display: flex; align-items: center; gap: 6px 10px; flex-wrap: wrap; margin-top: 8px; font-family: var(--sans); font-size: 13px; color: var(--tinte-60); }
+.hantel__woche, .hantel__monat { display: inline-block; width: 11px; height: 11px; border-radius: 50%; }
+.hantel__woche { border: 2px solid var(--tinte-60); }
+.hantel__monat { background: var(--tinte-60); margin-left: 10px; }
+@media (prefers-reduced-motion: no-preference) {
+  .js-an [data-einblenden]:not(.gezeigt) .hantel__steg,
+  .js-an [data-einblenden]:not(.gezeigt) .hantel__punkt-woche { opacity: 0; }
+}
+.grafik--hantel .hantel__steg { transition: opacity 0.6s ease; transition-delay: calc(var(--i, 0) * 60ms); }
+
+/* Zwei Varianten der Vergleichs-Grafiken: breit (Desktop) und schmal (Handy) */
+.grafik svg.grafik__svg--schmal { display: none; }
+@media (max-width: 640px) {
+  .grafik svg.grafik__svg--breit { display: none; }
+  .grafik svg.grafik__svg--schmal { display: block; }
+  .grafik .balken-label, .grafik .wertlabel { font-size: 15px; }
+  .grafik .achsenlabel { font-size: 13px; }
+}
+
+.hantel__markt line { stroke: var(--akzent-blau); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.hantel__marktlinie { display: inline-block; width: 16px; height: 0; border-top: 2px dashed var(--akzent-blau); margin-left: 10px; }
+.lesehilfe p { margin: 0 0 8px; }
+.lesehilfe p:last-child { margin-bottom: 0; }
+.lesehilfe { margin: 0 0 26px; }

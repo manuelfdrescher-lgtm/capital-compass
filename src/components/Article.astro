@@ -16,10 +16,11 @@ interface Props {
 const { article: a, lead = false } = Astro.props;
 const Headline = lead ? "h1" : "h2";
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const sapSchwerpunkt = /^SAP-Schwerpunkt/i.test(a.kicker ?? "");
 ---
 
 <article class={`artikel${lead ? " artikel--leit" : ""}`} id={a.id} data-pagefind-body>
-  <p class="kicker">{a.kicker}</p>
+  <p class={`kicker${sapSchwerpunkt ? " kicker--sap" : ""}`}>{sapSchwerpunkt && <Emblem name="sap" size={26} class="kicker__bild" />}{a.kicker}</p>
   <Headline class="headline">{a.headline}</Headline>
   <p class="dek">{a.dek}</p>
   <p class="byline">Von der Capital-Compass-Redaktion</p>

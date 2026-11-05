@@ -133,6 +133,13 @@ export const BranchenMonitorEintragSchema = z.object({
   // Zyklusphase, strukturelle Treiber. Optional aus Kompatibilität mit älteren
   // Ausgaben, aber ab sofort redaktionelle Pflicht (siehe .claude/agents/sector-sweep.md).
   istZustand: z.string().optional(),
+  // Seit November 2026 (alle optional): was den Sektor gerade antreibt,
+  // ein konkreter Termin oder Indikator zum Beobachten, drei weltweite
+  // Schwergewichte und der Bezug zu SAPs Branchengeschäft.
+  treiber: z.string().optional(),
+  beobachten: z.string().optional(),
+  schwergewichte: z.array(nonEmpty).max(5).optional(),
+  sapBezug: z.string().optional(),
 });
 
 export const StockPickSchema = z.object({
