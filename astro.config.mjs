@@ -12,4 +12,6 @@ export default defineConfig({
   build: {
     format: "directory",
   },
+  // Die Entwickler-Leiste von Astro läge in der Vorschau über dem Rubriken-Dock
+  devToolbar: { enabled: false },
 });

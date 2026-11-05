@@ -45,73 +45,100 @@ const items = [
     // Dock zeigen, sobald die Navigation oben aus dem Bild ist
     const beobachter = new IntersectionObserver(([e]) => dock.classList.toggle("dock--an", !e.isIntersecting));
     if (kopf) beobachter.observe(kopf);
-    if (fein && !ruhig) {
-      dock.addEventListener("mousemove", (ev) => {
-        dock.classList.add("dock--aktiv");
-        for (const it of items) {
-          const r = it.getBoundingClientRect();
-          const d = Math.abs(ev.clientX - (r.left + r.width / 2));
-          const s = 1 + 0.75 * Math.max(0, 1 - d / 150) ** 2;
-          it.style.setProperty("--s", s.toFixed(3));
+
+    // Vergrößerung wie beim Mac: Die Zielgröße jedes Bilds ergibt sich aus
+    // dem Abstand des Zeigers zu seiner Ruhelage. Gemessen wird die Ruhelage
+    // nur einmal, nicht die schon vergrößerte Leiste, sonst schaukelt sich
+    // die Bewegung auf. Eine Feder führt die Größen in jedem Bildschirmbild
+    // weich an das Ziel heran, unabhängig von der Bildwiederholrate.
+    const MAX = fein ? 0.75 : 0.65;
+    const RADIUS = fein ? 150 : 95;
+    const ist = items.map(() => 1);
+    const ziel = items.map(() => 1);
+    let ruhe: number[] = [];
+    let laeuft = false;
+    let zuletzt = 0;
+    const messen = () => {
+      // Auf dem Mac verschiebt die Vergrößerung die Nachbarn, deshalb nur in Ruhe messen
+      if (fein && ist.some((v) => v !== 1)) return;
+      ruhe = items.map((it) => { const r = it.getBoundingClientRect(); return r.left + r.width / 2; });
+    };
+    window.addEventListener("resize", () => { ruhe = []; }, { passive: true });
+    const feder = (t: number) => {
+      const dt = Math.min(48, t - (zuletzt || t - 16.7));
+      zuletzt = t;
+      const k = 1 - Math.pow(0.68, dt / 16.7);
+      let bewegt = false;
+      items.forEach((it, i) => {
+        let v = ist[i] + (ziel[i] - ist[i]) * k;
+        if (Math.abs(ziel[i] - v) < 0.002) v = ziel[i];
+        else bewegt = true;
+        if (v !== ist[i]) {
+          ist[i] = v;
+          it.style.setProperty("--s", v.toFixed(3));
         }
       });
-      dock.addEventListener("mouseleave", () => {
+      if (bewegt) requestAnimationFrame(feder);
+      else { laeuft = false; zuletzt = 0; }
+    };
+    const zielSetzen = (x: number | null) => {
+      if (x !== null && !ruhe.length) messen();
+      let best = Infinity;
+      let naechster = -1;
+      items.forEach((_, i) => {
+        const d = x === null || !ruhe.length ? Infinity : Math.abs(x - ruhe[i]);
+        if (d < best) { best = d; naechster = i; }
+        ziel[i] = ruhig || d === Infinity ? 1 : 1 + MAX * Math.max(0, 1 - d / RADIUS) ** 2;
+      });
+      items.forEach((it, i) => it.classList.toggle("ist-nah", x !== null && i === naechster));
+      if (!laeuft) { laeuft = true; requestAnimationFrame(feder); }
+    };
+
+    if (fein) {
+      dock.addEventListener("pointermove", (ev) => {
+        if (ev.pointerType !== "mouse") return;
+        dock.classList.add("dock--aktiv");
+        zielSetzen(ev.clientX);
+      });
+      dock.addEventListener("pointerleave", () => {
         dock.classList.remove("dock--aktiv");
-        items.forEach((it) => it.style.setProperty("--s", "1"));
+        zielSetzen(null);
       });
     }
     if (finger) {
       // Mit dem Finger über die Leiste wischen: Das Bild darunter wächst
       // samt Nachbarn, über ihm steht der Name. Loslassen öffnet die Rubrik,
       // Wegziehen nach oben bricht ab.
-      let mitten: number[] = [];
-      let nah = -1;
-      let schritt = 0;
       let oben = 0;
-      const setzen = (x: number) => {
-        let best = Infinity;
-        let ziel = -1;
-        mitten.forEach((m, i) => {
-          const d = Math.abs(x - m);
-          if (d < best) { best = d; ziel = i; }
-          const s = ruhig ? 1 : 1 + 0.65 * Math.max(0, 1 - d / 95) ** 2;
-          items[i].style.setProperty("--s", s.toFixed(3));
-        });
-        if (ziel !== nah) {
-          items[nah]?.classList.remove("ist-nah");
-          items[ziel]?.classList.add("ist-nah");
-          nah = ziel;
-        }
-      };
-      const ruecksetzen = () => {
-        cancelAnimationFrame(schritt);
-        mitten = [];
-        dock.classList.remove("dock--aktiv");
-        items.forEach((it) => { it.style.removeProperty("--s"); it.classList.remove("ist-nah"); });
-      };
+      let aktiv = false;
       dock.addEventListener("pointerdown", (ev) => {
         if (ev.pointerType === "mouse") return;
         try { dock.setPointerCapture(ev.pointerId); } catch {}
-        mitten = items.map((it) => { const r = it.getBoundingClientRect(); return r.left + r.width / 2; });
+        ruhe = [];
         oben = dock.getBoundingClientRect().top;
-        nah = -1;
+        aktiv = true;
         dock.classList.add("dock--aktiv");
-        setzen(ev.clientX);
+        zielSetzen(ev.clientX);
       });
       dock.addEventListener("pointermove", (ev) => {
-        if (!mitten.length) return;
-        cancelAnimationFrame(schritt);
-        schritt = requestAnimationFrame(() => setzen(ev.clientX));
+        if (aktiv) zielSetzen(ev.clientX);
       });
       dock.addEventListener("pointerup", (ev) => {
-        if (!mitten.length) return;
-        const ziel = ev.clientY > oben - 70 ? items[nah] : null;
-        ruecksetzen();
-        if (!ziel) return;
-        ziel.classList.add("ist-gedrueckt");
-        setTimeout(() => { location.href = ziel.href; }, 180);
+        if (!aktiv) return;
+        aktiv = false;
+        const z = items.findIndex((it) => it.classList.contains("ist-nah"));
+        const treffer = ev.clientY > oben - 70 && z >= 0 ? items[z] : null;
+        dock.classList.remove("dock--aktiv");
+        zielSetzen(null);
+        if (!treffer) return;
+        treffer.classList.add("ist-gedrueckt");
+        setTimeout(() => { location.href = treffer.href; }, 180);
       });
-      dock.addEventListener("pointercancel", ruecksetzen);
+      dock.addEventListener("pointercancel", () => {
+        aktiv = false;
+        dock.classList.remove("dock--aktiv");
+        zielSetzen(null);
+      });
       // Navigiert wird beim Loslassen, nicht über den normalen Link-Klick
       dock.addEventListener("click", (ev) => ev.preventDefault());
       window.addEventListener("pageshow", () => items.forEach((it) => it.classList.remove("ist-gedrueckt")));
