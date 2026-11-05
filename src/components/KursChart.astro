@@ -2,9 +2,10 @@
 // Interaktiver Kurs-Chart als Inline-SVG ohne Framework.
 // Zeitraum-Tasten (1M bis 5J, Max), bei mehreren Reihen Instrument-Tasten.
 // Überfahren zeigt Datum, Wert und Veränderung seit Zeitraumbeginn;
-// ein Klick setzt einen Messpunkt, danach zeigt die Anzeige die
-// Veränderung zwischen Messpunkt und Mausposition. Erneuter Klick löst ihn.
-import { FORMATE, PAD, verfuegbareSpannen, ausschnitt, geometrie, zahl, prozent, datumLang } from "../lib/kurschart.mjs";
+// ein Klick setzt einen Messpunkt. Danach verbindet eine Linie Messpunkt
+// und Mausposition, an ihr steht live die Rendite des Abschnitts (grün im
+// Plus, rot im Minus, grau bei 0,00 %). Erneuter Klick löst den Messpunkt.
+import { FORMATE, PAD, verfuegbareSpannen, ausschnitt, geometrie, zahl, prozent, richtungKlasse, datumLang } from "../lib/kurschart.mjs";
 
 interface Reihe {
   key?: string;
@@ -98,6 +99,7 @@ const zeigeSpannen = spannen.length > 2;
         <line class="pin-linie" x1="0" x2="0" y1={PAD.top} y2={H - PAD.bottom} />
         <circle class="pin-punkt" r="5" cx="0" cy="0" />
       </g>
+      <line class="messlinie" x1="0" y1="0" x2="0" y2="0" hidden />
       <g class="fadenkreuz" hidden>
         <line class="fadenkreuz-linie" x1="0" x2="0" y1={PAD.top} y2={H - PAD.bottom} />
         <circle class="fadenkreuz-punkt" r="5" cx="0" cy="0" />
@@ -105,9 +107,10 @@ const zeigeSpannen = spannen.length > 2;
       <rect class="hover-flaeche" x={PAD.left} y={PAD.top} width={W - PAD.left - PAD.right} height={H - PAD.top - PAD.bottom} fill="transparent" />
     </svg>
     <div class="kurschart__tipp" hidden></div>
+    <div class="kurschart__messwert" aria-live="polite" hidden></div>
   </div>
 
-  <p class="kurschart__hinweis">Überfahren zeigt Datum und Wert. Ein Klick setzt einen Messpunkt und misst die Veränderung bis zur Mausposition.</p>
+  <p class="kurschart__hinweis">Überfahren zeigt Datum und Wert. Ein Klick setzt einen Messpunkt, die Linie bis zur Mausposition zeigt die Rendite dieses Abschnitts.</p>
   <p class="chart__quelle kurschart__quelle">Quelle: {erste.source}</p>
 
   {tabelle && (
@@ -130,7 +133,7 @@ const zeigeSpannen = spannen.length > 2;
 </figure>
 
 <script>
-  import { PAD, verfuegbareSpannen, ausschnitt, geometrie, zahl, prozent, datumLang } from "../lib/kurschart.mjs";
+  import { PAD, verfuegbareSpannen, ausschnitt, geometrie, zahl, prozent, richtungKlasse, datumLang } from "../lib/kurschart.mjs";
 
   const NS = "http://www.w3.org/2000/svg";
   type Punkt = { x: number; y: number; t: string; v: number };
@@ -164,6 +167,8 @@ const zeigeSpannen = spannen.length > 2;
     const kreuz = svg.querySelector<SVGGElement>(".fadenkreuz")!;
     const pinG = svg.querySelector<SVGGElement>(".pin")!;
     const tipp = fig.querySelector<HTMLElement>(".kurschart__tipp")!;
+    const messlinie = svg.querySelector<SVGLineElement>(".messlinie")!;
+    const messwert = fig.querySelector<HTMLElement>(".kurschart__messwert")!;
     const buehne = fig.querySelector<HTMLElement>(".kurschart__buehne")!;
     const name = fig.querySelector(".kurschart__name")!;
     const wert = fig.querySelector(".kurschart__wert")!;
@@ -205,6 +210,7 @@ const zeigeSpannen = spannen.length > 2;
       pinG.setAttribute("hidden", "");
       kreuz.setAttribute("hidden", "");
       tipp.hidden = true;
+      messungAus();
 
       gitter.replaceChildren(
         ...g.gitter.map((l) => {
@@ -238,7 +244,7 @@ const zeigeSpannen = spannen.length > 2;
       name.textContent = r.label;
       wert.textContent = `${zahl(z.v)}${r.unit}`;
       deltaEl.textContent = prozent(d);
-      deltaEl.className = `kurschart__delta ${d >= 0 ? "ist-plus" : "ist-minus"}`;
+      deltaEl.className = `kurschart__delta ${richtungKlasse(d)}`;
       seit.textContent = `seit ${datumLang(a.t)}`;
       quelle.textContent = `Quelle: ${r.source}`;
     }
@@ -255,9 +261,36 @@ const zeigeSpannen = spannen.length > 2;
       return Math.abs(punkte[lo].x - sx) <= Math.abs(punkte[hi].x - sx) ? punkte[lo] : punkte[hi];
     }
 
-    function veraenderung(von: Punkt, bis: Punkt) {
+    function veraenderung(von: Punkt, bis: Punkt, stellen = 1) {
       const d = ((bis.v - von.v) / von.v) * 100;
-      return `<span class="${d >= 0 ? "ist-plus" : "ist-minus"}">${prozent(d)}</span>`;
+      return `<span class="${richtungKlasse(d, stellen)}">${prozent(d, stellen)}</span>`;
+    }
+
+    function messungAus() {
+      messlinie.setAttribute("hidden", "");
+      messwert.hidden = true;
+    }
+
+    // Linie vom Messpunkt zur Mausposition, die Rendite steht in der Mitte
+    function messen(von: Punkt, bis: Punkt) {
+      const d = ((bis.v - von.v) / von.v) * 100;
+      const klasse = richtungKlasse(d, 2);
+      messlinie.setAttribute("x1", String(von.x));
+      messlinie.setAttribute("y1", String(von.y));
+      messlinie.setAttribute("x2", String(bis.x));
+      messlinie.setAttribute("y2", String(bis.y));
+      messlinie.setAttribute("class", `messlinie ${klasse}`);
+      messlinie.removeAttribute("hidden");
+      messwert.textContent = prozent(d, 2);
+      messwert.className = `kurschart__messwert ${klasse}`;
+      messwert.hidden = false;
+      const sx = buehne.clientWidth / W;
+      const sy = buehne.clientHeight / H;
+      const mx = ((von.x + bis.x) / 2) * sx;
+      const my = Math.min(von.y, bis.y) * sy + (Math.abs(bis.y - von.y) * sy) / 2;
+      const halb = messwert.offsetWidth / 2;
+      messwert.style.left = `${Math.min(Math.max(mx, halb), buehne.clientWidth - halb)}px`;
+      messwert.style.top = `${Math.max(my - 10, messwert.offsetHeight)}px`;
     }
 
     function zeige(p: Punkt) {
@@ -265,9 +298,11 @@ const zeigeSpannen = spannen.length > 2;
       setzeKreis(kreuz, p);
       const start = punkte[0];
       tipp.innerHTML = pin && pin !== p
-        ? `<strong>${datumLang(pin.t)} → ${datumLang(p.t)}</strong><span>${zahl(pin.v)}${r.unit} → ${zahl(p.v)}${r.unit}</span><span>${veraenderung(pin, p)} im gewählten Abschnitt</span>`
+        ? `<strong>${datumLang(pin.t)} → ${datumLang(p.t)}</strong><span>${zahl(pin.v)}${r.unit} → ${zahl(p.v)}${r.unit}</span><span>${veraenderung(pin, p, 2)} im gewählten Abschnitt</span>`
         : `<strong>${datumLang(p.t)}</strong><span>${zahl(p.v)}${r.unit}</span><span>${veraenderung(start, p)} seit ${datumLang(start.t)}</span>`;
       tipp.hidden = false;
+      if (pin && pin !== p) messen(pin, p);
+      else messungAus();
       const breite = buehne.clientWidth;
       const px = (p.x / W) * breite;
       const py = (p.y / H) * buehne.clientHeight;
@@ -281,6 +316,7 @@ const zeigeSpannen = spannen.length > 2;
     function verstecke() {
       kreuz.setAttribute("hidden", "");
       tipp.hidden = true;
+      messungAus();
     }
 
     svg.addEventListener("mousemove", (e) => zeige(naechster(e.clientX)));

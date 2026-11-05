@@ -234,8 +234,28 @@ export const EditionSchema = z.object({
 
 // Zusätzliche redaktionelle Prüfungen, die über reine Typen hinausgehen.
 // Liefert eine Liste von Fehlermeldungen (leer = alles gut).
+// Die Zeitung schreibt für eine allgemeine Leserschaft. Persönliche Bezüge
+// auf den Herausgeber, sein Praktikum oder direkte Anrede haben in keinem
+// Text etwas zu suchen.
+const PERSOENLICH = /Praktik|Manuel|Drescher|Corporate Strategy Group|\bCSG\b|\b(?:du|dir|dich|dein(?:e[mnrs]?)?)\b/i;
+
+function persoenlicheBezuege(wert, pfad, treffer) {
+  if (typeof wert === "string") {
+    if (/^https?:\/\//.test(wert)) return; // Links (etwa zur eigenen Seite) sind kein Text
+    const m = wert.match(PERSOENLICH);
+    if (m) treffer.push(`${pfad}: „${wert.slice(Math.max(0, m.index - 30), m.index + m[0].length + 30)}“`);
+  } else if (Array.isArray(wert)) {
+    wert.forEach((v, i) => persoenlicheBezuege(v, `${pfad}[${i}]`, treffer));
+  } else if (wert && typeof wert === "object") {
+    for (const [k, v] of Object.entries(wert)) persoenlicheBezuege(v, `${pfad}.${k}`, treffer);
+  }
+}
+
 export function editorialChecks(edition) {
   const errors = [];
+  const persoenlich = [];
+  persoenlicheBezuege(edition.articles, "articles", persoenlich);
+  for (const t of persoenlich) errors.push(`Persönlicher Bezug im Text (allgemeine Leserschaft): ${t}`);
   const leitartikel = edition.articles.filter((a) => a.ressort === "titelseite");
   if (leitartikel.length === 0) {
     errors.push("Es fehlt ein Leitartikel (ressort: titelseite).");

@@ -46,21 +46,18 @@ const items = [
     const beobachter = new IntersectionObserver(([e]) => dock.classList.toggle("dock--an", !e.isIntersecting));
     if (kopf) beobachter.observe(kopf);
 
-    // Vergrößerung wie beim Mac: Die Zielgröße jedes Bilds ergibt sich aus
-    // dem Abstand des Zeigers zu seiner Ruhelage. Gemessen wird die Ruhelage
-    // nur einmal, nicht die schon vergrößerte Leiste, sonst schaukelt sich
-    // die Bewegung auf. Eine Feder führt die Größen in jedem Bildschirmbild
-    // weich an das Ziel heran, unabhängig von der Bildwiederholrate.
-    const MAX = fein ? 0.75 : 0.65;
-    const RADIUS = fein ? 150 : 95;
+    // Vergrößerung wie beim Mac, aber mit festem Rahmen: Die Zielgröße jedes
+    // Bilds ergibt sich aus dem Abstand des Zeigers zu seiner festen Position.
+    // Eine Feder führt die Größen in jedem Bildschirmbild weich an das Ziel
+    // heran, unabhängig von der Bildwiederholrate.
+    const MAX = 0.6;
+    const RADIUS = fein ? 120 : 85;
     const ist = items.map(() => 1);
     const ziel = items.map(() => 1);
     let ruhe: number[] = [];
     let laeuft = false;
     let zuletzt = 0;
     const messen = () => {
-      // Auf dem Mac verschiebt die Vergrößerung die Nachbarn, deshalb nur in Ruhe messen
-      if (fein && ist.some((v) => v !== 1)) return;
       ruhe = items.map((it) => { const r = it.getBoundingClientRect(); return r.left + r.width / 2; });
     };
     window.addEventListener("resize", () => { ruhe = []; }, { passive: true });

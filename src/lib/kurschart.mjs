@@ -63,9 +63,16 @@ export function zahl(v, stellen = nachkomma(v)) {
   return new Intl.NumberFormat("de-DE", { minimumFractionDigits: stellen, maximumFractionDigits: stellen }).format(v);
 }
 
-export function prozent(v) {
-  const s = new Intl.NumberFormat("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(Math.abs(v));
-  return `${v > 0 ? "+" : v < 0 ? "−" : "±"}${s} %`;
+export function prozent(v, stellen = 1) {
+  const s = new Intl.NumberFormat("de-DE", { minimumFractionDigits: stellen, maximumFractionDigits: stellen }).format(Math.abs(v));
+  if (Number(Math.abs(v).toFixed(stellen)) === 0) return `${s} %`;
+  return `${v > 0 ? "+" : "−"}${s} %`;
+}
+
+// Farbklasse passend zur angezeigten Zahl: grün, rot, grau bei 0
+export function richtungKlasse(v, stellen = 1) {
+  const r = Number(v.toFixed(stellen));
+  return r > 0 ? "ist-plus" : r < 0 ? "ist-minus" : "ist-null";
 }
 
 const MONATE = ["Jan.", "Feb.", "März", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sep.", "Okt.", "Nov.", "Dez."];
