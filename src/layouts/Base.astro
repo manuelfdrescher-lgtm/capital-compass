@@ -15,12 +15,14 @@ import MastheadLogo from "../components/MastheadLogo.astro";
 import RubrikDock from "../components/RubrikDock.astro";
 import Vorspann from "../components/Vorspann.astro";
 import { formatDateLong, slotLabel } from "../lib/format.mjs";
+import { logoInfo } from "../lib/logo.mjs";
 
 // Eigenes Marken-Logo (Vollversion mit Wortmarke) hat Vorrang: dann wird die
 // Text-Wortmarke im Kopf durch das Bild ersetzt.
 const logoFile = ["masthead-logo.png", "masthead-logo.svg", "masthead-logo.jpg"].find((f) =>
   existsSync(join(process.cwd(), "public", "images", f))
 );
+const logo = logoFile ? logoInfo(logoFile) : null;
 
 interface Props {
   title: string;
@@ -62,7 +64,7 @@ const nav = [
         if (nochmal || (!navigator.webdriver && !sessionStorage.getItem("cc-vorspann") && !matchMedia("(prefers-reduced-motion: reduce)").matches)) {
           document.documentElement.classList.add("vorspann-an");
           // Grafiken des Vorspanns sofort laden, damit er ohne leeren Moment startet
-          ["hand-feder.webp", "kompass.png", "hand-blatt.webp", "maschine.webp"].forEach(function (f) {
+          ["hand-feder.webp", "kompass.webp", "hand-blatt.webp", "maschine.webp"].forEach(function (f) {
             var l = document.createElement("link");
             l.rel = "preload"; l.as = "image"; l.href = base + "/images/vorspann/" + f;
             document.head.appendChild(l);
@@ -78,7 +80,7 @@ const nav = [
       <header class="masthead">
         {logoFile ? (
           <a href={`${base}/`} class="masthead__marke" aria-label="The Capital Compass — zur Titelseite">
-            <img class="masthead__marke-img" src={`${base}/images/${logoFile}`} alt="The Capital Compass — A Daily Briefing on Markets, Business and the Global Economy" />
+            <img class="masthead__marke-img" src={`${base}/images/${logoFile}?v=${logo.version}`} width={logo.width} height={logo.height} alt="The Capital Compass — A Daily Briefing on Markets, Business and the Global Economy" />
           </a>
         ) : (
           <>

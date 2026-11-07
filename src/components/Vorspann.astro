@@ -11,10 +11,11 @@
 // und Buchstaben sind Ausschnitte des echten Logos. Ein Klick beendet den
 // Film; der Lautsprecher-Knopf schaltet die Geräusche zu.
 import daten from "../lib/vorspann-daten.json";
+import { logoInfo } from "../lib/logo.mjs";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const bild = (name: string) => `${base}/images/vorspann/${name}`;
-const logo = `${base}/images/masthead-logo.png`;
+const logo = `${base}/images/masthead-logo.png?v=${logoInfo().version}`;
 const LB = daten.breite;
 const LH = daten.hoehe;
 const KH = 414; // Höhe des Kompass-Ausschnitts
@@ -62,7 +63,7 @@ const zeilen = daten.zeilen;
                   ))}
                 </mask>
               </defs>
-              <image href={bild("kompass.png")} width={LB} height={KH} mask="url(#vorspann-maske)" />
+              <image href={bild("kompass.webp")} width={LB} height={KH} mask="url(#vorspann-maske)" />
             </svg>
             {zeilen.map((z) => (
               <div class="vorspann__zeile" data-zeile={z.name} style={`--oben: ${(z.oben / LH) * 100}%; --unten: ${100 - (z.unten / LH) * 100}%; --rechts: 100%`}>
@@ -207,11 +208,12 @@ const zeilen = daten.zeilen;
     const vw = innerWidth;
     const vh = innerHeight;
     const k = L.width / daten.breite; // Pixel je Logo-Einheit
+    const Lh = daten.hoehe * k; // Höhe aus dem Seitenverhältnis, auch wenn das Bild noch lädt
     const Bw = L.width / 0.5; // Briefbogen: Logo nimmt die halbe Breite ein
     const bx = L.left + L.width / 2 - Bw / 2;
     const by = L.top - Bw * 0.09;
     Object.assign(blatt.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${Bw * 1.414}px` });
-    Object.assign(kopf.style, { left: `${L.left - bx}px`, top: `${L.top - by}px`, width: `${L.width}px`, height: `${L.height}px` });
+    Object.assign(kopf.style, { left: `${L.left - bx}px`, top: `${L.top - by}px`, width: `${L.width}px`, height: `${Lh}px` });
 
     // Anschläge: Mitte jedes Buchstabens auf der Grundlinie seiner Zeile
     const anschlaege = daten.zeilen.map((z, zi) => z.glyphen.map(([s, e, art]) => ({
@@ -402,8 +404,10 @@ const zeilen = daten.zeilen;
       await warte(200);
       await zeichnen();
       if (fertig) return;
+      await Promise.all([...maschinen, griff].map(geladen));
       await einlegen();
       if (fertig) return;
+      await geladen(zeilenEl[0].querySelector("img")!);
       await tippen();
       if (fertig) return;
       glocke();
@@ -415,7 +419,17 @@ const zeilen = daten.zeilen;
     addEventListener("keydown", () => abschluss(true), { once: true });
     addEventListener("wheel", () => abschluss(true), { once: true, passive: true });
 
-    const bilder = [...huelle.querySelectorAll("img")].map((i) => (i.complete ? Promise.resolve() : new Promise((r) => { i.onload = i.onerror = r; })));
-    Promise.all(bilder).then(film);
+    // Start, sobald Federhand und Kompass geladen sind; der Rest lädt während
+    // des Zeichnens. Ist das Netz so langsam, dass selbst das nach 2,5 s fehlt,
+    // entfällt der Film und die Seite erscheint sofort.
+    const geladen = (i: HTMLImageElement) => (i.complete && i.naturalWidth > 0 ? Promise.resolve() : new Promise<void>((r) => { i.addEventListener("load", () => r(), { once: true }); i.addEventListener("error", () => r(), { once: true }); }));
+    const kompassBild = new Image();
+    kompassBild.src = huelle.querySelector("svg image")!.getAttribute("href")!;
+    const bereit = Promise.all([geladen(feder), geladen(kompassBild)]).then(() => true);
+    const zuSpaet = new Promise<boolean>((r) => setTimeout(() => r(false), 2500));
+    Promise.race([bereit, zuSpaet]).then((ok) => {
+      if (ok) film();
+      else { html.classList.remove("vorspann-an"); huelle.remove(); }
+    });
   }
 </script>
