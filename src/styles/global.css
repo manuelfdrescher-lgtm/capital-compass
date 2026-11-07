@@ -311,43 +311,66 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 .hauptnav a:focus-visible .hauptnav__bild,
 .hauptnav a.ist-gedrueckt .hauptnav__bild { opacity: 1; transform: translateY(calc(var(--tief) - var(--hub))); }
 
-/* Handy: eine Zeile zum Wischen, an den Rändern weich ausgeblendet */
+/* Handy: Ressort-Register wie im Zeitungskopf, zwei mittig gesetzte Zeilen zu je
+   vier Rubriken, getrennt durch kleine rote Rauten (wie in der Datumszeile).
+   Alles ist ohne Wischen zu sehen; die Schrift folgt der Bildschirmbreite. */
+.hauptnav__umbruch { display: none; }
 @media (max-width: 760px) {
-  .hauptnav { --band: 54px; --bild: 26px; --hub: 11px; }
+  .hauptnav { --band: 34px; --bild: 20px; --hub: 8px; }
   .hauptnav__leiste {
-    container-type: normal;
+    container-type: inline-size;
     display: flex;
-    justify-content: flex-start;
-    gap: 0 24px;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    scrollbar-width: none;
-    --links: #000;
-    --rechts: #000;
-    -webkit-mask-image: linear-gradient(90deg, var(--links) 0, #000 22px, #000 calc(100% - 28px), var(--rechts));
-    mask-image: linear-gradient(90deg, var(--links) 0, #000 22px, #000 calc(100% - 28px), var(--rechts));
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: min(20px, 5cqw);
+    padding: 6px 0 4px;
   }
-  /* Weicher Rand nur auf der Seite, auf der noch Rubriken folgen */
-  .hauptnav__leiste.mehr-links { --links: transparent; }
-  .hauptnav__leiste.mehr-rechts { --rechts: transparent; }
-  .hauptnav__leiste::-webkit-scrollbar { display: none; }
-  .hauptnav a { flex: none; font-size: 14px; scroll-snap-align: center; }
+  .hauptnav__umbruch { display: block; flex-basis: 100%; height: 0; }
+  /* Schriftgröße aus der Breite: Die längere Zeile hat rund 37 Zeichen und drei Abstände */
+  .hauptnav a { flex: none; font-size: clamp(7.5px, calc((100cqw - min(60px, 15cqw)) / 28.5), 12.5px); }
+  .hauptnav a::before {
+    content: "◆";
+    position: absolute;
+    left: calc(min(20px, 5cqw) / -2);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8.5px;
+    line-height: 1;
+    color: var(--akzent-rot);
+    opacity: 0.85;
+  }
+  .hauptnav__leiste > a:first-child::before,
+  .hauptnav__umbruch + a::before { content: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hauptnav__text { transform: none !important; }
   .hauptnav__bild { display: none; }
 }
 
-/* Widmung zwischen Logo und Datumszeile */
+/* Widmung zwischen Logo und Datumszeile: von Hand mit der Spitzfeder geschrieben.
+   Schrift Mrs Saint Delafield (Schreibschrift des 19. Jahrhunderts); nur das große
+   D kommt aus Pinyon Script, damit es heute klar lesbar ist. */
+@font-face {
+  font-family: "Widmung";
+  src: url("../fonts/widmung.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Widmung";
+  src: url("../fonts/widmung-d.woff2") format("woff2");
+  unicode-range: U+0044;
+  font-display: swap;
+}
 .masthead__leser {
-  margin: 0 0 12px;
-  font-family: var(--schreibmaschine);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--tinte-60);
-  opacity: 0.8;
+  margin: -4px 0 6px;
+  font-family: "Widmung", "Snell Roundhand", cursive;
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  word-spacing: 0.12em;
+  text-transform: none;
+  color: var(--tinte);
+  opacity: 0.55;
 }
 
 /* ---------- Beispiel-Banner ---------- */
@@ -1113,6 +1136,7 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann__kopie .hauptnav__bild { display: none; }
 .vorspann__kopie .hauptnav__text { transition: none; }
 .vorspann__kopie .vz-z { position: relative; }
+.vorspann__kopie .hauptnav a:not(.vz-da)::before { opacity: 0; }
 .vorspann__kopie .vz-z:not(.da),
 .vorspann__kopie .vz-z.spaeter { opacity: 0 !important; }
 .vorspann--ende .vorspann__kopie .vz-z { opacity: 1 !important; top: 0 !important; transition: opacity 0.4s ease; }
@@ -1149,6 +1173,11 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann--feder .vorspann__hand--feder { opacity: 1; }
 .vorspann--feder .vorspann__federschatten { opacity: 0.2; }
 .vorspann__linealgruppe { position: absolute; left: 0; top: 0; z-index: 5; opacity: 0; will-change: transform; }
+/* Kopfstempel und Stempelkissen */
+.vorspann__kissen { position: absolute; left: 0; top: 0; z-index: 1; height: auto; max-width: none; filter: drop-shadow(0 4px 5px rgba(40, 28, 14, 0.3)); }
+.vorspann__stempel { position: absolute; left: 0; top: 0; z-index: 6; opacity: 0; pointer-events: none; will-change: transform; transition: opacity 0.2s ease; }
+.vorspann__stempel img { display: block; width: 100%; height: auto; max-width: none; filter: drop-shadow(0 12px 14px rgba(40, 28, 14, 0.3)); }
+.vorspann--stempel .vorspann__stempel { opacity: 1; }
 .vorspann__lineal { position: absolute; left: 0; top: 0; height: auto; max-width: none; filter: drop-shadow(0 3px 3px rgba(40, 28, 14, 0.3)); }
 
 /* Filmoberfläche: Sepia, Flimmern, Korn, Kratzer, Staub, weicher Lichtabfall */
@@ -2217,6 +2246,17 @@ details.aufklapp > .aufklapp__inhalt p,
 
 .hantel__markt line { stroke: var(--akzent-blau); stroke-width: 1.5; stroke-dasharray: 5 4; }
 .hantel__marktlinie { display: inline-block; width: 16px; height: 0; border-top: 2px dashed var(--akzent-blau); margin-left: 10px; }
+/* Fonds-Zeile unter dem Hantel-Diagramm, gesetzt wie die Quellenzeile.
+   Alle möglichen Sätze liegen unsichtbar übereinander. So hat die Zeile
+   immer die Höhe des längsten Satzes, und beim Wechsel springt nichts. */
+.hantel__fonds { display: grid; margin: 8px 0 0; font-family: var(--sans); font-size: 12.5px; line-height: 1.45; color: var(--tinte-60); }
+.hantel__fonds > span { grid-area: 1 / 1; }
+.hantel__fonds-platz { visibility: hidden; }
+html:not(.js-an) .hantel__fonds { display: none; }
+.grafik--hantel .punkt-zeile:focus-visible { outline-offset: -2px; }
+.grafik--hantel .punkt-zeile:focus-visible .zeilen-band { fill: var(--papier-tief); }
+.grafik--hantel .punkt-zeile:focus-visible .punkt { transform: scale(1.45); }
+@media print { .hantel__fonds { display: none; } }
 .lesehilfe p { margin: 0 0 8px; }
 .lesehilfe p:last-child { margin-bottom: 0; }
 .lesehilfe { margin: 0 0 26px; }

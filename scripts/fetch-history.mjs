@@ -21,7 +21,8 @@ const HEADERS = { "User-Agent": "Mozilla/5.0" };
 const HOSTS = ["query1.finance.yahoo.com", "query2.finance.yahoo.com"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// GICS-Sektoren, gemessen an den US-Sektorfonds (SPDR Select Sector)
+// GICS-Sektoren, gemessen an den US-Sektorfonds (SPDR Select Sector).
+// Fondsname und abgebildeter Index je Kürzel: src/lib/sektorfonds.mjs
 const SEKTOREN = [
   ["Energie", "XLE"],
   ["Grundstoffe", "XLB"],

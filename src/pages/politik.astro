@@ -1,6 +1,6 @@
 ---
-// Deutsche Politik mit Kapitalmarktbezug: Gesetzgebung, Haushalt,
-// Regulierung, Koalitionsgeschehen und ihre Wirkung auf Märkte.
+// Politik mit Kapitalmarktbezug in Deutschland, Europa und der Welt:
+// Gesetzgebung, Haushalte, Regulierung, Handel und ihre Wirkung auf Märkte.
 import Base from "../layouts/Base.astro";
 import Article from "../components/Article.astro";
 import RessortKopf from "../components/RessortKopf.astro";
@@ -11,7 +11,7 @@ const artikel = data.articles.filter((a) => a.ressort === "politik");
 ---
 
 <Base title="Politik" active="politik" edition={data.edition}>
-  <RessortKopf level="h1" titel="Politik" untertitel="Deutsche Politik und ihre Wirkung auf Märkte, Branchen und Standort: Gesetzgebung, Haushalt, Regulierung." />
+  <RessortKopf level="h1" titel="Politik" untertitel="Politik in Deutschland, Europa und der Welt und ihre Wirkung auf Märkte, Branchen und Unternehmen: Gesetzgebung, Haushalte, Regulierung, Handel." />
   <hr class="ressort-linie" />
   {artikel.length === 0 && <p class="hinweiszeile">Diese Ausgabe enthält keine Politik-Artikel.</p>}
   {artikel.map((a) => <Article article={a} />)}

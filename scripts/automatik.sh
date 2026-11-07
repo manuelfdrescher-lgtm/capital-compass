@@ -144,6 +144,8 @@ PY
     git add -A
     git diff --cached --quiet || git commit -q -m "$msg" || { echo "FEHLER: Commit"; exit 1; }
     git push -q origin main 2>&1 | tail -2
+    # dist frisch anlegen: iCloud legt sonst Doppel an ("x 2") und lässt Dateien aus
+    rm -rf dist
     GITHUB_REPOSITORY="manuelfdrescher-lgtm/capital-compass" npm run build >/tmp/cc-build.log 2>&1 || { tail -20 /tmp/cc-build.log; echo "FEHLER: Build mit Basispfad"; exit 1; }
     cd dist || exit 1
     rm -rf .git && git init -q && git checkout -q -b gh-pages && touch .nojekyll

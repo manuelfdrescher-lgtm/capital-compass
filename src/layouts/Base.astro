@@ -44,6 +44,8 @@ const nav = [
   { href: `${base}/lernecke/`, key: "lernecke", label: "Lernecke", bild: "lernecke" },
   { href: `${base}/archiv/`, key: "archiv", label: "Archiv", bild: "archiv" },
 ];
+// Handy: die Rubriken stehen in zwei Zeilen, umbrochen nach der Hälfte
+const navHalb = Math.ceil(nav.length / 2);
 ---
 
 <!doctype html>
@@ -99,7 +101,7 @@ const nav = [
             <p class="masthead__tagline">A Daily Briefing on Markets, Business and the Global Economy</p>
           </>
         )}
-        <p class="masthead__leser">Für Manuel Drescher</p>
+        <p class="masthead__leser">für Manuel Drescher</p>
         <div class="masthead__doppel" role="presentation"></div>
         {edition && (
           <p class="datumszeile">
@@ -108,7 +110,14 @@ const nav = [
         )}
         <nav class="hauptnav" aria-label="Ressorts" data-hauptnav>
           <div class="hauptnav__leiste">
-          {nav.map((item) => (
+          {nav.slice(0, navHalb).map((item) => (
+            <a href={item.href} aria-current={active === item.key ? "page" : undefined}>
+              <span class="hauptnav__text">{item.label}</span>
+              <img class="hauptnav__bild" src={`${base}/images/rubriken/leiste/${item.bild}.png`} alt="" width="68" height="68" decoding="async" aria-hidden="true" />
+            </a>
+          ))}
+          <span class="hauptnav__umbruch" aria-hidden="true"></span>
+          {nav.slice(navHalb).map((item) => (
             <a href={item.href} aria-current={active === item.key ? "page" : undefined}>
               <span class="hauptnav__text">{item.label}</span>
               <img class="hauptnav__bild" src={`${base}/images/rubriken/leiste/${item.bild}.png`} alt="" width="68" height="68" decoding="async" aria-hidden="true" />

@@ -22,7 +22,7 @@ const stand = mitDaten[0]?.stand;
 const ohneWert = (w) => !w || /keine .*belegt/i.test(w);
 const markt = daten?.Gesamtmarkt ? sektorKennzahlen(daten.Gesamtmarkt) : null;
 const hantel = mitDaten.length >= 6
-  ? monitor.filter((s) => kennzahlen[s.sektor]).map((s) => ({ sektor: s.sektor, w1: kennzahlen[s.sektor].w1, m1: kennzahlen[s.sektor].m1 }))
+  ? monitor.filter((s) => kennzahlen[s.sektor]).map((s) => ({ sektor: s.sektor, symbol: kennzahlen[s.sektor].symbol, w1: kennzahlen[s.sektor].w1, m1: kennzahlen[s.sektor].m1 }))
   : null;
 
 const BILD: Record<string, string> = {

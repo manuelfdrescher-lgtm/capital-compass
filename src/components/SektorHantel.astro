@@ -3,11 +3,13 @@
 // Punkt für die letzte Woche und ein voller Punkt für den letzten Monat,
 // verbunden durch eine Linie. Sortiert nach dem Monat, nur die zwei besten
 // und die zwei schwächsten Sektoren sind farbig. Die Überschrift nennt
-// die Kernaussage.
+// die Kernaussage. Antippen, Klick oder Enter auf einer Zeile nennt unter
+// der Grafik den Fonds und den Index hinter dem Wert.
 import { prozentKurz } from "../lib/sektoren.mjs";
+import { fondsZeile, FONDS_HINWEIS } from "../lib/sektorfonds.mjs";
 
 interface Props {
-  zeilen: { sektor: string; w1: number; m1: number }[];
+  zeilen: { sektor: string; symbol?: string | null; w1: number; m1: number }[];
   stand: string;
   quelle: string;
   markt?: { w1: number; m1: number } | null; // S&P 500 als Maßstab
@@ -60,6 +62,7 @@ const varianten = [
   { klasse: "grafik__svg--schmal", g: bau(400, true) },
 ];
 const kurz = (v) => `${v > 0 ? "+" : ""}${new Intl.NumberFormat("de-DE", { maximumFractionDigits: 1 }).format(v)} %`;
+const fonds = Object.fromEntries(rows.map((r) => [r.sektor, fondsZeile(r.sektor, r.symbol)]));
 ---
 
 <figure class="chart grafik grafik--punkte grafik--hantel" data-einblenden aria-label={`Grafik: ${aussage}`}>
@@ -70,20 +73,20 @@ const kurz = (v) => `${v > 0 ? "+" : ""}${new Intl.NumberFormat("de-DE", { maxim
     <span class="hantel__legende"><span class="hantel__woche"></span>letzte Woche <span class="hantel__monat"></span>letzter Monat{markt && <><span class="hantel__marktlinie"></span>Gesamtmarkt S&P 500 im Monat: {prozentKurz(markt.m1)}</>}</span>
   </figcaption>
   {varianten.map(({ klasse, g }) => (
-    <svg class={`grafik__svg ${klasse}`} viewBox={`0 0 ${g.W} ${g.H}`} role="img" aria-label={`${aussage}. ${rows.map((r) => `${r.sektor}: Woche ${prozentKurz(r.w1)}, Monat ${prozentKurz(r.m1)}`).join("; ")}`}>
+    <svg class={`grafik__svg ${klasse}`} viewBox={`0 0 ${g.W} ${g.H}`} role="group" aria-label={aussage}>
       {g.ticks.map((v) => (
-        <g>
+        <g aria-hidden="true">
           <line class={v === 0 ? "achse achse--null" : "gitter"} x1={g.xVon(v)} x2={g.xVon(v)} y1={g.padTop - 2} y2={g.H - g.achseH + 4} />
           <text class="achsenlabel" x={g.xVon(v)} y={g.H - 8} text-anchor="middle">{kurz(v)}</text>
         </g>
       ))}
       {g.marktX !== null && (
-        <g class="hantel__markt">
+        <g class="hantel__markt" aria-hidden="true">
           <line x1={g.marktX} x2={g.marktX} y1={g.padTop - 2} y2={g.H - g.achseH + 4} />
         </g>
       )}
       {g.zeilen.map((z) => (
-        <g class={`punkt-zeile punkt-zeile--${z.art}`} style={`--i: ${z.i}`}>
+        <g class={`punkt-zeile punkt-zeile--${z.art}`} style={`--i: ${z.i}`} data-sektor={z.sektor} data-fonds={fonds[z.sektor]} tabindex="0" role="button" aria-pressed="false" aria-label={`${z.sektor}: Woche ${prozentKurz(z.w1)}, Monat ${prozentKurz(z.m1)}`}>
           <title>{z.sektor}: Woche {prozentKurz(z.w1)}, Monat {prozentKurz(z.m1)}</title>
           <rect class="zeilen-band" x="0" y={g.padTop + z.i * g.rowH} width={g.W} height={g.rowH} />
           <text class="balken-label" x="0" y={z.labelY}>{z.sektor}</text>
@@ -95,5 +98,45 @@ const kurz = (v) => `${v > 0 ? "+" : ""}${new Intl.NumberFormat("de-DE", { maxim
       ))}
     </svg>
   ))}
+  <p class="hantel__fonds" data-hinweis={FONDS_HINWEIS}>
+    <span class="hantel__fonds-text" aria-live="polite">{FONDS_HINWEIS}</span>
+    {Object.values(fonds).map((t) => <span class="hantel__fonds-platz" aria-hidden="true">{t}</span>)}
+  </p>
   <p class="chart__quelle">Quelle: {quelle}, Schlusskurse bis {stand}</p>
 </figure>
+
+<script>
+  // Fonds-Zeile: Die Hervorhebung selbst setzt das Skript in Base.astro
+  // (Klick auf .punkt-zeile). Dieser Teil läuft danach, weil der Klick erst
+  // die Grafik und dann die Figur erreicht. Er gleicht beide Varianten
+  // (breit, schmal) ab, nennt den Fonds und macht die Zeilen per Tastatur
+  // bedienbar.
+  document.querySelectorAll<HTMLElement>(".grafik--hantel").forEach((figur) => {
+    const zeile = figur.querySelector<HTMLElement>(".hantel__fonds");
+    const text = figur.querySelector<HTMLElement>(".hantel__fonds-text");
+    if (!zeile || !text) return;
+    const svgs = [...figur.querySelectorAll<SVGSVGElement>("svg.grafik__svg")];
+    figur.addEventListener("click", (e) => {
+      const svg = (e.target as Element).closest("svg.grafik__svg");
+      if (!svg) return;
+      const aktiv = svg.querySelector<SVGGElement>(".punkt-zeile.ist-aktiv");
+      const sektor = aktiv?.dataset.sektor ?? null;
+      svgs.forEach((s) => {
+        s.querySelectorAll<SVGGElement>(".punkt-zeile").forEach((z) => {
+          const an = sektor !== null && z.dataset.sektor === sektor;
+          z.classList.toggle("ist-aktiv", an);
+          z.setAttribute("aria-pressed", String(an));
+        });
+        s.classList.toggle("hat-fokus", sektor !== null);
+      });
+      text.textContent = aktiv?.dataset.fonds ?? zeile.dataset.hinweis ?? "";
+    });
+    figur.querySelectorAll<SVGGElement>(".punkt-zeile").forEach((z) => {
+      z.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        e.preventDefault();
+        z.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+      });
+    });
+  });
+</script>
