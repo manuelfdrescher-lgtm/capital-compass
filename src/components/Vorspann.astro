@@ -74,7 +74,7 @@ const federn = {
   doppel: { src: bild("hand-feder-doppel.webp"), b: 1505, h: 992, sx: 0.0086, sy: 0.9929, groesse: 1.601, aermel: "", ao: 0, au: 0 },
 };
 // Stempelhand: Lage des Holzblocks im Bild (relativ)
-const stempel = { src: bild("hand-stempel.webp"), b: 1388, h: 980, x0: 0.0043, y0: 0.8, x1: 0.4942, y1: 0.9918 };
+const stempel = { src: bild("hand-stempel.webp"), b: 1362, h: 1063, x0: 0.0066, y0: 0.6068, x1: 0.5382, y1: 0.9944 };
 const tl = daten.theLinien;
 const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
 ---
@@ -676,8 +676,8 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       const sh = (sw * STEMPEL.h) / STEMPEL.b;
       const bmx = (STEMPEL.x0 + STEMPEL.x1) / 2, bmy = (STEMPEL.y0 + STEMPEL.y1) / 2;
       Object.assign(stempelEl.style, { width: `${sw}px`, left: `${titelMitte.x - bmx * sw}px`, top: `${titelMitte.y - bmy * sh}px`, transformOrigin: `${bmx * 100}% ${bmy * 100}%` });
-      const kw = blockB * 1.14;
-      const kh = (kw * 348) / 900;
+      const kw = blockB * 1.12;
+      const kh = (kw * 539) / 900;
       kissenMitte = { x: bx + Bw - kw / 2 - 0.035 * Bw, y: by + yT - 14 - kh / 2 };
       Object.assign(kissen.style, { width: `${kw}px`, left: `${kissenMitte.x - kw / 2}px`, top: `${kissenMitte.y - kh / 2}px` });
       kissenOben = kissenMitte.y - kh / 2;
