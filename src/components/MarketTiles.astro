@@ -47,7 +47,7 @@ const restSpan = rest === 0 ? 1 : 6 - rest + 1;
         aria-label={reiheFuer(t.label) !== null ? `${t.label}: Verlauf im Chart zeigen` : undefined}
       >
         <span class="kachel__label">{t.label}</span>
-        <span class="kachel__wert">{t.approx && <span class="kachel__ca">ca.</span>}{t.value}</span>
+        <span class={`kachel__wert${t.delta ? ` kachel__wert--${t.direction}` : ""}`}>{t.approx && <span class="kachel__ca">ca.</span>}{t.value}</span>
         <span class={t.delta ? `kachel__delta kachel__delta--${t.direction}` : "kachel__delta kachel__delta--leer"}>
           {t.delta ? `${arrow[t.direction]} ${t.delta}` : " "}
         </span>

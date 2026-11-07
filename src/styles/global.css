@@ -463,6 +463,10 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 .kachel__delta--up { color: var(--positiv); }
 .kachel__delta--down { color: var(--negativ); }
 .kachel__delta--flat { color: var(--neutral); }
+/* Auch die Zahl selbst trägt die Richtung: grün gestiegen, rot gefallen, grau unverändert */
+.kachel__wert--up { color: var(--positiv); }
+.kachel__wert--down { color: var(--negativ); }
+.kachel__wert--flat { color: var(--neutral); }
 /* Kacheln ohne Delta (z. B. Leitzins, EZB-Einlagenzins) rendern die
    Zeile trotzdem unsichtbar: nötig, damit Label/Wert/Delta/Notiz in
    Dokumentreihenfolge auf die vier Subgrid-Zeilenspuren der Kachel
