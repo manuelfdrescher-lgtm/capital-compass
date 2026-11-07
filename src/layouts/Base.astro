@@ -62,7 +62,7 @@ const nav = [
         if (nochmal || (!navigator.webdriver && !sessionStorage.getItem("cc-vorspann") && !matchMedia("(prefers-reduced-motion: reduce)").matches)) {
           document.documentElement.classList.add("vorspann-an");
           // Grafiken des Vorspanns sofort laden, damit er ohne leeren Moment startet
-          ["maschine.webp", "kompass.png"].forEach(function (f) {
+          ["hand-feder.webp", "kompass.png", "hand-blatt.webp", "maschine.webp"].forEach(function (f) {
             var l = document.createElement("link");
             l.rel = "preload"; l.as = "image"; l.href = base + "/images/vorspann/" + f;
             document.head.appendChild(l);

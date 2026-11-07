@@ -983,129 +983,163 @@ figure.chart, figure.kurschart {
   .js-an [data-einblenden]:not(.gezeigt) .bilanz-segment { transform: scaleX(0); }
   .js-an [data-einblenden]:not(.gezeigt) .wertlabel { opacity: 0; }
 }
-/* ---------- Vorspann: die Schreibmaschine tippt das Logo ---------- */
+/* ---------- Vorspann: Film um 1900 ---------- */
 /* Nur beim ersten Öffnen pro Sitzung (Klasse vorspann-an, im Kopf gesetzt).
-   Der Wagen trägt das Blatt und rückt bei jedem Anschlag weiter; am Ende
-   fährt er das Blatt deckungsgleich auf das Logo der Seite. */
+   Die Welt (Bogen, Maschine, Hände) liegt in Seitenkoordinaten in der
+   Kamera. Die Kamera fährt per transform; in Ruhelage liegt der Briefkopf
+   genau auf dem Logo der Seite. Der Film bleibt immer hell, wie ein alter
+   Abzug; Bewegungen laufen flüssig, nur Korn und Flackern springen. */
 .vorspann { display: none; }
 .vorspann-an body { overflow: hidden; }
 .vorspann-an .vorspann {
+  --vp-tisch: #e6dcc7;
+  --vp-blatt: #fbf7ee;
   display: block;
   position: fixed;
   inset: 0;
   z-index: 1000;
   overflow: hidden;
   cursor: pointer;
-  background: var(--papier);
-  transition: background-color 0.5s ease;
-  --b: min(520px, 82vw);
+  background: var(--vp-tisch);
+  transition: background-color 1.2s ease;
 }
-.vorspann__wagen {
+.vorspann--ende { background-color: var(--papier) !important; }
+.vorspann--weg { background-color: transparent !important; transition: background-color 0.4s ease !important; }
+.vorspann__kamera { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
+.vorspann__ruettler { position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.5s ease; }
+.vorspann--sichtbar .vorspann__ruettler { opacity: 1; }
+.vorspann__wagen { position: absolute; left: 0; top: 0; z-index: 2; will-change: transform; }
+.vorspann__blatt {
+  position: absolute;
+  background: var(--vp-blatt);
+  box-shadow: 0 1px 0 rgba(40, 28, 14, 0.06), 0 22px 46px -20px rgba(40, 28, 14, 0.5);
+  transition: background-color 0.9s ease 0.2s, box-shadow 0.9s ease;
+}
+/* Der Bogen verhält sich wie Papier: In der Hand hängt er und schwingt
+   unten leicht nach hinten; in der Maschine biegt sich der Teil über der
+   Walze nach hinten. Am Ende liegt er wieder glatt. */
+.vorspann__blatt { transform-origin: 50% 0; transition: background-color 0.9s ease 0.2s, box-shadow 0.9s ease, transform 0.45s cubic-bezier(0.3, 0.7, 0.3, 1); }
+.vorspann--gehoben .vorspann__blatt {
+  transform: perspective(1600px) rotateX(-13deg) skewX(-0.6deg);
+  box-shadow: 0 1px 0 rgba(40, 28, 14, 0.06), 0 34px 60px -20px rgba(40, 28, 14, 0.55);
+  transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.3, 1), box-shadow 0.25s ease;
+}
+.vorspann--tippt .vorspann__blatt { transform-origin: 50% var(--walze, 50%); transform: perspective(1600px) rotateX(7deg); }
+.vorspann--ende .vorspann__blatt { background-color: transparent; box-shadow: none; }
+.vorspann__kopf { position: absolute; transition: opacity 0.35s ease; }
+.vorspann__zeichnung { position: absolute; left: 0; top: 0; display: block; width: 100%; overflow: visible; }
+.vorspann__zeile { position: absolute; inset: 0; clip-path: inset(var(--oben) var(--rechts) var(--unten) 0); }
+.vorspann__zeile img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.vorspann__maschine {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  max-width: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.vorspann__maschine--vorn { z-index: 3; clip-path: inset(26.2% 0 0 0); }
+.vorspann--maschine .vorspann__maschine { opacity: 1; }
+.vorspann--ende .vorspann__maschine { opacity: 0; transform: translateY(28%); transition: opacity 0.6s ease, transform 1s cubic-bezier(0.5, 0, 0.75, 0); }
+.vorspann__hand {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
-  transform-origin: 0 0;
-  opacity: 0;
-  transition: transform 50ms ease-out, opacity 0.3s ease;
-  will-change: transform;
-}
-.vorspann--sichtbar .vorspann__wagen { opacity: 1; }
-.vorspann--ruecklauf .vorspann__wagen { transition: transform 0.12s cubic-bezier(0.6, 0, 0.25, 1), opacity 0.3s ease; }
-.vorspann--ende .vorspann__wagen { transition: transform 0.7s cubic-bezier(0.65, 0, 0.25, 1), opacity 0.3s ease; }
-.vorspann__blatt {
-  width: var(--b);
-  box-sizing: content-box;
-  padding: calc(var(--b) * 0.07) calc(var(--b) * 0.1) calc(var(--b) * 0.6);
-  background: var(--karte);
-  box-shadow: 0 1px 0 rgba(17, 17, 17, 0.04), 0 22px 44px -22px rgba(17, 17, 17, 0.4);
-  transition: background-color 0.6s ease, box-shadow 0.6s ease;
-}
-.vorspann--ende .vorspann__blatt { background-color: transparent; box-shadow: none; }
-.vorspann__kopf {
-  position: relative;
-  width: var(--b);
-  aspect-ratio: 922 / 877;
-  container-type: inline-size;
-  transition: opacity 0.45s ease;
-}
-.vorspann__kompass,
-.vorspann__linien,
-.vorspann__zier { position: absolute; left: 0; display: block; width: 100%; height: auto; }
-.vorspann__kompass { top: 0; }
-.vorspann__linien { top: calc(410 / 877 * 100%); }
-.vorspann__zier { top: calc(828 / 877 * 100%); opacity: 0; transition: opacity 0.5s ease; }
-.vorspann--ziert .vorspann__zier { opacity: 1; }
-.vorspann__zeile {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: var(--y);
-  margin: 0;
-  transform: translateY(-50%);
-  text-align: center;
-  white-space: nowrap;
-  font-family: var(--schreibmaschine);
-  font-size: var(--groesse);
-  line-height: 1;
-  color: var(--tinte);
-}
-.vorspann__z {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(var(--hoch, 0)) rotate(var(--dreh, 0deg));
-}
-.vorspann__z.da { opacity: var(--deckung, 1); animation: vorspann-anschlag 0.14s ease-out; }
-@keyframes vorspann-anschlag {
-  from { opacity: 0; filter: blur(0.8px); transform: translateY(calc(var(--hoch, 0px) - 2px)) rotate(var(--dreh, 0deg)) scale(1.25); }
-}
-/* Nahaufnahme: Die Maschine ist so groß, dass vor allem Walze und Blatt
-   im Bild sind; die Tasten liegen unterhalb des Bildrands. */
-.vorspann__maschine {
-  position: absolute;
-  left: 50%;
-  top: calc(68% - var(--b) * 0.352);
-  z-index: 1;
-  width: calc(var(--b) * 2.75);
-  max-width: none;
+  z-index: 4;
   height: auto;
-  opacity: 0;
-  transform: translateX(-50%) translateY(8%);
-  transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.3s ease;
+  max-width: none;
+  pointer-events: none;
+  filter: drop-shadow(0 12px 14px rgba(40, 28, 14, 0.28));
 }
-.vorspann--sichtbar .vorspann__maschine { opacity: 1; transform: translateX(-50%); }
-.vorspann__maschine--vorn { z-index: 3; clip-path: inset(26.2% 0 0 0); }
-.vorspann__maschine--anschlag { animation: vorspann-ruck 0.09s ease-out; }
-@keyframes vorspann-ruck { 50% { transform: translateX(-50%) translateY(1.5px); } }
-.vorspann--ende .vorspann__maschine { opacity: 0; transform: translateX(-50%) translateY(105%); transition: transform 0.6s cubic-bezier(0.5, 0, 0.75, 0), opacity 0.4s ease 0.15s; }
-.vorspann--weg { background-color: transparent !important; transition: background-color 0.35s ease; }
-/* Nach dem Tippen „trocknet“ die Schrift: Das echte Logo blendet über den
-   getippten Kopf. Danach ist das Blatt mit dem Logo der Seite identisch. */
-.vorspann__buehne { position: absolute; inset: 0; }
-.vorspann__logo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; opacity: 0; transition: opacity 0.28s ease; }
-.vorspann--trocken .vorspann__logo { opacity: 1; }
-.vorspann--trocken .vorspann__zeile,
-.vorspann--trocken .vorspann__kompass,
-.vorspann--trocken .vorspann__linien,
-.vorspann--trocken .vorspann__zier { opacity: 0; transition: opacity 0.28s ease; }
-.vorspann__weiter {
-  position: absolute;
-  right: 16px;
-  bottom: 14px;
+.vorspann__hand--feder { transform-origin: 0.21% 99.33%; will-change: transform; transition: opacity 0.25s ease; }
+.vorspann__hand--blatt {
   z-index: 3;
-  padding: 6px 4px;
-  border: 0;
-  background: none;
+  opacity: 0;
+  transform: translate(35%, -55%) rotate(9deg);
+  transition: transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
+}
+.vorspann--greift .vorspann__hand--blatt { opacity: 1; transform: none; }
+.vorspann--loslassen .vorspann__hand--blatt {
+  opacity: 0;
+  transform: translate(28%, -70%) rotate(12deg);
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.75, 0), opacity 0.35s ease 0.12s;
+}
+/* Filmoberfläche: Sepia, Korn, Kratzer, Vignette mit Flackern */
+.vorspann__film { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; transition: opacity 0.9s ease; }
+.vorspann__film::before { content: ""; position: absolute; inset: 0; background: #a9844f; mix-blend-mode: color; opacity: 0.32; }
+.vorspann__korn {
+  position: absolute;
+  inset: -60px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.16 0 0 0 0 0.11 0 0 0 0 0.05 0 0 0 0.9 -0.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  animation: vorspann-korn 0.6s steps(6) infinite;
+}
+@keyframes vorspann-korn {
+  0% { transform: translate(0, 0); }
+  17% { transform: translate(-22px, 14px); }
+  33% { transform: translate(18px, -26px); }
+  50% { transform: translate(-30px, -8px); }
+  67% { transform: translate(26px, 22px); }
+  83% { transform: translate(-8px, 30px); }
+  100% { transform: translate(0, 0); }
+}
+.vorspann__kratzer { position: absolute; top: 0; bottom: 0; left: 30%; width: 1px; background: rgba(60, 42, 20, 0.45); animation: vorspann-kratzer 2.3s steps(1) infinite; }
+@keyframes vorspann-kratzer {
+  0% { left: 23%; opacity: 0.55; }
+  12% { left: 71%; opacity: 0; }
+  30% { left: 44%; opacity: 0.4; }
+  47% { left: 12%; opacity: 0; }
+  63% { left: 83%; opacity: 0.45; }
+  80% { left: 58%; opacity: 0; }
+}
+.vorspann__vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 48%, rgba(50, 34, 16, 0.55) 100%); animation: vorspann-flackern 2.4s linear infinite; }
+@keyframes vorspann-flackern {
+  0%, 100% { opacity: 1; }
+  6% { opacity: 0.8; }
+  8% { opacity: 1; }
+  37% { opacity: 0.9; }
+  39% { opacity: 1; }
+  71% { opacity: 0.84; }
+  73% { opacity: 1; }
+}
+.vorspann--ende .vorspann__film { opacity: 0; }
+.vorspann__ton {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 7;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(40, 28, 14, 0.35);
+  border-radius: 50%;
+  background: rgba(251, 247, 238, 0.85);
+  color: #2a1f12;
   cursor: pointer;
+}
+.vorspann__ton svg { width: 20px; height: 20px; }
+.vorspann__ton-wellen { display: none; }
+.vorspann__ton.ist-an .vorspann__ton-wellen { display: inline; }
+.vorspann__ton.ist-an .vorspann__ton-aus { display: none; }
+.vorspann__hinweis {
+  position: absolute;
+  left: 16px;
+  bottom: 26px;
+  z-index: 7;
   font-family: var(--schreibmaschine);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--tinte-60);
+  color: rgba(42, 31, 18, 0.6);
 }
-.vorspann--ende .vorspann__weiter { opacity: 0; transition: opacity 0.3s ease; }
+.vorspann--ende .vorspann__ton, .vorspann--ende .vorspann__hinweis { opacity: 0; transition: opacity 0.3s ease; }
+/* Im Dunkelmodus ist das Logo der Seite hell gedruckt: Briefkopf am Ende ausblenden */
 @media (prefers-color-scheme: dark) {
-  .vorspann__kompass, .vorspann__linien, .vorspann__zier, .vorspann__logo, .vorspann__maschine { filter: invert(0.9) sepia(0.12); }
+  .vorspann--weg .vorspann__kopf { opacity: 0; }
 }
 @media print { .vorspann { display: none !important; } }
 

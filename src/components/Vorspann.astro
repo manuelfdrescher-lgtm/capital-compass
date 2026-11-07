@@ -1,223 +1,421 @@
 ---
-// Vorspann beim ersten Öffnen der Seite (einmal pro Sitzung, rund 3 Sekunden): Ein Blatt
-// steckt in der Schreibmaschine, oben steht schon der Kompass aus dem Logo.
-// Die Maschine tippt „The Capital Compass“ und den Slogan Buchstabe für
-// Buchstabe, der Wagen rückt dabei wie bei einer echten Maschine weiter.
-// Danach fährt das Blatt so auf das Logo der Seite, dass beide deckungs-
-// gleich ineinander übergehen. Alle Bausteine liegen in den Koordinaten
-// des Logos (922 x 877), damit der Übergang passt. Klick oder Taste
-// überspringt. Ohne Bewegung (reduced motion) und in Tests entfällt er.
+// Vorspann beim ersten Öffnen (einmal pro Sitzung, knapp 10 Sekunden), in
+// der Anmutung eines Films um 1900:
+// 1. Eine Hand zeichnet mit der Feder den Kompass auf einen Briefbogen.
+// 2. Eine Hand legt das Blatt in die Schreibmaschine.
+// 3. Die Maschine tippt die Buchstaben des Logos einzeln, der Wagen rückt
+//    bei jedem Anschlag um genau einen Buchstaben weiter.
+// 4. Die Kamera zieht zurück und nach oben, bis der Briefkopf deckungsgleich
+//    auf dem Logo der Seite liegt.
+// Alles liegt in den Koordinaten des Logos (922 x 835 Einheiten): Kompass
+// und Buchstaben sind Ausschnitte des echten Logos. Ein Klick beendet den
+// Film; der Lautsprecher-Knopf schaltet die Geräusche zu.
+import daten from "../lib/vorspann-daten.json";
+
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const bild = (name: string) => `${base}/images/vorspann/${name}`;
-// Zeilen mit Mitte (y) und Breite im Logo, Schriftgröße in Logo-Einheiten
-const zeilen = [
-  { text: "THE", y: 434.5, breite: 122, groesse: 52, takt: 45 },
-  { text: "CAPITAL", y: 517, breite: 722, groesse: 124, takt: 42 },
-  { text: "COMPASS", y: 642.5, breite: 782, groesse: 140, takt: 42 },
-  { text: "A DAILY BRIEFING ON MARKETS,", y: 743, breite: 720, groesse: 39, takt: 7 },
-  { text: "BUSINESS AND THE GLOBAL ECONOMY", y: 791.5, breite: 808, groesse: 39, takt: 7 },
+const logo = `${base}/images/masthead-logo.png`;
+const LB = daten.breite;
+const LH = daten.hoehe;
+const KH = 414; // Höhe des Kompass-Ausschnitts
+
+// Federstriche im Kompass-Ausschnitt (Einheiten des Logos)
+const r = (v: number) => v.toFixed(1);
+function kreis(cx: number, cy: number, rr: number) {
+  return `M${r(cx)},${r(cy - rr)} A${rr},${rr} 0 1,1 ${r(cx - 0.01)},${r(cy - rr)}`;
+}
+function spirale(cx: number, cy: number, r0: number, r1: number, drehungen: number) {
+  const n = 160;
+  const punkte = Array.from({ length: n + 1 }, (_, i) => {
+    const t = i / n;
+    const w = -Math.PI / 2 + t * drehungen * 2 * Math.PI;
+    const rr = r0 + (r1 - r0) * t;
+    return `${i ? "L" : "M"}${r(cx + rr * Math.cos(w))},${r(cy + rr * Math.sin(w))}`;
+  });
+  return punkte.join(" ");
+}
+function zickzack(xa: number, xb: number, ys: number[]) {
+  return ys.map((y, i) => `${i ? "L" : "M"}${i % 2 ? xb : xa},${y} L${i % 2 ? xa : xb},${y}`).join(" ");
+}
+const reihen = [128, 168, 208, 248, 288, 328, 368, 404];
+const striche = [
+  { d: kreis(461, 38, 20), ms: 120, breite: 36 },
+  { d: spirale(461, 240, 182, 6, 3.4), ms: 600, breite: 52 },
+  { d: zickzack(312, 4, reihen), ms: 300, breite: 46 },
+  { d: zickzack(610, 918, reihen), ms: 300, breite: 46 },
 ];
+const zeilen = daten.zeilen;
 ---
 
 <div class="vorspann" data-vorspann aria-hidden="true">
-  <!-- Die Maschine liegt zweimal übereinander: hinten die Walze, vorn (per
-       clip-path ab dem Papierhalter) Spulen und Gehäuse. Das Blatt läuft
-       dazwischen, wie in einer echten Maschine. -->
-  <div class="vorspann__buehne">
-  <img class="vorspann__maschine vorspann__maschine--hinten" src={bild("maschine.webp")} alt="" />
-  <div class="vorspann__wagen">
-    <div class="vorspann__blatt">
-      <div class="vorspann__kopf">
-        <img class="vorspann__kompass" src={bild("kompass.png")} alt="" />
-        <img class="vorspann__linien" src={bild("linien-the.png")} alt="" />
-        {zeilen.map((z) => (
-          <p class="vorspann__zeile" style={`--y: ${(z.y / 877) * 100}%; --groesse: ${(z.groesse / 922) * 100}cqw`} data-breite={z.breite} data-takt={z.takt}>
-            {[...z.text].map((c) => <span class="vorspann__z">{c === " " ? " " : c}</span>)}
-          </p>
-        ))}
-        <img class="vorspann__zier" src={bild("zier.png")} alt="" />
-        <img class="vorspann__logo" src={`${base}/images/masthead-logo.png`} alt="" />
+  <div class="vorspann__kamera">
+    <div class="vorspann__ruettler">
+      <img class="vorspann__maschine vorspann__maschine--hinten" src={bild("maschine.webp")} alt="" />
+      <div class="vorspann__wagen">
+        <div class="vorspann__blatt">
+          <div class="vorspann__kopf">
+            <svg class="vorspann__zeichnung" viewBox={`0 0 ${LB} ${KH}`} preserveAspectRatio="none" style={`height: ${(KH / LH) * 100}%`}>
+              <defs>
+                <mask id="vorspann-maske" maskUnits="userSpaceOnUse" x="0" y="0" width={LB} height={KH}>
+                  {striche.map((s) => (
+                    <path d={s.d} fill="none" stroke="#fff" stroke-width={s.breite} stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1" data-ms={s.ms} />
+                  ))}
+                </mask>
+              </defs>
+              <image href={bild("kompass.png")} width={LB} height={KH} mask="url(#vorspann-maske)" />
+            </svg>
+            {zeilen.map((z) => (
+              <div class="vorspann__zeile" data-zeile={z.name} style={`--oben: ${(z.oben / LH) * 100}%; --unten: ${100 - (z.unten / LH) * 100}%; --rechts: 100%`}>
+                <img src={logo} alt="" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <img class="vorspann__hand vorspann__hand--blatt" src={bild("hand-blatt.webp")} alt="" />
       </div>
+      <img class="vorspann__maschine vorspann__maschine--vorn" src={bild("maschine.webp")} alt="" />
+      <img class="vorspann__hand vorspann__hand--feder" src={bild("hand-feder.webp")} alt="" />
     </div>
   </div>
-  <img class="vorspann__maschine vorspann__maschine--vorn" src={bild("maschine.webp")} alt="" data-walze="0.255" />
-  </div>
-  <button class="vorspann__weiter" type="button" tabindex="-1">Überspringen</button>
+  <div class="vorspann__film"><span class="vorspann__korn"></span><span class="vorspann__kratzer"></span><span class="vorspann__vignette"></span></div>
+  <button class="vorspann__ton" type="button" aria-label="Ton einschalten" data-ton>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor" /><path class="vorspann__ton-wellen" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /><path class="vorspann__ton-aus" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+  </button>
+  <span class="vorspann__hinweis">Klick überspringt</span>
 </div>
 
 <script>
+  import daten from "../lib/vorspann-daten.json";
+
+  type P = { x: number; y: number };
   const huelle = document.querySelector<HTMLElement>("[data-vorspann]");
   const html = document.documentElement;
   if (huelle && html.classList.contains("vorspann-an")) {
     try { sessionStorage.setItem("cc-vorspann", "1"); } catch {}
-    const wagen = huelle.querySelector<HTMLElement>(".vorspann__wagen")!;
-    const kopf = huelle.querySelector<HTMLElement>(".vorspann__kopf")!;
-    const maschine = huelle.querySelector<HTMLElement>(".vorspann__maschine--vorn")!;
-    const buehne = huelle.querySelector<HTMLElement>(".vorspann__buehne")!;
     scrollTo(0, 0);
-    const zeilen = [...huelle.querySelectorAll<HTMLElement>(".vorspann__zeile")];
-    const warte = (ms: number) => new Promise((r) => setTimeout(r, ms));
+    const $ = <T extends Element>(s: string) => huelle.querySelector<T>(s)!;
+    const kamera = $<HTMLElement>(".vorspann__kamera");
+    const ruettler = $<HTMLElement>(".vorspann__ruettler");
+    const wagen = $<HTMLElement>(".vorspann__wagen");
+    const blatt = $<HTMLElement>(".vorspann__blatt");
+    const kopf = $<HTMLElement>(".vorspann__kopf");
+    const feder = $<HTMLElement>(".vorspann__hand--feder");
+    const griff = $<HTMLElement>(".vorspann__hand--blatt");
+    const maschinen = [...huelle.querySelectorAll<HTMLElement>(".vorspann__maschine")];
+    const pfade = [...huelle.querySelectorAll<SVGPathElement>("#vorspann-maske path")];
+    const zeilenEl = [...huelle.querySelectorAll<HTMLElement>(".vorspann__zeile")];
+    const warte = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
+    const weich = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
     let fertig = false;
 
-    let punkte: { el: HTMLElement; x: number; y: number }[][] = [];
-    // Anschlagpunkt: Bildmitte, die Grundlinie der getippten Zeile liegt
-    // knapp über dem Papierhalter der Maschine
-    const anschlag = () => {
-      const r = maschine.getBoundingClientRect();
-      return { x: innerWidth / 2, y: r.top + r.height * Number(maschine.dataset.walze || 0.08) };
-    };
-    const setzeWagen = (x: number, y: number, s = 1) => { wagen.style.transform = `translate(${x}px, ${y}px) scale(${s})`; };
-    const zu = (p: { x: number; y: number }) => { const a = anschlag(); setzeWagen(a.x - p.x, a.y - p.y); };
+    // ---------- Geräusche (nur nach Klick auf den Lautsprecher) ----------
+    let ton: AudioContext | null = null;
+    let tonAn = false;
+    const tonKnopf = $<HTMLButtonElement>("[data-ton]");
+    tonKnopf.addEventListener("click", (e) => {
+      e.stopPropagation();
+      try {
+        ton ??= new AudioContext();
+        ton.resume();
+        tonAn = !tonAn;
+      } catch { tonAn = false; }
+      tonKnopf.classList.toggle("ist-an", tonAn);
+      tonKnopf.setAttribute("aria-label", tonAn ? "Ton ausschalten" : "Ton einschalten");
+    });
+    const hoerbar = () => tonAn && !!ton && ton.state === "running";
+    function rauschen(dauer: number, filterArt: BiquadFilterType, frequenz: number, laut: number, abklingen = 3) {
+      if (!hoerbar() || !ton) return;
+      const t = ton.currentTime;
+      const n = Math.max(1, Math.floor(ton.sampleRate * dauer));
+      const puffer = ton.createBuffer(1, n, ton.sampleRate);
+      const d = puffer.getChannelData(0);
+      for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / n) ** abklingen;
+      const q = ton.createBufferSource();
+      q.buffer = puffer;
+      const f = ton.createBiquadFilter();
+      f.type = filterArt;
+      f.frequency.value = frequenz;
+      const g = ton.createGain();
+      g.gain.value = laut;
+      q.connect(f).connect(g).connect(ton.destination);
+      q.start(t);
+    }
+    function schlag(von: number, bis: number, dauer: number, laut: number) {
+      if (!hoerbar() || !ton) return;
+      const t = ton.currentTime;
+      const o = ton.createOscillator();
+      o.type = "triangle";
+      o.frequency.setValueAtTime(von, t);
+      o.frequency.exponentialRampToValueAtTime(bis, t + dauer);
+      const g = ton.createGain();
+      g.gain.setValueAtTime(laut, t);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dauer);
+      o.connect(g).connect(ton.destination);
+      o.start(t);
+      o.stop(t + dauer + 0.01);
+    }
+    // Anschlag: heller Tastenklick, kurz danach der Typenhebel auf der Walze
+    function taste(staerke = 1) {
+      rauschen(0.006, "highpass", 4200, 0.35 * staerke, 2);
+      setTimeout(() => {
+        rauschen(0.028, "bandpass", 2100 + Math.random() * 700, 0.7 * staerke, 4);
+        schlag(190, 70, 0.05, 0.32 * staerke);
+      }, 12);
+    }
+    const ratsche = (n: number, abstand: number, laut = 0.25) => { for (let i = 0; i < n; i++) setTimeout(() => rauschen(0.01, "bandpass", 3000, laut, 2), i * abstand); };
+    function glocke() {
+      if (!hoerbar() || !ton) return;
+      const t = ton.currentTime;
+      for (const [f, l] of [[2093, 0.14], [4186, 0.04]] as const) {
+        const o = ton.createOscillator();
+        o.frequency.value = f;
+        const g = ton.createGain();
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(l, t + 0.008);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + 1.1);
+        o.connect(g).connect(ton.destination);
+        o.start(t);
+        o.stop(t + 1.15);
+      }
+    }
+    // Kratzen der Feder: Rauschen, dessen Lautstärke der Strichgeschwindigkeit folgt
+    let kratzGain: GainNode | null = null;
+    function kratzen(an: number) {
+      if (!hoerbar() || !ton) return;
+      if (!kratzGain) {
+        const n = ton.sampleRate * 2;
+        const puffer = ton.createBuffer(1, n, ton.sampleRate);
+        const d = puffer.getChannelData(0);
+        for (let i = 0; i < n; i++) d[i] = Math.random() * 2 - 1;
+        const q = ton.createBufferSource();
+        q.buffer = puffer;
+        q.loop = true;
+        const f = ton.createBiquadFilter();
+        f.type = "bandpass";
+        f.frequency.value = 3600;
+        f.Q.value = 0.8;
+        kratzGain = ton.createGain();
+        kratzGain.gain.value = 0;
+        q.connect(f).connect(kratzGain).connect(ton.destination);
+        q.start();
+      }
+      kratzGain.gain.setTargetAtTime(an * 0.06, ton.currentTime, 0.02);
+    }
 
-    // Jede Zeile auf die Breite ihrer Zeile im Logo bringen und jedem
-    // Buchstaben eine leicht andere Lage und Tinte geben, wie getippt.
-    // Danach die Lage jedes Buchstabens im noch unverschobenen Wagen messen.
-    function vorbereiten() {
-      const skala = kopf.offsetWidth / 922;
-      for (const z of zeilen) {
-        const zeichen = [...z.querySelectorAll<HTMLElement>(".vorspann__z")];
-        const breite = zeichen.reduce((s, c) => s + c.offsetWidth, 0);
-        const sperr = zeichen.length > 1 ? (Number(z.dataset.breite) * skala - breite) / (zeichen.length - 1) : 0;
-        zeichen.forEach((c, i) => {
-          if (i < zeichen.length - 1) c.style.marginRight = `${sperr}px`;
-          c.style.setProperty("--dreh", `${(Math.random() * 2.4 - 1.2).toFixed(2)}deg`);
-          c.style.setProperty("--hoch", `${(Math.random() * 1.2 - 0.6).toFixed(2)}px`);
-          c.style.setProperty("--deckung", (0.8 + Math.random() * 0.2).toFixed(2));
+    // ---------- Aufbau in Seitenkoordinaten ----------
+    const L = document.querySelector<HTMLElement>(".masthead__marke-img")!.getBoundingClientRect();
+    const vw = innerWidth;
+    const vh = innerHeight;
+    const k = L.width / daten.breite; // Pixel je Logo-Einheit
+    const Bw = L.width / 0.5; // Briefbogen: Logo nimmt die halbe Breite ein
+    const bx = L.left + L.width / 2 - Bw / 2;
+    const by = L.top - Bw * 0.09;
+    Object.assign(blatt.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${Bw * 1.414}px` });
+    Object.assign(kopf.style, { left: `${L.left - bx}px`, top: `${L.top - by}px`, width: `${L.width}px`, height: `${L.height}px` });
+
+    // Anschläge: Mitte jedes Buchstabens auf der Grundlinie seiner Zeile
+    const anschlaege = daten.zeilen.map((z, zi) => z.glyphen.map(([s, e, art]) => ({
+      zi, rechts: e, art,
+      p: { x: L.left + ((s + e) / 2) * k, y: L.top + z.grund * k },
+    })));
+    const alle = anschlaege.flat();
+    const S = alle[alle.length - 1].p; // Anschlagpunkt der Maschine = letzter Buchstabe in Ruhelage
+    const W = (p: P): P => ({ x: S.x - p.x, y: S.y - p.y });
+    const Wstart = W(alle[0].p);
+    // Auf dem Tisch liegt der Bogen ganz oberhalb der Walze; beim Einlegen
+    // fährt er um seine ganze Länge unterhalb der ersten Zeile nach unten.
+    const ersteZeileY = L.top + daten.zeilen[0].grund * k;
+    const Wtisch = { x: Wstart.x, y: Wstart.y - (by + Bw * 1.414 - ersteZeileY) - Bw * 0.05 };
+
+    // Maschine: Walze etwas breiter als der Bogen, Grundlinie knapp über dem Papierhalter
+    const Mw = Bw * 1.86;
+    const Mh = (Mw * 618) / 1200;
+    for (const m of maschinen) Object.assign(m.style, { left: `${S.x - Mw / 2}px`, top: `${S.y - 0.255 * Mh}px`, width: `${Mw}px` });
+
+    // Hände
+    const hw = L.width * 1.05;
+    const hh = (hw * 602) / 900;
+    Object.assign(feder.style, { width: `${hw}px` });
+    const gw = L.width * 0.95;
+    Object.assign(griff.style, { width: `${gw}px`, left: `${bx + Bw / 2 - 0.1787 * gw}px`, top: `${by - 0.9948 * gw}px` });
+    wagen.style.transformOrigin = `${bx + Bw / 2}px ${by}px`;
+
+    // Kamera: Bildpunkt c der Welt bei Zoom z an die Bildschirmstelle (sx, sy)
+    const setzeKamera = (c: P, z: number, sx: number, sy: number, ms = 0, kurve = "cubic-bezier(0.45, 0, 0.2, 1)") => {
+      kamera.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
+      kamera.style.transform = `translate(${sx - z * c.x}px, ${sy - z * c.y}px) scale(${z})`;
+    };
+    // Der Wagen trägt Bogen und greifende Hand; gedreht wird um den Griffpunkt
+    const setzeWagen = (w: P, ms = 0, kurve = "ease-out", drehung = 0) => {
+      wagen.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
+      wagen.style.transform = `translate(${w.x}px, ${w.y}px) rotate(${drehung}deg)`;
+    };
+    const handy = vw < 700;
+    const kompassMitte = { x: L.left + 461 * k + Wtisch.x, y: L.top + 230 * k + Wtisch.y };
+    const z1 = Math.min(vw * (handy ? 0.82 : 0.5), 560) / (893 * k);
+    // Beim Tippen: Anschlagpunkt in der Bildmitte. Auf dem Rechner passt die
+    // längste Zeile (858 Einheiten) zu beiden Seiten ganz ins Bild, Groß-
+    // buchstaben höchstens etwa 50 Pixel hoch; auf dem Handy etwas näher.
+    const sx3 = vw / 2;
+    const z3 = handy ? 1.15 : Math.min(50 / (90 * k), (vw / 2 - 40) / (858 * k));
+
+    // ---------- 1. Die Hand zeichnet den Kompass ----------
+    const laengen = pfade.map((p) => p.getTotalLength());
+    function federNach(p: P, hebung: number, drehung: number) {
+      const s = 1 + 0.03 * hebung;
+      feder.style.transform = `translate(${p.x - 0.0021 * hw}px, ${p.y - 0.9933 * hh - hebung * hw * 0.05}px) rotate(${drehung}deg) scale(${s})`;
+    }
+    const weltVonKompass = (q: DOMPoint): P => ({ x: L.left + Wtisch.x + q.x * k, y: L.top + Wtisch.y + q.y * k });
+    const drehungBei = (p: P, t: number) => -3 + ((p.x - kompassMitte.x) / (L.width * 0.5)) * 5 + Math.sin(t / 90) * 0.5 + Math.sin(t / 47) * 0.3;
+
+    async function zeichnen() {
+      let letzte: P = weltVonKompass(pfade[0].getPointAtLength(0));
+      // Hand kommt von rechts unten herein
+      const start: P = { x: letzte.x + hw * 0.9, y: letzte.y + hw * 0.6 };
+      await bewegeFeder(start, letzte, 320, 1);
+      for (let i = 0; i < pfade.length && !fertig; i++) {
+        const pfad = pfade[i];
+        const ms = Number(pfad.dataset.ms);
+        const anfang = weltVonKompass(pfad.getPointAtLength(0));
+        if (i > 0) await bewegeFeder(letzte, anfang, 100, 1);
+        await new Promise<void>((fertigStrich) => {
+          const t0 = performance.now();
+          let vorher = anfang;
+          const schritt = (jetzt: number) => {
+            if (fertig) return fertigStrich();
+            const t = Math.min(1, (jetzt - t0) / ms);
+            const f = weich(t);
+            pfad.style.strokeDashoffset = String(1 - f);
+            const p = weltVonKompass(pfad.getPointAtLength(f * laengen[i]));
+            const zitter = { x: p.x + Math.sin(jetzt / 37) * 0.6, y: p.y + Math.cos(jetzt / 29) * 0.6 };
+            federNach(zitter, 0, drehungBei(p, jetzt));
+            kratzen(Math.min(1, Math.hypot(p.x - vorher.x, p.y - vorher.y) / 6));
+            vorher = p;
+            if (t < 1) requestAnimationFrame(schritt);
+            else { letzte = p; kratzen(0); fertigStrich(); }
+          };
+          requestAnimationFrame(schritt);
         });
       }
-      const w0 = wagen.getBoundingClientRect();
-      punkte = zeilen.map((z) => [...z.querySelectorAll<HTMLElement>(".vorspann__z")].map((c) => {
-        const r = c.getBoundingClientRect();
-        return { el: c, x: r.left - w0.left + r.width / 2, y: r.top - w0.top + r.height * 0.8 }; // y = Grundlinie
-      }));
+      // Hand hebt ab und verlässt das Bild nach rechts oben
+      await bewegeFeder(letzte, { x: letzte.x + hw * 1.1, y: letzte.y - hw * 0.5 }, 380, 1.4);
+      feder.style.opacity = "0";
+    }
+    function bewegeFeder(a: P, b: P, ms: number, hub: number) {
+      return new Promise<void>((fertigWeg) => {
+        const t0 = performance.now();
+        const schritt = (jetzt: number) => {
+          if (fertig) return fertigWeg();
+          const t = Math.min(1, (jetzt - t0) / ms);
+          const f = weich(t);
+          const p = { x: a.x + (b.x - a.x) * f, y: a.y + (b.y - a.y) * f };
+          federNach(p, Math.sin(Math.PI * t) * hub, drehungBei(p, jetzt));
+          if (t < 1) requestAnimationFrame(schritt);
+          else fertigWeg();
+        };
+        requestAnimationFrame(schritt);
+      });
     }
 
-    // Geräusche der Maschine, im Browser erzeugt (keine Audiodatei). Browser
-    // erlauben Ton erst nach einer Interaktion mit der Seite; ohne Erlaubnis
-    // bleibt der Vorspann einfach still.
-    let ton: AudioContext | null = null;
-    try { ton = new AudioContext(); if (ton.state !== "running") ton.resume().catch(() => {}); } catch { ton = null; }
-    const hoerbar = () => !!ton && ton.state === "running";
-    function klack(staerke = 1) {
-      if (!hoerbar() || !ton) return;
-      const t = ton.currentTime;
-      const laenge = Math.floor(ton.sampleRate * 0.03);
-      const puffer = ton.createBuffer(1, laenge, ton.sampleRate);
-      const d = puffer.getChannelData(0);
-      for (let i = 0; i < laenge; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / laenge) ** 3;
-      const quelle = ton.createBufferSource();
-      quelle.buffer = puffer;
-      const filter = ton.createBiquadFilter();
-      filter.type = "bandpass";
-      filter.frequency.value = 1700 + Math.random() * 900;
-      const laut = ton.createGain();
-      laut.gain.value = 0.55 * staerke;
-      quelle.connect(filter).connect(laut).connect(ton.destination);
-      quelle.start(t);
-      // dumpfer Schlag des Gehäuses
-      const schlag = ton.createOscillator();
-      schlag.type = "triangle";
-      schlag.frequency.setValueAtTime(150, t);
-      schlag.frequency.exponentialRampToValueAtTime(55, t + 0.05);
-      const huelle2 = ton.createGain();
-      huelle2.gain.setValueAtTime(0.3 * staerke, t);
-      huelle2.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
-      schlag.connect(huelle2).connect(ton.destination);
-      schlag.start(t);
-      schlag.stop(t + 0.07);
-    }
-    const ratsche = () => { for (let k = 0; k < 5; k++) setTimeout(() => klack(0.22), k * 15); };
-    function ding() {
-      if (!hoerbar() || !ton) return;
-      const t = ton.currentTime;
-      const glocke = ton.createOscillator();
-      glocke.frequency.value = 2093;
-      const laut = ton.createGain();
-      laut.gain.setValueAtTime(0.0001, t);
-      laut.gain.exponentialRampToValueAtTime(0.16, t + 0.01);
-      laut.gain.exponentialRampToValueAtTime(0.0001, t + 0.9);
-      glocke.connect(laut).connect(ton.destination);
-      glocke.start(t);
-      glocke.stop(t + 0.95);
-    }
-    // Jeder Anschlag erschüttert das Bild ganz leicht; auf Android-Handys
-    // zusätzlich ein kurzes Vibrieren, wo der Browser es erlaubt.
-    const ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    function anschlagen(staerke: number) {
-      klack(staerke);
-      if (ruhig) return;
-      const dx = (Math.random() - 0.5) * 2 * staerke;
-      const dy = (0.6 + Math.random() * 0.6) * staerke;
-      buehne.animate([{ transform: "translate(0, 0)" }, { transform: `translate(${dx}px, ${dy}px)` }, { transform: "translate(0, 0)" }], { duration: 90, easing: "ease-out" });
-      try { if (staerke >= 1) navigator.vibrate?.(6); } catch {}
+    // ---------- 2. Die Hand legt das Blatt in die Maschine ----------
+    async function einlegen() {
+      // Kamera zieht zurück: der fertige Bogen liegt über der Schreibmaschine
+      huelle.classList.add("vorspann--maschine");
+      const oben = by + Wtisch.y - gw * 0.7;
+      const unten = S.y + Mh * 0.3;
+      const z2 = Math.min((vh * 0.94) / (unten - oben), (vw * 0.98) / (Mw * 0.7));
+      setzeKamera({ x: S.x, y: (oben + unten) / 2 }, z2, vw / 2, vh / 2, 650);
+      await warte(220);
+      // Die Hand kommt von rechts oben und greift die Oberkante
+      huelle.classList.add("vorspann--greift");
+      rauschen(0.25, "lowpass", 1500, 0.1, 1.5);
+      await warte(420);
+      // Anheben: der Bogen kippt leicht in der Hand
+      huelle.classList.add("vorspann--gehoben");
+      setzeWagen({ x: Wtisch.x, y: Wtisch.y - Bw * 0.035 }, 240, "ease-out", -2.2);
+      await warte(240);
+      // Gerade ausgerichtet hinunter hinter den Papierhalter, die Walze zieht ein
+      setzeWagen(Wstart, 820, "cubic-bezier(0.42, 0, 0.25, 1)", 0);
+      setTimeout(() => ratsche(8, 55, 0.18), 430);
+      setTimeout(() => huelle.classList.remove("vorspann--gehoben"), 380);
+      await warte(820);
+      huelle.classList.add("vorspann--loslassen");
+      setzeKamera(S, z3, sx3, vh * (handy ? 0.6 : 0.62), 560);
+      await warte(440);
     }
 
+    // ---------- 3. Die Maschine tippt das Logo ----------
+    // Oberhalb der Walze biegt sich der Bogen leicht nach hinten; der Drehpunkt
+    // der Biegung liegt auf der Walzenlinie und wandert mit jeder Zeile.
+    const biegungAn = (w: P) => blatt.style.setProperty("--walze", `${S.y - (by + w.y)}px`);
     async function tippen() {
-      zu(punkte[0][0]);
-      await warte(60);
-      huelle.classList.add("vorspann--sichtbar");
-      await warte(250);
-      for (let zi = 0; zi < zeilen.length && !fertig; zi++) {
-        const takt = Number(zeilen[zi].dataset.takt);
+      biegungAn(Wstart);
+      huelle.classList.add("vorspann--tippt");
+      for (let zi = 0; zi < anschlaege.length && !fertig; zi++) {
+        const zeile = zeilenEl[zi];
         if (zi > 0) {
-          // Wagenrücklauf und Zeilenvorschub
-          huelle.classList.add("vorspann--ruecklauf");
-          ratsche();
-          zu(punkte[zi][0]);
-          await warte(zi < 3 ? 100 : 80);
-          huelle.classList.remove("vorspann--ruecklauf");
+          // Wagenrücklauf mit Zeilenvorschub
+          ratsche(4, 26, 0.2);
+          rauschen(0.14, "bandpass", 900, 0.12, 1);
+          setzeWagen(W(anschlaege[zi][0].p), 140, "cubic-bezier(0.5, 0, 0.3, 1)");
+          biegungAn(W(anschlaege[zi][0].p));
+          await warte(150);
         }
-        for (const p of punkte[zi]) {
+        for (const a of anschlaege[zi]) {
           if (fertig) return;
-          zu(p);
-          p.el.classList.add("da");
-          // Beim schnellen Slogan nur jeder dritte Anschlag hörbar und spürbar
-          const k = punkte[zi].indexOf(p);
-          if (takt > 20) anschlagen(1);
-          else if (k % 3 === 0) anschlagen(0.4);
-          await warte(takt);
+          const strich = a.art === "strich";
+          const gross = zi === 1 || zi === 2 || a.art !== "z";
+          setzeWagen(W(a.p), strich ? 30 : 60, "ease-out");
+          zeile.style.setProperty("--rechts", `${100 - ((a.rechts + 1) / daten.breite) * 100}%`);
+          if (!strich || anschlaege[zi].indexOf(a) % 3 === 0) {
+            taste(strich ? 0.45 : gross ? 1 : 0.7);
+            const st = strich ? 0.3 : gross ? 1 : 0.55;
+            ruettler.animate([{ transform: "translate(0, 0)" }, { transform: `translate(${(Math.random() - 0.5) * st}px, ${0.8 * st}px)` }, { transform: "translate(0, 0)" }], { duration: 80, easing: "ease-out" });
+          }
+          await warte(strich ? 8 : zi >= 3 ? 32 : 60);
         }
       }
+    }
+
+    // ---------- 4. Rauszoomen nach oben, Landung auf dem Logo ----------
+    function abschluss(schnell = false) {
+      if (huelle.classList.contains("vorspann--ende")) return;
+      fertig = true;
+      kratzen(0);
+      pfade.forEach((p) => (p.style.strokeDashoffset = "0"));
+      zeilenEl.forEach((z) => z.style.setProperty("--rechts", "0%"));
+      huelle.classList.remove("vorspann--tippt", "vorspann--gehoben");
+      huelle.classList.add("vorspann--greift", "vorspann--maschine", "vorspann--loslassen", "vorspann--ende");
+      feder.style.opacity = "0";
+      const dauer = schnell ? 550 : 1050;
+      setzeWagen({ x: 0, y: 0 }, schnell ? 300 : 200);
+      kamera.style.transition = `transform ${dauer}ms cubic-bezier(0.55, 0, 0.2, 1)`;
+      kamera.style.transform = "translate(0px, 0px) scale(1)";
+      setTimeout(() => huelle.classList.add("vorspann--weg"), dauer - 40);
+      setTimeout(() => { html.classList.remove("vorspann-an"); huelle.remove(); ton?.close().catch(() => {}); }, dauer + 350);
+    }
+
+    async function film() {
+      setzeWagen(Wtisch);
+      setzeKamera(kompassMitte, z1, vw / 2, vh * 0.46);
+      huelle.classList.add("vorspann--sichtbar");
+      await warte(200);
+      await zeichnen();
       if (fertig) return;
-      // Zierlinie erscheint, die getippte Schrift „trocknet“ zur Logo-Schrift
-      ding();
-      huelle.classList.add("vorspann--ziert", "vorspann--trocken");
-      await warte(280);
+      await einlegen();
+      if (fertig) return;
+      await tippen();
+      if (fertig) return;
+      glocke();
+      await warte(220);
       abschluss();
     }
 
-    // Blatt deckungsgleich auf das Logo der Seite fahren, dann ausblenden
-    function abschluss() {
-      if (fertig) return;
-      fertig = true;
-      huelle.querySelectorAll(".vorspann__z").forEach((c) => c.classList.add("da"));
-      huelle.classList.add("vorspann--ziert", "vorspann--trocken", "vorspann--ende");
-      const logo = document.querySelector<HTMLElement>(".masthead__marke-img");
-      const ziel = logo?.getBoundingClientRect();
-      if (ziel && ziel.width > 0) {
-        const s = ziel.width / kopf.offsetWidth;
-        const k = kopf.getBoundingClientRect();
-        const w = wagen.getBoundingClientRect();
-        // Lage des Kopfs im unverschobenen Wagen
-        const m = new DOMMatrix(getComputedStyle(wagen).transform);
-        const kx = (k.left - w.left) / m.a;
-        const ky = (k.top - w.top) / m.d;
-        setzeWagen(ziel.left - s * kx, ziel.top - s * ky, s);
-      }
-      // Das Blatt trägt jetzt exakt das Logo und liegt deckungsgleich auf dem
-      // Logo der Seite; nur noch der Hintergrund blendet weg.
-      setTimeout(() => huelle.classList.add("vorspann--weg"), 720);
-      setTimeout(() => { html.classList.remove("vorspann-an"); huelle.remove(); ton?.close().catch(() => {}); }, 1100);
-    }
+    huelle.addEventListener("click", () => abschluss(true));
+    addEventListener("keydown", () => abschluss(true), { once: true });
+    addEventListener("wheel", () => abschluss(true), { once: true, passive: true });
 
-    const ueberspringen = (e: Event) => { e.preventDefault(); abschluss(); };
-    huelle.addEventListener("click", ueberspringen);
-    addEventListener("keydown", (e) => { if (!fertig) abschluss(); }, { once: true });
-    addEventListener("wheel", () => { if (!fertig) abschluss(); }, { once: true, passive: true });
-    addEventListener("touchmove", () => { if (!fertig) abschluss(); }, { once: true, passive: true });
-
-    const start = () => { vorbereiten(); tippen(); };
     const bilder = [...huelle.querySelectorAll("img")].map((i) => (i.complete ? Promise.resolve() : new Promise((r) => { i.onload = i.onerror = r; })));
-    Promise.all([document.fonts?.ready, ...bilder]).then(start);
+    Promise.all(bilder).then(film);
   }
 </script>
