@@ -1084,22 +1084,26 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   background: var(--vp-blatt);
   transform-style: preserve-3d;
   transform-origin: 50% 0;
-  transform: perspective(var(--persp, 2400px)) rotateX(var(--kipp, 0deg));
+  /* Drehpunkt per Verschiebung statt transform-origin: so gleitet er beim Einlegen
+     und Herausnehmen stetig von der Oberkante zur Walze, ohne Sprung */
+  transform: translateY(var(--dreh, 0px)) perspective(var(--persp, 2400px)) rotateX(var(--kipp, 0deg)) translateY(calc(-1 * var(--dreh, 0px)));
   transition: transform 0.55s cubic-bezier(0.3, 0.7, 0.3, 1), background-color 0.5s ease;
 }
 [data-papier="haengt"] .vorspann__blatt { --kipp: -4deg; }
-[data-papier="tippt"] .vorspann__blatt { --kipp: 9deg; transform-origin: 50% var(--walze, 0px); }
-/* Schattenkante, wo der Bogen über die Walze läuft */
+[data-papier="tippt"] .vorspann__blatt { --kipp: 9deg; --dreh: var(--walze, 0px); }
+/* Schattenkante, wo der Bogen über die Walze läuft. Sie gehört zur Walze, nicht zum
+   Papier: --nachlauf gleicht den Papiervorschub im selben Takt wie der Wagen aus */
 .vorspann__blatt::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
-  top: calc(var(--walze, 0px) - 34px);
-  height: 34px;
+  top: var(--kante, 0px);
+  height: var(--kante-h, 34px);
   background: linear-gradient(rgba(60, 40, 15, 0), rgba(60, 40, 15, 0.16));
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transform: translateY(var(--nachlauf, 0px));
+  transition: opacity 0.4s ease, transform var(--wagen-ms, 0ms) var(--wagen-kurve, ease-out);
   pointer-events: none;
 }
 [data-papier="tippt"] .vorspann__blatt::after { opacity: 1; }

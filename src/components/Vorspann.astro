@@ -421,7 +421,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     // ---------- Aufbau: alles in Seitenkoordinaten, gemessen in Ruhelage ----------
     let vw = 0, vh = 0, handy = false, k = 1, rand = 0, Bw = 0, Bh = 0, bx = 0, by = 0, obenH = 0, yT = 0;
     let L = new DOMRect(), M = new DOMRect();
-    let Mw = 0, Mh = 0, S: P = { x: 0, y: 0 }, kMitte = 0;
+    let Mw = 0, Mh = 0, S: P = { x: 0, y: 0 }, kMitte = 0, kopfB = 0, griffL = 0, griffR = 0;
     let H = 0, E = 0, eh = 0, Rw = 0, Rh = 0;
     let z1 = 1, z3 = 1, zFolge = 1, kameraZ = 1;
     let titelMitte: P = { x: 0, y: 0 }, kissenMitte: P = { x: 0, y: 0 }, kissenOben = 0, sw = 0;
@@ -481,11 +481,24 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       kMitte = L.left + 441 * k;
       M = kopfSeite.getBoundingClientRect();
       rand = Math.max(16, M.width * 0.05);
-      Bw = M.width + 2 * rand;
-      bx = M.left - rand;
-      by = Math.min(M.top, L.top) - rand;
-      obenH = navSeite.getBoundingClientRect().bottom - by + rand;
-      Bh = Math.max(Bw * 1.414, obenH + Bw * 0.3);
+      const kopfOben = Math.min(M.top, L.top);
+      const kopfUnten = navSeite.getBoundingClientRect().bottom;
+      if (handy) {
+        // Handy: ein A4-Bogen, der Kopf steht im obersten Viertel (oben 6 % Rand);
+        // darunter bleibt sichtbar Platz für die Zeitung
+        Bw = Math.max(M.width + 2 * rand, (kopfUnten - kopfOben + rand) / (0.25 * 1.414 - 0.06));
+        bx = M.left + M.width / 2 - Bw / 2;
+        by = kopfOben - 0.06 * Bw;
+        Bh = Bw * 1.414;
+      } else {
+        Bw = M.width + 2 * rand;
+        bx = M.left - rand;
+        by = kopfOben - rand;
+      }
+      obenH = kopfUnten - by + rand;
+      if (!handy) Bh = Math.max(Bw * 1.414, obenH + Bw * 0.3);
+      // Kopfbreite samt Rand: Maßstab für Hände und Kamera (auf dem Handy ist der Bogen breiter)
+      kopfB = M.width + 2 * rand;
       huelle!.style.setProperty("--persp", `${Math.round(Bw * 2.4)}px`);
       wagen.style.transformOrigin = `${bx + Bw / 2}px ${by}px`;
       Object.assign(blatt.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${obenH}px` });
@@ -635,7 +648,8 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       linien = [strich(".masthead__doppel", true, "breit"), strich(".datumszeile", false, "fein"), ...doppelt(".hauptnav", "doppel")].filter(Boolean) as Strich[];
 
       // Schreibmaschine unter dem Platz des Bogens; Anschlag in der Mitte der Typenführung
-      Mw = (Bw / 0.586) * 1.06;
+      // Maschine passend zum Kopf (auf dem Handy ist der Bogen breiter als der Bildausschnitt)
+      Mw = ((handy ? kopfB : Bw) / 0.586) * 1.06;
       Mh = (Mw * 618) / 1200;
       S = { x: bx + Bw / 2, y: by + Bh + 0.255 * Mh + 0.03 * Bw };
       for (const m of maschinen) Object.assign(m.style, { left: `${S.x - 0.5225 * Mw}px`, top: `${S.y - 0.255 * Mh}px`, width: `${Mw}px` });
@@ -643,14 +657,20 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       klemmeTipp = S.y + 0.009 * Mh; // vor der Walze bis zur Papierführung
       yT = S.y - 0.255 * Mh - 0.03 * Bw - by - Bh; // der Bogen liegt über der Maschine an seinem späteren Platz
       Wstart = W(anschlaege[0].p);
+      // Schattenkante von 34 px über der Walzenmitte bis zur Papierführung, bezogen auf den Wagen bei Wstart
+      blatt.style.setProperty("--kante", `${S.y - 34 - (by + Wstart.y)}px`);
+      blatt.style.setProperty("--kante-h", `${klemmeTipp - S.y + 34}px`);
 
       // Alle Hände gleich groß, am Bogen gemessen
-      H = Math.max(L.width * 1.05, 0.46 * Bw);
+      H = Math.max(L.width * 1.05, 0.46 * kopfB);
       E = H;
       eh = (E * 355) / 700;
       for (const h of [handR, handL]) h.style.width = `${E}px`;
-      handR.style.left = `${bx + Bw - 0.3105 * E}px`;
-      handL.style.left = `${bx - 0.3105 * E}px`;
+      // Griff: an den oberen Ecken; beim breiten Handy-Bogen an der Oberkante neben dem Kopf
+      griffL = handy ? M.left - 0.06 * M.width : bx;
+      griffR = handy ? M.right + 0.06 * M.width : bx + Bw;
+      handR.style.left = `${griffR - 0.3105 * E}px`;
+      handL.style.left = `${griffL - 0.3105 * E}px`;
       handR.style.top = handL.style.top = `${by - 0.6689 * eh}px`;
       Rw = M.width * 1.12;
       Rh = (Rw * 98) / 1600;
@@ -662,7 +682,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       Object.assign(linealHand.style, { width: `${lw}px`, left: `${0.24 * Rw - (1221 / 1500) * lw}px`, top: `${0.3 * Rh - (25 / 635) * lh}px` });
       linealHand.style.setProperty("--a-oben", `${0.4268 * lh}px`);
       linealHand.style.setProperty("--a-hoehe", `${(0.9858 - 0.4268) * lh}px`);
-      zFolge = handy ? Math.min(1.2, (vw * 0.98) / (Bw * 1.12)) : Math.min(1.2, (vw * 0.98) / (Bw + 0.8 * E));
+      zFolge = handy ? Math.min(1.2, (vw * 0.98) / ((griffR - griffL) * 1.12)) : Math.min(1.2, (vw * 0.98) / (griffR - griffL + 0.8 * E));
       haende("weg", 0);
       federWahl("fein");
 
@@ -675,7 +695,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       huelle!.classList.remove("vorspann--messen");
       huelle!.style.setProperty("--schatten-sy", klemmen((unten - by) / Bh, 0.55, 1).toFixed(3));
 
-      z1 = Math.min((vw * (handy ? 0.82 : 0.44)) / (893 * k), (vw * 0.96) / Bw, (vh * 0.62) / (414 * k));
+      z1 = Math.min((vw * (handy ? 0.82 : 0.44)) / (893 * k), (vw * 0.96) / kopfB, (vh * 0.62) / (414 * k));
 
       // Stempel: Der Holzblock deckt CAPITAL COMPASS mit etwas Rand; das Kissen ist etwas größer
       // und liegt oben rechts neben dem Bogen auf dem Tisch
@@ -691,7 +711,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       Object.assign(stempelEl.style, { width: `${sw}px`, left: `${titelMitte.x - bmx * sw}px`, top: `${titelMitte.y - bmy * sh}px`, transformOrigin: `${bmx * 100}% ${bmy * 100}%` });
       const kw = blockB * 1.12;
       const kh = (kw * 539) / 900;
-      kissenMitte = { x: bx + Bw - kw / 2 - 0.035 * Bw, y: by + yT - 14 - kh / 2 };
+      kissenMitte = { x: handy ? M.right - kw / 2 : bx + Bw - kw / 2 - 0.035 * Bw, y: by + yT - 14 - kh / 2 };
       Object.assign(kissen.style, { width: `${kw}px`, left: `${kissenMitte.x - kw / 2}px`, top: `${kissenMitte.y - kh / 2}px` });
       kissenOben = kissenMitte.y - kh / 2;
       void blockVerh;
@@ -711,7 +731,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     };
     // Ausschnitt von „oben“ bis „unten“ (Welt), höchstens so groß wie zFolge erlaubt
     const ausschnitt = (oben: number, unten: number) => {
-      const zMin = (vw / (Bw + 1.38 * E)) * 1.03;
+      const zMin = (vw / (griffR - griffL + 1.38 * E)) * 1.03;
       const z = Math.max(zMin, Math.min(zFolge, (vh * 0.94) / (unten - oben)));
       return { c: { x: S.x, y: oben + vh / (2 * z) - vh * 0.03 / z }, z };
     };
@@ -723,6 +743,10 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     const setzeWagen = (w: P, ms = 0, kurve = "ease-out", s = 1, drehung = 0) => {
       wagen.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
       wagen.style.transform = `translate(${w.x}px, ${w.y}px)${s !== 1 ? ` scale(${s})` : ""}${drehung ? ` rotate(${drehung}deg)` : ""}`;
+      // die Schattenkante bleibt an der Walze stehen, während das Papier vorrückt
+      blatt.style.setProperty("--wagen-ms", `${ms}ms`);
+      blatt.style.setProperty("--wagen-kurve", kurve);
+      blatt.style.setProperty("--nachlauf", `${Wstart.y - w.y}px`);
     };
     const papier = (z: "" | "haengt" | "tippt") => { huelle!.dataset.papier = z; };
     const schattenAuf = (z: "liegt" | "schwebt" | "weg") => { huelle!.dataset.schatten = z; };
@@ -869,7 +893,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       // Kamera: Kissen und Titelfeld im Bild
       const oben = kissenOben - 20;
       const unten = L.top + yT + 725 * k;
-      const z = Math.min(z1 * 1.05, (vh * 0.9) / (unten - oben), (vw * 0.96) / Bw);
+      const z = Math.min(z1 * 1.05, (vh * 0.9) / (unten - oben), (vw * 0.96) / (kopfB * 1.1));
       setzeKamera({ x: bx + Bw / 2, y: (oben + unten) / 2 }, z, vw / 2, vh / 2, 750);
       const start: P = { x: kissenMitte.x + vw / z, y: kissenMitte.y - (0.8 * vh) / z };
       const k0 = kissenMitte, t0 = titelMitte;
@@ -915,7 +939,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     // ---------- 2. Zwei Hände legen den Bogen ein ----------
     async function einlegen() {
       // Kamera zieht auf den Bogenkopf mit Händen auf
-      const a0 = ausschnitt(by + yT - 0.85 * eh, by + yT + Math.min(Bh, obenH + 0.2 * Bw));
+      const a0 = ausschnitt(by + yT - 0.85 * eh, by + yT + Math.min(Bh, obenH + 0.2 * kopfB));
       setzeKamera(a0.c, a0.z, vw / 2, vh / 2, 800);
       await warte(250);
       haende("greift", 500, 90);
