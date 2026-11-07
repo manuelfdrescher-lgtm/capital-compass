@@ -14,7 +14,7 @@
 //    Seitenkopfs; die Maschine verschwindet.
 // 5. Lineal (flach aufgelegte Hand) und Federn ziehen die Linien: feine
 //    Feder für die THE-Linien samt Sternen und den dünnen Strich, breite
-//    Feder für den dicken Strich, Doppelreißfeder für die Doppellinie.
+//    Feder für den dicken Strich, Reißfeder für die Doppellinie (zwei Striche).
 // 6. Die Ausgabe wird „gedruckt“: Der Inhalt erscheint unter dem Kopf,
 //    dazu der Signaturton (Kursticker und drei steigende Glockentöne).
 // Der Bogen trägt eine Kopie des echten Seitenkopfs (Datum und Rubriken
@@ -584,7 +584,23 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
         linienSlot.appendChild(d);
         return { el: d, x0: rr.left, x1: rr.right, y: top + h / 2, unten: top + h, feder: fed };
       };
-      linien = [strich(".masthead__doppel", true, "breit"), strich(".datumszeile", false, "fein"), strich(".hauptnav", false, "doppel")].filter(Boolean) as Strich[];
+      // Doppellinie: zwei einzelne Striche, die Feder setzt zweimal an
+      const doppelt = (sel: string, fed: FederName): Strich[] => {
+        const e = kopie!.querySelector<HTMLElement>(sel);
+        if (!e) return [];
+        const rr = e.getBoundingClientRect();
+        const w = parseFloat(getComputedStyle(e).borderBottomWidth) || 3;
+        const dicke = Math.max(1, Math.round(w / 3));
+        return [rr.bottom - w, rr.bottom - dicke].map((top) => {
+          const d = document.createElement("div");
+          d.className = "vorspann__strich";
+          d.style.borderBottom = `${dicke}px solid`;
+          Object.assign(d.style, { left: `${rr.left - bx}px`, top: `${top - by}px`, width: `${rr.width}px`, height: `${dicke}px` });
+          linienSlot.appendChild(d);
+          return { el: d, x0: rr.left, x1: rr.right, y: top + dicke / 2, unten: rr.bottom, feder: fed };
+        });
+      };
+      linien = [strich(".masthead__doppel", true, "breit"), strich(".datumszeile", false, "fein"), ...doppelt(".hauptnav", "doppel")].filter(Boolean) as Strich[];
 
       // Schreibmaschine unter dem Platz des Bogens; Anschlag in der Mitte der Typenführung
       Mw = (Bw / 0.586) * 1.06;
@@ -956,10 +972,11 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       await stern(1, 170);
       await schwebe(sternBahn(tl.sterne[0], 0), 290, 1.5);
       await stern(0, 170);
-      // Striche am Lineal entlang, jeder mit seiner Feder: breit, fein, Doppelreißfeder
+      // Striche am Lineal entlang, jeder mit seiner Feder: breit, fein, Reißfeder (Doppellinie in zwei Strichen)
       for (const [i, s] of linien.entries()) {
         if (fertig) return;
-        if (i > 0) legeLineal(s.unten + 1, 400);
+        // Das Lineal rückt nur zu einer neuen Linie weiter, nicht zum zweiten Strich der Doppellinie
+        if (i > 0 && s.unten !== linien[i - 1].unten) legeLineal(s.unten + 1, 400);
         await wechsel(s.feder, { x: s.x0, y: s.y });
         await ziehe({ x: s.x1, y: s.y }, 440, (f) => s.el.style.setProperty("--zug", String(f)));
       }
