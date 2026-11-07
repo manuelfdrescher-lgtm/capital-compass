@@ -70,11 +70,11 @@ const nav = [
             <p class="masthead__tagline">A Daily Briefing on Markets, Business and the Global Economy</p>
           </>
         )}
+        <p class="masthead__leser">Für Manuel Drescher</p>
         <div class="masthead__doppel" role="presentation"></div>
         {edition && (
           <p class="datumszeile">
             <span>{formatDateLong(edition.date)}</span>
-            <span>Ausgabe Nr. {edition.number}</span>
           </p>
         )}
         <nav class="hauptnav" aria-label="Ressorts" data-hauptnav>
@@ -139,67 +139,14 @@ const nav = [
         });
       });
 
-      // Navigation: Nur die Rubrik unter dem Cursor wechselt von der Schrift
-      // zum Bild, das zur Mitte hin wächst. Die anderen bleiben Schrift. Auf
-      // dem Handy zeigt ein Tippen kurz das Bild, dann öffnet sich die
-      // Rubrik. Animiert werden nur Deckkraft und Größe, die Mausposition
-      // wird höchstens einmal pro Bildschirmbild ausgewertet.
+      // Navigation: Auf dem Rechner wechselt beim Überfahren die Schrift zum
+      // Rubrik-Bild (reines CSS). Auf dem Handy zeigt ein Tippen kurz das
+      // Bild, dann öffnet sich die Rubrik.
       const hauptnav = document.querySelector<HTMLElement>("[data-hauptnav]");
       if (hauptnav) {
         const links = [...hauptnav.querySelectorAll<HTMLAnchorElement>("a")];
         const ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches;
         const maus = matchMedia("(hover: hover) and (pointer: fine)");
-        let mitten: { x: number; y: number; zone: number }[] = [];
-        let schritt = 0;
-        let nah = -1;
-        const ende = () => {
-          cancelAnimationFrame(schritt);
-          mitten = [];
-          links[nah]?.style.removeProperty("--s");
-          links[nah]?.classList.remove("ist-nah");
-          nah = -1;
-          hauptnav.classList.remove("ist-dock");
-        };
-        const vergroessern = (x: number, y: number) => {
-          let best = Infinity;
-          let ziel = -1;
-          mitten.forEach((m, i) => {
-            const d = Math.hypot(x - m.x, (y - m.y) * 2);
-            if (d < best) { best = d; ziel = i; }
-          });
-          if (ziel !== nah) {
-            links[nah]?.style.removeProperty("--s");
-            links[nah]?.classList.remove("ist-nah");
-            links[ziel]?.classList.add("ist-nah");
-            nah = ziel;
-          }
-          const f = Math.max(0, 1 - (best / mitten[ziel].zone) ** 2);
-          links[ziel].style.setProperty("--s", (0.8 + 0.2 * f).toFixed(3));
-        };
-        hauptnav.addEventListener("pointerenter", (ev) => {
-          if (ev.pointerType !== "mouse" || ruhig || !maus.matches) return;
-          const rahmen = links.map((a) => a.getBoundingClientRect());
-          mitten = rahmen.map((r, i) => {
-            // Zone: bis zur Hälfte des Wegs zur Nachbar-Rubrik
-            const x = r.left + r.width / 2;
-            const nachbar = [rahmen[i - 1], rahmen[i + 1]].filter(Boolean).map((q) => Math.abs(q!.left + q!.width / 2 - x) / 2);
-            return { x, y: r.top + r.height / 2, zone: Math.max(r.width / 2, ...nachbar) };
-          });
-          hauptnav.classList.add("ist-dock");
-          vergroessern(ev.clientX, ev.clientY);
-        });
-        hauptnav.addEventListener("pointermove", (ev) => {
-          if (!mitten.length) return;
-          cancelAnimationFrame(schritt);
-          schritt = requestAnimationFrame(() => vergroessern(ev.clientX, ev.clientY));
-        });
-        hauptnav.addEventListener("pointerleave", ende);
-        // Klick auf das Bild statt auf die Schrift: zur Rubrik unter dem Cursor
-        hauptnav.addEventListener("click", (ev) => {
-          if (!hauptnav.classList.contains("ist-dock") || (ev.target as Element).closest("a") || nah < 0) return;
-          if (ev.metaKey || ev.ctrlKey) window.open(links[nah].href, "_blank");
-          else location.href = links[nah].href;
-        });
         // Touch: Tippen zeigt kurz das Bild, dann öffnet sich die Rubrik
         links.forEach((a) => a.addEventListener("click", (ev) => {
           if (ruhig || maus.matches || ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
@@ -207,7 +154,7 @@ const nav = [
           a.classList.add("ist-gedrueckt");
           setTimeout(() => { location.href = a.href; }, 320);
         }));
-        window.addEventListener("pageshow", () => { ende(); links.forEach((a) => a.classList.remove("ist-gedrueckt")); });
+        window.addEventListener("pageshow", () => links.forEach((a) => a.classList.remove("ist-gedrueckt")));
         // Handy: die aktuelle Rubrik in die Mitte der Leiste holen und die
         // Ränder dort weich ausblenden, wo noch Rubriken folgen
         const leiste = hauptnav.querySelector<HTMLElement>(".hauptnav__leiste")!;

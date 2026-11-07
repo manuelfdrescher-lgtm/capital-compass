@@ -228,64 +228,56 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 
 .hauptnav {
   --band: 62px;      /* Höhe zwischen der Linie oben und der Doppellinie unten */
-  --bild: 58px;      /* Bildgröße bei voller Vergrößerung, passt zwischen die Linien */
-  --ruhe: 0.8;       /* Größe am Rand der Rubrik als Anteil davon */
+  --bild: 56px;      /* Größe der Rubrik-Bilder, passt zwischen die Linien */
+  --sperr: 0.06em;   /* Laufweite der Schrift */
   position: relative;
   z-index: 20;
   font-family: var(--sans);
   font-weight: 500;
-  font-size: clamp(12.5px, 1.2vw, 15px);
   line-height: 22px;
-  letter-spacing: 0.16em;
+  letter-spacing: var(--sperr);
   text-transform: uppercase;
   padding: 0;
   border-bottom: 3px double var(--haarlinie-stark);
   margin-bottom: 30px;
 }
+/* Blocksatz über die volle Breite: Die erste Rubrik beginnt bündig an der
+   Linie links, die letzte endet bündig rechts, alle Abstände dazwischen
+   sind exakt gleich. Die Schriftgröße folgt der Leistenbreite. */
 .hauptnav__leiste {
+  container-type: inline-size;
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 0 clamp(18px, 2.2vw, 30px);
+  justify-content: space-between;
   min-height: var(--band);
 }
-/* Zentriert, solange alles passt; sonst beginnt die Leiste links */
-.hauptnav a:first-child { margin-left: auto; }
-.hauptnav a:last-child { margin-right: auto; }
 .hauptnav a {
   position: relative;
-  flex: none;
-  display: inline-grid;
+  display: grid;
   place-items: center;
+  min-height: var(--band);
+  font-size: clamp(11px, 1.32cqw, 15px);
   text-decoration: none;
-  padding: 2px 0;
   -webkit-tap-highlight-color: transparent;
 }
 /* Die Laufweite hängt auch hinter dem letzten Buchstaben. Der negative
-   Rand gleicht das aus: Abstände und Zentrierung sind dadurch exakt, und
-   der Unterstrich endet bündig mit dem letzten Buchstaben. */
+   Rand gleicht das aus: Die Schrift sitzt exakt mittig, und der
+   Unterstrich endet bündig mit dem letzten Buchstaben. */
 .hauptnav__text {
   white-space: nowrap;
-  margin-right: -0.1em;
+  margin-right: calc(-1 * var(--sperr));
   padding-bottom: 2px;
-  background: linear-gradient(currentColor, currentColor) left bottom / calc(100% - 0.1em) 2px no-repeat;
-  background-size: 0 2px;
+  background: linear-gradient(currentColor, currentColor) left bottom / 0 2px no-repeat;
   transition: opacity 0.16s ease, transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .hauptnav a[aria-current="page"] .hauptnav__text {
   color: var(--akzent-rot);
-  background-size: calc(100% - 0.1em) 2px;
-}
-@media (hover: hover) and (pointer: fine) {
-  .hauptnav a:hover .hauptnav__text { color: var(--akzent-rot); }
+  background-size: calc(100% - var(--sperr)) 2px;
 }
 
-/* Rubrik-Bilder: liegen unsichtbar über der Schrift, immer mittig zwischen
-   den Linien. Nur die Rubrik unter dem Cursor wechselt zum Bild, es wächst
-   zur Mitte hin (nie über die Linien hinaus), sein Name erscheint unter
-   der Doppellinie. Das Bild
-   ist in voller Größe angelegt und wird verkleinert, so bleibt es auch
-   vergrößert gestochen scharf. */
+/* Rubrik-Bilder: liegen unsichtbar über ihrer Rubrik, immer mittig
+   zwischen den Linien und bei allen Rubriken gleich groß. Fährt der Cursor
+   auf eine Rubrik, weicht die Schrift dem Bild, das federnd aufspringt.
+   Der Name erscheint unter der Doppellinie. */
 .hauptnav__bild {
   position: absolute;
   left: 50%;
@@ -296,9 +288,8 @@ a:hover { text-decoration-color: var(--akzent-rot); }
   pointer-events: none;
   opacity: 0;
   transform: scale(0.5);
-  scale: 1;
   filter: drop-shadow(0 2px 2px rgba(17, 17, 17, 0.24)) drop-shadow(0 7px 9px rgba(17, 17, 17, 0.2));
-  transition: opacity 0.18s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), scale 0.08s linear;
+  transition: opacity 0.18s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
   will-change: transform, opacity;
   -webkit-user-select: none;
   user-select: none;
@@ -311,7 +302,7 @@ a:hover { text-decoration-color: var(--akzent-rot); }
 .hauptnav__blase {
   position: absolute;
   left: 50%;
-  top: calc(50% + var(--band) / 2 + 5px);
+  top: calc(100% + 8px);
   white-space: nowrap;
   font-size: 12.5px;
   line-height: 18px;
@@ -328,23 +319,24 @@ a:hover { text-decoration-color: var(--akzent-rot); }
   transform: translate(-50%, -4px);
   transition: opacity 0.14s ease, transform 0.18s ease;
 }
-.hauptnav.ist-dock a.ist-nah .hauptnav__text { opacity: 0; transform: scale(0.8); }
-.hauptnav.ist-dock a.ist-nah .hauptnav__bild { opacity: 1; transform: none; scale: var(--s, var(--ruhe)); }
-.hauptnav.ist-dock a.ist-nah .hauptnav__blase { opacity: 1; transform: translate(-50%, 0); }
+@media (hover: hover) and (pointer: fine) {
+  .hauptnav a:hover .hauptnav__text { opacity: 0; transform: scale(0.8); }
+  .hauptnav a:hover .hauptnav__bild { opacity: 1; transform: none; }
+  .hauptnav a:hover .hauptnav__blase { opacity: 1; transform: translate(-50%, 0); }
+}
 .hauptnav a:focus-visible .hauptnav__text,
 .hauptnav a.ist-gedrueckt .hauptnav__text { opacity: 0; transform: scale(0.8); }
-.hauptnav a:focus-visible .hauptnav__bild { opacity: 1; transform: none; scale: 1; }
+.hauptnav a:focus-visible .hauptnav__bild,
+.hauptnav a.ist-gedrueckt .hauptnav__bild { opacity: 1; transform: none; }
 .hauptnav a:focus-visible .hauptnav__blase { opacity: 1; transform: translate(-50%, 0); }
-.hauptnav a.ist-gedrueckt .hauptnav__bild { opacity: 1; transform: none; scale: 1; transition-delay: 0s; }
 
 /* Handy: eine Zeile zum Wischen, an den Rändern weich ausgeblendet */
 @media (max-width: 760px) {
-  .hauptnav {
-    --band: 54px;
-    --bild: 50px;
-    font-size: 14px;
-  }
+  .hauptnav { --band: 54px; --bild: 48px; }
   .hauptnav__leiste {
+    container-type: normal;
+    display: flex;
+    justify-content: flex-start;
     gap: 0 24px;
     overflow-x: auto;
     overscroll-behavior-x: contain;
@@ -359,11 +351,22 @@ a:hover { text-decoration-color: var(--akzent-rot); }
   .hauptnav__leiste.mehr-links { --links: transparent; }
   .hauptnav__leiste.mehr-rechts { --rechts: transparent; }
   .hauptnav__leiste::-webkit-scrollbar { display: none; }
-  .hauptnav a { scroll-snap-align: center; }
+  .hauptnav a { flex: none; font-size: 14px; scroll-snap-align: center; }
   .hauptnav__blase { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hauptnav__text, .hauptnav__bild { transition: opacity 0.15s ease; transform: none !important; scale: 1 !important; }
+  .hauptnav__text, .hauptnav__bild { transition: opacity 0.15s ease; transform: none !important; }
+}
+
+/* Widmung zwischen Logo und Datumszeile */
+.masthead__leser {
+  margin: 0 0 12px;
+  font-family: var(--schreibmaschine);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tinte-60);
+  opacity: 0.8;
 }
 
 /* ---------- Beispiel-Banner ---------- */
@@ -1012,7 +1015,6 @@ figure.chart, figure.kurschart {
   .datumszeile > span:first-child { flex-basis: 100%; text-align: center; }
   .datumszeile > span:nth-child(2)::before { content: none; }
 }
-.hauptnav { letter-spacing: 0.1em; }
 .ressort-titel { letter-spacing: 0.08em; }
 .marktpanel__titel, .brief-kasten__titel, .mechanik-box__titel, .factcheck-box__titel,
 .kurz-erklaert__titel, .sektor-bilanz__titel { letter-spacing: 0.1em; }
