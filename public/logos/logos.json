@@ -1353,5 +1353,51 @@
     "license": "Public domain",
     "artist": "Original uploader was Александр Мотин at ru.wikipedia",
     "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "gold": {
+    "file": null,
+    "name": "Gold",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "usd": {
+    "file": null,
+    "name": "US-Dollar",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "bitcoin": {
+    "file": "bitcoin.svg",
+    "name": "Bitcoin",
+    "source": "https://commons.wikimedia.org/wiki/File:Bitcoin.svg",
+    "license": "Public domain",
+    "artist": "Grayliptrot",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "gbp": {
+    "file": null,
+    "name": "Britisches Pfund",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "eur": {
+    "file": "eur.svg",
+    "name": "Euro",
+    "source": "https://commons.wikimedia.org/wiki/File:Euro_symbol_gold.svg",
+    "license": "Public domain",
+    "artist": "Ssolbergj",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "atoss": {
+    "file": null,
+    "name": "ATOSS Software SE",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "medistim": {
+    "file": null,
+    "name": "Medistim ASA",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "fevertree": {
+    "file": null,
+    "name": "Fevertree Drinks plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

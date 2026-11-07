@@ -95,3 +95,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-05-morning | Lindsay Corporation (LNN) | — _(rund 0,96 Mrd. €; Qualitätskompounder im Bewässerungs-Duopol, Treiber Ersatzzyklus und Mechanisierung in Schwellenländern)_
 - 2026-11-05-morning | Krones AG (KRN) | — _(rund 3,5 Mrd. €; Weltmarktführer für Abfüll- und Verpackungstechnik, Rekordauftragsbestand 4,33 Mrd. €)_
 - 2026-11-05-morning | Jenoptik AG (JEN) | — _(rund 2,3 Mrd. €; Photonikkonzern als Nischenprofiteur des Halbleiter-Investitionszyklus)_
+- 2026-11-07-morning | ATOSS Software SE (AOF) | — _(rund 1,49 Mrd. €; ATOSS verbindet ein Software-Geschäftsmodell hoher Qualität mit beständigem Wachstum)_
+- 2026-11-07-morning | Medistim ASA (MEDI) | — _(rund 0,53 Mrd. €; Medistim verkauft Messgeräte für den Operationssaal nach dem Prinzip von Rasierer und Klinge)_
+- 2026-11-07-morning | Fevertree Drinks plc (FEVR) | — _(rund 1,24 Mrd. €; Fever-Tree ist eine markenstarke Premium-Marke mit Preissetzungsmacht und einem kapitalarmen Modell, da die Abfüllung ausgelagert ist)_

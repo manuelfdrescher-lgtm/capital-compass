@@ -202,6 +202,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-05-morning/",
       "headline": "Was SAPs Zahlen wirklich erzählen: Cloud-Umsatz, Auftragsbestand und freier Cashflow"
+    },
+    {
+      "number": 30,
+      "date": "2026-11-07",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-07-morning/",
+      "headline": "SAP will die Software für eine Welt der KI-Agenten bauen"
     }
   ],
   "recentStockPicks": [
@@ -639,7 +646,22 @@
       "slug": "2026-11-05-morning",
       "name": "Jenoptik AG (JEN)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-07-morning",
+      "name": "ATOSS Software SE (AOF)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-07-morning",
+      "name": "Medistim ASA (MEDI)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-07-morning",
+      "name": "Fevertree Drinks plc (FEVR)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-07T13:27:36.463Z"
+  "lastUpdated": "2026-11-07T14:50:32.620Z"
 }
