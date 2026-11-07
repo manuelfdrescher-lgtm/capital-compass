@@ -430,6 +430,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     let aktivText: HTMLElement | null = null;
     let widmung: HTMLElement | null = null;
     let widmungText = { x0: 0, x1: 0, y: 0, h: 0, links: 0, breite: 1 };
+    const widmungWoerter: { x0: number; x1: number; n: number }[] = [];
     const anschlaege: Anschlag[] = [];
     const zeilenInfo: ZeilenInfo[] = [];
     const kopieZeichen: HTMLElement[] = [];
@@ -573,6 +574,18 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
         const tr = r.getBoundingClientRect();
         const er = widmung.getBoundingClientRect();
         widmungText = { x0: tr.left, x1: tr.right, y: tr.top + tr.height * 0.68, h: tr.height, links: tr.left - er.left, breite: er.width };
+        // jedes Wort einzeln: Die Feder setzt zwischen den Wörtern ab
+        const tn = [...widmung.childNodes].find((n) => n.nodeType === Node.TEXT_NODE) as Text | undefined;
+        const wort = /\S+/g;
+        let m: RegExpExecArray | null;
+        while (tn && (m = wort.exec(tn.data))) {
+          const wr = document.createRange();
+          wr.setStart(tn, m.index);
+          wr.setEnd(tn, m.index + m[0].length);
+          const b = wr.getBoundingClientRect();
+          widmungWoerter.push({ x0: b.left, x1: b.right, n: m[0].length });
+        }
+        if (!widmungWoerter.length) widmungWoerter.push({ x0: tr.left, x1: tr.right, n: 12 });
         widmung.style.clipPath = "inset(-12px 100% -12px 0)";
       }
 
@@ -1096,18 +1109,24 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       if (widmung && !fertig) {
         const w = widmungText;
         kratzLaut = 1;
-        await wechsel("fein", { x: w.x0, y: w.y });
+        await wechsel("fein", { x: widmungWoerter[0].x0, y: w.y });
         widmung.style.transition = "none";
         Object.assign(widmung.style, { color: "#120c06", opacity: "1" });
-        const breite = w.x1 - w.x0;
-        const buchstaben = Math.max(8, (widmung.textContent ?? "").trim().length);
-        await fahre(
-          1750,
-          (f) => ({ x: w.x0 + breite * f, y: w.y - Math.abs(Math.sin(Math.PI * buchstaben * f)) * w.h * 0.22 + Math.sin(f * 41) * w.h * 0.03 }),
-          () => 0,
-          (f) => { widmung!.style.clipPath = `inset(-12px ${Math.max(0, w.breite - (w.links + breite * f + 4))}px -12px 0)`; },
-          (t) => t * (1.08 - 0.08 * t),
-        );
+        const gesamt = widmungWoerter.reduce((n, wo) => n + (wo.x1 - wo.x0), 0);
+        for (const [i, wo] of widmungWoerter.entries()) {
+          if (fertig) break;
+          // nach jedem Wort absetzen und beim nächsten neu ansetzen
+          if (i > 0) await schwebe({ x: wo.x0, y: w.y }, 260, 1.2);
+          const breite = wo.x1 - wo.x0;
+          const versatz = wo.x0 - w.x0;
+          await fahre(
+            Math.max(320, (1750 * breite) / gesamt),
+            (f) => ({ x: wo.x0 + breite * f, y: w.y - Math.abs(Math.sin(Math.PI * wo.n * f)) * w.h * 0.22 + Math.sin((versatz + breite * f) * 0.05) * w.h * 0.03 }),
+            () => 0,
+            (f) => { widmung!.style.clipPath = `inset(-12px ${Math.max(0, w.breite - (w.links + versatz + breite * f + 4))}px -12px 0)`; },
+            (t) => t * (1.08 - 0.08 * t),
+          );
+        }
         widmung.style.clipPath = "";
         // frische Tinte trocknet zum Ton der Seite
         widmung.style.transition = "color 1.2s ease, opacity 1.2s ease";
@@ -1166,6 +1185,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       setTimeout(entfernen, dauer + 750);
     }
 
+    let federBilder: HTMLImageElement[] = [];
     async function film() {
       setzeWagen({ x: 0, y: yT });
       papier("");
@@ -1181,20 +1201,23 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       // langsame Fahrt auf den Bogen zu, während die Feder zeichnet
       setzeKamera(mitte, z1 * 1.07, vw / 2, vh * 0.47, 3000, "linear");
       await warte(120);
+      // Bilder der späteren Szenen schon jetzt laden (leere Adressen auslassen: Safari meldet sich dort nie)
+      federBilder = [...new Set(Object.values(FEDERN).flatMap((f) => [f.src, f.aermel]).filter(Boolean))].map((src) => Object.assign(new Image(), { src }));
       await zeichnen();
       if (fertig) return;
-      if (!(await rechtzeitig([stempelEl.querySelector("img")!, kissen]))) return schluss(true);
+      if (!(await rechtzeitig([stempelEl.querySelector("img")!, kissen], 4000))) return schluss(true);
       await stempeln();
       if (fertig) return;
       // Fehlt ein Bild der nächsten Szene noch, endet der Film statt zu stocken
-      if (!(await rechtzeitig([...maschinen, handR, zeilenEl[0].querySelector("img")!]))) return schluss(true);
+      if (!(await rechtzeitig([...maschinen, handR, zeilenEl[0].querySelector("img")!], 4000))) return schluss(true);
       await einlegen();
       if (fertig) return;
       const ende = await tippen();
       if (fertig) return;
       await herausnehmen(ende);
       if (fertig) return;
-      if (!(await rechtzeitig([lineal, linealHandBild, ...Object.values(FEDERN).flatMap((f) => [f.src, f.aermel]).map((src) => Object.assign(new Image(), { src }))]))) return schluss(true);
+      // Lineal, Linealhand und Federn sind seit dem Tippen vorgeladen; notfalls kurz warten
+      if (!(await rechtzeitig([lineal, linealHandBild, ...federBilder], 6000))) return schluss(true);
       await linieren();
       if (fertig) return;
       schluss();
