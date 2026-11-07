@@ -1,0 +1,223 @@
+---
+// Vorspann beim ersten Öffnen der Seite (einmal pro Sitzung, rund 3 Sekunden): Ein Blatt
+// steckt in der Schreibmaschine, oben steht schon der Kompass aus dem Logo.
+// Die Maschine tippt „The Capital Compass“ und den Slogan Buchstabe für
+// Buchstabe, der Wagen rückt dabei wie bei einer echten Maschine weiter.
+// Danach fährt das Blatt so auf das Logo der Seite, dass beide deckungs-
+// gleich ineinander übergehen. Alle Bausteine liegen in den Koordinaten
+// des Logos (922 x 877), damit der Übergang passt. Klick oder Taste
+// überspringt. Ohne Bewegung (reduced motion) und in Tests entfällt er.
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const bild = (name: string) => `${base}/images/vorspann/${name}`;
+// Zeilen mit Mitte (y) und Breite im Logo, Schriftgröße in Logo-Einheiten
+const zeilen = [
+  { text: "THE", y: 434.5, breite: 122, groesse: 52, takt: 45 },
+  { text: "CAPITAL", y: 517, breite: 722, groesse: 124, takt: 42 },
+  { text: "COMPASS", y: 642.5, breite: 782, groesse: 140, takt: 42 },
+  { text: "A DAILY BRIEFING ON MARKETS,", y: 743, breite: 720, groesse: 39, takt: 7 },
+  { text: "BUSINESS AND THE GLOBAL ECONOMY", y: 791.5, breite: 808, groesse: 39, takt: 7 },
+];
+---
+
+<div class="vorspann" data-vorspann aria-hidden="true">
+  <!-- Die Maschine liegt zweimal übereinander: hinten die Walze, vorn (per
+       clip-path ab dem Papierhalter) Spulen und Gehäuse. Das Blatt läuft
+       dazwischen, wie in einer echten Maschine. -->
+  <div class="vorspann__buehne">
+  <img class="vorspann__maschine vorspann__maschine--hinten" src={bild("maschine.webp")} alt="" />
+  <div class="vorspann__wagen">
+    <div class="vorspann__blatt">
+      <div class="vorspann__kopf">
+        <img class="vorspann__kompass" src={bild("kompass.png")} alt="" />
+        <img class="vorspann__linien" src={bild("linien-the.png")} alt="" />
+        {zeilen.map((z) => (
+          <p class="vorspann__zeile" style={`--y: ${(z.y / 877) * 100}%; --groesse: ${(z.groesse / 922) * 100}cqw`} data-breite={z.breite} data-takt={z.takt}>
+            {[...z.text].map((c) => <span class="vorspann__z">{c === " " ? " " : c}</span>)}
+          </p>
+        ))}
+        <img class="vorspann__zier" src={bild("zier.png")} alt="" />
+        <img class="vorspann__logo" src={`${base}/images/masthead-logo.png`} alt="" />
+      </div>
+    </div>
+  </div>
+  <img class="vorspann__maschine vorspann__maschine--vorn" src={bild("maschine.webp")} alt="" data-walze="0.255" />
+  </div>
+  <button class="vorspann__weiter" type="button" tabindex="-1">Überspringen</button>
+</div>
+
+<script>
+  const huelle = document.querySelector<HTMLElement>("[data-vorspann]");
+  const html = document.documentElement;
+  if (huelle && html.classList.contains("vorspann-an")) {
+    try { sessionStorage.setItem("cc-vorspann", "1"); } catch {}
+    const wagen = huelle.querySelector<HTMLElement>(".vorspann__wagen")!;
+    const kopf = huelle.querySelector<HTMLElement>(".vorspann__kopf")!;
+    const maschine = huelle.querySelector<HTMLElement>(".vorspann__maschine--vorn")!;
+    const buehne = huelle.querySelector<HTMLElement>(".vorspann__buehne")!;
+    scrollTo(0, 0);
+    const zeilen = [...huelle.querySelectorAll<HTMLElement>(".vorspann__zeile")];
+    const warte = (ms: number) => new Promise((r) => setTimeout(r, ms));
+    let fertig = false;
+
+    let punkte: { el: HTMLElement; x: number; y: number }[][] = [];
+    // Anschlagpunkt: Bildmitte, die Grundlinie der getippten Zeile liegt
+    // knapp über dem Papierhalter der Maschine
+    const anschlag = () => {
+      const r = maschine.getBoundingClientRect();
+      return { x: innerWidth / 2, y: r.top + r.height * Number(maschine.dataset.walze || 0.08) };
+    };
+    const setzeWagen = (x: number, y: number, s = 1) => { wagen.style.transform = `translate(${x}px, ${y}px) scale(${s})`; };
+    const zu = (p: { x: number; y: number }) => { const a = anschlag(); setzeWagen(a.x - p.x, a.y - p.y); };
+
+    // Jede Zeile auf die Breite ihrer Zeile im Logo bringen und jedem
+    // Buchstaben eine leicht andere Lage und Tinte geben, wie getippt.
+    // Danach die Lage jedes Buchstabens im noch unverschobenen Wagen messen.
+    function vorbereiten() {
+      const skala = kopf.offsetWidth / 922;
+      for (const z of zeilen) {
+        const zeichen = [...z.querySelectorAll<HTMLElement>(".vorspann__z")];
+        const breite = zeichen.reduce((s, c) => s + c.offsetWidth, 0);
+        const sperr = zeichen.length > 1 ? (Number(z.dataset.breite) * skala - breite) / (zeichen.length - 1) : 0;
+        zeichen.forEach((c, i) => {
+          if (i < zeichen.length - 1) c.style.marginRight = `${sperr}px`;
+          c.style.setProperty("--dreh", `${(Math.random() * 2.4 - 1.2).toFixed(2)}deg`);
+          c.style.setProperty("--hoch", `${(Math.random() * 1.2 - 0.6).toFixed(2)}px`);
+          c.style.setProperty("--deckung", (0.8 + Math.random() * 0.2).toFixed(2));
+        });
+      }
+      const w0 = wagen.getBoundingClientRect();
+      punkte = zeilen.map((z) => [...z.querySelectorAll<HTMLElement>(".vorspann__z")].map((c) => {
+        const r = c.getBoundingClientRect();
+        return { el: c, x: r.left - w0.left + r.width / 2, y: r.top - w0.top + r.height * 0.8 }; // y = Grundlinie
+      }));
+    }
+
+    // Geräusche der Maschine, im Browser erzeugt (keine Audiodatei). Browser
+    // erlauben Ton erst nach einer Interaktion mit der Seite; ohne Erlaubnis
+    // bleibt der Vorspann einfach still.
+    let ton: AudioContext | null = null;
+    try { ton = new AudioContext(); if (ton.state !== "running") ton.resume().catch(() => {}); } catch { ton = null; }
+    const hoerbar = () => !!ton && ton.state === "running";
+    function klack(staerke = 1) {
+      if (!hoerbar() || !ton) return;
+      const t = ton.currentTime;
+      const laenge = Math.floor(ton.sampleRate * 0.03);
+      const puffer = ton.createBuffer(1, laenge, ton.sampleRate);
+      const d = puffer.getChannelData(0);
+      for (let i = 0; i < laenge; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / laenge) ** 3;
+      const quelle = ton.createBufferSource();
+      quelle.buffer = puffer;
+      const filter = ton.createBiquadFilter();
+      filter.type = "bandpass";
+      filter.frequency.value = 1700 + Math.random() * 900;
+      const laut = ton.createGain();
+      laut.gain.value = 0.55 * staerke;
+      quelle.connect(filter).connect(laut).connect(ton.destination);
+      quelle.start(t);
+      // dumpfer Schlag des Gehäuses
+      const schlag = ton.createOscillator();
+      schlag.type = "triangle";
+      schlag.frequency.setValueAtTime(150, t);
+      schlag.frequency.exponentialRampToValueAtTime(55, t + 0.05);
+      const huelle2 = ton.createGain();
+      huelle2.gain.setValueAtTime(0.3 * staerke, t);
+      huelle2.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
+      schlag.connect(huelle2).connect(ton.destination);
+      schlag.start(t);
+      schlag.stop(t + 0.07);
+    }
+    const ratsche = () => { for (let k = 0; k < 5; k++) setTimeout(() => klack(0.22), k * 15); };
+    function ding() {
+      if (!hoerbar() || !ton) return;
+      const t = ton.currentTime;
+      const glocke = ton.createOscillator();
+      glocke.frequency.value = 2093;
+      const laut = ton.createGain();
+      laut.gain.setValueAtTime(0.0001, t);
+      laut.gain.exponentialRampToValueAtTime(0.16, t + 0.01);
+      laut.gain.exponentialRampToValueAtTime(0.0001, t + 0.9);
+      glocke.connect(laut).connect(ton.destination);
+      glocke.start(t);
+      glocke.stop(t + 0.95);
+    }
+    // Jeder Anschlag erschüttert das Bild ganz leicht; auf Android-Handys
+    // zusätzlich ein kurzes Vibrieren, wo der Browser es erlaubt.
+    const ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function anschlagen(staerke: number) {
+      klack(staerke);
+      if (ruhig) return;
+      const dx = (Math.random() - 0.5) * 2 * staerke;
+      const dy = (0.6 + Math.random() * 0.6) * staerke;
+      buehne.animate([{ transform: "translate(0, 0)" }, { transform: `translate(${dx}px, ${dy}px)` }, { transform: "translate(0, 0)" }], { duration: 90, easing: "ease-out" });
+      try { if (staerke >= 1) navigator.vibrate?.(6); } catch {}
+    }
+
+    async function tippen() {
+      zu(punkte[0][0]);
+      await warte(60);
+      huelle.classList.add("vorspann--sichtbar");
+      await warte(250);
+      for (let zi = 0; zi < zeilen.length && !fertig; zi++) {
+        const takt = Number(zeilen[zi].dataset.takt);
+        if (zi > 0) {
+          // Wagenrücklauf und Zeilenvorschub
+          huelle.classList.add("vorspann--ruecklauf");
+          ratsche();
+          zu(punkte[zi][0]);
+          await warte(zi < 3 ? 100 : 80);
+          huelle.classList.remove("vorspann--ruecklauf");
+        }
+        for (const p of punkte[zi]) {
+          if (fertig) return;
+          zu(p);
+          p.el.classList.add("da");
+          // Beim schnellen Slogan nur jeder dritte Anschlag hörbar und spürbar
+          const k = punkte[zi].indexOf(p);
+          if (takt > 20) anschlagen(1);
+          else if (k % 3 === 0) anschlagen(0.4);
+          await warte(takt);
+        }
+      }
+      if (fertig) return;
+      // Zierlinie erscheint, die getippte Schrift „trocknet“ zur Logo-Schrift
+      ding();
+      huelle.classList.add("vorspann--ziert", "vorspann--trocken");
+      await warte(280);
+      abschluss();
+    }
+
+    // Blatt deckungsgleich auf das Logo der Seite fahren, dann ausblenden
+    function abschluss() {
+      if (fertig) return;
+      fertig = true;
+      huelle.querySelectorAll(".vorspann__z").forEach((c) => c.classList.add("da"));
+      huelle.classList.add("vorspann--ziert", "vorspann--trocken", "vorspann--ende");
+      const logo = document.querySelector<HTMLElement>(".masthead__marke-img");
+      const ziel = logo?.getBoundingClientRect();
+      if (ziel && ziel.width > 0) {
+        const s = ziel.width / kopf.offsetWidth;
+        const k = kopf.getBoundingClientRect();
+        const w = wagen.getBoundingClientRect();
+        // Lage des Kopfs im unverschobenen Wagen
+        const m = new DOMMatrix(getComputedStyle(wagen).transform);
+        const kx = (k.left - w.left) / m.a;
+        const ky = (k.top - w.top) / m.d;
+        setzeWagen(ziel.left - s * kx, ziel.top - s * ky, s);
+      }
+      // Das Blatt trägt jetzt exakt das Logo und liegt deckungsgleich auf dem
+      // Logo der Seite; nur noch der Hintergrund blendet weg.
+      setTimeout(() => huelle.classList.add("vorspann--weg"), 720);
+      setTimeout(() => { html.classList.remove("vorspann-an"); huelle.remove(); ton?.close().catch(() => {}); }, 1100);
+    }
+
+    const ueberspringen = (e: Event) => { e.preventDefault(); abschluss(); };
+    huelle.addEventListener("click", ueberspringen);
+    addEventListener("keydown", (e) => { if (!fertig) abschluss(); }, { once: true });
+    addEventListener("wheel", () => { if (!fertig) abschluss(); }, { once: true, passive: true });
+    addEventListener("touchmove", () => { if (!fertig) abschluss(); }, { once: true, passive: true });
+
+    const start = () => { vorbereiten(); tippen(); };
+    const bilder = [...huelle.querySelectorAll("img")].map((i) => (i.complete ? Promise.resolve() : new Promise((r) => { i.onload = i.onerror = r; })));
+    Promise.all([document.fonts?.ready, ...bilder]).then(start);
+  }
+</script>
