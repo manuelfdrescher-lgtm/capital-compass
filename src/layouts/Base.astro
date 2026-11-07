@@ -13,6 +13,7 @@ import { join } from "node:path";
 import CompassRose from "../components/CompassRose.astro";
 import MastheadLogo from "../components/MastheadLogo.astro";
 import RubrikDock from "../components/RubrikDock.astro";
+import Vorspann from "../components/Vorspann.astro";
 import { formatDateLong, slotLabel } from "../lib/format.mjs";
 
 // Eigenes Marken-Logo (Vollversion mit Wortmarke) hat Vorrang: dann wird die
@@ -52,9 +53,26 @@ const nav = [
     <meta name="description" content={description ?? "The Capital Compass: a daily briefing on markets, business and the global economy. Bildung, keine Anlageberatung."} />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
-    <script is:inline>document.documentElement.classList.add("js-an");</script>
+    <script is:inline define:vars={{ base }}>
+      document.documentElement.classList.add("js-an");
+      // Vorspann einmal pro Sitzung; nicht bei reduzierter Bewegung und nicht in automatisierten Tests
+      // (?vorspann in der Adresse spielt ihn erneut ab)
+      try {
+        var nochmal = /[?&]vorspann\b/.test(location.search);
+        if (nochmal || (!navigator.webdriver && !sessionStorage.getItem("cc-vorspann") && !matchMedia("(prefers-reduced-motion: reduce)").matches)) {
+          document.documentElement.classList.add("vorspann-an");
+          // Grafiken des Vorspanns sofort laden, damit er ohne leeren Moment startet
+          ["maschine.webp", "kompass.png"].forEach(function (f) {
+            var l = document.createElement("link");
+            l.rel = "preload"; l.as = "image"; l.href = base + "/images/vorspann/" + f;
+            document.head.appendChild(l);
+          });
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
+    <Vorspann />
     <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
     <div class="seite">
       <header class="masthead">
