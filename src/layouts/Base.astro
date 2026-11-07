@@ -63,12 +63,17 @@ const nav = [
         var nochmal = /[?&]vorspann\b/.test(location.search);
         if (nochmal || (!navigator.webdriver && !sessionStorage.getItem("cc-vorspann") && !matchMedia("(prefers-reduced-motion: reduce)").matches)) {
           document.documentElement.classList.add("vorspann-an");
-          // Grafiken des Vorspanns sofort laden, damit er ohne leeren Moment startet
-          ["hand-feder.webp", "kompass.webp", "hand-blatt.webp", "maschine.webp"].forEach(function (f) {
+          // Federhand und Kompass zuerst laden: Damit beginnt der Film. Der Rest lädt während des Zeichnens.
+          ["hand-feder.webp", "kompass.webp"].forEach(function (f) {
             var l = document.createElement("link");
             l.rel = "preload"; l.as = "image"; l.href = base + "/images/vorspann/" + f;
+            l.setAttribute("fetchpriority", "high");
             document.head.appendChild(l);
           });
+          // Notausgang: Läuft der Film nach 3,5 Sekunden noch nicht, erscheint die Seite ohne ihn
+          setTimeout(function () {
+            if (!document.documentElement.classList.contains("vorspann-film")) document.documentElement.classList.remove("vorspann-an");
+          }, 3500);
         }
       } catch (e) {}
     </script>

@@ -985,87 +985,138 @@ figure.chart, figure.kurschart {
 }
 /* ---------- Vorspann: Film um 1900 ---------- */
 /* Nur beim ersten Öffnen pro Sitzung (Klasse vorspann-an, im Kopf gesetzt).
-   Die Welt (Bogen, Maschine, Hände) liegt in Seitenkoordinaten in der
-   Kamera. Die Kamera fährt per transform; in Ruhelage liegt der Briefkopf
-   genau auf dem Logo der Seite. Der Film bleibt immer hell, wie ein alter
-   Abzug; Bewegungen laufen flüssig, nur Korn und Flackern springen. */
+   Die Welt (Bogen, Maschine, Hände, Lineal) liegt in Seitenkoordinaten in
+   der Kamera. Die Kamera fährt per transform; in Ruhelage liegt der Bogen
+   deckungsgleich auf dem Seitenkopf. Der Film bleibt immer hell, wie ein
+   alter Abzug; Bewegungen laufen flüssig, nur Korn und Flackern springen. */
 .vorspann { display: none; }
+html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann-an body { overflow: hidden; }
 .vorspann-an .vorspann {
   --vp-tisch: #e6dcc7;
   --vp-blatt: #fbf7ee;
+  --vp-tinte: #111111;
+  /* Die Kopie des Seitenkopfs ist immer mit dunkler Tinte gedruckt */
+  --papier: #f4efe6;
+  --tinte: #111111;
+  --tinte-60: rgba(17, 17, 17, 0.64);
+  --haarlinie-stark: #111111;
+  --akzent-rot: #7b1e2a;
   display: block;
   position: fixed;
   inset: 0;
   z-index: 1000;
   overflow: hidden;
   cursor: pointer;
+  color: var(--tinte);
   background: var(--vp-tisch);
-  transition: background-color 1.2s ease;
+  transition: background-color 0.7s ease;
 }
-.vorspann--ende { background-color: var(--papier) !important; }
-.vorspann--weg { background-color: transparent !important; transition: background-color 0.4s ease !important; }
+.vorspann__bildstand { position: absolute; inset: 0; }
+.vorspann--laeuft .vorspann__bildstand { animation: vorspann-bildstand 0.48s steps(1) infinite; }
+@keyframes vorspann-bildstand {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(0.6px, -0.5px); }
+  50% { transform: translate(-0.5px, 0.4px); }
+  75% { transform: translate(0.3px, 0.7px); }
+}
 .vorspann__kamera { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
-.vorspann__ruettler { position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.5s ease; }
+.vorspann__ruettler { position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.45s ease; }
 .vorspann--sichtbar .vorspann__ruettler { opacity: 1; }
-.vorspann__wagen { position: absolute; left: 0; top: 0; z-index: 2; will-change: transform; }
+
+/* Maschine in zwei Ebenen: hinten die Walze, vorn alles ab der Papierführung */
+.vorspann__maschine { position: absolute; z-index: 1; height: auto; max-width: none; }
+.vorspann__maschine--vorn { z-index: 3; clip-path: inset(26.2% 0 0 0); }
+
+/* Schacht: Unterhalb der Walze verschwindet der Bogen in der Maschine */
+.vorspann__schacht { position: absolute; left: 0; top: 0; z-index: 2; }
+.vorspann--klemme .vorspann__schacht { clip-path: polygon(-60000px -60000px, 60000px -60000px, 60000px var(--klemme), -60000px var(--klemme)); }
+.vorspann--draussen .vorspann__schacht { z-index: 4; }
+.vorspann__wagen { position: absolute; left: 0; top: 0; will-change: transform; }
+.vorspann__wagen { transform-origin: 0 0; }
+
+/* Schatten auf dem Tisch: eng, solange der Bogen liegt, weich und versetzt,
+   solange er in der Hand schwebt */
+.vorspann__schatten { position: absolute; border-radius: 2px; background: rgba(52, 36, 16, 0.5); transition: opacity 0.45s ease, transform 0.6s cubic-bezier(0.3, 0, 0.2, 1); }
+.vorspann__schatten--kontakt { filter: blur(3px); opacity: 0; transform: translate(0, 2px); }
+.vorspann__schatten--schwebe { filter: blur(24px); opacity: 0; transform: translate(0, 0); }
+[data-schatten="liegt"] .vorspann__schatten--kontakt { opacity: 0.5; }
+[data-schatten="schwebt"] .vorspann__schatten--schwebe { opacity: 0.42; transform: translate(1.2%, 3.2%); }
+
+/* Der Bogen verhält sich wie Papier. Oben der Kopf, darunter vier Falzstreifen,
+   die sich je ein Stück weiter biegen und verzögert folgen: In der Hand hängt
+   der freie Teil durch und schwingt nach, in der Maschine lehnt der Teil über
+   der Walze leicht nach hinten, auf dem Tisch liegt alles glatt. */
 .vorspann__blatt {
   position: absolute;
   background: var(--vp-blatt);
-  box-shadow: 0 1px 0 rgba(40, 28, 14, 0.06), 0 22px 46px -20px rgba(40, 28, 14, 0.5);
-  transition: background-color 0.9s ease 0.2s, box-shadow 0.9s ease;
+  transform-style: preserve-3d;
+  transform-origin: 50% 0;
+  transform: perspective(var(--persp, 2400px)) rotateX(var(--kipp, 0deg));
+  transition: transform 0.5s cubic-bezier(0.3, 0.7, 0.3, 1), background-color 0.6s ease;
 }
-/* Der Bogen verhält sich wie Papier: In der Hand hängt er und schwingt
-   unten leicht nach hinten; in der Maschine biegt sich der Teil über der
-   Walze nach hinten. Am Ende liegt er wieder glatt. */
-.vorspann__blatt { transform-origin: 50% 0; transition: background-color 0.9s ease 0.2s, box-shadow 0.9s ease, transform 0.45s cubic-bezier(0.3, 0.7, 0.3, 1); }
-.vorspann--gehoben .vorspann__blatt {
-  transform: perspective(1600px) rotateX(-13deg) skewX(-0.6deg);
-  box-shadow: 0 1px 0 rgba(40, 28, 14, 0.06), 0 34px 60px -20px rgba(40, 28, 14, 0.55);
-  transition: transform 0.4s cubic-bezier(0.3, 0.7, 0.3, 1), box-shadow 0.25s ease;
-}
-.vorspann--tippt .vorspann__blatt { transform-origin: 50% var(--walze, 50%); transform: perspective(1600px) rotateX(7deg); }
-.vorspann--ende .vorspann__blatt { background-color: transparent; box-shadow: none; }
-.vorspann__kopf { position: absolute; transition: opacity 0.35s ease; }
-.vorspann__zeichnung { position: absolute; left: 0; top: 0; display: block; width: 100%; overflow: visible; }
-.vorspann__zeile { position: absolute; inset: 0; clip-path: inset(var(--oben) var(--rechts) var(--unten) 0); }
-.vorspann__zeile img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
-.vorspann__maschine {
+[data-papier="haengt"] .vorspann__blatt { --kipp: -4deg; }
+[data-papier="tippt"] .vorspann__blatt { --kipp: 6deg; transform-origin: 50% var(--walze, 0px); }
+.vorspann__flach { position: absolute; inset: 0; }
+.vorspann__falz {
   position: absolute;
-  z-index: 1;
-  height: auto;
-  max-width: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  left: 0;
+  top: calc(100% - 1px);
+  width: 100%;
+  background: var(--vp-blatt);
+  transform-style: preserve-3d;
+  transform-origin: 50% 0;
+  transform: rotateX(var(--knick, 0deg));
+  transition: transform 0.6s cubic-bezier(0.3, 1.45, 0.45, 1) calc(var(--n) * 45ms), background-color 0.6s ease;
 }
-.vorspann__maschine--vorn { z-index: 3; clip-path: inset(26.2% 0 0 0); }
-.vorspann--maschine .vorspann__maschine { opacity: 1; }
-.vorspann--ende .vorspann__maschine { opacity: 0; transform: translateY(28%); transition: opacity 0.6s ease, transform 1s cubic-bezier(0.5, 0, 0.75, 0); }
+.vorspann__falz::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(74, 52, 22, calc(0.14 * (var(--n) - 1) / 4)), rgba(74, 52, 22, calc(0.14 * var(--n) / 4)));
+  opacity: var(--licht, 0);
+  transition: opacity 0.5s ease calc(var(--n) * 45ms);
+}
+[data-papier="haengt"] .vorspann__falz { --knick: -10deg; --licht: 1; }
+
+/* Briefkopf: Kopie des Seitenkopfs, Logo in Zeilen, Linien zum Ziehen */
+.vorspann__kopie { position: absolute; pointer-events: none; }
+.vorspann__kopie .masthead__marke-img { visibility: hidden; }
+.vorspann__kopie .masthead__doppel,
+.vorspann__kopie .datumszeile,
+.vorspann__kopie .hauptnav { border-color: transparent !important; }
+.vorspann__kopie .hauptnav__bild { display: none; }
+.vorspann__kopie .hauptnav__text { transition: none; }
+.vorspann__kopie .vz-z:not(.da) { opacity: 0; }
+.vorspann__kopf { position: absolute; }
+.vorspann__zeichnung { position: absolute; left: 0; top: 0; display: block; width: 100%; overflow: visible; }
+.vorspann__zeile { position: absolute; inset: 0; clip-path: inset(var(--oben) var(--rechts) var(--unten) var(--links, 0%)); }
+.vorspann__zeile img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; max-width: none; }
+.vorspann__stern {
+  -webkit-mask-image: conic-gradient(from 270deg at var(--mx) var(--my), #000 var(--bogen, 0deg), transparent 0);
+  mask-image: conic-gradient(from 270deg at var(--mx) var(--my), #000 var(--bogen, 0deg), transparent 0);
+}
+.vorspann__linien { position: absolute; inset: 0; pointer-events: none; }
+.vorspann__strich { position: absolute; box-sizing: border-box; border-color: var(--vp-tinte); clip-path: inset(-2px calc((1 - var(--zug, 0)) * 100%) -2px 0); }
+
+/* Hände und Lineal */
 .vorspann__hand {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 4;
   height: auto;
   max-width: none;
   pointer-events: none;
-  filter: drop-shadow(0 12px 14px rgba(40, 28, 14, 0.28));
+  filter: drop-shadow(0 10px 12px rgba(40, 28, 14, 0.28));
 }
-.vorspann__hand--feder { transform-origin: 0.21% 99.33%; will-change: transform; transition: opacity 0.25s ease; }
-.vorspann__hand--blatt {
-  z-index: 3;
-  opacity: 0;
-  transform: translate(35%, -55%) rotate(9deg);
-  transition: transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
-}
-.vorspann--greift .vorspann__hand--blatt { opacity: 1; transform: none; }
-.vorspann--loslassen .vorspann__hand--blatt {
-  opacity: 0;
-  transform: translate(28%, -70%) rotate(12deg);
-  transition: transform 0.5s cubic-bezier(0.5, 0, 0.75, 0), opacity 0.35s ease 0.12s;
-}
+.vorspann__hand--ecke { transform-origin: 31.05% 66.89%; opacity: 0; }
+.vorspann__hand--feder { z-index: 6; opacity: 0; transform-origin: 0.21% 99.33%; will-change: transform; transition: opacity 0.22s ease; }
+.vorspann__linealgruppe { position: absolute; left: 0; top: 0; z-index: 5; opacity: 0; will-change: transform; }
+.vorspann__lineal { position: absolute; left: 0; top: 0; height: auto; max-width: none; filter: drop-shadow(0 3px 3px rgba(40, 28, 14, 0.3)); }
+.vorspann__hand--lineal { transform-origin: 31.05% 66.89%; transform: scaleX(-1); }
+
 /* Filmoberfläche: Sepia, Korn, Kratzer, Vignette mit Flackern */
-.vorspann__film { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; transition: opacity 0.9s ease; }
+.vorspann__film { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; transition: opacity 0.8s ease; }
 .vorspann__film::before { content: ""; position: absolute; inset: 0; background: #a9844f; mix-blend-mode: color; opacity: 0.32; }
 .vorspann__korn {
   position: absolute;
@@ -1104,7 +1155,6 @@ figure.chart, figure.kurschart {
   71% { opacity: 0.84; }
   73% { opacity: 1; }
 }
-.vorspann--ende .vorspann__film { opacity: 0; }
 .vorspann__ton {
   position: absolute;
   right: 14px;
@@ -1136,10 +1186,22 @@ figure.chart, figure.kurschart {
   text-transform: uppercase;
   color: rgba(42, 31, 18, 0.6);
 }
-.vorspann--ende .vorspann__ton, .vorspann--ende .vorspann__hinweis { opacity: 0; transition: opacity 0.3s ease; }
-/* Im Dunkelmodus ist das Logo der Seite hell gedruckt: Briefkopf am Ende ausblenden */
+
+/* Schluss: Der Bogen liegt deckungsgleich auf dem Seitenkopf. Tisch und
+   Papier gehen in die Seite über, dann gibt die Hülle die Seite frei. */
+.vorspann-an .vorspann--ende { background-color: var(--papier); pointer-events: none; }
+.vorspann--ende .vorspann__bildstand { animation: none; }
+.vorspann--ende .vorspann__blatt,
+.vorspann--ende .vorspann__falz { background-color: transparent; transform: none; }
+.vorspann--ende .vorspann__schatten { opacity: 0 !important; }
+.vorspann--ende .vorspann__film,
+.vorspann--ende .vorspann__ton,
+.vorspann--ende .vorspann__hinweis { opacity: 0; transition: opacity 0.5s ease; }
+.vorspann-an .vorspann--weg { background-color: transparent; transition: background-color 0.45s ease; }
+/* Im Dunkelmodus ist die Seite hell gedruckt: Der Bogen blendet direkt in sie über */
 @media (prefers-color-scheme: dark) {
-  .vorspann--weg .vorspann__kopf { opacity: 0; }
+  .vorspann-an .vorspann--ende { background-color: transparent; transition: background-color 0.8s ease; }
+  .vorspann--ende .vorspann__ruettler { opacity: 0; transition: opacity 0.8s ease; }
 }
 @media print { .vorspann { display: none !important; } }
 

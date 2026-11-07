@@ -1,15 +1,21 @@
 ---
-// Vorspann beim ersten Öffnen (einmal pro Sitzung, knapp 10 Sekunden), in
+// Vorspann beim ersten Öffnen (einmal pro Sitzung, rund 14 Sekunden), in
 // der Anmutung eines Films um 1900:
-// 1. Eine Hand zeichnet mit der Feder den Kompass auf einen Briefbogen.
-// 2. Eine Hand legt das Blatt in die Schreibmaschine.
-// 3. Die Maschine tippt die Buchstaben des Logos einzeln, der Wagen rückt
-//    bei jedem Anschlag um genau einen Buchstaben weiter.
-// 4. Die Kamera zieht zurück und nach oben, bis der Briefkopf deckungsgleich
-//    auf dem Logo der Seite liegt.
-// Alles liegt in den Koordinaten des Logos (922 x 835 Einheiten): Kompass
-// und Buchstaben sind Ausschnitte des echten Logos. Ein Klick beendet den
-// Film; der Lautsprecher-Knopf schaltet die Geräusche zu.
+// 1. Auf einem leeren Bogen zeichnet eine Hand mit der Feder den Kompass.
+// 2. Zwei Hände fassen den Bogen an den oberen Ecken, heben ihn an (der
+//    freie Teil hängt durch) und legen ihn in die Schreibmaschine; die Walze
+//    zieht ihn auf die erste Zeile.
+// 3. Die Maschine tippt alle Schrift: THE, CAPITAL COMPASS, den Slogan, die
+//    Widmung, das Datum der Ausgabe und die Rubriken.
+// 4. Die Hände ziehen den Bogen heraus und legen ihn an die Stelle des
+//    Seitenkopfs; die Maschine verschwindet.
+// 5. Mit Lineal und Feder entstehen die Linien neben THE (die Feder setzt
+//    über dem Wort ab) samt Sternen, dann der dicke Strich, der dünne Strich
+//    und die Doppellinie.
+// Der Bogen trägt eine Kopie des echten Seitenkopfs (Datum und Rubriken
+// kommen also immer aus der aktuellen Ausgabe). Am Ende liegt er
+// deckungsgleich auf der Seite und blendet weg. Ein Klick beendet den Film,
+// der Lautsprecher-Knopf schaltet die Geräusche zu.
 import daten from "../lib/vorspann-daten.json";
 import { logoInfo } from "../lib/logo.mjs";
 
@@ -18,7 +24,8 @@ const bild = (name: string) => `${base}/images/vorspann/${name}`;
 const logo = `${base}/images/masthead-logo.png?v=${logoInfo().version}`;
 const LB = daten.breite;
 const LH = daten.hoehe;
-const KH = 414; // Höhe des Kompass-Ausschnitts
+const KH = daten.kompassUnten;
+const pz = (v: number, ganz: number) => `${((v / ganz) * 100).toFixed(3)}%`;
 
 // Federstriche im Kompass-Ausschnitt (Einheiten des Logos)
 const r = (v: number) => v.toFixed(1);
@@ -27,55 +34,84 @@ function kreis(cx: number, cy: number, rr: number) {
 }
 function spirale(cx: number, cy: number, r0: number, r1: number, drehungen: number) {
   const n = 160;
-  const punkte = Array.from({ length: n + 1 }, (_, i) => {
+  return Array.from({ length: n + 1 }, (_, i) => {
     const t = i / n;
     const w = -Math.PI / 2 + t * drehungen * 2 * Math.PI;
     const rr = r0 + (r1 - r0) * t;
     return `${i ? "L" : "M"}${r(cx + rr * Math.cos(w))},${r(cy + rr * Math.sin(w))}`;
-  });
-  return punkte.join(" ");
+  }).join(" ");
 }
 function zickzack(xa: number, xb: number, ys: number[]) {
   return ys.map((y, i) => `${i ? "L" : "M"}${i % 2 ? xb : xa},${y} L${i % 2 ? xa : xb},${y}`).join(" ");
 }
 const reihen = [128, 168, 208, 248, 288, 328, 368, 404];
 const striche = [
-  { d: kreis(461, 38, 20), ms: 120, breite: 36 },
-  { d: spirale(461, 240, 182, 6, 3.4), ms: 600, breite: 52 },
-  { d: zickzack(312, 4, reihen), ms: 300, breite: 46 },
-  { d: zickzack(610, 918, reihen), ms: 300, breite: 46 },
+  { d: kreis(461, 38, 20), ms: 110, breite: 36 },
+  { d: spirale(461, 240, 182, 6, 3.4), ms: 520, breite: 52 },
+  { d: zickzack(312, 4, reihen), ms: 260, breite: 46 },
+  { d: zickzack(610, 918, reihen), ms: 260, breite: 46 },
 ];
-const zeilen = daten.zeilen;
+const tl = daten.theLinien;
+const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
 ---
 
 <div class="vorspann" data-vorspann aria-hidden="true">
-  <div class="vorspann__kamera">
-    <div class="vorspann__ruettler">
-      <img class="vorspann__maschine vorspann__maschine--hinten" src={bild("maschine.webp")} alt="" />
-      <div class="vorspann__wagen">
-        <div class="vorspann__blatt">
-          <div class="vorspann__kopf">
-            <svg class="vorspann__zeichnung" viewBox={`0 0 ${LB} ${KH}`} preserveAspectRatio="none" style={`height: ${(KH / LH) * 100}%`}>
-              <defs>
-                <mask id="vorspann-maske" maskUnits="userSpaceOnUse" x="0" y="0" width={LB} height={KH}>
-                  {striche.map((s) => (
-                    <path d={s.d} fill="none" stroke="#fff" stroke-width={s.breite} stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1" data-ms={s.ms} />
+  <div class="vorspann__bildstand">
+    <div class="vorspann__kamera">
+      <div class="vorspann__ruettler">
+        <img class="vorspann__maschine vorspann__maschine--hinten" src={bild("maschine.webp")} alt="" />
+        <div class="vorspann__schacht">
+          <div class="vorspann__wagen">
+            <div class="vorspann__schatten vorspann__schatten--kontakt"></div>
+            <div class="vorspann__schatten vorspann__schatten--schwebe"></div>
+            <div class="vorspann__blatt">
+              <div class="vorspann__flach">
+                <div class="vorspann__kopie" data-kopie></div>
+                <div class="vorspann__kopf">
+                  <svg class="vorspann__zeichnung" viewBox={`0 0 ${LB} ${KH}`} preserveAspectRatio="none" style={`height: ${pz(KH, LH)}`}>
+                    <defs>
+                      <mask id="vorspann-maske" maskUnits="userSpaceOnUse" x="0" y="0" width={LB} height={KH}>
+                        {striche.map((s) => (
+                          <path d={s.d} fill="none" stroke="#000" stroke-width={s.breite} stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1 2" stroke-dashoffset="1.02" data-ms={s.ms} />
+                        ))}
+                      </mask>
+                    </defs>
+                    <image href={bild("kompass.webp")} width={LB} height={KH} mask="url(#vorspann-maske)" />
+                  </svg>
+                  {daten.zeilen.map((z) => {
+                    const links = z.name === "the" ? z.glyphen[0][0] - 1 : 0;
+                    return (
+                      <div class="vorspann__zeile" data-zeile={z.name} style={`--oben: ${pz(z.oben, LH)}; --unten: ${pz(LH - z.unten, LH)}; --links: ${pz(links, LB)}; --rechts: ${pz(LB - links, LB)}`}>
+                        <img src={logo} alt="" />
+                      </div>
+                    );
+                  })}
+                  {[tl.links, tl.rechts].map(([a, b]) => (
+                    <div class="vorspann__zeile" data-linie data-von={a} data-bis={b} style={`${band} --links: ${pz(a, LB)}; --rechts: ${pz(LB - a, LB)}`}>
+                      <img src={logo} alt="" />
+                    </div>
                   ))}
-                </mask>
-              </defs>
-              <image href={bild("kompass.webp")} width={LB} height={KH} mask="url(#vorspann-maske)" />
-            </svg>
-            {zeilen.map((z) => (
-              <div class="vorspann__zeile" data-zeile={z.name} style={`--oben: ${(z.oben / LH) * 100}%; --unten: ${100 - (z.unten / LH) * 100}%; --rechts: 100%`}>
-                <img src={logo} alt="" />
+                  {tl.sterne.map((s) => (
+                    <div class="vorspann__zeile vorspann__stern" data-stern style={`${band} --links: ${pz(s.von, LB)}; --rechts: ${pz(LB - s.bis, LB)}; --mx: ${pz(s.x, LB)}; --my: ${pz(s.y, LH)}`}>
+                      <img src={logo} alt="" />
+                    </div>
+                  ))}
+                </div>
+                <div class="vorspann__linien" data-linien></div>
               </div>
-            ))}
+              <div class="vorspann__falz" style="--n: 1"><div class="vorspann__falz" style="--n: 2"><div class="vorspann__falz" style="--n: 3"><div class="vorspann__falz" style="--n: 4"></div></div></div></div>
+            </div>
+            <img class="vorspann__hand vorspann__hand--ecke" data-hand="rechts" src={bild("hand-ecke.webp")} alt="" />
+            <img class="vorspann__hand vorspann__hand--ecke" data-hand="links" src={bild("hand-ecke.webp")} alt="" />
           </div>
         </div>
-        <img class="vorspann__hand vorspann__hand--blatt" src={bild("hand-blatt.webp")} alt="" />
+        <img class="vorspann__maschine vorspann__maschine--vorn" src={bild("maschine.webp")} alt="" />
+        <div class="vorspann__linealgruppe">
+          <img class="vorspann__lineal" src={bild("lineal.webp")} alt="" />
+          <img class="vorspann__hand vorspann__hand--lineal" src={bild("hand-ecke.webp")} alt="" />
+        </div>
+        <img class="vorspann__hand vorspann__hand--feder" src={bild("hand-feder.webp")} alt="" />
       </div>
-      <img class="vorspann__maschine vorspann__maschine--vorn" src={bild("maschine.webp")} alt="" />
-      <img class="vorspann__hand vorspann__hand--feder" src={bild("hand-feder.webp")} alt="" />
     </div>
   </div>
   <div class="vorspann__film"><span class="vorspann__korn"></span><span class="vorspann__kratzer"></span><span class="vorspann__vignette"></span></div>
@@ -89,25 +125,44 @@ const zeilen = daten.zeilen;
   import daten from "../lib/vorspann-daten.json";
 
   type P = { x: number; y: number };
+  type Anschlag = { p: P; zeigen: () => void; takt: number; zeile: number; tab: boolean; laut: number };
+  type Strich = { el: HTMLElement; x0: number; x1: number; y: number; unten: number };
   const huelle = document.querySelector<HTMLElement>("[data-vorspann]");
   const html = document.documentElement;
   if (huelle && html.classList.contains("vorspann-an")) {
     try { sessionStorage.setItem("cc-vorspann", "1"); } catch {}
+    try { history.scrollRestoration = "manual"; } catch {}
     scrollTo(0, 0);
     const $ = <T extends Element>(s: string) => huelle.querySelector<T>(s)!;
+    const $$ = <T extends Element>(s: string) => [...huelle.querySelectorAll<T>(s)];
     const kamera = $<HTMLElement>(".vorspann__kamera");
     const ruettler = $<HTMLElement>(".vorspann__ruettler");
     const wagen = $<HTMLElement>(".vorspann__wagen");
     const blatt = $<HTMLElement>(".vorspann__blatt");
     const kopf = $<HTMLElement>(".vorspann__kopf");
-    const feder = $<HTMLElement>(".vorspann__hand--feder");
-    const griff = $<HTMLElement>(".vorspann__hand--blatt");
-    const maschinen = [...huelle.querySelectorAll<HTMLElement>(".vorspann__maschine")];
-    const pfade = [...huelle.querySelectorAll<SVGPathElement>("#vorspann-maske path")];
-    const zeilenEl = [...huelle.querySelectorAll<HTMLElement>(".vorspann__zeile")];
+    const kopieSlot = $<HTMLElement>("[data-kopie]");
+    const linienSlot = $<HTMLElement>("[data-linien]");
+    const feder = $<HTMLImageElement>(".vorspann__hand--feder");
+    const handR = $<HTMLImageElement>('[data-hand="rechts"]');
+    const handL = $<HTMLImageElement>('[data-hand="links"]');
+    const linealGruppe = $<HTMLElement>(".vorspann__linealgruppe");
+    const lineal = $<HTMLImageElement>(".vorspann__lineal");
+    const linealHand = $<HTMLImageElement>(".vorspann__hand--lineal");
+    const maschinen = $$<HTMLImageElement>(".vorspann__maschine");
+    const schatten = $$<HTMLElement>(".vorspann__schatten");
+    const pfade = $$<SVGPathElement>("#vorspann-maske path");
+    const zeilenEl = $$<HTMLElement>("[data-zeile]");
+    const theLinien = $$<HTMLElement>("[data-linie]");
+    const sterne = $$<HTMLElement>("[data-stern]");
+    const falze = $$<HTMLElement>(".vorspann__falz");
+    const LB = daten.breite;
+    const tl = daten.theLinien;
     const warte = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
     const weich = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
+    const mische = (a: P, b: P, f: number): P => ({ x: a.x + (b.x - a.x) * f, y: a.y + (b.y - a.y) * f });
+    const rechtsBis = (e: number) => `${((1 - (e + 1) / LB) * 100).toFixed(3)}%`;
     let fertig = false;
+    let aufgebaut = false;
 
     // ---------- Geräusche (nur nach Klick auf den Lautsprecher) ----------
     let ton: AudioContext | null = null;
@@ -164,6 +219,7 @@ const zeilen = daten.zeilen;
       }, 12);
     }
     const ratsche = (n: number, abstand: number, laut = 0.25) => { for (let i = 0; i < n; i++) setTimeout(() => rauschen(0.01, "bandpass", 3000, laut, 2), i * abstand); };
+    const rascheln = (dauer: number) => rauschen(dauer, "lowpass", 1500, 0.13, 1.3);
     function glocke() {
       if (!hoerbar() || !ton) return;
       const t = ton.currentTime;
@@ -203,233 +259,535 @@ const zeilen = daten.zeilen;
       kratzGain.gain.setTargetAtTime(an * 0.06, ton.currentTime, 0.02);
     }
 
-    // ---------- Aufbau in Seitenkoordinaten ----------
-    const L = document.querySelector<HTMLElement>(".masthead__marke-img")!.getBoundingClientRect();
-    const vw = innerWidth;
-    const vh = innerHeight;
-    const k = L.width / daten.breite; // Pixel je Logo-Einheit
-    const Lh = daten.hoehe * k; // Höhe aus dem Seitenverhältnis, auch wenn das Bild noch lädt
-    const Bw = L.width / 0.5; // Briefbogen: Logo nimmt die halbe Breite ein
-    const bx = L.left + L.width / 2 - Bw / 2;
-    const by = L.top - Bw * 0.09;
-    Object.assign(blatt.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${Bw * 1.414}px` });
-    Object.assign(kopf.style, { left: `${L.left - bx}px`, top: `${L.top - by}px`, width: `${L.width}px`, height: `${Lh}px` });
-
-    // Anschläge: Mitte jedes Buchstabens auf der Grundlinie seiner Zeile
-    const anschlaege = daten.zeilen.map((z, zi) => z.glyphen.map(([s, e, art]) => ({
-      zi, rechts: e, art,
-      p: { x: L.left + ((s + e) / 2) * k, y: L.top + z.grund * k },
-    })));
-    const alle = anschlaege.flat();
-    const S = alle[alle.length - 1].p; // Anschlagpunkt der Maschine = letzter Buchstabe in Ruhelage
+    // ---------- Aufbau: alles in Seitenkoordinaten, gemessen in Ruhelage ----------
+    let vw = 0, vh = 0, handy = false, k = 1, rand = 0, Bw = 0, Bh = 0, bx = 0, by = 0, obenH = 0, yT = 0;
+    let L = new DOMRect(), M = new DOMRect();
+    let Mw = 0, Mh = 0, S: P = { x: 0, y: 0 };
+    let E = 0, eh = 0, hw1 = 0, hw5 = 0, Rw = 0, Rh = 0;
+    let z1 = 1, z3 = 1;
+    let kopie: HTMLElement | null = null;
+    let aktivText: HTMLElement | null = null;
+    const anschlaege: Anschlag[] = [];
+    const kopieZeichen: HTMLElement[] = [];
+    let linien: Strich[] = [];
+    let Wstart: P = { x: 0, y: 0 };
     const W = (p: P): P => ({ x: S.x - p.x, y: S.y - p.y });
-    const Wstart = W(alle[0].p);
-    // Auf dem Tisch liegt der Bogen ganz oberhalb der Walze; beim Einlegen
-    // fährt er um seine ganze Länge unterhalb der ersten Zeile nach unten.
-    const ersteZeileY = L.top + daten.zeilen[0].grund * k;
-    const Wtisch = { x: Wstart.x, y: Wstart.y - (by + Bw * 1.414 - ersteZeileY) - Bw * 0.05 };
 
-    // Maschine: Walze etwas breiter als der Bogen, Grundlinie knapp über dem Papierhalter
-    const Mw = Bw * 1.86;
-    const Mh = (Mw * 618) / 1200;
-    for (const m of maschinen) Object.assign(m.style, { left: `${S.x - Mw / 2}px`, top: `${S.y - 0.255 * Mh}px`, width: `${Mw}px` });
+    // Text in einzelne Zeichen zerlegen (Leerzeichen bleiben Text)
+    function zerlege(el: HTMLElement) {
+      const zeichen: HTMLElement[] = [];
+      const gang = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      const knoten: Text[] = [];
+      while (gang.nextNode()) knoten.push(gang.currentNode as Text);
+      for (const t of knoten) {
+        if (!t.data.trim()) continue;
+        const frag = document.createDocumentFragment();
+        for (const c of t.data) {
+          if (!c.trim()) { frag.appendChild(document.createTextNode(c)); continue; }
+          const s = document.createElement("span");
+          s.className = "vz-z";
+          s.textContent = c;
+          frag.appendChild(s);
+          zeichen.push(s);
+        }
+        t.replaceWith(frag);
+      }
+      kopieZeichen.push(...zeichen);
+      return zeichen;
+    }
 
-    // Hände
-    const hw = L.width * 1.05;
-    const hh = (hw * 602) / 900;
-    Object.assign(feder.style, { width: `${hw}px` });
-    const gw = L.width * 0.95;
-    Object.assign(griff.style, { width: `${gw}px`, left: `${bx + Bw / 2 - 0.1787 * gw}px`, top: `${by - 0.9948 * gw}px` });
-    wagen.style.transformOrigin = `${bx + Bw / 2}px ${by}px`;
+    function aufbau() {
+      const kopfSeite = document.querySelector<HTMLElement>(".masthead");
+      const logoSeite = kopfSeite?.querySelector<HTMLImageElement>(".masthead__marke-img");
+      const navSeite = kopfSeite?.querySelector<HTMLElement>(".hauptnav");
+      if (!kopfSeite || !logoSeite || !navSeite) throw new Error("Seitenkopf fehlt");
+      vw = innerWidth;
+      vh = innerHeight;
+      handy = vw < 700;
+      L = logoSeite.getBoundingClientRect();
+      k = L.width / LB;
+      M = kopfSeite.getBoundingClientRect();
+      rand = Math.max(16, M.width * 0.05);
+      Bw = M.width + 2 * rand;
+      bx = M.left - rand;
+      by = Math.min(M.top, L.top) - rand;
+      obenH = navSeite.getBoundingClientRect().bottom - by + rand;
+      Bh = Math.max(Bw * 1.414, obenH + Bw * 0.3);
+      huelle.style.setProperty("--persp", `${Math.round(Bw * 2.4)}px`);
+      wagen.style.transformOrigin = `${bx + Bw / 2}px ${by}px`;
+      Object.assign(blatt.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${obenH}px` });
+      falze.forEach((f) => { f.style.height = `${(Bh - obenH) / falze.length + 1}px`; });
+      for (const s of schatten) Object.assign(s.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${Bh}px` });
+      Object.assign(kopf.style, { left: `${L.left - bx}px`, top: `${L.top - by}px`, width: `${L.width}px`, height: `${daten.hoehe * k}px` });
 
-    // Kamera: Bildpunkt c der Welt bei Zoom z an die Bildschirmstelle (sx, sy)
+      // Kopie des echten Seitenkopfs auf den Bogen
+      kopie = kopfSeite.cloneNode(true) as HTMLElement;
+      kopie.querySelectorAll("[id]").forEach((e) => e.removeAttribute("id"));
+      kopie.querySelectorAll("[data-hauptnav]").forEach((e) => e.removeAttribute("data-hauptnav"));
+      kopie.querySelectorAll("a").forEach((a) => { a.removeAttribute("href"); a.setAttribute("tabindex", "-1"); });
+      Object.assign(kopieSlot.style, { left: `${M.left - bx}px`, top: `${M.top - by}px`, width: `${M.width}px` });
+      kopieSlot.appendChild(kopie);
+      const leisteSeite = navSeite.querySelector<HTMLElement>(".hauptnav__leiste");
+      const leiste = kopie.querySelector<HTMLElement>(".hauptnav__leiste");
+      if (leisteSeite && leiste) {
+        leiste.className = leisteSeite.className;
+        leiste.scrollLeft = leisteSeite.scrollLeft;
+      }
+
+      // Messen in Ruhelage (Kamera und Wagen ohne Verschiebung)
+      kamera.style.transform = "none";
+      wagen.style.transform = "none";
+      daten.zeilen.forEach((z, zi) => {
+        const el = zeilenEl[zi];
+        const gross = zi <= 2;
+        for (const [s, e] of z.glyphen as [number, number, string][]) {
+          anschlaege.push({
+            p: { x: L.left + ((s + e) / 2) * k, y: L.top + z.grund * k },
+            zeigen: () => el.style.setProperty("--rechts", rechtsBis(e)),
+            takt: gross ? 42 : 13, zeile: zi, tab: false, laut: gross ? 1 : 0.7,
+          });
+        }
+      });
+      aktivText = kopie.querySelector<HTMLElement>('[aria-current="page"] .hauptnav__text');
+      const aktivLinks = aktivText?.getBoundingClientRect().left ?? 0;
+      let zeile = daten.zeilen.length;
+      const tippbar = (el: HTMLElement | null, takt: number, laut: number, sichtbar?: DOMRect) => {
+        if (!el) return;
+        let vorher: DOMRect | null = null;
+        for (const s of zerlege(el)) {
+          const rr = s.getBoundingClientRect();
+          if (sichtbar && (rr.right > sichtbar.right + 1 || rr.left < sichtbar.left - 1)) { s.classList.add("da"); continue; }
+          const tab = !!vorher && rr.left - vorher.right > rr.width * 2.5;
+          const unterstreichen = aktivText?.contains(s) ? `${rr.right - aktivLinks}px 2px` : "";
+          anschlaege.push({
+            p: { x: rr.left + rr.width / 2, y: rr.top + rr.height * 0.78 },
+            zeigen: () => { s.classList.add("da"); if (unterstreichen && aktivText) aktivText.style.backgroundSize = unterstreichen; },
+            takt: tab ? 38 : takt, zeile, tab, laut,
+          });
+          vorher = rr;
+        }
+        zeile++;
+      };
+      tippbar(kopie.querySelector(".masthead__leser"), 14, 0.6);
+      tippbar(kopie.querySelector(".datumszeile"), 14, 0.7);
+      if (aktivText) aktivText.style.backgroundSize = "0 2px";
+      tippbar(leiste, 9, 0.55, leiste?.getBoundingClientRect());
+
+      // Linien des Seitenkopfs, später mit Lineal und Feder gezogen
+      const strich = (sel: string, ganz: boolean): Strich | null => {
+        const e = kopie!.querySelector<HTMLElement>(sel);
+        if (!e) return null;
+        const cs = getComputedStyle(e);
+        const rr = e.getBoundingClientRect();
+        const unten = parseFloat(cs.borderBottomWidth) || 1;
+        const d = document.createElement("div");
+        d.className = "vorspann__strich";
+        const top = ganz ? rr.top : rr.bottom - unten;
+        const h = ganz ? rr.height : unten;
+        if (ganz) d.style.borderTop = `${cs.borderTopWidth} solid`;
+        d.style.borderBottom = `${cs.borderBottomWidth} ${cs.borderBottomStyle}`;
+        Object.assign(d.style, { left: `${rr.left - bx}px`, top: `${top - by}px`, width: `${rr.width}px`, height: `${h}px` });
+        linienSlot.appendChild(d);
+        return { el: d, x0: rr.left, x1: rr.right, y: top + h / 2, unten: top + h };
+      };
+      linien = [strich(".masthead__doppel", true), strich(".datumszeile", false), strich(".hauptnav", false)].filter(Boolean) as Strich[];
+
+      // Schreibmaschine unter dem Platz des Bogens; Anschlag in der Mitte der Typenführung
+      Mw = (Bw / 0.586) * 1.06;
+      Mh = (Mw * 618) / 1200;
+      S = { x: bx + Bw / 2, y: by + Bh + 0.255 * Mh + 0.03 * Bw };
+      for (const m of maschinen) Object.assign(m.style, { left: `${S.x - 0.5225 * Mw}px`, top: `${S.y - 0.255 * Mh}px`, width: `${Mw}px` });
+      huelle.style.setProperty("--klemme", `${S.y + 0.009 * Mh}px`);
+      yT = S.y - rand - by - Bh; // Bogen liegt auf dem Tisch, knapp über der Walze
+      Wstart = W(anschlaege[0].p);
+
+      // Hände: Feder, zwei Eckhände (die linke gespiegelt), Linealhand
+      hw1 = L.width * 1.05;
+      E = Math.max(0.92 * hw1, 0.52 * Bw);
+      eh = (E * 355) / 700;
+      hw5 = Math.max(hw1, 0.48 * Bw);
+      for (const h of [handR, handL]) h.style.width = `${E}px`;
+      const El = 0.92 * hw5;
+      linealHand.style.width = `${El}px`;
+      handR.style.left = `${bx + Bw - 0.3105 * E}px`;
+      handL.style.left = `${bx - 0.3105 * E}px`;
+      handR.style.top = handL.style.top = `${by - 0.6689 * eh}px`;
+      Rw = M.width * 1.12;
+      Rh = (Rw * 98) / 1600;
+      lineal.style.width = `${Rw}px`;
+      Object.assign(linealHand.style, { left: `${0.03 * Rw - 0.3105 * El}px`, top: `${0.42 * Rh - (0.6689 * El * 355) / 700}px` });
+      haende("weg", 0);
+
+      z1 = Math.min((vw * (handy ? 0.82 : 0.5)) / (893 * k), (vw * 0.96) / Bw, (vh * 0.62) / (414 * k));
+      z3 = handy ? 1.15 : Math.min(2.4, Math.max(0.9, (vh * 0.058) / (90 * k)));
+      aufgebaut = true;
+    }
+
+    // ---------- Kamera, Wagen, Papier ----------
     const setzeKamera = (c: P, z: number, sx: number, sy: number, ms = 0, kurve = "cubic-bezier(0.45, 0, 0.2, 1)") => {
       kamera.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
       kamera.style.transform = `translate(${sx - z * c.x}px, ${sy - z * c.y}px) scale(${z})`;
     };
-    // Der Wagen trägt Bogen und greifende Hand; gedreht wird um den Griffpunkt
-    const setzeWagen = (w: P, ms = 0, kurve = "ease-out", drehung = 0) => {
-      wagen.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
-      wagen.style.transform = `translate(${w.x}px, ${w.y}px) rotate(${drehung}deg)`;
+    const kameraRuhe = (ms = 0, kurve = "cubic-bezier(0.45, 0, 0.2, 1)") => {
+      kamera.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
+      kamera.style.transform = "translate(0px, 0px) scale(1)";
     };
-    const handy = vw < 700;
-    const kompassMitte = { x: L.left + 461 * k + Wtisch.x, y: L.top + 230 * k + Wtisch.y };
-    const z1 = Math.min(vw * (handy ? 0.82 : 0.5), 560) / (893 * k);
-    // Beim Tippen: Anschlagpunkt in der Bildmitte. Auf dem Rechner passt die
-    // längste Zeile (858 Einheiten) zu beiden Seiten ganz ins Bild, Groß-
-    // buchstaben höchstens etwa 50 Pixel hoch; auf dem Handy etwas näher.
-    const sx3 = vw / 2;
-    const z3 = handy ? 1.15 : Math.min(50 / (90 * k), (vw / 2 - 40) / (858 * k));
+    // Totale: Bogen samt Händen oben bis zur Walze
+    const totale = () => {
+      const oben = by + yT - 0.03 * Bw - 0.78 * eh;
+      const unten = S.y + 0.33 * Mh;
+      return { c: { x: S.x, y: (oben + unten) / 2 }, z: Math.min((vh * 0.94) / (unten - oben), (vw * 0.98) / (Mw * 0.76), 1.3) };
+    };
+    // Ausschnitt fürs Linieren: der ganze Seitenkopf; passt er, die Seite selbst
+    const linierRahmen = () => {
+      const z = Math.min(1, (vh * 0.97) / obenH);
+      return { z, c: { x: vw / 2, y: by + obenH / 2 } };
+    };
+    const setzeWagen = (w: P, ms = 0, kurve = "ease-out", s = 1) => {
+      wagen.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
+      wagen.style.transform = `translate(${w.x}px, ${w.y}px)${s !== 1 ? ` scale(${s})` : ""}`;
+    };
+    const papier = (z: "" | "haengt" | "tippt") => { huelle.dataset.papier = z; };
+    const schattenAuf = (z: "liegt" | "schwebt" | "weg") => { huelle.dataset.schatten = z; };
+    const walzeAn = (w: P) => blatt.style.setProperty("--walze", `${S.y - (by + w.y)}px`);
+    const klemme = (an: boolean) => {
+      huelle.classList.toggle("vorspann--klemme", an);
+      huelle.classList.toggle("vorspann--draussen", !an);
+    };
+    const stoss = (st: number) => {
+      ruettler.animate([{ transform: "translate(0, 0)" }, { transform: `translate(${(Math.random() - 0.5) * st}px, ${0.8 * st}px)` }, { transform: "translate(0, 0)" }], { duration: 80, easing: "ease-out" });
+    };
+    // Eckhände: greifen an den oberen Ecken oder liegen außerhalb des Bildes
+    function haende(z: "greift" | "weg", ms: number, nachR = 0) {
+      const raus = Math.max(1.25 * E, vw / (2 * Math.max(0.2, totale().z)) - Bw / 2 + 0.4 * E);
+      [[handR, 1], [handL, -1]].forEach(([h, s], i) => {
+        const el = h as HTMLElement;
+        const sx = s as number;
+        el.style.transition = ms
+          ? z === "greift"
+            ? `transform ${ms}ms cubic-bezier(0.2, 0.75, 0.25, 1) ${i ? nachR : 0}ms, opacity ${ms * 0.4}ms ease ${i ? nachR : 0}ms`
+            : `transform ${ms}ms cubic-bezier(0.5, 0, 0.8, 0.4) ${i ? 50 : 0}ms, opacity ${ms * 0.35}ms ease ${ms * 0.65}ms`
+          : "none";
+        el.style.transform = z === "greift" ? `scaleX(${sx})` : `translate(${sx * raus}px, ${-0.7 * eh}px) rotate(${sx * 9}deg) scaleX(${sx})`;
+        el.style.opacity = z === "greift" ? "1" : "0";
+      });
+    }
 
-    // ---------- 1. Die Hand zeichnet den Kompass ----------
-    const laengen = pfade.map((p) => p.getTotalLength());
-    function federNach(p: P, hebung: number, drehung: number) {
-      const s = 1 + 0.03 * hebung;
+    // ---------- Federhand ----------
+    let hw = 0, hh = 0;
+    const federGroesse = (w: number) => { hw = w; hh = (w * 602) / 900; feder.style.width = `${w}px`; };
+    let drehMitte = 0, drehSpanne = 1;
+    let federOrt: P = { x: 0, y: 0 };
+    function federNach(p: P, hebung: number, jetzt: number) {
+      const drehung = -3 + ((p.x - drehMitte) / drehSpanne) * 4 + Math.sin(jetzt / 90) * 0.5 + Math.sin(jetzt / 47) * 0.3;
+      const s = 1 + 0.035 * hebung;
       feder.style.transform = `translate(${p.x - 0.0021 * hw}px, ${p.y - 0.9933 * hh - hebung * hw * 0.05}px) rotate(${drehung}deg) scale(${s})`;
     }
-    const weltVonKompass = (q: DOMPoint): P => ({ x: L.left + Wtisch.x + q.x * k, y: L.top + Wtisch.y + q.y * k });
-    const drehungBei = (p: P, t: number) => -3 + ((p.x - kompassMitte.x) / (L.width * 0.5)) * 5 + Math.sin(t / 90) * 0.5 + Math.sin(t / 47) * 0.3;
-
-    async function zeichnen() {
-      let letzte: P = weltVonKompass(pfade[0].getPointAtLength(0));
-      // Hand kommt von rechts unten herein
-      const start: P = { x: letzte.x + hw * 0.9, y: letzte.y + hw * 0.6 };
-      await bewegeFeder(start, letzte, 320, 1);
-      for (let i = 0; i < pfade.length && !fertig; i++) {
-        const pfad = pfade[i];
-        const ms = Number(pfad.dataset.ms);
-        const anfang = weltVonKompass(pfad.getPointAtLength(0));
-        if (i > 0) await bewegeFeder(letzte, anfang, 100, 1);
-        await new Promise<void>((fertigStrich) => {
-          const t0 = performance.now();
-          let vorher = anfang;
-          const schritt = (jetzt: number) => {
-            if (fertig) return fertigStrich();
-            const t = Math.min(1, (jetzt - t0) / ms);
-            const f = weich(t);
-            pfad.style.strokeDashoffset = String(1 - f);
-            const p = weltVonKompass(pfad.getPointAtLength(f * laengen[i]));
-            const zitter = { x: p.x + Math.sin(jetzt / 37) * 0.6, y: p.y + Math.cos(jetzt / 29) * 0.6 };
-            federNach(zitter, 0, drehungBei(p, jetzt));
-            kratzen(Math.min(1, Math.hypot(p.x - vorher.x, p.y - vorher.y) / 6));
-            vorher = p;
-            if (t < 1) requestAnimationFrame(schritt);
-            else { letzte = p; kratzen(0); fertigStrich(); }
-          };
-          requestAnimationFrame(schritt);
-        });
-      }
-      // Hand hebt ab und verlässt das Bild nach rechts oben
-      await bewegeFeder(letzte, { x: letzte.x + hw * 1.1, y: letzte.y - hw * 0.5 }, 380, 1.4);
-      feder.style.opacity = "0";
-    }
-    function bewegeFeder(a: P, b: P, ms: number, hub: number) {
-      return new Promise<void>((fertigWeg) => {
+    // Bewegung der Feder entlang einer Bahn; hebung > 0 heißt: Feder in der Luft
+    function fahre(ms: number, bahn: (f: number) => P, hebung: (t: number) => number, beiSchritt?: (f: number) => void, kurve = weich) {
+      return new Promise<void>((ok) => {
         const t0 = performance.now();
+        let vorher = bahn(0);
         const schritt = (jetzt: number) => {
-          if (fertig) return fertigWeg();
-          const t = Math.min(1, (jetzt - t0) / ms);
-          const f = weich(t);
-          const p = { x: a.x + (b.x - a.x) * f, y: a.y + (b.y - a.y) * f };
-          federNach(p, Math.sin(Math.PI * t) * hub, drehungBei(p, jetzt));
+          if (fertig) return ok();
+          const t = Math.max(0, Math.min(1, (jetzt - t0) / ms));
+          const f = kurve(t);
+          const p = bahn(f);
+          const h = hebung(t);
+          beiSchritt?.(f);
+          const zittern = h > 0.02 ? 0 : 0.5;
+          federNach({ x: p.x + Math.sin(jetzt / 37) * zittern, y: p.y + Math.cos(jetzt / 29) * zittern }, h, jetzt);
+          if (h <= 0.02) kratzen(Math.min(1, Math.hypot(p.x - vorher.x, p.y - vorher.y) / 5));
+          else kratzen(0);
+          vorher = p;
+          federOrt = p;
           if (t < 1) requestAnimationFrame(schritt);
-          else fertigWeg();
+          else { kratzen(0); ok(); }
         };
         requestAnimationFrame(schritt);
       });
     }
+    const schwebe = (b: P, ms: number, hoehe = 1) => { const a = { ...federOrt }; return fahre(ms, (f) => mische(a, b, f), (t) => Math.sin(Math.PI * t) * hoehe); };
+    const ziehe = (b: P, ms: number, aufdecken: (f: number) => void) => { const a = { ...federOrt }; return fahre(ms, (f) => mische(a, b, f), () => 0, aufdecken); };
 
-    // ---------- 2. Die Hand legt das Blatt in die Maschine ----------
-    async function einlegen() {
-      // Kamera zieht zurück: der fertige Bogen liegt über der Schreibmaschine
-      huelle.classList.add("vorspann--maschine");
-      const oben = by + Wtisch.y - gw * 0.7;
-      const unten = S.y + Mh * 0.3;
-      const z2 = Math.min((vh * 0.94) / (unten - oben), (vw * 0.98) / (Mw * 0.7));
-      setzeKamera({ x: S.x, y: (oben + unten) / 2 }, z2, vw / 2, vh / 2, 650);
-      await warte(220);
-      // Die Hand kommt von rechts oben und greift die Oberkante
-      huelle.classList.add("vorspann--greift");
-      rauschen(0.25, "lowpass", 1500, 0.1, 1.5);
-      await warte(420);
-      // Anheben: der Bogen kippt leicht in der Hand
-      huelle.classList.add("vorspann--gehoben");
-      setzeWagen({ x: Wtisch.x, y: Wtisch.y - Bw * 0.035 }, 240, "ease-out", -2.2);
-      await warte(240);
-      // Gerade ausgerichtet hinunter hinter den Papierhalter, die Walze zieht ein
-      setzeWagen(Wstart, 820, "cubic-bezier(0.42, 0, 0.25, 1)", 0);
-      setTimeout(() => ratsche(8, 55, 0.18), 430);
-      setTimeout(() => huelle.classList.remove("vorspann--gehoben"), 380);
-      await warte(820);
-      huelle.classList.add("vorspann--loslassen");
-      setzeKamera(S, z3, sx3, vh * (handy ? 0.6 : 0.62), 560);
-      await warte(440);
-    }
-
-    // ---------- 3. Die Maschine tippt das Logo ----------
-    // Oberhalb der Walze biegt sich der Bogen leicht nach hinten; der Drehpunkt
-    // der Biegung liegt auf der Walzenlinie und wandert mit jeder Zeile.
-    const biegungAn = (w: P) => blatt.style.setProperty("--walze", `${S.y - (by + w.y)}px`);
-    async function tippen() {
-      biegungAn(Wstart);
-      huelle.classList.add("vorspann--tippt");
-      for (let zi = 0; zi < anschlaege.length && !fertig; zi++) {
-        const zeile = zeilenEl[zi];
-        if (zi > 0) {
-          // Wagenrücklauf mit Zeilenvorschub
-          ratsche(4, 26, 0.2);
-          rauschen(0.14, "bandpass", 900, 0.12, 1);
-          setzeWagen(W(anschlaege[zi][0].p), 140, "cubic-bezier(0.5, 0, 0.3, 1)");
-          biegungAn(W(anschlaege[zi][0].p));
-          await warte(150);
-        }
-        for (const a of anschlaege[zi]) {
-          if (fertig) return;
-          const strich = a.art === "strich";
-          const gross = zi === 1 || zi === 2 || a.art !== "z";
-          setzeWagen(W(a.p), strich ? 30 : 60, "ease-out");
-          zeile.style.setProperty("--rechts", `${100 - ((a.rechts + 1) / daten.breite) * 100}%`);
-          if (!strich || anschlaege[zi].indexOf(a) % 3 === 0) {
-            taste(strich ? 0.45 : gross ? 1 : 0.7);
-            const st = strich ? 0.3 : gross ? 1 : 0.55;
-            ruettler.animate([{ transform: "translate(0, 0)" }, { transform: `translate(${(Math.random() - 0.5) * st}px, ${0.8 * st}px)` }, { transform: "translate(0, 0)" }], { duration: 80, easing: "ease-out" });
-          }
-          await warte(strich ? 8 : zi >= 3 ? 32 : 60);
-        }
+    // ---------- 1. Die Hand zeichnet den Kompass ----------
+    const laengen = pfade.map((p) => p.getTotalLength());
+    async function zeichnen() {
+      federGroesse(hw1);
+      drehMitte = L.left + 461 * k;
+      drehSpanne = L.width * 0.4;
+      const welt = (q: DOMPoint): P => ({ x: L.left + q.x * k, y: L.top + yT + q.y * k });
+      let letzte = welt(pfade[0].getPointAtLength(0));
+      federOrt = { x: letzte.x + hw * 0.9, y: letzte.y + hw * 0.55 };
+      federNach(federOrt, 1, 0);
+      feder.style.opacity = "1";
+      await schwebe(letzte, 340, 1);
+      for (let i = 0; i < pfade.length && !fertig; i++) {
+        const pfad = pfade[i];
+        if (i > 0) await schwebe(welt(pfad.getPointAtLength(0)), 90, 0.8);
+        // Strich erst jetzt freigeben: sonst zeigt die runde Strichkappe vorab einen Punkt
+        pfad.setAttribute("stroke", "#fff");
+        await fahre(Number(pfad.dataset.ms), (f) => welt(pfad.getPointAtLength(f * laengen[i])), () => 0, (f) => { pfad.style.strokeDashoffset = String(1.02 * (1 - f)); });
+        letzte = federOrt;
       }
+      // Feder hebt ab und verlässt das Bild
+      schwebe({ x: letzte.x + hw * 1.2, y: letzte.y - hw * 0.45 }, 420, 1.6);
+      setTimeout(() => { feder.style.opacity = "0"; }, 260);
+      await warte(140);
     }
 
-    // ---------- 4. Rauszoomen nach oben, Landung auf dem Logo ----------
-    function abschluss(schnell = false) {
-      if (huelle.classList.contains("vorspann--ende")) return;
+    // ---------- 2. Zwei Hände legen den Bogen ein ----------
+    async function einlegen() {
+      const t = totale();
+      setzeKamera(t.c, t.z, vw / 2, vh / 2, 660);
+      await warte(150);
+      haende("greift", 400, 70);
+      await warte(470);
+      // anheben: der freie Teil hängt durch
+      rascheln(0.35);
+      papier("haengt");
+      schattenAuf("schwebt");
+      setzeWagen({ x: 0, y: yT - 0.02 * Bw }, 270, "cubic-bezier(0.3, 0, 0.3, 1)", 1.025);
+      await warte(270);
+      // über die Walze und hinein; unterhalb der Walze verschwindet der Bogen
+      klemme(true);
+      const Wein = { x: 0, y: Wstart.y - 0.05 * Bw };
+      setzeWagen(Wein, 760, "cubic-bezier(0.45, 0, 0.25, 1)");
+      setTimeout(() => schattenAuf("weg"), 250);
+      await warte(760);
+      // loslassen; die Walze zieht den Bogen auf die erste Zeile
+      haende("weg", 340);
+      walzeAn(Wstart);
+      papier("tippt");
+      ratsche(7, 45, 0.18);
+      await warte(90);
+      setzeWagen(Wstart, 520, "cubic-bezier(0.35, 0, 0.2, 1)");
+      setzeKamera(S, z3, vw / 2, vh * 0.6, 640);
+      await warte(650);
+    }
+
+    // ---------- 3. Die Maschine tippt ----------
+    async function tippen() {
+      let uhr = performance.now();
+      const bis = (ms: number) => { uhr += ms; const rest = uhr - performance.now(); return rest > 1 ? warte(rest) : Promise.resolve(); };
+      let zeileJetzt = anschlaege[0].zeile;
+      for (const a of anschlaege) {
+        if (fertig) return W(a.p);
+        const w = W(a.p);
+        if (a.zeile !== zeileJetzt) {
+          // Wagenrücklauf mit Zeilenschaltung
+          zeileJetzt = a.zeile;
+          ratsche(3, 22, 0.2);
+          rauschen(0.12, "bandpass", 900, 0.12, 1);
+          walzeAn(w);
+          setzeWagen(w, 92, "cubic-bezier(0.5, 0, 0.3, 1)");
+          await bis(95);
+        } else {
+          // Der Wagen rückt vor, dann schlägt die Type an
+          const m = Math.min(a.tab ? 40 : 30, a.takt * 0.8);
+          setzeWagen(w, m, "ease-out");
+          await bis(m);
+        }
+        a.zeigen();
+        taste(a.laut);
+        stoss(a.laut);
+        await bis(Math.max(3, a.takt - Math.min(a.tab ? 40 : 30, a.takt * 0.8)));
+      }
+      glocke();
+      await warte(120);
+      // Wagen zurück in die Mitte, Bogen ein Stück hoch
+      const ende = { x: 0, y: W(anschlaege[anschlaege.length - 1].p).y - 0.04 * Bw };
+      ratsche(5, 22, 0.2);
+      rauschen(0.16, "bandpass", 900, 0.14, 1);
+      walzeAn(ende);
+      setzeWagen(ende, 240, "cubic-bezier(0.5, 0, 0.3, 1)");
+      await warte(245);
+      return ende;
+    }
+
+    // ---------- 4. Herausnehmen und an den Seitenkopf legen ----------
+    async function herausnehmen() {
+      const t = totale();
+      setzeKamera(t.c, t.z, vw / 2, vh / 2, 560);
+      await warte(110);
+      haende("greift", 380, 60);
+      await warte(420);
+      // nach oben aus der Walze ziehen; unten kommt der Bogen frei und hängt
+      papier("haengt");
+      rascheln(0.5);
+      ratsche(4, 40, 0.14);
+      setzeWagen({ x: 0, y: yT - 0.03 * Bw }, 560, "cubic-bezier(0.4, 0, 0.3, 1)", 1.025);
+      await warte(565);
+      klemme(false);
+      schattenAuf("schwebt");
+      // an seinen Platz tragen und hinlegen; die Maschine fährt aus dem Bild
+      const r = linierRahmen();
+      const rahmenUnten = r.z < 1 ? r.c.y + vh / (2 * r.z) : vh;
+      const weg = Math.max(0, rahmenUnten - (S.y - 0.255 * Mh) + 40);
+      for (const m of maschinen) {
+        m.style.transition = "transform 800ms cubic-bezier(0.5, 0, 0.75, 0)";
+        m.style.transform = `translateY(${weg}px)`;
+      }
+      setzeWagen({ x: 0, y: 0 }, 720, "cubic-bezier(0.4, 0, 0.25, 1)");
+      if (r.z < 1) setzeKamera(r.c, r.z, vw / 2, vh / 2, 720);
+      else kameraRuhe(720);
+      setTimeout(() => { papier(""); schattenAuf("liegt"); rascheln(0.25); }, 400);
+      await warte(730);
+      haende("weg", 420);
+    }
+
+    // ---------- 5. Lineal und Feder ziehen die Linien ----------
+    function legeLineal(oberkante: number, ms: number, kurve = "cubic-bezier(0.4, 0, 0.2, 1)") {
+      linealGruppe.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
+      linealGruppe.style.transform = `translate(${M.left + M.width / 2 - Rw / 2}px, ${oberkante}px)`;
+    }
+    function sternBahn(st: (typeof tl.sterne)[number], f: number): P {
+      // Spitzen links, oben, rechts, unten; die Kanten leicht nach innen gewölbt
+      const spitzen = [[-1, 0], [0, -1], [1, 0], [0, 1], [-1, 0]];
+      const g = Math.min(3, Math.floor(f * 4));
+      const u = f * 4 - g;
+      const a = spitzen[g], b = spitzen[g + 1];
+      const nach = 1 - 0.32 * Math.sin(Math.PI * u);
+      return { x: L.left + (st.x + (a[0] + (b[0] - a[0]) * u) * nach * st.rx) * k, y: L.top + (st.y + (a[1] + (b[1] - a[1]) * u) * nach * st.ry) * k };
+    }
+    const stern = (i: number, ms: number) => fahre(ms, (f) => sternBahn(tl.sterne[i], f), () => 0, (f) => sterne[i].style.setProperty("--bogen", `${Math.min(360, f * 360 + 14)}deg`), (t) => t);
+    async function linieren() {
+      federGroesse(hw5);
+      drehMitte = M.left + M.width / 2;
+      drehSpanne = M.width / 2;
+      const r = linierRahmen();
+      const unten = r.z < 1 ? r.c.y + vh / (2 * r.z) : vh;
+      const rechts = r.z < 1 ? r.c.x + vw / (2 * r.z) : vw;
+      const theY = L.top + tl.strich * k;
+      const anfang: P = { x: L.left + tl.links[0] * k, y: theY };
+      // Lineal mit der linken Hand von unten heran, Feder von rechts
+      legeLineal(unten + 30, 0);
+      linealGruppe.style.opacity = "1";
+      await warte(20);
+      legeLineal(theY + 2.2 * k + 1, 420, "cubic-bezier(0.2, 0.7, 0.2, 1)");
+      federOrt = { x: rechts + hw * 0.1, y: anfang.y + hw * 0.5 };
+      federNach(federOrt, 1.5, 0);
+      feder.style.opacity = "1";
+      await schwebe(anfang, 430, 1.5);
+      // links ziehen, über THE absetzen, rechts weiter
+      const linieAuf = (el: HTMLElement, a: number, b: number) => (f: number) => el.style.setProperty("--rechts", rechtsBis(a + (b - a) * f));
+      await ziehe({ x: L.left + tl.links[1] * k, y: theY }, 210, linieAuf(theLinien[0], tl.links[0], tl.links[1]));
+      await schwebe({ x: L.left + tl.rechts[0] * k, y: theY }, 270, 2);
+      await ziehe({ x: L.left + tl.rechts[1] * k, y: theY }, 210, linieAuf(theLinien[1], tl.rechts[0], tl.rechts[1]));
+      // Lineal weiter nach unten; die Feder setzt die beiden Sterne von Hand
+      const [dick, ...rest] = linien;
+      if (dick) legeLineal(dick.unten + 1, 300);
+      await schwebe(sternBahn(tl.sterne[1], 0), 70, 0.5);
+      await stern(1, 120);
+      await schwebe(sternBahn(tl.sterne[0], 0), 210, 1.4);
+      await stern(0, 120);
+      // Striche am Lineal entlang, jeder von links nach rechts
+      for (const [i, s] of [dick, ...rest].entries()) {
+        if (fertig || !s) return;
+        if (i > 0) legeLineal(s.unten + 1, 230);
+        await schwebe({ x: s.x0, y: s.y }, i ? 220 : 190, 1.3);
+        await ziehe({ x: s.x1, y: s.y }, 270, (f) => s.el.style.setProperty("--zug", String(f)));
+      }
+      // Feder und Lineal verlassen das Bild
+      schwebe({ x: rechts + hw * 0.2, y: federOrt.y + hw * 0.4 }, 380, 1.5);
+      legeLineal(unten + 40, 420, "cubic-bezier(0.5, 0, 0.8, 0.4)");
+      if (r.z < 1) { await warte(200); kameraRuhe(600); await warte(560); }
+      else await warte(220);
+    }
+
+    // ---------- Schluss: Bogen wird zur Seite ----------
+    let entfernt = false;
+    function entfernen() {
+      if (entfernt) return;
+      entfernt = true;
+      html.classList.remove("vorspann-an", "vorspann-film");
+      huelle!.remove();
+      ton?.close().catch(() => {});
+      try { history.scrollRestoration = "auto"; } catch {}
+    }
+    function schluss(schnell = false) {
+      if (huelle!.classList.contains("vorspann--ende")) return;
       fertig = true;
       kratzen(0);
-      pfade.forEach((p) => (p.style.strokeDashoffset = "0"));
-      zeilenEl.forEach((z) => z.style.setProperty("--rechts", "0%"));
-      huelle.classList.remove("vorspann--tippt", "vorspann--gehoben");
-      huelle.classList.add("vorspann--greift", "vorspann--maschine", "vorspann--loslassen", "vorspann--ende");
+      if (!aufgebaut) return entfernen();
+      pfade.forEach((p) => { p.style.strokeDashoffset = "0"; p.setAttribute("stroke", "#fff"); });
+      zeilenEl.forEach((el, i) => { const g = daten.zeilen[i].glyphen; el.style.setProperty("--rechts", rechtsBis(g[g.length - 1][1] as number)); });
+      theLinien.forEach((el) => el.style.setProperty("--rechts", rechtsBis(Number(el.dataset.bis))));
+      sterne.forEach((el) => el.style.setProperty("--bogen", "360deg"));
+      linien.forEach((s) => s.el.style.setProperty("--zug", "1"));
+      kopieZeichen.forEach((s) => s.classList.add("da"));
+      if (aktivText) aktivText.style.backgroundSize = "";
+      papier("");
+      klemme(false);
+      haende("weg", schnell ? 300 : 0);
+      // Feder und Lineal verschwinden mit dem Filmbild, nicht erst nach ihrem Abgang
+      linealGruppe.style.transition = `${linealGruppe.style.transition || "transform 0s"}, opacity 0.25s ease`;
+      linealGruppe.style.opacity = "0";
       feder.style.opacity = "0";
-      const dauer = schnell ? 550 : 1050;
-      setzeWagen({ x: 0, y: 0 }, schnell ? 300 : 200);
-      kamera.style.transition = `transform ${dauer}ms cubic-bezier(0.55, 0, 0.2, 1)`;
-      kamera.style.transform = "translate(0px, 0px) scale(1)";
-      setTimeout(() => huelle.classList.add("vorspann--weg"), dauer - 40);
-      setTimeout(() => { html.classList.remove("vorspann-an"); huelle.remove(); ton?.close().catch(() => {}); }, dauer + 350);
+      const dauer = schnell ? 450 : 0;
+      for (const m of maschinen) { m.style.transition = `opacity ${dauer}ms ease`; m.style.opacity = "0"; }
+      setzeWagen({ x: 0, y: 0 }, dauer);
+      kameraRuhe(dauer);
+      huelle!.classList.add("vorspann--ende");
+      setTimeout(() => huelle!.classList.add("vorspann--weg"), dauer + 500);
+      setTimeout(entfernen, dauer + 1000);
     }
 
     async function film() {
-      setzeWagen(Wtisch);
-      setzeKamera(kompassMitte, z1, vw / 2, vh * 0.46);
-      huelle.classList.add("vorspann--sichtbar");
-      await warte(200);
+      setzeWagen({ x: 0, y: yT });
+      papier("");
+      schattenAuf("liegt");
+      const mitte: P = { x: L.left + 461 * k, y: L.top + 215 * k + yT };
+      setzeKamera(mitte, z1, vw / 2, vh * 0.47);
+      huelle!.classList.add("vorspann--sichtbar", "vorspann--laeuft");
+      await warte(40);
+      // langsame Fahrt auf den Bogen zu, während die Feder zeichnet
+      setzeKamera(mitte, z1 * 1.06, vw / 2, vh * 0.47, 2300, "linear");
+      await warte(120);
       await zeichnen();
       if (fertig) return;
-      await Promise.all([...maschinen, griff].map(geladen));
+      // Fehlt ein Bild der nächsten Szene noch, endet der Film statt zu stocken
+      if (!(await rechtzeitig([...maschinen, handR, zeilenEl[0].querySelector("img")!]))) return schluss(true);
       await einlegen();
       if (fertig) return;
-      await geladen(zeilenEl[0].querySelector("img")!);
       await tippen();
       if (fertig) return;
-      glocke();
-      await warte(220);
-      abschluss();
+      await herausnehmen();
+      if (fertig) return;
+      if (!(await rechtzeitig([lineal, linealHand]))) return schluss(true);
+      await linieren();
+      if (fertig) return;
+      schluss();
     }
 
-    huelle.addEventListener("click", () => abschluss(true));
-    addEventListener("keydown", () => abschluss(true), { once: true });
-    addEventListener("wheel", () => abschluss(true), { once: true, passive: true });
+    huelle.addEventListener("click", () => schluss(true));
+    addEventListener("keydown", () => schluss(true), { once: true });
+    addEventListener("wheel", () => schluss(true), { once: true, passive: true });
+    addEventListener("touchmove", () => schluss(true), { once: true, passive: true });
 
-    // Start, sobald Federhand und Kompass geladen sind; der Rest lädt während
-    // des Zeichnens. Ist das Netz so langsam, dass selbst das nach 2,5 s fehlt,
-    // entfällt der Film und die Seite erscheint sofort.
-    const geladen = (i: HTMLImageElement) => (i.complete && i.naturalWidth > 0 ? Promise.resolve() : new Promise<void>((r) => { i.addEventListener("load", () => r(), { once: true }); i.addEventListener("error", () => r(), { once: true }); }));
+    // Start, sobald Federhand, Kompass und Schriften da sind und die Skripte der
+    // Seite gelaufen sind; der Rest lädt während des Zeichnens. Fehlt das drei
+    // Sekunden nach Beginn des Seitenaufrufs noch, entfällt der Film und die
+    // Seite erscheint sofort.
+    function geladen(i: HTMLImageElement) {
+      return i.complete && i.naturalWidth > 0 ? Promise.resolve() : new Promise<void>((r) => { i.addEventListener("load", () => r(), { once: true }); i.addEventListener("error", () => r(), { once: true }); });
+    }
+    const rechtzeitig = (bilder: HTMLImageElement[], ms = 1200) => Promise.race([Promise.all(bilder.map(geladen)).then(() => true), warte(ms).then(() => false)]);
     const kompassBild = new Image();
     kompassBild.src = huelle.querySelector("svg image")!.getAttribute("href")!;
-    const bereit = Promise.all([geladen(feder), geladen(kompassBild)]).then(() => true);
-    const zuSpaet = new Promise<boolean>((r) => setTimeout(() => r(false), 2500));
+    const seiteFertig = new Promise<void>((r) => {
+      if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => setTimeout(r, 0), { once: true });
+      else setTimeout(r, 0);
+    });
+    const schriften = (document.fonts?.ready ?? Promise.resolve()).then(() => {}, () => {});
+    const bereit = Promise.all([geladen(feder), geladen(kompassBild), seiteFertig, schriften]).then(() => true);
+    // Frist ab Beginn des Seitenaufrufs: Wer schon drei Sekunden gewartet hat, bekommt die Seite
+    const zuSpaet = new Promise<boolean>((r) => setTimeout(() => r(false), Math.max(150, 3000 - performance.now())));
     Promise.race([bereit, zuSpaet]).then((ok) => {
-      if (ok) film();
-      else { html.classList.remove("vorspann-an"); huelle.remove(); }
+      if (!ok || fertig || !html.classList.contains("vorspann-an")) return entfernen();
+      html.classList.add("vorspann-film");
+      try { aufbau(); } catch { return entfernen(); }
+      film().catch(() => schluss(true));
     });
   }
 </script>
