@@ -88,7 +88,10 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
         <div class="vorspann__schacht">
           <div class="vorspann__wagen">
             <div class="vorspann__schatten vorspann__schatten--kontakt"></div>
-            <div class="vorspann__schatten vorspann__schatten--schwebe"></div>
+            <div class="vorspann__schatten vorspann__schatten--schwebe" style={`--hand-maske: url("${bild("hand-ecke.webp")}")`}>
+              <span class="vorspann__schattenhand" data-schattenhand="rechts"></span>
+              <span class="vorspann__schattenhand" data-schattenhand="links"></span>
+            </div>
             <div class="vorspann__blatt">
               <div class="vorspann__flach">
                 <div class="vorspann__kopie" data-kopie></div>
@@ -136,7 +139,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
           <div class="vorspann__hand vorspann__hand--lineal" style={`--a-kachel: url("${bild("aermel-flach.webp")}")`}><img src={bild("hand-flach.webp")} alt="" /><span class="vorspann__aermel vorspann__aermel--links"></span></div>
         </div>
         <div class="vorspann__stempel" data-stempel={JSON.stringify(stempel)}><img src={stempel.src} alt="" /></div>
-        <div class="vorspann__federschatten"><img src={federn.fein.src} alt="" /><span class="vorspann__aermel"></span></div>
+        <div class="vorspann__federschatten"><img src={federn.fein.src} alt="" /><span class="vorspann__aermel"></span><span class="vorspann__armschatten"></span></div>
         <div class="vorspann__hand vorspann__hand--feder" data-federn={JSON.stringify(federn)}><img src={federn.fein.src} alt="" /><span class="vorspann__aermel"></span></div>
       </div>
     </div>
@@ -672,6 +675,11 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       handR.style.left = `${griffR - 0.3105 * E}px`;
       handL.style.left = `${griffL - 0.3105 * E}px`;
       handR.style.top = handL.style.top = `${by - 0.6689 * eh}px`;
+      // Die haltenden Hände gehören in den Schwebeschatten, als Umriss an derselben Stelle
+      ([["rechts", griffR, 1], ["links", griffL, -1]] as const).forEach(([seite, x, sx]) => {
+        const el = $<HTMLElement>(`[data-schattenhand="${seite}"]`);
+        Object.assign(el.style, { width: `${E}px`, left: `${x - bx - 0.3105 * E}px`, top: `${-0.6689 * eh}px`, transform: `scaleX(${sx}) scaleY(calc(1 / var(--schatten-sy, 0.8)))` });
+      });
       Rw = M.width * 1.12;
       Rh = (Rw * 98) / 1600;
       lineal.style.width = `${Rw}px`;

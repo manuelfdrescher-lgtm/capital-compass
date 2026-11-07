@@ -1069,11 +1069,14 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
    sofort ab, und der weiche Schwebeschatten hat die Höhe des hängenden Bogens */
 .vorspann__schatten { position: absolute; border-radius: 2px; background: rgba(52, 36, 16, 0.5); transform-origin: 50% 0; transition: opacity 0.45s ease, transform 0.6s cubic-bezier(0.3, 0, 0.2, 1); }
 .vorspann__schatten--kontakt { filter: blur(3px); opacity: 0; transform: translate(0, 2px); }
-.vorspann__schatten--schwebe { filter: blur(24px); opacity: 0; transform: translate(0, 0) scaleY(var(--schatten-sy, 0.8)); }
+/* Schwebeschatten: Bogen und haltende Hände als eine Fläche. Deshalb deckend gefärbt und
+   erst als Ganzes durchscheinend, sonst wären die Überlappungen doppelt dunkel */
+.vorspann__schatten--schwebe { background: rgb(52, 36, 16); filter: blur(24px); opacity: 0; transform: translate(0, 0) scaleY(var(--schatten-sy, 0.8)); }
+.vorspann__schattenhand { position: absolute; left: 0; top: 0; aspect-ratio: 700 / 355; background: rgb(52, 36, 16); transform-origin: 31.05% 66.89%; -webkit-mask: var(--hand-maske) 0 0 / 100% 100% no-repeat; mask: var(--hand-maske) 0 0 / 100% 100% no-repeat; }
 [data-schatten="liegt"] .vorspann__schatten--kontakt { opacity: 0.5; }
 [data-schatten="schwebt"] .vorspann__schatten--kontakt,
 [data-schatten="weg"] .vorspann__schatten--kontakt { transition: opacity 0.06s linear; }
-[data-schatten="schwebt"] .vorspann__schatten--schwebe { opacity: 0.38; transform: translate(1.2%, 3.2%) scaleY(var(--schatten-sy, 0.8)); }
+[data-schatten="schwebt"] .vorspann__schatten--schwebe { opacity: 0.19; transform: translate(1.2%, 3.2%) scaleY(var(--schatten-sy, 0.8)); }
 
 /* Der Bogen verhält sich wie Papier. Oben der Kopf, darunter vier Falzstreifen,
    die sich je ein Stück weiter biegen und verzögert folgen: In der Hand hängt
@@ -1174,6 +1177,9 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann__aermel { position: absolute; left: calc(100% - 2px); top: var(--a-oben); width: 400%; height: var(--a-hoehe); background-image: var(--a-kachel); background-repeat: repeat-x; background-size: auto 100%; }
 .vorspann__aermel--links { left: auto; right: calc(100% - 2px); background-position: right top; }
 .vorspann__federschatten { position: absolute; left: 0; top: 0; z-index: 5; pointer-events: none; opacity: 0; filter: brightness(0) blur(5px); will-change: transform; transition: opacity 0.22s ease; }
+/* Der Arm verlässt die Federbilder oben rechts. Im Schatten läuft er als Fläche in
+   Armrichtung weiter, sonst bricht der versetzte Schatten an der Bildkante gerade ab */
+.vorspann__armschatten { position: absolute; left: 73.2%; top: -302.1%; width: 153.1%; height: 312.2%; background: #000; clip-path: polygon(6.22% 98.06%, 17.13% 98.06%, 95.4% 0, 84.48% 0); }
 .vorspann--feder .vorspann__hand--feder { opacity: 1; }
 .vorspann--feder .vorspann__federschatten { opacity: 0.2; }
 .vorspann__linealgruppe { position: absolute; left: 0; top: 0; z-index: 5; opacity: 0; will-change: transform; }
