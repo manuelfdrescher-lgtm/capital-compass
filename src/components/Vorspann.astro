@@ -829,52 +829,74 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     }
 
     // ---------- 2a. Kopfstempel: erst ins Kissen, dann auf den Bogen ----------
-    function stempelNach(ziel: P, ms: number, s: number, kurve = "cubic-bezier(0.35, 0, 0.25, 1)", drehung = 0) {
-      stempelEl.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
-      stempelEl.style.transform = `translate(${ziel.x - titelMitte.x}px, ${ziel.y - titelMitte.y}px) scale(${s}) rotate(${drehung}deg)`;
+    // Eine durchgehende Bewegung, Bild für Bild gerechnet: Ort, Höhe (als Maßstab:
+    // größer = näher an der Kamera) und Neigung gehen ohne Halt ineinander über;
+    // stehen bleibt der Stempel nur, wo er aufsitzt.
+    type Haltung = { x: number; y: number; s: number; r: number };
+    function stempelSetzen(h: Haltung) {
+      stempelEl.style.transform = `translate(${h.x - titelMitte.x}px, ${h.y - titelMitte.y}px) scale(${h.s}) rotate(${h.r}deg)`;
     }
+    function stempelBahn(ms: number, haltung: (t: number) => Haltung) {
+      return new Promise<void>((ok) => {
+        const t0 = performance.now();
+        const schritt = (jetzt: number) => {
+          if (fertig) return ok();
+          const t = Math.max(0, Math.min(1, (jetzt - t0) / ms));
+          stempelSetzen(haltung(t));
+          if (t < 1) requestAnimationFrame(schritt);
+          else ok();
+        };
+        requestAnimationFrame(schritt);
+      });
+    }
+    const raus = (t: number) => 1 - (1 - t) ** 3;
+    const rein = (t: number) => t * t;
+    const sanft = (t: number) => 0.5 - 0.5 * Math.cos(Math.PI * t);
     async function stempeln() {
       // Kamera: Kissen und Titelfeld im Bild
       const oben = kissenOben - 20;
       const unten = L.top + yT + 725 * k;
       const z = Math.min(z1 * 1.05, (vh * 0.9) / (unten - oben), (vw * 0.96) / Bw);
-      setzeKamera({ x: bx + Bw / 2, y: (oben + unten) / 2 }, z, vw / 2, vh / 2, 700);
-      // Hand mit Stempel kommt von oben rechts, über das Kissen
-      stempelNach({ x: kissenMitte.x + vw / z, y: kissenMitte.y - vh / z }, 0, 1.08);
+      setzeKamera({ x: bx + Bw / 2, y: (oben + unten) / 2 }, z, vw / 2, vh / 2, 750);
+      const start: P = { x: kissenMitte.x + vw / z, y: kissenMitte.y - (0.8 * vh) / z };
+      const k0 = kissenMitte, t0 = titelMitte;
+      const weg: P = { x: t0.x + vw / z, y: t0.y - (0.8 * vh) / z };
+      stempelEl.style.transition = "none";
+      stempelSetzen({ ...start, s: 1.1, r: -2 });
       huelle!.classList.add("vorspann--stempel");
-      await warte(260);
-      stempelNach({ x: kissenMitte.x, y: kissenMitte.y }, 520, 1.06, "cubic-bezier(0.2, 0.7, 0.25, 1)");
-      await warte(540);
-      // ins Kissen drücken und kurz wiegen, damit die Farbe überall sitzt
-      stempelNach(kissenMitte, 150, 1, "cubic-bezier(0.5, 0, 0.8, 0.5)");
-      await warte(150);
-      rauschen(0.08, "lowpass", 600, 0.18, 2);
-      stempelNach(kissenMitte, 110, 1, "ease-in-out", -1.2);
-      await warte(110);
-      stempelNach(kissenMitte, 110, 1, "ease-in-out", 1);
-      await warte(110);
-      stempelNach(kissenMitte, 170, 1.06, "cubic-bezier(0.2, 0.6, 0.3, 1)");
-      await warte(170);
-      // hinüber zum Titelfeld, aufsetzen mit sattem Schlag
-      stempelNach(titelMitte, 460, 1.05, "cubic-bezier(0.4, 0, 0.25, 1)");
-      await warte(470);
-      stempelNach(titelMitte, 140, 1, "cubic-bezier(0.55, 0, 0.9, 0.4)");
-      await warte(140);
+      await warte(200);
+      // Anflug im Bogen, gegen Ende senkt sich der Stempel mit Schwung ins Kissen
+      await stempelBahn(950, (t) => {
+        const f = raus(t);
+        const sink = t < 0.45 ? 0 : rein((t - 0.45) / 0.55);
+        return { x: start.x + (k0.x - start.x) * f, y: start.y + (k0.y - start.y) * f - Math.sin(Math.PI * f) * 40, s: 1.1 - 0.1 * sink, r: -2 * (1 - f) };
+      });
+      rauschen(0.08, "lowpass", 600, 0.16, 2);
+      // im Kissen: kurz nachgeben und abklingend wiegen, damit die Farbe überall sitzt
+      await stempelBahn(380, (t) => ({ x: k0.x + Math.sin(t * 9) * 1.2 * (1 - t), y: k0.y, s: 1 - 0.012 * Math.sin(Math.PI * Math.min(1, t * 3)), r: 1.1 * Math.sin(2 * Math.PI * 1.5 * t) * (1 - t) }));
+      // im Bogen hinüber zum Titelfeld; der Stempel kommt mit Schwung auf
+      await stempelBahn(720, (t) => {
+        const f = sanft(t);
+        return { x: k0.x + (t0.x - k0.x) * f, y: k0.y + (t0.y - k0.y) * f, s: 1 + 0.075 * Math.sin(Math.PI * t), r: 0.7 * Math.sin(Math.PI * t) };
+      });
       schlag(120, 48, 0.16, 0.5);
       rauschen(0.05, "lowpass", 900, 0.3, 2);
       stoss(1.6);
       rumms(1, true);
-      await warte(160);
+      // satt andrücken und kurz halten
+      await stempelBahn(280, (t) => ({ ...t0, s: 1 - 0.016 * Math.sin(Math.PI * Math.min(1, t * 2.2)), r: 0 }));
       // abheben: der Titel steht da, die frische Farbe zieht kurz nach
-      for (const el of [zeilenEl[1], zeilenEl[2]]) {
-        const g = daten.zeilen[zeilenEl.indexOf(el)].glyphen;
-        el.style.setProperty("--rechts", rechtsBis(g[g.length - 1][1] as number));
-        el.animate([{ opacity: 0.72, filter: "blur(0.7px)" }, { opacity: 1, filter: "blur(0px)" }], { duration: 420, easing: "ease-out" });
+      for (const zi of [1, 2]) {
+        const g = daten.zeilen[zi].glyphen;
+        zeilenEl[zi].style.setProperty("--rechts", rechtsBis(g[g.length - 1][1] as number));
+        zeilenEl[zi].animate([{ opacity: 0.72, filter: "blur(0.7px)" }, { opacity: 1, filter: "blur(0px)" }], { duration: 450, easing: "ease-out" });
       }
-      stempelNach(titelMitte, 200, 1.07, "cubic-bezier(0.2, 0.6, 0.3, 1)");
-      await warte(220);
-      stempelNach({ x: titelMitte.x + vw / z, y: titelMitte.y - vh / z }, 520, 1.08, "cubic-bezier(0.5, 0, 0.8, 0.4)");
-      await warte(380);
+      // erst langsam hoch, dann zügig weg aus dem Bild
+      await stempelBahn(820, (t) => {
+        const f = rein(t);
+        return { x: t0.x + (weg.x - t0.x) * f, y: t0.y + (weg.y - t0.y) * f, s: 1 + 0.1 * raus(Math.min(1, t * 1.6)), r: -1.5 * t };
+      });
+      huelle!.classList.remove("vorspann--stempel");
     }
 
     // ---------- 2. Zwei Hände legen den Bogen ein ----------
@@ -891,8 +913,9 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       schattenAuf("schwebt");
       setzeWagen({ x: 0, y: yT - 0.02 * Bw }, 380, "cubic-bezier(0.3, 0, 0.3, 1)", 1.025, -0.7);
       await warte(400);
-      // zur Maschine tragen, vor der Walze gerade ausrichten, hinter die Walze führen; die Kamera folgt
-      klemme(klemmeTipp);
+      // zur Maschine tragen, gerade ausrichten und vor der Walze in die Papierführung gleiten
+      // lassen; der Bogen bleibt die ganze Zeit vorn. Die Kamera folgt.
+      klemme(klemmeOben);
       const Wein = { x: 0, y: Wstart.y - 0.05 * Bw };
       const a1 = ausschnitt(by + Wein.y - 0.85 * eh, S.y + 0.22 * Mh);
       setzeKamera(a1.c, a1.z, vw / 2, vh / 2, 1200, "cubic-bezier(0.45, 0, 0.25, 1)");
@@ -907,7 +930,6 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       papier("tippt");
       await warte(150);
       ratsche(9, 60);
-      klemme(klemmeOben, 760);
       setzeWagen(Wstart, 700, "cubic-bezier(0.35, 0, 0.2, 1)");
       const zi = zeilenInfo[anschlaege[0].zeile];
       setzeKamera(S, zi.zoom, klemmen(vw / 2 + zi.folgen * zi.zoom * (anschlaege[0].p.x - zi.mitte), vw * 0.15, vw * 0.85), vh * 0.6, 820);
