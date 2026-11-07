@@ -1,21 +1,27 @@
 ---
-// Vorspann beim ersten Öffnen (einmal pro Sitzung, rund 14 Sekunden), in
-// der Anmutung eines Films um 1900:
-// 1. Auf einem leeren Bogen zeichnet eine Hand mit der Feder den Kompass.
+// Vorspann beim ersten Öffnen (einmal pro Sitzung, gut 20 Sekunden), in der
+// Anmutung eines Films um 1900:
+// 1. Auf einem leeren Bogen zeichnet eine Hand mit der Feder den Kompass:
+//    Gehäuse, Krone, Bügel, dann Landschaft und Wolken.
 // 2. Zwei Hände fassen den Bogen an den oberen Ecken, heben ihn an (der
-//    freie Teil hängt durch) und legen ihn in die Schreibmaschine; die Walze
-//    zieht ihn auf die erste Zeile.
-// 3. Die Maschine tippt alle Schrift: THE, CAPITAL COMPASS, den Slogan, die
-//    Widmung, das Datum der Ausgabe und die Rubriken.
+//    freie Teil hängt durch), tragen ihn leicht schräg zur Maschine,
+//    richten ihn aus und führen ihn hinter die Walze; die Walze zieht ihn
+//    nach vorn auf die erste Zeile. Die Kamera folgt den Händen.
+// 3. Die Maschine tippt in menschlichem Takt alle Schrift: Logo, Widmung
+//    (frische Tinte, die nachtrocknet), Tagesdatum und Rubriken; die rote
+//    Titelseite wird wie an der Maschine nachträglich unterstrichen.
 // 4. Die Hände ziehen den Bogen heraus und legen ihn an die Stelle des
 //    Seitenkopfs; die Maschine verschwindet.
-// 5. Mit Lineal und Feder entstehen die Linien neben THE (die Feder setzt
-//    über dem Wort ab) samt Sternen, dann der dicke Strich, der dünne Strich
-//    und die Doppellinie.
+// 5. Lineal (flach aufgelegte Hand) und Federn ziehen die Linien: feine
+//    Feder für die THE-Linien samt Sternen und den dünnen Strich, breite
+//    Feder für den dicken Strich, Doppelreißfeder für die Doppellinie.
+// 6. Die Ausgabe wird „gedruckt“: Der Inhalt erscheint unter dem Kopf,
+//    dazu der Signaturton (Kursticker und drei steigende Glockentöne).
 // Der Bogen trägt eine Kopie des echten Seitenkopfs (Datum und Rubriken
-// kommen also immer aus der aktuellen Ausgabe). Am Ende liegt er
-// deckungsgleich auf der Seite und blendet weg. Ein Klick beendet den Film,
-// der Lautsprecher-Knopf schaltet die Geräusche zu.
+// kommen also immer aus der aktuellen Ausgabe) und liegt am Ende
+// deckungsgleich auf der Seite. Ein Klick überspringt den Film. Ton und
+// Vibration kommen über den Knopf „Mit Ton ansehen“ (oder von selbst, wenn
+// der Browser es erlaubt).
 import daten from "../lib/vorspann-daten.json";
 import { logoInfo } from "../lib/logo.mjs";
 
@@ -27,36 +33,50 @@ const LH = daten.hoehe;
 const KH = daten.kompassUnten;
 const pz = (v: number, ganz: number) => `${((v / ganz) * 100).toFixed(3)}%`;
 
-// Federstriche im Kompass-Ausschnitt (Einheiten des Logos)
+// Federstriche im Kompass-Ausschnitt (Einheiten des Logos). Zusammen decken
+// sie jede Linie der Zeichnung ab (nachgemessen: kein Punkt bleibt offen).
+type Pt = [number, number];
 const r = (v: number) => v.toFixed(1);
-function kreis(cx: number, cy: number, rr: number) {
-  return `M${r(cx)},${r(cy - rr)} A${rr},${rr} 0 1,1 ${r(cx - 0.01)},${r(cy - rr)}`;
+const pfad = (pts: Pt[]) => pts.map(([x, y], i) => `${i ? "L" : "M"}${r(x)},${r(y)}`).join(" ");
+function ellipse(cx: number, cy: number, rx: number, ry: number, start: number, n = 96): Pt[] {
+  return Array.from({ length: n + 1 }, (_, i) => [cx + rx * Math.cos(start + (2 * Math.PI * i) / n), cy + ry * Math.sin(start + (2 * Math.PI * i) / n)]);
 }
-function spirale(cx: number, cy: number, r0: number, r1: number, drehungen: number) {
-  const n = 160;
+// erste Runde auf dem Gehäuserand, dann nach innen
+function spirale(cx: number, cy: number, rx0: number, ry0: number, r1: number, dreh: number, n = 240): Pt[] {
   return Array.from({ length: n + 1 }, (_, i) => {
     const t = i / n;
-    const w = -Math.PI / 2 + t * drehungen * 2 * Math.PI;
-    const rr = r0 + (r1 - r0) * t;
-    return `${i ? "L" : "M"}${r(cx + rr * Math.cos(w))},${r(cy + rr * Math.sin(w))}`;
-  }).join(" ");
+    const w = -Math.PI / 2 + t * dreh * 2 * Math.PI;
+    const f = Math.max(0, (t * dreh - 1) / (dreh - 1));
+    return [cx + (rx0 + (r1 - rx0) * f) * Math.cos(w), cy + (ry0 + (r1 - ry0) * f) * Math.sin(w)];
+  });
 }
-function zickzack(xa: number, xb: number, ys: number[]) {
-  return ys.map((y, i) => `${i ? "L" : "M"}${i % 2 ? xb : xa},${y} L${i % 2 ? xa : xb},${y}`).join(" ");
+function zeilen(reihen: [number, number, number][]): Pt[] {
+  return reihen.flatMap(([y, a, b], i): Pt[] => (i % 2 ? [[b, y], [a, y]] : [[a, y], [b, y]]));
 }
-const reihen = [128, 168, 208, 248, 288, 328, 368, 404];
+const land = (innen: number, aussen: number, unten: number): [number, number, number][] =>
+  [94, 128, 168, 208, 248, 288, 328].map((y): [number, number, number] => [y, innen, aussen]).concat([[368, unten, aussen], [404, unten, aussen]]);
 const striche = [
-  { d: kreis(461, 38, 20), ms: 110, breite: 36 },
-  { d: spirale(461, 240, 182, 6, 3.4), ms: 520, breite: 52 },
-  { d: zickzack(312, 4, reihen), ms: 260, breite: 46 },
-  { d: zickzack(610, 918, reihen), ms: 260, breite: 46 },
+  { d: pfad(spirale(441, 244, 184, 152, 6, 4.2)), ms: 680, breite: 60 },
+  { d: pfad(zeilen([[94, 416, 466], [84, 416, 466], [74, 418, 464], [64, 420, 462], [55, 424, 458], [47, 426, 456]])), ms: 190, breite: 20 },
+  { d: pfad(ellipse(440.5, 40, 45.5, 21, Math.PI)), ms: 270, breite: 32 },
+  { d: pfad(zeilen(land(306, 4, 445))), ms: 400, breite: 48 },
+  { d: pfad(zeilen(land(586, 918, 437))), ms: 400, breite: 48 },
 ];
+
+// Federhände (dieselbe Hand mit ganzem Unterarm, der oben rechts aus dem Bild
+// läuft; nur die Feder wechselt): Bildmaße, Spitze relativ zum Bild, Bildbreite
+// relativ zur Handgröße H; optional eine Stoffkachel, die den Ärmel fortsetzt
+const federn = {
+  fein: { src: bild("hand-feder.webp"), b: 1502, h: 993, sx: 0.0057, sy: 0.993, groesse: 1.598, aermel: "", ao: 0, au: 0 },
+  breit: { src: bild("hand-feder-breit.webp"), b: 1505, h: 992, sx: 0.0083, sy: 0.9929, groesse: 1.601, aermel: "", ao: 0, au: 0 },
+  doppel: { src: bild("hand-feder-doppel.webp"), b: 1505, h: 992, sx: 0.0086, sy: 0.9929, groesse: 1.601, aermel: "", ao: 0, au: 0 },
+};
 const tl = daten.theLinien;
 const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
 ---
 
-<div class="vorspann" data-vorspann aria-hidden="true">
-  <div class="vorspann__bildstand">
+<div class="vorspann" data-vorspann>
+  <div class="vorspann__bildstand" aria-hidden="true">
     <div class="vorspann__kamera">
       <div class="vorspann__ruettler">
         <img class="vorspann__maschine vorspann__maschine--hinten" src={bild("maschine.webp")} alt="" />
@@ -108,15 +128,29 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
         <img class="vorspann__maschine vorspann__maschine--vorn" src={bild("maschine.webp")} alt="" />
         <div class="vorspann__linealgruppe">
           <img class="vorspann__lineal" src={bild("lineal.webp")} alt="" />
-          <img class="vorspann__hand vorspann__hand--lineal" src={bild("hand-ecke.webp")} alt="" />
+          <div class="vorspann__hand vorspann__hand--lineal" style={`--a-kachel: url("${bild("aermel-flach.webp")}")`}><img src={bild("hand-flach.webp")} alt="" /><span class="vorspann__aermel vorspann__aermel--links"></span></div>
         </div>
-        <img class="vorspann__hand vorspann__hand--feder" src={bild("hand-feder.webp")} alt="" />
+        <div class="vorspann__federschatten"><img src={federn.fein.src} alt="" /><span class="vorspann__aermel"></span></div>
+        <div class="vorspann__hand vorspann__hand--feder" data-federn={JSON.stringify(federn)}><img src={federn.fein.src} alt="" /><span class="vorspann__aermel"></span></div>
       </div>
     </div>
   </div>
-  <div class="vorspann__film"><span class="vorspann__korn"></span><span class="vorspann__kratzer"></span><span class="vorspann__vignette"></span></div>
-  <button class="vorspann__ton" type="button" aria-label="Ton einschalten" data-ton>
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor" /><path class="vorspann__ton-wellen" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /><path class="vorspann__ton-aus" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+  <div class="vorspann__film" aria-hidden="true">
+    <span class="vorspann__flimmern"></span>
+    <span class="vorspann__korn"></span>
+    <span class="vorspann__kratzer vorspann__kratzer--dunkel"></span>
+    <span class="vorspann__kratzer vorspann__kratzer--hell"></span>
+    <span class="vorspann__staub"></span>
+    <span class="vorspann__vignette"></span>
+  </div>
+  <button class="vorspann__ton" type="button" aria-pressed="false" data-ton>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3.5 9.5h3.2l5.3-4.3v13.6l-5.3-4.3H3.5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" />
+      <path d="M5 11.3h2M5 12.7h2M8.6 9.4v5.2M10.1 8.2v7.6" stroke="currentColor" stroke-width="0.7" />
+      <g class="vorspann__ton-wellen" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M15 9.2a4 4 0 0 1 0 5.6" /><path d="M17.6 6.8a7.4 7.4 0 0 1 0 10.4" /></g>
+      <path class="vorspann__ton-aus" d="M15.4 9.6l4.8 4.8M20.2 9.6l-4.8 4.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+    </svg>
+    <span data-ton-text>Mit Ton ansehen</span>
   </button>
   <span class="vorspann__hinweis">Klick überspringt</span>
 </div>
@@ -125,8 +159,11 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
   import daten from "../lib/vorspann-daten.json";
 
   type P = { x: number; y: number };
-  type Anschlag = { p: P; zeigen: () => void; takt: number; zeile: number; tab: boolean; laut: number };
-  type Strich = { el: HTMLElement; x0: number; x1: number; y: number; unten: number };
+  type FederName = "fein" | "breit" | "doppel";
+  type Feder = { src: string; b: number; h: number; sx: number; sy: number; groesse: number; aermel: string; ao: number; au: number };
+  type Anschlag = { p: P; zeigen: () => void; takt: number; pause: number; zeile: number; tab: boolean; laut: number; danach?: () => void };
+  type ZeilenInfo = { mitte: number; folgen: number; zoom: number };
+  type Strich = { el: HTMLElement; x0: number; x1: number; y: number; unten: number; feder: FederName };
   const huelle = document.querySelector<HTMLElement>("[data-vorspann]");
   const html = document.documentElement;
   if (huelle && html.classList.contains("vorspann-an")) {
@@ -137,48 +174,94 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     const $$ = <T extends Element>(s: string) => [...huelle.querySelectorAll<T>(s)];
     const kamera = $<HTMLElement>(".vorspann__kamera");
     const ruettler = $<HTMLElement>(".vorspann__ruettler");
+    const schacht = $<HTMLElement>(".vorspann__schacht");
     const wagen = $<HTMLElement>(".vorspann__wagen");
     const blatt = $<HTMLElement>(".vorspann__blatt");
     const kopf = $<HTMLElement>(".vorspann__kopf");
     const kopieSlot = $<HTMLElement>("[data-kopie]");
     const linienSlot = $<HTMLElement>("[data-linien]");
-    const feder = $<HTMLImageElement>(".vorspann__hand--feder");
+    const feder = $<HTMLElement>(".vorspann__hand--feder");
+    const federSchatten = $<HTMLElement>(".vorspann__federschatten");
+    const federBild = feder.querySelector("img")!;
     const handR = $<HTMLImageElement>('[data-hand="rechts"]');
     const handL = $<HTMLImageElement>('[data-hand="links"]');
     const linealGruppe = $<HTMLElement>(".vorspann__linealgruppe");
     const lineal = $<HTMLImageElement>(".vorspann__lineal");
-    const linealHand = $<HTMLImageElement>(".vorspann__hand--lineal");
+    const linealHand = $<HTMLElement>(".vorspann__hand--lineal");
+    const linealHandBild = linealHand.querySelector("img")!;
     const maschinen = $$<HTMLImageElement>(".vorspann__maschine");
-    const schatten = $$<HTMLElement>(".vorspann__schatten");
     const pfade = $$<SVGPathElement>("#vorspann-maske path");
     const zeilenEl = $$<HTMLElement>("[data-zeile]");
     const theLinien = $$<HTMLElement>("[data-linie]");
     const sterne = $$<HTMLElement>("[data-stern]");
     const falze = $$<HTMLElement>(".vorspann__falz");
+    const FEDERN: Record<FederName, Feder> = JSON.parse(feder.dataset.federn!);
     const LB = daten.breite;
     const tl = daten.theLinien;
     const warte = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
     const weich = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
     const mische = (a: P, b: P, f: number): P => ({ x: a.x + (b.x - a.x) * f, y: a.y + (b.y - a.y) * f });
+    const klemmen = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
     const rechtsBis = (e: number) => `${((1 - (e + 1) / LB) * 100).toFixed(3)}%`;
+    // fester Zufall: jeder Durchlauf hat denselben menschlichen Takt
+    let saat = 20261107;
+    const zufall = () => { saat = (saat * 48271) % 2147483647; return saat / 2147483647; };
     let fertig = false;
     let aufgebaut = false;
 
-    // ---------- Geräusche (nur nach Klick auf den Lautsprecher) ----------
+    // ---------- Ton (dezent) ----------
     let ton: AudioContext | null = null;
+    let haupt: GainNode | null = null;
     let tonAn = false;
+    let stille: HTMLAudioElement | null = null;
     const tonKnopf = $<HTMLButtonElement>("[data-ton]");
-    tonKnopf.addEventListener("click", (e) => {
-      e.stopPropagation();
-      try {
-        ton ??= new AudioContext();
-        ton.resume();
-        tonAn = !tonAn;
-      } catch { tonAn = false; }
+    const tonText = $<HTMLElement>("[data-ton-text]");
+    const tonZeigen = () => {
       tonKnopf.classList.toggle("ist-an", tonAn);
-      tonKnopf.setAttribute("aria-label", tonAn ? "Ton ausschalten" : "Ton einschalten");
-    });
-    const hoerbar = () => tonAn && !!ton && ton.state === "running";
+      tonKnopf.setAttribute("aria-pressed", String(tonAn));
+      tonText.textContent = tonAn ? "Ton an" : "Mit Ton ansehen";
+    };
+    // Eine stille WAV-Schleife hält Safari im Wiedergabe-Modus: Dann ist der
+    // Ton auch bei eingeschaltetem Lautlos-Schalter des iPhones zu hören.
+    function stilleWav() {
+      const n = 800;
+      const puffer = new ArrayBuffer(44 + n);
+      const v = new DataView(puffer);
+      const s = (o: number, t: string) => [...t].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+      s(0, "RIFF"); v.setUint32(4, 36 + n, true); s(8, "WAVE"); s(12, "fmt ");
+      v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+      v.setUint32(24, 8000, true); v.setUint32(28, 8000, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true);
+      s(36, "data"); v.setUint32(40, n, true);
+      for (let i = 0; i < n; i++) v.setUint8(44 + i, 128);
+      return URL.createObjectURL(new Blob([puffer], { type: "audio/wav" }));
+    }
+    function tonBereit(geste: boolean) {
+      try {
+        const sitzung = (navigator as unknown as { audioSession?: { type: string } }).audioSession;
+        if (sitzung && sitzung.type !== "playback") sitzung.type = "playback";
+      } catch {}
+      try {
+        if (!ton) {
+          const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+          ton = new AC();
+          haupt = ton.createGain();
+          haupt.gain.value = 0.5;
+          haupt.connect(ton.destination);
+        }
+        if (geste) {
+          // iOS: ein stummer Puffer im Tipp schaltet die Ausgabe frei
+          const q = ton.createBufferSource();
+          q.buffer = ton.createBuffer(1, 1, 22050);
+          q.connect(ton.destination);
+          q.start(0);
+          stille ??= Object.assign(new Audio(stilleWav()), { loop: true });
+          stille.setAttribute("playsinline", "");
+          stille.play().catch(() => {});
+        }
+        ton.resume().catch(() => {});
+      } catch {}
+    }
+    const hoerbar = () => tonAn && !!ton && !!haupt && ton.state === "running";
     function rauschen(dauer: number, filterArt: BiquadFilterType, frequenz: number, laut: number, abklingen = 3) {
       if (!hoerbar() || !ton) return;
       const t = ton.currentTime;
@@ -193,7 +276,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       f.frequency.value = frequenz;
       const g = ton.createGain();
       g.gain.value = laut;
-      q.connect(f).connect(g).connect(ton.destination);
+      q.connect(f).connect(g).connect(haupt!);
       q.start(t);
     }
     function schlag(von: number, bis: number, dauer: number, laut: number) {
@@ -206,68 +289,138 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       const g = ton.createGain();
       g.gain.setValueAtTime(laut, t);
       g.gain.exponentialRampToValueAtTime(0.0001, t + dauer);
-      o.connect(g).connect(ton.destination);
+      o.connect(g).connect(haupt!);
       o.start(t);
       o.stop(t + dauer + 0.01);
     }
-    // Anschlag: heller Tastenklick, kurz danach der Typenhebel auf der Walze
+    // Anschlag: weicher Tastenklick, kurz danach der Typenhebel auf der Walze
     function taste(staerke = 1) {
-      rauschen(0.006, "highpass", 4200, 0.35 * staerke, 2);
+      rauschen(0.006, "highpass", 3200, 0.18 * staerke, 2);
       setTimeout(() => {
-        rauschen(0.028, "bandpass", 2100 + Math.random() * 700, 0.7 * staerke, 4);
-        schlag(190, 70, 0.05, 0.32 * staerke);
+        rauschen(0.03, "bandpass", 1700 + Math.random() * 500, 0.5 * staerke, 4);
+        schlag(170, 70, 0.05, 0.26 * staerke);
       }, 12);
     }
-    const ratsche = (n: number, abstand: number, laut = 0.25) => { for (let i = 0; i < n; i++) setTimeout(() => rauschen(0.01, "bandpass", 3000, laut, 2), i * abstand); };
-    const rascheln = (dauer: number) => rauschen(dauer, "lowpass", 1500, 0.13, 1.3);
-    function glocke() {
+    const ratsche = (n: number, abstand: number, laut = 0.18) => { for (let i = 0; i < n; i++) setTimeout(() => rauschen(0.01, "bandpass", 2600, laut, 2), i * abstand); };
+    const rascheln = (dauer: number) => rauschen(dauer, "lowpass", 1400, 0.1, 1.3);
+    function glockenton(f: number, dauer: number, laut: number, nach = 0) {
       if (!hoerbar() || !ton) return;
-      const t = ton.currentTime;
-      for (const [f, l] of [[2093, 0.14], [4186, 0.04]] as const) {
-        const o = ton.createOscillator();
-        o.frequency.value = f;
-        const g = ton.createGain();
+      const t = ton.currentTime + nach;
+      [[1, 1], [2.0, 0.42], [3.01, 0.2], [4.2, 0.1]].forEach(([m, l]) => {
+        const o = ton!.createOscillator();
+        o.frequency.value = f * m;
+        const g = ton!.createGain();
         g.gain.setValueAtTime(0.0001, t);
-        g.gain.exponentialRampToValueAtTime(l, t + 0.008);
-        g.gain.exponentialRampToValueAtTime(0.0001, t + 1.1);
-        o.connect(g).connect(ton.destination);
+        g.gain.exponentialRampToValueAtTime(laut * l, t + 0.006);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + dauer / m ** 0.5);
+        o.connect(g).connect(haupt!);
         o.start(t);
-        o.stop(t + 1.15);
-      }
+        o.stop(t + dauer + 0.05);
+      });
     }
-    // Kratzen der Feder: Rauschen, dessen Lautstärke der Strichgeschwindigkeit folgt
+    const glocke = () => glockenton(2093, 0.9, 0.08);
+    // Signaturton: kurzer Kursticker, dann drei steigende Glockentöne (C, G, C)
+    function signatur() {
+      for (let i = 0; i < 9; i++) setTimeout(() => rauschen(0.012, "bandpass", 2400 + i * 80, 0.16, 2), i * (40 - i * 2.5));
+      glockenton(523.25, 1.1, 0.07, 0.36);
+      glockenton(783.99, 1.1, 0.07, 0.52);
+      glockenton(1046.5, 1.9, 0.09, 0.7);
+      schlag(90, 45, 0.18, 0.18);
+    }
+    // Kratzen der Feder auf Papier: körniges Knistern (kurze Impulse wie Papierfasern
+    // auf leisem Rauschen), hell gefiltert; die Lautstärke folgt der Strichgeschwindigkeit
     let kratzGain: GainNode | null = null;
-    function kratzen(an: number) {
+    function kratzen(an: number, laut = 1) {
       if (!hoerbar() || !ton) return;
       if (!kratzGain) {
         const n = ton.sampleRate * 2;
         const puffer = ton.createBuffer(1, n, ton.sampleRate);
         const d = puffer.getChannelData(0);
-        for (let i = 0; i < n; i++) d[i] = Math.random() * 2 - 1;
+        let huell = 0;
+        for (let i = 0; i < n; i++) {
+          if (Math.random() < 0.014) huell = 0.55 + Math.random() * 0.45;
+          huell *= 0.982;
+          d[i] = (Math.random() * 2 - 1) * (0.22 + huell);
+        }
         const q = ton.createBufferSource();
         q.buffer = puffer;
         q.loop = true;
-        const f = ton.createBiquadFilter();
-        f.type = "bandpass";
-        f.frequency.value = 3600;
-        f.Q.value = 0.8;
+        const hoch = ton.createBiquadFilter();
+        hoch.type = "highpass";
+        hoch.frequency.value = 1700;
+        const glanz = ton.createBiquadFilter();
+        glanz.type = "peaking";
+        glanz.frequency.value = 4600;
+        glanz.Q.value = 1.1;
+        glanz.gain.value = 7;
         kratzGain = ton.createGain();
         kratzGain.gain.value = 0;
-        q.connect(f).connect(kratzGain).connect(ton.destination);
+        q.connect(hoch).connect(glanz).connect(kratzGain).connect(haupt!);
         q.start();
       }
-      kratzGain.gain.setTargetAtTime(an * 0.06, ton.currentTime, 0.02);
+      kratzGain.gain.setTargetAtTime(an * 0.07 * laut, ton.currentTime, 0.012);
     }
+
+    // ---------- Vibration ----------
+    // Android: Vibration-API. iPhone (iOS 18 und neuer): Ein unsichtbarer
+    // Schalter löst beim Umschalten das Antipp-Feedback des Systems aus.
+    const ios = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    let schalter: HTMLLabelElement | null = null;
+    function haptikBereit() {
+      if (!ios || schalter) return;
+      schalter = document.createElement("label");
+      schalter.setAttribute("aria-hidden", "true");
+      schalter.style.cssText = "position:fixed;left:0;top:0;width:1px;height:1px;opacity:0;overflow:hidden;pointer-events:none;z-index:-1";
+      const k = document.createElement("input");
+      k.type = "checkbox";
+      k.setAttribute("switch", "");
+      k.tabIndex = -1;
+      schalter.appendChild(k);
+      document.body.appendChild(schalter);
+    }
+    let letzterRumms = 0;
+    function rumms(staerke: number, lang = false) {
+      if (!tonAn) return;
+      const jetzt = performance.now();
+      if (!lang && jetzt - letzterRumms < 55) return;
+      letzterRumms = jetzt;
+      try {
+        if (schalter) schalter.click();
+        else if (navigator.vibrate && (navigator as unknown as { userActivation?: { hasBeenActive: boolean } }).userActivation?.hasBeenActive) navigator.vibrate(lang ? 26 : Math.round(6 + 9 * staerke));
+      } catch {}
+    }
+    // sichtbares Beben der Maschine bei jedem Anschlag und beim Wagenrücklauf
+    const stoss = (st: number) => {
+      const dx = (zufall() - 0.5) * 2.4 * st;
+      const dy = 2 * st;
+      ruettler.animate([{ transform: "translate(0px, 0px)" }, { transform: `translate(${dx}px, ${dy}px)` }, { transform: `translate(${-dx * 0.35}px, ${-dy * 0.3}px)` }, { transform: "translate(0px, 0px)" }], { duration: 95, easing: "ease-out" });
+    };
+    const ruck = () => ruettler.animate([{ transform: "translate(0px, 0px) rotate(0deg)" }, { transform: "translate(-5px, 1.5px) rotate(-0.12deg)" }, { transform: "translate(2px, -0.5px) rotate(0.05deg)" }, { transform: "translate(0px, 0px) rotate(0deg)" }], { duration: 240, easing: "ease-out" });
+
+    const tonWunsch = (() => { try { return localStorage.getItem("cc-ton"); } catch { return null; } })();
+    for (const art of ["pointerdown", "pointerup", "mousedown", "touchstart", "touchend", "touchmove"]) tonKnopf.addEventListener(art, (e) => e.stopPropagation(), { passive: true });
+    tonKnopf.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const an = !tonAn;
+      if (an) { tonBereit(true); haptikBereit(); } else stille?.pause();
+      tonAn = an;
+      try { localStorage.setItem("cc-ton", an ? "an" : "aus"); } catch {}
+      tonZeigen();
+      if (an) setTimeout(() => { taste(0.7); rumms(1, true); }, 80);
+    });
 
     // ---------- Aufbau: alles in Seitenkoordinaten, gemessen in Ruhelage ----------
     let vw = 0, vh = 0, handy = false, k = 1, rand = 0, Bw = 0, Bh = 0, bx = 0, by = 0, obenH = 0, yT = 0;
     let L = new DOMRect(), M = new DOMRect();
-    let Mw = 0, Mh = 0, S: P = { x: 0, y: 0 };
-    let E = 0, eh = 0, hw1 = 0, hw5 = 0, Rw = 0, Rh = 0;
-    let z1 = 1, z3 = 1;
+    let Mw = 0, Mh = 0, S: P = { x: 0, y: 0 }, kMitte = 0;
+    let H = 0, E = 0, eh = 0, Rw = 0, Rh = 0;
+    let z1 = 1, z3 = 1, zFolge = 1, kameraZ = 1;
+    let klemmeOben = 0, klemmeTipp = 0;
     let kopie: HTMLElement | null = null;
     let aktivText: HTMLElement | null = null;
+    let widmung: HTMLElement | null = null;
     const anschlaege: Anschlag[] = [];
+    const zeilenInfo: ZeilenInfo[] = [];
     const kopieZeichen: HTMLElement[] = [];
     let linien: Strich[] = [];
     let Wstart: P = { x: 0, y: 0 };
@@ -295,6 +448,12 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       kopieZeichen.push(...zeichen);
       return zeichen;
     }
+    // Anschlag sichtbar machen, mit leicht wechselnder Tintenstärke und Höhe
+    const anschlagen = (s: HTMLElement) => {
+      s.classList.add("da");
+      s.style.opacity = (0.8 + 0.2 * zufall()).toFixed(2);
+      s.style.top = `${((zufall() - 0.5) * 0.7).toFixed(2)}px`;
+    };
 
     function aufbau() {
       const kopfSeite = document.querySelector<HTMLElement>(".masthead");
@@ -306,6 +465,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       handy = vw < 700;
       L = logoSeite.getBoundingClientRect();
       k = L.width / LB;
+      kMitte = L.left + 441 * k;
       M = kopfSeite.getBoundingClientRect();
       rand = Math.max(16, M.width * 0.05);
       Bw = M.width + 2 * rand;
@@ -313,11 +473,11 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       by = Math.min(M.top, L.top) - rand;
       obenH = navSeite.getBoundingClientRect().bottom - by + rand;
       Bh = Math.max(Bw * 1.414, obenH + Bw * 0.3);
-      huelle.style.setProperty("--persp", `${Math.round(Bw * 2.4)}px`);
+      huelle!.style.setProperty("--persp", `${Math.round(Bw * 2.4)}px`);
       wagen.style.transformOrigin = `${bx + Bw / 2}px ${by}px`;
       Object.assign(blatt.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${obenH}px` });
       falze.forEach((f) => { f.style.height = `${(Bh - obenH) / falze.length + 1}px`; });
-      for (const s of schatten) Object.assign(s.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${Bh}px` });
+      for (const s of $$<HTMLElement>(".vorspann__schatten")) Object.assign(s.style, { left: `${bx}px`, top: `${by}px`, width: `${Bw}px`, height: `${Bh}px` });
       Object.assign(kopf.style, { left: `${L.left - bx}px`, top: `${L.top - by}px`, width: `${L.width}px`, height: `${daten.hoehe * k}px` });
 
       // Kopie des echten Seitenkopfs auf den Bogen
@@ -344,37 +504,71 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
           anschlaege.push({
             p: { x: L.left + ((s + e) / 2) * k, y: L.top + z.grund * k },
             zeigen: () => el.style.setProperty("--rechts", rechtsBis(e)),
-            takt: gross ? 42 : 13, zeile: zi, tab: false, laut: gross ? 1 : 0.7,
+            takt: gross ? 52 : 18, pause: 0, zeile: zi, tab: false, laut: gross ? 1 : 0.7,
           });
         }
       });
       aktivText = kopie.querySelector<HTMLElement>('[aria-current="page"] .hauptnav__text');
-      const aktivLinks = aktivText?.getBoundingClientRect().left ?? 0;
+      widmung = kopie.querySelector<HTMLElement>(".masthead__leser");
       let zeile = daten.zeilen.length;
-      const tippbar = (el: HTMLElement | null, takt: number, laut: number, sichtbar?: DOMRect) => {
+      const tippbar = (el: HTMLElement | null, takt: number, pause: number, laut: number, sichtbar?: DOMRect) => {
         if (!el) return;
         let vorher: DOMRect | null = null;
-        for (const s of zerlege(el)) {
+        const zeichen = zerlege(el);
+        // Handy-Leiste: nur Rubriken, die ganz zu sehen sind; der Rest kommt mit der Seite
+        const ganz = (s: HTMLElement) => {
+          if (!sichtbar) return true;
+          const a = s.closest("a")?.getBoundingClientRect() ?? s.getBoundingClientRect();
+          return a.right <= sichtbar.right + 1 && a.left >= sichtbar.left - 1;
+        };
+        for (const s of zeichen) {
+          if (!ganz(s)) { s.classList.add("spaeter"); continue; }
           const rr = s.getBoundingClientRect();
-          if (sichtbar && (rr.right > sichtbar.right + 1 || rr.left < sichtbar.left - 1)) { s.classList.add("da"); continue; }
-          const tab = !!vorher && rr.left - vorher.right > rr.width * 2.5;
-          const unterstreichen = aktivText?.contains(s) ? `${rr.right - aktivLinks}px 2px` : "";
+          const luecke = vorher ? rr.left - vorher.right : 0;
+          const tab = !!vorher && luecke > rr.width * 2.5;
+          const wort = !!vorher && !tab && luecke > rr.width * 0.5;
           anschlaege.push({
             p: { x: rr.left + rr.width / 2, y: rr.top + rr.height * 0.78 },
-            zeigen: () => { s.classList.add("da"); if (unterstreichen && aktivText) aktivText.style.backgroundSize = unterstreichen; },
-            takt: tab ? 38 : takt, zeile, tab, laut,
+            zeigen: () => anschlagen(s),
+            takt: tab ? 60 : takt, pause: wort ? pause : 0, zeile, tab, laut,
           });
           vorher = rr;
+          // Rote Titelseite: wie an der Maschine erst das Wort, dann zurück und unterstreichen
+          const naechstes = zeichen[zeichen.indexOf(s) + 1];
+          if (aktivText && aktivText.contains(s) && (!naechstes || !aktivText.contains(naechstes))) {
+            const links = aktivText.getBoundingClientRect().left;
+            const textZeichen = zeichen.filter((z) => aktivText!.contains(z));
+            textZeichen.forEach((z, i) => {
+              const zr = z.getBoundingClientRect();
+              anschlaege.push({
+                p: { x: zr.left + zr.width / 2, y: zr.top + zr.height * 0.78 },
+                zeigen: () => { aktivText!.style.backgroundSize = `${zr.right - links}px 2px`; },
+                takt: i ? 16 : 70, pause: 0, zeile, tab: i === 0, laut: 0.45,
+              });
+            });
+          }
         }
         zeile++;
       };
-      tippbar(kopie.querySelector(".masthead__leser"), 14, 0.6);
-      tippbar(kopie.querySelector(".datumszeile"), 14, 0.7);
+      tippbar(widmung, 34, 35, 0.6);
+      tippbar(kopie.querySelector(".datumszeile"), 24, 35, 0.7);
       if (aktivText) aktivText.style.backgroundSize = "0 2px";
-      tippbar(leiste, 9, 0.55, leiste?.getBoundingClientRect());
+      tippbar(leiste, 13, 0, 0.55, handy ? leiste?.getBoundingClientRect() : undefined);
+      // Widmung mit frischer, voller Tinte; sie trocknet nach dem Tippen zum Grau der Seite
+      if (widmung) Object.assign(widmung.style, { color: "#1a1410", opacity: "1" });
 
-      // Linien des Seitenkopfs, später mit Lineal und Feder gezogen
-      const strich = (sel: string, ganz: boolean): Strich | null => {
+      // Kamera beim Tippen: folgt dem Wagen ein Stück, damit die getippte Zeile im Bild bleibt
+      z3 = handy ? 1.15 : Math.min(2.4, Math.max(0.9, (vh * 0.058) / (90 * k)));
+      for (let zi = 0; zi < zeile; zi++) {
+        const xs = anschlaege.filter((a) => a.zeile === zi).map((a) => a.p.x);
+        if (!xs.length) { zeilenInfo[zi] = { mitte: S.x, folgen: 0.5, zoom: z3 }; continue; }
+        const breite = Math.max(...xs) - Math.min(...xs);
+        const lang = !handy && breite > vw * 0.5;
+        zeilenInfo[zi] = { mitte: (Math.max(...xs) + Math.min(...xs)) / 2, folgen: handy ? 0.6 : lang ? 0.78 : 0.5, zoom: lang ? Math.min(z3, (vw * 0.86) / breite) : z3 };
+      }
+
+      // Linien des Seitenkopfs, später mit Lineal und Federn gezogen
+      const strich = (sel: string, ganz: boolean, fed: FederName): Strich | null => {
         const e = kopie!.querySelector<HTMLElement>(sel);
         if (!e) return null;
         const cs = getComputedStyle(e);
@@ -388,85 +582,101 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
         d.style.borderBottom = `${cs.borderBottomWidth} ${cs.borderBottomStyle}`;
         Object.assign(d.style, { left: `${rr.left - bx}px`, top: `${top - by}px`, width: `${rr.width}px`, height: `${h}px` });
         linienSlot.appendChild(d);
-        return { el: d, x0: rr.left, x1: rr.right, y: top + h / 2, unten: top + h };
+        return { el: d, x0: rr.left, x1: rr.right, y: top + h / 2, unten: top + h, feder: fed };
       };
-      linien = [strich(".masthead__doppel", true), strich(".datumszeile", false), strich(".hauptnav", false)].filter(Boolean) as Strich[];
+      linien = [strich(".masthead__doppel", true, "breit"), strich(".datumszeile", false, "fein"), strich(".hauptnav", false, "doppel")].filter(Boolean) as Strich[];
 
       // Schreibmaschine unter dem Platz des Bogens; Anschlag in der Mitte der Typenführung
       Mw = (Bw / 0.586) * 1.06;
       Mh = (Mw * 618) / 1200;
       S = { x: bx + Bw / 2, y: by + Bh + 0.255 * Mh + 0.03 * Bw };
       for (const m of maschinen) Object.assign(m.style, { left: `${S.x - 0.5225 * Mw}px`, top: `${S.y - 0.255 * Mh}px`, width: `${Mw}px` });
-      huelle.style.setProperty("--klemme", `${S.y + 0.009 * Mh}px`);
-      yT = S.y - rand - by - Bh; // Bogen liegt auf dem Tisch, knapp über der Walze
+      klemmeOben = S.y - 0.155 * Mh; // Oberkante der Walze: dahinter verschwindet der Bogen
+      klemmeTipp = S.y + 0.009 * Mh; // vor der Walze bis zur Papierführung
+      yT = S.y - 0.255 * Mh - 0.03 * Bw - by - Bh; // der Bogen liegt über der Maschine an seinem späteren Platz
       Wstart = W(anschlaege[0].p);
 
-      // Hände: Feder, zwei Eckhände (die linke gespiegelt), Linealhand
-      hw1 = L.width * 1.05;
-      E = Math.max(0.92 * hw1, 0.52 * Bw);
+      // Alle Hände gleich groß, am Bogen gemessen
+      H = Math.max(L.width * 1.05, 0.46 * Bw);
+      E = H;
       eh = (E * 355) / 700;
-      hw5 = Math.max(hw1, 0.48 * Bw);
       for (const h of [handR, handL]) h.style.width = `${E}px`;
-      const El = 0.92 * hw5;
-      linealHand.style.width = `${El}px`;
       handR.style.left = `${bx + Bw - 0.3105 * E}px`;
       handL.style.left = `${bx - 0.3105 * E}px`;
       handR.style.top = handL.style.top = `${by - 0.6689 * eh}px`;
       Rw = M.width * 1.12;
       Rh = (Rw * 98) / 1600;
       lineal.style.width = `${Rw}px`;
-      Object.assign(linealHand.style, { left: `${0.03 * Rw - 0.3105 * El}px`, top: `${0.42 * Rh - (0.6689 * El * 355) / 700}px` });
+      // Linealhand: flach aufgelegt, Zeige- und Mittelfinger auf dem Lineal unter der
+      // Zeichenkante, Ringfinger, Daumen und Ballen auf dem Papier darunter
+      const lw = H * (handy ? 1.55 : 1.75);
+      const lh = (lw * 635) / 1500;
+      Object.assign(linealHand.style, { width: `${lw}px`, left: `${0.24 * Rw - (1221 / 1500) * lw}px`, top: `${0.3 * Rh - (25 / 635) * lh}px` });
+      linealHand.style.setProperty("--a-oben", `${0.4268 * lh}px`);
+      linealHand.style.setProperty("--a-hoehe", `${(0.9858 - 0.4268) * lh}px`);
+      zFolge = handy ? Math.min(1.2, (vw * 0.98) / (Bw * 1.12)) : Math.min(1.2, (vw * 0.98) / (Bw + 0.8 * E));
       haende("weg", 0);
+      federWahl("fein");
 
-      z1 = Math.min((vw * (handy ? 0.82 : 0.5)) / (893 * k), (vw * 0.96) / Bw, (vh * 0.62) / (414 * k));
-      z3 = handy ? 1.15 : Math.min(2.4, Math.max(0.9, (vh * 0.058) / (90 * k)));
+      // Schattenhöhe des hängenden Bogens einmal ohne Übergang messen
+      huelle!.classList.add("vorspann--messen");
+      papier("haengt");
+      const unten = falze[falze.length - 1].getBoundingClientRect().bottom;
+      papier("");
+      void blatt.offsetWidth;
+      huelle!.classList.remove("vorspann--messen");
+      huelle!.style.setProperty("--schatten-sy", klemmen((unten - by) / Bh, 0.55, 1).toFixed(3));
+
+      z1 = Math.min((vw * (handy ? 0.82 : 0.44)) / (893 * k), (vw * 0.96) / Bw, (vh * 0.62) / (414 * k));
       aufgebaut = true;
     }
 
     // ---------- Kamera, Wagen, Papier ----------
     const setzeKamera = (c: P, z: number, sx: number, sy: number, ms = 0, kurve = "cubic-bezier(0.45, 0, 0.2, 1)") => {
+      kameraZ = z;
       kamera.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
       kamera.style.transform = `translate(${sx - z * c.x}px, ${sy - z * c.y}px) scale(${z})`;
     };
     const kameraRuhe = (ms = 0, kurve = "cubic-bezier(0.45, 0, 0.2, 1)") => {
+      kameraZ = 1;
       kamera.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
       kamera.style.transform = "translate(0px, 0px) scale(1)";
     };
-    // Totale: Bogen samt Händen oben bis zur Walze
-    const totale = () => {
-      const oben = by + yT - 0.03 * Bw - 0.78 * eh;
-      const unten = S.y + 0.33 * Mh;
-      return { c: { x: S.x, y: (oben + unten) / 2 }, z: Math.min((vh * 0.94) / (unten - oben), (vw * 0.98) / (Mw * 0.76), 1.3) };
+    // Ausschnitt von „oben“ bis „unten“ (Welt), höchstens so groß wie zFolge erlaubt
+    const ausschnitt = (oben: number, unten: number) => {
+      const zMin = (vw / (Bw + 1.38 * E)) * 1.03;
+      const z = Math.max(zMin, Math.min(zFolge, (vh * 0.94) / (unten - oben)));
+      return { c: { x: S.x, y: oben + vh / (2 * z) - vh * 0.03 / z }, z };
     };
     // Ausschnitt fürs Linieren: der ganze Seitenkopf; passt er, die Seite selbst
     const linierRahmen = () => {
       const z = Math.min(1, (vh * 0.97) / obenH);
       return { z, c: { x: vw / 2, y: by + obenH / 2 } };
     };
-    const setzeWagen = (w: P, ms = 0, kurve = "ease-out", s = 1) => {
+    const setzeWagen = (w: P, ms = 0, kurve = "ease-out", s = 1, drehung = 0) => {
       wagen.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
-      wagen.style.transform = `translate(${w.x}px, ${w.y}px)${s !== 1 ? ` scale(${s})` : ""}`;
+      wagen.style.transform = `translate(${w.x}px, ${w.y}px)${s !== 1 ? ` scale(${s})` : ""}${drehung ? ` rotate(${drehung}deg)` : ""}`;
     };
-    const papier = (z: "" | "haengt" | "tippt") => { huelle.dataset.papier = z; };
-    const schattenAuf = (z: "liegt" | "schwebt" | "weg") => { huelle.dataset.schatten = z; };
+    const papier = (z: "" | "haengt" | "tippt") => { huelle!.dataset.papier = z; };
+    const schattenAuf = (z: "liegt" | "schwebt" | "weg") => { huelle!.dataset.schatten = z; };
     const walzeAn = (w: P) => blatt.style.setProperty("--walze", `${S.y - (by + w.y)}px`);
-    const klemme = (an: boolean) => {
-      huelle.classList.toggle("vorspann--klemme", an);
-      huelle.classList.toggle("vorspann--draussen", !an);
-    };
-    const stoss = (st: number) => {
-      ruettler.animate([{ transform: "translate(0, 0)" }, { transform: `translate(${(Math.random() - 0.5) * st}px, ${0.8 * st}px)` }, { transform: "translate(0, 0)" }], { duration: 80, easing: "ease-out" });
+    // Schnittkante, unter der der Bogen in der Maschine verschwindet (null: keine)
+    const klemme = (y: number | null, ms = 0) => {
+      schacht.style.transition = ms ? `clip-path ${ms}ms cubic-bezier(0.35, 0, 0.2, 1)` : "none";
+      schacht.style.clipPath = y === null ? "none" : `polygon(-60000px -60000px, 60000px -60000px, 60000px ${y}px, -60000px ${y}px)`;
+      huelle!.classList.toggle("vorspann--draussen", y === null);
     };
     // Eckhände: greifen an den oberen Ecken oder liegen außerhalb des Bildes
     function haende(z: "greift" | "weg", ms: number, nachR = 0) {
-      const raus = Math.max(1.25 * E, vw / (2 * Math.max(0.2, totale().z)) - Bw / 2 + 0.4 * E);
+      const raus = Math.max(1.25 * E, vw / (2 * Math.max(0.2, kameraZ)) - Bw / 2 + 0.4 * E);
       [[handR, 1], [handL, -1]].forEach(([h, s], i) => {
         const el = h as HTMLElement;
         const sx = s as number;
+        const verz = i ? nachR : 0;
         el.style.transition = ms
           ? z === "greift"
-            ? `transform ${ms}ms cubic-bezier(0.2, 0.75, 0.25, 1) ${i ? nachR : 0}ms, opacity ${ms * 0.4}ms ease ${i ? nachR : 0}ms`
-            : `transform ${ms}ms cubic-bezier(0.5, 0, 0.8, 0.4) ${i ? 50 : 0}ms, opacity ${ms * 0.35}ms ease ${ms * 0.65}ms`
+            ? `transform ${ms}ms cubic-bezier(0.2, 0.75, 0.25, 1) ${verz}ms, opacity ${ms * 0.35}ms ease ${verz}ms`
+            : `transform ${ms}ms cubic-bezier(0.35, 0, 0.4, 1) ${i ? 40 : 0}ms, opacity ${ms * 0.3}ms ease ${ms * 0.7}ms`
           : "none";
         el.style.transform = z === "greift" ? `scaleX(${sx})` : `translate(${sx * raus}px, ${-0.7 * eh}px) rotate(${sx * 9}deg) scaleX(${sx})`;
         el.style.opacity = z === "greift" ? "1" : "0";
@@ -474,14 +684,37 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     }
 
     // ---------- Federhand ----------
+    let fed: Feder = FEDERN.fein;
+    let federJetzt: FederName = "fein";
     let hw = 0, hh = 0;
-    const federGroesse = (w: number) => { hw = w; hh = (w * 602) / 900; feder.style.width = `${w}px`; };
-    let drehMitte = 0, drehSpanne = 1;
+    function federWahl(name: FederName) {
+      federJetzt = name;
+      fed = FEDERN[name];
+      hw = H * fed.groesse;
+      hh = (hw * fed.h) / fed.b;
+      for (const el of [feder, federSchatten]) {
+        el.querySelector("img")!.src = fed.src;
+        Object.assign(el.style, { width: `${hw}px`, transformOrigin: `${fed.sx * 100}% ${fed.sy * 100}%` });
+        el.style.setProperty("--a-oben", `${fed.ao * hh}px`);
+        el.style.setProperty("--a-hoehe", `${(fed.au - fed.ao) * hh}px`);
+        el.style.setProperty("--a-kachel", fed.aermel ? `url("${fed.aermel}")` : "none");
+      }
+    }
+    // Gelenkmodell: Der Ellbogen sitzt fest oben rechts außerhalb des Bildes. Wandert
+    // die Feder, schwenkt der Unterarm um ihn, und die Hand dreht sich mit.
+    let drehMitte = 0, drehY = 0, kratzLaut = 1;
     let federOrt: P = { x: 0, y: 0 };
+    // Abheben zeigt sich in der Draufsicht vor allem am Schatten, der sich von der Hand löst
     function federNach(p: P, hebung: number, jetzt: number) {
-      const drehung = -3 + ((p.x - drehMitte) / drehSpanne) * 4 + Math.sin(jetzt / 90) * 0.5 + Math.sin(jetzt / 47) * 0.3;
-      const s = 1 + 0.035 * hebung;
-      feder.style.transform = `translate(${p.x - 0.0021 * hw}px, ${p.y - 0.9933 * hh - hebung * hw * 0.05}px) rotate(${drehung}deg) scale(${s})`;
+      const arm = 1.6 * hw;
+      const ex = drehMitte + arm * 0.814;
+      const ey = drehY - arm * 0.58;
+      const schwenk = ((Math.atan2(ey - p.y, ex - p.x) - Math.atan2(ey - drehY, ex - drehMitte)) * 180) / Math.PI;
+      const drehung = -1.5 + klemmen(schwenk, -19, 22) + Math.sin(jetzt / 90) * 0.5 + Math.sin(jetzt / 47) * 0.3;
+      const x = p.x - fed.sx * hw;
+      const y = p.y - fed.sy * hh;
+      feder.style.transform = `translate(${x}px, ${y - hebung * hw * 0.022}px) rotate(${drehung}deg) scale(${1 + 0.05 * hebung})`;
+      federSchatten.style.transform = `translate(${x + 5 + 16 * hebung}px, ${y + 9 + 26 * hebung}px) rotate(${drehung}deg)`;
     }
     // Bewegung der Feder entlang einer Bahn; hebung > 0 heißt: Feder in der Luft
     function fahre(ms: number, bahn: (f: number) => P, hebung: (t: number) => number, beiSchritt?: (f: number) => void, kurve = weich) {
@@ -497,8 +730,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
           beiSchritt?.(f);
           const zittern = h > 0.02 ? 0 : 0.5;
           federNach({ x: p.x + Math.sin(jetzt / 37) * zittern, y: p.y + Math.cos(jetzt / 29) * zittern }, h, jetzt);
-          if (h <= 0.02) kratzen(Math.min(1, Math.hypot(p.x - vorher.x, p.y - vorher.y) / 5));
-          else kratzen(0);
+          kratzen(h <= 0.02 ? Math.min(1, Math.hypot(p.x - vorher.x, p.y - vorher.y) / 5) : 0, kratzLaut);
           vorher = p;
           federOrt = p;
           if (t < 1) requestAnimationFrame(schritt);
@@ -513,133 +745,165 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     // ---------- 1. Die Hand zeichnet den Kompass ----------
     const laengen = pfade.map((p) => p.getTotalLength());
     async function zeichnen() {
-      federGroesse(hw1);
-      drehMitte = L.left + 461 * k;
-      drehSpanne = L.width * 0.4;
+      federWahl("fein");
+      drehMitte = kMitte;
+      drehY = L.top + yT + 230 * k;
       const welt = (q: DOMPoint): P => ({ x: L.left + q.x * k, y: L.top + yT + q.y * k });
       let letzte = welt(pfade[0].getPointAtLength(0));
       federOrt = { x: letzte.x + hw * 0.9, y: letzte.y + hw * 0.55 };
-      federNach(federOrt, 1, 0);
-      feder.style.opacity = "1";
-      await schwebe(letzte, 340, 1);
+      federNach(federOrt, 1.4, 0);
+      huelle!.classList.add("vorspann--feder");
+      await schwebe(letzte, 480, 1.4);
+      await warte(60);
       for (let i = 0; i < pfade.length && !fertig; i++) {
         const pfad = pfade[i];
-        if (i > 0) await schwebe(welt(pfad.getPointAtLength(0)), 90, 0.8);
+        if (i > 0) await schwebe(welt(pfad.getPointAtLength(0)), 120, 0.9);
         // Strich erst jetzt freigeben: sonst zeigt die runde Strichkappe vorab einen Punkt
         pfad.setAttribute("stroke", "#fff");
         await fahre(Number(pfad.dataset.ms), (f) => welt(pfad.getPointAtLength(f * laengen[i])), () => 0, (f) => { pfad.style.strokeDashoffset = String(1.02 * (1 - f)); });
         letzte = federOrt;
       }
       // Feder hebt ab und verlässt das Bild
-      schwebe({ x: letzte.x + hw * 1.2, y: letzte.y - hw * 0.45 }, 420, 1.6);
-      setTimeout(() => { feder.style.opacity = "0"; }, 260);
-      await warte(140);
+      schwebe({ x: letzte.x + hw * 1.3, y: letzte.y - hw * 0.4 }, 520, 1.8);
+      setTimeout(() => huelle!.classList.remove("vorspann--feder"), 330);
+      await warte(260);
     }
 
     // ---------- 2. Zwei Hände legen den Bogen ein ----------
     async function einlegen() {
-      const t = totale();
-      setzeKamera(t.c, t.z, vw / 2, vh / 2, 660);
-      await warte(150);
-      haende("greift", 400, 70);
-      await warte(470);
-      // anheben: der freie Teil hängt durch
-      rascheln(0.35);
+      // Kamera zieht auf den Bogenkopf mit Händen auf
+      const a0 = ausschnitt(by + yT - 0.85 * eh, by + yT + Math.min(Bh, obenH + 0.2 * Bw));
+      setzeKamera(a0.c, a0.z, vw / 2, vh / 2, 800);
+      await warte(250);
+      haende("greift", 500, 90);
+      await warte(600);
+      // anheben: der freie Teil hängt durch, der Bogen kippt leicht
+      rascheln(0.4);
       papier("haengt");
       schattenAuf("schwebt");
-      setzeWagen({ x: 0, y: yT - 0.02 * Bw }, 270, "cubic-bezier(0.3, 0, 0.3, 1)", 1.025);
-      await warte(270);
-      // über die Walze und hinein; unterhalb der Walze verschwindet der Bogen
-      klemme(true);
+      setzeWagen({ x: 0, y: yT - 0.02 * Bw }, 380, "cubic-bezier(0.3, 0, 0.3, 1)", 1.025, -0.7);
+      await warte(400);
+      // zur Maschine tragen, vor der Walze gerade ausrichten, hinter die Walze führen; die Kamera folgt
+      klemme(klemmeOben);
       const Wein = { x: 0, y: Wstart.y - 0.05 * Bw };
-      setzeWagen(Wein, 760, "cubic-bezier(0.45, 0, 0.25, 1)");
-      setTimeout(() => schattenAuf("weg"), 250);
-      await warte(760);
-      // loslassen; die Walze zieht den Bogen auf die erste Zeile
-      haende("weg", 340);
+      const a1 = ausschnitt(by + Wein.y - 0.85 * eh, S.y + 0.22 * Mh);
+      setzeKamera(a1.c, a1.z, vw / 2, vh / 2, 1200, "cubic-bezier(0.45, 0, 0.25, 1)");
+      setzeWagen({ x: 0, y: Wein.y - 0.12 * Bw }, 900, "cubic-bezier(0.45, 0, 0.35, 1)", 1.01, 0.3);
+      setTimeout(() => schattenAuf("weg"), 340);
+      await warte(900);
+      setzeWagen(Wein, 340, "cubic-bezier(0.3, 0, 0.3, 1)", 1, 0);
+      await warte(360);
+      // loslassen; die Walze zieht den Bogen nach vorn auf die erste Zeile
+      haende("weg", 520);
       walzeAn(Wstart);
       papier("tippt");
-      ratsche(7, 45, 0.18);
-      await warte(90);
-      setzeWagen(Wstart, 520, "cubic-bezier(0.35, 0, 0.2, 1)");
-      setzeKamera(S, z3, vw / 2, vh * 0.6, 640);
-      await warte(650);
+      await warte(150);
+      ratsche(9, 60);
+      klemme(klemmeTipp, 700);
+      setzeWagen(Wstart, 700, "cubic-bezier(0.35, 0, 0.2, 1)");
+      const zi = zeilenInfo[anschlaege[0].zeile];
+      setzeKamera(S, zi.zoom, klemmen(vw / 2 + zi.folgen * zi.zoom * (anschlaege[0].p.x - zi.mitte), vw * 0.15, vw * 0.85), vh * 0.6, 820);
+      await warte(840);
     }
 
     // ---------- 3. Die Maschine tippt ----------
     async function tippen() {
       let uhr = performance.now();
-      const bis = (ms: number) => { uhr += ms; const rest = uhr - performance.now(); return rest > 1 ? warte(rest) : Promise.resolve(); };
+      // nach Takt der Uhr; liegt der Film zurück (etwa nach einem App-Wechsel), wird nicht nachgeholt
+      const bis = (ms: number) => {
+        uhr += ms;
+        const jetzt = performance.now();
+        if (jetzt - uhr > 120) uhr = jetzt;
+        const rest = uhr - jetzt;
+        return rest > 1 ? warte(rest) : Promise.resolve();
+      };
+      const mensch = (t: number) => t * (0.72 + 0.56 * zufall()) * (zufall() < 0.05 ? 1.7 : 1);
       let zeileJetzt = anschlaege[0].zeile;
       for (const a of anschlaege) {
         if (fertig) return W(a.p);
         const w = W(a.p);
+        const zi = zeilenInfo[a.zeile];
+        const sx = klemmen(vw / 2 + zi.folgen * zi.zoom * (a.p.x - zi.mitte), vw * 0.15, vw * 0.85);
         if (a.zeile !== zeileJetzt) {
-          // Wagenrücklauf mit Zeilenschaltung
+          // Wagenrücklauf mit Zeilenschaltung: Hebel, Ratsche, Ruck
+          if (zeileJetzt === daten.zeilen.length && widmung) {
+            const wd = widmung;
+            setTimeout(() => { wd.style.transition = "color 1.8s ease, opacity 1.8s ease"; wd.style.color = ""; wd.style.opacity = ""; }, 500);
+          }
           zeileJetzt = a.zeile;
-          ratsche(3, 22, 0.2);
-          rauschen(0.12, "bandpass", 900, 0.12, 1);
+          ratsche(3, 28);
+          rauschen(0.16, "bandpass", 800, 0.1, 1);
+          ruck();
+          rumms(1, true);
           walzeAn(w);
-          setzeWagen(w, 92, "cubic-bezier(0.5, 0, 0.3, 1)");
-          await bis(95);
+          const ms = Math.round(150 + 45 * zufall());
+          setzeWagen(w, ms, "cubic-bezier(0.5, 0, 0.3, 1)");
+          setzeKamera(S, zi.zoom, sx, vh * 0.6, ms + 60, "cubic-bezier(0.4, 0, 0.3, 1)");
+          await bis(ms + 30);
         } else {
           // Der Wagen rückt vor, dann schlägt die Type an
-          const m = Math.min(a.tab ? 40 : 30, a.takt * 0.8);
+          const t = mensch(a.takt) + a.pause;
+          const m = Math.min(a.tab ? 60 : 34, t * 0.7);
           setzeWagen(w, m, "ease-out");
-          await bis(m);
+          setzeKamera(S, zi.zoom, sx, vh * 0.6, m + 40, "cubic-bezier(0.3, 0, 0.3, 1)");
+          await bis(t);
         }
         a.zeigen();
         taste(a.laut);
         stoss(a.laut);
-        await bis(Math.max(3, a.takt - Math.min(a.tab ? 40 : 30, a.takt * 0.8)));
+        rumms(a.laut);
       }
       glocke();
-      await warte(120);
+      await warte(260);
       // Wagen zurück in die Mitte, Bogen ein Stück hoch
       const ende = { x: 0, y: W(anschlaege[anschlaege.length - 1].p).y - 0.04 * Bw };
-      ratsche(5, 22, 0.2);
-      rauschen(0.16, "bandpass", 900, 0.14, 1);
+      ratsche(5, 28);
+      rauschen(0.18, "bandpass", 800, 0.12, 1);
+      ruck();
       walzeAn(ende);
-      setzeWagen(ende, 240, "cubic-bezier(0.5, 0, 0.3, 1)");
-      await warte(245);
+      setzeWagen(ende, 320, "cubic-bezier(0.5, 0, 0.3, 1)");
+      await warte(340);
       return ende;
     }
 
     // ---------- 4. Herausnehmen und an den Seitenkopf legen ----------
-    async function herausnehmen() {
-      const t = totale();
-      setzeKamera(t.c, t.z, vw / 2, vh / 2, 560);
-      await warte(110);
-      haende("greift", 380, 60);
-      await warte(420);
-      // nach oben aus der Walze ziehen; unten kommt der Bogen frei und hängt
+    async function herausnehmen(ende: P) {
+      // eine Bewegung: erst so weit auf, dass Hände und Walze im Bild sind, dann mit dem Bogen nach oben
+      const a0 = ausschnitt(by + ende.y - 0.85 * eh, S.y + 0.16 * Mh);
+      setzeKamera(a0.c, a0.z, vw / 2, vh / 2, 700);
+      await warte(200);
+      haende("greift", 460, 70);
+      await warte(560);
+      // Papierlöser, dann herausziehen; unten kommt der Bogen frei und hängt
+      rauschen(0.05, "bandpass", 1200, 0.2, 2);
       papier("haengt");
-      rascheln(0.5);
-      ratsche(4, 40, 0.14);
-      setzeWagen({ x: 0, y: yT - 0.03 * Bw }, 560, "cubic-bezier(0.4, 0, 0.3, 1)", 1.025);
-      await warte(565);
-      klemme(false);
-      schattenAuf("schwebt");
-      // an seinen Platz tragen und hinlegen; die Maschine fährt aus dem Bild
+      rascheln(0.6);
+      ratsche(4, 45, 0.12);
       const r = linierRahmen();
       const rahmenUnten = r.z < 1 ? r.c.y + vh / (2 * r.z) : vh;
       const weg = Math.max(0, rahmenUnten - (S.y - 0.255 * Mh) + 40);
+      setzeWagen({ x: 0, y: yT - 0.03 * Bw }, 1000, "cubic-bezier(0.4, 0, 0.3, 1)", 1.025, 0.5);
+      if (r.z < 1) setzeKamera(r.c, r.z, vw / 2, vh / 2, 1100, "cubic-bezier(0.4, 0, 0.3, 1)");
+      else kameraRuhe(1100, "cubic-bezier(0.4, 0, 0.3, 1)");
       for (const m of maschinen) {
-        m.style.transition = "transform 800ms cubic-bezier(0.5, 0, 0.75, 0)";
+        m.style.transition = "transform 1300ms cubic-bezier(0.5, 0, 0.75, 0) 200ms";
         m.style.transform = `translateY(${weg}px)`;
       }
-      setzeWagen({ x: 0, y: 0 }, 720, "cubic-bezier(0.4, 0, 0.25, 1)");
-      if (r.z < 1) setzeKamera(r.c, r.z, vw / 2, vh / 2, 720);
-      else kameraRuhe(720);
-      setTimeout(() => { papier(""); schattenAuf("liegt"); rascheln(0.25); }, 400);
-      await warte(730);
-      haende("weg", 420);
+      await warte(1010);
+      klemme(null);
+      schattenAuf("schwebt");
+      // hinlegen: unten setzt der Bogen zuerst auf, ohne Rückfedern; dann sofort loslassen
+      setzeWagen({ x: 0, y: 0 }, 520, "cubic-bezier(0.3, 0, 0.25, 1)");
+      setTimeout(() => { papier(""); schattenAuf("liegt"); rascheln(0.3); }, 220);
+      await warte(480);
+      haende("weg", 520);
+      await warte(100);
     }
 
-    // ---------- 5. Lineal und Feder ziehen die Linien ----------
-    function legeLineal(oberkante: number, ms: number, kurve = "cubic-bezier(0.4, 0, 0.2, 1)") {
+    // ---------- 5. Lineal und Federn ziehen die Linien ----------
+    function legeLineal(oberkante: number, ms: number, kurve = "cubic-bezier(0.4, 0, 0.2, 1)", x = M.left + M.width / 2 - Rw / 2) {
       linealGruppe.style.transition = ms ? `transform ${ms}ms ${kurve}` : "none";
-      linealGruppe.style.transform = `translate(${M.left + M.width / 2 - Rw / 2}px, ${oberkante}px)`;
+      linealGruppe.style.transform = `translate(${x}px, ${oberkante}px)`;
     }
     function sternBahn(st: (typeof tl.sterne)[number], f: number): P {
       // Spitzen links, oben, rechts, unten; die Kanten leicht nach innen gewölbt
@@ -652,57 +916,72 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     }
     const stern = (i: number, ms: number) => fahre(ms, (f) => sternBahn(tl.sterne[i], f), () => 0, (f) => sterne[i].style.setProperty("--bogen", `${Math.min(360, f * 360 + 14)}deg`), (t) => t);
     async function linieren() {
-      federGroesse(hw5);
+      federWahl("fein");
+      kratzLaut = 1.6;
       drehMitte = M.left + M.width / 2;
-      drehSpanne = M.width / 2;
       const r = linierRahmen();
       const unten = r.z < 1 ? r.c.y + vh / (2 * r.z) : vh;
       const rechts = r.z < 1 ? r.c.x + vw / (2 * r.z) : vw;
+      const links = r.z < 1 ? r.c.x - vw / (2 * r.z) : 0;
       const theY = L.top + tl.strich * k;
+      drehY = (theY + (linien.length ? linien[linien.length - 1].y : theY)) / 2;
       const anfang: P = { x: L.left + tl.links[0] * k, y: theY };
-      // Lineal mit der linken Hand von unten heran, Feder von rechts
-      legeLineal(unten + 30, 0);
+      // Federwechsel außerhalb des Bildes
+      const wechsel = async (name: FederName, ziel: P) => {
+        if (name === federJetzt) return schwebe(ziel, 360, 1.4);
+        await schwebe({ x: rechts + 30, y: federOrt.y + hw * 0.15 }, 200, 1.6);
+        federWahl(name);
+        federOrt = { x: rechts + 30, y: ziel.y + hw * 0.2 };
+        federNach(federOrt, 1.6, 0);
+        await schwebe(ziel, 340, 1.6);
+      };
+      // Lineal mit flach aufgelegter Hand von unten links heran, Feder von rechts
+      legeLineal(unten + 40, 0, undefined, links - Rw * 0.3);
       linealGruppe.style.opacity = "1";
       await warte(20);
-      legeLineal(theY + 2.2 * k + 1, 420, "cubic-bezier(0.2, 0.7, 0.2, 1)");
-      federOrt = { x: rechts + hw * 0.1, y: anfang.y + hw * 0.5 };
-      federNach(federOrt, 1.5, 0);
-      feder.style.opacity = "1";
-      await schwebe(anfang, 430, 1.5);
-      // links ziehen, über THE absetzen, rechts weiter
+      legeLineal(theY + 2.2 * k + 1, 540, "cubic-bezier(0.2, 0.7, 0.2, 1)");
+      federOrt = { x: rechts + 30, y: anfang.y + hw * 0.4 };
+      federNach(federOrt, 1.6, 0);
+      huelle!.classList.add("vorspann--feder");
+      await schwebe(anfang, 560, 1.6);
+      await warte(40);
+      // links ziehen, über THE sichtbar absetzen, rechts weiter
       const linieAuf = (el: HTMLElement, a: number, b: number) => (f: number) => el.style.setProperty("--rechts", rechtsBis(a + (b - a) * f));
-      await ziehe({ x: L.left + tl.links[1] * k, y: theY }, 210, linieAuf(theLinien[0], tl.links[0], tl.links[1]));
-      await schwebe({ x: L.left + tl.rechts[0] * k, y: theY }, 270, 2);
-      await ziehe({ x: L.left + tl.rechts[1] * k, y: theY }, 210, linieAuf(theLinien[1], tl.rechts[0], tl.rechts[1]));
+      await ziehe({ x: L.left + tl.links[1] * k, y: theY }, 300, linieAuf(theLinien[0], tl.links[0], tl.links[1]));
+      await schwebe({ x: L.left + tl.rechts[0] * k, y: theY }, 340, 2.2);
+      await ziehe({ x: L.left + tl.rechts[1] * k, y: theY }, 300, linieAuf(theLinien[1], tl.rechts[0], tl.rechts[1]));
       // Lineal weiter nach unten; die Feder setzt die beiden Sterne von Hand
-      const [dick, ...rest] = linien;
-      if (dick) legeLineal(dick.unten + 1, 300);
-      await schwebe(sternBahn(tl.sterne[1], 0), 70, 0.5);
-      await stern(1, 120);
-      await schwebe(sternBahn(tl.sterne[0], 0), 210, 1.4);
-      await stern(0, 120);
-      // Striche am Lineal entlang, jeder von links nach rechts
-      for (const [i, s] of [dick, ...rest].entries()) {
-        if (fertig || !s) return;
-        if (i > 0) legeLineal(s.unten + 1, 230);
-        await schwebe({ x: s.x0, y: s.y }, i ? 220 : 190, 1.3);
-        await ziehe({ x: s.x1, y: s.y }, 270, (f) => s.el.style.setProperty("--zug", String(f)));
+      if (linien[0]) legeLineal(linien[0].unten + 1, 460);
+      await schwebe(sternBahn(tl.sterne[1], 0), 100, 0.6);
+      await stern(1, 170);
+      await schwebe(sternBahn(tl.sterne[0], 0), 290, 1.5);
+      await stern(0, 170);
+      // Striche am Lineal entlang, jeder mit seiner Feder: breit, fein, Doppelreißfeder
+      for (const [i, s] of linien.entries()) {
+        if (fertig) return;
+        if (i > 0) legeLineal(s.unten + 1, 400);
+        await wechsel(s.feder, { x: s.x0, y: s.y });
+        await ziehe({ x: s.x1, y: s.y }, 440, (f) => s.el.style.setProperty("--zug", String(f)));
       }
-      // Feder und Lineal verlassen das Bild
-      schwebe({ x: rechts + hw * 0.2, y: federOrt.y + hw * 0.4 }, 380, 1.5);
-      legeLineal(unten + 40, 420, "cubic-bezier(0.5, 0, 0.8, 0.4)");
-      if (r.z < 1) { await warte(200); kameraRuhe(600); await warte(560); }
-      else await warte(220);
+      // Feder weg, dann Lineal samt Hand vom Blatt nehmen
+      await schwebe({ x: rechts + 40, y: federOrt.y + hw * 0.3 }, 360, 1.8);
+      huelle!.classList.remove("vorspann--feder");
+      legeLineal(unten + 60, 520, "cubic-bezier(0.5, 0, 0.8, 0.5)", links - Rw * 0.25);
+      await warte(440);
+      if (r.z < 1) { kameraRuhe(600); await warte(600); }
     }
 
-    // ---------- Schluss: Bogen wird zur Seite ----------
+    // ---------- 6. Druck: Die Ausgabe erscheint unter dem Kopf ----------
     let entfernt = false;
     function entfernen() {
       if (entfernt) return;
       entfernt = true;
+      fertig = true;
       html.classList.remove("vorspann-an", "vorspann-film");
       huelle!.remove();
-      ton?.close().catch(() => {});
+      schalter?.remove();
+      stille?.pause();
+      setTimeout(() => ton?.close().catch(() => {}), 2500);
       try { history.scrollRestoration = "auto"; } catch {}
     }
     function schluss(schnell = false) {
@@ -717,32 +996,41 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       linien.forEach((s) => s.el.style.setProperty("--zug", "1"));
       kopieZeichen.forEach((s) => s.classList.add("da"));
       if (aktivText) aktivText.style.backgroundSize = "";
+      if (widmung) Object.assign(widmung.style, { color: "", opacity: "" });
       papier("");
-      klemme(false);
+      klemme(null);
       haende("weg", schnell ? 300 : 0);
-      // Feder und Lineal verschwinden mit dem Filmbild, nicht erst nach ihrem Abgang
+      huelle!.classList.remove("vorspann--feder");
       linealGruppe.style.transition = `${linealGruppe.style.transition || "transform 0s"}, opacity 0.25s ease`;
       linealGruppe.style.opacity = "0";
-      feder.style.opacity = "0";
       const dauer = schnell ? 450 : 0;
       for (const m of maschinen) { m.style.transition = `opacity ${dauer}ms ease`; m.style.opacity = "0"; }
       setzeWagen({ x: 0, y: 0 }, dauer);
       kameraRuhe(dauer);
-      huelle!.classList.add("vorspann--ende");
-      setTimeout(() => huelle!.classList.add("vorspann--weg"), dauer + 500);
-      setTimeout(entfernen, dauer + 1000);
+      setTimeout(() => {
+        huelle!.classList.add("vorspann--ende");
+        // Druck: Der Inhalt der Ausgabe erscheint frisch gedruckt unter dem Kopf
+        html.classList.add("cc-druck");
+        setTimeout(() => html.classList.remove("cc-druck"), 1400);
+        if (!schnell) signatur();
+      }, dauer);
+      setTimeout(entfernen, dauer + 750);
     }
 
     async function film() {
       setzeWagen({ x: 0, y: yT });
       papier("");
       schattenAuf("liegt");
-      const mitte: P = { x: L.left + 461 * k, y: L.top + 215 * k + yT };
+      const mitte: P = { x: kMitte, y: L.top + 215 * k + yT };
       setzeKamera(mitte, z1, vw / 2, vh * 0.47);
       huelle!.classList.add("vorspann--sichtbar", "vorspann--laeuft");
+      if (tonWunsch !== "aus") {
+        tonBereit(false);
+        setTimeout(() => { if (ton && ton.state === "running") { tonAn = true; tonZeigen(); } }, 120);
+      }
       await warte(40);
       // langsame Fahrt auf den Bogen zu, während die Feder zeichnet
-      setzeKamera(mitte, z1 * 1.06, vw / 2, vh * 0.47, 2300, "linear");
+      setzeKamera(mitte, z1 * 1.07, vw / 2, vh * 0.47, 3000, "linear");
       await warte(120);
       await zeichnen();
       if (fertig) return;
@@ -750,20 +1038,39 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       if (!(await rechtzeitig([...maschinen, handR, zeilenEl[0].querySelector("img")!]))) return schluss(true);
       await einlegen();
       if (fertig) return;
-      await tippen();
+      const ende = await tippen();
       if (fertig) return;
-      await herausnehmen();
+      await herausnehmen(ende);
       if (fertig) return;
-      if (!(await rechtzeitig([lineal, linealHand]))) return schluss(true);
+      if (!(await rechtzeitig([lineal, linealHandBild, ...Object.values(FEDERN).flatMap((f) => [f.src, f.aermel]).map((src) => Object.assign(new Image(), { src }))]))) return schluss(true);
       await linieren();
       if (fertig) return;
       schluss();
     }
 
-    huelle.addEventListener("click", () => schluss(true));
-    addEventListener("keydown", () => schluss(true), { once: true });
+    // Überspringen: Klick, Taste, Mausrad, Wischen (nicht auf dem Ton-Knopf)
+    const amKnopf = (e: Event) => e.target instanceof Node && tonKnopf.contains(e.target);
+    huelle.addEventListener("click", (e) => { if (!amKnopf(e)) schluss(true); });
+    const taste_ = (e: KeyboardEvent) => {
+      if (["Tab", "Shift", "Control", "Alt", "Meta"].includes(e.key) || amKnopf(e)) return;
+      removeEventListener("keydown", taste_);
+      schluss(true);
+    };
+    addEventListener("keydown", taste_);
     addEventListener("wheel", () => schluss(true), { once: true, passive: true });
-    addEventListener("touchmove", () => schluss(true), { once: true, passive: true });
+    addEventListener("touchmove", (e) => { if (!amKnopf(e)) schluss(true); }, { passive: true });
+    // Fenster gedreht oder verändert: Die Landung stimmt nicht mehr, der Film blendet sofort aus
+    addEventListener("resize", () => {
+      if (!aufgebaut || entfernt) return;
+      if (Math.abs(innerWidth - vw) > 2 || Math.abs(innerHeight - vh) > 140) {
+        fertig = true;
+        huelle!.classList.add("vorspann--abbruch");
+        setTimeout(entfernen, 320);
+      }
+    });
+    // App-Wechsel oder Seite verlassen: Film beenden, die Seite steht bereit
+    document.addEventListener("visibilitychange", () => { if (document.hidden && !entfernt) entfernen(); });
+    addEventListener("pagehide", () => entfernen());
 
     // Start, sobald Federhand, Kompass und Schriften da sind und die Skripte der
     // Seite gelaufen sind; der Rest lädt während des Zeichnens. Fehlt das drei
@@ -772,7 +1079,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
     function geladen(i: HTMLImageElement) {
       return i.complete && i.naturalWidth > 0 ? Promise.resolve() : new Promise<void>((r) => { i.addEventListener("load", () => r(), { once: true }); i.addEventListener("error", () => r(), { once: true }); });
     }
-    const rechtzeitig = (bilder: HTMLImageElement[], ms = 1200) => Promise.race([Promise.all(bilder.map(geladen)).then(() => true), warte(ms).then(() => false)]);
+    const rechtzeitig = (bilder: HTMLImageElement[], ms = 1500) => Promise.race([Promise.all(bilder.map(geladen)).then(() => true), warte(ms).then(() => false)]);
     const kompassBild = new Image();
     kompassBild.src = huelle.querySelector("svg image")!.getAttribute("href")!;
     const seiteFertig = new Promise<void>((r) => {
@@ -780,7 +1087,7 @@ const band = `--oben: ${pz(tl.oben, LH)}; --unten: ${pz(LH - tl.unten, LH)};`;
       else setTimeout(r, 0);
     });
     const schriften = (document.fonts?.ready ?? Promise.resolve()).then(() => {}, () => {});
-    const bereit = Promise.all([geladen(feder), geladen(kompassBild), seiteFertig, schriften]).then(() => true);
+    const bereit = Promise.all([geladen(federBild), geladen(kompassBild), seiteFertig, schriften]).then(() => true);
     // Frist ab Beginn des Seitenaufrufs: Wer schon drei Sekunden gewartet hat, bekommt die Seite
     const zuSpaet = new Promise<boolean>((r) => setTimeout(() => r(false), Math.max(150, 3000 - performance.now())));
     Promise.race([bereit, zuSpaet]).then((ok) => {

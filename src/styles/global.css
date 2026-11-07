@@ -988,7 +988,8 @@ figure.chart, figure.kurschart {
    Die Welt (Bogen, Maschine, Hände, Lineal) liegt in Seitenkoordinaten in
    der Kamera. Die Kamera fährt per transform; in Ruhelage liegt der Bogen
    deckungsgleich auf dem Seitenkopf. Der Film bleibt immer hell, wie ein
-   alter Abzug; Bewegungen laufen flüssig, nur Korn und Flackern springen. */
+   alter Abzug; Bewegungen laufen flüssig, Flimmern, Bildstand, Kratzer und
+   Staub springen im Projektortakt von 18 Bildern je Sekunde. */
 .vorspann { display: none; }
 html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann-an body { overflow: hidden; }
@@ -996,6 +997,7 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   --vp-tisch: #e6dcc7;
   --vp-blatt: #fbf7ee;
   --vp-tinte: #111111;
+  --vp-sepia: #2a1f12;
   /* Die Kopie des Seitenkopfs ist immer mit dunkler Tinte gedruckt */
   --papier: #f4efe6;
   --tinte: #111111;
@@ -1010,53 +1012,74 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   cursor: pointer;
   color: var(--tinte);
   background: var(--vp-tisch);
-  transition: background-color 0.7s ease;
 }
 .vorspann__bildstand { position: absolute; inset: 0; }
-.vorspann--laeuft .vorspann__bildstand { animation: vorspann-bildstand 0.48s steps(1) infinite; }
+.vorspann--laeuft .vorspann__bildstand { animation: vorspann-bildstand 0.667s steps(1) infinite; }
 @keyframes vorspann-bildstand {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(0.6px, -0.5px); }
-  50% { transform: translate(-0.5px, 0.4px); }
-  75% { transform: translate(0.3px, 0.7px); }
+  0.000% { transform: translate(-1.04px, 1.04px); }
+  8.333% { transform: translate(1.27px, -0.18px); }
+  16.667% { transform: translate(-0.75px, 0.65px); }
+  25.000% { transform: translate(-0.95px, 1.08px); }
+  33.333% { transform: translate(-0.84px, 0.29px); }
+  41.667% { transform: translate(-0.37px, -0.47px); }
+  50.000% { transform: translate(0.42px, 0.24px); }
+  58.333% { transform: translate(-1.09px, 0.37px); }
+  66.667% { transform: translate(-0.73px, 0.61px); }
+  75.000% { transform: translate(-1.09px, -0.07px); }
+  83.333% { transform: translate(0.71px, -0.47px); }
+  91.667% { transform: translate(-1.13px, 0.10px); }
 }
 .vorspann__kamera { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
-.vorspann__ruettler { position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.45s ease; }
+.vorspann__ruettler { position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 0.25s ease; }
 .vorspann--sichtbar .vorspann__ruettler { opacity: 1; }
 
 /* Maschine in zwei Ebenen: hinten die Walze, vorn alles ab der Papierführung */
 .vorspann__maschine { position: absolute; z-index: 1; height: auto; max-width: none; }
 .vorspann__maschine--vorn { z-index: 3; clip-path: inset(26.2% 0 0 0); }
 
-/* Schacht: Unterhalb der Walze verschwindet der Bogen in der Maschine */
+/* Schacht: Unterhalb der Schnittkante (Walze) verschwindet der Bogen in der Maschine */
 .vorspann__schacht { position: absolute; left: 0; top: 0; z-index: 2; }
-.vorspann--klemme .vorspann__schacht { clip-path: polygon(-60000px -60000px, 60000px -60000px, 60000px var(--klemme), -60000px var(--klemme)); }
 .vorspann--draussen .vorspann__schacht { z-index: 4; }
 .vorspann__wagen { position: absolute; left: 0; top: 0; will-change: transform; }
-.vorspann__wagen { transform-origin: 0 0; }
 
-/* Schatten auf dem Tisch: eng, solange der Bogen liegt, weich und versetzt,
-   solange er in der Hand schwebt */
-.vorspann__schatten { position: absolute; border-radius: 2px; background: rgba(52, 36, 16, 0.5); transition: opacity 0.45s ease, transform 0.6s cubic-bezier(0.3, 0, 0.2, 1); }
+/* Schatten auf dem Tisch: eng, solange der Bogen liegt; beim Anheben reißt er
+   sofort ab, und der weiche Schwebeschatten hat die Höhe des hängenden Bogens */
+.vorspann__schatten { position: absolute; border-radius: 2px; background: rgba(52, 36, 16, 0.5); transform-origin: 50% 0; transition: opacity 0.45s ease, transform 0.6s cubic-bezier(0.3, 0, 0.2, 1); }
 .vorspann__schatten--kontakt { filter: blur(3px); opacity: 0; transform: translate(0, 2px); }
-.vorspann__schatten--schwebe { filter: blur(24px); opacity: 0; transform: translate(0, 0); }
+.vorspann__schatten--schwebe { filter: blur(24px); opacity: 0; transform: translate(0, 0) scaleY(var(--schatten-sy, 0.8)); }
 [data-schatten="liegt"] .vorspann__schatten--kontakt { opacity: 0.5; }
-[data-schatten="schwebt"] .vorspann__schatten--schwebe { opacity: 0.42; transform: translate(1.2%, 3.2%); }
+[data-schatten="schwebt"] .vorspann__schatten--kontakt,
+[data-schatten="weg"] .vorspann__schatten--kontakt { transition: opacity 0.06s linear; }
+[data-schatten="schwebt"] .vorspann__schatten--schwebe { opacity: 0.38; transform: translate(1.2%, 3.2%) scaleY(var(--schatten-sy, 0.8)); }
 
 /* Der Bogen verhält sich wie Papier. Oben der Kopf, darunter vier Falzstreifen,
    die sich je ein Stück weiter biegen und verzögert folgen: In der Hand hängt
    der freie Teil durch und schwingt nach, in der Maschine lehnt der Teil über
-   der Walze leicht nach hinten, auf dem Tisch liegt alles glatt. */
+   der Walze nach hinten, abgelegt landet er von unten her ohne Rückfedern. */
 .vorspann__blatt {
   position: absolute;
   background: var(--vp-blatt);
   transform-style: preserve-3d;
   transform-origin: 50% 0;
   transform: perspective(var(--persp, 2400px)) rotateX(var(--kipp, 0deg));
-  transition: transform 0.5s cubic-bezier(0.3, 0.7, 0.3, 1), background-color 0.6s ease;
+  transition: transform 0.55s cubic-bezier(0.3, 0.7, 0.3, 1), background-color 0.5s ease;
 }
 [data-papier="haengt"] .vorspann__blatt { --kipp: -4deg; }
-[data-papier="tippt"] .vorspann__blatt { --kipp: 6deg; transform-origin: 50% var(--walze, 0px); }
+[data-papier="tippt"] .vorspann__blatt { --kipp: 9deg; transform-origin: 50% var(--walze, 0px); }
+/* Schattenkante, wo der Bogen über die Walze läuft */
+.vorspann__blatt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--walze, 0px) - 34px);
+  height: 34px;
+  background: linear-gradient(rgba(60, 40, 15, 0), rgba(60, 40, 15, 0.16));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+[data-papier="tippt"] .vorspann__blatt::after { opacity: 1; }
 .vorspann__flach { position: absolute; inset: 0; }
 .vorspann__falz {
   position: absolute;
@@ -1067,7 +1090,7 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   transform-style: preserve-3d;
   transform-origin: 50% 0;
   transform: rotateX(var(--knick, 0deg));
-  transition: transform 0.6s cubic-bezier(0.3, 1.45, 0.45, 1) calc(var(--n) * 45ms), background-color 0.6s ease;
+  transition: transform 0.5s cubic-bezier(0.25, 0.6, 0.3, 1) calc((5 - var(--n)) * 40ms), background-color 0.5s ease;
 }
 .vorspann__falz::before {
   content: "";
@@ -1075,9 +1098,11 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   inset: 0;
   background: linear-gradient(rgba(74, 52, 22, calc(0.14 * (var(--n) - 1) / 4)), rgba(74, 52, 22, calc(0.14 * var(--n) / 4)));
   opacity: var(--licht, 0);
-  transition: opacity 0.5s ease calc(var(--n) * 45ms);
+  transition: opacity 0.5s ease;
 }
-[data-papier="haengt"] .vorspann__falz { --knick: -10deg; --licht: 1; }
+[data-papier="haengt"] .vorspann__falz { --knick: -10deg; --licht: 1; transition: transform 0.65s cubic-bezier(0.3, 1.45, 0.45, 1) calc(var(--n) * 45ms), background-color 0.5s ease; }
+.vorspann--messen .vorspann__blatt,
+.vorspann--messen .vorspann__falz { transition: none !important; }
 
 /* Briefkopf: Kopie des Seitenkopfs, Logo in Zeilen, Linien zum Ziehen */
 .vorspann__kopie { position: absolute; pointer-events: none; }
@@ -1087,7 +1112,10 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann__kopie .hauptnav { border-color: transparent !important; }
 .vorspann__kopie .hauptnav__bild { display: none; }
 .vorspann__kopie .hauptnav__text { transition: none; }
-.vorspann__kopie .vz-z:not(.da) { opacity: 0; }
+.vorspann__kopie .vz-z { position: relative; }
+.vorspann__kopie .vz-z:not(.da),
+.vorspann__kopie .vz-z.spaeter { opacity: 0 !important; }
+.vorspann--ende .vorspann__kopie .vz-z { opacity: 1 !important; top: 0 !important; transition: opacity 0.4s ease; }
 .vorspann__kopf { position: absolute; }
 .vorspann__zeichnung { position: absolute; left: 0; top: 0; display: block; width: 100%; overflow: visible; }
 .vorspann__zeile { position: absolute; inset: 0; clip-path: inset(var(--oben) var(--rechts) var(--unten) var(--links, 0%)); }
@@ -1099,7 +1127,7 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
 .vorspann__linien { position: absolute; inset: 0; pointer-events: none; }
 .vorspann__strich { position: absolute; box-sizing: border-box; border-color: var(--vp-tinte); clip-path: inset(-2px calc((1 - var(--zug, 0)) * 100%) -2px 0); }
 
-/* Hände und Lineal */
+/* Hände, Federschatten und Lineal */
 .vorspann__hand {
   position: absolute;
   left: 0;
@@ -1107,17 +1135,52 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   height: auto;
   max-width: none;
   pointer-events: none;
-  filter: drop-shadow(0 10px 12px rgba(40, 28, 14, 0.28));
+  filter: drop-shadow(0 10px 12px rgba(40, 28, 14, 0.26));
 }
 .vorspann__hand--ecke { transform-origin: 31.05% 66.89%; opacity: 0; }
-.vorspann__hand--feder { z-index: 6; opacity: 0; transform-origin: 0.21% 99.33%; will-change: transform; transition: opacity 0.22s ease; }
+.vorspann__hand--feder { z-index: 6; opacity: 0; filter: none; will-change: transform; transition: opacity 0.22s ease; }
+.vorspann__hand--feder img,
+.vorspann__hand--lineal img,
+.vorspann__federschatten img { display: block; width: 100%; height: auto; max-width: none; }
+/* Der Ärmel läuft als Stoffkachel nahtlos weiter, weit aus dem Bild hinaus */
+.vorspann__aermel { position: absolute; left: calc(100% - 2px); top: var(--a-oben); width: 400%; height: var(--a-hoehe); background-image: var(--a-kachel); background-repeat: repeat-x; background-size: auto 100%; }
+.vorspann__aermel--links { left: auto; right: calc(100% - 2px); background-position: right top; }
+.vorspann__federschatten { position: absolute; left: 0; top: 0; z-index: 5; pointer-events: none; opacity: 0; filter: brightness(0) blur(5px); will-change: transform; transition: opacity 0.22s ease; }
+.vorspann--feder .vorspann__hand--feder { opacity: 1; }
+.vorspann--feder .vorspann__federschatten { opacity: 0.2; }
 .vorspann__linealgruppe { position: absolute; left: 0; top: 0; z-index: 5; opacity: 0; will-change: transform; }
 .vorspann__lineal { position: absolute; left: 0; top: 0; height: auto; max-width: none; filter: drop-shadow(0 3px 3px rgba(40, 28, 14, 0.3)); }
-.vorspann__hand--lineal { transform-origin: 31.05% 66.89%; transform: scaleX(-1); }
 
-/* Filmoberfläche: Sepia, Korn, Kratzer, Vignette mit Flackern */
-.vorspann__film { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; transition: opacity 0.8s ease; }
+/* Filmoberfläche: Sepia, Flimmern, Korn, Kratzer, Staub, weicher Lichtabfall */
+.vorspann__film { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; transition: opacity 0.55s ease; }
 .vorspann__film::before { content: ""; position: absolute; inset: 0; background: #a9844f; mix-blend-mode: color; opacity: 0.32; }
+.vorspann__flimmern { position: absolute; inset: 0; background: #1b1208; opacity: 0; animation: vorspann-flimmern 1.333s steps(1) infinite; }
+@keyframes vorspann-flimmern {
+  0.000% { opacity: 0.04; }
+  4.167% { opacity: 0.03; }
+  8.333% { opacity: 0.11; }
+  12.500% { opacity: 0.08; }
+  16.667% { opacity: 0.06; }
+  20.833% { opacity: 0.05; }
+  25.000% { opacity: 0.05; }
+  29.167% { opacity: 0.03; }
+  33.333% { opacity: 0.06; }
+  37.500% { opacity: 0.04; }
+  41.667% { opacity: 0.06; }
+  45.833% { opacity: 0.04; }
+  50.000% { opacity: 0.08; }
+  54.167% { opacity: 0.08; }
+  58.333% { opacity: 0.04; }
+  62.500% { opacity: 0.00; }
+  66.667% { opacity: 0.06; }
+  70.833% { opacity: 0.02; }
+  75.000% { opacity: 0.04; }
+  79.167% { opacity: 0.11; }
+  83.333% { opacity: 0.08; }
+  87.500% { opacity: 0.05; }
+  91.667% { opacity: 0.02; }
+  95.833% { opacity: 0.03; }
+}
 .vorspann__korn {
   position: absolute;
   inset: -60px;
@@ -1125,7 +1188,7 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   background-size: 180px 180px;
   opacity: 0.35;
   mix-blend-mode: multiply;
-  animation: vorspann-korn 0.6s steps(6) infinite;
+  animation: vorspann-korn 0.333s steps(6) infinite;
 }
 @keyframes vorspann-korn {
   0% { transform: translate(0, 0); }
@@ -1136,74 +1199,172 @@ html.vorspann-an { overflow: hidden; scrollbar-gutter: stable; }
   83% { transform: translate(-8px, 30px); }
   100% { transform: translate(0, 0); }
 }
-.vorspann__kratzer { position: absolute; top: 0; bottom: 0; left: 30%; width: 1px; background: rgba(60, 42, 20, 0.45); animation: vorspann-kratzer 2.3s steps(1) infinite; }
-@keyframes vorspann-kratzer {
-  0% { left: 23%; opacity: 0.55; }
-  12% { left: 71%; opacity: 0; }
-  30% { left: 44%; opacity: 0.4; }
-  47% { left: 12%; opacity: 0; }
-  63% { left: 83%; opacity: 0.45; }
-  80% { left: 58%; opacity: 0; }
+.vorspann__kratzer { position: absolute; top: -5%; bottom: -5%; width: 1px; opacity: 0; }
+.vorspann__kratzer--dunkel { background: rgba(50, 34, 16, 0.55); animation: vorspann-kratzer-d 1.333s steps(1) infinite; }
+.vorspann__kratzer--hell { width: 1.5px; background: rgba(255, 248, 230, 0.7); animation: vorspann-kratzer-h 1.333s steps(1) infinite 0.4s; }
+@keyframes vorspann-kratzer-d {
+  0.000% { left: 93.2%; opacity: 0.00; }
+  4.167% { left: 57.1%; opacity: 0.46; }
+  8.333% { left: 7.7%; opacity: 0.00; }
+  12.500% { left: 35.7%; opacity: 0.46; }
+  16.667% { left: 43.4%; opacity: 0.35; }
+  20.833% { left: 16.7%; opacity: 0.00; }
+  25.000% { left: 69.7%; opacity: 0.00; }
+  29.167% { left: 78.9%; opacity: 0.00; }
+  33.333% { left: 82.9%; opacity: 0.00; }
+  37.500% { left: 90.2%; opacity: 0.00; }
+  41.667% { left: 6.4%; opacity: 0.47; }
+  45.833% { left: 48.3%; opacity: 0.58; }
+  50.000% { left: 59.1%; opacity: 0.00; }
+  54.167% { left: 8.0%; opacity: 0.34; }
+  58.333% { left: 63.2%; opacity: 0.26; }
+  62.500% { left: 55.4%; opacity: 0.45; }
+  66.667% { left: 48.5%; opacity: 0.38; }
+  70.833% { left: 60.5%; opacity: 0.00; }
+  75.000% { left: 50.9%; opacity: 0.00; }
+  79.167% { left: 82.5%; opacity: 0.00; }
+  83.333% { left: 78.2%; opacity: 0.46; }
+  87.500% { left: 39.5%; opacity: 0.00; }
+  91.667% { left: 54.8%; opacity: 0.44; }
+  95.833% { left: 35.9%; opacity: 0.50; }
 }
-.vorspann__vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 48%, rgba(50, 34, 16, 0.55) 100%); animation: vorspann-flackern 2.4s linear infinite; }
-@keyframes vorspann-flackern {
-  0%, 100% { opacity: 1; }
-  6% { opacity: 0.8; }
-  8% { opacity: 1; }
-  37% { opacity: 0.9; }
-  39% { opacity: 1; }
-  71% { opacity: 0.84; }
-  73% { opacity: 1; }
+@keyframes vorspann-kratzer-h {
+  0.000% { left: 63.5%; opacity: 0.36; }
+  4.167% { left: 75.5%; opacity: 0.00; }
+  8.333% { left: 19.4%; opacity: 0.00; }
+  12.500% { left: 42.2%; opacity: 0.00; }
+  16.667% { left: 15.2%; opacity: 0.58; }
+  20.833% { left: 16.4%; opacity: 0.00; }
+  25.000% { left: 88.7%; opacity: 0.52; }
+  29.167% { left: 43.5%; opacity: 0.35; }
+  33.333% { left: 83.6%; opacity: 0.39; }
+  37.500% { left: 48.7%; opacity: 0.54; }
+  41.667% { left: 46.0%; opacity: 0.28; }
+  45.833% { left: 14.3%; opacity: 0.39; }
+  50.000% { left: 20.0%; opacity: 0.00; }
+  54.167% { left: 40.5%; opacity: 0.43; }
+  58.333% { left: 63.8%; opacity: 0.41; }
+  62.500% { left: 71.7%; opacity: 0.00; }
+  66.667% { left: 93.2%; opacity: 0.59; }
+  70.833% { left: 90.4%; opacity: 0.00; }
+  75.000% { left: 86.2%; opacity: 0.00; }
+  79.167% { left: 42.3%; opacity: 0.56; }
+  83.333% { left: 85.5%; opacity: 0.00; }
+  87.500% { left: 88.6%; opacity: 0.00; }
+  91.667% { left: 18.5%; opacity: 0.00; }
+  95.833% { left: 23.0%; opacity: 0.00; }
 }
+.vorspann__staub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 3px;
+  height: 2px;
+  border-radius: 50%;
+  background: rgba(40, 26, 12, 0.7);
+  box-shadow: 34vw 21vh 0 0.5px rgba(40, 26, 12, 0.6), -27vw -14vh 0 0 rgba(255, 248, 230, 0.75), 12vw -31vh 0 1px rgba(40, 26, 12, 0.45);
+  opacity: 0;
+  animation: vorspann-staub 1.333s steps(1) infinite;
+}
+@keyframes vorspann-staub {
+  0.000% { transform: translate(-20.2vw, -16.7vh) scale(0.79); opacity: 0.00; }
+  4.167% { transform: translate(31.8vw, 2.3vh) scale(1.03); opacity: 0.00; }
+  8.333% { transform: translate(3.6vw, -41.5vh) scale(0.62); opacity: 0.00; }
+  12.500% { transform: translate(16.2vw, 29.2vh) scale(0.96); opacity: 0.00; }
+  16.667% { transform: translate(-41.9vw, -33.5vh) scale(0.65); opacity: 0.00; }
+  20.833% { transform: translate(-11.5vw, 20.7vh) scale(1.59); opacity: 0.72; }
+  25.000% { transform: translate(-32.0vw, -42.2vh) scale(0.69); opacity: 0.62; }
+  29.167% { transform: translate(41.4vw, 15.8vh) scale(0.85); opacity: 0.00; }
+  33.333% { transform: translate(-10.9vw, 26.9vh) scale(0.96); opacity: 0.00; }
+  37.500% { transform: translate(20.0vw, 12.1vh) scale(1.35); opacity: 0.00; }
+  41.667% { transform: translate(-44.6vw, -16.2vh) scale(0.68); opacity: 0.00; }
+  45.833% { transform: translate(-17.2vw, 4.4vh) scale(0.86); opacity: 0.00; }
+  50.000% { transform: translate(-9.7vw, 40.1vh) scale(1.34); opacity: 0.00; }
+  54.167% { transform: translate(6.5vw, -2.3vh) scale(0.74); opacity: 0.00; }
+  58.333% { transform: translate(-20.7vw, 14.6vh) scale(1.03); opacity: 0.00; }
+  62.500% { transform: translate(-4.6vw, -13.4vh) scale(0.80); opacity: 0.00; }
+  66.667% { transform: translate(-11.4vw, -10.0vh) scale(1.24); opacity: 0.00; }
+  70.833% { transform: translate(27.4vw, 31.6vh) scale(1.39); opacity: 0.52; }
+  75.000% { transform: translate(-19.0vw, 44.8vh) scale(0.97); opacity: 0.00; }
+  79.167% { transform: translate(7.1vw, -21.3vh) scale(1.43); opacity: 0.51; }
+  83.333% { transform: translate(41.3vw, 23.9vh) scale(0.73); opacity: 0.89; }
+  87.500% { transform: translate(-37.2vw, 25.3vh) scale(1.52); opacity: 0.85; }
+  91.667% { transform: translate(-17.5vw, 12.7vh) scale(1.48); opacity: 0.00; }
+  95.833% { transform: translate(-26.6vw, 7.8vh) scale(0.76); opacity: 0.82; }
+}
+.vorspann__vignette { position: absolute; inset: 0; background: radial-gradient(ellipse 125% 110% at 50% 44%, rgba(255, 244, 220, 0.06) 0, transparent 46%, rgba(48, 32, 14, 0.22) 78%, rgba(36, 24, 10, 0.55) 100%); }
+
+/* Ton: Schild in Schreibmaschinenschrift, unten rechts, Gegenstück zum Hinweis links */
 .vorspann__ton {
   position: absolute;
   right: 14px;
   bottom: 14px;
   z-index: 7;
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  padding: 0;
-  border: 1px solid rgba(40, 28, 14, 0.35);
-  border-radius: 50%;
-  background: rgba(251, 247, 238, 0.85);
-  color: #2a1f12;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px 0 10px;
+  border: 1px solid rgba(42, 31, 18, 0.4);
+  border-radius: 2px;
+  background: rgba(244, 236, 220, 0.6);
+  color: var(--vp-sepia);
+  font-family: var(--schreibmaschine);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  animation: vorspann-ton-hinweis 2.2s ease 1s 2;
 }
-.vorspann__ton svg { width: 20px; height: 20px; }
+.vorspann__ton:focus-visible { outline: 1px solid var(--vp-sepia); outline-offset: 3px; }
+.vorspann__ton svg { width: 22px; height: 22px; flex: none; }
 .vorspann__ton-wellen { display: none; }
-.vorspann__ton.ist-an .vorspann__ton-wellen { display: inline; }
+.vorspann__ton.ist-an { background: rgba(42, 31, 18, 0.07); }
+.vorspann__ton.ist-an .vorspann__ton-wellen { display: inline; animation: vorspann-wellen 1.1s steps(2) infinite; }
 .vorspann__ton.ist-an .vorspann__ton-aus { display: none; }
+@keyframes vorspann-ton-hinweis {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(123, 30, 42, 0); }
+  50% { box-shadow: 0 0 0 4px rgba(123, 30, 42, 0.16); }
+}
+@keyframes vorspann-wellen { 50% { opacity: 0.45; } }
 .vorspann__hinweis {
   position: absolute;
   left: 16px;
-  bottom: 26px;
+  bottom: 30px;
   z-index: 7;
   font-family: var(--schreibmaschine);
   font-size: 11px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(42, 31, 18, 0.6);
 }
 
-/* Schluss: Der Bogen liegt deckungsgleich auf dem Seitenkopf. Tisch und
-   Papier gehen in die Seite über, dann gibt die Hülle die Seite frei. */
-.vorspann-an .vorspann--ende { background-color: var(--papier); pointer-events: none; }
+/* Schluss: Der Bogen liegt deckungsgleich auf dem Seitenkopf. Tisch, Papier und
+   Filmoberfläche gehen in einem Zug in die Seite über; der Inhalt erscheint
+   frisch gedruckt (Klasse cc-druck). */
+.vorspann-an .vorspann--ende { background-color: transparent; pointer-events: none; transition: background-color 0.6s ease; }
 .vorspann--ende .vorspann__bildstand { animation: none; }
 .vorspann--ende .vorspann__blatt,
 .vorspann--ende .vorspann__falz { background-color: transparent; transform: none; }
+.vorspann--ende .vorspann__blatt::after { opacity: 0; }
 .vorspann--ende .vorspann__schatten { opacity: 0 !important; }
 .vorspann--ende .vorspann__film,
 .vorspann--ende .vorspann__ton,
 .vorspann--ende .vorspann__hinweis { opacity: 0; transition: opacity 0.5s ease; }
-.vorspann-an .vorspann--weg { background-color: transparent; transition: background-color 0.45s ease; }
+.vorspann--abbruch { opacity: 0; transition: opacity 0.3s ease; pointer-events: none; }
 /* Im Dunkelmodus ist die Seite hell gedruckt: Der Bogen blendet direkt in sie über */
 @media (prefers-color-scheme: dark) {
-  .vorspann-an .vorspann--ende { background-color: transparent; transition: background-color 0.8s ease; }
-  .vorspann--ende .vorspann__ruettler { opacity: 0; transition: opacity 0.8s ease; }
+  .vorspann--ende .vorspann__ruettler { opacity: 0; transition: opacity 0.6s ease; }
 }
 @media print { .vorspann { display: none !important; } }
+/* Druck der Ausgabe nach dem Vorspann: kurzer Andruck, Tinte zieht an */
+.cc-druck main { animation: cc-druck 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes cc-druck {
+  0% { opacity: 0; transform: translateY(5px) scale(0.997); }
+  45% { opacity: 1; transform: translateY(-1px) scale(1.001); }
+  100% { opacity: 1; transform: none; }
+}
 
 /* ---------- Schreibmaschine (Erscheinungsbild) ---------- */
 

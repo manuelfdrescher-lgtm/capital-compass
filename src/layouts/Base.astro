@@ -74,6 +74,10 @@ const nav = [
           setTimeout(function () {
             if (!document.documentElement.classList.contains("vorspann-film")) document.documentElement.classList.remove("vorspann-an");
           }, 3500);
+          // Ein Klick auf die Wartefläche vor dem Filmstart zeigt die Seite sofort
+          document.addEventListener("click", function () {
+            if (!document.documentElement.classList.contains("vorspann-film")) document.documentElement.classList.remove("vorspann-an");
+          }, { once: true });
         }
       } catch (e) {}
     </script>
