@@ -1399,5 +1399,47 @@
     "file": null,
     "name": "Fevertree Drinks plc",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "berkshire": {
+    "file": "berkshire.svg",
+    "name": "Berkshire Hathaway Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Berkshire-Hathaway-Logo.svg",
+    "license": "Public domain",
+    "artist": "Berkshire Hathaway",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "daimlertruck": {
+    "file": "daimlertruck.svg",
+    "name": "Daimler Truck Holding AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Daimler_Truck_Logo.svg",
+    "license": "Public domain",
+    "artist": "Daimler Truck Holding AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "airbnb": {
+    "file": "airbnb.svg",
+    "name": "Airbnb, Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Airbnb_Logo_B%C3%A9lo.svg",
+    "license": "Public domain",
+    "artist": "DesignStudio",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "descartes": {
+    "file": null,
+    "name": "The Descartes Systems Group Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ypsomed": {
+    "file": "ypsomed.svg",
+    "name": "Ypsomed Holding AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_Ypsomed.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "mirion": {
+    "file": null,
+    "name": "Mirion Technologies, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

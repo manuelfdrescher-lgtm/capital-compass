@@ -98,3 +98,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-07-morning | ATOSS Software SE (AOF) | — _(rund 1,49 Mrd. €; ATOSS verbindet ein Software-Geschäftsmodell hoher Qualität mit beständigem Wachstum)_
 - 2026-11-07-morning | Medistim ASA (MEDI) | — _(rund 0,53 Mrd. €; Medistim verkauft Messgeräte für den Operationssaal nach dem Prinzip von Rasierer und Klinge)_
 - 2026-11-07-morning | Fevertree Drinks plc (FEVR) | — _(rund 1,24 Mrd. €; Fever-Tree ist eine markenstarke Premium-Marke mit Preissetzungsmacht und einem kapitalarmen Modell, da die Abfüllung ausgelagert ist)_
+- 2026-11-08-morning | The Descartes Systems Group Inc. (DSGX) | — _(rund 7,22 Mrd. €; Im zweiten Quartal des Geschäftsjahres 2027 (bis 31)_
+- 2026-11-08-morning | Ypsomed Holding AG (YPSN) | — _(rund 5,67 Mrd. €; Im Geschäftsjahr 2025/26 (bis 31)_
+- 2026-11-08-morning | Mirion Technologies, Inc. (MIR) | — _(rund 3,94 Mrd. €; Im dritten Quartal 2026 stieg der Umsatz um 24,5 Prozent auf 277,8 Millionen Dollar, organisch um 6,5 Prozent; der Rest kam aus den Zukäufen)_

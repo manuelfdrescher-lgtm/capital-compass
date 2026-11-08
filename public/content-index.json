@@ -209,6 +209,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-07-morning/",
       "headline": "SAP will die Software für eine Welt der KI-Agenten bauen"
+    },
+    {
+      "number": 31,
+      "date": "2026-11-08",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-08-morning/",
+      "headline": "SAPs Wette im KI-Zeitalter: Wer die Geschäftsdaten hütet, kontrolliert die Agenten"
     }
   ],
   "recentStockPicks": [
@@ -661,7 +668,22 @@
       "slug": "2026-11-07-morning",
       "name": "Fevertree Drinks plc (FEVR)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-08-morning",
+      "name": "The Descartes Systems Group Inc. (DSGX)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-08-morning",
+      "name": "Ypsomed Holding AG (YPSN)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-08-morning",
+      "name": "Mirion Technologies, Inc. (MIR)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-07T23:14:58.552Z"
+  "lastUpdated": "2026-11-08T10:50:26.302Z"
 }
