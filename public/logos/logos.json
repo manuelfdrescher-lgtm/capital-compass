@@ -1441,5 +1441,65 @@
     "file": null,
     "name": "Mirion Technologies, Inc.",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "aecom": {
+    "file": "aecom.png",
+    "name": "AECOM",
+    "source": "https://commons.wikimedia.org/wiki/File:AECOM_1c-black_rgb.png",
+    "license": "Public domain",
+    "artist": "Eetilley",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "salesforce": {
+    "file": "salesforce.svg",
+    "name": "Salesforce",
+    "source": "https://commons.wikimedia.org/wiki/File:Salesforce.com_logo.svg",
+    "license": "Public domain",
+    "artist": "™/®Salesforce.com",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "unitedhealth": {
+    "file": null,
+    "name": "UnitedHealth",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "siemens": {
+    "file": "siemens.svg",
+    "name": "Siemens AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Siemens_AG_logo.svg",
+    "license": "Public domain",
+    "artist": "Siemens AG.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "target": {
+    "file": "target.svg",
+    "name": "Target Corporation",
+    "source": "https://commons.wikimedia.org/wiki/File:Target_logo.svg",
+    "license": "Public domain",
+    "artist": "The original uploader was bob vaans from vans refrigaton at English Wikipedia.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "cisco": {
+    "file": "cisco.svg",
+    "name": "Cisco Systems, Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Cisco_logo.svg",
+    "license": "Public domain",
+    "artist": "Cisco",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "avontechnologies": {
+    "file": null,
+    "name": "Avon Technologies plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nakanishi": {
+    "file": null,
+    "name": "Nakanishi Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "oxfordinstruments": {
+    "file": null,
+    "name": "Oxford Instruments plc",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

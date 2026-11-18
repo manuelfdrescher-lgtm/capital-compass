@@ -216,6 +216,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-08-morning/",
       "headline": "SAPs Wette im KI-Zeitalter: Wer die Geschäftsdaten hütet, kontrolliert die Agenten"
+    },
+    {
+      "number": 32,
+      "date": "2026-11-18",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-18-morning/",
+      "headline": "SAP verliert seinen Kundenvorstand, und die Aktie fällt um fast sechs Prozent"
     }
   ],
   "recentStockPicks": [
@@ -683,7 +690,22 @@
       "slug": "2026-11-08-morning",
       "name": "Mirion Technologies, Inc. (MIR)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-18-morning",
+      "name": "Avon Technologies plc (AVON (London))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-18-morning",
+      "name": "Nakanishi Inc. (7716 (Tokio))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-18-morning",
+      "name": "Oxford Instruments plc (OXIG (London))",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-08T10:50:26.302Z"
+  "lastUpdated": "2026-11-18T15:27:33.369Z"
 }

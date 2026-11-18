@@ -101,3 +101,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-08-morning | The Descartes Systems Group Inc. (DSGX) | — _(rund 7,22 Mrd. €; Im zweiten Quartal des Geschäftsjahres 2027 (bis 31)_
 - 2026-11-08-morning | Ypsomed Holding AG (YPSN) | — _(rund 5,67 Mrd. €; Im Geschäftsjahr 2025/26 (bis 31)_
 - 2026-11-08-morning | Mirion Technologies, Inc. (MIR) | — _(rund 3,94 Mrd. €; Im dritten Quartal 2026 stieg der Umsatz um 24,5 Prozent auf 277,8 Millionen Dollar, organisch um 6,5 Prozent; der Rest kam aus den Zukäufen)_
+- 2026-11-18-morning | Avon Technologies plc (AVON (London)) | — _(rund 0,84 Mrd. €; Avon hat im Geschäftsjahr bis 30)_
+- 2026-11-18-morning | Nakanishi Inc. (7716 (Tokio)) | — _(rund 1,5 bis 1,7 Mrd. €; Nakanishi hat laut Neunmonatsbericht vom 13)_
+- 2026-11-18-morning | Oxford Instruments plc (OXIG (London)) | — _(rund 1,64 Mrd. €; Im ersten Halbjahr des Geschäftsjahres 2027 bis Ende September stieg der Umsatz laut Bericht vom 10)_
