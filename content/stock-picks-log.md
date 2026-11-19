@@ -104,3 +104,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-18-morning | Avon Technologies plc (AVON (London)) | — _(rund 0,84 Mrd. €; Avon hat im Geschäftsjahr bis 30)_
 - 2026-11-18-morning | Nakanishi Inc. (7716 (Tokio)) | — _(rund 1,5 bis 1,7 Mrd. €; Nakanishi hat laut Neunmonatsbericht vom 13)_
 - 2026-11-18-morning | Oxford Instruments plc (OXIG (London)) | — _(rund 1,64 Mrd. €; Im ersten Halbjahr des Geschäftsjahres 2027 bis Ende September stieg der Umsatz laut Bericht vom 10)_
+- 2026-11-19-morning | Mycronic AB (MYCR) | — _(rund 5,2 Mrd. €; Mycronic verbindet eine Monopolstellung mit einem wachsenden Zweitgeschäft)_
+- 2026-11-19-morning | Exosens SA (EXENS) | — _(rund 2,6 Mrd. €; Exosens profitiert von einer seltenen Kombination aus Engpass und Nachfrageboom)_
+- 2026-11-19-morning | Harmonic Drive Systems Inc. (6324) | — _(rund 2,2 Mrd. €; Harmonic Drive Systems ist der Nischenführer in einem Bauteil, ohne das präzise Roboter kaum funktionieren)_

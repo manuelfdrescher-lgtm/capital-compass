@@ -81,6 +81,14 @@ if os.path.exists(ein):
 PY
     ;;
 
+  bild-weg)
+    # Altes Bild vor dem Neuerzeugen beiseiteschieben, damit Chrome den neuen Download nicht umbenennt
+    nn="${1:-}"; [[ "$nn" =~ ^[0-9]{2}$ ]] || { echo "FEHLER: zweistellige Nummer angeben, z. B. bild-weg 03"; exit 1; }
+    alt=~/Downloads/"cc-art-$MMTT-$nn.png"
+    [ -f "$alt" ] || { echo "KEIN_ALTES_BILD $nn"; exit 0; }
+    mkdir -p qa/bilder-ersetzt && mv "$alt" "qa/bilder-ersetzt/cc-art-$MMTT-$nn-$(date +%H%M%S).png" && echo "BILD_WEG $nn"
+    ;;
+
   bilder)
     # Zuordnung aus qa/bilder-<DATUM>.json:
     # [{"id": "artikel-id", "nr": 1, "datei": "motiv-slug", "alt": "...", "caption": "..."}, ...]
@@ -136,6 +144,17 @@ PY
     unset GITHUB_REPOSITORY
     npm run build >/tmp/cc-build.log 2>&1 || { tail -20 /tmp/cc-build.log; echo "FEHLER: Build"; exit 1; }
     node scripts/design-qa.mjs 2>&1 | tail -4
+    # Datum im Seitenkopf (= Datum, das der Vorspann tippt) vor dem Veröffentlichen prüfen
+    python3 -I - "$DATUM" <<'PY'
+import sys, re, datetime
+d = datetime.date.fromisoformat(sys.argv[1])
+tage = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+monate = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+soll = f"{tage[d.weekday()]}, {d.day}. {monate[d.month - 1]} {d.year}"
+m = re.search(r'class="datumszeile"[^>]*>\s*<span[^>]*>([^<]+)<', open("dist/index.html").read())
+ist = m.group(1).strip() if m else "nichts gefunden"
+print("VORSPANN_DATUM:", "ok" if ist == soll else f"FALSCH (Soll {soll}, Ist {ist})", f"({ist})")
+PY
     ;;
 
   veroeffentlichen)
@@ -177,7 +196,11 @@ for versuch in range(30):  # bis zu 5 Minuten auf GitHub Pages warten
     except Exception: pass
     time.sleep(10)
 ok = True
-print("DATUM_LIVE:", "ja" if text in html else "NEIN", f"({text})"); ok &= text in html
+# Der Vorspann tippt eine Kopie der Datumszeile im Seitenkopf, also genau diese prüfen
+import re
+m = re.search(r'class="datumszeile"[^>]*>\s*<span[^>]*>([^<]+)<', html)
+kopf = m.group(1).strip() if m else ""
+print("DATUM_LIVE:", "ja" if kopf == text else "NEIN", f"({text}; Kopf und Vorspann zeigen: {kopf or 'nichts gefunden'})"); ok &= kopf == text
 leit = e["articles"][0]["id"]
 erster = html.find('class="artikel artikel--leit"')
 print("LEITARTIKEL_VORN:", "ja" if erster >= 0 and f'id="{leit}"' in html[erster:erster + 300] else "NEIN")
@@ -196,6 +219,6 @@ PY
     ;;
 
   *)
-    echo "Schritte: status | holen | umlaute-bericht | umlaute-anwenden | bilder-liste | bilder | einspielen | qa | veroeffentlichen \"<Commit-Text>\" | live   (optional DATUM=JJJJ-MM-TT)"
+    echo "Schritte: status | holen | umlaute-bericht | umlaute-anwenden | bilder-liste | bild-weg <NN> | bilder | einspielen | qa | veroeffentlichen \"<Commit-Text>\" | live   (optional DATUM=JJJJ-MM-TT)"
     ;;
 esac

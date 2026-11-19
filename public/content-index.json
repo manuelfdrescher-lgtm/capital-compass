@@ -223,6 +223,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-18-morning/",
       "headline": "SAP verliert seinen Kundenvorstand, und die Aktie fällt um fast sechs Prozent"
+    },
+    {
+      "number": 33,
+      "date": "2026-11-19",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-19-morning/",
+      "headline": "SAP rutscht unter 200 Euro, und KI-Werkzeuge für Bestandskunden gibt es nur gegen eine Cloud-Zusage"
     }
   ],
   "recentStockPicks": [
@@ -705,7 +712,22 @@
       "slug": "2026-11-18-morning",
       "name": "Oxford Instruments plc (OXIG (London))",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-19-morning",
+      "name": "Mycronic AB (MYCR)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-19-morning",
+      "name": "Exosens SA (EXENS)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-19-morning",
+      "name": "Harmonic Drive Systems Inc. (6324)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-18T15:27:33.369Z"
+  "lastUpdated": "2026-11-19T08:41:44.809Z"
 }
