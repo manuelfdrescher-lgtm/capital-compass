@@ -1501,5 +1501,95 @@
     "file": null,
     "name": "Oxford Instruments plc",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "paloaltonetworks": {
+    "file": "paloaltonetworks.svg",
+    "name": "Palo Alto Networks, Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:PaloAltoNetworks_2020_Logo.svg",
+    "license": "Public domain",
+    "artist": "™/®Palo Alto Networks, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "walmart": {
+    "file": "walmart.svg",
+    "name": "Walmart",
+    "source": "https://commons.wikimedia.org/wiki/File:Walmart_logo_(2025).svg",
+    "license": "Public domain",
+    "artist": "Walmart",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nebius": {
+    "file": null,
+    "name": "Nebius",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "anthropic": {
+    "file": "anthropic.svg",
+    "name": "Anthropic",
+    "source": "https://commons.wikimedia.org/wiki/File:Anthropic_logo.svg",
+    "license": "Public domain",
+    "artist": "Anthropic",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nikkei": {
+    "file": null,
+    "name": "Nikkei 225",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "kospi": {
+    "file": null,
+    "name": "Kospi",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "hangseng": {
+    "file": null,
+    "name": "Hang Seng",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "shanghaicomposite": {
+    "file": null,
+    "name": "Shanghai Composite",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "evonik": {
+    "file": null,
+    "name": "Evonik",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lanxess": {
+    "file": "lanxess.svg",
+    "name": "Lanxess",
+    "source": "https://commons.wikimedia.org/wiki/File:LanXess-Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "intuit": {
+    "file": "intuit.svg",
+    "name": "Intuit",
+    "source": "https://commons.wikimedia.org/wiki/File:Intuit_logo_2022.svg",
+    "license": "Public domain",
+    "artist": "Intuit Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "pdd": {
+    "file": null,
+    "name": "PDD Holdings",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "alibaba": {
+    "file": null,
+    "name": "Alibaba (ADS)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "brunellocucinelli": {
+    "file": null,
+    "name": "Brunello Cucinelli S.p.A.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "irhythm": {
+    "file": null,
+    "name": "iRhythm Holdings, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

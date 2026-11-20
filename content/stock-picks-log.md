@@ -107,3 +107,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-19-morning | Mycronic AB (MYCR) | — _(rund 5,2 Mrd. €; Mycronic verbindet eine Monopolstellung mit einem wachsenden Zweitgeschäft)_
 - 2026-11-19-morning | Exosens SA (EXENS) | — _(rund 2,6 Mrd. €; Exosens profitiert von einer seltenen Kombination aus Engpass und Nachfrageboom)_
 - 2026-11-19-morning | Harmonic Drive Systems Inc. (6324) | — _(rund 2,2 Mrd. €; Harmonic Drive Systems ist der Nischenführer in einem Bauteil, ohne das präzise Roboter kaum funktionieren)_
+- 2026-11-20-morning | Scout24 SE (G24 (Xetra)) | — _(rund 6,0 Mrd. €; Laut Quartalsmitteilung vom 04.11.2026 stieg der Umsatz im dritten Quartal um 19,7 Prozent auf 198,2 Mio)_
+- 2026-11-20-morning | Brunello Cucinelli S.p.A. (BC (Mailand)) | — _(rund 6,2 Mrd. €; Laut Mitteilung vom 15.10.2026 stieg der Umsatz in den ersten neun Monaten auf 1.123,6 Mio)_
+- 2026-11-20-morning | iRhythm Holdings, Inc. (IRTC) | — _(rund 2,8 Mrd. €; Laut Quartalsbericht vom 05.11.2026 stieg der Umsatz im dritten Quartal um 14,9 Prozent auf 221,6 Mio)_

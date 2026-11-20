@@ -230,6 +230,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-19-morning/",
       "headline": "SAP rutscht unter 200 Euro, und KI-Werkzeuge für Bestandskunden gibt es nur gegen eine Cloud-Zusage"
+    },
+    {
+      "number": 34,
+      "date": "2026-11-20",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-20-morning/",
+      "headline": "SAP setzt bei KI-Preisen auf Verbrauchsguthaben, die Aktie fällt trotz bestätigter Prognose auf 187 Euro"
     }
   ],
   "recentStockPicks": [
@@ -727,7 +734,22 @@
       "slug": "2026-11-19-morning",
       "name": "Harmonic Drive Systems Inc. (6324)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-20-morning",
+      "name": "Scout24 SE (G24 (Xetra))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-20-morning",
+      "name": "Brunello Cucinelli S.p.A. (BC (Mailand))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-20-morning",
+      "name": "iRhythm Holdings, Inc. (IRTC)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-19T08:41:44.809Z"
+  "lastUpdated": "2026-11-20T08:25:53.318Z"
 }
