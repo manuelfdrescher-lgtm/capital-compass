@@ -72,6 +72,9 @@ if mode == "report":
     print("  " + ", ".join(sorted(unknown)))
 else:
     table = dict(auto); table.update({k: v for k, v in manual.items() if v})
+    if not table:
+        print("Ersetzungen: 0 | Wortformen: 0 (nichts zu ersetzen, Datei unverändert)")
+        sys.exit(0)
     rx = re.compile(r"(?<![A-Za-zÄÖÜäöüß])(" + "|".join(sorted(map(re.escape, table), key=len, reverse=True)) + r")(?![A-Za-zÄÖÜäöüß])")
     count = collections.Counter()
     def fix(s):

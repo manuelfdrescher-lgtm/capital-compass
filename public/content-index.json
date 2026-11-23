@@ -237,6 +237,27 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-20-morning/",
       "headline": "SAP setzt bei KI-Preisen auf Verbrauchsguthaben, die Aktie fällt trotz bestätigter Prognose auf 187 Euro"
+    },
+    {
+      "number": 35,
+      "date": "2026-11-21",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-21-morning/",
+      "headline": "SAP verzahnt Joule enger mit Microsofts Copilot, die Aktie verliert in einer Woche fast 14 Prozent"
+    },
+    {
+      "number": 36,
+      "date": "2026-11-22",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-22-morning/",
+      "headline": "SAP setzt auf Europas Datenhoheit, Amazon und Microsoft rüsten mit Milliarden nach"
+    },
+    {
+      "number": 37,
+      "date": "2026-11-23",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-23-morning/",
+      "headline": "Sechs Vorstände, zwei auf dem Absprung: Wie SAP geführt wird, während die Aktie 14 Prozent in einer Woche verliert"
     }
   ],
   "recentStockPicks": [
@@ -749,7 +770,52 @@
       "slug": "2026-11-20-morning",
       "name": "iRhythm Holdings, Inc. (IRTC)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-21-morning",
+      "name": "Elastic N.V. (ESTC (NYSE))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-21-morning",
+      "name": "FOOD & LIFE COMPANIES Ltd. (3563 (Tokio))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-21-morning",
+      "name": "Friedrich Vorwerk Group SE (VH2 (Xetra))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-22-morning",
+      "name": "Reply S.p.A. (REY (Euronext Milan))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-22-morning",
+      "name": "SPS Commerce, Inc. (SPSC (Nasdaq))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-22-morning",
+      "name": "Japan Elevator Service Holdings Co., Ltd. (6544 (Tokio, Prime))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-23-morning",
+      "name": "Eckert & Ziegler SE (EUZ (Xetra))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-23-morning",
+      "name": "Powell Industries, Inc. (POWL (Nasdaq))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-23-morning",
+      "name": "Park Systems Corp. (140860 (KOSDAQ, Seoul))",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-20T08:25:53.318Z"
+  "lastUpdated": "2026-11-23T10:25:36.735Z"
 }

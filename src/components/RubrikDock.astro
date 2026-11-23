@@ -3,22 +3,15 @@
 // gescrollt ist. Beim Überfahren vergrößern sich das Bild unter dem Cursor
 // und seine Nachbarn. Auf dem Handy wischt man mit dem Finger darüber.
 import Emblem from "./Emblem.astro";
+import { rubriken } from "../lib/rubriken.mjs";
 
 interface Props {
   active?: string;
+  ausgabe?: string;
 }
-const { active = "" } = Astro.props;
+const { active = "", ausgabe } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
-const items = [
-  { key: "titelseite", label: "Titelseite", bild: "topthemen", href: `${base}/` },
-  { key: "news", label: "News", bild: "news", href: `${base}/news/` },
-  { key: "politik", label: "Politik", bild: "politik", href: `${base}/politik/` },
-  { key: "branchen-monitor", label: "Branchen-Monitor", bild: "branchen", href: `${base}/branchen-monitor/` },
-  { key: "unternehmen", label: "Unternehmen", bild: "unternehmen", href: `${base}/unternehmen/` },
-  { key: "drei-aktien", label: "Drei Aktien", bild: "aktien", href: `${base}/drei-aktien/` },
-  { key: "lernecke", label: "Lernecke", bild: "lernecke", href: `${base}/lernecke/` },
-  { key: "archiv", label: "Archiv", bild: "archiv", href: `${base}/archiv/` },
-];
+const items = rubriken(base, ausgabe);
 ---
 
 <nav class="dock" aria-label="Rubriken (Dock)" data-dock>

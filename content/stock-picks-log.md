@@ -110,3 +110,12 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-20-morning | Scout24 SE (G24 (Xetra)) | — _(rund 6,0 Mrd. €; Laut Quartalsmitteilung vom 04.11.2026 stieg der Umsatz im dritten Quartal um 19,7 Prozent auf 198,2 Mio)_
 - 2026-11-20-morning | Brunello Cucinelli S.p.A. (BC (Mailand)) | — _(rund 6,2 Mrd. €; Laut Mitteilung vom 15.10.2026 stieg der Umsatz in den ersten neun Monaten auf 1.123,6 Mio)_
 - 2026-11-20-morning | iRhythm Holdings, Inc. (IRTC) | — _(rund 2,8 Mrd. €; Laut Quartalsbericht vom 05.11.2026 stieg der Umsatz im dritten Quartal um 14,9 Prozent auf 221,6 Mio)_
+- 2026-11-21-morning | Elastic N.V. (ESTC (NYSE)) | — _(rund 7,2 Mrd. €; Laut Quartalsmitteilung vom 19.11.2026 stieg der Umsatz im zweiten Geschäftsquartal (bis 31.10.) um 17 Prozent auf 495,9 Mio)_
+- 2026-11-21-morning | FOOD & LIFE COMPANIES Ltd. (3563 (Tokio)) | — _(rund 7,8 Mrd. €; Laut Kessan Tanshin (Ergebnismitteilung an die Tokioter Börse) vom 06.11.2026 stieg der Umsatz im Geschäftsjahr bis September 2026 um 26,9 P)_
+- 2026-11-21-morning | Friedrich Vorwerk Group SE (VH2 (Xetra)) | — _(rund 1,4 Mrd. €; Nach den Neunmonatszahlen, die am 12.11.2026 veröffentlicht wurden, stieg der Umsatz um 12,0 Prozent auf 565,6 Mio)_
+- 2026-11-22-morning | Reply S.p.A. (REY (Euronext Milan)) | — _(rund 4,7 Mrd. €; Laut Quartalsbericht vom 12.11.2026 stieg der Umsatz in den ersten neun Monaten um 9,2 Prozent auf 1.987,9 Mio)_
+- 2026-11-22-morning | SPS Commerce, Inc. (SPSC (Nasdaq)) | — _(rund 2,5 Mrd. €; Laut 8-K vom 29.10.2026 stieg der Umsatz im dritten Quartal nur um 4 Prozent auf 197,6 Mio)_
+- 2026-11-22-morning | Japan Elevator Service Holdings Co., Ltd. (6544 (Tokio, Prime)) | — _(rund 1,25 Mrd. €; JES verbindet ein Abo-ähnliches Wartungsgeschäft mit einem schnell wachsenden Modernisierungsgeschäft)_
+- 2026-11-23-morning | Eckert & Ziegler SE (EUZ (Xetra)) | — _(0,91 Mrd. €; Das Geschäftsmodell verbindet zwei Profile)_
+- 2026-11-23-morning | Powell Industries, Inc. (POWL (Nasdaq)) | — _(4,9 Mrd. €; Powell verdient Geld mit Projekten, die über ein bis drei Jahre abgearbeitet werden)_
+- 2026-11-23-morning | Park Systems Corp. (140860 (KOSDAQ, Seoul)) | — _(0,84 Mrd. €; Park Systems ist ein Fall, in dem der Markt eine Verzögerung als Strukturbruch bewertet)_

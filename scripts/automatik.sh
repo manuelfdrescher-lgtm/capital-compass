@@ -33,6 +33,11 @@ case "$schritt" in
     echo "Letzte Ausgaben im Repo:"; ls content/editions | tail -3
     ;;
 
+  chrome|chrome-wecken)
+    # Chrome ohne offenes Fenster meldet die Erweiterung als "nicht verbunden"; ein Fenster im Hintergrund öffnen behebt das.
+    open -g -a "Google Chrome" about:blank && sleep 8 && echo "CHROME_FENSTER_OFFEN"
+    ;;
+
   holen)
     f="$(ls -t ~/Downloads/"$DATUM"-morning*.json 2>/dev/null | head -1)"
     [ -z "$f" ] && { echo "FEHLER: keine Datei $DATUM-morning*.json in ~/Downloads"; exit 1; }
@@ -219,6 +224,6 @@ PY
     ;;
 
   *)
-    echo "Schritte: status | holen | umlaute-bericht | umlaute-anwenden | bilder-liste | bild-weg <NN> | bilder | einspielen | qa | veroeffentlichen \"<Commit-Text>\" | live   (optional DATUM=JJJJ-MM-TT)"
+    echo "Schritte: status | chrome | holen | umlaute-bericht | umlaute-anwenden | bilder-liste | bild-weg <NN> | bilder | einspielen | qa | veroeffentlichen \"<Commit-Text>\" | live   (optional DATUM=JJJJ-MM-TT)"
     ;;
 esac

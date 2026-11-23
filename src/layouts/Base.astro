@@ -16,6 +16,7 @@ import RubrikDock from "../components/RubrikDock.astro";
 import Vorspann from "../components/Vorspann.astro";
 import { formatDateLong, slotLabel } from "../lib/format.mjs";
 import { logoInfo } from "../lib/logo.mjs";
+import { rubriken } from "../lib/rubriken.mjs";
 
 // Eigenes Marken-Logo (Vollversion mit Wortmarke) hat Vorrang: dann wird die
 // Text-Wortmarke im Kopf durch das Bild ersetzt.
@@ -29,21 +30,13 @@ interface Props {
   description?: string;
   active?: string;
   edition?: any; // Editions-Metadaten für Datumszeile und Beispiel-Banner
+  ausgabe?: string; // Slug einer Archivausgabe: Rubriken springen dann in diese Ausgabe
 }
 
-const { title, description, active = "", edition } = Astro.props;
+const { title, description, active = "", edition, ausgabe } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-const nav = [
-  { href: `${base}/`, key: "titelseite", label: "Titelseite", bild: "topthemen" },
-  { href: `${base}/news/`, key: "news", label: "News", bild: "news" },
-  { href: `${base}/politik/`, key: "politik", label: "Politik", bild: "politik" },
-  { href: `${base}/branchen-monitor/`, key: "branchen-monitor", label: "Branchen-Monitor", bild: "branchen" },
-  { href: `${base}/unternehmen/`, key: "unternehmen", label: "Unternehmen", bild: "unternehmen" },
-  { href: `${base}/drei-aktien/`, key: "drei-aktien", label: "Drei Aktien", bild: "aktien" },
-  { href: `${base}/lernecke/`, key: "lernecke", label: "Lernecke", bild: "lernecke" },
-  { href: `${base}/archiv/`, key: "archiv", label: "Archiv", bild: "archiv" },
-];
+const nav = rubriken(base, ausgabe);
 // Handy: die Rubriken stehen in zwei Zeilen, umbrochen nach der Hälfte
 const navHalb = Math.ceil(nav.length / 2);
 ---
@@ -130,7 +123,7 @@ const navHalb = Math.ceil(nav.length / 2);
         )}
       </header>
 
-      <RubrikDock active={active} />
+      <RubrikDock active={active} ausgabe={ausgabe} />
 
       <main id="inhalt">
         <slot />

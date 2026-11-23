@@ -2270,3 +2270,8 @@ html:not(.js-an) .hantel__fonds { display: none; }
 .lesehilfe p { margin: 0 0 8px; }
 .lesehilfe p:last-child { margin-bottom: 0; }
 .lesehilfe { margin: 0 0 26px; }
+
+/* Archivausgabe: Rubriken springen zu Ankern auf derselben Seite */
+.anker { scroll-margin-top: 14px; }
+.archiv-hinweis { font-family: var(--sans); font-size: 14px; color: var(--tinte-60); margin: 4px 0 18px; }
+.archiv-hinweis a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }

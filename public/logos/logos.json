@@ -1591,5 +1591,212 @@
     "file": null,
     "name": "iRhythm Holdings, Inc.",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "crowdstrike": {
+    "file": "crowdstrike.svg",
+    "name": "CrowdStrike",
+    "source": "https://commons.wikimedia.org/wiki/File:CrowdStrike_logo.svg",
+    "license": "Public domain",
+    "artist": "™/®CrowdStrike",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "marvell": {
+    "file": "marvell.svg",
+    "name": "Marvell Technology",
+    "source": "https://commons.wikimedia.org/wiki/File:Marvell_Logo.svg",
+    "license": "Public domain",
+    "artist": "Marvell Technology Group",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "gap": {
+    "file": "gap.svg",
+    "name": "Gap",
+    "source": "https://commons.wikimedia.org/wiki/File:New_Gap_logo.svg",
+    "license": "Public domain",
+    "artist": "Gap, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "telekom": {
+    "file": "telekom.svg",
+    "name": "Deutsche Telekom",
+    "source": "https://commons.wikimedia.org/wiki/File:Deutsche_Telekom.svg",
+    "license": "Public domain",
+    "artist": "Gr1st at en.wikipedia",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "ishares": {
+    "file": null,
+    "name": "iShares 20+ Year Treasury Bond ETF",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "eurex": {
+    "file": null,
+    "name": "Euro-Bund-Future",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "erdgas": {
+    "file": null,
+    "name": "Erdgas (Henry Hub)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "wti": {
+    "file": null,
+    "name": "WTI",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "brent": {
+    "file": null,
+    "name": "Brent",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "silber": {
+    "file": null,
+    "name": "Silber",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "zscaler": {
+    "file": null,
+    "name": "Zscaler",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "okta": {
+    "file": null,
+    "name": "Okta",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "mediatek": {
+    "file": "mediatek.svg",
+    "name": "Mediatek",
+    "source": "https://commons.wikimedia.org/wiki/File:MediaTek_logo.svg",
+    "license": "Public domain",
+    "artist": "MediaTek Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "rossstores": {
+    "file": "rossstores.svg",
+    "name": "Ross Stores",
+    "source": "https://commons.wikimedia.org/wiki/File:Ross_Stores_logo.svg",
+    "license": "Public domain",
+    "artist": "Ross Stores",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "bjs": {
+    "file": null,
+    "name": "BJ's Wholesale",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "elastic": {
+    "file": null,
+    "name": "Elastic N.V.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "foodandlife": {
+    "file": null,
+    "name": "FOOD & LIFE COMPANIES Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "siemensenergy": {
+    "file": "siemensenergy.svg",
+    "name": "Siemens Energy",
+    "source": "https://commons.wikimedia.org/wiki/File:Siemens_Energy_logo.svg",
+    "license": "Public domain",
+    "artist": "Siemens Energy  (vector graphics image by Detmar Owen)",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "ethereum": {
+    "file": null,
+    "name": "Ether",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "freenet": {
+    "file": null,
+    "name": "Freenet",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "equinix": {
+    "file": "equinix.svg",
+    "name": "Equinix",
+    "source": "https://commons.wikimedia.org/wiki/File:Equinix_logo.svg",
+    "license": "Public domain",
+    "artist": "™/®Equinix",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "workday": {
+    "file": "workday.svg",
+    "name": "Workday, Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Workday_logo.svg",
+    "license": "Public domain",
+    "artist": "Workday",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "analogdevices": {
+    "file": "analogdevices.svg",
+    "name": "Analog Devices, Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Analog_Devices_Logo.svg",
+    "license": "Public domain",
+    "artist": "Connormah",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "deere": {
+    "file": "deere.png",
+    "name": "Deere & Company",
+    "source": "https://commons.wikimedia.org/wiki/File:John_Deere_text_only.png",
+    "license": "Public domain",
+    "artist": "John Deere",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "spscommerce": {
+    "file": null,
+    "name": "SPS Commerce, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "japanelevatorservice": {
+    "file": null,
+    "name": "Japan Elevator Service Holdings Co., Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "general-mills": {
+    "file": "general-mills.svg",
+    "name": "General Mills",
+    "source": "https://commons.wikimedia.org/wiki/File:General_Mills_logo.svg",
+    "license": "Public domain",
+    "artist": "The original uploader was CoolKid1993 at English Wikipedia.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "auto1": {
+    "file": null,
+    "name": "Auto1",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ross-stores": {
+    "file": null,
+    "name": "Ross Stores, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "take-two": {
+    "file": "take-two.svg",
+    "name": "Take-Two Interactive Software, Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:Take-Two_Interactive_Logo.svg",
+    "license": "Public domain",
+    "artist": "Take-Two Interactive",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "eckert-ziegler": {
+    "file": null,
+    "name": "Eckert & Ziegler SE",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "powell-industries": {
+    "file": null,
+    "name": "Powell Industries, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "park-systems": {
+    "file": "park-systems.png",
+    "name": "Park Systems Corp.",
+    "source": "https://commons.wikimedia.org/wiki/File:Parksystemslg.jpg",
+    "license": "Public domain",
+    "artist": "Hunny1625",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
   }
 }

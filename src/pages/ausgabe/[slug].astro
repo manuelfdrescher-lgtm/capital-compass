@@ -7,25 +7,35 @@ import BranchenMonitor from "../../components/BranchenMonitor.astro";
 import StockPicks from "../../components/StockPicks.astro";
 import Watchlist from "../../components/Watchlist.astro";
 import RessortKopf from "../../components/RessortKopf.astro";
-import { getAllEditions } from "../../lib/editions.mjs";
-import { slotLabel } from "../../lib/format.mjs";
+import { getAllEditions, getLatestEdition } from "../../lib/editions.mjs";
+import { formatDateLong, slotLabel } from "../../lib/format.mjs";
 
 export function getStaticPaths() {
   return getAllEditions().map(({ slug, data }) => ({ params: { slug }, props: { data } }));
 }
 
 const { data } = Astro.props;
+const { slug } = Astro.params;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+// Ältere Ausgabe: Hinweis mit Weg zur aktuellen Ausgabe. Die Rubriken im Kopf und im Dock
+// springen zu den Abschnitten dieser Seite (Anker mit den Namen der Rubriken).
+const archiv = getLatestEdition().slug !== slug;
 const leitartikel = data.articles.filter((a) => a.ressort === "titelseite");
 const news = data.articles.filter((a) => a.ressort === "news" || a.ressort === "makro");
 const politik = data.articles.filter((a) => a.ressort === "politik");
 const unternehmen = data.articles.filter((a) => a.ressort === "unternehmen");
 ---
 
-<Base title={`Ausgabe ${data.edition.date} (${slotLabel(data.edition.slot)})`} edition={data.edition}>
+<Base title={`Ausgabe ${data.edition.date} (${slotLabel(data.edition.slot)})`} edition={data.edition} ausgabe={slug}>
+  <div id="titelseite" class="anker"></div>
+  {archiv && (
+    <p class="archiv-hinweis">Archivausgabe vom {formatDateLong(data.edition.date)}. <a href={`${base}/`}>Zur aktuellen Ausgabe</a></p>
+  )}
   <MarketTiles tiles={data.market.tiles} />
 
   {leitartikel.map((a) => <Article article={a} lead={true} />)}
 
+  <div id="news" class="anker"></div>
   {news.length > 0 && (
     <>
       <RessortKopf titel="News" />
@@ -33,6 +43,7 @@ const unternehmen = data.articles.filter((a) => a.ressort === "unternehmen");
     </>
   )}
 
+  <div id="politik" class="anker"></div>
   {politik.length > 0 && (
     <>
       <RessortKopf titel="Politik" />
@@ -40,9 +51,11 @@ const unternehmen = data.articles.filter((a) => a.ressort === "unternehmen");
     </>
   )}
 
+  <div id="branchen-monitor" class="anker"></div>
   <RessortKopf titel="Branchen-Monitor" />
   <BranchenMonitor monitor={data.branchenMonitor} />
 
+  <div id="unternehmen" class="anker"></div>
   {unternehmen.length > 0 && (
     <>
       <RessortKopf titel="Unternehmen" />
@@ -50,6 +63,7 @@ const unternehmen = data.articles.filter((a) => a.ressort === "unternehmen");
     </>
   )}
 
+  <div id="drei-aktien" class="anker"></div>
   <RessortKopf titel="Drei Aktien des Tages" />
   <StockPicks picks={data.stockPicks} />
 
@@ -60,10 +74,34 @@ const unternehmen = data.articles.filter((a) => a.ressort === "unternehmen");
     </>
   )}
 
+  <div id="lernecke" class="anker"></div>
   <RessortKopf titel="Lernecke" />
   <ol class="lernpunkte">
     {data.learningNotes.map((note) => <li>{note}</li>)}
   </ol>
+  {data.lernecke && data.lernecke.length > 0 && (
+    <>
+      <RessortKopf titel="Vertiefung: Die Modelle dahinter" />
+      <div class="lernecke-vertiefung">
+        {data.lernecke.map((entry) => (
+          <article class="karte lernecke-modell">
+            <h3 class="lernecke-modell__titel">
+              <span class="lernecke-modell__disziplin">{entry.disziplin}</span>
+              {entry.modell}
+            </h3>
+            <div class="mechanik-box">
+              <span class="mechanik-box__titel">Das Modell</span>
+              {entry.erklaerung}
+            </div>
+            <div class="mechanik-box" style="margin-bottom:0">
+              <span class="mechanik-box__titel">Angewendet auf diese Ausgabe</span>
+              {entry.anwendung}
+            </div>
+          </article>
+        ))}
+      </div>
+    </>
+  )}
   {data.financeLink && (
     <article class="karte finance-link" style="margin-top:26px">
       <h3 style="margin-top:0; font-family:var(--display)">{data.financeLink.titel}</h3>
