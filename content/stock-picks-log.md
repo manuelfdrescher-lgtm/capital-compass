@@ -119,3 +119,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-23-morning | Eckert & Ziegler SE (EUZ (Xetra)) | — _(0,91 Mrd. €; Das Geschäftsmodell verbindet zwei Profile)_
 - 2026-11-23-morning | Powell Industries, Inc. (POWL (Nasdaq)) | — _(4,9 Mrd. €; Powell verdient Geld mit Projekten, die über ein bis drei Jahre abgearbeitet werden)_
 - 2026-11-23-morning | Park Systems Corp. (140860 (KOSDAQ, Seoul)) | — _(0,84 Mrd. €; Park Systems ist ein Fall, in dem der Markt eine Verzögerung als Strukturbruch bewertet)_
+- 2026-11-24-morning | Vitrolife AB (publ) (VITR (Nasdaq Stockholm)) | — _(rund 1,4 Mrd. €; Das Geschäftsmodell folgt dem Prinzip der installierten Basis: Steht ein EmbryoScope in der Klinik, verbraucht jeder Behandlungszyklus Kultu)_
+- 2026-11-24-morning | Alarm.com Holdings, Inc. (ALRM (Nasdaq)) | — _(rund 3,0 Mrd. €; Alarm.com verkauft wiederkehrende Software-Umsätze mit Hardware als Türöffner)_
+- 2026-11-24-morning | Hoshizaki Corporation (6465 (Tokio)) | — _(rund 4,1 Mrd. €; Hoshizaki verbindet ein Gerätegeschäft mit einem dichten Servicenetz in Japan, das Wartung und Ersatzteile liefert und Kunden bindet)_

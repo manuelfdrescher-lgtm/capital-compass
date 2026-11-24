@@ -258,6 +258,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-23-morning/",
       "headline": "Sechs Vorstände, zwei auf dem Absprung: Wie SAP geführt wird, während die Aktie 14 Prozent in einer Woche verliert"
+    },
+    {
+      "number": 38,
+      "date": "2026-11-24",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-24-morning/",
+      "headline": "SAP erholt sich um 1,5 Prozent auf 186 Euro: Wer den Konzern kontrolliert, seit die Gründer an Gewicht verlieren"
     }
   ],
   "recentStockPicks": [
@@ -815,7 +822,22 @@
       "slug": "2026-11-23-morning",
       "name": "Park Systems Corp. (140860 (KOSDAQ, Seoul))",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-24-morning",
+      "name": "Vitrolife AB (publ) (VITR (Nasdaq Stockholm))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-24-morning",
+      "name": "Alarm.com Holdings, Inc. (ALRM (Nasdaq))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-24-morning",
+      "name": "Hoshizaki Corporation (6465 (Tokio))",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-23T10:25:36.735Z"
+  "lastUpdated": "2026-11-24T05:25:28.311Z"
 }

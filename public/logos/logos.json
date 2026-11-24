@@ -1798,5 +1798,41 @@
     "license": "Public domain",
     "artist": "Hunny1625",
     "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "deutsche-boerse": {
+    "file": "deutsche-boerse.png",
+    "name": "Deutsche Börse",
+    "source": "https://commons.wikimedia.org/wiki/File:Mds-logo-data.png",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "hpe": {
+    "file": "hpe.svg",
+    "name": "Hewlett Packard Enterprise",
+    "source": "https://commons.wikimedia.org/wiki/File:Hewlett_Packard_Enterprise_logo.svg",
+    "license": "Public domain",
+    "artist": "™/®Hewlett Packard Enterprise",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "zoom": {
+    "file": null,
+    "name": "Zoom Communications, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "vitrolife": {
+    "file": null,
+    "name": "Vitrolife AB (publ)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "alarm-com": {
+    "file": null,
+    "name": "Alarm.com Holdings, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "hoshizaki": {
+    "file": null,
+    "name": "Hoshizaki Corporation",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
