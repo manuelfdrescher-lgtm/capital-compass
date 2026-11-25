@@ -1834,5 +1834,145 @@
     "file": null,
     "name": "Hoshizaki Corporation",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "aixtron": {
+    "file": "aixtron.svg",
+    "name": "Aixtron",
+    "source": "https://commons.wikimedia.org/wiki/File:Aixtron_Logo.svg",
+    "license": "Public domain",
+    "artist": "Aixtron SE",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "tokyo-electron": {
+    "file": "tokyo-electron.svg",
+    "name": "Tokyo Electron",
+    "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Electron_logo.svg",
+    "license": "Public domain",
+    "artist": "Tokyo Electron",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "kohls": {
+    "file": "kohls.svg",
+    "name": "Kohl's",
+    "source": "https://commons.wikimedia.org/wiki/File:Kohl%27s_logo.svg",
+    "license": "Public domain",
+    "artist": "Kohl's",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "dollar-tree": {
+    "file": "dollar-tree.svg",
+    "name": "Dollar Tree",
+    "source": "https://commons.wikimedia.org/wiki/File:Dollar_Tree_logo.svg",
+    "license": "Public domain",
+    "artist": "Dollar Tree Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "amgen": {
+    "file": "amgen.svg",
+    "name": "Amgen",
+    "source": "https://commons.wikimedia.org/wiki/File:Amgen.svg",
+    "license": "Public domain",
+    "artist": "The original uploader was King of Hearts at English Wikipedia.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "analog-devices": {
+    "file": "analog-devices.svg",
+    "name": "Analog Devices",
+    "source": "https://commons.wikimedia.org/wiki/File:Analog_Devices_Logo.svg",
+    "license": "Public domain",
+    "artist": "Connormah",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "deutsche-telekom": {
+    "file": "deutsche-telekom.svg",
+    "name": "Deutsche Telekom",
+    "source": "https://commons.wikimedia.org/wiki/File:Deutsche_Telekom.svg",
+    "license": "Public domain",
+    "artist": "Gr1st at en.wikipedia",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "xiaomi": {
+    "file": "xiaomi.svg",
+    "name": "Xiaomi",
+    "source": "https://commons.wikimedia.org/wiki/File:Xiaomi_logo_(2021-).svg",
+    "license": "Public domain",
+    "artist": "Xiaomi",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "oracle": {
+    "file": null,
+    "name": "Oracle",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "autodesk": {
+    "file": "autodesk.svg",
+    "name": "Autodesk",
+    "source": "https://commons.wikimedia.org/wiki/File:Autodesk_Logo_2021.svg",
+    "license": "Public domain",
+    "artist": "Autodesk",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "texas-instruments": {
+    "file": "texas-instruments.svg",
+    "name": "Texas Instruments",
+    "source": "https://commons.wikimedia.org/wiki/File:TexasInstruments-Logo.svg",
+    "license": "Public domain",
+    "artist": "Texas Instruments",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "stmicroelectronics": {
+    "file": "stmicroelectronics.png",
+    "name": "STMicroelectronics",
+    "source": "https://commons.wikimedia.org/wiki/File:STMicroelectronics.png",
+    "license": "CC0",
+    "artist": "ST",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "hp": {
+    "file": "hp.svg",
+    "name": "HP Inc.",
+    "source": "https://commons.wikimedia.org/wiki/File:HP_logo_2012.svg",
+    "license": "Public domain",
+    "artist": "HP Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "lenovo": {
+    "file": "lenovo.svg",
+    "name": "Lenovo",
+    "source": "https://commons.wikimedia.org/wiki/File:Lenovo_Logo.svg",
+    "license": "Public domain",
+    "artist": "Lenovo Group",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "sanofi": {
+    "file": "sanofi.svg",
+    "name": "Sanofi",
+    "source": "https://commons.wikimedia.org/wiki/File:Sanofi-2022.svg",
+    "license": "Public domain",
+    "artist": "Sanofi",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "insmed": {
+    "file": null,
+    "name": "Insmed",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "regeneron": {
+    "file": null,
+    "name": "Regeneron",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nkt": {
+    "file": "nkt.svg",
+    "name": "NKT A/S",
+    "source": "https://commons.wikimedia.org/wiki/File:NKT_Holding.svg",
+    "license": "Public domain",
+    "artist": "NKT Holding",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "tokyo-ohka-kogyo": {
+    "file": null,
+    "name": "Tokyo Ohka Kogyo Co., Ltd. (TOK)",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
