@@ -1974,5 +1974,65 @@
     "file": null,
     "name": "Tokyo Ohka Kogyo Co., Ltd. (TOK)",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ambarella": {
+    "file": null,
+    "name": "Ambarella",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "ams-osram": {
+    "file": "ams-osram.svg",
+    "name": "ams-Osram",
+    "source": "https://commons.wikimedia.org/wiki/File:Ams_AG_Logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "urbanoutfitters": {
+    "file": "urbanoutfitters.svg",
+    "name": "Urban Outfitters",
+    "source": "https://commons.wikimedia.org/wiki/File:Urban_Outfitters_logo.svg",
+    "license": "Public domain",
+    "artist": "Urban Outfitters",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "nutanix": {
+    "file": "nutanix.png",
+    "name": "Nutanix",
+    "source": "https://commons.wikimedia.org/wiki/File:NutanixLogo.png",
+    "license": "Public domain",
+    "artist": "Nutanix, Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "liauto": {
+    "file": "liauto.svg",
+    "name": "Li Auto",
+    "source": "https://commons.wikimedia.org/wiki/File:Li_Auto_English_logo.svg",
+    "license": "Public domain",
+    "artist": "Li Auto Inc.",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "polestar": {
+    "file": "polestar.svg",
+    "name": "Polestar",
+    "source": "https://commons.wikimedia.org/wiki/File:Polestar_logo_2020.svg",
+    "license": "Public domain",
+    "artist": "Unknown artistUnknown artist",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "kinaxis": {
+    "file": null,
+    "name": "Kinaxis Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "asahiintecc": {
+    "file": null,
+    "name": "Asahi Intecc Co., Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "tomra": {
+    "file": null,
+    "name": "TOMRA Systems ASA",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

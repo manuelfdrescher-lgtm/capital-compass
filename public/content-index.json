@@ -272,6 +272,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-25-morning/",
       "headline": "SAP steigt um 2 Prozent auf 190 Euro: Wie der Konzern seine KI zuerst an 110.000 eigenen Mitarbeitern erprobt"
+    },
+    {
+      "number": 40,
+      "date": "2026-11-26",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-26-morning/",
+      "headline": "SAP schließt fast unverändert bei 189,82 Euro: Wie der Konzern seine 113.000 Beschäftigten für die KI umbaut"
     }
   ],
   "recentStockPicks": [
@@ -859,7 +866,22 @@
       "slug": "2026-11-25-morning",
       "name": "Tokyo Ohka Kogyo Co., Ltd. (TOK) (4186, Tokyo Stock Exchange (Prime))",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-26-morning",
+      "name": "Kinaxis Inc. (KXS, Toronto Stock Exchange)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-26-morning",
+      "name": "Asahi Intecc Co., Ltd. (7747, Tokyo Stock Exchange (Prime))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-26-morning",
+      "name": "TOMRA Systems ASA (TOM, Oslo Børs)",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-25T05:01:32.142Z"
+  "lastUpdated": "2026-11-26T05:01:31.258Z"
 }
