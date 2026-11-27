@@ -279,6 +279,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-26-morning/",
       "headline": "SAP schließt fast unverändert bei 189,82 Euro: Wie der Konzern seine 113.000 Beschäftigten für die KI umbaut"
+    },
+    {
+      "number": 41,
+      "date": "2026-11-27",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-27-morning/",
+      "headline": "SAP steigt um 2,3 Prozent auf 194,14 Euro: Konzern erwägt laut Bloomberg den Abbau von mindestens 10.000 Stellen"
     }
   ],
   "recentStockPicks": [
@@ -881,7 +888,22 @@
       "slug": "2026-11-26-morning",
       "name": "TOMRA Systems ASA (TOM, Oslo Børs)",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-27-morning",
+      "name": "Temenos AG (TEMN, SIX Swiss Exchange (Zürich))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-27-morning",
+      "name": "Federal Signal Corporation (FSS, New York Stock Exchange)",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-27-morning",
+      "name": "MonotaRO Co., Ltd. (3064, Tokyo Stock Exchange (Prime))",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-26T05:01:31.258Z"
+  "lastUpdated": "2026-11-27T04:55:27.942Z"
 }

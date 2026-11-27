@@ -2034,5 +2034,86 @@
     "file": null,
     "name": "TOMRA Systems ASA",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "nasdaq": {
+    "file": null,
+    "name": "Nasdaq Composite",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "dowjones": {
+    "file": null,
+    "name": "Dow Jones",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "babcock": {
+    "file": "babcock.svg",
+    "name": "Babcock International",
+    "source": "https://commons.wikimedia.org/wiki/File:Babcock_new_logo.svg",
+    "license": "Public domain",
+    "artist": "Babcock International",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "schaeffler": {
+    "file": null,
+    "name": "Schaeffler",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "energiekontor": {
+    "file": "energiekontor.svg",
+    "name": "Energiekontor",
+    "source": "https://commons.wikimedia.org/wiki/File:Energiekontor_201x_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "japantobacco": {
+    "file": "japantobacco.svg",
+    "name": "Japan Tobacco",
+    "source": "https://commons.wikimedia.org/wiki/File:Japan_Tobacco_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "sp500": {
+    "file": null,
+    "name": "S&P-500-Future",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "imperialbrands": {
+    "file": "imperialbrands.svg",
+    "name": "Imperial Brands",
+    "source": "https://commons.wikimedia.org/wiki/File:Imperialbrands_textlogo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "bachem": {
+    "file": "bachem.png",
+    "name": "Bachem",
+    "source": "https://commons.wikimedia.org/wiki/File:Bachem_logo_slogan_rgb_blue.jpg",
+    "license": "Public domain",
+    "artist": "Bachem2014",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "temenos": {
+    "file": "temenos.svg",
+    "name": "Temenos AG",
+    "source": "https://commons.wikimedia.org/wiki/File:Temenos_Logo_2022.svg",
+    "license": "Public domain",
+    "artist": "Temenos Group AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "federal-signal": {
+    "file": "federal-signal.svg",
+    "name": "Federal Signal Corporation",
+    "source": "https://commons.wikimedia.org/wiki/File:Federal-signal.svg",
+    "license": "Public domain",
+    "artist": "Federal Signal",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "monotaro": {
+    "file": null,
+    "name": "MonotaRO Co., Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }
