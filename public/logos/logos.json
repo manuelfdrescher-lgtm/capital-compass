@@ -2115,5 +2115,75 @@
     "file": null,
     "name": "MonotaRO Co., Ltd.",
     "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "vertex-pharmaceuticals": {
+    "file": "vertex-pharmaceuticals.png",
+    "name": "Vertex Pharmaceuticals",
+    "source": "https://commons.wikimedia.org/wiki/File:VertexPharma-logo2.png",
+    "license": "Public domain",
+    "artist": "Vertex Pharmaceuticals Company",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "hensoldt": {
+    "file": "hensoldt.svg",
+    "name": "Hensoldt",
+    "source": "https://commons.wikimedia.org/wiki/File:Hensoldt_Logo_2020.svg",
+    "license": "Public domain",
+    "artist": "Hensoldt AG",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "socionext": {
+    "file": "socionext.svg",
+    "name": "Socionext",
+    "source": "https://commons.wikimedia.org/wiki/File:Socionext_logo.svg",
+    "license": "Public domain",
+    "artist": "Socionext",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "samsung-electronics": {
+    "file": "samsung-electronics.svg",
+    "name": "Samsung Electronics",
+    "source": "https://commons.wikimedia.org/wiki/File:Samsung_wordmark.svg",
+    "license": "Public domain",
+    "artist": "Samsung",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "japan-tobacco": {
+    "file": "japan-tobacco.svg",
+    "name": "Japan Tobacco",
+    "source": "https://commons.wikimedia.org/wiki/File:Japan_Tobacco_logo.svg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "note": "Logo von Wikimedia Commons; Markenrechte beim jeweiligen Unternehmen. Nutzung hier nur zur redaktionellen Kennzeichnung."
+  },
+  "thales": {
+    "file": null,
+    "name": "Thales",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "seagate": {
+    "file": null,
+    "name": "Seagate",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "lumibird": {
+    "file": null,
+    "name": "Lumibird",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "sectra": {
+    "file": null,
+    "name": "Sectra AB",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "badger-meter": {
+    "file": null,
+    "name": "Badger Meter, Inc.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
+  },
+  "shoei": {
+    "file": null,
+    "name": "SHOEI Co., Ltd.",
+    "note": "Kein Logo auf Wikimedia Commons gefunden; Website zeigt typografischen Marken-Chip."
   }
 }

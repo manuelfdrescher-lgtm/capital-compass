@@ -131,3 +131,6 @@ Format: `JJJJ-MM-TT-slot | Name (Ticker) | Confidence`
 - 2026-11-27-morning | Temenos AG (TEMN, SIX Swiss Exchange (Zürich)) | — _(rund 5,9 Mrd. €; Temenos verdient sein Geld in drei Strömen: Abonnement- und SaaS-Erlöse (121,8 Mio)_
 - 2026-11-27-morning | Federal Signal Corporation (FSS, New York Stock Exchange) | — _(rund 6,5 Mrd. €; Das Geschäftsmodell verbindet Fahrzeugbau mit einem wachsenden Ersatzteil- und Servicegeschäft: Das sogenannte Aftermarket (Ersatzteile, Ser)_
 - 2026-11-27-morning | MonotaRO Co., Ltd. (3064, Tokyo Stock Exchange (Prime)) | — _(rund 7,0 Mrd. €; MonotaRO verdient wie ein Händler, wächst aber wie eine Plattform: Die Kunden bestellen selbständig online, das hält Vertriebskosten niedrig)_
+- 2026-11-28-morning | Sectra AB (SECT B (Nasdaq Stockholm)) | — _(rund 6,5 Mrd. €; Sectra verkauft zunehmend Abonnements statt Lizenzen: Kliniken mieten das Bildsystem als Dienst aus der Cloud, Sectra betreibt Rechenzentrum)_
+- 2026-11-28-morning | Badger Meter, Inc. (BMI (NYSE)) | — _(rund 4,4 Mrd. €; Badger Meter verdient am Zählertausch, der in Wellen über Jahrzehnte läuft, und zunehmend an wiederkehrenden Softwareerlösen)_
+- 2026-11-28-morning | SHOEI Co., Ltd. (7839 (Tokyo Stock Exchange, Prime)) | — _(rund 0,7 Mrd. €; SHOEI ist ein Lehrstück für Preissetzungsmacht in einem kleinen Markt)_

@@ -286,6 +286,13 @@
       "slot": "morning",
       "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-27-morning/",
       "headline": "SAP steigt um 2,3 Prozent auf 194,14 Euro: Konzern erwägt laut Bloomberg den Abbau von mindestens 10.000 Stellen"
+    },
+    {
+      "number": 42,
+      "date": "2026-11-28",
+      "slot": "morning",
+      "url": "https://manuelfdrescher-lgtm.github.io/capital-compass/ausgabe/2026-11-28-morning/",
+      "headline": "SAP bestätigt Cybervorfall in der Entwicklungsumgebung, Aktie schließt dennoch 0,8 Prozent höher bei 195,64 Euro"
     }
   ],
   "recentStockPicks": [
@@ -903,7 +910,22 @@
       "slug": "2026-11-27-morning",
       "name": "MonotaRO Co., Ltd. (3064, Tokyo Stock Exchange (Prime))",
       "confidence": "—"
+    },
+    {
+      "slug": "2026-11-28-morning",
+      "name": "Sectra AB (SECT B (Nasdaq Stockholm))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-28-morning",
+      "name": "Badger Meter, Inc. (BMI (NYSE))",
+      "confidence": "—"
+    },
+    {
+      "slug": "2026-11-28-morning",
+      "name": "SHOEI Co., Ltd. (7839 (Tokyo Stock Exchange, Prime))",
+      "confidence": "—"
     }
   ],
-  "lastUpdated": "2026-11-27T04:55:27.942Z"
+  "lastUpdated": "2026-11-28T04:55:27.635Z"
 }
